@@ -81,11 +81,6 @@
   id: Uncloneable
   category: Physical
   points: 1
-  requirements:
-    - !type:CharacterLifepathRequirement
-      inverted: true
-      lifepaths:
-        - Clone
   functions:
     - !type:TraitAddComponent
       components:
