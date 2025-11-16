@@ -3,10 +3,6 @@
   category: Species
   cost: 0
   requirements:
-    - !type:CharacterSpeciesRequirement
-      species:
-        - SlimePerson
-        - Vox
     - !type:CharacterItemGroupRequirement
       group: LoadoutAirTank
   items:
