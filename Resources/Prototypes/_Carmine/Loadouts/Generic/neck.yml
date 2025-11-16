@@ -1,0 +1,54 @@
+- type: loadout
+  id: CarmineBaseLoadoutNeckDogtags
+  category: Neck
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingNeckDogtags
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+# Ties
+- type: loadout
+  id: CarmineBaseLoadoutNeckTieWhite
+  category: Neck
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingNeckTieColor
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+- type: loadout
+  id: CarmineBaseLoadoutNeckTieShort
+  category: Neck
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingNeckTieShort
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+
+# Necklaces
+- type: loadout
+  id: CarmineBaseLoadoutNeckNecklaceStandard
+  category: Neck
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingNeckNecklaceStandard
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck

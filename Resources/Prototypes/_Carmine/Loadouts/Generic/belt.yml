@@ -1,0 +1,10 @@
+- type: loadout
+  id: CarmineBaseLoadoutBeltGeneric
+  category: Belt
+  cost: 0
+  customColorTint: true
+  items:
+    - ClothingBeltGeneric
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBelt

@@ -1,0 +1,12 @@
+- type: loadout
+  id: CarmineBaseLoadoutUniformAncientJumpsuit
+  category: Uniform
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilian
+  items:
+    - ClothingUniformJumpsuitAncient
