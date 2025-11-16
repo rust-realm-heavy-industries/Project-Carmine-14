@@ -9,19 +9,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC
 
 - type: trait
   id: PsionicInsulation
@@ -35,18 +22,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC
 
 - type: trait
   id: PsychoHistorian
@@ -66,19 +41,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC
 
 - type: trait
   id: Biomancer
@@ -93,19 +55,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC
 
 - type: trait
   id: Pyromancer
@@ -120,16 +69,3 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC

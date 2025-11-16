@@ -58,8 +58,10 @@ public sealed partial class BorgSystem : SharedBorgSystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
 
-    [ValidatePrototypeId<JobPrototype>]
-    public const string BorgJobId = "Borg";
+    // carmine edit: dont need this
+    // .2 | 2025
+    // [ValidatePrototypeId<JobPrototype>]
+    // public const string BorgJobId = "Borg";
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -114,11 +116,13 @@ public sealed partial class BorgSystem : SharedBorgSystem
         {
             if (_mind.TryGetMind(used, out _, out var mind) && mind.Session != null)
             {
-                if (!CanPlayerBeBorged(mind.Session))
-                {
-                    Popup.PopupEntity(Loc.GetString("borg-player-not-allowed"), used, args.User);
-                    return;
-                }
+                // carmine edit: dont need this
+                // .2 | 2025
+                // if (!CanPlayerBeBorged(mind.Session))
+                // {
+                //     Popup.PopupEntity(Loc.GetString("borg-player-not-allowed"), used, args.User);
+                //     return;
+                // }
             }
 
             _container.Insert(used, component.BrainContainer);
@@ -251,13 +255,15 @@ public sealed partial class BorgSystem : SharedBorgSystem
         if (!_mind.TryGetMind(uid, out var mindId, out var mind) || mind.Session == null)
             return;
 
-        if (!CanPlayerBeBorged(mind.Session))
-        {
-            Popup.PopupEntity(Loc.GetString("borg-player-not-allowed-eject"), uid);
-            Container.RemoveEntity(containerEnt, uid);
-            _throwing.TryThrow(uid, _random.NextVector2() * 5, 5f);
-            return;
-        }
+        // carmine edit: dont need this
+        // .2 | 2025
+        // if (!CanPlayerBeBorged(mind.Session))
+        // {
+        //     Popup.PopupEntity(Loc.GetString("borg-player-not-allowed-eject"), uid);
+        //     Container.RemoveEntity(containerEnt, uid);
+        //     _throwing.TryThrow(uid, _random.NextVector2() * 5, 5f);
+        //     return;
+        // }
 
         _mind.TransferTo(mindId, containerEnt, mind: mind);
     }
@@ -311,15 +317,17 @@ public sealed partial class BorgSystem : SharedBorgSystem
         _appearance.SetData(uid, BorgVisuals.HasPlayer, false);
     }
 
-    /// <summary>
-    /// Checks that a player has fulfilled the requirements for the borg job.
-    /// If they don't have enough hours, they cannot be placed into a chassis.
-    /// </summary>
-    public bool CanPlayerBeBorged(ICommonSession session)
-    {
-        if (_banManager.GetJobBans(session.UserId)?.Contains(BorgJobId) == true)
-            return false;
+    // carmine edit: dont need this
+    // .2 | 2025
+    // /// <summary>
+    // /// Checks that a player has fulfilled the requirements for the borg job.
+    // /// If they don't have enough hours, they cannot be placed into a chassis.
+    // /// </summary>
+    // public bool CanPlayerBeBorged(ICommonSession session)
+    // {
+    //     if (_banManager.GetJobBans(session.UserId)?.Contains(BorgJobId) == true)
+    //         return false;
 
-        return true;
-    }
+    //     return true;
+    // }
 }

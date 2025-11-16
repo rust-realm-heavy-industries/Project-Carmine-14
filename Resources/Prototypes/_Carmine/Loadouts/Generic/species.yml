@@ -1,0 +1,9 @@
+- type: loadout
+  id: CarmineBaseLoadoutSpeciesEmergencyNitrogenTank
+  category: Species
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutAirTank
+  items:
+    - EmergencyNitrogenTankFilled

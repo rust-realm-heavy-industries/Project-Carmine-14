@@ -1,0 +1,4 @@
+- type: lifepath
+  id: Spacer
+  nameKey: lifepath_name_spacer
+  descriptionKey: lifepath_description_spacer

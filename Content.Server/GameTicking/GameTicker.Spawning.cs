@@ -42,9 +42,11 @@ namespace Content.Server.GameTicking
 
         [ValidatePrototypeId<LocalizedDatasetPrototype>]
         public const string AiNamesDataset = "NamesAI";
-
-        [ValidatePrototypeId<JobPrototype>]
-        public const string CyborgJobPrototypeName = "Borg";
+        
+        // carmine edit: dont need this
+        // .2 | 2025
+        // [ValidatePrototypeId<JobPrototype>]
+        // public const string CyborgJobPrototypeName = "Borg";
 
         /// <summary>
         /// How many players have joined the round through normal methods.
@@ -263,12 +265,14 @@ namespace Content.Server.GameTicking
                     _stationSpawning.EquipJobName(mob, jobPrototype);
             }
 
-            if (jobPrototype.ID == CyborgJobPrototypeName
-                && character.CyborgName != null)
-            {
-                EnsureComp<RandomMetadataExcludedComponent>(mob);
-                _metaData.SetEntityName(mob, character.CyborgName);
-            }
+            // carmine edit: dont need this
+            // .2 | 2025
+            // if (jobPrototype.ID == CyborgJobPrototypeName
+            //     && character.CyborgName != null)
+            // {
+            //     EnsureComp<RandomMetadataExcludedComponent>(mob);
+            //     _metaData.SetEntityName(mob, character.CyborgName);
+            // }
 
             _mind.TransferTo(newMind, mob);
 

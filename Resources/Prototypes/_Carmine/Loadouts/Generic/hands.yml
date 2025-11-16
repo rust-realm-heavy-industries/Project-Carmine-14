@@ -1,0 +1,35 @@
+- type: loadout
+  id: CarmineBaseLoadoutHandsGlovesLeather
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsGlovesLeather
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+
+
+- type: loadout
+  id: CarmineBaseLoadoutHandsGlovesFingerlessWhite
+  category: Hands
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  items:
+    - ClothingHandsGlovesFingerlessWhite
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+
+- type: loadout
+  id: CarmineBaseLoadoutHandsClothWrap
+  category: Hands
+  cost: 0
+  exclusive: false
+  customColorTint: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+  items:
+    - ClothingClothWrap

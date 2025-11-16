@@ -3,15 +3,6 @@
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -28,15 +19,6 @@
   category: Physical
   points: 1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -52,15 +34,6 @@
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -77,15 +50,6 @@
   category: Physical
   points: 2
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -100,17 +64,6 @@
   id: Vigor
   category: Physical
   points: -6
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Oni
-        - IPC
   functions:
     - !type:TraitModifyStamina
       staminaModifier: 10
@@ -146,16 +99,6 @@
   id: HighAdrenaline
   category: Physical
   points: -2
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -233,16 +176,6 @@
   category: Physical
   points: -3
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Felinid
-        - Tajaran
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -257,16 +190,6 @@
   category: Physical
   points: 4
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Felinid
-        - Tajaran
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -280,15 +203,6 @@
   id: MartialArtist
   category: Physical
   points: -5
-  requirements:
-  - !type:CharacterJobRequirement
-    inverted: true
-    jobs:
-      - Borg
-      - MedicalBorg
-      - Boxer
-      - MartialArtist
-      - Gladiator
   functions:
     - !type:TraitModifyUnarmed
       heavyOnLightMiss: true
@@ -314,11 +228,6 @@
   category: Physical
   points: 0
   requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Felinid # Felinids/Tajaran already have this feature by default.
-        - Tajaran
     - !type:CharacterHeightRequirement
       max: 150
     - !type:CharacterWidthRequirement
@@ -337,12 +246,6 @@
   id: TemperatureTolerance
   category: Physical
   points: -1
-  requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Vulpkanin # This trait functions exactly as-is for the Vulpkanin trait.
-        - Plasmaman # Plasmamen have cold immunity so this trait is unnecessary
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -484,14 +387,6 @@
   category: Physical
   points: -10
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -519,15 +414,6 @@
   category: Physical
   points: 8
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -543,15 +429,6 @@
   category: Physical
   points: 6
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
