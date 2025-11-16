@@ -1,0 +1,183 @@
+# FAC1
+- type: entity
+  parent: FAC1Airlock
+  id: FAC1AirlockShip
+  suffix: FAC1, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC1DoorElectronicsShip ]
+
+- type: entity
+  parent: FAC1Airlock
+  id: FAC1AirlockStation
+  suffix: FAC1, Station
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC1DoorElectronicsStation ]
+
+- type: entity
+  parent: FAC1Airlock
+  id: FAC1AirlockMedical
+  suffix: FAC1, Medical
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC1DoorElectronicsMedical ]
+
+- type: entity
+  parent: FAC1Airlock
+  id: FAC1AirlockMilitary
+  suffix: FAC1, Military
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC1DoorElectronicsMilitary ]
+
+- type: entity
+  parent: FAC1Airlock
+  id: FAC1AirlockCommand
+  suffix: FAC1, Command
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC1DoorElectronicsCommand ]
+
+# FAC2
+- type: entity
+  parent: FAC2Airlock
+  id: FAC2AirlockShip
+  suffix: FAC2, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC2DoorElectronicsShip ]
+
+- type: entity
+  parent: FAC2Airlock
+  id: FAC2AirlockStation
+  suffix: FAC2, Station
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC2DoorElectronicsStation ]
+
+- type: entity
+  parent: FAC2Airlock
+  id: FAC2AirlockMedical
+  suffix: FAC2, Medical
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC2DoorElectronicsMedical ]
+
+- type: entity
+  parent: FAC2Airlock
+  id: FAC2AirlockMilitary
+  suffix: FAC2, Military
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC2DoorElectronicsMilitary ]
+
+- type: entity
+  parent: FAC2Airlock
+  id: FAC2AirlockCommand
+  suffix: FAC2, Command
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC2DoorElectronicsCommand ]
+
+# FAC3
+- type: entity
+  parent: FAC3Airlock
+  id: FAC3AirlockShip
+  suffix: FAC3, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC3DoorElectronicsShip ]
+
+- type: entity
+  parent: FAC3Airlock
+  id: FAC3AirlockStation
+  suffix: FAC3, Station
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC3DoorElectronicsStation ]
+
+- type: entity
+  parent: FAC3Airlock
+  id: FAC3AirlockMedical
+  suffix: FAC3, Medical
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC3DoorElectronicsMedical ]
+
+- type: entity
+  parent: FAC3Airlock
+  id: FAC3AirlockMilitary
+  suffix: FAC3, Military
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC3DoorElectronicsMilitary ]
+
+- type: entity
+  parent: FAC3Airlock
+  id: FAC3AirlockCommand
+  suffix: FAC3, Command
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC3DoorElectronicsCommand ]
+
+# FAC4
+- type: entity
+  parent: FAC4Airlock
+  id: FAC4AirlockShip
+  suffix: FAC4, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC4DoorElectronicsShip ]
+
+- type: entity
+  parent: FAC4Airlock
+  id: FAC4AirlockStation
+  suffix: FAC4, Station
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC4DoorElectronicsStation ]
+
+- type: entity
+  parent: FAC4Airlock
+  id: FAC4AirlockMedical
+  suffix: FAC4, Medical
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC4DoorElectronicsMedical ]
+
+- type: entity
+  parent: FAC4Airlock
+  id: FAC4AirlockMilitary
+  suffix: FAC4, Military
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC4DoorElectronicsMilitary ]
+
+- type: entity
+  parent: FAC4Airlock
+  id: FAC4AirlockCommand
+  suffix: FAC4, Command
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ FAC4DoorElectronicsCommand ]
