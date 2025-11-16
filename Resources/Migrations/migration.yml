@@ -206,12 +206,13 @@ AirlockExternalGlassEasyPryLocked: AirlockExternalGlassLocked
 AirlockGlassShuttleEasyPryLocked: AirlockExternalGlassShuttleLocked
 AirlockShuttleEasyPryLocked: AirlockExternalShuttleLocked
 
+# CARMINE EDIT: CHANGED TO NULL TO MAKE MAPS COMPILE
 # 2024-03-10
-ClothingBackpackFilledDetective: ClothingBackpackSecurityFilledDetective
-ClothingBackpackDuffelFilledDetective: ClothingBackpackDuffelSecurityFilledDetective
-ClothingBackpackSatchelFilledDetective: ClothingBackpackSatchelSecurityFilledDetective
-FoodChili: FoodChiliPepper
-FoodChilly: FoodChillyPepper
+ClothingBackpackFilledDetective: null
+ClothingBackpackDuffelFilledDetective: null
+ClothingBackpackSatchelFilledDetective: null
+FoodChili: null
+FoodChilly: null
 
 # 2024-03-16
 ClothingHeadHatHairflower: FoodPoppy
@@ -288,22 +289,23 @@ SignHydro3: SignHydro1
 # 2024-07-27
 LogicGate: LogicGateOr
 
+# CARMINE EDIT: CHANGED TO NULL TO MAKE MAPS COMPILE
 # 2024-08-11
-FoodTacoBeef: FoodTacoShell
-FoodTacoChicken: FoodTacoShell
-FoodTacoFish: FoodTacoShell
-FoodTacoBeefSupreme: FoodTacoShell
-FoodTacoChickenSupreme: FoodTacoShell
-FoodTacoRat: FoodTacoShell
+FoodTacoBeef: null
+FoodTacoChicken: null
+FoodTacoFish: null
+FoodTacoBeefSupreme: null
+FoodTacoChickenSupreme: null
+FoodTacoRat: null
 
-FoodMeatHumanKebab: FoodKebabSkewer
-FoodMeatLizardtailKebab: FoodKebabSkewer
-FoodMeatRatKebab: FoodKebabSkewer
-FoodMeatRatdoubleKebab: FoodKebabSkewer
-FoodMeatSnakeKebab: FoodKebabSkewer
-FoodMeatHawaiianKebab: FoodKebabSkewer
-FoodMeatKebab: FoodKebabSkewer
-FoodMeatFiestaKebab: FoodKebabSkewer
+FoodMeatHumanKebab: null
+FoodMeatLizardtailKebab: null
+FoodMeatRatKebab: null
+FoodMeatRatdoubleKebab: null
+FoodMeatSnakeKebab: null
+FoodMeatHawaiianKebab: null
+FoodMeatKebab: null
+FoodMeatFiestaKebab: null
 
 # 2024-10-09
 # Removal of separate borg chassis parts, replace them with generic borg parts.
@@ -362,32 +364,33 @@ BorgModuleGrapplingGun: null
 WeaponForceGunAdmin: null
 WeaponTetherGunAdmin: null
 
+# CARMINE EDIT: CHANGED TO NULL TO MAKE MAPS COMPILE
 # Lavaland EE stuff
 TreasureDatadiskEncrypted: null
-VendingMachineBoozeSyndicate: VendingMachineBooze
-ClothingOuterHardsuitSyndicateDurathread: ClothingOuterHardsuitSyndicate
-PoweredDimSmallLight: PoweredSmallLight
+VendingMachineBoozeSyndicate: null
+ClothingOuterHardsuitSyndicateDurathread: null
+# PoweredDimSmallLight: PoweredSmallLight
 PosterLegitGoobFaded: null
-ClothingOuterWinterColorBlue: ClothingOuterWinterMed
-ClothingOuterWinterColorBrown: ClothingOuterWinterHydro
+ClothingOuterWinterColorBlue: null
+ClothingOuterWinterColorBrown: null
 MineralScanner: null
 AdvancedMineralScanner: null
-FoamThrongler: PlushieThrongler
+FoamThrongler: null
 GlueGrenade: null
-LubeGrenade: CleanerGrenade
+LubeGrenade: null
 PlushieBlackburn: null # Waiting for port
 PlushieBlackburnMatryoskya: null
 PlushieDesislavaBlackburn: null
 PlushieDurk: null
 PlushieLouie: null
 PlushieRainbowLizard: null
-SoapHomemadeBanana: Soap
+SoapHomemadeBanana: null
 
 BoxAgrichem: null
 portableChemicalMixer: null
 
-WallRockBasaltBSCrystal: WallRockBasaltBluespace
-AirlockHydroponics: AirlockHydroponicsLocked
+WallRockBasaltBSCrystal: null
+AirlockHydroponics: null
 Biogenerator: null
 FloraGreyStalagmite: null
 
