@@ -18,9 +18,9 @@ namespace Content.Shared.GameTicking
         // But this is easier, and at least it isn't hardcoded.
         //TODO: Move these, they really belong in StationJobsSystem or a cvar.
         [ValidatePrototypeId<JobPrototype>]
-        public const string FallbackOverflowJob = "Passenger";
+        public const string FallbackOverflowJob = "Passenger"; // carmine edit: temporary
 
-        public const string FallbackOverflowJobName = "job-name-freeholder";
+        public const string FallbackOverflowJobName = "job-name-passenger"; // carmine edit: temporary. must match above or debug wont compile
 
         // TODO network.
         // Probably most useful for replays, round end info, and probably things like lobby menus.

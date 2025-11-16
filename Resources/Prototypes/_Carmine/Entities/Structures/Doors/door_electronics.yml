@@ -1,0 +1,183 @@
+# FAC1
+- type: entity
+  parent: DoorElectronics
+  id: FAC1DoorElectronicsShip
+  suffix: FAC1, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC1Ship"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC1DoorElectronicsStation
+  suffix: FAC1, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC1Station"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC1DoorElectronicsMedical
+  suffix: FAC1, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC1Medical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC1DoorElectronicsMilitary
+  suffix: FAC1, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC1Military"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC1DoorElectronicsCommand
+  suffix: FAC1, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC1Command"]]
+
+# FAC2
+- type: entity
+  parent: DoorElectronics
+  id: FAC2DoorElectronicsShip
+  suffix: FAC2, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC2Ship"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC2DoorElectronicsStation
+  suffix: FAC2, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC2Station"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC2DoorElectronicsMedical
+  suffix: FAC2, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC2Medical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC2DoorElectronicsMilitary
+  suffix: FAC2, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC2Military"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC2DoorElectronicsCommand
+  suffix: FAC2, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC2Command"]]
+
+# FAC3
+- type: entity
+  parent: DoorElectronics
+  id: FAC3DoorElectronicsShip
+  suffix: FAC3, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC3Ship"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC3DoorElectronicsStation
+  suffix: FAC3, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC3Station"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC3DoorElectronicsMedical
+  suffix: FAC3, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC3Medical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC3DoorElectronicsMilitary
+  suffix: FAC3, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC3Military"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC3DoorElectronicsCommand
+  suffix: FAC3, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC3Command"]]
+
+# FAC4
+- type: entity
+  parent: DoorElectronics
+  id: FAC4DoorElectronicsShip
+  suffix: FAC4, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC4Ship"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC4DoorElectronicsStation
+  suffix: FAC4, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC4Station"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC4DoorElectronicsMedical
+  suffix: FAC4, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC4Medical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC4DoorElectronicsMilitary
+  suffix: FAC4, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC4Military"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: FAC4DoorElectronicsCommand
+  suffix: FAC4, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["FAC4Command"]]
