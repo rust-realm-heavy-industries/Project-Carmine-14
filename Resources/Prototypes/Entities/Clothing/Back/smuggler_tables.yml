@@ -465,9 +465,7 @@
     children:
     - id: Crowbar
     - id: Multitool
-    - id: ClothingHandsGlovesColorYellow
     - id: Screwdriver
-    - id: ClothingHeadHatWeldingMaskFlame
     - id: WelderExperimental
       weight: 0.50
 

@@ -1487,50 +1487,9 @@
   components:
   - type: Mail
     contents:
-      - id: ClothingKimonoPink
-        orGroup: Clothes
-      - id: ClothingKimonoBlue
-        orGroup: Clothes
-      - id: ClothingKimonoPurple
-        orGroup: Clothes
-      - id: ClothingKimonoSky
-        orGroup: Clothes
-      - id: ClothingKimonoGreen
-        orGroup: Clothes
-      - id: ClothingUniformMartialGi
-        orGroup: Clothes
-      - id: ClothingNeckBling
-        orGroup: Clothes
-      - id: ClothingShoesBling
-        orGroup: Clothes
-      - id: ClothingNeckCloakAdmin
-        orGroup: Clothes
-      - id: ClothingHeadHatFancyCrown
-        orGroup: Clothes
-      - id: ClothingHeadHatCake
-        orGroup: Clothes
-      - id: ClothingHeadHatCone
-        orGroup: Clothes
-      - id: ClothingMaskOniRed
-        orGroup: Clothes
-      - id: ClothingMaskOniBlue
-        orGroup: Clothes
-      - id: ClothingHeadHatRichard
-        orGroup: Clothes
-      - id: ClothingHeadHatAnimalHeadslime
-        orGroup: Clothes
-      - id: ClothingHeadHatDogEars
-        orGroup: Clothes
-      - id: ClothingHeadHatCatEars
-        orGroup: Clothes
-      - id: ClothingEyesGlassesOutlawGlasses
-        orGroup: Clothes
-      - id: ClothingUniformJumpsuitGalaxyBlue
-        orGroup: Clothes
-        prob: 0.25
-      - id: ClothingUniformJumpsuitGalaxyRed
-        orGroup: Clothes
-        prob: 0.25
+      - id: MobCockroach
+        orGroup: Critter
+        prob: 0.36
 
 - type: entity
   categories: [ HideSpawnMenu ]

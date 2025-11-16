@@ -85,17 +85,7 @@
         color: red
   - type: RandomSpawner
     prototypes:
-    - ClothingUniformJumpsuitSalvageSpecialist
-    - ClothingNeckCloakMiner
-    - ClothingNeckMantleQM
     - ClothingBeltSalvageWebbing
-    - ClothingShoesBootsSalvage
-    - ClothingNeckScarfStripedBrown
-    - ClothingHeadHatQMsoft
-    - ClothingHeadBandBrown
-    - ClothingHeadsetMining
-    - ClothingBackpackDuffelSalvage
-    - ClothingBackpackMessengerSalvage
     chance: 1
     offset: 0.0
     rarePrototypes:
