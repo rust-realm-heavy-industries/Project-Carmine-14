@@ -2,11 +2,6 @@
   id: LightweightDrunk
   category: Physical
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -29,11 +24,6 @@
   # itemGroupSlots: 0
   category: TraitsSpeechAccents
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterItemGroupRequirement
       group: TraitsAccents
   functions:

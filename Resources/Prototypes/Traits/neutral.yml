@@ -17,11 +17,6 @@
  # slots: 0
  # itemGroupSlots: 0
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterItemGroupRequirement
       group: TraitsAccents
   functions:
@@ -185,11 +180,6 @@
   category: Mental
   points: 1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:

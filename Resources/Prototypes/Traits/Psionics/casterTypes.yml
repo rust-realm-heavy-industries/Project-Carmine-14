@@ -9,13 +9,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
@@ -35,12 +28,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
@@ -66,13 +53,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
@@ -93,13 +73,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
@@ -120,13 +93,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement

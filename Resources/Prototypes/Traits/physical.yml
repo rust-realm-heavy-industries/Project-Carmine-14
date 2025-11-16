@@ -3,11 +3,6 @@
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -28,11 +23,6 @@
   category: Physical
   points: 1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -52,11 +42,6 @@
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -77,11 +62,6 @@
   category: Physical
   points: 2
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -101,11 +81,6 @@
   category: Physical
   points: -6
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -147,11 +122,6 @@
   category: Physical
   points: -2
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -233,11 +203,6 @@
   category: Physical
   points: -3
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -257,11 +222,6 @@
   category: Physical
   points: 4
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -280,15 +240,6 @@
   id: MartialArtist
   category: Physical
   points: -5
-  requirements:
-  - !type:CharacterJobRequirement
-    inverted: true
-    jobs:
-      - Borg
-      - MedicalBorg
-      - Boxer
-      - MartialArtist
-      - Gladiator
   functions:
     - !type:TraitModifyUnarmed
       heavyOnLightMiss: true
@@ -484,10 +435,6 @@
   category: Physical
   points: -10
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -519,11 +466,6 @@
   category: Physical
   points: 8
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -543,11 +485,6 @@
   category: Physical
   points: 6
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
