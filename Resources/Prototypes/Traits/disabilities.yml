@@ -3,11 +3,6 @@
   category: Visual
   points: 6
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -24,11 +19,6 @@
   category: Visual
   points: 1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -43,12 +33,6 @@
   id: Narcolepsy
   category: Mental
   points: 6
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
   functions:
     - !type:TraitAddComponent
       components:
@@ -83,13 +67,6 @@
   id: Muted
   category: Mental
   points: 6
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Mime
   functions:
     - !type:TraitAddComponent
       components:
@@ -104,16 +81,6 @@
   id: Uncloneable
   category: Physical
   points: 1
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-    - !type:CharacterLifepathRequirement
-      inverted: true
-      lifepaths:
-        - Clone
   functions:
     - !type:TraitAddComponent
       components:
@@ -125,11 +92,6 @@
   # itemGroupSlots: 0
   category: TraitsSpeechAccents
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterItemGroupRequirement
       group: TraitsAccents
   functions:
@@ -140,12 +102,6 @@
 - type: trait
   id: Snoring
   category: Auditory
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
   functions:
     - !type:TraitAddComponent
       components:
@@ -214,11 +170,6 @@
   category: Physical
   points: 4
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -233,12 +184,6 @@
   id: Hemophilia
   category: Physical
   points: 4
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
   functions:
     - !type:TraitAddComponent
       components:
@@ -269,16 +214,6 @@
   id: Clumsy
   category: Physical
   points: 5
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Clown # This trait functions exactly as is for the Clown's trait.
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command # Because I know for a fact people will play Captain and grief with their inability to fight back.
-        - Security # Because I know for a fact people will play Security and grief with their inability to use guns.
   functions:
     - !type:TraitAddComponent
       components:

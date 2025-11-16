@@ -6,18 +6,6 @@
     - !type:TraitAddComponent
       components:
         - type: CPRTraining
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - MedicalDoctor
-        - Chemist
-        - MedicalIntern
-        - Paramedic
-        - ChiefMedicalOfficer
-        - Brigmedic
-        - SeniorPhysician
-        - BlueshieldOfficer
 
 - type: trait
   id: SelfAware
@@ -44,11 +32,6 @@
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -65,11 +48,6 @@
   category: Physical
   points: -6
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterTraitRequirement
       inverted: true
       traits:

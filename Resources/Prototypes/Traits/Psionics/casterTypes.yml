@@ -9,13 +9,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
 
 - type: trait
   id: PsionicInsulation
@@ -29,12 +22,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
 
 - type: trait
   id: PsychoHistorian
@@ -54,13 +41,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
 
 - type: trait
   id: Biomancer
@@ -75,13 +55,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner
 
 - type: trait
   id: Pyromancer
@@ -96,10 +69,3 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Chaplain
-        - Prisoner

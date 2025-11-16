@@ -25,12 +25,11 @@
     - Snout
   - type: LanguageKnowledge
     speaks:
-    - Sign # basic language needed, otherwise it gives u universal lang
-    # - Solarian # uncomment me if we need universal langs again
+    # - Sign # basic language needed, otherwise it gives u universal lang
+    - TauCetiBasic # CARMINE - TEMPORARY
     understands:
-    - Sign # basic language needed, otherwise it gives u universal lang
-    - TauCetiBasic #needed for vending machines
-    # - Solarian # uncomment me if we need universal langs again
+    # - Sign # basic language needed, otherwise it gives u universal lang
+    - TauCetiBasic # CARMINE - TEMPORARY
   - type: FootPrints
 
 - type: entity

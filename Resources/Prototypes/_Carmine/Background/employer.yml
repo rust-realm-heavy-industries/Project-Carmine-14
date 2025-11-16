@@ -1,0 +1,7 @@
+# The default, should be able to do all jobs
+- type: employer
+  id: NanoTrasen
+  nameKey: employer_name_nanotrasen
+  descriptionKey: employer_description_nanotrasen
+  primaryColour: "#3d4f66"
+  secondaryColour: "#282828"

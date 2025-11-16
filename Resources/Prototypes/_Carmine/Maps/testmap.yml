@@ -5,7 +5,7 @@
   minPlayers: 0
   stations:
     TestMapCarmine:
-      stationProto: StandardCrescentStation
+      stationProto: TestStation
       gridComponents:
         - type: BlockShipWeaponProjectileGrid
         - type: PreventPilot

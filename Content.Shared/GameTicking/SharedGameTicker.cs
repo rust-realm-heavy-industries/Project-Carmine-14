@@ -18,7 +18,7 @@ namespace Content.Shared.GameTicking
         // But this is easier, and at least it isn't hardcoded.
         //TODO: Move these, they really belong in StationJobsSystem or a cvar.
         [ValidatePrototypeId<JobPrototype>]
-        public const string FallbackOverflowJob = "FreeholderDSM";
+        public const string FallbackOverflowJob = "Passenger";
 
         public const string FallbackOverflowJobName = "job-name-freeholder";
 
