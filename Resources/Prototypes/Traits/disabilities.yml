@@ -3,11 +3,6 @@
   category: Visual
   points: 6
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -24,11 +19,6 @@
   category: Visual
   points: 1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -44,11 +34,6 @@
   category: Mental
   points: 6
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -88,12 +73,6 @@
   category: Mental
   points: 6
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
-        - Mime
   functions:
     - !type:TraitAddComponent
       components:
@@ -109,11 +88,6 @@
   category: Physical
   points: 1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterLifepathRequirement
       inverted: true
       lifepaths:
@@ -133,11 +107,6 @@
   # itemGroupSlots: 0
   category: TraitsSpeechAccents
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -153,11 +122,6 @@
   id: Snoring
   category: Auditory
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -242,11 +206,6 @@
   category: Physical
   points: 4
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -268,11 +227,6 @@
   category: Physical
   points: 4
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Borg
-        - MedicalBorg
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:

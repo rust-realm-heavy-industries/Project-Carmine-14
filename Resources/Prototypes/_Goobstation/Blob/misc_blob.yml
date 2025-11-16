@@ -55,19 +55,6 @@
         - sprite: Mobs/Animals/bat.rsi
           state: bat
 
-# Blob
-- type: entity
-  parent: BaseMindRoleAntag
-  id: MindRoleBlob
-  name: Blob Role
-#  description: mind-role-blob-description
-  components:
-  - type: MindRole
-    antagPrototype: Blob
-    exclusiveAntag: true
-    roleType: TeamAntagonist
-  - type: BlobRole
-
 - type: factionIcon
   id: BlobFaction
   priority: 10
