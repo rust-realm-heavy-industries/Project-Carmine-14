@@ -303,28 +303,6 @@
   - type: BaseCultSpell
 
 - type: entity
-  id: ActionForceWallCult
-  name: Shield
-  description: This spell creates a temporary forcefield to shield yourself and allies from incoming fire.
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Sprite
-    sprite: WhiteDream/BloodCult/actions.rsi
-    state: summon_force_wall
-  - type: InstantAction
-    useDelay: 40
-    itemIconStyle: BigAction
-    sound: !type:SoundPathSpecifier
-      path: /Audio/Magic/forcewall.ogg
-    icon:
-      sprite: WhiteDream/BloodCult/actions.rsi
-      state: summon_force_wall
-    event: !type:InstantSpawnSpellEvent
-      prototype: WallForceCult
-      posData: !type:TargetInFront
-  - type: BaseCultSpell
-
-- type: entity
   id: ActionPhaseShift
   name: Phase Shift
   description: This spell allows you to pass through walls.

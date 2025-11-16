@@ -447,10 +447,7 @@
         minRange: 4.5
         maxRange: 7.5
       spawns:
-      - WallSpawnAsteroid
-      - WallSpawnAsteroid
-      - WallSpawnAsteroidUranium
-      - WallSpawnAsteroidUraniumCrab
+      - Crowbar
     - settings:
         spawnOnPulse: true
         maxAmount: 3
@@ -465,10 +462,7 @@
         minRange: 5
         maxRange: 15
       spawns:
-      - CrystalGreen
-      - WallSpawnAsteroid
-      - WallSpawnAsteroid
-      - WallSpawnAsteroidUraniumCrab
+      - Crowbar
     - settings:
         spawnOnSuperCritical: true
         minAmount: 6
@@ -497,10 +491,7 @@
         minRange: 4.5
         maxRange: 7.5
       spawns:
-      - WallSpawnAsteroid
-      - WallSpawnAsteroid
-      - WallSpawnAsteroidQuartz
-      - WallSpawnAsteroidQuartzCrab
+      - Crowbar
     - settings:
         spawnOnPulse: true
         maxAmount: 3
@@ -515,10 +506,7 @@
         minRange: 5
         maxRange: 15
       spawns:
-      - CrystalGrey
-      - WallSpawnAsteroid
-      - WallSpawnAsteroid
-      - WallSpawnAsteroidQuartzCrab
+      - Crowbar
     - settings:
         spawnOnSuperCritical: true
         minAmount: 6
@@ -547,10 +535,7 @@
         minRange: 4.5
         maxRange: 7.5
       spawns:
-      - WallSpawnAsteroid
-      - WallSpawnAsteroid
-      - WallSpawnAsteroidSilver
-      - WallSpawnAsteroidSilverCrab
+      - Crowbar
     - settings:
         spawnOnPulse: true
         maxAmount: 3
@@ -565,10 +550,7 @@
         minRange: 5
         maxRange: 15
       spawns:
-      - CrystalCyan
-      - WallSpawnAsteroid
-      - WallSpawnAsteroid
-      - WallSpawnAsteroidSilverCrab
+      - Crowbar
     - settings:
         spawnOnSuperCritical: true
         minAmount: 6
@@ -597,10 +579,7 @@
         minRange: 4.5
         maxRange: 7.5
       spawns:
-      - WallSpawnAsteroid
-      - WallSpawnAsteroid
-      - WallSpawnAsteroidIron
-      - WallSpawnAsteroidIronCrab
+      - Crowbar
     - settings:
         spawnOnPulse: true
         maxAmount: 3
@@ -615,10 +594,7 @@
         minRange: 5
         maxRange: 15
       spawns:
-      - CrystalOrange
-      - WallSpawnAsteroid
-      - WallSpawnAsteroid
-      - WallSpawnAsteroidIronCrab
+      - Crowbar
     - settings:
         spawnOnSuperCritical: true
         minAmount: 6
