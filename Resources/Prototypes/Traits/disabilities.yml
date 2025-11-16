@@ -33,11 +33,6 @@
   id: Narcolepsy
   category: Mental
   points: 6
-  requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
   functions:
     - !type:TraitAddComponent
       components:
@@ -72,7 +67,6 @@
   id: Muted
   category: Mental
   points: 6
-  requirements:
   functions:
     - !type:TraitAddComponent
       components:
@@ -92,10 +86,6 @@
       inverted: true
       lifepaths:
         - Clone
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
   functions:
     - !type:TraitAddComponent
       components:
@@ -107,10 +97,6 @@
   # itemGroupSlots: 0
   category: TraitsSpeechAccents
   requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
     - !type:CharacterItemGroupRequirement
       group: TraitsAccents
   functions:
@@ -121,11 +107,6 @@
 - type: trait
   id: Snoring
   category: Auditory
-  requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
   functions:
     - !type:TraitAddComponent
       components:
@@ -140,10 +121,6 @@
       inverted: true
       traits:
         - ParkourTraining
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Diona
   functions:
     - !type:TraitAddComponent
       components:
@@ -166,10 +143,6 @@
         - ParkourTraining
         - SnailPaced
         - WheelchairBound
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Diona
   functions:
     - !type:TraitAddComponent
       components:
@@ -189,10 +162,6 @@
         - ParkourTraining
         - Sluggish
         - WheelchairBound
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Diona
   functions:
     - !type:TraitAddComponent
       components:
@@ -206,12 +175,6 @@
   category: Physical
   points: 4
   requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
-        - Lamia
-        - Plasmaman
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -226,13 +189,6 @@
   id: Hemophilia
   category: Physical
   points: 4
-  requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
-        - Lamia
-        - Plasmaman
   functions:
     - !type:TraitAddComponent
       components:
@@ -247,11 +203,6 @@
   category: Visual
   points: 1
   requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Vulpkanin # This trait functions exactly as-is for the Vulpkanin trait.
-        - Voidborn
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -268,12 +219,6 @@
   id: Clumsy
   category: Physical
   points: 5
-  requirements:
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command # Because I know for a fact people will play Captain and grief with their inability to fight back.
-        - Security # Because I know for a fact people will play Security and grief with their inability to use guns.
   functions:
     - !type:TraitAddComponent
       components:

@@ -9,12 +9,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC
 
 - type: trait
   id: PsionicInsulation
@@ -28,12 +22,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC
 
 - type: trait
   id: PsychoHistorian
@@ -53,12 +41,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC
 
 - type: trait
   id: Biomancer
@@ -73,12 +55,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC
 
 - type: trait
   id: Pyromancer
@@ -93,9 +69,3 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - IPC

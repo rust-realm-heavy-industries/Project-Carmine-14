@@ -115,9 +115,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsAccents
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Plasmaman
   functions:
     - !type:TraitAddComponent
       components:
@@ -126,11 +123,6 @@
 - type: trait
   id: NormalVision
   category: Visual
-  requirements:
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Harpy
-        - Vulpkanin
   functions:
     - !type:TraitRemoveComponent
       components:
@@ -179,11 +171,6 @@
   id: AddictionNicotine
   category: Mental
   points: 1
-  requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - IPC
   functions:
     - !type:TraitAddMoodlets
       moodEffects:

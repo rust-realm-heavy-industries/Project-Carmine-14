@@ -7,11 +7,6 @@
       traits:
         - HeavyweightDrunk
         - LiquorLifeline
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Dwarf
-        - IPC
   functions:
     - !type:TraitAddComponent
       components:
