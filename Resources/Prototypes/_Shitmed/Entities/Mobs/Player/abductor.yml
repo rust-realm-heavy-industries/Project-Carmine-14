@@ -115,13 +115,6 @@
 - type: startingGear
   id: LoneAbductorGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAbductor
-    ears: ClothingHeadsetAltAbductor
-    shoes: ClothingShoesBootsCombat
-    gloves: ClothingHandsGlovesCombat
-    head: ClothingHeadHelmetAbductor
-    outerClothing: ClothingOuterCoatAbductor
-    back: ClothingBackpackAbductor
     pocket1: AbductorGizmo
     pocket2: WeaponAlien
     suitstorage: Wonderprod
@@ -129,26 +122,12 @@
 - type: startingGear
   id: AbductorScientistGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAbductor
-    ears: ClothingHeadsetAltAbductor
-    shoes: ClothingShoesBootsCombat
-    gloves: ClothingHandsGlovesCombat
-    head: ClothingHeadMirror
-    outerClothing: ClothingOuterCoatAbductor
-    back: ClothingBackpackDuffelAbductor
     pocket1: AbductorGizmo
     suitstorage: WeaponDecloner
 
 - type: startingGear
   id: AbductorAgentGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAbductor
-    ears: ClothingHeadsetAltAbductor
-    shoes: ClothingShoesBootsCombat
-    gloves: ClothingHandsGlovesCombat
-    head: ClothingHeadHelmetAbductor
-    outerClothing: ClothingOuterArmorAbductor
-    back: ClothingBackpackAbductor
     pocket1: Silencer
     pocket2: WeaponAlien
     suitstorage: Wonderprod

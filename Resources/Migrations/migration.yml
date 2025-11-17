@@ -8,25 +8,27 @@
 # WallSolid: Window
 # Table: null
 
+# nulled for carmine
 # 2023-07-03
-ClothingHeadHelmetHelmet: ClothingHeadHelmetBasic
-ClothingHeadHelmetHelmetOld: ClothingHeadHelmetBasic
+ClothingHeadHelmetHelmet: null
+ClothingHeadHelmetHelmetOld: null
 
 # 2023-07-04
 # Bulletproof armor is almost statistically identical to kevlar, however, before this kevlar armor was the closest thing there was to "basic" armor. It makes the most sense to replace it with this.
-ClothingOuterVestKevlar: ClothingOuterArmorBasic
+ClothingOuterVestKevlar: null
 
 # 2023-07-10
 Intercom: IntercomCommon
 
 # 2023-07-12
 ToyAssistant: ToyFigurinePassenger
-
+#nulled for carmine
 # 2023-07-20
-ForensicGloves: ClothingHandsGlovesForensic
+ForensicGloves: null
 
+#nulled for carmine
 # 2023-07-24
-ClothingEyesGlassesBeer: ClothingEyesHudBeer
+ClothingEyesGlassesBeer: null
 
 # 2023-08-01
 lantern: Lantern
@@ -89,8 +91,8 @@ GeneratorPlasmaMachineCircuitboard: PortableGeneratorPacmanMachineCircuitboard
 GeneratorUraniumMachineCircuitboard: PortableGeneratorSuperPacmanMachineCircuitboard
 
 # 2023-12-12
-#No this is not the CMO hardsuit, their prototype IDs were just confusingly similar
-ClothingOuterHardsuitMedic: ClothingOuterHardsuitSyndieMedic
+#nulled for carmine
+ClothingOuterHardsuitMedic: null
 
 # 2023-12-13
 VendingMachineSmartFridge: SmartFridge
@@ -114,8 +116,9 @@ WarpPointBeaconScience: null
 WarpPointBeaconSecurity: null
 WarpPointBeaconService: null
 
+#nulled for carmine
 # 2023-12-30
-ClothingEyesGlassesCosmeticSunglasses: ClothingEyesGlassesSunglasses
+ClothingEyesGlassesCosmeticSunglasses: null
 SpawnPointAssistant: SpawnPointPassenger
 
 # 2024-01-05
@@ -206,12 +209,13 @@ AirlockExternalGlassEasyPryLocked: AirlockExternalGlassLocked
 AirlockGlassShuttleEasyPryLocked: AirlockExternalGlassShuttleLocked
 AirlockShuttleEasyPryLocked: AirlockExternalShuttleLocked
 
+# CARMINE EDIT: CHANGED TO NULL TO MAKE MAPS COMPILE
 # 2024-03-10
-ClothingBackpackFilledDetective: ClothingBackpackSecurityFilledDetective
-ClothingBackpackDuffelFilledDetective: ClothingBackpackDuffelSecurityFilledDetective
-ClothingBackpackSatchelFilledDetective: ClothingBackpackSatchelSecurityFilledDetective
-FoodChili: FoodChiliPepper
-FoodChilly: FoodChillyPepper
+ClothingBackpackFilledDetective: null
+ClothingBackpackDuffelFilledDetective: null
+ClothingBackpackSatchelFilledDetective: null
+FoodChili: null
+FoodChilly: null
 
 # 2024-03-16
 ClothingHeadHatHairflower: FoodPoppy
@@ -219,16 +223,18 @@ ClothingHeadHatHairflower: FoodPoppy
 # 2024-03-21
 RPED: null
 
+# nulled for carmine
 # 2024-03-30
 TraversalDistorterMachineCircuitboard: null
 MachineTraversalDistorter: null
 # These are technically not equivalent, but it probably makes more sense to replace any existing SCAF stuff with SOME kind of armor, instead of just deleting it outright.
-ClothingHeadHelmetScaf: ClothingHeadHelmetBasic
-ClothingOuterArmorScaf: ClothingOuterArmorBasic
+ClothingHeadHelmetScaf: null
+ClothingOuterArmorScaf: null
 
+# nulled for carmine
 # 2024-03-31
-ClothingNeckFlowerWreath: ClothingHeadHatFlowerWreath
-ClothingHeadHatFlowerCrown: ClothingHeadHatFlowerWreath
+ClothingNeckFlowerWreath: null
+ClothingHeadHatFlowerCrown: null
 BriefcaseSyndieBase: null
 
 # 2024-04-08
@@ -247,8 +253,9 @@ DrinkBottleGoldschlager: DrinkBottleGildlager
 soda_dispenser: SodaDispenser
 chem_master: ChemMaster
 
+# nulled for carmine
 # 2024-05-21
-CrateJanitorExplosive: ClosetJanitorBombFilled
+CrateJanitorExplosive: null
 
 # 2024-05-27
 DoorRemoteFirefight: null
@@ -256,8 +263,9 @@ DoorRemoteFirefight: null
 # 2024-06-03
 AirlockServiceCaptainLocked: AirlockCaptainLocked
 
+# nulled for carmine
 # 2024-06-15
-ClothingOuterCoatInspector: ClothingOuterCoatDetectiveLoadout
+ClothingOuterCoatInspector: null
 
 # 2024-06-23
 FloorTileItemReinforced: PartRodMetal1
@@ -288,22 +296,23 @@ SignHydro3: SignHydro1
 # 2024-07-27
 LogicGate: LogicGateOr
 
+# CARMINE EDIT: CHANGED TO NULL TO MAKE MAPS COMPILE
 # 2024-08-11
-FoodTacoBeef: FoodTacoShell
-FoodTacoChicken: FoodTacoShell
-FoodTacoFish: FoodTacoShell
-FoodTacoBeefSupreme: FoodTacoShell
-FoodTacoChickenSupreme: FoodTacoShell
-FoodTacoRat: FoodTacoShell
+FoodTacoBeef: null
+FoodTacoChicken: null
+FoodTacoFish: null
+FoodTacoBeefSupreme: null
+FoodTacoChickenSupreme: null
+FoodTacoRat: null
 
-FoodMeatHumanKebab: FoodKebabSkewer
-FoodMeatLizardtailKebab: FoodKebabSkewer
-FoodMeatRatKebab: FoodKebabSkewer
-FoodMeatRatdoubleKebab: FoodKebabSkewer
-FoodMeatSnakeKebab: FoodKebabSkewer
-FoodMeatHawaiianKebab: FoodKebabSkewer
-FoodMeatKebab: FoodKebabSkewer
-FoodMeatFiestaKebab: FoodKebabSkewer
+FoodMeatHumanKebab: null
+FoodMeatLizardtailKebab: null
+FoodMeatRatKebab: null
+FoodMeatRatdoubleKebab: null
+FoodMeatSnakeKebab: null
+FoodMeatHawaiianKebab: null
+FoodMeatKebab: null
+FoodMeatFiestaKebab: null
 
 # 2024-10-09
 # Removal of separate borg chassis parts, replace them with generic borg parts.
@@ -362,32 +371,33 @@ BorgModuleGrapplingGun: null
 WeaponForceGunAdmin: null
 WeaponTetherGunAdmin: null
 
+# CARMINE EDIT: CHANGED TO NULL TO MAKE MAPS COMPILE
 # Lavaland EE stuff
 TreasureDatadiskEncrypted: null
-VendingMachineBoozeSyndicate: VendingMachineBooze
-ClothingOuterHardsuitSyndicateDurathread: ClothingOuterHardsuitSyndicate
-PoweredDimSmallLight: PoweredSmallLight
+VendingMachineBoozeSyndicate: null
+ClothingOuterHardsuitSyndicateDurathread: null
+# PoweredDimSmallLight: PoweredSmallLight
 PosterLegitGoobFaded: null
-ClothingOuterWinterColorBlue: ClothingOuterWinterMed
-ClothingOuterWinterColorBrown: ClothingOuterWinterHydro
+ClothingOuterWinterColorBlue: null
+ClothingOuterWinterColorBrown: null
 MineralScanner: null
 AdvancedMineralScanner: null
-FoamThrongler: PlushieThrongler
+FoamThrongler: null
 GlueGrenade: null
-LubeGrenade: CleanerGrenade
+LubeGrenade: null
 PlushieBlackburn: null # Waiting for port
 PlushieBlackburnMatryoskya: null
 PlushieDesislavaBlackburn: null
 PlushieDurk: null
 PlushieLouie: null
 PlushieRainbowLizard: null
-SoapHomemadeBanana: Soap
+SoapHomemadeBanana: null
 
 BoxAgrichem: null
 portableChemicalMixer: null
 
-WallRockBasaltBSCrystal: WallRockBasaltBluespace
-AirlockHydroponics: AirlockHydroponicsLocked
+WallRockBasaltBSCrystal: null
+AirlockHydroponics: null
 Biogenerator: null
 FloraGreyStalagmite: null
 

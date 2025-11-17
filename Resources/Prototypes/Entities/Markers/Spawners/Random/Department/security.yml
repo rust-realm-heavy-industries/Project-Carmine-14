@@ -75,14 +75,6 @@
 #        - WeaponRifleAk
       rareChance: 0.05
       prototypes:
-        - RiotShield
-        - RiotBulletShield
-        - RiotLaserShield
-        - ClothingHeadHelmetBasic
-        - ClothingHeadHelmetRiot
-        - ClothingOuterArmorBasic
-        - ClothingOuterArmorRiot
-        - ClothingOuterArmorBulletproof
 #        - WeaponSubMachineGunWt550
         - WeaponDisabler
         - WeaponPistolMk58
@@ -133,16 +125,10 @@
           state: icon
     - type: RandomSpawner
       rarePrototypes:
-        - ClothingHeadHelmetSwat
+        - RiotBulletShield
       rareChance: 0.05
       prototypes:
         - RiotShield
         - RiotBulletShield
-        - RiotLaserShield
-        - ClothingHeadHelmetBasic
-        - ClothingHeadHelmetRiot
-        - ClothingOuterArmorBasic
-        - ClothingOuterArmorRiot
-        - ClothingOuterArmorBulletproof
       chance: 0.95
       offset: 0.0

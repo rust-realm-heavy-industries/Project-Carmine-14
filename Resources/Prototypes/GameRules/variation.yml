@@ -18,30 +18,6 @@
   - type: PoweredLightVariationPass
 
 - type: entity
-  id: SolidWallRustingVariationPass
-  parent: BaseVariationPass
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: WallReplaceVariationPass
-  - type: EntityReplaceVariationPass
-    entitiesPerReplacementAverage: 50
-    entitiesPerReplacementStdDev: 10
-    replacements:
-    - id: WallSolidRust
-
-- type: entity
-  id: ReinforcedWallRustingVariationPass
-  parent: BaseVariationPass
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: ReinforcedWallReplaceVariationPass
-  - type: EntityReplaceVariationPass
-    entitiesPerReplacementAverage: 50
-    entitiesPerReplacementStdDev: 10
-    replacements:
-    - id: WallReinforcedRust
-
-- type: entity
   id: BasicTrashVariationPass
   parent: BaseVariationPass
   categories: [ HideSpawnMenu ]

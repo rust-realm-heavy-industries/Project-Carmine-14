@@ -7,9 +7,6 @@
   - type: StorageFill
     contents:
       - id: CrowbarRed
-      - id: ClothingMaskBreath
-      - id: ClothingMaskBreath
-        prob: 0.5
       - id: EmergencyOxygenTankFilled
       - id: EmergencyOxygenTankFilled
         prob: 0.5
@@ -40,8 +37,6 @@
       - id: CableMVStack10
       - id: trayScanner
         prob: 0.9
-      - id: ClothingHandsGlovesColorYellow
-        prob: 0.05
         orGroup: GlovesOrWires
       - id: CableHVStack10
         orGroup: GlovesOrWires
@@ -61,8 +56,6 @@
       - id: CableMVStack10
       - id: trayScanner
         prob: 0.9
-      - id: ClothingHandsGlovesColorYellow
-        prob: 0.05
         orGroup: GlovesOrWires
       - id: CableHVStack10
         orGroup: GlovesOrWires
@@ -106,8 +99,6 @@
         prob: 0.5
       - id: FlashlightLantern
         prob: 0.7
-      - id: ClothingHeadHatHardhatBlue
-        prob: 0.5
 
 - type: entity
   parent: ToolboxSyndicate
@@ -122,8 +113,6 @@
     - id: Wirecutter
     - id: Welder
     - id: Multitool
-    - id: ClothingHandsGlovesCombat
-    - id: ClothingMaskGasSyndicate
 
 - type: entity
   id: ToolboxGoldFilled

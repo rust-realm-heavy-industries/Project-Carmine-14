@@ -157,11 +157,8 @@
   id: SalvageTreasureLegendary
   table: !type:GroupSelector
     children:
-    - id: ClothingMaskGoldenCursed
-    - id: ClothingHeadHatFancyCrown
     - id: ResearchDisk50000
     - id: GoldenBikeHorn
-    - id: ClothingHeadHatCatEars
     - id: TreasureCoinDiamond
       amount: !type:RangeNumberSelector
         range: 2, 5
@@ -207,15 +204,6 @@
     - id: OxygenTankFilled
     - id: WelderIndustrial
  #   - id: WeaponGrapplingGun
-    - !type:GroupSelector
-      children:
-      - id: ClothingHeadHatWelding
-      - id: ClothingHeadHatWeldingMaskFlame
-        weight: 0.25
-      - id: ClothingHeadHatWeldingMaskFlameBlue
-        weight: 0.25
-      - id: ClothingHeadHatWeldingMaskPainted
-        weight: 0.1
 
 - type: entityTable
   id: SalvageEquipmentRare
