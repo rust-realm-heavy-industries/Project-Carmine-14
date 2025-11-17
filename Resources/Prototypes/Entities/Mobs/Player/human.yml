@@ -11,8 +11,6 @@
   name: syndicate agent
   suffix: Human, Base
   components:
-    - type: Loadout
-      prototypes: [SyndicateOperativeGearExtremelyBasic]
     - type: RandomMetadata
       nameSegments: [names_death_commando]
     - type: NpcFactionMember
@@ -57,8 +55,6 @@
     - type: RandomHumanoidAppearance
       randomizeName: false
     - type: NukeOperative
-    - type: Loadout
-      prototypes: [SyndicateOperativeGearFull]
     - type: RandomMetadata
       nameSegments:
       - SyndicateNamesPrefix

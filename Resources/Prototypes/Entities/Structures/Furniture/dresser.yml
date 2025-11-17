@@ -222,9 +222,6 @@
       - id: ClothingMaskFox
         prob: 0.03
         orGroup: dressersecondloot
-      - id: ClothingEyesGlassesGar
-        prob: 0.03
-        orGroup: dressersecondloot
       - id: ClothingOuterCoatGentle
         prob: 0.03
         orGroup: dressersecondloot

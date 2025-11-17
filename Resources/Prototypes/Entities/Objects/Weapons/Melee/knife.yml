@@ -192,45 +192,6 @@
     sprite: Objects/Weapons/Melee/kukri_knife.rsi
 
 - type: entity
-  parent: ClothingHeadHatGreyFlatcap
-  id: BladedFlatcapGrey
-  name: grey flatcap
-  description: Fashionable for both the working class and old man Jenkins. It has glass shards hidden in the brim.
-  suffix: Bladed
-  components:
-  - type: Construction
-    graph: BladedFlatcapGrey
-    node: icon
-  - type: MeleeWeapon
-    wideAnimationRotation: 90
-    attackRate: .9
-    damage:
-      types:
-        Slash: 14
-  - type: DamageOtherOnHit
-    staminaCost: 5
-  - type: LandAtCursor
-  - type: EmbeddableProjectile
-  - type: EmbedPassiveDamage
-  - type: Sprite
-    sprite: Clothing/Head/Hats/greyflatcap.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/greyflatcap.rsi
-
-- type: entity
-  parent: BladedFlatcapGrey
-  id: BladedFlatcapBrown
-  name: brown flatcap
-  description: Stupid clown! You made me look bad! It has glass shards hidden in the brim.
-  components:
-  - type: Construction
-    graph: BladedFlatcapBrown
-  - type: Sprite
-    sprite: Clothing/Head/Hats/brownflatcap.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/brownflatcap.rsi
-
-- type: entity
   name: shiv
   parent: BaseKnife
   id: Shiv

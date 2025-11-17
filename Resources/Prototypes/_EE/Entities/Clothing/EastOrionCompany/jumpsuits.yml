@@ -1,13 +1,3 @@
-- type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
-  id: ClothingUniformJumpsuitHydroponicsEOC
-  name: New-Nederic jumpsuit
-  description: A jumpsuit worn by the agricultural workforce of the East-Orion Company.
-  components:
-  - type: Sprite
-    sprite: _EE/Clothing/Uniforms/Jumpsuits/hydro_eoc.rsi
-  - type: Clothing
-    sprite: _EE/Clothing/Uniforms/Jumpsuits/hydro_eoc.rsi
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]
