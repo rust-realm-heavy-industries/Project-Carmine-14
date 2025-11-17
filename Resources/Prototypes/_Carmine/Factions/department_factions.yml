@@ -1,0 +1,49 @@
+- type: department
+  id: IC
+  description: department-IC-description
+  color: "#474747"
+  weight: 4
+  roles:
+  - JobWorkerIC
+  - Passenger
+  - Captain
+  editorHidden: false
+
+# - type: department
+#   id: IS
+#   description: department-Civilian-description
+#   color: "#9FED58"
+#   weight: 5
+#   roles:
+#   - GliessianDockmaster
+#   - GliessianSheriff
+#   - GliessianDeputy
+#   - Spacer
+#   - GliessianDockhand
+#   editorHidden: false
+
+# - type: department
+#   id: CL
+#   description: department-Civilian-description
+#   color: "#9FED58"
+#   weight: 5
+#   roles:
+#   - GliessianDockmaster
+#   - GliessianSheriff
+#   - GliessianDeputy
+#   - Spacer
+#   - GliessianDockhand
+#   editorHidden: false
+
+# - type: department
+#   id: CV
+#   description: department-Civilian-description
+#   color: "#9FED58"
+#   weight: 5
+#   roles:
+#   - GliessianDockmaster
+#   - GliessianSheriff
+#   - GliessianDeputy
+#   - Spacer
+#   - GliessianDockhand
+#   editorHidden: false

@@ -20,7 +20,7 @@ namespace Content.Shared.GameTicking
         [ValidatePrototypeId<JobPrototype>]
         public const string FallbackOverflowJob = "Passenger";
 
-        public const string FallbackOverflowJobName = "job-name-freeholder";
+        public const string FallbackOverflowJobName = "job-name-assistant";
 
         // TODO network.
         // Probably most useful for replays, round end info, and probably things like lobby menus.

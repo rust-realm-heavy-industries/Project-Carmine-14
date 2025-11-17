@@ -1,7 +1,7 @@
 # IRON
 
-job-supervisors-iron = Supervisors.
+job-supervisors-ic = Supervisors.
 
-job-name-iron-worker = Cepnik
-job-description-iron-worker = The one who uses the Cepnik.
-chatrank-iron-worker = Cepnik
+job-name-ic-worker = Cepnik
+job-description-ic-worker = The one who uses the Cepnik.
+chatrank-ic-worker = Cepnik

@@ -7,7 +7,7 @@
   description: |
     Change me.
   color: "#505050"
-  weight: 3
+  weight: 4
   enabled: true
   icon:
     sprite: /Textures/_Carmine/Factions/factions.rsi
@@ -22,7 +22,7 @@
   description: |
     Change me.
   color: "#0053cf"
-  weight: 2
+  weight: 3
   enabled: true
   icon:
     sprite: /Textures/_Carmine/Factions/factions.rsi
@@ -37,7 +37,7 @@
   description: |
     Change me.
   color: "#6d1212"
-  weight: 1
+  weight: 2
   enabled: true
   icon:
     sprite: /Textures/_Carmine/Factions/factions.rsi
@@ -51,7 +51,7 @@
   buttonColor: DarkSlateGray
   description: |
     Change me.
-  color: "#6d1212"
+  color: "#5f6d12"
   weight: 1
   enabled: true
   icon:
