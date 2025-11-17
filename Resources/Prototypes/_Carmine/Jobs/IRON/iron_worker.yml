@@ -1,0 +1,37 @@
+- type: job
+  id: JobWorkerIRON
+  name: job-name-iron-worker
+  description: job-description-iron-worker
+  playTimeTracker: PlaytimeTrackerWorkerIRON
+  weight: 1
+  startingGear: WorkerIRONGear
+  alwaysUseSpawner: true
+  requireAdminNotify: false
+  icon: "JobIconClown"
+  supervisors: job-supervisors-iron
+  canBeAntag: false
+  requirements:
+    - !type:FactionRequirement
+      factionID: "IC"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: ChatRank
+        rank: chatrank-iron-worker
+      - type: HullrotFaction
+        faction: IC
+      # - type: LanguageAdder
+      #   addSpoken:
+      #     - LowImperial
+      #   addUnderstood:
+      #     - LowImperial
+  access:
+  - FAC1Ship
+  - FAC1Station
+
+- type: startingGear
+  id: WorkerIRONGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAncient
+    shoes: ClothingShoesBootsJack
+    back: ClothingBackpack

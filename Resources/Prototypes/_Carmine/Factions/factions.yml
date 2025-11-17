@@ -1,45 +1,59 @@
 - type: faction
-  name: "Hivers"
-  id: FactionHive
+  name: "Iron Concord"
+  id: IC
   descriptionPrefix: |
     Rewrite me sometime.
   buttonColor: DarkSlateBlue
   description: |
-    The leftovers from the Consolidation of Iron, reconstituated in the Hive.
+    Change me.
   color: "#505050"
   weight: 3
   enabled: true
   icon:
     sprite: /Textures/_Carmine/Factions/factions.rsi
-    state: hivers
+    state: iron
 
 - type: faction
-  name: "Eden"
-  id: FactionEden
+  name: "Invern-Sykes"
+  id: IS
   descriptionPrefix: |
     Rewrite me sometime.
   buttonColor: "#a46106"
   description: |
-    A mix of cryosleepers and crew from the Eden Orbital Cruiser, meant to serve as a seed vault and generation ship before the quiet rapture.
+    Change me.
   color: "#0053cf"
   weight: 2
   enabled: true
   icon:
     sprite: /Textures/_Carmine/Factions/factions.rsi
-    state: eden
+    state: invern
 
 - type: faction
   name: "Coalition"
-  id: FactionCoalition
+  id: CL
   descriptionPrefix: |
     Rewrite me sometime.
   buttonColor: DarkSlateGray
   description: |
-    Leftovers from the war for Filament Station, which resulted in its reactor being overloaded by Eden and its permanent destruction.
-    Splinter groups from both the Hive and Eden banded together, led by a sentient silicon overmind left in Filament's husk, and its cyborgs.
+    Change me.
   color: "#6d1212"
   weight: 1
   enabled: true
   icon:
     sprite: /Textures/_Carmine/Factions/factions.rsi
     state: coalition
+
+- type: faction
+  name: "Khandan Keyvan"
+  id: KV
+  descriptionPrefix: |
+    Rewrite me sometime.
+  buttonColor: DarkSlateGray
+  description: |
+    Change me.
+  color: "#6d1212"
+  weight: 1
+  enabled: true
+  icon:
+    sprite: /Textures/_Carmine/Factions/factions.rsi
+    state: khandan
