@@ -25,7 +25,5 @@
         amount: 2
       - id: CannonBall
         amount: 2
-      - id: WeaponPistolFlintlock
-        amount: 4
       - id: WeaponShotgunBlunderbuss
         amount: 2

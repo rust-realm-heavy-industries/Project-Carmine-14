@@ -414,7 +414,6 @@
       - BasicMechatronics1Mechatronics
       - PlastitaniumFibreAlloy1Mechatronics
       - Truncheon
-      - WeaponPistolMk58Mechatronics
       - WeaponRifleM90GrenadeLauncherMechatronics
       - MagazineRifleShrapnel
       - MagazinePistolShrapnel
@@ -478,7 +477,6 @@
       - WeakLaserLocus1Electronics
       - HardsuitElectronics1Electronics
       - WeaponCivilianDisabler
-      - WeaponEnergyGunMini
       - ClothingEyesNightVisionGoggles
       - Terminus
       - ClothingOuterHardsuitShanlinUnpainted
@@ -498,7 +496,6 @@
       - ClothingOuterArmorKendoBoguCyberdawn
       - ClothingOuterHardsuitCybersun
       - ClothingHeadHatPatriarch
-      - WeaponSubMachineGunAtreidesCyberdawn
       - WeaponRifleAkCyberdawn
       - WeaponRifleKrinkovCyberdawn
       - WeaponPistolViperWoodCyberdawn
@@ -562,7 +559,6 @@
       - MechEquipmentGrabberImperial
       - WeaponMechMeleeDrillImperial
       - WeaponRifleMiller
-      - WeaponRevolverArgenti
       - WeaponPistolComplianceImperial
       - CovetorLPC
       - IbisLPC
@@ -670,9 +666,7 @@
       - WeaponPistolBlastpopBlue
       - WeaponRifleHoundMarksman
       - WeaponShotgunSHIDoubleBarreled4g
-      - WeaponPistolMk58SHI
       - WeaponSubMachineGunMP49
-      - WeaponSubMachineGunWt550
       - WeaponRifleM90GrenadeLauncher
       - WeaponShotgunSpas
       - WeaponRifleBarghest

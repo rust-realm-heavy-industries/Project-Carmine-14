@@ -90,17 +90,11 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponPistolMk58
-      prob: 0.15
-      orGroup: gun
     - id: FoamCrossbow
       prob: 0.10
       orGroup: gun
     - id: WeaponRifleFoam
       prob: 0.05
-      orGroup: gun
-    - id: WeaponPistolFlintlock
-      prob: 0.20
       orGroup: gun
     - id: WeaponShotgunBlunderbuss
       prob: 0.10

@@ -125,7 +125,6 @@
     - id: ClothingShoesBootsCombatFilled
     - id: ToolboxSyndicateFilled
     - id: BalloonSyn
-    - id: WeaponSniperMosin
       weight: 2
     - !type:EntSelector
       id: ClothingEyesNightVisionGogglesSyndie

@@ -128,7 +128,7 @@
     price: 25
 
 - type: entity
-  parent: SmokeGrenade
+  parent: GrenadeBase
   id: CleanerGrenade
   name: cleanade
   description: Special grenade for janitors, releasing large cloud of space cleaner foam
@@ -145,7 +145,7 @@
         Quantity: 30
 
 - type: entity
-  parent: SmokeGrenade
+  parent: GrenadeBase
   id: CleanerGrenadeNuke
   name: the clean solution
   description: A special cleanade designed by an especially tenacious janitor. Its foam can spread over an entire room, leaving it squeaky clean and smelling slightly of lemons.

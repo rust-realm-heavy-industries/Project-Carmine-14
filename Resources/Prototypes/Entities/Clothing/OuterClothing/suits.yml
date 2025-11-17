@@ -190,9 +190,7 @@
   - type: ToggleCellDraw
   # throwing star ability (Broken)
   # - type: ItemCreator
-  #  action: ActionCreateThrowingStar
   #  charge: 14.4
-  #  spawnedPrototype: ThrowingStarNinja
   #  noPowerPopup: ninja-no-power
   # core ninja suit stuff
   - type: NinjaSuit

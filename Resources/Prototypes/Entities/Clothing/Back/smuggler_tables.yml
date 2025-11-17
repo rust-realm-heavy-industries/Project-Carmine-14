@@ -307,7 +307,6 @@
     - id: SpaceCash100
       weight: 100
     - id: Katana
-    - id: ThrowingStar
       amount: !type:RangeNumberSelector
         range: 1, 5
 
