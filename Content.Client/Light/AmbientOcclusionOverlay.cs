@@ -34,7 +34,7 @@ public sealed class AmbientOcclusionOverlay : Overlay
     public AmbientOcclusionOverlay()
     {
         IoCManager.InjectDependencies(this);
-        ZIndex = AfterLightTargetOverlay.ContentZIndex - 1;
+        ZIndex = AfterLightTargetOverlay.ContentZIndex + 1;
     }
 
     protected override void Draw(in OverlayDrawArgs args)
