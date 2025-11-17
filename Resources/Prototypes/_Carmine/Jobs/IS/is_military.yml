@@ -1,0 +1,38 @@
+- type: job
+  id: JobMilitaryIS
+  name: job-name-is-military
+  description: job-description-is-military
+  playTimeTracker: PlaytimeTrackerMilitaryIS
+  weight: 1
+  startingGear: MilitaryISGear
+  alwaysUseSpawner: true
+  requireAdminNotify: false
+  icon: "JobIconClown"
+  supervisors: job-supervisors-is
+  canBeAntag: false
+  requirements:
+    - !type:FactionRequirement
+      factionID: "IS"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: ChatRank
+        rank: chatrank-is-military
+      - type: HullrotFaction
+        faction: IS
+      # - type: LanguageAdder
+      #   addSpoken:
+      #     - LowImperial
+      #   addUnderstood:
+      #     - LowImperial
+  access:
+  - ISShip
+  - ISStation
+  - ISMilitary
+
+- type: startingGear
+  id: MilitaryISGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAncient
+    shoes: ClothingShoesBootsJack
+    back: ClothingBackpack

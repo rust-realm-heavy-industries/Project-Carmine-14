@@ -1,183 +1,183 @@
-# FAC1
+# IC
 - type: entity
-  parent: FAC1Airlock
-  id: FAC1AirlockShip
-  suffix: FAC1, Ship
+  parent: ICAirlock
+  id: ICAirlockShip
+  suffix: IC, Ship
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC1DoorElectronicsShip ]
+      board: [ ICDoorElectronicsShip ]
 
 - type: entity
-  parent: FAC1Airlock
-  id: FAC1AirlockStation
-  suffix: FAC1, Station
+  parent: ICAirlock
+  id: ICAirlockStation
+  suffix: IC, Station
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC1DoorElectronicsStation ]
+      board: [ ICDoorElectronicsStation ]
 
 - type: entity
-  parent: FAC1Airlock
-  id: FAC1AirlockMedical
-  suffix: FAC1, Medical
+  parent: ICAirlock
+  id: ICAirlockMedical
+  suffix: IC, Medical
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC1DoorElectronicsMedical ]
+      board: [ ICDoorElectronicsMedical ]
 
 - type: entity
-  parent: FAC1Airlock
-  id: FAC1AirlockMilitary
-  suffix: FAC1, Military
+  parent: ICAirlock
+  id: ICAirlockMilitary
+  suffix: IC, Military
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC1DoorElectronicsMilitary ]
+      board: [ ICDoorElectronicsMilitary ]
 
 - type: entity
-  parent: FAC1Airlock
-  id: FAC1AirlockCommand
-  suffix: FAC1, Command
+  parent: ICAirlock
+  id: ICAirlockCommand
+  suffix: IC, Command
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC1DoorElectronicsCommand ]
+      board: [ ICDoorElectronicsCommand ]
 
-# FAC2
+# IS
 - type: entity
-  parent: FAC2Airlock
-  id: FAC2AirlockShip
-  suffix: FAC2, Ship
+  parent: ISAirlock
+  id: ISAirlockShip
+  suffix: IS, Ship
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC2DoorElectronicsShip ]
-
-- type: entity
-  parent: FAC2Airlock
-  id: FAC2AirlockStation
-  suffix: FAC2, Station
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ FAC2DoorElectronicsStation ]
+      board: [ ISDoorElectronicsShip ]
 
 - type: entity
-  parent: FAC2Airlock
-  id: FAC2AirlockMedical
-  suffix: FAC2, Medical
+  parent: ISAirlock
+  id: ISAirlockStation
+  suffix: IS, Station
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC2DoorElectronicsMedical ]
+      board: [ ISDoorElectronicsStation ]
 
 - type: entity
-  parent: FAC2Airlock
-  id: FAC2AirlockMilitary
-  suffix: FAC2, Military
+  parent: ISAirlock
+  id: ISAirlockMedical
+  suffix: IS, Medical
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC2DoorElectronicsMilitary ]
+      board: [ ISDoorElectronicsMedical ]
 
 - type: entity
-  parent: FAC2Airlock
-  id: FAC2AirlockCommand
-  suffix: FAC2, Command
+  parent: ISAirlock
+  id: ISAirlockMilitary
+  suffix: IS, Military
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC2DoorElectronicsCommand ]
-
-# FAC3
-- type: entity
-  parent: FAC3Airlock
-  id: FAC3AirlockShip
-  suffix: FAC3, Ship
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ FAC3DoorElectronicsShip ]
+      board: [ ISDoorElectronicsMilitary ]
 
 - type: entity
-  parent: FAC3Airlock
-  id: FAC3AirlockStation
-  suffix: FAC3, Station
+  parent: ISAirlock
+  id: ISAirlockCommand
+  suffix: IS, Command
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC3DoorElectronicsStation ]
+      board: [ ISDoorElectronicsCommand ]
+
+# CL
+- type: entity
+  parent: CLAirlock
+  id: CLAirlockShip
+  suffix: CL, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ CLDoorElectronicsShip ]
 
 - type: entity
-  parent: FAC3Airlock
-  id: FAC3AirlockMedical
-  suffix: FAC3, Medical
+  parent: CLAirlock
+  id: CLAirlockStation
+  suffix: CL, Station
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC3DoorElectronicsMedical ]
+      board: [ CLDoorElectronicsStation ]
 
 - type: entity
-  parent: FAC3Airlock
-  id: FAC3AirlockMilitary
-  suffix: FAC3, Military
+  parent: CLAirlock
+  id: CLAirlockMedical
+  suffix: CL, Medical
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC3DoorElectronicsMilitary ]
+      board: [ CLDoorElectronicsMedical ]
 
 - type: entity
-  parent: FAC3Airlock
-  id: FAC3AirlockCommand
-  suffix: FAC3, Command
+  parent: CLAirlock
+  id: CLAirlockMilitary
+  suffix: CL, Military
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC3DoorElectronicsCommand ]
-
-# FAC4
-- type: entity
-  parent: FAC4Airlock
-  id: FAC4AirlockShip
-  suffix: FAC4, Ship
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ FAC4DoorElectronicsShip ]
+      board: [ CLDoorElectronicsMilitary ]
 
 - type: entity
-  parent: FAC4Airlock
-  id: FAC4AirlockStation
-  suffix: FAC4, Station
+  parent: CLAirlock
+  id: CLAirlockCommand
+  suffix: CL, Command
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC4DoorElectronicsStation ]
+      board: [ CLDoorElectronicsCommand ]
+
+# KV
+- type: entity
+  parent: KVAirlock
+  id: KVAirlockShip
+  suffix: KV, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ KVDoorElectronicsShip ]
 
 - type: entity
-  parent: FAC4Airlock
-  id: FAC4AirlockMedical
-  suffix: FAC4, Medical
+  parent: KVAirlock
+  id: KVAirlockStation
+  suffix: KV, Station
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC4DoorElectronicsMedical ]
+      board: [ KVDoorElectronicsStation ]
 
 - type: entity
-  parent: FAC4Airlock
-  id: FAC4AirlockMilitary
-  suffix: FAC4, Military
+  parent: KVAirlock
+  id: KVAirlockMedical
+  suffix: KV, Medical
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC4DoorElectronicsMilitary ]
+      board: [ KVDoorElectronicsMedical ]
 
 - type: entity
-  parent: FAC4Airlock
-  id: FAC4AirlockCommand
-  suffix: FAC4, Command
+  parent: KVAirlock
+  id: KVAirlockMilitary
+  suffix: KV, Military
   components:
   - type: ContainerFill
     containers:
-      board: [ FAC4DoorElectronicsCommand ]
+      board: [ KVDoorElectronicsMilitary ]
+
+- type: entity
+  parent: KVAirlock
+  id: KVAirlockCommand
+  suffix: KV, Command
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ KVDoorElectronicsCommand ]
