@@ -5,7 +5,7 @@ on:
     types: [closed]
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ github.token }}
   CHANGELOG_DIR: ${{ vars.CHANGELOG_DIR }}
   PR_NUMBER: ${{ github.event.number }}
 
@@ -19,7 +19,7 @@ jobs:
     - name: Checkout Master
       uses: actions/checkout@v3
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ github.token }}
         ref: ${{ vars.CHANGELOG_BRANCH }}
 
     - name: Setup Git
