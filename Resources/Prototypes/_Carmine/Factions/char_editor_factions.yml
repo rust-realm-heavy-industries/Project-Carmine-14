@@ -1,0 +1,59 @@
+- type: faction
+  name: "Iron Concord"
+  id: IC
+  descriptionPrefix: |
+    Rewrite me sometime.
+  buttonColor: DarkSlateBlue
+  description: |
+    Change me.
+  color: "#505050"
+  weight: 4
+  enabled: true
+  icon:
+    sprite: /Textures/_Carmine/Factions/factions.rsi
+    state: iron
+
+- type: faction
+  name: "Invern-Sykes"
+  id: IS
+  descriptionPrefix: |
+    Rewrite me sometime.
+  buttonColor: "#a46106"
+  description: |
+    Change me.
+  color: "#0053cf"
+  weight: 3
+  enabled: true
+  icon:
+    sprite: /Textures/_Carmine/Factions/factions.rsi
+    state: invern
+
+- type: faction
+  name: "Coalition"
+  id: CL
+  descriptionPrefix: |
+    Rewrite me sometime.
+  buttonColor: DarkSlateGray
+  description: |
+    Change me.
+  color: "#6d1212"
+  weight: 2
+  enabled: true
+  icon:
+    sprite: /Textures/_Carmine/Factions/factions.rsi
+    state: coalition
+
+- type: faction
+  name: "Khandan Keyvan"
+  id: KV
+  descriptionPrefix: |
+    Rewrite me sometime.
+  buttonColor: DarkSlateGray
+  description: |
+    Change me.
+  color: "#5f6d12"
+  weight: 1
+  enabled: true
+  icon:
+    sprite: /Textures/_Carmine/Factions/factions.rsi
+    state: khandan

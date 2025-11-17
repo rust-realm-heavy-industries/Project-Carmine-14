@@ -1,30 +1,4 @@
-- type: entity
-  parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatLettermanBlue
-  name: blue letterman jacket
-  description: It's a blue highschool jacket with a big '14' stitched onto the back.
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Misc/letterman_jacket_blue.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Misc/letterman_jacket_blue.rsi
-  - type: TemperatureProtection
-    coefficient: 0.4
-
-- type: entity
-  parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatLettermanRed
-  name: red letterman jacket
-  description: It's a red highschool jacket with a big '14' stitched onto the back.
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Misc/letterman_jacket_red.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Misc/letterman_jacket_red.rsi
-  - type: TemperatureProtection
-    coefficient: 0.4
 ## mnk
-
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterCoatMNKWhiteHoodie
@@ -61,15 +35,3 @@
     sprite: Nyanotrasen/Clothing/Misc/black_jacket.rsi
   - type: TemperatureProtection
     coefficient: 0.2
-
-- type: entity
-  parent: ClothingOuterBase
-  id: ClothingOuterWizardFake
-  name: wizard robes
-  suffix: fake
-  description: A set of blue robes.
-  components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Misc/wizard.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Misc/wizard.rsi

@@ -1,183 +1,183 @@
-# FAC1
+# IC
 - type: entity
   parent: DoorElectronics
-  id: FAC1DoorElectronicsShip
-  suffix: FAC1, Carmine
+  id: ICDoorElectronicsShip
+  suffix: IC, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC1Ship"]]
+    access: [["ICShip"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC1DoorElectronicsStation
-  suffix: FAC1, Carmine
+  id: ICDoorElectronicsStation
+  suffix: IC, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC1Station"]]
+    access: [["ICStation"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC1DoorElectronicsMedical
-  suffix: FAC1, Carmine
+  id: ICDoorElectronicsMedical
+  suffix: IC, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC1Medical"]]
+    access: [["ICMedical"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC1DoorElectronicsMilitary
-  suffix: FAC1, Carmine
+  id: ICDoorElectronicsMilitary
+  suffix: IC, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC1Military"]]
+    access: [["ICMilitary"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC1DoorElectronicsCommand
-  suffix: FAC1, Carmine
+  id: ICDoorElectronicsCommand
+  suffix: IC, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC1Command"]]
+    access: [["ICCommand"]]
 
-# FAC2
+# IS
 - type: entity
   parent: DoorElectronics
-  id: FAC2DoorElectronicsShip
-  suffix: FAC2, Carmine
+  id: ISDoorElectronicsShip
+  suffix: IS, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC2Ship"]]
-
-- type: entity
-  parent: DoorElectronics
-  id: FAC2DoorElectronicsStation
-  suffix: FAC2, Carmine
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: AccessReader
-    access: [["FAC2Station"]]
+    access: [["ISShip"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC2DoorElectronicsMedical
-  suffix: FAC2, Carmine
+  id: ISDoorElectronicsStation
+  suffix: IS, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC2Medical"]]
+    access: [["ISStation"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC2DoorElectronicsMilitary
-  suffix: FAC2, Carmine
+  id: ISDoorElectronicsMedical
+  suffix: IS, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC2Military"]]
+    access: [["ISMedical"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC2DoorElectronicsCommand
-  suffix: FAC2, Carmine
+  id: ISDoorElectronicsMilitary
+  suffix: IS, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC2Command"]]
-
-# FAC3
-- type: entity
-  parent: DoorElectronics
-  id: FAC3DoorElectronicsShip
-  suffix: FAC3, Carmine
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: AccessReader
-    access: [["FAC3Ship"]]
+    access: [["ISMilitary"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC3DoorElectronicsStation
-  suffix: FAC3, Carmine
+  id: ISDoorElectronicsCommand
+  suffix: IS, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC3Station"]]
+    access: [["ISCommand"]]
+
+# CL
+- type: entity
+  parent: DoorElectronics
+  id: CLDoorElectronicsShip
+  suffix: CL, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["CLShip"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC3DoorElectronicsMedical
-  suffix: FAC3, Carmine
+  id: CLDoorElectronicsStation
+  suffix: CL, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC3Medical"]]
+    access: [["CLStation"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC3DoorElectronicsMilitary
-  suffix: FAC3, Carmine
+  id: CLDoorElectronicsMedical
+  suffix: CL, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC3Military"]]
+    access: [["CLMedical"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC3DoorElectronicsCommand
-  suffix: FAC3, Carmine
+  id: CLDoorElectronicsMilitary
+  suffix: CL, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC3Command"]]
-
-# FAC4
-- type: entity
-  parent: DoorElectronics
-  id: FAC4DoorElectronicsShip
-  suffix: FAC4, Carmine
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: AccessReader
-    access: [["FAC4Ship"]]
+    access: [["CLMilitary"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC4DoorElectronicsStation
-  suffix: FAC4, Carmine
+  id: CLDoorElectronicsCommand
+  suffix: CL, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC4Station"]]
+    access: [["CLCommand"]]
+
+# KV
+- type: entity
+  parent: DoorElectronics
+  id: KVDoorElectronicsShip
+  suffix: KV, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["KVShip"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC4DoorElectronicsMedical
-  suffix: FAC4, Carmine
+  id: KVDoorElectronicsStation
+  suffix: KV, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC4Medical"]]
+    access: [["KVStation"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC4DoorElectronicsMilitary
-  suffix: FAC4, Carmine
+  id: KVDoorElectronicsMedical
+  suffix: KV, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC4Military"]]
+    access: [["KVMedical"]]
 
 - type: entity
   parent: DoorElectronics
-  id: FAC4DoorElectronicsCommand
-  suffix: FAC4, Carmine
+  id: KVDoorElectronicsMilitary
+  suffix: KV, Carmine
   categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["FAC4Command"]]
+    access: [["KVMilitary"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: KVDoorElectronicsCommand
+  suffix: KV, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["KVCommand"]]

@@ -48,21 +48,6 @@
         color: red
   - type: RandomSpawner
     prototypes:
-    - ClothingMaskGasSecurity
-    - ClothingHeadHelmetSwat
-    - ClothingMaskGasSwat
-    - FlashlightSeclite
-    - ClothingHeadHelmetRiot
-    - ClothingOuterArmorRiot
-    - ClothingHeadHatSecsoftFlipped
-    - ClothingOuterCoatDetective
-    - ClothingBeltSecurityFilled
-    - ClothingEyesGlassesSecurity
-    - ClothingHeadHatBeretSecurity
-    - ClothingBeltSecurityWebbing
-    - ClothingEyesHudSecurity
-    - ClothingOuterArmorBasic
-    - ClothingShoesBootsCombatFilled
     - Zipties
     - Handcuffs
     - RiotShield

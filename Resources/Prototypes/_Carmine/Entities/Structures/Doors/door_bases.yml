@@ -1,7 +1,7 @@
 - type: entity
   parent: Airlock
-  id: FAC1Airlock
-  suffix: FAC1, Unlocked
+  id: ICAirlock
+  suffix: IC, Unlocked
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
@@ -10,8 +10,8 @@
 
 - type: entity
   parent: Airlock
-  id: FAC2Airlock
-  suffix: FAC2, Unlocked
+  id: ISAirlock
+  suffix: IS, Unlocked
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/command.rsi
@@ -20,8 +20,8 @@
 
 - type: entity
   parent: Airlock
-  id: FAC3Airlock
-  suffix: FAC3, Unlocked
+  id: CLAirlock
+  suffix: CL, Unlocked
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/basic.rsi
@@ -30,8 +30,8 @@
 
 - type: entity
   parent: Airlock
-  id: FAC4Airlock
-  suffix: FAC4, Unlocked
+  id: KVAirlock
+  suffix: KV, Unlocked
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/maint.rsi
