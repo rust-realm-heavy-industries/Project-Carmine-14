@@ -3,7 +3,7 @@
   name: job-name-kv-military
   description: job-description-kv-military
   playTimeTracker: PlaytimeTrackerMilitaryKV
-  weight: 1
+  weight: 2
   startingGear: MilitaryKVGear
   alwaysUseSpawner: true
   requireAdminNotify: false

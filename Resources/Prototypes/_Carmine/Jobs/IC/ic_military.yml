@@ -3,7 +3,7 @@
   name: job-name-ic-military
   description: job-description-ic-military
   playTimeTracker: PlaytimeTrackerMilitaryIC
-  weight: 1
+  weight: 2
   startingGear: MilitaryICGear
   alwaysUseSpawner: true
   requireAdminNotify: false

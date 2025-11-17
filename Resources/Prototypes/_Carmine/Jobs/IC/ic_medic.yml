@@ -3,7 +3,7 @@
   name: job-name-ic-medic
   description: job-description-ic-medic
   playTimeTracker: PlaytimeTrackerMedicIC
-  weight: 1
+  weight: 3
   startingGear: MedicICGear
   alwaysUseSpawner: true
   requireAdminNotify: false

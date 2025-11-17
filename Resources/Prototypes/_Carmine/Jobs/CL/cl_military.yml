@@ -3,7 +3,7 @@
   name: job-name-cl-military
   description: job-description-cl-military
   playTimeTracker: PlaytimeTrackerMilitaryCL
-  weight: 1
+  weight: 2
   startingGear: MilitaryCLGear
   alwaysUseSpawner: true
   requireAdminNotify: false
