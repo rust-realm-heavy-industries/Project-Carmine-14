@@ -1,0 +1,143 @@
+- type: decal
+  id: WarnBoxGreyscale
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_box_greyscale
+    
+- type: decal
+  id: WarnEndGreyscale
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_end_greyscale
+    
+- type: decal
+  id: WarnFullGreyscale
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_full_greyscale
+    
+- type: decal
+  id: WarningLineGreyscale
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warningline_greyscale
+    
+- type: decal
+  id: WarningLineCornerGreyscale
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warninglinecorner_greyscale
+    
+- type: decal
+  id: WarningLineCornerFlippedGreyscale
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warninglinecorner_flipped_greyscale
+
+- type: decal
+  id: WarnCornerGreyscale
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_greyscale
+
+- type: decal
+  id: WarnCornerFlippedGreyscale
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_flipped_greyscale
+
+- type: decal
+  id: WarnCornerGreyscaleNE
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_greyscale_ne
+
+- type: decal
+  id: WarnCornerGreyscaleNW
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_greyscale_nw
+
+- type: decal
+  id: WarnCornerGreyscaleSE
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_greyscale_se
+
+- type: decal
+  id: WarnCornerGreyscaleSW
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_greyscale_sw
+
+- type: decal
+  id: WarnCornerSmallGreyscaleNE
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_small_greyscale_ne
+
+- type: decal
+  id: WarnCornerSmallGreyscaleNW
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_small_greyscale_nw
+
+- type: decal
+  id: WarnCornerSmallGreyscaleSE
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_small_greyscale_se
+
+- type: decal
+  id: WarnCornerSmallGreyscaleSW
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_corner_small_greyscale_sw
+
+- type: decal
+  id: WarnEndGreyscaleE
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_end_greyscale_e
+
+- type: decal
+  id: WarnEndGreyscaleN
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_end_greyscale_n
+
+- type: decal
+  id: WarnEndGreyscaleS
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_end_greyscale_s
+
+- type: decal
+  id: WarnEndGreyscaleW
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_end_greyscale_w
+
+- type: decal
+  id: WarnLineGreyscaleE
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_line_greyscale_e
+
+- type: decal
+  id: WarnLineGreyscaleN
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_line_greyscale_n
+
+- type: decal
+  id: WarnLineGreyscaleS
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_line_greyscale_s
+
+- type: decal
+  id: WarnLineGreyscaleW
+  sprite:
+    sprite: Decals/markings.rsi
+    state: warn_line_greyscale_w
