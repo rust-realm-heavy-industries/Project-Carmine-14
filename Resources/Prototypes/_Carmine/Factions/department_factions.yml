@@ -4,46 +4,46 @@
   color: "#474747"
   weight: 4
   roles:
+  # - JobLeaderIC
+  # - JobMedicIC
+  # - JobMilitaryIC
   - JobWorkerIC
-  - Passenger
   - Captain
+  - Passenger
   editorHidden: false
 
 # - type: department
 #   id: IS
-#   description: department-Civilian-description
+#   description: department-IS-description
 #   color: "#9FED58"
 #   weight: 5
 #   roles:
-#   - GliessianDockmaster
-#   - GliessianSheriff
-#   - GliessianDeputy
-#   - Spacer
-#   - GliessianDockhand
+#   - JobLeaderIS
+#   - JobMedicIS
+#   - JobMilitaryIS
+#   - JobWorkerIS
 #   editorHidden: false
 
 # - type: department
 #   id: CL
-#   description: department-Civilian-description
+#   description: department-CL-description
 #   color: "#9FED58"
-#   weight: 5
+#   weight: 6
 #   roles:
-#   - GliessianDockmaster
-#   - GliessianSheriff
-#   - GliessianDeputy
-#   - Spacer
-#   - GliessianDockhand
+#   - JobLeaderCL
+#   - JobMedicCL
+#   - JobMilitaryCL
+#   - JobWorkerCL
 #   editorHidden: false
 
 # - type: department
-#   id: CV
-#   description: department-Civilian-description
+#   id: KV
+#   description: department-KV-description
 #   color: "#9FED58"
-#   weight: 5
+#   weight: 7
 #   roles:
-#   - GliessianDockmaster
-#   - GliessianSheriff
-#   - GliessianDeputy
-#   - Spacer
-#   - GliessianDockhand
+#   - JobLeaderKV
+#   - JobMedicKV
+#   - JobMilitaryKV
+#   - JobWorkerKV
 #   editorHidden: false
