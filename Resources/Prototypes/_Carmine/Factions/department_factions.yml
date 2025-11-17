@@ -4,46 +4,46 @@
   color: "#474747"
   weight: 4
   roles:
-  # - JobLeaderIC
-  # - JobMedicIC
-  # - JobMilitaryIC
+  - JobLeaderIC
+  - JobMedicIC
+  - JobMilitaryIC
   - JobWorkerIC
   - Captain
   - Passenger
   editorHidden: false
 
-# - type: department
-#   id: IS
-#   description: department-IS-description
-#   color: "#9FED58"
-#   weight: 5
-#   roles:
-#   - JobLeaderIS
-#   - JobMedicIS
-#   - JobMilitaryIS
-#   - JobWorkerIS
-#   editorHidden: false
+- type: department
+  id: IS
+  description: department-IS-description
+  color: "#9FED58"
+  weight: 5
+  roles:
+  - JobLeaderIS
+  - JobMedicIS
+  - JobMilitaryIS
+  - JobWorkerIS
+  editorHidden: false
 
-# - type: department
-#   id: CL
-#   description: department-CL-description
-#   color: "#9FED58"
-#   weight: 6
-#   roles:
-#   - JobLeaderCL
-#   - JobMedicCL
-#   - JobMilitaryCL
-#   - JobWorkerCL
-#   editorHidden: false
+- type: department
+  id: CL
+  description: department-CL-description
+  color: "#9FED58"
+  weight: 6
+  roles:
+  - JobLeaderCL
+  - JobMedicCL
+  - JobMilitaryCL
+  - JobWorkerCL
+  editorHidden: false
 
-# - type: department
-#   id: KV
-#   description: department-KV-description
-#   color: "#9FED58"
-#   weight: 7
-#   roles:
-#   - JobLeaderKV
-#   - JobMedicKV
-#   - JobMilitaryKV
-#   - JobWorkerKV
-#   editorHidden: false
+- type: department
+  id: KV
+  description: department-KV-description
+  color: "#9FED58"
+  weight: 7
+  roles:
+  - JobLeaderKV
+  - JobMedicKV
+  - JobMilitaryKV
+  - JobWorkerKV
+  editorHidden: false
