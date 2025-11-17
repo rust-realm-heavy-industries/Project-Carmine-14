@@ -8,25 +8,27 @@
 # WallSolid: Window
 # Table: null
 
+# nulled for carmine
 # 2023-07-03
-ClothingHeadHelmetHelmet: ClothingHeadHelmetBasic
-ClothingHeadHelmetHelmetOld: ClothingHeadHelmetBasic
+ClothingHeadHelmetHelmet: null
+ClothingHeadHelmetHelmetOld: null
 
 # 2023-07-04
 # Bulletproof armor is almost statistically identical to kevlar, however, before this kevlar armor was the closest thing there was to "basic" armor. It makes the most sense to replace it with this.
-ClothingOuterVestKevlar: ClothingOuterArmorBasic
+ClothingOuterVestKevlar: null
 
 # 2023-07-10
 Intercom: IntercomCommon
 
 # 2023-07-12
 ToyAssistant: ToyFigurinePassenger
-
+#nulled for carmine
 # 2023-07-20
-ForensicGloves: ClothingHandsGlovesForensic
+ForensicGloves: null
 
+#nulled for carmine
 # 2023-07-24
-ClothingEyesGlassesBeer: ClothingEyesHudBeer
+ClothingEyesGlassesBeer: null
 
 # 2023-08-01
 lantern: Lantern
@@ -89,8 +91,8 @@ GeneratorPlasmaMachineCircuitboard: PortableGeneratorPacmanMachineCircuitboard
 GeneratorUraniumMachineCircuitboard: PortableGeneratorSuperPacmanMachineCircuitboard
 
 # 2023-12-12
-#No this is not the CMO hardsuit, their prototype IDs were just confusingly similar
-ClothingOuterHardsuitMedic: ClothingOuterHardsuitSyndieMedic
+#nulled for carmine
+ClothingOuterHardsuitMedic: null
 
 # 2023-12-13
 VendingMachineSmartFridge: SmartFridge
@@ -114,8 +116,9 @@ WarpPointBeaconScience: null
 WarpPointBeaconSecurity: null
 WarpPointBeaconService: null
 
+#nulled for carmine
 # 2023-12-30
-ClothingEyesGlassesCosmeticSunglasses: ClothingEyesGlassesSunglasses
+ClothingEyesGlassesCosmeticSunglasses: null
 SpawnPointAssistant: SpawnPointPassenger
 
 # 2024-01-05
@@ -220,16 +223,18 @@ ClothingHeadHatHairflower: FoodPoppy
 # 2024-03-21
 RPED: null
 
+# nulled for carmine
 # 2024-03-30
 TraversalDistorterMachineCircuitboard: null
 MachineTraversalDistorter: null
 # These are technically not equivalent, but it probably makes more sense to replace any existing SCAF stuff with SOME kind of armor, instead of just deleting it outright.
-ClothingHeadHelmetScaf: ClothingHeadHelmetBasic
-ClothingOuterArmorScaf: ClothingOuterArmorBasic
+ClothingHeadHelmetScaf: null
+ClothingOuterArmorScaf: null
 
+# nulled for carmine
 # 2024-03-31
-ClothingNeckFlowerWreath: ClothingHeadHatFlowerWreath
-ClothingHeadHatFlowerCrown: ClothingHeadHatFlowerWreath
+ClothingNeckFlowerWreath: null
+ClothingHeadHatFlowerCrown: null
 BriefcaseSyndieBase: null
 
 # 2024-04-08
@@ -248,8 +253,9 @@ DrinkBottleGoldschlager: DrinkBottleGildlager
 soda_dispenser: SodaDispenser
 chem_master: ChemMaster
 
+# nulled for carmine
 # 2024-05-21
-CrateJanitorExplosive: ClosetJanitorBombFilled
+CrateJanitorExplosive: null
 
 # 2024-05-27
 DoorRemoteFirefight: null
@@ -257,8 +263,9 @@ DoorRemoteFirefight: null
 # 2024-06-03
 AirlockServiceCaptainLocked: AirlockCaptainLocked
 
+# nulled for carmine
 # 2024-06-15
-ClothingOuterCoatInspector: ClothingOuterCoatDetectiveLoadout
+ClothingOuterCoatInspector: null
 
 # 2024-06-23
 FloorTileItemReinforced: PartRodMetal1

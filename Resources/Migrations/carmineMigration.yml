@@ -243,6 +243,26 @@ WallRockAndesiteCopper: null
 WallRockAndesiteTungsten: null
 #REPLACED BY CARMINE WALLS
 
+#CLOTHING AND ITEM KILLING
+ClosetEmergencyFilledRandom: null
+ClosetToolFilled: null
+ClothingHandsGlovesColorYellow: null
+ClothingOuterHardsuitAtmos: null
+ClothingOuterVest: null
+ClothingUniformJumpsuitEngineering: null
+CrateEngineeringToolbox: null
+CrateHydroponicsSeeds: null
+CrateHydroponicsTools: null
+LockerBotanistFilled: null
+LockerChemistryFilled: null
+LockerChiefEngineerFilled: null
+LockerElectricalSuppliesFilled: null
+LockerEngineerFilled: null
+LockerMedicalFilled: null
+LockerMedicineFilled: null
+LockerSalvageSpecialistFilled: null
+LockerWeldingSuppliesFilled: null
+
 #old hullrot stuff
 SpawnPointKommissar: null
 ThrusterUnwelded: Thruster
