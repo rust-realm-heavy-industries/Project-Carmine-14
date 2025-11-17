@@ -1,0 +1,73 @@
+#Chameleon is for the Wizden burglar role, they have a TeleCrystal ability to buy a chameleon PDA that turns their clothes into anything.
+
+# CL Hats Base
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingCLHeadHatBeret
+  name: beret
+  description: A beret, an artists favorite headwear.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon 
+
+# IC Hats Base
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingICHeadHatBeret
+  name: beret
+  description: A beret, an artists favorite headwear.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon 
+
+# KV Hats Base
+  
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingKVHeadHatBeret
+  name: beret
+  description: A beret, an artists favorite headwear.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon 
+
+# IS Hats Base
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingISHeadHatBeret
+  name: beret
+  description: A beret, an artists favorite headwear.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon 

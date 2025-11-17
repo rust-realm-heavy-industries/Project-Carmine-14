@@ -1,0 +1,120 @@
+
+# Non magnetic shoes
+
+# IC Shoes Base
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesICBootsJack
+  name: jackboots
+  description: Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+
+# KV Shoes Base
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesKVBootsJack
+  name: jackboots
+  description: Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+
+# CL Shoes Base
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesCLBootsJack
+  name: jackboots
+  description: Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+
+# IS Shoes Base
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesISBootsJack
+  name: jackboots
+  description: Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+
+# Magnetic boots base
+
+#IC magboots base
+
+- type: entity
+  parent: [ClothingShoesBootsMagBase]
+  id: BaseIntegratedICMagboot
+  name: IC Civilian Magboots
+  description: A set of magnetic locks integrated into a suit.
+  abstract: true
+  components:
+    - type: ToggleClothing
+      action: ActionToggleMagboots
+    - type: Magboots
+      slot: outerClothing
+    - type: ItemToggle
+      onUse: false # can't really wear it like that
+
+#KV magboots base
+
+- type: entity
+  parent: [ClothingShoesBootsMagBase]
+  id: BaseIntegratedKVMagboot
+  name: KV Civilian Magboots
+  description: A set of magnetic locks integrated into a suit.
+  abstract: true
+  components:
+    - type: ToggleClothing
+      action: ActionToggleMagboots
+    - type: Magboots
+      slot: outerClothing
+    - type: ItemToggle
+      onUse: false # can't really wear it like that
+
+#CL magboots base
+
+- type: entity
+  parent: [ClothingShoesBootsMagBase]
+  id: BaseIntegratedCLMagboot
+  name: CL Civilian Magboots
+  description: A set of magnetic locks integrated into a suit.
+  abstract: false
+  components:
+    - type: ToggleClothing
+      action: ActionToggleMagboots
+    - type: Magboots
+      slot: outerClothing
+    - type: ItemToggle
+      onUse: false # can't really wear it like that
+
+#IS magboots base
+
+- type: entity
+  parent: [ClothingShoesBootsMagBase]
+  id: BaseIntegratedISMagboot
+  name: IS Civilian Magboots
+  description: A set of magnetic locks integrated into a suit.
+  abstract: false
+  components:
+    - type: ToggleClothing
+      action: ActionToggleMagboots
+    - type: Magboots
+      slot: outerClothing
+    - type: ItemToggle
+      onUse: false # can't really wear it like that
