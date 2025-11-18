@@ -8,3 +8,47 @@
     sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformKVLeader
+  name: KV Leader Jumpsuit
+  description: KV jumpsuit for KV things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformKVMedic
+  name: KV Medic Jumpsuit
+  description: KV jumpsuit for KV things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformKVMilitary
+  name: KV Military Jumpsuit
+  description: KV jumpsuit for KV things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformKVWorker
+  name: KV Worker Jumpsuit
+  description: KV jumpsuit for KV things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
