@@ -1,5 +1,6 @@
 - type: decal
   id: LatticeEdgeN
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -7,6 +8,7 @@
 
 - type: decal
   id: LatticeEdgeE
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -14,6 +16,7 @@
 
 - type: decal
   id: LatticeEdgeS
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -21,6 +24,7 @@
 
 - type: decal
   id: LatticeEdgeW
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -28,6 +32,7 @@
 
 - type: decal
   id: LatticeCornerNE
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -35,6 +40,7 @@
 
 - type: decal
   id: LatticeCornerNW
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -42,6 +48,7 @@
 
 - type: decal
   id: LatticeCornerSE
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -49,6 +56,7 @@
 
 - type: decal
   id: LatticeCornerSW
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -56,6 +64,7 @@
 
 - type: decal
   id: LatticeOuterCornerNE
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -63,6 +72,7 @@
 
 - type: decal
   id: LatticeOuterCornerNW
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -70,6 +80,7 @@
 
 - type: decal
   id: LatticeOuterCornerSE
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
@@ -77,6 +88,7 @@
 
 - type: decal
   id: LatticeOuterCornerSW
+  parent: Lattice
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
