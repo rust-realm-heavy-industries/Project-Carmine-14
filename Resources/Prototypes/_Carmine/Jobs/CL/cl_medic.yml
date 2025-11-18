@@ -34,5 +34,5 @@
   id: MedicCLGear
   equipment:
     jumpsuit: ClothingUniformCLMedic
-    shoes: ClothingShoesCLBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

@@ -34,5 +34,5 @@
   id: MilitaryKVGear
   equipment:
     jumpsuit: ClothingUniformKVMilitary
-    shoes: ClothingShoesKVBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

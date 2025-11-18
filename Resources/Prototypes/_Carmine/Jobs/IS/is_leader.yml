@@ -36,5 +36,5 @@
   id: LeaderISGear
   equipment:
     jumpsuit: ClothingUniformISLeader
-    shoes: ClothingShoesISBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

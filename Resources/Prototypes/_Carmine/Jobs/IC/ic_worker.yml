@@ -33,5 +33,5 @@
   id: WorkerICGear
   equipment:
     jumpsuit: ClothingUniformICWorker
-    shoes: ClothingShoesICBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

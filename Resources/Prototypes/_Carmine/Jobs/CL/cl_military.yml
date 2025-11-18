@@ -34,5 +34,5 @@
   id: MilitaryCLGear
   equipment:
     jumpsuit: ClothingUniformCLMilitary
-    shoes: ClothingShoesCLBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

@@ -34,5 +34,5 @@
   id: MilitaryISGear
   equipment:
     jumpsuit: ClothingUniformISMilitary
-    shoes: ClothingShoesISBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

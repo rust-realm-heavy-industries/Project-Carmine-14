@@ -33,5 +33,5 @@
   id: WorkerCLGear
   equipment:
     jumpsuit: ClothingUniformCLWorker
-    shoes: ClothingShoesCLBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

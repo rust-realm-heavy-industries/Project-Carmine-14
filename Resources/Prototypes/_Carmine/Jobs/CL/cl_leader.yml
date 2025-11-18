@@ -36,5 +36,5 @@
   id: LeaderCLGear
   equipment:
     jumpsuit: ClothingUniformCLLeader
-    shoes: ClothingShoesCLBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

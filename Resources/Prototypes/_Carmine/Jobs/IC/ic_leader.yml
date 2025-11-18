@@ -36,5 +36,5 @@
   id: LeaderICGear
   equipment:
     jumpsuit: ClothingUniformICLeader
-    shoes: ClothingShoesICBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

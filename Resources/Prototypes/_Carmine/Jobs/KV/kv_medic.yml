@@ -34,5 +34,5 @@
   id: MedicKVGear
   equipment:
     jumpsuit: ClothingUniformKVMedic
-    shoes: ClothingShoesKVBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack

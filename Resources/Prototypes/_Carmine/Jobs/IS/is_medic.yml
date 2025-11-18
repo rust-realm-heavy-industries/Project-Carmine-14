@@ -34,5 +34,5 @@
   id: MedicISGear
   equipment:
     jumpsuit: ClothingUniformISMedic
-    shoes: ClothingShoesISBootsJack
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpack
