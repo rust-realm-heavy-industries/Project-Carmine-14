@@ -272,6 +272,16 @@ LockerMedicineFilled: null
 LockerSalvageSpecialistFilled: null
 LockerWeldingSuppliesFilled: null
 
+#GUN KILLING
+WeaponLaserCarbine: null
+WeaponLauncherMultipleRocket: null
+WeaponLauncherRocket: null
+WeaponRifleAk: null
+ExGrenade: null
+
+ClownPDA: null
+PlayerStationAi: null
+
 #old hullrot stuff
 SpawnPointKommissar: null
 ThrusterUnwelded: Thruster
@@ -367,7 +377,6 @@ SalvageTankSpawner: WeldingFuelTankFull
 ActionToggleMagbootsAdvanced: null
 ReinforcedWindowStation: ReinforcedWindow
 WallReinforcedStation: WallReinforced
-HandHeldMassScanner: HandHeldMassScannerEE
 
 ChairWoodWinged: ChairWood
 PlastitaniumWindowStation: PlastitaniumWindow

@@ -1702,20 +1702,6 @@
     sprite: Objects/Consumable/Drinks/royrogers.rsi
     state: icon
 
-##Commented out in favor of Nyano sake/soju
-#- type: entity
-#  parent: DrinkGlass
-#  id: DrinkSakeGlass
-#  suffix: sake
-#  components:
-#  - type: SolutionContainerManager
-#    solutions:
-#      drink:
-#        maxVol: 30
-#        reagents:
-#        - ReagentId: Sake
-#          Quantity: 30
-
 - type: entity
   parent: DrinkGlass
   id: DrinkSbitenGlass

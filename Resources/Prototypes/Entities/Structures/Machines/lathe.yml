@@ -376,7 +376,6 @@
     - SignalTrigger
     - VoiceTrigger
     - Igniter
-    - HandHeldMassScannerEE
     - PowerCellMicrortg
     - PowerCellMicroreactor
     - PowerCellHigh
@@ -395,7 +394,6 @@
     - SyringeBluespace
   #  - WeaponForceGun
     - WeaponCivilianDisabler
-    - WeaponProtoKineticAccelerator
   #  - WeaponTetherGun
   #  - WeaponGrapplingGun
     - ClothingBackpackHolding
@@ -1270,7 +1268,7 @@
           - Gauze
           - Metal
 
-      
+
 - type: entity
   id: MedicalTechFab
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
@@ -1436,7 +1434,7 @@
   - type: Machine
     board: BiogeneratorMachineCircuitboard
   - type: MaterialStorage
-    insertOnInteract: true 
+    insertOnInteract: true
     canEjectStoredMaterials: false
     ignoreColor: true
     whitelist:
@@ -1488,7 +1486,7 @@
     - BioGenBoozeVendRestock
     - BioGenCondimentsRestock
     - BioGenChefVendRestock
-    
+
 - type: entity
   parent: [BaseLathe, BaseMaterialSiloUtilizer]
   id: OreProcessor

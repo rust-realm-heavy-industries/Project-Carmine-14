@@ -169,31 +169,6 @@
         ActionKnock: -1
 
 - type: entity
-  id: FireballSpellbook
-  name: A Pyromaniac's obsession
-  description: The book goes over a mental exercise to channel pyromancy into a singular fireball. the specifics fade from your mind quickly.
-  parent: BaseSpellbook
-  components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_old
-        color: "#ba5a14"
-      - state: decor_wingette_circle
-        color: gold
-      - state: detail_rivets
-        color: gold
-      - state: detail_bookmark
-        color: "#e89b3c"
-      - state: overlay_blood
-      - state: icon_magic_fireball
-        shader: unshaded
-    - type: Spellbook
-      spellActions:
-        ActionFireball: -1
-
-- type: entity
   id: ScrollRunes
   name: collection of drawings
   description: A collection of hastily scribbled notes of strange drawings that seem to do things if drawn. Despite it fading from your memory, you are absolutely sure they work.

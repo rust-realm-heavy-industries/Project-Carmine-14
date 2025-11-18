@@ -186,84 +186,6 @@
     - VimPilot
 
 - type: entity
-  name: Bandito
-  parent: MobFerret
-  id: MobBandito
-  description: Just a silly little guy!
-  components:
-  - type: Grammar
-    attributes:
-      proper: true
-      gender: male
-  - type: Tag
-    tags:
-    - CannotSuicide
-    - VimPilot
-
-- type: entity
-  name: Bingus
-  parent: SimpleMobBase
-  id: MobBingus
-  description: Bingus my beloved...
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Pets/bingus.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
-      state: bingus
-  - type: Physics
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 12
-        mask:
-        - MobMask
-        layer:
-        - MobLayer
-  - type: Inventory
-    speciesId: cat
-    templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: bingus
-      Critical:
-        Base: bingus_dead
-      Dead:
-        Base: bingus_dead
-  - type: Butcherable
-    spawned:
-    - id: FoodMeat
-      amount: 2
-  - type: InteractionPopup
-    successChance: 0.9
-    interactSuccessString: petting-success-bingus
-    interactFailureString: petting-failure-generic
-    interactSuccessSpawn: EffectHearts
-    interactSuccessSound:
-      path: /Audio/Animals/cat_meow.ogg
-  - type: Grammar
-    attributes:
-      proper: true
-      gender: epicene
-  - type: Tag
-    tags:
-    - CannotSuicide
-    - VimPilot
-  - type: StealTarget
-    stealGroup: AnimalBingus
-
-- type: entity
   name: McGriff
   parent: SimpleMobBase
   id: MobMcGriff
@@ -524,28 +446,6 @@
     attributes:
       proper: true
       gender: female
-  - type: Tag
-    tags:
-    - CannotSuicide
-    - VimPilot
-
-- type: entity
-  name: Alexander
-  parent: MobPig
-  id: MobAlexander
-  description: Chef's finest colleague.
-  components:
-  - type: InteractionPopup
-    successChance: 1
-    interactSuccessString: petting-success-pig
-    interactFailureString: petting-failure-pig
-    interactSuccessSpawn: EffectHearts
-    interactSuccessSound:
-      path: /Audio/Animals/pig_oink.ogg
-  - type: Grammar
-    attributes:
-      proper: true
-      gender: male
   - type: Tag
     tags:
     - CannotSuicide
@@ -855,7 +755,7 @@
         type: StorageBoundUserInterface
       enum.StoreUiKey.Key:
         type: StoreBoundUserInterface
-    
+
 - type: entity
   name: Pun Pun
   parent: MobMonkey

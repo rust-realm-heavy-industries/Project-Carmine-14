@@ -404,26 +404,6 @@
         - AnomalySynchronizerCircuitboard
 
 - type: entity
-  parent: BaseMachineCircuitboard
-  id: APECircuitboard
-  name: A.P.E. machine board
-  description: A machine printed circuit board for an A.P.E.
-  components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAPE
-      requirements:
-        Capacitor: 2
-      materialRequirements:
-        Cable: 1
-        Glass: 1
-    - type: ReverseEngineering # Nyano
-      difficulty: 2
-      recipes:
-        - APECircuitboard
-
-- type: entity
   id: ThermomachineFreezerMachineCircuitBoard
   parent: BaseMachineCircuitboard
   name: freezer thermomachine machine board

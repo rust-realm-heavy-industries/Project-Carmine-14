@@ -194,27 +194,6 @@
 
 - type: entity
   parent: WeaponEnergyTurretStationControlPanel
-  id: WeaponEnergyTurretAIControlPanel
-  name: AI sentry turret control panel
-  description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
-  components:
-  - type: AccessReader
-    access: [["StationAi"], ["Captain"], ["ResearchDirector"]]
-  - type: TurretTargetSettings
-    exemptAccessLevels:
-    - Captain
-    - ResearchDirector
-    - BasicSilicon
-    - Borg
-  - type: DeviceNetwork
-    receiveFrequencyId: TurretAI
-    transmitFrequencyId: TurretControlAI
-  - type: ContainerFill
-    containers:
-      board: [ WeaponEnergyTurretAIControlPanelElectronics ]
-
-- type: entity
-  parent: WeaponEnergyTurretStationControlPanel
   id: WeaponCSAEnergyTurretControlPanel
   name: CSA - 240 turret control panel
   description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
