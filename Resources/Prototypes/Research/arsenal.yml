@@ -14,20 +14,13 @@
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
   - ShuttleGunKineticCircuitboard
-  - WeaponLaserCarbine
   - WeaponMechCombatFiredartLaser # Goobstation
-  - WeaponEnergyGun
-  - WeaponEnergyGunMini
-  - WeaponLaserSvalinn
-  - WeaponEnergyGunPistol
   - WeaponDisablerSMG
   - Truncheon
   - WeaponDisabler
   - WeaponCivilianDisabler
   - WeaponMechCombatDisabler # Goobstation
-  #- WeaponPistolMk58 #todo: Add a bunch of basic ballistic guns to the list and make lathe recipes for them.
   - MechEquipmentKineticAccelerator # Goobstation
-  - WeaponPistolMk58
   # These are roundstart but not replenishable for salvage
 
 - type: technology
@@ -169,7 +162,6 @@
   - WeaponLaserCannon
   - WeaponMechCombatSolarisLaser # Goobstation
   - WeaponSubMachineGunFPA90
-  - WeaponPistolN1984
   - WeaponPistolViper
   - WeaponPistolCobra
   - Terminus
@@ -225,7 +217,6 @@
   tier: 3
   cost: 20000
   recipeUnlocks:
-  - WeaponAdvancedLaser
   - PortableRecharger
   - GrenadeEMP
   - PowerCageHigh

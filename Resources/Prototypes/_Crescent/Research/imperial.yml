@@ -93,7 +93,6 @@
   cost: 5000
   recipeUnlocks:
   - WeaponRifleMiller
-  - WeaponRevolverArgenti
   - WeaponPistolComplianceImperial
 
 - type: technology
