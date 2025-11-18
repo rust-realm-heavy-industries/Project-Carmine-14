@@ -1,0 +1,183 @@
+# IC
+- type: entity
+  parent: DoorElectronics
+  id: ICDoorElectronicsShip
+  suffix: IC, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ICShip"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: ICDoorElectronicsStation
+  suffix: IC, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ICStation"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: ICDoorElectronicsMedical
+  suffix: IC, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ICMedical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: ICDoorElectronicsMilitary
+  suffix: IC, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ICMilitary"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: ICDoorElectronicsCommand
+  suffix: IC, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ICCommand"]]
+
+# IS
+- type: entity
+  parent: DoorElectronics
+  id: ISDoorElectronicsShip
+  suffix: IS, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ISShip"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: ISDoorElectronicsStation
+  suffix: IS, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ISStation"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: ISDoorElectronicsMedical
+  suffix: IS, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ISMedical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: ISDoorElectronicsMilitary
+  suffix: IS, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ISMilitary"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: ISDoorElectronicsCommand
+  suffix: IS, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["ISCommand"]]
+
+# CL
+- type: entity
+  parent: DoorElectronics
+  id: CLDoorElectronicsShip
+  suffix: CL, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["CLShip"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: CLDoorElectronicsStation
+  suffix: CL, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["CLStation"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: CLDoorElectronicsMedical
+  suffix: CL, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["CLMedical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: CLDoorElectronicsMilitary
+  suffix: CL, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["CLMilitary"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: CLDoorElectronicsCommand
+  suffix: CL, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["CLCommand"]]
+
+# KV
+- type: entity
+  parent: DoorElectronics
+  id: KVDoorElectronicsShip
+  suffix: KV, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["KVShip"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: KVDoorElectronicsStation
+  suffix: KV, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["KVStation"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: KVDoorElectronicsMedical
+  suffix: KV, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["KVMedical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: KVDoorElectronicsMilitary
+  suffix: KV, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["KVMilitary"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: KVDoorElectronicsCommand
+  suffix: KV, Carmine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["KVCommand"]]

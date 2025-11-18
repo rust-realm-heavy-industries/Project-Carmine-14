@@ -79,18 +79,7 @@
         color: red
   - type: RandomSpawner
     prototypes:
-    - ClothingUniformJumpsuitHydroponics
-    - ClothingUniformOveralls
-    - ClothingOuterApronBotanist
-    - ClothingNeckScarfStripedGreen
     - ClothingHandsGlovesLeather
-    - ClothingShoesColorBrown
-    - ClothingOuterWinterHydro
-    - ClothingShoesBootsWinterHydro
-    - ClothingBackpackDuffelHydroponics
-    - ClothingBackpackMessengerHydroponics
-    - ClothingBeltPlant
-    - ClothingHeadBandBotany
     chance: 1
     offset: 0.0
     rarePrototypes:

@@ -65,8 +65,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ DeathSquadGear ]
     - type: RandomMetadata
       nameSegments:
         - NamesFirstMilitaryLeader
@@ -104,8 +102,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTLeaderGear ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstMilitaryLeader
@@ -135,8 +131,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTLeaderGearEVA ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTLeaderEVALecter
@@ -158,8 +152,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTLeaderGearEVALecter ]
 
 ## ERT Chaplain
 
@@ -195,8 +187,6 @@
       nameSegments:
       - NamesFirstMilitary
       - NamesLastMilitary
-    - type: Loadout
-      prototypes: [ ERTChaplainGear ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTChaplainEVA
@@ -221,8 +211,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTChaplainGearEVA ]
 
 ## ERT Janitor
 
@@ -258,8 +246,6 @@
       nameSegments:
       - NamesFirstMilitary
       - NamesLastMilitary
-    - type: Loadout
-      prototypes: [ ERTJanitorGear ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTJanitorEVA
@@ -285,8 +271,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTJanitorGearEVA ]
 
 ## ERT Engineer
 
@@ -322,8 +306,6 @@
       nameSegments:
       - NamesFirstMilitary
       - NamesLastMilitary
-    - type: Loadout
-      prototypes: [ ERTEngineerGear ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTEngineerEVA
@@ -349,8 +331,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTEngineerGearEVA ]
 
 ## ERT Security
 
@@ -385,8 +365,6 @@
       nameSegments:
       - NamesFirstMilitary
       - NamesLastMilitary
-    - type: Loadout
-      prototypes: [ ERTSecurityGear ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTSecurityEVA
@@ -412,8 +390,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTSecurityGearEVA ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTSecurityEVALecter
@@ -434,8 +410,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTSecurityGearEVALecter ]
 
 ## ERT Medic
 
@@ -471,8 +445,6 @@
       nameSegments:
       - NamesFirstMilitary
       - NamesLastMilitary
-    - type: Loadout
-      prototypes: [ ERTMedicalGear ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTMedicalEVA
@@ -498,8 +470,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTMedicalGearEVA ]
 
 ## CBURN
 
@@ -521,8 +491,6 @@
     - Kobold # Shitmed Change
   components:
     - type: MindShield
-    - type: Loadout
-      prototypes: [CBURNGear]
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description
@@ -561,8 +529,6 @@
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ CentcomGear ]
 
 ## Syndicate
 
@@ -586,8 +552,6 @@
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false
-    - type: Loadout
-      prototypes: [SyndicateOperativeGearExtremelyBasic]
 
 - type: entity
   id: RandomHumanoidSpawnerNukeOp
@@ -679,8 +643,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ CargoTechGear ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -734,8 +696,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ClownGear ]
     - type: RandomMetadata
       nameSegments:
       - names_clown
@@ -749,8 +709,6 @@
       description: ghost-role-information-clown-troupe-description
       rules: ghost-role-information-clown-troupe-rules
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ BananaClown ]
     - type: RandomMetadata
       nameSegments:
       - names_clown
@@ -792,8 +750,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ChefGear ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -827,8 +783,6 @@
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ CMOGear ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -845,8 +799,6 @@
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ CaptainGear ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -892,8 +844,6 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ SyndicateOperativeGearCivilian ]
     - type: RandomMetadata
       nameSegments:
       - names_first

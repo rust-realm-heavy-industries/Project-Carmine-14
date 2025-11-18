@@ -1,0 +1,183 @@
+# IC
+- type: entity
+  parent: ICAirlock
+  id: ICAirlockShip
+  suffix: IC, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ICDoorElectronicsShip ]
+
+- type: entity
+  parent: ICAirlock
+  id: ICAirlockStation
+  suffix: IC, Station
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ICDoorElectronicsStation ]
+
+- type: entity
+  parent: ICAirlock
+  id: ICAirlockMedical
+  suffix: IC, Medical
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ICDoorElectronicsMedical ]
+
+- type: entity
+  parent: ICAirlock
+  id: ICAirlockMilitary
+  suffix: IC, Military
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ICDoorElectronicsMilitary ]
+
+- type: entity
+  parent: ICAirlock
+  id: ICAirlockCommand
+  suffix: IC, Command
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ICDoorElectronicsCommand ]
+
+# IS
+- type: entity
+  parent: ISAirlock
+  id: ISAirlockShip
+  suffix: IS, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ISDoorElectronicsShip ]
+
+- type: entity
+  parent: ISAirlock
+  id: ISAirlockStation
+  suffix: IS, Station
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ISDoorElectronicsStation ]
+
+- type: entity
+  parent: ISAirlock
+  id: ISAirlockMedical
+  suffix: IS, Medical
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ISDoorElectronicsMedical ]
+
+- type: entity
+  parent: ISAirlock
+  id: ISAirlockMilitary
+  suffix: IS, Military
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ISDoorElectronicsMilitary ]
+
+- type: entity
+  parent: ISAirlock
+  id: ISAirlockCommand
+  suffix: IS, Command
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ ISDoorElectronicsCommand ]
+
+# CL
+- type: entity
+  parent: CLAirlock
+  id: CLAirlockShip
+  suffix: CL, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ CLDoorElectronicsShip ]
+
+- type: entity
+  parent: CLAirlock
+  id: CLAirlockStation
+  suffix: CL, Station
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ CLDoorElectronicsStation ]
+
+- type: entity
+  parent: CLAirlock
+  id: CLAirlockMedical
+  suffix: CL, Medical
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ CLDoorElectronicsMedical ]
+
+- type: entity
+  parent: CLAirlock
+  id: CLAirlockMilitary
+  suffix: CL, Military
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ CLDoorElectronicsMilitary ]
+
+- type: entity
+  parent: CLAirlock
+  id: CLAirlockCommand
+  suffix: CL, Command
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ CLDoorElectronicsCommand ]
+
+# KV
+- type: entity
+  parent: KVAirlock
+  id: KVAirlockShip
+  suffix: KV, Ship
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ KVDoorElectronicsShip ]
+
+- type: entity
+  parent: KVAirlock
+  id: KVAirlockStation
+  suffix: KV, Station
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ KVDoorElectronicsStation ]
+
+- type: entity
+  parent: KVAirlock
+  id: KVAirlockMedical
+  suffix: KV, Medical
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ KVDoorElectronicsMedical ]
+
+- type: entity
+  parent: KVAirlock
+  id: KVAirlockMilitary
+  suffix: KV, Military
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ KVDoorElectronicsMilitary ]
+
+- type: entity
+  parent: KVAirlock
+  id: KVAirlockCommand
+  suffix: KV, Command
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ KVDoorElectronicsCommand ]

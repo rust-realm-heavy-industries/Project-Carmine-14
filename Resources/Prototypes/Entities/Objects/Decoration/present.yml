@@ -218,20 +218,6 @@
         orGroup: GiftPool
       - id: Skub
         orGroup: GiftPool
-      - id: ClothingEyesGlassesGarGiga
-        orGroup: GiftPool
-      - id: ClothingEyesGlassesGarOrange
-        orGroup: GiftPool
-      - id: ClothingEyesGlassesGar
-        orGroup: GiftPool
-      - id: ClothingNeckBling
-        orGroup: GiftPool
-      - id: ClothingHeadHelmetCosmonaut
-        orGroup: GiftPool
-      - id: ClothingShoeSlippersDuck
-        orGroup: GiftPool
-      - id: ClothingUnderSocksBee
-        orGroup: GiftPool
       - id: ClothingUnderSocksCoder
         orGroup: GiftPool
       - id: ClothingBeltUtilityFilled

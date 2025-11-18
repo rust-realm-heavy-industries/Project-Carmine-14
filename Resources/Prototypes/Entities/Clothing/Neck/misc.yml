@@ -44,30 +44,6 @@
   - type: Stethoscope
 
 - type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckBling
-  name: bling
-  description: Damn, it feels good to be a gangster.
-  components:
-  - type: Sprite
-    sprite: Clothing/Neck/Misc/bling.rsi
-  - type: Clothing
-    sprite: Clothing/Neck/Misc/bling.rsi
-
-- type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckLawyerbadge
-  name: lawyer badge
-  description: A badge to show that the owner is a 'legitimate' lawyer who passed the NT bar exam required to practice law.
-  components:
-  - type: Sprite
-    sprite: Clothing/Neck/Misc/lawyerbadge.rsi
-  - type: Clothing
-    sprite: Clothing/Neck/Misc/lawyerbadge.rsi
-  - type: TypingIndicatorClothing
-    proto: lawyer
-
-- type: entity
   id: ActionStethoscope
   name: Listen with stethoscope
   categories: [ HideSpawnMenu ]
@@ -79,20 +55,6 @@
     event: !type:StethoscopeActionEvent
     checkCanInteract: false
     priority: -1
-
-- type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckBellCollar
-  name: bell collar
-  description: A way to inform others about your presence, or just to annoy everyone around you!
-  components:
-  - type: Sprite
-    sprite: Clothing/Neck/Misc/bellcollar.rsi
-  - type: Clothing
-    sprite: Clothing/Neck/Misc/bellcollar.rsi
-  - type: EmitsSoundOnMove
-    soundCollection:
-      collection: FootstepJester
 
 - type: entity
   parent: ClothingNeckBase

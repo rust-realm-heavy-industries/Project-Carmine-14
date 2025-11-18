@@ -1,0 +1,39 @@
+- type: entity
+  parent: Airlock
+  id: ICAirlock
+  suffix: IC, Unlocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
+  - type: Wires
+    layoutId: Airlock
+
+- type: entity
+  parent: Airlock
+  id: ISAirlock
+  suffix: IS, Unlocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/command.rsi
+  - type: Wires
+    layoutId: Airlock
+
+- type: entity
+  parent: Airlock
+  id: CLAirlock
+  suffix: CL, Unlocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/basic.rsi
+  - type: Wires
+    layoutId: Airlock
+
+- type: entity
+  parent: Airlock
+  id: KVAirlock
+  suffix: KV, Unlocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+  - type: Wires
+    layoutId: Airlock

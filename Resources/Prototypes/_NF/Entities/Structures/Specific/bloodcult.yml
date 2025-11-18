@@ -60,24 +60,6 @@
         - ReagentId: Blood
           Quantity: 1000
 
-# Wall for POI
-- type: entity
-  parent: BaseWall
-  id: WallCultIndestructible
-  name: cult wall
-  suffix: indestructible
-  components:
-  - type: Tag
-    tags:
-      - Wall
-  - type: Sprite
-    sprite: _NF/Structures/Specific/BloodCult/wall.rsi
-  - type: Icon
-    sprite: _NF/Structures/Specific/BloodCult/wall.rsi
-  - type: IconSmooth
-    key: walls
-    base: cult
-
 # Blood Cult Airlock
 - type: entity
   parent: AirlockGlass
