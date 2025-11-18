@@ -11,35 +11,6 @@
       reoccurrenceDelay: 5
     - type: NoosphericStormRule
 
-# Mid round antag spawns
-- type: entity
-  abstract: true
-  parent: BaseGameRule
-  id: BaseMidRoundAntag
-  components:
-  - type: StationEvent
-    weight: 7
-    reoccurrenceDelay: 5
-    minimumPlayers: 15
-    earliestStart: 25
-  - type: MidRoundAntagRule
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BaseMidRoundAntag
-  id: RatKingSpawn
-  components:
-  - type: MidRoundAntagRule
-    spawner: SpawnPointGhostRatKing
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BaseMidRoundAntag
-  id: ParadoxAnomalySpawn
-  components:
-  - type: MidRoundAntagRule
-    spawner: SpawnPointGhostParadoxAnomaly
-
 # Base glimmer event
 - type: entity
   id: BaseGlimmerEvent
@@ -99,18 +70,6 @@
       glimmerBurnLower: 80
       glimmerBurnUpper: 120
     - type: PsionicCatGotYourTongueRule
-
-- type: entity
-  id: MassMindSwap
-  parent: BaseGlimmerEvent
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: GlimmerEvent
-      minimumGlimmer: 900
-      glimmerBurnLower: 750
-      glimmerBurnUpper: 950 # Unless epistemics badly f-d up, this will restore the glimmer balance for a while.
-    - type: MassMindSwapRule
-      isTemporary: true # Permanent mindswap is hell.
 
 - type: entity
   abstract: true
