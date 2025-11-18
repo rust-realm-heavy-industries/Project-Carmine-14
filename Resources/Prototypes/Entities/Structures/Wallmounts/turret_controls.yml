@@ -182,12 +182,12 @@
   - type: Electrified
     enabled: false
     usesApcPower: true
-  - type: ContainerFill
-    containers:
-      board: [ WeaponEnergyTurretStationControlPanelElectronics ]
-  - type: ContainerContainer
-    containers:
-      board: !type:Container
+  # - type: ContainerFill
+  #   containers:
+  #     board: [ WeaponEnergyTurretStationControlPanelElectronics ]
+  # - type: ContainerContainer
+  #   containers:
+  #     board: !type:Container
   - type: Construction
     graph: WeaponEnergyTurretControlPanel
     node: finish
