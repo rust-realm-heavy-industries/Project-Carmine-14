@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformISJumpsuit
+  name: IS Jumpsuit
+  description: IS jumpsuit for IS things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi

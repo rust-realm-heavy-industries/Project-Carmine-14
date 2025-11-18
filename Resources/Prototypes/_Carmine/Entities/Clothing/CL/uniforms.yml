@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCLJumpsuit
+  name: CL Jumpsuit
+  description: CL jumpsuit for CL things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
