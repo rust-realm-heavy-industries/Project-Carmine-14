@@ -1,0 +1,33 @@
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskKVGasMask
+  name: KV gas mask
+  description: KV gas mask for KV things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/gas.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/gas.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskKVScarf
+  name: KVVanityMask
+  description: KV scarf for KV things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/sterile.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/sterile.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker

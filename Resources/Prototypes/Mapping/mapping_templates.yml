@@ -1069,29 +1069,21 @@
         - !type:MappingTemplatePrototype
           id: SuitStorageSec
         - !type:MappingTemplatePrototype
-          id: WeaponSubMachineGunDrozd
         - !type:MappingTemplatePrototype
-          id: WeaponShotgunKammerer
         - !type:MappingTemplatePrototype
           id: WeaponShotgunEnforcer
         - !type:MappingTemplatePrototype
           id: WeaponShotgunEnforcerRubber
         - !type:MappingTemplatePrototype
-          id: WeaponShotgunDoubleBarreledRubber
         - !type:MappingTemplatePrototype
-          id: WeaponShotgunDoubleBarreled
         - !type:MappingTemplatePrototype
-          id: WeaponPistolMk58
         - !type:MappingTemplatePrototype
-          id: WeaponSubMachineGunWt550
         - !type:MappingTemplatePrototype
           id: WeaponRifleLecter
         - !type:MappingTemplatePrototype
           id: WeaponLaserCannon
         - !type:MappingTemplatePrototype
-          id: WeaponLaserCarbine
         - !type:MappingTemplatePrototype
-          id: WeaponLaserGun
         - !type:MappingTemplatePrototype
           id: WeaponDisabler
         - !type:MappingTemplatePrototype
@@ -1152,7 +1144,6 @@
         - !type:MappingTemplatePrototype
           id: TargetStrange
         - !type:MappingTemplatePrototype
-          id: WeaponLaserCarbinePractice
         - !type:MappingTemplatePrototype
           id: WeaponDisablerPractice
 

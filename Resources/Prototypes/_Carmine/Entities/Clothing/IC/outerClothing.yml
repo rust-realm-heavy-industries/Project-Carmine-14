@@ -1,0 +1,21 @@
+- type: entity
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing] #has pockets.
+  id: ClothingOuterICJacket
+  name: IC Jacket
+  description: IC Jacket for IC things.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/detective.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/detective.rsi
+
+- type: entity
+  parent: ClothingOuterArmorBase #has suit storage, but no pockets.
+  id: ClothingOuterICArmorVest
+  name: IC Armor Vest
+  description: IC armor vest for IC things.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/detective.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/detective.rsi

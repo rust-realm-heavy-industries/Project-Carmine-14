@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckICNecklace
+  name: IC Necklace
+  description: A IC necklace for IC things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Necklaces/standard.rsi
+  - type: Clothing
+    sprite: Clothing/Neck/Necklaces/standard.rsi

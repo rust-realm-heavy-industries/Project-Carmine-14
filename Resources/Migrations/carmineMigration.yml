@@ -243,6 +243,15 @@ WallRockAndesiteCopper: null
 WallRockAndesiteTungsten: null
 #REPLACED BY CARMINE WALLS
 
+# LAVALAND/LAVABRIG STUFF SO THE GAME COMPILES
+ClosetBombFilled: null
+ClusterBangFull: null
+LockerSecurityFilled: null
+WeaponDisablerPractice: null
+WeaponLaserCarbinePractice: null
+WeaponShotgunKammerer: null
+WeaponShotgunImprovised: null
+
 #CLOTHING AND ITEM KILLING
 ClosetEmergencyFilledRandom: null
 ClosetToolFilled: null

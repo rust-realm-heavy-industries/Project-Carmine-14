@@ -1,0 +1,21 @@
+- type: entity
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing] #has pockets.
+  id: ClothingOuterKVJacket
+  name: KV Jacket
+  description: KV Jacket for KV things.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/detective.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/detective.rsi
+
+- type: entity
+  parent: ClothingOuterArmorBase #has suit storage, but no pockets.
+  id: ClothingOuterKVArmorVest
+  name: KV Armor Vest
+  description: KV armor vest for KV things.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/detective.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/detective.rsi
