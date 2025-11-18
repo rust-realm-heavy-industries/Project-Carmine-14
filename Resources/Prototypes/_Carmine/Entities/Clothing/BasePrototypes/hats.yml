@@ -1,4 +1,29 @@
-#Chameleon is for the Wizden burglar role, they have a TeleCrystal ability to buy a chameleon PDA that turns their clothes into anything.
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: CarmineClothingHeadBase
+  components:
+  - type: Clothing
+    slots:
+    - HEAD
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Small
+    storedRotation: -90
+  # - type: Food
+  #   requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+  - type: Tag
+    tags:
+      - ClothMade
+      - WhitelistChameleon
 
 # CL Hats Base
 

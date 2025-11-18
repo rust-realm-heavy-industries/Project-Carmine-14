@@ -1,8 +1,46 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: CarmineClothingHandsBase
+  components:
+  - type: Sprite
+    state: icon
+  - type: Clothing
+    slots: [gloves]
+  # - type: Food
+  #   requiresSpecialDigestion: true
+  - type: Item
+    size: Small
+    storedRotation: -90
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 5
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+
+
 # IC Gloves base
 
 - type: entity
-  parent: ClothingHandsGlovesColorBlack
-  id: ClothingHandsICGlovesCombat
+  parent: ClothingHandsBase
+  id: ClothingHands
   name: combat gloves
   description: These tactical gloves are fireproof and shock resistant.
   components:
@@ -25,7 +63,7 @@
 # KV gloves base
 
 - type: entity
-  parent: ClothingHandsGlovesColorBlack
+  parent: ClothingHandsBase
   id: ClothingHandsKVGlovesCombat
   name: combat gloves
   description: These tactical gloves are fireproof and shock resistant.
@@ -49,7 +87,7 @@
 # GL gloves base
 
 - type: entity
-  parent: ClothingHandsGlovesColorBlack
+  parent: ClothingHandsBase
   id: ClothingHandsGLGlovesCombat
   name: combat gloves
   description: These tactical gloves are fireproof and shock resistant.
@@ -73,7 +111,7 @@
 # IS gloves base
 
 - type: entity
-  parent: ClothingHandsGlovesColorBlack
+  parent: ClothingHandsBase
   id: ClothingHandsISGlovesCombat
   name: combat gloves
   description: These tactical gloves are fireproof and shock resistant.
