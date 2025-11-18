@@ -79,8 +79,5 @@
       - state: france
   - type: StorageFill
     contents:
-      - id: WeaponCroissant
-        amount: 2
-      - id: WeaponBaguette
       - id: SyndicateMicrowaveMachineCircuitboard
       - id: PaperWrittenCombatBakeryKit

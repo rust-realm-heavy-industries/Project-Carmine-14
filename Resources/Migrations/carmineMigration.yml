@@ -65,6 +65,15 @@ PoweredLightPostSmall: null
 AlwaysPoweredLightPostSmall: null
 #REPLACED BY CARMINE LIGHTS
 
+# LAVALAND/LAVABRIG STUFF SO THE GAME COMPILES
+ClosetBombFilled: null
+ClusterBangFull: null
+LockerSecurityFilled: null
+WeaponDisablerPractice: null
+WeaponLaserCarbinePractice: null
+WeaponShotgunKammerer: null
+WeaponShotgunImprovised: null
+
 
 
 
