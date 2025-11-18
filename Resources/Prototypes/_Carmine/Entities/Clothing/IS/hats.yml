@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadISHat
+  name: IS hat
+  description: IS hat for IS stuff.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: ClothingHeadISHelmet
+  name: IS helmet
+  description: IS helmet for IS stuff.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi

@@ -1,0 +1,295 @@
+# CL Faction PDAs
+- type: entity
+  parent: BasePDA
+  id: CLLeaderPDA
+  name: CL leader PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: CLLeaderIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - MedTekCartridge
+      - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: BasePDA
+  id: CLMedicPDA
+  name: CL medic PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: CLMedicIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - MedTekCartridge
+      - NanoChatCartridge # DeltaV
+  - type: GuideHelp
+    guides:
+    - Medical Doctor
+
+- type: entity
+  parent: BasePDA
+  id: CLMilitaryPDA
+  name: CL military PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: CLMilitaryIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: BasePDA
+  id: CLWorkerPDA
+  name: CL worker PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: CLWorkerIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # DeltaV
+
+# IC Faction PDAs
+- type: entity
+  parent: BasePDA
+  id: ICLeaderPDA
+  name: IC leader PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: ICLeaderIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - MedTekCartridge
+      - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: BasePDA
+  id: ICMedicPDA
+  name: IC medic PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: ICMedicIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - MedTekCartridge
+      - NanoChatCartridge # DeltaV
+  - type: GuideHelp
+    guides:
+    - Medical Doctor
+
+- type: entity
+  parent: BasePDA
+  id: ICMilitaryPDA
+  name: IC military PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: ICMilitaryIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: BasePDA
+  id: ICWorkerPDA
+  name: IC worker PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: ICWorkerIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # DeltaV
+
+# IS Faction PDAs
+- type: entity
+  parent: BasePDA
+  id: ISLeaderPDA
+  name: IS leader PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: ISLeaderIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - MedTekCartridge
+      - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: BasePDA
+  id: ISMedicPDA
+  name: IS medic PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: ISMedicIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - MedTekCartridge
+      - NanoChatCartridge # DeltaV
+  - type: GuideHelp
+    guides:
+    - Medical Doctor
+
+- type: entity
+  parent: BasePDA
+  id: ISMilitaryPDA
+  name: IS military PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: ISMilitaryIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: BasePDA
+  id: ISWorkerPDA
+  name: IS worker PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: ISWorkerIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # DeltaV
+
+# KV Faction PDAs
+- type: entity
+  parent: BasePDA
+  id: KVLeaderPDA
+  name: KV leader PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: KVLeaderIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - MedTekCartridge
+      - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: BasePDA
+  id: KVMedicPDA
+  name: KV medic PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: KVMedicIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - MedTekCartridge
+      - NanoChatCartridge # DeltaV
+  - type: GuideHelp
+    guides:
+    - Medical Doctor
+
+- type: entity
+  parent: BasePDA
+  id: KVMilitaryPDA
+  name: KV military PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: KVMilitaryIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: BasePDA
+  id: KVWorkerPDA
+  name: KV worker PDA
+  description: help me.
+  components:
+  - type: Pda
+    id: KVWorkerIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # DeltaV

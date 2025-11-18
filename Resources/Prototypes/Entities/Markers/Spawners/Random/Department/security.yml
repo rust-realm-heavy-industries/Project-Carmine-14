@@ -75,13 +75,7 @@
 #        - WeaponRifleAk
       rareChance: 0.05
       prototypes:
-#        - WeaponSubMachineGunWt550
-        - WeaponDisabler
-        - WeaponPistolMk58
-        - WeaponRifleLecter
-        - WeaponSubMachineGunDrozd
-        - WeaponLaserCarbine
-        - WeaponShotgunKammerer
+        - RiotShield
       chance: 0.95
       offset: 0.0
 
@@ -102,13 +96,8 @@
 #        - WeaponRifleAk
       rareChance: 0.05
       prototypes:
-#        - WeaponSubMachineGunWt550
         - WeaponDisabler
-        - WeaponPistolMk58
         - WeaponRifleLecter
-        - WeaponSubMachineGunDrozd
-        - WeaponLaserCarbine
-        - WeaponShotgunKammerer
       chance: 0.95
       offset: 0.0
 

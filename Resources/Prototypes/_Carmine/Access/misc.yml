@@ -1,0 +1,129 @@
+- type: accessGroup
+  id: AllAccess
+  tags:
+  - EmergencyShuttleRepealAll
+  - Maintenance
+  - CLShip
+  - CLStation
+  - CLMedical
+  - CLMilitary
+  - CLCommand
+  - ICShip
+  - ICStation
+  - ICMedical
+  - ICMilitary
+  - ICCommand
+  - ISShip
+  - ISStation
+  - ISMedical
+  - ISMilitary
+  - ISCommand
+  - KVShip
+  - KVStation
+  - KVMedical
+  - KVMilitary
+  - KVCommand
+
+- type: accessGroup
+  id: General
+  tags:
+  - Maintenance
+
+# IC Faction Access
+- type: accessGroup
+  id: ICShip
+  tags:
+  - ICShip
+
+- type: accessGroup
+  id: ICStation
+  tags:
+  - ICStation
+
+- type: accessGroup
+  id: ICMedical
+  tags:
+  - ICMedical
+
+- type: accessGroup
+  id: ICMilitary
+  tags:
+  - ICMilitary
+
+- type: accessGroup
+  id: ICCommand
+  tags:
+  - ICCommand
+
+# IS Faction Access
+- type: accessGroup
+  id: ISShip
+  tags:
+  - ISShip
+
+- type: accessGroup
+  id: ISStation
+  tags:
+  - ISStation
+
+- type: accessGroup
+  id: ISMedical
+  tags:
+  - ISMedical
+
+- type: accessGroup
+  id: ISMilitary
+  tags:
+  - ISMilitary
+
+- type: accessGroup
+  id: ISCommand
+  tags:
+  - ISCommand
+
+# CL Faction Access
+- type: accessGroup
+  id: CLShip
+  tags:
+  - CLShip
+
+- type: accessGroup
+  id: CLStation
+  tags:
+  - CLStation
+
+- type: accessGroup
+  id: CLMedical
+  tags:
+  - CLMedical
+
+- type: accessGroup
+  id: CLMilitary
+  tags:
+  - CLMilitary
+
+- type: accessGroup
+  id: CLCommand
+  tags:
+  - CLCommand
+
+# KV Faction Access
+- type: accessGroup
+  id: KVShip
+  tags:
+  - KVShip
+
+- type: accessGroup
+  id: KVStation
+  tags:
+  - KVStation
+
+- type: accessGroup
+  id: KVMedical
+  tags:
+  - KVMedical
+
+- type: accessGroup
+  id: KVMilitary
+  tags:
+  - KVMilitary

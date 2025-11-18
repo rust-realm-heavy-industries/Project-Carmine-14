@@ -33,6 +33,6 @@
 - type: startingGear
   id: MilitaryKVGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAncient
+    jumpsuit: ClothingUniformKVMilitary
     shoes: ClothingShoesBootsJack
     back: ClothingBackpack

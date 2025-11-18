@@ -81,7 +81,6 @@
   cost: 8000
   recipeUnlocks:
   - WeaponCivilianDisabler
-  - WeaponEnergyGunMini
 
 - type: technology
   id: NightVisionTechElectronics

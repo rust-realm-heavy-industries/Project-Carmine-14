@@ -298,7 +298,7 @@
                        [head=1]FOR THE FRONTIER.[/head]
 
 - type: entity
-  id: PaperMailNTMusket
+  id: PaperMailMusket
   categories: [ HideSpawnMenu ]
   suffix: "musket"
   parent: Paper

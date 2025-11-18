@@ -1,0 +1,103 @@
+﻿
+- type: decal
+  id: BrickTileSteelBox
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_box
+
+- type: decal
+  id: BrickTileSteelCornerNe
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_corner_ne
+
+- type: decal
+  id: BrickTileSteelCornerSe
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_corner_se
+
+- type: decal
+  id: BrickTileSteelCornerNw
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_corner_nw
+
+- type: decal
+  id: BrickTileSteelCornerSw
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_corner_sw
+
+- type: decal
+  id: BrickTileSteelInnerNe
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_inner_ne
+
+- type: decal
+  id: BrickTileSteelInnerSe
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_inner_se
+
+- type: decal
+  id: BrickTileSteelInnerNw
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_inner_nw
+
+- type: decal
+  id: BrickTileSteelInnerSw
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_inner_sw
+
+- type: decal
+  id: BrickTileSteelEndN
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_end_n
+
+- type: decal
+  id: BrickTileSteelEndE
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_end_e
+
+- type: decal
+  id: BrickTileSteelEndS
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_end_s
+
+- type: decal
+  id: BrickTileSteelEndW
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_end_w
+
+- type: decal
+  id: BrickTileSteelLineN
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_line_n
+
+- type: decal
+  id: BrickTileSteelLineE
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_line_e
+
+- type: decal
+  id: BrickTileSteelLineS
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_line_s
+
+- type: decal
+  id: BrickTileSteelLineW
+  sprite:
+    sprite: Decals/bricktile.rsi
+    state: steel_line_w
+

@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsISGloves
+  name: IS gloves
+  description: IS gloves for IS stuff.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Clothing/Hands/Gloves/inspection.rsi
+  - type: Clothing
+    sprite: DeltaV/Clothing/Hands/Gloves/inspection.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400

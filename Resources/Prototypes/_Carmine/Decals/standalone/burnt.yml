@@ -1,0 +1,27 @@
+- type: decal
+  id: burnt1
+  parent: Misc
+  sprite:
+    sprite: Decals/burnt.rsi
+    state: burnt1
+
+- type: decal
+  id: burnt2
+  parent: Misc
+  sprite:
+    sprite: Decals/burnt.rsi
+    state: burnt2
+
+- type: decal
+  id: burnt3
+  parent: Misc
+  sprite:
+    sprite: Decals/burnt.rsi
+    state: burnt3
+
+- type: decal
+  id: burnt4
+  parent: Misc
+  sprite:
+    sprite: Decals/burnt.rsi
+    state: burnt4

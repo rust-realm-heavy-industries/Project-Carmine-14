@@ -35,6 +35,6 @@
 - type: startingGear
   id: LeaderCLGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAncient
+    jumpsuit: ClothingUniformCLLeader
     shoes: ClothingShoesBootsJack
     back: ClothingBackpack

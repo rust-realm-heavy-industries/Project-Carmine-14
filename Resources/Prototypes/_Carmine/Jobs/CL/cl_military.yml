@@ -33,6 +33,6 @@
 - type: startingGear
   id: MilitaryCLGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAncient
+    jumpsuit: ClothingUniformCLMilitary
     shoes: ClothingShoesBootsJack
     back: ClothingBackpack

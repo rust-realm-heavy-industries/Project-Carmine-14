@@ -140,7 +140,6 @@
   recipeUnlocks:
   - WeaponRifleHoundMarksman
   - WeaponShotgunSHIDoubleBarreled4g
-  - WeaponPistolMk58SHI
   - WeaponSubMachineGunMP49
 
 - type: technology
@@ -452,4 +451,3 @@
   recipeUnlocks:
   - WeaponShotgunSpas
   - WeaponRifleM90GrenadeLauncher
-  - WeaponSubMachineGunWt550
