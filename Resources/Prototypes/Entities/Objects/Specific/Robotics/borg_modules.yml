@@ -151,7 +151,6 @@
   - type: ItemBorgModule
     items:
     - HandheldGPSBasic
-    - HandHeldMassScannerBorg
     - HandheldStationMapUnpowered
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: gps-module }
@@ -243,20 +242,7 @@
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: jetpack-module }
 
-- type: entity
-  id: BorgModulePka
-  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
-  name: proto kinetic accelerator cyborg module
-  components:
-  - type: Sprite
-    layers:
-    - state: cargo
-    - state: icon-pka
-  - type: ItemBorgModule
-    items:
-    - WeaponProtoKineticAccelerator
-  - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: pka-module }
+
 
 # - type: entity
 #   id: BorgModuleGrapplingGun
@@ -625,7 +611,6 @@
     - state: icon-syndicate
   - type: ItemBorgModule
     items:
-    - WeaponAdvancedLaser
     - Machete
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-weapon-module }

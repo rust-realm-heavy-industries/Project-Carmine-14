@@ -376,7 +376,6 @@
     - SignalTrigger
     - VoiceTrigger
     - Igniter
-    - HandHeldMassScannerEE
     - PowerCellMicrortg
     - PowerCellMicroreactor
     - PowerCellHigh
@@ -394,9 +393,7 @@
     - BluespaceBeaker
     - SyringeBluespace
   #  - WeaponForceGun
-    - WeaponLaserSvalinn
     - WeaponCivilianDisabler
-    - WeaponProtoKineticAccelerator
   #  - WeaponTetherGun
   #  - WeaponGrapplingGun
     - ClothingBackpackHolding
@@ -468,13 +465,8 @@
     - SpeedLoaderMagnumUranium
     - TelescopicShield
     - Truncheon
-    - WeaponAdvancedLaser
     - WeaponLaserCannon
-    - WeaponLaserCarbine
     - WeaponXrayCannon
-    - WeaponEnergyGun       # DeltaV - Energy Gun
-    - WeaponEnergyGunMini   # DeltaV - Miniature Energy Gun
-    - WeaponEnergyGunPistol # DeltaV - PDW-9 Energy Pistol
     - WeaponGunLaserCarbineAutomatic # DeltaV - IK-60 Laser Carbine
 
 - type: entity
@@ -991,7 +983,6 @@
       - TargetSyndicate
       - WeaponDisablerPractice
       - WeaponFlareGunSecurity
-      - WeaponLaserCarbinePractice
       - Zipties
       - GrenadeFlashBang # Goobstation
       - ShockCollar
@@ -1103,19 +1094,14 @@
       - SpeedLoaderRifleHeavyUranium
       - TimerTrigger
       - VoiceTrigger
-      - WeaponAdvancedLaser
       - WeaponDisabler
       - WeaponDisablerSMG
       - WeaponLaserCannon
-      - WeaponLaserCarbine
       - ClothingEyesNightVisionSecurityGoggles
       - ClothingHeadHelmetInsulated # Nyanotrasen - Insulative headgear
       - ClothingHeadCage # Nyanotrasen - Insulative headgear
       - ShockCollar # Nyanotrasen - Shock Collar
       - WeaponXrayCannon
-      - WeaponEnergyGun
-      - WeaponEnergyGunMini
-      - WeaponEnergyGunPistol
       - WeaponGunLaserCarbineAutomatic
       - CartridgeSpecialIncendiary
       - CartridgeSpecialUranium
@@ -1151,8 +1137,6 @@
       - WeaponEnergyTurretStationControlPanelElectronics
       - WeaponSubMachineGunFPA90
       - WeaponSubMachineGunBRDIR25
-      - WeaponPistolMk58
-      - WeaponPistolN1984
       - WeaponPistolViper
       - WeaponPistolCobra
       - MagazineRifleShrapnel
@@ -1284,7 +1268,7 @@
           - Gauze
           - Metal
 
-      
+
 - type: entity
   id: MedicalTechFab
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
@@ -1450,7 +1434,7 @@
   - type: Machine
     board: BiogeneratorMachineCircuitboard
   - type: MaterialStorage
-    insertOnInteract: true 
+    insertOnInteract: true
     canEjectStoredMaterials: false
     ignoreColor: true
     whitelist:
@@ -1502,7 +1486,7 @@
     - BioGenBoozeVendRestock
     - BioGenCondimentsRestock
     - BioGenChefVendRestock
-    
+
 - type: entity
   parent: [BaseLathe, BaseMaterialSiloUtilizer]
   id: OreProcessor

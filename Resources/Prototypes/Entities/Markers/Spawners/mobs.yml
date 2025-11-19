@@ -151,19 +151,6 @@
       - MobCatFloppa
 
 - type: entity
-  name: Bingus Spawner
-  id: SpawnMobCatBingus
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-      - state: green
-      - state: ai
-  - type: ConditionalSpawner
-    prototypes:
-      - MobBingus
-
-- type: entity
   name: Space Cat Spawner
   id: SpawnMobCatSpace
   parent: MarkerBase
@@ -223,19 +210,6 @@
     rarePrototypes:
       - MobCatSpace
     rareChance: 0.05
-
-- type: entity
-  name: Bandito Spawner
-  id: SpawnMobBandito
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-      - state: green
-      - state: ai
-  - type: ConditionalSpawner
-    prototypes:
-      - MobBandito
 
 - type: entity
   name:  McGriff Spawner
@@ -362,19 +336,6 @@
       - CrateNPCHamlet
 
 - type: entity
-  name: Alexander Spawner
-  id: SpawnMobAlexander
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-      - state: green
-      - state: ai
-  - type: ConditionalSpawner
-    prototypes:
-      - MobAlexander
-
-- type: entity
   name: Shiva Spawner
   id: SpawnMobShiva
   parent: MarkerBase
@@ -415,20 +376,6 @@
   - type: ConditionalSpawner
     prototypes:
     - MobKangarooSpace
-
-- type: entity
-  name: Boxing Kangaroo Spawner
-  id: SpawnMobBoxingKangaroo
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-    - state: green
-    - state: kangaroo
-      sprite: Mobs/Animals/kangaroo.rsi
-  - type: ConditionalSpawner
-    prototypes:
-    - MobBoxingKangaroo
 
 - type: entity
   name: Space Spider Spawner
@@ -691,20 +638,6 @@
   - type: ConditionalSpawner
     prototypes:
     - MobFrog
-
-- type: entity
-  name: Bee Spawner
-  id: SpawnMobBee
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-    - state: green
-    - state: 0
-      sprite: Mobs/Animals/bee.rsi
-  - type: ConditionalSpawner
-    prototypes:
-    - MobBee
 
 - type: entity
   name: Parrot Spawner

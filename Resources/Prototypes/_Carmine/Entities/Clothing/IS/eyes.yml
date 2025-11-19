@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesISGlasses
+  name: IS Glasses
+  description: IS Glasses for IS things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/meson.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/meson.rsi

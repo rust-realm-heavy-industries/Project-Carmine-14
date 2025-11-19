@@ -1,0 +1,33 @@
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskICGasMask
+  name: IC gas mask
+  description: IC gas mask for IC things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/gas.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/gas.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskICScarf
+  name: ICVanityMask
+  description: IC scarf for IC things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/sterile.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/sterile.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker

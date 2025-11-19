@@ -1,0 +1,63 @@
+﻿- type: decal
+  id: ArrowsGreyscale
+  parent: Misc
+  sprite:
+    sprite: Decals/markings.rsi
+    state: arrows_greyscale
+
+- type: decal
+  id: BotGreyscale
+  parent: Misc
+  sprite:
+    sprite: Decals/markings.rsi
+    state: bot_greyscale
+    
+- type: decal
+  id: BotLeftGreyscale
+  parent: Misc
+  sprite:
+    sprite: Decals/markings.rsi
+    state: bot_left_greyscale
+
+- type: decal
+  id: BotRightGreyscale
+  parent: Misc
+  sprite:
+    sprite: Decals/markings.rsi
+    state: bot_right_greyscale
+
+- type: decal
+  id: BoxGreyscale
+  parent: Misc
+  sprite:
+    sprite: Decals/markings.rsi
+    state: box_greyscale
+
+- type: decal
+  id: CautionGreyscale
+  parent: Misc
+  sprite:
+    sprite: Decals/markings.rsi
+    state: caution_greyscale
+
+- type: decal
+  id: DeliveryGreyscale
+  parent: Misc
+  sprite:
+    sprite: Decals/markings.rsi
+    state: delivery_greyscale
+
+- type: decal
+  id: LoadingAreaGreyscale
+  parent: Misc
+  sprite:
+    sprite: Decals/markings.rsi
+    state: loading_area_greyscale
+
+- type: decal
+  id: StandClearGreyscale
+  parent: Misc
+  sprite:
+    sprite: Decals/markings.rsi
+    state: standclear_greyscale
+

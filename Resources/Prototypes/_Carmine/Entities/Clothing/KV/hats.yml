@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadKVHat
+  name: KV hat
+  description: KV hat for KV stuff.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: ClothingHeadKVHelmet
+  name: KV helmet
+  description: KV helmet for KV stuff.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi

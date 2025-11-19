@@ -1,0 +1,54 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformISJumpsuit
+  name: IS Jumpsuit
+  description: IS jumpsuit for IS things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformISLeader
+  name: IS Leader Jumpsuit
+  description: IS jumpsuit for IS things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformISMedic
+  name: IS Medic Jumpsuit
+  description: IS jumpsuit for IS things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformISMilitary
+  name: IS Military Jumpsuit
+  description: IS jumpsuit for IS things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformISWorker
+  name: IS Worker Jumpsuit
+  description: IS jumpsuit for IS things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi

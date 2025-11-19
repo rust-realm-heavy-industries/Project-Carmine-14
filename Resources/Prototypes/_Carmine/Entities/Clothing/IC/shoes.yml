@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesICShoes
+  name: IC Shoes
+  description: IC shoes for IC things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Misc/leather.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Misc/leather.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase #comes with sidearm and knife storage
+  id: ClothingShoesICBoots
+  name: IC Boots
+  description: IC boots for IC things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/jackboots.rsi

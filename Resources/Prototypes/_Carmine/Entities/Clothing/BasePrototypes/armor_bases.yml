@@ -1,0 +1,41 @@
+## HEAD
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetBase
+  name: base helmet
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi
+  # - type: DegradeableArmor # health bar armor system
+  # - type: Armor # percentage armor system
+  #   modifiers:
+  #     coefficients:
+  #       Blunt: 0.90
+  #       Slash: 0.90
+  #       Piercing: 0.90
+  #       Heat: 0.90
+
+## OUTER CLOTHING
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing]
+  id: ClothingOuterArmorBase
+  name: base armor
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret.rsi
+  # - type: DegradeableArmor # health bar armor system
+  # - type: Armor
+  #   modifiers:
+  #     coefficients:
+  #       Blunt: 0.70
+  #       Slash: 0.70
+  #       Piercing: 0.70
+  #       Heat: 0.70

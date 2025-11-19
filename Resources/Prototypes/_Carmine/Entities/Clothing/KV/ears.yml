@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHeadsetAlt
+  id: ClothingHeadsetKV
+  name: KV Headset
+  components:
+  # - type: ContainerFill #uncomment and add proper key once we have it.
+  #   containers:
+  #     key_slots:
+  #     - EncryptionKeyStationMaster
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/command.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/command.rsi

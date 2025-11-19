@@ -1209,12 +1209,12 @@
     Glass: 500
     Gold: 100
 
-- type: latheRecipe
-  id: WeaponEnergyTurretStationControlPanelElectronics
-  result: WeaponEnergyTurretStationControlPanelElectronics
-  category: Circuitry
-  completetime: 5
-  materials:
-    Steel: 100
-    Glass: 500
-    Gold: 100
+# - type: latheRecipe
+#   id: WeaponEnergyTurretStationControlPanelElectronics
+#   result: WeaponEnergyTurretStationControlPanelElectronics
+#   category: Circuitry
+#   completetime: 5
+#   materials:
+#     Steel: 100
+#     Glass: 500
+#     Gold: 100

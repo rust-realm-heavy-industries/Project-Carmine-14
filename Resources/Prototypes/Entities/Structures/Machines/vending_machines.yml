@@ -1105,7 +1105,7 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-    ejectState: eject-unshaded 
+    ejectState: eject-unshaded
     initialStockQuality: 1
     denyState: deny-unshaded
   - type: Sprite
@@ -1249,51 +1249,6 @@
     radius: 2
     energy: 1.6
     color: "#B80F0A"
-    mask: /Textures/Effects/LightMasks/cone.png
-    autoRot: true
-  - type: Transform
-    noRot: false
-  - type: Rotatable
-    rotateWhileAnchored: false
-    rotateWhilePulling: true
-
-- type: entity
-  parent: VendingMachine
-  id: VendingMachineTheater
-  name: AutoDrobe
-  description: A vending machine containing costumes.
-  components:
-  - type: VendingMachine
-    pack: AutoDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-    ejectState: eject-unshaded
-    denyState: deny-unshaded
-    screenState: screen
-  - type: Advertise
-    pack: AutoDrobeAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
-  - type: Speech
-  - type: Sprite
-    sprite: Structures/Machines/VendingMachines/theater.rsi
-    noRot: true
-    layers:
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-      shader: unshaded
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - state: "screen"
-      map: ["enum.VendingMachineVisualLayers.Screen"]
-      shader: unshaded
-  - type: PointLight
-    radius: 2
-    energy: 1.6
-    color: "#c73434"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Transform
@@ -1737,34 +1692,6 @@
 
 - type: entity
   parent: VendingMachine
-  id: VendingBarDrobe
-  name: BarDrobe
-  description: A stylish vendor to dispense the most stylish bar clothing!
-  components:
-  - type: VendingMachine
-    pack: BarDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-  - type: Advertise
-    pack: BarDrobeAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
-  - type: Sprite
-    sprite: Structures/Machines/VendingMachines/bardrobe.rsi
-    layers:
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-      shader: unshaded
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  #- type: AccessReader
-  #  access: [["Bar"]]
-
-- type: entity
-  parent: VendingMachine
   id: VendingMachineChapel
   name: PietyVend
   components:
@@ -1904,34 +1831,6 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   #- type: AccessReader
   #  access: [["Library"]]
-
-- type: entity
-  parent: VendingMachine
-  id: VendingMachineAtmosDrobe
-  name: AtmosDrobe
-  description: This relatively unknown vending machine delivers clothing for Atmospherics Technicians, an equally unknown job.
-  components:
-  - type: VendingMachine
-    pack: AtmosDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-  - type: Advertise
-    pack: AtmosDrobeAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
-  - type: Sprite
-    sprite: Structures/Machines/VendingMachines/atmosdrobe.rsi
-    layers:
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-      shader: unshaded
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  #- type: AccessReader
-  #  access: [["Engineering"]]
 
 - type: entity
   parent: VendingMachine
