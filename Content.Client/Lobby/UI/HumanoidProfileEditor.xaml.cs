@@ -493,8 +493,8 @@ namespace Content.Client.Lobby.UI
 
             #region Antags
 
-            Antags.Orphan();
-            CTabContainer.AddTab(Antags, Loc.GetString("humanoid-profile-editor-antags-tab"));
+            // Antags.Orphan();
+            // CTabContainer.AddTab(Antags, Loc.GetString("humanoid-profile-editor-antags-tab"));
 
             #endregion Antags
 
@@ -751,71 +751,71 @@ namespace Content.Client.Lobby.UI
             EmployerDescriptionLabel.SetMessage(Loc.GetString(prototype.DescriptionKey));
         }
 
-        public void RefreshAntags()
-        {
-            AntagList.DisposeAllChildren();
-            var items = new[]
-            {
-                ("humanoid-profile-editor-antag-preference-yes-button", 0),
-                ("humanoid-profile-editor-antag-preference-no-button", 1)
-            };
-            // Causes a weird error if I just replace AntagList so whatever, have a child
-            var alt = new AlternatingBGContainer { Orientation = LayoutOrientation.Vertical, };
-            AntagList.AddChild(alt);
+        // public void RefreshAntags()
+        // {
+        //     AntagList.DisposeAllChildren();
+        //     var items = new[]
+        //     {
+        //         ("humanoid-profile-editor-antag-preference-yes-button", 0),
+        //         ("humanoid-profile-editor-antag-preference-no-button", 1)
+        //     };
+        //     // Causes a weird error if I just replace AntagList so whatever, have a child
+        //     var alt = new AlternatingBGContainer { Orientation = LayoutOrientation.Vertical, };
+        //     AntagList.AddChild(alt);
 
-            foreach (var antag in _prototypeManager.EnumeratePrototypes<AntagPrototype>().OrderBy(a => Loc.GetString(a.Name)))
-            {
-                if (!antag.SetPreference)
-                    continue;
+        //     foreach (var antag in _prototypeManager.EnumeratePrototypes<AntagPrototype>().OrderBy(a => Loc.GetString(a.Name)))
+        //     {
+        //         if (!antag.SetPreference)
+        //             continue;
 
-                var antagContainer = new BoxContainer()
-                {
-                    Orientation = LayoutOrientation.Horizontal,
-                    HorizontalExpand = true,
-                };
+        //         var antagContainer = new BoxContainer()
+        //         {
+        //             Orientation = LayoutOrientation.Horizontal,
+        //             HorizontalExpand = true,
+        //         };
 
-                var selector = new RequirementsSelector()
-                {
-                    Margin = new(3f, 3f, 3f, 0f),
-                    HorizontalExpand = true,
-                };
-                selector.OnOpenGuidebook += OnOpenGuidebook;
+        //         var selector = new RequirementsSelector()
+        //         {
+        //             Margin = new(3f, 3f, 3f, 0f),
+        //             HorizontalExpand = true,
+        //         };
+        //         selector.OnOpenGuidebook += OnOpenGuidebook;
 
-                var title = Loc.GetString(antag.Name);
-                var description = Loc.GetString(antag.Objective);
-                selector.Setup(items, title, 250, description, guides: antag.Guides);
-                selector.Select(Profile?.AntagPreferences.Contains(antag.ID) == true ? 0 : 1);
+        //         var title = Loc.GetString(antag.Name);
+        //         var description = Loc.GetString(antag.Objective);
+        //         selector.Setup(items, title, 250, description, guides: antag.Guides);
+        //         selector.Select(Profile?.AntagPreferences.Contains(antag.ID) == true ? 0 : 1);
 
-                if (!_characterRequirementsSystem.CheckRequirementsValid(
-                    antag.Requirements ?? new(),
-                    _controller.GetPreferredJob(Profile ?? HumanoidCharacterProfile.DefaultWithSpecies()),
-                    Profile ?? HumanoidCharacterProfile.DefaultWithSpecies(),
-                    _requirements.GetRawPlayTimeTrackers(),
-                    _requirements.IsWhitelisted(),
-                    antag,
-                    _entManager,
-                    _prototypeManager,
-                    _cfgManager,
-                    out var reasons))
-                {
-                    var reason = _characterRequirementsSystem.GetRequirementsText(reasons);
-                    selector.LockRequirements(reason);
-                    Profile = Profile?.WithAntagPreference(antag.ID, false);
-                    SetDirty();
-                }
-                else
-                    selector.UnlockRequirements();
+        //         if (!_characterRequirementsSystem.CheckRequirementsValid(
+        //             antag.Requirements ?? new(),
+        //             _controller.GetPreferredJob(Profile ?? HumanoidCharacterProfile.DefaultWithSpecies()),
+        //             Profile ?? HumanoidCharacterProfile.DefaultWithSpecies(),
+        //             _requirements.GetRawPlayTimeTrackers(),
+        //             _requirements.IsWhitelisted(),
+        //             antag,
+        //             _entManager,
+        //             _prototypeManager,
+        //             _cfgManager,
+        //             out var reasons))
+        //         {
+        //             var reason = _characterRequirementsSystem.GetRequirementsText(reasons);
+        //             selector.LockRequirements(reason);
+        //             Profile = Profile?.WithAntagPreference(antag.ID, false);
+        //             SetDirty();
+        //         }
+        //         else
+        //             selector.UnlockRequirements();
 
-                selector.OnSelected += preference =>
-                {
-                    Profile = Profile?.WithAntagPreference(antag.ID, preference == 0);
-                    SetDirty();
-                };
+        //         selector.OnSelected += preference =>
+        //         {
+        //             Profile = Profile?.WithAntagPreference(antag.ID, preference == 0);
+        //             SetDirty();
+        //         };
 
-                antagContainer.AddChild(selector);
-                alt.AddChild(antagContainer);
-            }
-        }
+        //         antagContainer.AddChild(selector);
+        //         alt.AddChild(antagContainer);
+        //     }
+        // }
 
         private void SetDirty()
         {
@@ -898,7 +898,7 @@ namespace Content.Client.Lobby.UI
             UpdateWeight();
             UpdateCharacterRequired();
 
-            RefreshAntags();
+            // RefreshAntags();
             RefreshJobs();
             RefreshSpecies();
             RefreshNationalities();
