@@ -6,16 +6,6 @@
   - type: GameRule
 
 - type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BaseGameRule
-  id: SubGamemodesRule
-  components:
-  - type: SubGamemodes
-    rules:
-    - id: Thief
-      prob: 0.5
-
-- type: entity
   id: InactivityTimeRestart
   parent: BaseGameRule
   categories: [ HideSpawnMenu ]
@@ -39,43 +29,3 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: SandboxRule
-
-- type: entity
-  id: BasicStationEventScheduler
-  parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: BasicStationEventScheduler
-    scheduledGameRules: !type:NestedSelector
-      tableId: BasicGameRulesTable
-
-- type: entity
-  id: RampingStationEventScheduler
-  parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: RampingStationEventScheduler
-    scheduledGameRules: !type:NestedSelector
-      tableId: BasicGameRulesTable
-
-# variation passes
-- type: entity
-  id: BasicRoundstartVariation
-  parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: RoundstartStationVariationRule
-    rules:
-#    - id: BasicPoweredLightVariationPass
-    - id: BasicTrashVariationPass
-#    - id: SolidWallRustingVariationPass
-#    - id: ReinforcedWallRustingVariationPass
-    - id: BasicPuddleMessVariationPass
-      prob: 0.99
-      orGroup: puddleMess
-#    - id: BloodbathPuddleMessVariationPass
-#      prob: 0.01
-#      orGroup: puddleMess
-    - id: SmugglerStashVariationPass
-      prob: 0.90
-

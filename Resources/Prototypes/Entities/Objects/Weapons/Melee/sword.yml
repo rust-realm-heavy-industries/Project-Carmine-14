@@ -106,41 +106,41 @@
     sprite: DeltaV/Objects/Weapons/Melee/katana.rsi #DeltaV
   - type: DisarmMalus
 
-- type: entity
-  name: energy katana
-  parent: Katana
-  id: EnergyKatana
-  description: A katana infused with strong energy.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/energykatana.rsi
-    state: icon
-  - type: MeleeWeapon
-    wideAnimationRotation: -60
-    damage:
-      types:
-        Slash: 40
-  - type: ThrowingAngle
-    angle: 300
-  - type: Item
-    size: Normal
-    sprite: Objects/Weapons/Melee/energykatana.rsi
-  - type: EnergyKatana
-  - type: DashAbility
-  - type: LimitedCharges
-    maxCharges: 3
-    charges: 3
-  - type: AutoRecharge
-    rechargeDuration: 180
-  - type: Clothing
-    sprite: Objects/Weapons/Melee/energykatana.rsi
-    slots:
-    - Back
-    - Belt
-  - type: Reflect
-    reflectProb: 0.4
-    velocityBeforeNotMaxProb: 4.0 # don't punish ninjas for being ninjas
-    velocityBeforeMinProb: 8.0
+# - type: entity
+#   name: energy katana
+#   parent: Katana
+#   id: EnergyKatana
+#   description: A katana infused with strong energy.
+#   components:
+#   - type: Sprite
+#     sprite: Objects/Weapons/Melee/energykatana.rsi
+#     state: icon
+#   - type: MeleeWeapon
+#     wideAnimationRotation: -60
+#     damage:
+#       types:
+#         Slash: 40
+#   - type: ThrowingAngle
+#     angle: 300
+#   - type: Item
+#     size: Normal
+#     sprite: Objects/Weapons/Melee/energykatana.rsi
+#   - type: EnergyKatana
+#   # - type: DashAbility
+#   - type: LimitedCharges
+#     maxCharges: 3
+#     charges: 3
+#   - type: AutoRecharge
+#     rechargeDuration: 180
+#   - type: Clothing
+#     sprite: Objects/Weapons/Melee/energykatana.rsi
+#     slots:
+#     - Back
+#     - Belt
+#   - type: Reflect
+#     reflectProb: 0.4
+#     velocityBeforeNotMaxProb: 4.0 # don't punish ninjas for being ninjas
+#     velocityBeforeMinProb: 8.0
 
 - type: entity
   name: machete

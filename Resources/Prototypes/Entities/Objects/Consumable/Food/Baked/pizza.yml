@@ -443,43 +443,6 @@
     - Slice
 # Tastes like crust, tomato, cheese, pineapple, ham.
 
-#TODO: This is a meme pizza from /tg/. It has specially coded mechanics.
-- type: entity
-  name: Arnold's pizza
-  parent: FoodPizzaBase
-  id: FoodPizzaArnold
-  description: Hello, you've reached Arnold's pizza shop. I'm not here now, I'm out killing pepperoni.
-  components:
-  - type: FlavorProfile
-    flavors:
-      - meaty
-      - cheesy
-      - oily
-      - bread
-      - gunpowder
-  - type: Sprite
-    layers:
-    - state: arnold
-  - type: SliceableFood
-    slice: FoodPizzaArnoldSlice
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 85
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 30
-        - ReagentId: Vitamin
-          Quantity: 5
-        - ReagentId: Iron
-          Quantity: 10
-        - ReagentId: Omnizine
-          Quantity: 30
-  - type: Tag
-    tags:
-    - Meat
-    - Pizza
-
 - type: entity
   name: slice of Arnold's pizza
   parent: FoodPizzaSliceBase

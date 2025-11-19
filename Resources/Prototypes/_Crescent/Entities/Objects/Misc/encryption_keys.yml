@@ -217,21 +217,6 @@
 
 - type: entity
   parent: EncryptionKey
-  id: EncryptionKeyAuthority
-  name: 43rd encryption key
-  description: An encryption key used by the 43rd Battlegroup.
-  components:
-  - type: EncryptionKey
-    channels:
-    - Authority
-    defaultChannel: Common
-  - type: Sprite
-    layers:
-    - state: crypt_rusted
-    - state: common_label
-
-- type: entity
-  parent: EncryptionKey
   id: EncryptionKeyClarizian
   name: clarizian encryption key
   description: An encryption key used by the Clarizians.

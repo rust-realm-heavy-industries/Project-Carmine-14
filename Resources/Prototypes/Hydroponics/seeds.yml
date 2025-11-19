@@ -1610,10 +1610,6 @@
       Min: 1
       Max: 10
       PotencyDivisor: 10
-    HolyWater:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
     Vitamin:
       Min: 1
       Max: 5
