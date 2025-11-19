@@ -1471,17 +1471,6 @@
       task: SimpleHostileCompound
 
 - type: entity
-  name: boxing kangaroo
-  parent: MobKangaroo
-  id: MobBoxingKangaroo
-  components:
-  - type: Loadout
-    prototypes: [ BoxingKangarooGear ]
-  - type: NpcFactionMember
-    factions:
-    - SimpleHostile
-
-- type: entity
   name: genetic ancestor
   id: MobBaseAncestor
   parent: SimpleMobBase
@@ -1703,16 +1692,6 @@
     prototypes: [SyndicateOperativeGearMonkey]
 
 - type: entity
-  id: MobMonkeySyndicateAgent
-  parent: MobBaseSyndicateMonkey
-  suffix: syndicate agent
-  components:
-    # make the player a traitor once its taken
-  - type: Absorbable
-  - type: AutoTraitor
-    profile: TraitorReinforcement
-
-- type: entity
   id: MobMonkeySyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
   parent: MobBaseSyndicateMonkey
   suffix: NukeOps
@@ -1836,16 +1815,6 @@
     - Syndicate
   - type: Loadout
     prototypes: [SyndicateOperativeGearMonkey]
-
-- type: entity
-  id: MobKoboldSyndicateAgent
-  parent: MobBaseSyndicateKobold
-  suffix: syndicate agent
-  components:
-  - type: Absorbable
-    # make the player a traitor once its taken
-  - type: AutoTraitor
-    profile: TraitorReinforcement
 
 - type: entity
   id: MobKoboldSyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink

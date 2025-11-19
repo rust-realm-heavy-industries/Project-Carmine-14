@@ -1,0 +1,38 @@
+- type: job
+  id: JobMedicIC
+  name: job-name-ic-medic
+  description: job-description-ic-medic
+  playTimeTracker: PlaytimeTrackerMedicIC
+  weight: 3
+  startingGear: MedicICGear
+  alwaysUseSpawner: true
+  requireAdminNotify: false
+  icon: "JobIconClown"
+  supervisors: job-supervisors-ic
+  canBeAntag: false
+  requirements:
+    - !type:FactionRequirement
+      factionID: "IC"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: ChatRank
+        rank: chatrank-ic-medic
+      - type: HullrotFaction
+        faction: IC
+      # - type: LanguageAdder
+      #   addSpoken:
+      #     - LowImperial
+      #   addUnderstood:
+      #     - LowImperial
+  access:
+  - ICShip
+  - ICStation
+  - ICMedical
+
+- type: startingGear
+  id: MedicICGear
+  equipment:
+    jumpsuit: ClothingUniformICMedic
+    shoes: ClothingShoesBootsJack
+    back: ClothingBackpack

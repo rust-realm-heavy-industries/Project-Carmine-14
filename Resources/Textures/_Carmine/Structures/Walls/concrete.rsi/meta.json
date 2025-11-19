@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC BY-SA 3.0",
+    "copyright": "Taken from Shiptest",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "concrete_full"
+      },
+      {
+        "name": "concrete_0",
+        "directions": 4
+      },
+      {
+        "name": "concrete_1",
+        "directions": 4
+      },
+      {
+        "name": "concrete_2",
+        "directions": 4
+      },
+      {
+        "name": "concrete_3",
+        "directions": 4
+      },
+      {
+        "name": "concrete_4",
+        "directions": 4
+      },
+      {
+        "name": "concrete_5",
+        "directions": 4
+      },
+      {
+        "name": "concrete_6",
+        "directions": 4
+      },
+      {
+        "name": "concrete_7",
+        "directions": 4
+      }
+    ]
+  }

@@ -1,7 +1,7 @@
 ﻿- type: entity
   name: magma hand
   id: MobMagmaHand
-  parent: [ LavalandMobBase, MobCombat ]
+  parent: MobCombat
   description: Looks hot to the touch... Better not shake its hand!
   components:
   - type: Sprite

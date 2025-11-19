@@ -8,13 +8,16 @@
   },
     "states": [
         {
-            "name": "hivers"
+            "name": "iron"
         },
         {
-            "name": "eden"
+            "name": "invern"
         },
         {
             "name": "coalition"
+        },
+        {
+            "name": "khandan"
         }
     ]
 }

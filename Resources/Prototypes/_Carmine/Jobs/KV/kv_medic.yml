@@ -1,0 +1,38 @@
+- type: job
+  id: JobMedicKV
+  name: job-name-kv-medic
+  description: job-description-kv-medic
+  playTimeTracker: PlaytimeTrackerMedicKV
+  weight: 3
+  startingGear: MedicKVGear
+  alwaysUseSpawner: true
+  requireAdminNotify: false
+  icon: "JobIconClown"
+  supervisors: job-supervisors-kv
+  canBeAntag: false
+  requirements:
+    - !type:FactionRequirement
+      factionID: "KV"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: ChatRank
+        rank: chatrank-kv-medic
+      - type: HullrotFaction
+        faction: KV
+      # - type: LanguageAdder
+      #   addSpoken:
+      #     - LowImperial
+      #   addUnderstood:
+      #     - LowImperial
+  access:
+  - KVShip
+  - KVStation
+  - KVMedical
+
+- type: startingGear
+  id: MedicKVGear
+  equipment:
+    jumpsuit: ClothingUniformKVMedic
+    shoes: ClothingShoesBootsJack
+    back: ClothingBackpack

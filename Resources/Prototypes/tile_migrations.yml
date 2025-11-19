@@ -1,0 +1,7 @@
+- type: tileAlias
+  id: FloorWhite
+  target: FloorWhiteDiagonalMini
+
+- type: tileAlias
+  id: FloorSteel
+  target: PlatingBurnt

@@ -551,21 +551,7 @@
     stackType: FloorTileLaundry
 
 # Concrete
-- type: entity
-  parent: FloorTileItemBase
-  id: FloorTileItemConcrete
-  name: concrete tile
-  components:
-  - type: Sprite
-    state: concrete
-  - type: Item
-    heldPrefix: generic
-  - type: FloorTile
-    outputs:
-    - Plating
-    - FloorConcrete
-  - type: Stack
-    stackType: FloorTileConcrete
+
 
 - type: entity
   parent: FloorTileItemBase
@@ -582,71 +568,6 @@
     - FloorGrayConcrete
   - type: Stack
     stackType: FloorTileGrayConcrete
-
-- type: entity
-  parent: FloorTileItemBase
-  id: FloorTileItemOldConcrete
-  name: old concrete tile
-  components:
-  - type: Sprite
-    state: oldconcrete
-  - type: Item
-    heldPrefix: generic
-  - type: FloorTile
-    outputs:
-    - Plating
-    - FloorOldConcrete
-  - type: Stack
-    stackType: FloorTileOldConcrete
-
-# Carpets
-- type: entity
-  name: blue arcade floor
-  parent: FloorTileItemBase
-  id: FloorTileItemArcadeBlue
-  components:
-  - type: Sprite
-    state: arcadeblue
-  - type: Item
-    heldPrefix: arcadeblue
-  - type: FloorTile
-    outputs:
-      - Plating
-      - FloorArcadeBlue
-  - type: Stack
-    stackType: FloorTileStackArcadeBlue
-
-- type: entity
-  name: blue arcade floor
-  parent: FloorTileItemBase
-  id: FloorTileItemArcadeBlue2
-  components:
-  - type: Sprite
-    state: arcadeblue2
-  - type: Item
-    heldPrefix: generic
-  - type: FloorTile
-    outputs:
-      - Plating
-      - FloorArcadeBlue2
-  - type: Stack
-    stackType: FloorTileStackArcadeBlue2
-
-- type: entity
-  name: red arcade floor
-  parent: FloorTileItemBase
-  id: FloorTileItemArcadeRed
-  components:
-  - type: Sprite
-    state: arcadered
-  - type: Item
-    heldPrefix: arcadered
-  - type: FloorTile
-    outputs:
-      - Plating
-      - FloorArcadeRed
-  - type: Stack
-    stackType: FloorTileStackArcadeRed
 
 - type: entity
   name: eighties floor

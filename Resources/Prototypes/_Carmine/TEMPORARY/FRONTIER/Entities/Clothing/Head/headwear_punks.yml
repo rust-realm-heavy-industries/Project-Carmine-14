@@ -1,0 +1,19 @@
+# Acid raincoat hoods
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodAcidRaincoat
+  categories: [ HideSpawnMenu ]
+  name: acid raincoat hood
+  description: Mostly transparent raincoat hood made out of acid resistant polymers.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hoods/Coat/acid_raincoat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hoods/Coat/acid_raincoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.9
+  - type: HideLayerClothing
+    slots:
+    - Hair

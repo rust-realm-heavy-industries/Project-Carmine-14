@@ -1,0 +1,72 @@
+﻿- type: decal
+  id: TechCornerE
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: cornere
+
+- type: decal
+  id: TechCornerW
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: cornerw
+
+- type: decal
+  id: TechCornerS
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: corners
+
+- type: decal
+  id: TechCornerN
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: cornern
+
+- type: decal
+  id: TechE
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: teche
+
+- type: decal
+  id: TechW
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: techw
+
+- type: decal
+  id: TechN
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: techn
+
+- type: decal
+  id: TechS
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: techs
+
+- type: decal
+  id: TechNW
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: technw
+
+- type: decal
+  id: TechNE
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: techne
+
+- type: decal
+  id: TechSE
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: techse
+
+- type: decal
+  id: TechSW
+  sprite:
+    sprite: _Crescent/Decals/techfloor.rsi
+    state: techsw
+

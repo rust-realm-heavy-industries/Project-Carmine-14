@@ -1,0 +1,40 @@
+- type: job
+  id: JobLeaderCL
+  name: job-name-cl-leader
+  description: job-description-cl-leader
+  playTimeTracker: PlaytimeTrackerLeaderCL
+  weight: 10
+  startingGear: LeaderCLGear
+  alwaysUseSpawner: true
+  requireAdminNotify: false
+  icon: "JobIconClown"
+  supervisors: job-supervisors-cl
+  canBeAntag: false
+  requirements:
+    - !type:FactionRequirement
+      factionID: "CL"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: ChatRank
+        rank: chatrank-cl-leader
+      - type: HullrotFaction
+        faction: CL
+      # - type: LanguageAdder
+      #   addSpoken:
+      #     - LowImperial
+      #   addUnderstood:
+      #     - LowImperial
+  access:
+  - CLShip
+  - CLStation
+  - CLMedical
+  - CLMilitary
+  - CLCommand
+
+- type: startingGear
+  id: LeaderCLGear
+  equipment:
+    jumpsuit: ClothingUniformCLLeader
+    shoes: ClothingShoesBootsJack
+    back: ClothingBackpack

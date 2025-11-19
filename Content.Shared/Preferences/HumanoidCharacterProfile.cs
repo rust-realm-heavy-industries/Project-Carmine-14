@@ -37,7 +37,7 @@ public sealed partial class HumanoidCharacterProfile : ICharacterProfile
     private Dictionary<string, JobPriority> _jobPriorities = new()
     {
         {
-            SharedGameTicker.FallbackOverflowJob, JobPriority.High
+            SharedGameTicker.FallbackOverflowJob, JobPriority.Low
         },
     };
 

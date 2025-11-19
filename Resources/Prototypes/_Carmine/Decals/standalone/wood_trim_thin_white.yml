@@ -1,0 +1,101 @@
+﻿- type: decal
+  id: WoodTrimThinBoxWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_box
+
+- type: decal
+  id: WoodTrimThinCornerNeWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_corner_ne
+
+- type: decal
+  id: WoodTrimThinCornerSeWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_corner_se
+
+- type: decal
+  id: WoodTrimThinCornerNwWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_corner_nw
+
+- type: decal
+  id: WoodTrimThinCornerSwWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_corner_sw
+
+- type: decal
+  id: WoodTrimThinInnerNeWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_inner_ne
+
+- type: decal
+  id: WoodTrimThinInnerSeWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_inner_se
+
+- type: decal
+  id: WoodTrimThinInnerNwWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_inner_nw
+
+- type: decal
+  id: WoodTrimThinInnerSwWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_inner_sw
+
+- type: decal
+  id: WoodTrimThinEndNWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_end_n
+
+- type: decal
+  id: WoodTrimThinEndEWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_end_e
+
+- type: decal
+  id: WoodTrimThinEndSWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_end_s
+
+- type: decal
+  id: WoodTrimThinEndWWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_end_w
+
+- type: decal
+  id: WoodTrimThinLineNWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_line_n
+
+- type: decal
+  id: WoodTrimThinLineEWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_line_e
+
+- type: decal
+  id: WoodTrimThinLineSWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_line_s
+
+- type: decal
+  id: WoodTrimThinLineWWhite
+  sprite:
+    sprite: _Corvax/Decals/wood_trim_white.rsi
+    state: thin_line_w

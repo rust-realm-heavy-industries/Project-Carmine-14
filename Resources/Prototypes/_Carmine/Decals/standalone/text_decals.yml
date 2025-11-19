@@ -1,0 +1,42 @@
+- type: decal
+  id: Medical
+  parent: Misc
+  sprite:
+    sprite: _ds14/Decals/zetatextdecals.rsi
+    state: Medical
+    
+- type: decal
+  id: Bridge
+  parent: Misc
+  sprite:
+    sprite: _ds14/Decals/zetatextdecals.rsi
+    state: Bridge
+
+- type: decal
+  id: RnD
+  parent: Misc
+  sprite:
+    sprite: _ds14/Decals/zetatextdecals.rsi
+    state: RnD
+
+- type: decal
+  id: Sec
+  parent: Misc
+  sprite:
+    sprite: _ds14/Decals/zetatextdecals.rsi
+    state: Sec
+
+- type: decal
+  id: Supply
+  parent: Misc
+  sprite:
+    sprite: _ds14/Decals/zetatextdecals.rsi
+    state: Supply
+    
+- type: decal
+  id: Engi
+  parent: Misc
+  sprite:
+    sprite: _ds14/Decals/zetatextdecals.rsi
+    state: Engi
+

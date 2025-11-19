@@ -1,0 +1,259 @@
+# IC
+- type: entity
+  parent: IDCardStandard
+  id: ICLeaderIDCard
+  name: IC leader ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobLeaderIC
+
+- type: entity
+  parent: IDCardStandard
+  id: ICMedicIDCard
+  name: IC medic ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobMedicIC
+
+- type: entity
+  parent: IDCardStandard
+  id: ICMilitaryIDCard
+  name: IC military ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobMilitaryIC
+
+- type: entity
+  parent: IDCardStandard
+  id: ICWorkerIDCard
+  name: IC worker ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobWorkerIC
+
+# IS
+- type: entity
+  parent: IDCardStandard
+  id: ISLeaderIDCard
+  name: IS leader ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobLeaderIS
+
+- type: entity
+  parent: IDCardStandard
+  id: ISMedicIDCard
+  name: IS medic ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobMedicIS
+
+- type: entity
+  parent: IDCardStandard
+  id: ISMilitaryIDCard
+  name: IS military ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobMilitaryIS
+
+- type: entity
+  parent: IDCardStandard
+  id: ISWorkerIDCard
+  name: IS worker ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobWorkerIS
+
+# CL
+- type: entity
+  parent: IDCardStandard
+  id: CLLeaderIDCard
+  name: CL leader ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobLeaderCL
+
+- type: entity
+  parent: IDCardStandard
+  id: CLMedicIDCard
+  name: CL medic ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobMedicCL
+
+- type: entity
+  parent: IDCardStandard
+  id: CLMilitaryIDCard
+  name: CL military ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobMilitaryCL
+
+- type: entity
+  parent: IDCardStandard
+  id: CLWorkerIDCard
+  name: CL worker ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobWorkerCL
+
+# KV
+- type: entity
+  parent: IDCardStandard
+  id: KVLeaderIDCard
+  name: KV leader ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobLeaderKV
+
+- type: entity
+  parent: IDCardStandard
+  id: KVMedicIDCard
+  name: KV medic ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobMedicKV
+
+- type: entity
+  parent: IDCardStandard
+  id: KVMilitaryIDCard
+  name: KV military ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobMilitaryKV
+
+- type: entity
+  parent: IDCardStandard
+  id: KVWorkerIDCard
+  name: KV worker ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: PresetIdCard
+    job: JobWorkerKV

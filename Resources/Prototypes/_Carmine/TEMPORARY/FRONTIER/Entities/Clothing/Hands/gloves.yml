@@ -1,0 +1,11 @@
+
+- type: entity
+  parent: ClothingHandsGlovesLeather
+  id: ClothingHandsGlovesPilot
+  name: pilot gloves
+  description: Driving gloves, but for spaceships!
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Hands/Gloves/pilot.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Hands/Gloves/pilot.rsi

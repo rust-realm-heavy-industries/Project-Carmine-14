@@ -1,0 +1,54 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatFedoraBlack
+  name: black fedora
+  description: A black fedora. Lookin' classy.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Clothing/Head/Hats/blackfedora.rsi
+  - type: Clothing
+    sprite: DeltaV/Clothing/Head/Hats/blackfedora.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatFedoraChoc
+  name: brown fedora
+  description: A brown fedora. Lookin' snazzy.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Clothing/Head/Hats/brownfedora.rsi
+  - type: Clothing
+    sprite: DeltaV/Clothing/Head/Hats/brownfedora.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatFedoraWhite
+  name: white fedora
+  description: A white fedora. Lookin' ritzy.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Clothing/Head/Hats/whitefedora.rsi
+  - type: Clothing
+    sprite: DeltaV/Clothing/Head/Hats/whitefedora.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatSurgcapBlack
+  name: surgical cap
+  description: A black cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Clothing/Head/Hats/surgcap_black.rsi
+  - type: Clothing
+    sprite: DeltaV/Clothing/Head/Hats/surgcap_black.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatSurgcapWhite
+  name: surgical cap
+  description: A black cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Clothing/Head/Hats/surgcap_white.rsi
+  - type: Clothing
+    sprite: DeltaV/Clothing/Head/Hats/surgcap_white.rsi

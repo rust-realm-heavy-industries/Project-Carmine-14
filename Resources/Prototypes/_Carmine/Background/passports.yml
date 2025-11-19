@@ -36,7 +36,7 @@
    #     color: "#77ff77"
    #     requireDetailRange: true
    #     requirements:
-   #     - !type:CharacterNationalityRequirement 
+   #     - !type:CharacterNationalityRequirement
    #       nationalities:
    #       - Bieselite
    #   - description: "solarian_view_biesel_passport"

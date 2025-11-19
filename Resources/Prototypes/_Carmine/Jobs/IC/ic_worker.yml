@@ -1,0 +1,37 @@
+- type: job
+  id: JobWorkerIC
+  name: job-name-ic-worker
+  description: job-description-ic-worker
+  playTimeTracker: PlaytimeTrackerWorkerIC
+  weight: 1
+  startingGear: WorkerICGear
+  alwaysUseSpawner: true
+  requireAdminNotify: false
+  icon: "JobIconClown"
+  supervisors: job-supervisors-ic
+  canBeAntag: false
+  requirements:
+    - !type:FactionRequirement
+      factionID: "IC"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: ChatRank
+        rank: chatrank-ic-worker
+      - type: HullrotFaction
+        faction: IC
+      # - type: LanguageAdder
+      #   addSpoken:
+      #     - LowImperial
+      #   addUnderstood:
+      #     - LowImperial
+  access:
+  - ICShip
+  - ICStation
+
+- type: startingGear
+  id: WorkerICGear
+  equipment:
+    jumpsuit: ClothingUniformICWorker
+    shoes: ClothingShoesBootsJack
+    back: ClothingBackpack

@@ -1,0 +1,85 @@
+# BASE
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackMessengerContractor
+  name: contractor messenger bag
+  description: A trendy looking messenger bag in tasteful colors.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Back/Messenger/color.rsi
+    layers:
+    - state: icon-base
+      color: "#777b83"
+    - state: icon-sling
+      color: "#776756"
+    - state: icon-clasp
+      color: "#eeeeee"
+  - type: Clothing
+    sprite: _NF/Clothing/Back/Messenger/color.rsi
+    clothingVisuals:
+      back:
+      - state: base-equipped-BACKPACK
+        color: "#777b83"
+      - state: sling-equipped-BACKPACK
+        color: "#776756"
+      - state: clasp-equipped-BACKPACK
+        color: "#eeeeee"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-inhand-left
+        color: "#777b83"
+      - state: clasp-inhand-left
+        color: "#eeeeee"
+      right:
+      - state: base-inhand-right
+        color: "#777b83"
+      - state: clasp-inhand-right
+        color: "#eeeeee"
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackMessenger
+  name: messenger bag
+  description: A trendy looking messenger bag.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Back/Messenger/messenger.rsi
+
+## Color variants (to match colored jumpsuits)
+- type: entity
+  parent: ClothingBackpackMessengerContractor
+  id: ClothingBackpackMessengerColorBlack
+  name: black messenger bag
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Back/Messenger/color.rsi
+    layers:
+    - state: icon-base
+      color: "#535353"
+    - state: icon-sling
+      color: "#776756"
+    - state: icon-clasp
+      color: "#eeeeee"
+  - type: Clothing
+    sprite: _NF/Clothing/Back/Messenger/color.rsi
+    clothingVisuals:
+      back:
+      - state: base-equipped-BACKPACK
+        color: "#535353"
+      - state: sling-equipped-BACKPACK
+        color: "#776756"
+      - state: clasp-equipped-BACKPACK
+        color: "#eeeeee"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-inhand-left
+        color: "#535353"
+      - state: clasp-inhand-left
+        color: "#eeeeee"
+      right:
+      - state: base-inhand-right
+        color: "#535353"
+      - state: clasp-inhand-right
+        color: "#eeeeee"

@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckKVNecklace
+  name: KV Necklace
+  description: A KV necklace for KV things.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Necklaces/standard.rsi
+  - type: Clothing
+    sprite: Clothing/Neck/Necklaces/standard.rsi

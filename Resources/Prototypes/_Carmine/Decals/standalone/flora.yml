@@ -1,0 +1,735 @@
+- type: decal
+  id: Grassa1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassa1
+
+- type: decal
+  id: Grassa2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassa2
+
+- type: decal
+  id: Grassa3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassa3
+
+- type: decal
+  id: Grassa4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassa4
+
+- type: decal
+  id: Grassa5
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassa5
+
+- type: decal
+  id: Grassb1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassb1
+
+- type: decal
+  id: Grassb2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassb2
+
+- type: decal
+  id: Grassb3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassb3
+
+- type: decal
+  id: Grassb4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassb4
+
+- type: decal
+  id: Grassb5
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassb5
+
+- type: decal
+  id: Grassc1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassc1
+
+- type: decal
+  id: Grassc2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassc2
+
+- type: decal
+  id: Grassc3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassc3
+
+- type: decal
+  id: Grassc4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassc4
+
+- type: decal
+  id: Grassd1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassd1
+
+- type: decal
+  id: Grassd2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassd2
+
+- type: decal
+  id: Grassd3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grassd3
+
+- type: decal
+  id: Grasse1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grasse1
+
+- type: decal
+  id: Grasse2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grasse2
+
+- type: decal
+  id: Grasse3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_grass.rsi
+    state: grasse3
+
+- type: decal
+  id: Busha1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: busha1
+
+- type: decal
+  id: Busha2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: busha2
+
+- type: decal
+  id: Busha3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: busha3
+
+- type: decal
+  id: Bushb1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushb1
+
+- type: decal
+  id: Bushb2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushb2
+
+- type: decal
+  id: Bushb3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushb3
+
+- type: decal
+  id: Bushc1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushc1
+
+- type: decal
+  id: Bushc2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushc2
+
+- type: decal
+  id: Bushc3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushc3
+
+- type: decal
+  id: Bushd1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushd1
+
+- type: decal
+  id: Bushd2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushd2
+
+- type: decal
+  id: Bushd3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushd3
+
+- type: decal
+  id: Bushd4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushd4
+
+- type: decal
+  id: Bushe1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushe1
+
+- type: decal
+  id: Bushe2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushe2
+
+- type: decal
+  id: Bushe3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushe3
+
+- type: decal
+  id: Bushe4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushe4
+
+- type: decal
+  id: Bushf1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushf1
+
+- type: decal
+  id: Bushf2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushf2
+
+- type: decal
+  id: Bushf3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushf3
+
+- type: decal
+  id: Bushg1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushg1
+
+- type: decal
+  id: Bushg2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushg2
+
+- type: decal
+  id: Bushg3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushg3
+
+- type: decal
+  id: Bushg4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushg4
+
+- type: decal
+  id: Bushh1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushh1
+
+- type: decal
+  id: Bushh2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushh2
+
+- type: decal
+  id: Bushh3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushh3
+
+- type: decal
+  id: Bushi1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushi1
+
+- type: decal
+  id: Bushi2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushi2
+
+- type: decal
+  id: Bushi3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushi3
+
+- type: decal
+  id: Bushi4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushi4
+
+- type: decal
+  id: Bushj1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushj1
+
+- type: decal
+  id: Bushj2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushj2
+
+- type: decal
+  id: Bushj3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushj3
+
+- type: decal
+  id: Bushk1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushk1
+
+- type: decal
+  id: Bushk2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushk2
+
+- type: decal
+  id: Bushk3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushk3
+
+- type: decal
+  id: Bushl1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushl1
+
+- type: decal
+  id: Bushl2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushl2
+
+- type: decal
+  id: Bushl3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushl3
+
+- type: decal
+  id: Bushl4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushl4
+
+- type: decal
+  id: Bushm1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushm1
+
+- type: decal
+  id: Bushm2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushm2
+
+- type: decal
+  id: Bushm3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushm3
+
+- type: decal
+  id: Bushm4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushm4
+
+- type: decal
+  id: Bushn1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_bushes.rsi
+    state: bushn1
+
+
+- type: decal
+  id: Flowersbr1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowersbr1
+
+- type: decal
+  id: Flowersbr2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowersbr2
+
+- type: decal
+  id: Flowersbr3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowersbr3
+
+- type: decal
+  id: Flowerspv1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowerspv1
+
+- type: decal
+  id: Flowerspv2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowerspv2
+
+- type: decal
+  id: Flowerspv3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowerspv3
+
+- type: decal
+  id: Flowersy1
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowersy1
+
+- type: decal
+  id: Flowersy2
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowersy2
+
+- type: decal
+  id: Flowersy3
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowersy3
+
+- type: decal
+  id: Flowersy4
+  parent: Flora
+  sprite:
+    sprite: Decals/Flora/flora_flowers.rsi
+    state: flowersy4
+
+- type: decal
+  id: FlowersBROne
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_flowers.rsi
+    state: flowersbr1
+
+- type: decal
+  id: FlowersBRTwo
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_flowers.rsi
+    state: flowersbr2
+
+- type: decal
+  id: FlowersBRThree
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_flowers.rsi
+    state: flowersbr3
+
+- type: decal
+  id: BushAOne
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_bushes.rsi
+    state: busha1
+
+- type: decal
+  id: BushATwo
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_bushes.rsi
+    state: busha2
+
+- type: decal
+  id: BushAThree
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_bushes.rsi
+    state: busha3
+
+- type: decal
+  id: BushCOne
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_bushes.rsi
+    state: bushc1
+
+- type: decal
+  id: BushCTwo
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_bushes.rsi
+    state: bushc2
+
+- type: decal
+  id: BushCThree
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_bushes.rsi
+    state: bushc3
+
+- type: decal
+  id: BushDOne
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_bushes.rsi
+    state: bushd1
+
+- type: decal
+  id: BushDTwo
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_bushes.rsi
+    state: bushd2
+
+- type: decal
+  id: BushDThree
+  parent: Flora
+  sprite:
+    sprite: /Textures/Decals/Flora/flora_bushes.rsi
+    state: bushd3
+
+- type: decal
+  id: FloraBranch1
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: branch
+
+- type: decal
+  id: FloraBranchBroken
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: branch_broken
+
+- type: decal
+  id: FloraBranchBrushwood
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: brushwood
+
+- type: decal
+  id: FloraBranchBrushwoodAlt
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: brushwood_alt
+
+- type: decal
+  id: FloraTallGrass1
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: tall_grass_1
+
+- type: decal
+  id: FloraTallGrass2
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: tall_grass_2
+
+- type: decal
+  id: FloraTallGrass3
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: tall_grass_3
+
+- type: decal
+  id: FloraTallGrass4
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: tall_grass_4
+
+- type: decal
+  id: FloraTallGrass5
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: tall_grass_5
+
+- type: decal
+  id: FloraTallGrass6
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: tall_grass_6
+
+- type: decal
+  id: FloraTallGrass7
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: tall_grass_7
+
+- type: decal
+  id: FloraTallGrass8
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: tall_grass_8
+
+- type: decal
+  id: FloraDeadBroc
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: broc-dead
+
+- type: decal
+  id: FloraDeadXander
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: xander-dead
+
+- type: decal
+  id: FloraDeadMutfruit
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: mutfruit-dead
+
+- type: decal
+  id: FloraDeadFerocactus
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: ferocactus-dead
+
+- type: decal
+  id: FloraDeadAgave
+  parent: Flora
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/flora.rsi
+    state: agave-dead

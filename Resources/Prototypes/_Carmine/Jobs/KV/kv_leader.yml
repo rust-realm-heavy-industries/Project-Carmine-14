@@ -1,0 +1,40 @@
+- type: job
+  id: JobLeaderKV
+  name: job-name-kv-leader
+  description: job-description-kv-leader
+  playTimeTracker: PlaytimeTrackerLeaderKV
+  weight: 10
+  startingGear: LeaderKVGear
+  alwaysUseSpawner: true
+  requireAdminNotify: false
+  icon: "JobIconClown"
+  supervisors: job-supervisors-kv
+  canBeAntag: false
+  requirements:
+    - !type:FactionRequirement
+      factionID: "KV"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: ChatRank
+        rank: chatrank-kv-leader
+      - type: HullrotFaction
+        faction: KV
+      # - type: LanguageAdder
+      #   addSpoken:
+      #     - LowImperial
+      #   addUnderstood:
+      #     - LowImperial
+  access:
+  - KVShip
+  - KVStation
+  - KVMedical
+  - KVMilitary
+  - KVCommand
+
+- type: startingGear
+  id: LeaderKVGear
+  equipment:
+    jumpsuit: ClothingUniformKVLeader
+    shoes: ClothingShoesBootsJack
+    back: ClothingBackpack

@@ -1,0 +1,52 @@
+
+# Acid raincoat
+- type: entity
+  parent: ClothingOuterStorageToggleableBase
+  id: ClothingOuterCoatAcidRaincoat
+  name: acid raincoat
+  description: Mostly transparent raincoat made out of acid resistant polymers. Please, for the love of Space God, do wear undergarments.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Coats/acid_raincoat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Coats/acid_raincoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.4
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodAcidRaincoat
+
+# Jackets
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatJacketLeather
+  name: leather jacket
+  description: Rock'n'roll, babe!
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Coats/jacket_leather.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Coats/jacket_leather.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatJacketBiker
+  name: biker jacket
+  description: Made out of toughest synthleather for toughest badasses.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Coats/jacket_biker.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Coats/jacket_biker.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatJacketJamrock
+  name: jamrock blazer
+  description: Welcome to jamrock.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Coats/blazer_jamrock.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Coats/blazer_jamrock.rsi

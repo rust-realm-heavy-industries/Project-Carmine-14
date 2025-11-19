@@ -1,0 +1,47 @@
+﻿- type: decal
+  id: TrimWarnEast
+  sprite:
+    sprite: _Crescent/Decals/trimlinewarn.rsi
+    state: warneast
+
+- type: decal
+  id: TrimWarnNorth
+  sprite:
+    sprite: _Crescent/Decals/trimlinewarn.rsi
+    state: warnnorth
+
+- type: decal
+  id: TrimWarnNorthEast
+  sprite:
+    sprite: _Crescent/Decals/trimlinewarn.rsi
+    state: warnnortheast
+
+- type: decal
+  id: TrimWarnNorthWest
+  sprite:
+    sprite: _Crescent/Decals/trimlinewarn.rsi
+    state: warnnorthwest
+
+- type: decal
+  id: TrimWarnSouth
+  sprite:
+    sprite: _Crescent/Decals/trimlinewarn.rsi
+    state: warnsouth
+
+- type: decal
+  id: TrimWarnSouthEast
+  sprite:
+    sprite: _Crescent/Decals/trimlinewarn.rsi
+    state: warnsoutheast
+
+- type: decal
+  id: TrimWarnSouthWest
+  sprite:
+    sprite: _Crescent/Decals/trimlinewarn.rsi
+    state: warnsouthwest
+
+- type: decal
+  id: TrimWarnWest
+  sprite:
+    sprite: _Crescent/Decals/trimlinewarn.rsi
+    state: warnwest

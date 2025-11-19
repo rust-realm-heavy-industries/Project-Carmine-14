@@ -1,0 +1,102 @@
+﻿- type: decal
+  id: OldConcreteTrimBox
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_box
+
+- type: decal
+  id: OldConcreteTrimCornerNe
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_corner_ne
+
+- type: decal
+  id: OldConcreteTrimCornerSe
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_corner_se
+
+- type: decal
+  id: OldConcreteTrimCornerNw
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_corner_nw
+
+- type: decal
+  id: OldConcreteTrimCornerSw
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_corner_sw
+
+- type: decal
+  id: OldConcreteTrimInnerNe
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_inner_ne
+
+- type: decal
+  id: OldConcreteTrimInnerSe
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_inner_se
+
+- type: decal
+  id: OldConcreteTrimInnerNw
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_inner_nw
+
+- type: decal
+  id: OldConcreteTrimInnerSw
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_inner_sw
+
+- type: decal
+  id: OldConcreteTrimEndN
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_end_n
+
+- type: decal
+  id: OldConcreteTrimEndE
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_end_e
+
+- type: decal
+  id: OldConcreteTrimEndS
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_end_s
+
+- type: decal
+  id: OldConcreteTrimEndW
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_end_w
+
+- type: decal
+  id: OldConcreteTrimLineN
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_line_n
+
+- type: decal
+  id: OldConcreteTrimLineE
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_line_e
+
+- type: decal
+  id: OldConcreteTrimLineS
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_line_s
+
+- type: decal
+  id: OldConcreteTrimLineW
+  sprite:
+    sprite: Decals/concretetrim.rsi
+    state: oldconcrete_line_w
+

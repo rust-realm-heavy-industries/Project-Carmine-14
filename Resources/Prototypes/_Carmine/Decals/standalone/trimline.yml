@@ -1,0 +1,95 @@
+﻿- type: decal
+  id: TrimlineEast
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlineeast
+
+- type: decal
+  id: TrimlineEastEnd
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlineeastend
+
+- type: decal
+  id: TrimlineNorth
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinenorth
+
+- type: decal
+  id: TrimlineNorthEast
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinenortheast
+
+- type: decal
+  id: TrimlineNorthEastCorner
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinenortheastcorner
+
+- type: decal
+  id: TrimlineNorthEnd
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinenorthend
+
+- type: decal
+  id: TrimlineNorthWest
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinenorthwest
+
+- type: decal
+  id: TrimlineNorthWestCorner
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinenorthwestcorner
+
+- type: decal
+  id: TrimlineSouth
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinesouth
+
+- type: decal
+  id: TrimlineSouthEast
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinesoutheast
+
+- type: decal
+  id: TrimlineSouthEastCorner
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinesoutheastcorner
+
+- type: decal
+  id: TrimlineSouthEnd
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinesouthend
+
+- type: decal
+  id: TrimlineSouthWest
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinesouthwest
+
+- type: decal
+  id: TrimlineSouthWestCorner
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinesouthwestcorner
+
+- type: decal
+  id: TrimlineWest
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinewest
+
+- type: decal
+  id: TrimlineWestEnd
+  sprite:
+    sprite: _Crescent/Decals/trimline.rsi
+    state: trimlinewestend

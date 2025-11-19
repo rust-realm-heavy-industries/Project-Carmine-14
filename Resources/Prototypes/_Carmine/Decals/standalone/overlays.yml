@@ -1,0 +1,23 @@
+﻿- type: decal
+  id: DiagonalCheckerAOverlay
+  sprite:
+    sprite: Decals/Overlays/greyscale.rsi
+    state: diagonal_checker_a
+
+- type: decal
+  id: DiagonalCheckerBOverlay
+  sprite:
+    sprite: Decals/Overlays/greyscale.rsi
+    state: diagonal_checker_b
+
+- type: decal
+  id: MiniTileDiagonalCheckerAOverlay
+  sprite:
+    sprite: Decals/Overlays/greyscale.rsi
+    state: minitile_diagonal_a
+
+- type: decal
+  id: MiniTileDiagonalCheckerBOverlay
+  sprite:
+    sprite: Decals/Overlays/greyscale.rsi
+    state: minitile_diagonal_b

@@ -376,7 +376,6 @@
     - SignalTrigger
     - VoiceTrigger
     - Igniter
-    - HandHeldMassScannerEE
     - PowerCellMicrortg
     - PowerCellMicroreactor
     - PowerCellHigh
@@ -394,9 +393,7 @@
     - BluespaceBeaker
     - SyringeBluespace
   #  - WeaponForceGun
-    - WeaponLaserSvalinn
     - WeaponCivilianDisabler
-    - WeaponProtoKineticAccelerator
   #  - WeaponTetherGun
   #  - WeaponGrapplingGun
     - ClothingBackpackHolding
@@ -468,13 +465,8 @@
     - SpeedLoaderMagnumUranium
     - TelescopicShield
     - Truncheon
-    - WeaponAdvancedLaser
     - WeaponLaserCannon
-    - WeaponLaserCarbine
     - WeaponXrayCannon
-    - WeaponEnergyGun       # DeltaV - Energy Gun
-    - WeaponEnergyGunMini   # DeltaV - Miniature Energy Gun
-    - WeaponEnergyGunPistol # DeltaV - PDW-9 Energy Pistol
     - WeaponGunLaserCarbineAutomatic # DeltaV - IK-60 Laser Carbine
 
 - type: entity
@@ -991,7 +983,6 @@
       - TargetSyndicate
       - WeaponDisablerPractice
       - WeaponFlareGunSecurity
-      - WeaponLaserCarbinePractice
       - Zipties
       - GrenadeFlashBang # Goobstation
       - ShockCollar
@@ -1010,7 +1001,6 @@
       - TelescopicShield
       - HoloprojectorSecurity
       - BolaEnergy
-      - ClothingHeadHelmetBasic
       - MagazineShotgunBeanbag
       - ShellTranquilizer
       - CartridgeEpinephrine # Goobstation
@@ -1104,19 +1094,14 @@
       - SpeedLoaderRifleHeavyUranium
       - TimerTrigger
       - VoiceTrigger
-      - WeaponAdvancedLaser
       - WeaponDisabler
       - WeaponDisablerSMG
       - WeaponLaserCannon
-      - WeaponLaserCarbine
       - ClothingEyesNightVisionSecurityGoggles
       - ClothingHeadHelmetInsulated # Nyanotrasen - Insulative headgear
       - ClothingHeadCage # Nyanotrasen - Insulative headgear
       - ShockCollar # Nyanotrasen - Shock Collar
       - WeaponXrayCannon
-      - WeaponEnergyGun
-      - WeaponEnergyGunMini
-      - WeaponEnergyGunPistol
       - WeaponGunLaserCarbineAutomatic
       - CartridgeSpecialIncendiary
       - CartridgeSpecialUranium
@@ -1152,8 +1137,6 @@
       - WeaponEnergyTurretStationControlPanelElectronics
       - WeaponSubMachineGunFPA90
       - WeaponSubMachineGunBRDIR25
-      - WeaponPistolMk58
-      - WeaponPistolN1984
       - WeaponPistolViper
       - WeaponPistolCobra
       - MagazineRifleShrapnel
@@ -1285,7 +1268,7 @@
           - Gauze
           - Metal
 
-      
+
 - type: entity
   id: MedicalTechFab
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
@@ -1404,169 +1387,7 @@
     idleState: icon
     runningState: building
     staticRecipes:
-    - ClothingUniformJumpsuitColorGrey
-    - ClothingUniformJumpskirtColorGrey
-    - ClothingUniformJumpsuitBartender
-    - ClothingUniformJumpskirtBartender
-    - ClothingHeadHatCapcap
-    - ClothingHeadHatCaptain
-    - ClothingUniformJumpsuitCaptain
-    - ClothingUniformJumpskirtCaptain
-    - ClothingUniformJumpsuitCapFormal
-    - ClothingUniformJumpskirtCapFormalDress
-    - ClothingUniformJumpsuitCargo
-    - ClothingUniformJumpskirtCargo
-    - ClothingUniformJumpsuitSalvageSpecialist
-    - ClothingHeadHatBeretEngineering
-    - ClothingUniformJumpsuitChiefEngineer
-    - ClothingUniformJumpskirtChiefEngineer
-    - ClothingUniformJumpsuitChiefEngineerTurtle
-    - ClothingUniformJumpskirtChiefEngineerTurtle
-    - ClothingUniformJumpsuitChaplain
-    - ClothingUniformJumpskirtChaplain
-    - ClothingUniformJumpsuitChef
-    - ClothingUniformJumpskirtChef
-    - ClothingUniformJumpsuitChemistry
-    - ClothingUniformJumpskirtChemistry
-    - ClothingUniformJumpsuitClown
-    - ClothingHeadHatBeretCmo
-    - ClothingUniformJumpsuitCMO
-    - ClothingUniformJumpskirtCMO
-    - ClothingUniformJumpsuitCMOTurtle
-    - ClothingUniformJumpskirtCMOTurtle
-    - ClothingUniformJumpsuitDetective
-    - ClothingUniformJumpskirtDetective
-    - ClothingUniformJumpsuitEngineering
-    - ClothingUniformJumpskirtEngineering
-    - ClothingUniformJumpsuitSeniorEngineer
-    - ClothingUniformJumpskirtSeniorEngineer
-    - ClothingHeadHatHopcap
-    - ClothingUniformJumpsuitHoP
-    - ClothingUniformJumpskirtHoP
-    - ClothingHeadHatBeretHoS
-    - ClothingHeadHatHoshat
-    - ClothingUniformJumpsuitHoS
-    - ClothingUniformJumpskirtHoS
-    - ClothingUniformJumpsuitHoSBlue # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpskirtHoSBlue # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpsuitHoSGrey # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpskirtHoSGrey # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpsuitHosFormal
-    - ClothingUniformJumpskirtHosFormal
-    - ClothingUniformJumpsuitHoSAlt
-    - ClothingUniformJumpskirtHoSAlt
-    - ClothingUniformJumpsuitHoSBlue
-    - ClothingUniformJumpsuitHoSGrey
-    - ClothingUniformJumpsuitHoSParadeMale
-    - ClothingUniformJumpskirtHoSParadeMale
-    - ClothingUniformJumpsuitHydroponics
-    - ClothingUniformJumpskirtHydroponics
-    - ClothingUniformJumpsuitJanitor
-    - ClothingUniformJumpskirtJanitor
-    - ClothingUniformJumpsuitLawyerBlack
-    - ClothingUniformJumpsuitLibrarian
-    - ClothingUniformJumpskirtColorLightBrown
-    - ClothingUniformCourier # DeltaV - Courier Uniform
-    - ClothingUniformSkirtCourier # DeltaV - Courier Uniform
-    - ClothingUniformJumpsuitMantis # Nyanotrasen - Forensic Mantis
-    - ClothingUniformSkirtMantis # Nyanotrasen - Forensic Mantis
-    - ClothingHeadHatBeretSeniorPhysician
-    - ClothingUniformJumpsuitMedicalDoctor
-    - ClothingUniformJumpskirtMedicalDoctor
-    - ClothingUniformJumpsuitSeniorPhysician
-    - ClothingUniformJumpskirtSeniorPhysician
-    - ClothingUniformJumpsuitMime
-    - ClothingUniformJumpskirtMime
-    - ClothingUniformJumpsuitMusician
-    - ClothingUniformJumpsuitParamedic
-    - ClothingUniformJumpskirtParamedic
-    - ClothingUniformJumpsuitSeniorOfficer
-    - ClothingUniformJumpskirtSeniorOfficer
-    - ClothingUniformJumpsuitPrisoner
-    - ClothingUniformJumpskirtPrisoner
-    - ClothingHeadHatQMsoft
-    - ClothingHeadHatBeretQM
-    - ClothingUniformJumpsuitQM
-    - ClothingUniformJumpskirtQM
-    - ClothingUniformJumpsuitQMTurtleneck
-    - ClothingUniformJumpskirtQMTurtleneck
-    - ClothingUniformJumpsuitQMFormal
-    - ClothingHeadHatBeretRND
-    - ClothingUniformJumpsuitResearchDirector
-    - ClothingUniformJumpskirtResearchDirector
-    - ClothingUniformJumpsuitScientist
-    - ClothingUniformJumpskirtScientist
-    - ClothingUniformJumpsuitSeniorResearcher
-    - ClothingUniformJumpskirtSeniorResearcher
-    - ClothingHeadHatBeretSecurity
-    - ClothingUniformJumpsuitSec
-    - ClothingUniformJumpskirtSec
-    - ClothingUniformJumpsuitSecBlue # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpskirtSecBlue # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpsuitSecGrey # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpskirtSecGrey # DeltaV - alternate sec uniforms
-    - ClothingHeadHatBeretBrigmedic
-    - ClothingUniformJumpsuitBrigmedic
-    - ClothingUniformJumpskirtBrigmedic
-    - ClothingHeadHatBeretWarden
-    - ClothingHeadHatWarden
-    - ClothingUniformJumpsuitWarden
-    - ClothingUniformJumpskirtWarden
-    - ClothingUniformJumpsuitWardenBlue # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpskirtWardenBlue # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpsuitWardenGrey # DeltaV - alternate sec uniforms
-    - ClothingUniformJumpskirtWardenGrey # DeltaV - alternate sec uniforms
-    - ClothingHeadHatParamedicsoft
-    # Winter outfits
-    - ClothingOuterWinterCap
-    - ClothingOuterWinterCE
-    - ClothingOuterWinterCMO
-    - ClothingOuterWinterHoP
-    - ClothingOuterWinterHoSUnarmored
-    - ClothingOuterWinterWardenUnarmored
-    - ClothingOuterWinterQM
-    - ClothingOuterWinterRD
-    - ClothingNeckMantleCap
-    - ClothingNeckMantleCE
-    - ClothingNeckMantleCMO
-    - ClothingNeckMantleHOP
-    - ClothingNeckMantleHOS
-    - ClothingNeckMantleRD
-    - ClothingNeckMantleQM
-    - ClothingOuterStasecSweater # DeltaV - added stasec sweater to uniform printer.
-    - ClothingOuterWinterMusician
-    - ClothingOuterWinterClown
-    - ClothingOuterWinterMime
-    - ClothingOuterWinterCoat
-    - ClothingOuterWinterJani
-    - ClothingOuterWinterBar
-    - ClothingOuterWinterChef
-    - ClothingOuterWinterHydro
-    - ClothingOuterWinterAtmos
-    - ClothingOuterWinterEngi
-    - ClothingOuterWinterCargo
-    - ClothingOuterWinterMiner
-    - ClothingOuterWinterMed
-    - ClothingOuterWinterPara
-    - ClothingOuterWinterChem
-    - ClothingOuterWinterGen
-    - ClothingOuterWinterViro
-    - ClothingOuterWinterSci
-    - ClothingOuterWinterRobo
-    - ClothingOuterWinterSec
-    # Ties
-    - ClothingNeckTieRed
-    - ClothingNeckTieDet
-    - ClothingNeckTieSci
-    # Scarfs - All scarfs avaible in winterdrobe
-    - ClothingNeckScarfStripedGreen
-    - ClothingNeckScarfStripedBlue
-    - ClothingNeckScarfStripedRed
-    - ClothingNeckScarfStripedBrown
-    - ClothingNeckScarfStripedLightBlue
-    - ClothingNeckScarfStripedOrange
-    - ClothingNeckScarfStripedBlack
-    - ClothingNeckScarfStripedPurple
+    - CarpetWhite
     # Carpets
     - Carpet
     - CarpetBlack
@@ -1579,28 +1400,7 @@
     - CarpetWhite
   - type: EmagLatheRecipes
     emagStaticRecipes:
-    - ClothingHeadHatCentcomcap
-    - ClothingHeadHatCentcom
-    - ClothingUniformJumpsuitCentcomAgent
-    - ClothingUniformJumpsuitCentcomFormal
-    - ClothingUniformJumpskirtCentcomFormalDress
-    - ClothingUniformJumpsuitCentcomOfficer
-    - ClothingUniformJumpsuitCentcomOfficial
-    - ClothingHeadHatSyndieMAA
-    - ClothingHeadHatSyndie
-    - ClothingUniformJumpsuitOperative
-    - ClothingUniformJumpskirtOperative
-    - ClothingUniformJumpsuitSyndieFormal
-    - ClothingUniformJumpskirtSyndieFormalDress
-    - ClothingHeadPyjamaSyndicateBlack
-    - ClothingUniformJumpsuitPyjamaSyndicateBlack
-    - ClothingHeadPyjamaSyndicatePink
-    - ClothingUniformJumpsuitPyjamaSyndicatePink
-    - ClothingHeadPyjamaSyndicateRed
-    - ClothingUniformJumpsuitPyjamaSyndicateRed
-    - ClothingOuterWinterCentcom
-    - ClothingOuterWinterSyndie
-    - ClothingOuterWinterSyndieCap
+    - CarpetWhite
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1634,7 +1434,7 @@
   - type: Machine
     board: BiogeneratorMachineCircuitboard
   - type: MaterialStorage
-    insertOnInteract: true 
+    insertOnInteract: true
     canEjectStoredMaterials: false
     ignoreColor: true
     whitelist:
@@ -1686,7 +1486,7 @@
     - BioGenBoozeVendRestock
     - BioGenCondimentsRestock
     - BioGenChefVendRestock
-    
+
 - type: entity
   parent: [BaseLathe, BaseMaterialSiloUtilizer]
   id: OreProcessor

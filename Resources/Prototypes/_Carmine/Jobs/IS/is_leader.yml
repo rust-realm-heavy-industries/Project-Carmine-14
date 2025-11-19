@@ -1,0 +1,40 @@
+- type: job
+  id: JobLeaderIS
+  name: job-name-is-leader
+  description: job-description-is-leader
+  playTimeTracker: PlaytimeTrackerLeaderIS
+  weight: 10
+  startingGear: LeaderISGear
+  alwaysUseSpawner: true
+  requireAdminNotify: false
+  icon: "JobIconClown"
+  supervisors: job-supervisors-is
+  canBeAntag: false
+  requirements:
+    - !type:FactionRequirement
+      factionID: "IS"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: ChatRank
+        rank: chatrank-is-leader
+      - type: HullrotFaction
+        faction: IS
+      # - type: LanguageAdder
+      #   addSpoken:
+      #     - LowImperial
+      #   addUnderstood:
+      #     - LowImperial
+  access:
+  - ISShip
+  - ISStation
+  - ISMedical
+  - ISMilitary
+  - ISCommand
+
+- type: startingGear
+  id: LeaderISGear
+  equipment:
+    jumpsuit: ClothingUniformISLeader
+    shoes: ClothingShoesBootsJack
+    back: ClothingBackpack
