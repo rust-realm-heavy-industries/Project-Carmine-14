@@ -4,8 +4,6 @@
   name: atmospheric alerts computer
   description: Used to access the station's automated atmospheric alert system.
   components:
-  - type: Computer
-    board: AlertsComputerCircuitboard
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -55,8 +53,6 @@
   name: atmospheric network monitor
   description: Used to monitor the station's atmospheric networks.
   components:
-  - type: Computer
-    board: AtmosMonitoringComputerCircuitboard
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -193,8 +189,6 @@
       state: generic_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
-  - type: Computer
-    board: ShuttleConsoleCircuitboard
 
 - type: entity
   parent: BaseComputerShuttle
@@ -225,8 +219,6 @@
     radius: 1.5
     energy: 1.6
     color: "#c94242"
-  - type: Computer
-    board: SyndicateShuttleConsoleCircuitboard
   - type: ShuttleConsole
     ftlToPlanets: true
 
@@ -259,8 +251,6 @@
     radius: 1.5
     energy: 1.6
     color: "#c94242"
-  - type: Computer
-    board: SyndicateShuttleConsoleCircuitboard
   - type: ShuttleConsole
     ftlToPlanets: true
     ignoreExclusionZones: true # It can intentionally be crashed into the station, crushing whatever's underneath the target location.
@@ -293,8 +283,6 @@
     radius: 1.5
     energy: 1.6
     color: "#c94242"
-  - type: Computer
-    board: CargoShuttleConsoleCircuitboard
   - type: StealTarget
     stealGroup: CargoShuttleConsoleCircuitboard
   - type: ShuttleConsole
@@ -360,8 +348,6 @@
           type: IFFConsoleBoundUserInterface
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
-  - type: Computer
-    board: ComputerTelevisionCircuitboard
 
 - type: entity
   parent: ComputerIFF
@@ -382,8 +368,6 @@
           type: IFFConsoleBoundUserInterface
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
-  - type: Computer
-    board: ComputerTelevisionCircuitboard
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -407,8 +391,6 @@
     radius: 1.5
     energy: 1.6
     color: "#c9c042"
-  - type: Computer
-    board: PowerComputerCircuitboard
   - type: PowerMonitoringConsole
   - type: PowerMonitoringCableNetworks
   - type: NodeContainer
@@ -449,8 +431,6 @@
     radius: 1.5
     energy: 1.6
     color: "#1f8c28"
-  - type: Computer
-    board: MedicalRecordsComputerCircuitboard
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -483,8 +463,6 @@
     radius: 1.5
     energy: 1.6
     color: "#1f8c28"
-  - type: Computer
-    board: CriminalRecordsComputerCircuitboard
  # - type: AccessReader
  #   access: [["Security"]]
   - type: GuideHelp
@@ -520,8 +498,6 @@
     radius: 1.5
     energy: 1.6
     color: "#1f8c28"
-  - type: Computer
-    board: PsionicsRecordsComputerCircuitboard
   #- type: AccessReader
   #  access:
   # #   - [ Chapel ]
@@ -550,8 +526,6 @@
     radius: 1.5
     energy: 1.6
     color: "#1f8c28"
-  - type: Computer
-    board: StationRecordsComputerCircuitboard
   - type: GuideHelp
     guides:
     - Forensics
@@ -578,8 +552,6 @@
     radius: 1.5
     energy: 1.6
     color: "#006400"
-  - type: Computer
-    board: CrewMonitoringComputerCircuitboard
   - type: ActivatableUI
     key: enum.CrewMonitoringUIKey.Key
   - type: UserInterface
@@ -631,8 +603,6 @@
         type: WiresBoundUserInterface
   - type: ApcPowerReceiver
     powerLoad: 1000
-  - type: Computer
-    board: ResearchComputerCircuitboard
  # - type: AccessReader
  #   access: [["Research"]]
   - type: PointLight
@@ -683,8 +653,6 @@
         type: WiresBoundUserInterface
   - type: ApcPowerReceiver
     powerLoad: 1000
-  - type: Computer
-    board: AnalysisComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -740,8 +708,6 @@
       state: id_key
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
-  - type: Computer
-    board: IDComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -764,8 +730,6 @@
   components:
   - type: ApcPowerReceiver
     powerLoad: 500
-  - type: Computer
-    board: BodyScannerComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -803,8 +767,6 @@
         type: CommunicationsConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-  - type: Computer
-    board: CommsComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -839,8 +801,6 @@
     canShuttle: false
     global: true #announce to everyone they're about to fuck shit up
     sound: /Audio/Announcements/war.ogg
-  - type: Computer
-    board: SyndicateCommsComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -873,8 +833,6 @@
         type: SolarControlConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-  - type: Computer
-    board: SolarControlComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -910,8 +868,6 @@
           type: RadarConsoleBoundUserInterface
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
-  - type: Computer
-    board: RadarConsoleCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -944,8 +900,6 @@
         type: CargoShuttleConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-  - type: Computer
-    board: CargoShuttleComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -989,8 +943,6 @@
         type: CargoOrderConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-  - type: Computer
-    board: CargoRequestComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -1037,8 +989,6 @@
         type: CargoBountyConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-  - type: Computer
-    board: CargoBountyComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -1073,8 +1023,6 @@
       state: generic_panel_open
   - type: ApcPowerReceiver
     powerLoad: 3100 #We want this to fail first so I transferred most of the scanner and pod's power here. (3500 in total)
-  - type: Computer
-    board: CloningConsoleComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -1173,8 +1121,6 @@
       state: tech_key
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
-  - type: Computer
-    board: SurveillanceCameraMonitorCircuitboard
   - type: DeviceNetwork
     deviceNetId: Wired
     receiveFrequencyId: SurveillanceCamera
@@ -1212,8 +1158,6 @@
       state: tech_key
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
-  - type: Computer
-    board: SurveillanceWirelessCameraMonitorCircuitboard
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: SurveillanceCamera
@@ -1265,8 +1209,6 @@
         type: CargoPalletConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-  - type: Computer
-    board: CargoRequestComputerCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -1293,8 +1235,6 @@
       state: service_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
-  - type: Computer
-    board: ComputerMassMediaCircuitboard
   - type: DeviceNetworkRequiresPower
   - type: NewsWriter
  # - type: AccessReader
@@ -1394,8 +1334,6 @@
     deviceNetId: Wireless
     receiveFrequencyId: RoboticsConsole
     transmitFrequencyId: CyborgControl
-  - type: Computer
-    board: RoboticsConsoleCircuitboard
  # - type: AccessReader # only used for dangerous things
  #   access: [["ResearchDirector"]]
   - type: Lock

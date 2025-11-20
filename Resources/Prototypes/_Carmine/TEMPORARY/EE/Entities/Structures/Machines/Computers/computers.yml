@@ -4,8 +4,6 @@
   name: supermatter monitoring console
   description: Used to monitor the status of supermatter crystals.
   components:
-  - type: Computer
-    board: SupermatterComputerCircuitboard
   - type: Sprite
     sprite: _EE/Structures/Machines/computers.rsi
     layers:

@@ -216,9 +216,6 @@
       - id: ClothingShoesBootsWork
         prob: 0.03
         orGroup: dressermainloot
-      - id: ClothingOuterWinterCoat
-        prob: 0.03
-        orGroup: dressersecondloot
       - id: ClothingMaskFox
         prob: 0.03
         orGroup: dressersecondloot
@@ -264,9 +261,6 @@
       - id: ClothingHandsGlovesBoxingYellow
         prob: 0.008
         orGroup: dressermainloot
-      - id: ClothingOuterGhostSheet
-        prob: 0.008
-        orGroup: dressersecondloot
       - id: ClothingUniformJumpskirtJanimaid
         prob: 0.005
         orGroup: dressermainloot

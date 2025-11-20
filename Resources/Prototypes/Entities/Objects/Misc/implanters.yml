@@ -74,30 +74,14 @@
     blacklist: null
 
 - type: entity
-  id: BaseImplantOnlyImplanter
-  parent: Implanter
-  description: A disposable syringe exclusively designed for the injection of subdermal implants.
-  abstract: true
-  components:
-    - type: Sprite
-      sprite: Objects/Specific/Medical/implanter.rsi
-      state: implanter0
-      layers:
-        - state: implanter1
-          map: [ "implantFull" ]
-          visible: true
-        - state: implanter0
-          map: [ "implantOnly" ]
-    - type: Implanter
-      currentMode: Inject
-      implantOnly: true
-
-- type: entity
   id: BaseImplantOnlyImplanterSyndi
-  parent: BaseImplantOnlyImplanter
+  parent: Implanter
   description: A compact disposable syringe exclusively designed for the injection of subdermal implants.
   abstract: true
   components:
+    - type: Implanter
+      currentMode: Inject
+      implantOnly: true
     - type: Item
       sprite: Objects/Specific/Medical/syndi_implanter.rsi
     - type: Sprite
@@ -122,38 +106,12 @@
     - type: Tag
       tags: []
 
-#Fun implanters
-
-- type: entity
-  id: SadTromboneImplanter
-  name: sad trombone implanter
-  parent: BaseImplantOnlyImplanter
-  components:
-    - type: Implanter
-      implant: SadTromboneImplant
-
-- type: entity
-  id: LightImplanter
-  name: light implanter
-  parent: BaseImplantOnlyImplanter
-  components:
-    - type: Implanter
-      implant: LightImplant
-
-- type: entity
-  id: BikeHornImplanter
-  name: bike horn implanter
-  parent: BaseImplantOnlyImplanter
-  components:
-    - type: Implanter
-      implant: BikeHornImplant
-
 #Security implanters
 
 - type: entity
   id: TrackingImplanter
   name: tracking implanter
-  parent: BaseImplantOnlyImplanter
+  parent: BaseImplantOnlyImplanterSyndi
   components:
     - type: Implanter
       implant: TrackingImplant
@@ -241,22 +199,3 @@
   components:
   - type: Implanter
     implant: DeathAcidifierImplant
-
-# Security and Command implanters
-
-- type: entity
-  id: MindShieldImplanter
-  name: mind-shield implanter
-  parent: BaseImplantOnlyImplanter
-  components:
-    - type: Implanter
-      implant: MindShieldImplant
-
-# Example component implant
-- type: entity
-  id: ComponentImplanter
-  suffix: DEBUG
-  parent: BaseImplantOnlyImplanter
-  components:
-    - type: Implanter
-      implant: ComponentImplant

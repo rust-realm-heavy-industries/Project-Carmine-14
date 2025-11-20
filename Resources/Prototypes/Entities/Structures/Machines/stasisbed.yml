@@ -43,8 +43,6 @@
   - type: Strap
     position: Down
     rotation: -90
-  - type: Machine
-    board: StasisBedMachineCircuitboard
   - type: Physics
     bodyType: Static
   - type: Fixtures

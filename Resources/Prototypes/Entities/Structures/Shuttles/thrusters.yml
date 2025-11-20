@@ -67,8 +67,6 @@
   name: thruster
   parent: [ BaseThruster, ConstructibleMachine ]
   components:
-  - type: Machine
-    board: ThrusterMachineCircuitboard
   - type: Destructible
     thresholds:
     - trigger:
@@ -176,8 +174,6 @@
     autoRot: true
     offset: "0, 0.1" # shine from the top, not bottom of the computer
     color: "#4246b3"
-  - type: Machine
-    board: GyroscopeMachineCircuitboard
   - type: Destructible
     thresholds:
     - trigger:

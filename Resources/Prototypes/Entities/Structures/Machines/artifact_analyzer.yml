@@ -60,8 +60,6 @@
   - type: DeviceLinkSink
     ports:
       - ArtifactAnalyzerReceiver
-  - type: Machine
-    board: ArtifactAnalyzerMachineCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -124,8 +122,6 @@
       - Artifact
   - type: PlaceableSurface
     placeCentered: true
-  - type: Machine
-    board: TraversalDistorterMachineCircuitboard
   - type: Appearance
   - type: GuideHelp
     guides:
@@ -150,8 +146,6 @@
     crushingDamage:
       types:
         Blunt: 10
-  - type: Machine
-    board: ArtifactCrusherMachineCircuitboard
   - type: WiresPanel
   - type: Sprite
     sprite: Structures/Machines/artifact_crusher.rsi
@@ -207,7 +201,6 @@
     - output_container
   - type: ContainerContainer
     containers:
-      machine_board: !type:Container
       machine_parts: !type:Container
       entity_storage: !type:Container
       output_container: !type:Container

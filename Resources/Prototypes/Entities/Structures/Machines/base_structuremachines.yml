@@ -69,7 +69,6 @@
   - type: Machine
   - type: ContainerContainer
     containers:
-      machine_board: !type:Container
       machine_parts: !type:Container
   - type: Construction
     graph: Machine

@@ -1,0 +1,9 @@
+﻿# Used to suffix a number to any mob to identify player controlled mob griefing.
+- type: nameIdentifierGroup
+  id: GenericNumber
+
+- type: nameIdentifierGroup
+  id: CargoTelepads
+  prefix: TELE
+  minValue: 0
+  maxValue: 999

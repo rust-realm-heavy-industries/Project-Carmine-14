@@ -29,8 +29,6 @@
     interfaces:
       enum.ResearchClientUiKey.Key:
         type: ResearchClientBoundUserInterface
-  - type: Machine
-    board: AnomalyVesselCircuitboard
   - type: PointLight
     radius: 1.2
     energy: 2
@@ -104,8 +102,6 @@
   - type: RadiationSource
     slope: 0.1
     enabled: false
-  - type: Machine
-    board: AnomalyVesselExperimentalCircuitboard
   - type: Explosive
     explosionType: Default
     maxIntensity: 50

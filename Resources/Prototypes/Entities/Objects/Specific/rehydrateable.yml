@@ -6,13 +6,6 @@
   components:
   - type: Item
     size: Tiny
-  - type: SolutionContainerManager
-    solutions:
-      cube:
-        maxVol: 11 # needs room for water
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 10
   - type: Food
     solution: cube
   - type: RefillableSolution
@@ -20,13 +13,6 @@
   - type: Sprite
     sprite: Objects/Misc/monkeycube.rsi
     state: cube
-  - type: Reactive
-    reactions:
-    - reagents: [Water]
-      methods: [Touch, Ingestion, Injection]
-      effects:
-      - !type:AddToSolutionReaction
-        solution: cube
   - type: Rehydratable
     possibleSpawns:
     - MobMonkey
@@ -130,82 +116,11 @@
   name: abomination cube
   description: Just add blood!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      cube:
-        maxVol: 10 # needs room for more blood
-        reagents:
-        - ReagentId: Blood
-          Quantity: 9
-  - type: Reactive
-    reactions:
-    - reagents: [Blood]
-      methods: [Touch, Ingestion, Injection]
-      effects:
-      - !type:AddToSolutionReaction
-        solution: cube
   - type: Rehydratable
     catalyst: Blood # blood is fuel
     catalystMinimum: 10
     possibleSpawns:
     - MobAbomination
-
-- type: entity
-  parent: PlushieCarp
-  id: DehydratedSpaceCarp
-  name: dehydrated space carp
-  description: Looks like a plush toy carp, but just add water and it becomes a real-life space carp!
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      plushie:
-        maxVol: 11 # needs room for water
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 10
-  - type: RefillableSolution
-    solution: plushie
-  - type: Reactive
-    reactions:
-    - reagents: [Water]
-      methods: [Touch, Ingestion, Injection]
-      effects:
-      - !type:AddToSolutionReaction
-        solution: plushie
-  - type: Rehydratable
-    possibleSpawns:
-    - MobCarp
-  - type: CollisionWake
-    enabled: false
-  - type: Physics
-    bodyType: KinematicController
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.3,-0.3,0.3,0.3"
-        density: 15
-        mask:
-        - ItemMask
-      rehydrate:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.3,-0.3,0.3,0.3"
-        hard: false
-        layer:
-        - LowImpassable
-  # pet fish before rehydrating and he will be nice to you
-  - type: FactionException
-  - type: PettableFriend
-    successString: petting-success-dehydrated-carp
-    failureString: petting-failure-dehydrated-carp
-  - type: EmitSoundOnUse
-    handle: false
-    sound:
-      path: /Audio/Effects/bite.ogg
-  - type: Tag
-    tags: [] # DeltaV - remove PlushieCarp tag to prevent wasting
 
 - type: entity
   parent: BaseItem
@@ -216,13 +131,6 @@
   components:
   - type: Item
     size: Tiny
-  - type: SolutionContainerManager
-    solutions:
-      cube:
-        maxVol: 11 # needs room for water
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 10
   - type: Food
     solution: cube
   - type: RefillableSolution
@@ -230,13 +138,6 @@
   - type: Sprite
     sprite: Objects/Misc/monkeycube.rsi
     state: cube
-  - type: Reactive
-    reactions:
-    - reagents: [Water]
-      methods: [Touch, Ingestion, Injection]
-      effects:
-      - !type:AddToSolutionReaction
-        solution: cube
   - type: Rehydratable
     possibleSpawns:
     - MobCarpHolo

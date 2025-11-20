@@ -92,12 +92,9 @@
     deleteAfterExplosion: false
   - type: ApcPowerReceiver
     powerLoad: 400
-  - type: Machine
-    board: MicrowaveMachineCircuitboard
   - type: ContainerContainer
     containers:
       microwave_entity_container: !type:Container
-      machine_board: !type:Container
       machine_parts: !type:Container
   - type: EmptyOnMachineDeconstruct
     containers:
@@ -121,8 +118,6 @@
     sprite: Structures/Machines/microwave_syndie.rsi
     drawdepth: SmallObjects
     snapCardinals: true
-  - type: Machine
-    board: SyndicateMicrowaveMachineCircuitboard
   - type: FoodRecipeProvider
     providedRecipes:
     - RecipeBaguetteSword

@@ -48,8 +48,6 @@
         node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: Machine
-    board: TelecomServerCircuitboard
   - type: WiresPanel
   - type: Transform
     anchored: true
@@ -61,7 +59,6 @@
   - type: ContainerContainer
     containers:
       key_slots: !type:Container
-      machine_board: !type:Container
       machine_parts: !type:Container
 
 - type: entity

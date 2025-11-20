@@ -7,8 +7,6 @@
     - type: CloningPod
       doMetempsychosis: true
       biomassCostMultiplier: 0.2
-    - type: Machine
-      board: MetempsychoticMachineCircuitboard
     - type: Sprite
       sprite: Structures/Machines/metempsychotic.rsi
       snapCardinals: true

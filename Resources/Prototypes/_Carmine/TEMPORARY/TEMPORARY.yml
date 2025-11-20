@@ -1,11 +1,24 @@
+﻿- type: reagent
+  id: BasePyrotechnic
+  group: Pyrotechnic
+  abstract: true
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+        - !type:FlammableReaction
+  plantMetabolism:
+    - !type:PlantAdjustWeeds
+      amount: -2
+    - !type:PlantAdjustHealth
+      amount: -2
+
 - type: entity
   parent: ComputerRadar
   id: ComputerAdvancedRadar # Frontier
   name: radar computer
   description: Better CPU and components gives this radar the technological and tactical advantage on detection of far away objects.
   components:
-  - type: Computer
-    board: AdvancedRadarConsoleCircuitboard
   - type: RadarConsole
     maxRange: 1024
   - type: Sprite
@@ -25,7 +38,7 @@
   - type: IntrinsicRadioTransmitter
     channels:
     - Traffic
-    
+
 - type: entity
   id: BaseStructureIndestructible
   abstract: true
@@ -38,7 +51,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 0
-        
+
 - type: entity
   id: BaseStructureUnanchorable
   abstract: true
@@ -47,14 +60,14 @@
     anchored: true
   - type: Anchorable
     delay: 999999
-    
+
 - type: entity
   id: BaseStructureDisableToolUse
   abstract: true
   components:
   - type: OnToolsUse
     disabled: true
-    
+
 - type: entity
   name: cardboard box small
   parent: BoxBase
@@ -80,7 +93,7 @@
   - type: Tag
     tags:
     - BoxCardboard
-    
+
 # Goobstation - rolly chairs that actually roll!
 - type: entity
   name: chair
@@ -138,21 +151,7 @@
         - TableMask
   - type: StaticPrice
     price: 50
-    
-- type: entity
-  name: Rouny
-  parent: MobXenoRounyNPC
-  id: MobXenoRouny
-  components:
-  - type: GhostRole
-    allowMovement: true
-    allowSpeech: true
-    makeSentient: true
-    name: ghost-role-information-xeno-name
-    description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
-  - type: GhostTakeoverAvailable
-  
+
 - type: entity
   id: BaseVehicle
   abstract: true
@@ -231,13 +230,853 @@
     tags:
     - DoorBumpOpener
   - type: RequireProjectileTarget
-  
+
 - type: entity #not having this breaks the game because of shitcode
   id: CrescentDiplomacy
   components:
   - type: Diplomacy
-  
+
 - type: shader
   id: DogVision
   kind: source
   path: "/Textures/Nyanotrasen/Shaders/dogvision.swsl"
+
+- type: entity
+  id: Cigarette
+  parent: BaseCigar
+  name: cigarette
+  description: A roll of tobacco and nicotine.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
+    state: unlit-icon
+  - type: Tag
+    tags:
+      - Cigarette
+      - Trash
+  - type: SpaceGarbage
+  - type: Clothing
+    sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
+    slots: [ mask ]
+    equippedPrefix: unlit
+  - type: Item
+    size: Tiny
+  - type: Construction
+    graph: smokeableCigarette
+    node: cigarette
+
+- type: entity
+  id: BaseMachineCircuitboard
+  parent: BaseItem
+  name: machine board
+  abstract: true
+  suffix: Machine Board
+  components:
+    - type: MachineBoard
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: generic
+    - type: Item
+      storedRotation: -90
+    - type: StaticPrice
+      price: 100
+    - type: PhysicalComposition
+      materialComposition:
+        Glass: 230
+      chemicalComposition:
+        Silicon: 20
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: OreBase
+  description: A piece of unrefined ore.
+  components:
+  - type: Sprite
+    sprite: Objects/Materials/ore.rsi
+  - type: Item
+    sprite: Objects/Materials/ore.rsi
+    size: Normal
+  - type: Tag
+    tags:
+    - Ore
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 20
+        mask:
+          - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseItem
+  id: BasePlushie
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/toys.rsi
+  - type: Tag
+    tags:
+      - Payload
+      - ClothMade
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnCollide
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToyFall
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 1.0
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      collection: ToySqueak
+    damage:
+      types:
+        Blunt: 0
+  - type: DamageOtherOnHit
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 100
+  - type: StaticPrice
+    price: 5
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      collection: ToySqueak
+    delay: 2
+
+- type: entity
+  name: cardboard box
+  parent: BoxBase
+  id: BoxCardboard
+  description: A cardboard box for storing things.
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,2
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,3
+  - type: Sprite
+    state: box
+  - type: EmitSoundOnPickup
+    sound: /Audio/SimpleStation14/Items/Handling/cardboardbox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/SimpleStation14/Items/Handling/cardboardbox_drop.ogg
+  - type: EmitSoundOnLand
+    sound: /Audio/SimpleStation14/Items/Handling/cardboardbox_drop.ogg
+  - type: Tag
+    tags:
+    - BoxCardboard
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesCheapSunglasses
+  name: sunglasses
+  description: A pair of black sunglasses.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - SecDogWearable # DeltaV - let Laika wear sunglasses
+  - type: IdentityBlocker
+    coverage: EYES
+
+- type: entity
+  parent: BaseItem
+  id: ProduceBase
+  abstract: true
+  components:
+  - type: SolutionContainerManager
+  - type: Sprite
+    state: produce
+  # let cows eat raw produce like wheat and oats
+  - type: Food
+    requiredStomachs: 2
+  - type: Produce
+  - type: PotencyVisuals
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: food
+
+- type: entity
+  parent: BaseItem
+  id: FoodBase
+  abstract: true
+  components:
+  - type: FlavorProfile
+    flavors:
+      - food
+  - type: Food
+  - type: SpaceGarbage
+  - type: Sprite
+  - type: StaticPrice
+    price: 0
+
+- type: entity
+  name: soil
+  id: hydroponicsSoil
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.1"
+        density: 190
+        hard: false
+        mask:
+        - FullTileMask
+        layer:
+        - FullTileMask
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Sprite
+    sprite: Structures/Hydroponics/misc.rsi
+    state: soil
+    noRot: true
+  - type: PlantHolder
+    drawWarnings: false
+  - type: SolutionContainerManager
+    solutions:
+      soil:
+        maxVol: 200
+  - type: RefillableSolution
+    solution: soil
+    maxRefill: 50
+  - type: Transform
+    anchored: true
+  - type: Appearance
+  - type: PlantHolderVisuals
+
+- type: entity
+  parent: BaseItem
+  id: BaseFlatpack
+  name: base flatpack
+  description: A flatpack used for constructing something.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: Objects/Devices/flatpack.rsi
+    layers:
+    - state: base
+    - state: overlay
+      color: "#cec8ac"
+      map: ["enum.FlatpackVisualLayers.Overlay"]
+    - state: icon-default
+  - type: Appearance
+  - type: Flatpack
+    boardColors:
+      command: "#334E6D"
+      medical: "#52B4E9"
+      service: "#9FED58"
+      engineering: "#EFB341"
+      security: "#DE3A3A"
+      science: "#D381C9"
+      supply: "#A46106"
+      cpu_command: "#334E6D"
+      cpu_medical: "#52B4E9"
+      cpu_service: "#9FED58"
+      cpu_engineering: "#EFB341"
+      cpu_security: "#DE3A3A"
+      cpu_science: "#D381C9"
+      cpu_supply: "#A46106"
+  - type: StaticPrice
+    price: 250
+
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingHandsGlovesLeather
+  name: botanist's leather gloves
+  description: These leather gloves protect against thorns, barbs, prickles, spikes and other harmful objects of floral origin. They're also quite warm.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/leather.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/leather.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-brown
+  - type: FingerprintMask
+
+# Base for all cigars and cigarettes.
+- type: entity
+  parent: BaseSmokable
+  id: BaseCigar
+  abstract: true
+  components:
+  - type: Smokable
+    exposeTemperature: 1173.15
+  - type: Cigar
+  - type: Tag
+    tags:
+    - Trash
+
+- type: entity
+  description: "If you want to get cancer, might as well do it in style."
+  id: BaseSmokable
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Smokable
+  - type: Sprite
+  - type: Appearance
+  - type: BurnStateVisuals
+  - type: Tag
+    tags:
+    - Trash
+  - type: SpaceGarbage
+  - type: StaticPrice
+    price: 5
+  - type: InjectableSolution
+    solution: smokable
+
+- type: entity
+  parent: BaseItem
+  id: BaseComputerCircuitboard
+  name: computer board
+  abstract: true
+  components:
+    - type: ComputerBoard
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: cpuboard
+    - type: Item
+      storedRotation: -90
+    - type: StaticPrice
+      price: 100
+    - type: PhysicalComposition
+      materialComposition:
+        Glass: 230
+      chemicalComposition:
+        Silicon: 20
+    - type: Tag
+      tags:
+        - ComputerBoard
+
+- type: psionicPower
+  id: NoosphericZapPower
+  name: Noospheric Zap
+  powerCategories:
+    - Anomalist
+    - Electrokinesis
+  initializeFunctions:
+    - !type:AddPsionicActions
+      actions:
+        - ActionNoosphericZap
+    - !type:AddPsionicPowerComponents
+      components:
+        - type: NoosphericZapPower
+    - !type:PsionicFeedbackPopup
+    - !type:PsionicFeedbackSelfChat
+      feedbackMessage: noospheric-zap-power-initialization-feedback
+    - !type:PsionicModifyGlimmer
+      glimmerModifier: 4
+    - !type:AddPsionicAssayFeedback
+      assayFeedback: noospheric-zap-power-metapsionic-feedback
+    - !type:AddPsionicStatSources
+      amplificationModifier: 1
+  removalFunctions:
+    - !type:RemovePsionicActions
+    - !type:RemovePsionicPowerComponents
+      components:
+        - type: NoosphericZapPower
+    - !type:RemovePsionicStatSources
+    - !type:RemoveAssayFeedback
+      assayFeedback: noospheric-zap-power-metapsionic-feedback
+
+- type: entity
+  parent: MaterialCloth
+  id: MaterialCloth1
+  suffix: Single
+  components:
+  - type: Sprite
+    state: cloth
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialCloth
+  name: cloth
+  suffix: Full
+  components:
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -0.5
+        Piercing: -0.5
+    bloodlossModifier: -4
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Cloth
+    baseLayer: base
+    layerStates:
+    - cloth
+    - cloth_2
+    - cloth_3
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 100
+  - type: Sprite
+    state: cloth_3
+    layers:
+    - state: cloth_3
+      map: ["base"]
+  - type: Appearance
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: FlavorProfile
+    flavors:
+    - fiber
+  - type: Tag
+    tags:
+      - ClothMade
+      - Gauze
+      - RawMaterial
+  - type: Construction
+    graph: WebObjects # not sure if I should either keep this here or just make another prototype. Will keep it here just in case.
+    node: cloth
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: MaterialBase
+  description: A raw material.
+  components:
+  - type: Sprite
+    sprite: Objects/Materials/materials.rsi
+  - type: Item
+    sprite: Objects/Materials/materials.rsi
+    size: Normal
+  - type: Tag
+    tags:
+      - RawMaterial
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: reagent
+  id: WeldingFuel
+  name: reagent-name-welding-fuel
+  parent: BasePyrotechnic
+  desc: reagent-desc-welding-fuel
+  physicalDesc: reagent-physical-desc-oily
+  slippery: true
+  flavor: bitter
+  flavorMinimum: 0.01
+  color: "#a76b1c"
+  recognizable: true
+  boilingPoint: -84.7 # Acetylene. Close enough.
+  meltingPoint: -80.7
+  tileReactions:
+  - !type:FlammableTileReaction {}
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 1
+      - !type:FlammableReaction
+        multiplier: 0.4
+
+- type: guideEntry
+  id: Chemicals
+  name: guide-entry-chemicals
+  text: "/ServerInfo/Guidebook/Chemicals.xml"
+  children:
+  - Elements
+  - Medicine
+  - Narcotics
+  - Pyrotechnic
+  - Toxins
+  - Foods
+  - Botanical
+  - Biological
+  - Others
+  filterEnabled: True
+
+- type: guideEntry
+  id: Elements
+  name: guide-entry-elements
+  text: "/ServerInfo/Guidebook/ChemicalTabs/Elements.xml"
+  filterEnabled: True
+
+- type: guideEntry
+  id: Narcotics
+  name: guide-entry-narcotics
+  text: "/ServerInfo/Guidebook/ChemicalTabs/Narcotics.xml"
+  filterEnabled: True
+
+- type: guideEntry
+  id: Pyrotechnic
+  name: guide-entry-pyrotechnics
+  text: "/ServerInfo/Guidebook/ChemicalTabs/Pyrotechnic.xml"
+  filterEnabled: True
+
+- type: guideEntry
+  id: Toxins
+  name: guide-entry-toxins
+  text: "/ServerInfo/Guidebook/ChemicalTabs/Toxins.xml"
+  filterEnabled: True
+
+- type: guideEntry
+  id: Foods
+  name: guide-entry-foods
+  text: "/ServerInfo/Guidebook/ChemicalTabs/Foods.xml"
+  filterEnabled: True
+
+- type: guideEntry
+  id: Botanical
+  name: guide-entry-botanical
+  text: "/ServerInfo/Guidebook/ChemicalTabs/Botany.xml"
+  filterEnabled: True
+
+- type: guideEntry
+  id: Biological
+  name: guide-entry-biological
+  text: "/ServerInfo/Guidebook/ChemicalTabs/Biological.xml"
+  filterEnabled: True
+
+- type: guideEntry
+  id: Others
+  name: guide-entry-others
+  text: "/ServerInfo/Guidebook/ChemicalTabs/Other.xml"
+  filterEnabled: True
+
+- type: reagent
+  id: Nutriment #Anything that isn't better suited to vitamin, protein, or sugar. we aren't doing a super in-depth simulator.
+  name: reagent-name-nutriment
+  group: Foods
+  desc: reagent-desc-nutriment
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: nutriment
+  color: "#24591F"
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateHunger
+  plantMetabolism:
+  - !type:PlantAdjustNutrition
+    amount: 1.5
+  - !type:PlantAdjustHealth
+    amount: 0.75
+  pricePerUnit: 2
+
+- type: reagent
+  id: Water
+  name: reagent-name-water
+  parent: BaseDrink
+  desc: reagent-desc-water
+  slippery: true
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: water
+  color: "#75b1f0"
+  recognizable: true
+  boilingPoint: 100.0
+  meltingPoint: 0.0
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 4
+
+- type: reagent
+  id: BaseDrink
+  group: Drinks
+  abstract: true
+  slippery: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+  reactiveEffects:
+    Extinguish:
+      methods: [ Touch ]
+      effects:
+      - !type:ExtinguishReaction
+  plantMetabolism:
+  - !type:PlantAdjustWater
+    amount: 1
+  tileReactions:
+  - !type:ExtinguishTileReaction { }
+  - !type:SpillIfPuddlePresentTileReaction { }
+
+- type: reagent
+  id: Protein #Meat and beans
+  name: reagent-name-protein
+  group: Foods
+  desc: reagent-desc-protein
+  physicalDesc: reagent-physical-desc-clumpy
+  flavor: protein
+  color: "#FFFFE5"
+  metabolisms:
+    Food:
+      effects:
+      - !type:HealthChange
+        probability: 0.5
+        damage:
+          groups:
+            Brute: -0.4
+      - !type:ModifyBloodLevel
+        amount: 1 # weaker than iron but pretty good all things considered
+      - !type:SatiateHunger
+  pricePerUnit: 3
+
+- type: reagent
+  id: Omnizine
+  name: reagent-name-omnizine
+  group: Medicine
+  desc: reagent-desc-omnizine
+  physicalDesc: reagent-physical-desc-soothing
+  flavor: medicine
+  color: "#fcf7f9"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Burn: -3
+            Toxin: -3
+            Airloss: -3
+            Brute: -3 # Was 2, Buffed due to limb damage changes
+
+- type: reagent
+  id: UncookedAnimalProteins
+  name: reagent-name-uncooked-animal-proteins
+  group: Foods
+  desc: reagent-desc-uncooked-animal-proteins
+  physicalDesc: reagent-physical-desc-clumpy
+  flavor: bitter
+  color: "#FFFFE5"
+  metabolisms:
+    Food:
+      effects:
+      - !type:PopupMessage
+        conditions:
+          - !type:OrganType
+            type: Animal
+            shouldHave: false
+        type: Local
+        visualType: MediumCaution
+        messages: [ "generic-reagent-effect-sick" ]
+        probability: 0.5
+      - !type:ChemVomit
+        probability: 0.1
+        conditions:
+          - !type:OrganType
+            type: Animal
+            shouldHave: false
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Animal
+          shouldHave: false
+        damage:
+          types:
+            Poison: 1
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Animal
+          shouldHave: true
+        reagent: Protein
+        amount: 0.5
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Voidborn
+        reagent: Protein
+        amount: 0.5
+
+- type: weightedRandomFillSolution
+  id: RandomPickBotanyReagent
+  fills:
+  - quantity: 5
+    weight: 0.5
+    reagents:
+    - Omnizine
+    - Nocturine
+
+- type: entity
+  name: Urist Spawner
+  id: SpawnMobHuman
+  parent: MarkerBase
+  suffix: DEBUG
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+  - type: ConditionalSpawner
+    prototypes:
+    - MobHuman
+
+- type: entity
+  id: StandardNanotrasenStation
+  parent:
+    - BaseStation
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+    - BaseStationAlertLevels
+    - BaseStationAllEventsEligible
+    - BaseRandomStation
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Transform
+    
+- type: entity
+  id: ActionVendingThrow #hardcode slop
+  name: Dispense Item
+  description: Randomly dispense an item from your stock.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    useDelay: 30
+    event: !type:VendingMachineSelfDispenseEvent
+    
+- type: reagent
+  id: Ammonia
+  name: reagent-name-ammonia
+  group: Botanical
+  desc: reagent-desc-ammonia
+  physicalDesc: reagent-physical-desc-pungent
+  flavor: bitter
+  color: "#77b58e"
+  boilingPoint: -33.0
+  meltingPoint: -77.7
+  plantMetabolism:
+  - !type:PlantAdjustNutrition
+    amount: 1
+  - !type:PlantAdjustHealth
+    amount: 0.5
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 1
+    Gas:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Rat
+          shouldHave: false
+        - !type:ReagentThreshold
+          reagent: Ammonia
+          min: 1
+        ignoreResistances: true
+        damage:
+          types:
+            Poison: 0.25
+      - !type:ChemVomit
+        probability: 0.12
+        conditions:
+        - !type:OrganType
+          type: Rat
+          shouldHave: false
+        - !type:OrganType
+           type: Vox
+           shouldHave: false
+        - !type:ReagentThreshold
+          reagent: Ammonia
+          min: 0.8
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "ammonia-smell" ]
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Ammonia
+          min: 0.25
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Rat
+        - !type:ReagentThreshold
+          reagent: Ammonia
+          min: 1
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          groups:
+            Brute: -5
+            Burn: -5
+          types:
+            Bloodloss: -5
+      - !type:Oxygenate # ammonia displaces nitrogen in vox blood
+        conditions:
+        - !type:OrganType
+          type: Vox
+        factor: -4

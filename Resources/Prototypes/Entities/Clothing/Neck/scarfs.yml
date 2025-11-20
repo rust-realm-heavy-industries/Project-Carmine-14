@@ -33,17 +33,6 @@
 
 - type: entity
   parent: ClothingNeckScarfBase
-  id: ClothingNeckScarfStripedBlack
-  name: striped black scarf
-  description: A stylish striped black scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
-  components:
-    - type: Sprite
-      sprite: Clothing/Neck/Scarfs/black.rsi
-    - type: Clothing
-      sprite: Clothing/Neck/Scarfs/black.rsi
-
-- type: entity
-  parent: ClothingNeckScarfBase
   id: ClothingNeckScarfStripedBrown
   name: striped brown scarf
   description: A stylish striped brown scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.

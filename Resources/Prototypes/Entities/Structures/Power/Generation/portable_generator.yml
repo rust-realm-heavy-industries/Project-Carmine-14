@@ -152,8 +152,6 @@
             True: { visible: true }
             False: { visible: false }
 
-    - type: Machine
-      board: PortableGeneratorPacmanMachineCircuitboard
     - type: FuelGenerator
       minTargetPower: 5000
       maxTargetPower: 30000
@@ -213,8 +211,6 @@
             True: { visible: true }
             False: { visible: false }
 
-    - type: Machine
-      board: PortableGeneratorSuperPacmanMachineCircuitboard
     - type: FuelGenerator
       minTargetPower: 10000
       maxTargetPower: 50000
@@ -286,8 +282,6 @@
             True: { visible: true }
             False: { visible: false }
 
-    - type: Machine
-      board: PortableGeneratorJrPacmanMachineCircuitboard
     - type: FuelGenerator
       targetPower: 5000
       minTargetPower: 4000

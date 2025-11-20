@@ -1,90 +1,11 @@
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]
-  id: ClothingUniformJumpsuitAncient
-  name: ancient jumpsuit
-  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/ancient.rsi
-
-- type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
-  id: ClothingUniformJumpsuitCaptain
-  name: captain's jumpsuit
-  description: It's a blue jumpsuit with some gold markings denoting the rank of "Captain".
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/captain.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/captain.rsi
-
-- type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
   id: ClothingUniformJumpsuitBartender
   name: bartender's uniform
   description: A nice and tidy uniform. Shame about the bar though.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/bartender.rsi
-
-- type: entity
-  parent: ClothingUniformBaseFlippable
-  id: ClothingUniformJumpsuitBartenderNt
-  name: bartender's nanotrasen uniform
-  description: A nice and tidy uniform. Shame about the bar though.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/bartender_nt.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/bartender_nt.rsi
-
-- type: entity
-  parent: [ ClothingUniformBaseFlipped, ClothingUniformJumpsuitBartenderNt ]
-  id: ClothingUniformJumpsuitBartenderNtFlipped
-  name: bartender's nanotrasen uniform
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitJacketMonkey
-  name: bartender's jacket monkey
-  description: A decent jacket, for a decent monkey.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/punpun.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/punpun.rsi
-  - type: SuitSensor
-    controlsLocked: false
-    randomMode: false
-    mode: SensorCords
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitClown
-  name: clown suit
-  description: HONK!
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/clown.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/clown.rsi
-    femaleMask: UniformTop
-  - type: Tag
-    tags:
-    - ClownSuit
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitJester
-  name: jester suit
-  description: A jolly dress, well suited to entertain your master, nuncle.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/jester.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/jester.rsi
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]
@@ -160,28 +81,6 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitLawyerRed
-  name: red lawyer suit
-  description: A flashy red suit worn by lawyers and show-offs.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/lawyerred.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/lawyerred.rsi
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitLawyerBlue
-  name: blue lawyer suit
-  description: A flashy blue suit worn by lawyers and show-offs.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/lawyerblue.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/lawyerblue.rsi
-
-- type: entity
-  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitLawyerBlack
   name: black lawyer suit
   description: A subtle black suit worn by lawyers and gangsters.
@@ -190,37 +89,6 @@
     sprite: Clothing/Uniforms/Jumpsuit/lawyerblack.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/lawyerblack.rsi
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCasualBlue
-  name: casual blue jumpsuit
-  description: A loose worn blue shirt with a grey pants, perfect for someone looking to relax.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
-    layers:
-    - state: icon-jumpsuit
-    - state: icon-shirt
-      color: "#134fc1"
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left-jumpsuit
-      - state: inhand-left-shirt
-        color: "#134fc1"
-      right:
-      - state: inhand-right-jumpsuit
-      - state: inhand-right-shirt
-        color: "#134fc1"
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: equipped-INNERCLOTHING-jumpsuit
-      - state: equipped-INNERCLOTHING-shirt
-        color: "#134fc1"
-
 
 - type: entity
   parent: ClothingUniformBase
@@ -257,17 +125,6 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitSuitBlueBlazer
-  name: blue blazer
-  description: A bold yet conservative outfit, red corduroys, navy blazer and a tie.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/blue_blazer.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/blue_blazer.rsi
-
-- type: entity
-  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitTurtleneckGrey
   name: grey turtleneck
   description: A warm looking sweater and a pair of dark blue slacks.
@@ -277,27 +134,6 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/turtleneck_grey.rsi
 
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitSuitVictorianRedBlack
-  name: red and black victorian suit
-  description: A Victorian-style suit, fancy!
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/victorian_red_black.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/victorian_red_black.rsi
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitSuitVictorianRedVest
-  name: red victorian suit
-  description: A Victorian-style suit, fancy!
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/victorian_red_vest.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/victorian_red_vest.rsi
 
 - type: entity
   parent: ClothingUniformBase

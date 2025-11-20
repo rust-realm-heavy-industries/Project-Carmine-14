@@ -1,4 +1,3 @@
-
 - type: entity
   parent: ClothingShoesMilitaryBase
   id: ClothingShoesBootsJack
@@ -31,13 +30,3 @@
     sprite: Clothing/Shoes/Boots/laceups.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/laceups.rsi
-
-- type: entity
-  parent: ClothingShoesBaseWinterBoots
-  id: ClothingShoesBootsWinter
-  name: winter boots
-  components:
-  - type: Sprite
-    sprite: Clothing/Shoes/Boots/winterboots.rsi
-  - type: Clothing
-    sprite: Clothing/Shoes/Boots/winterboots.rsi

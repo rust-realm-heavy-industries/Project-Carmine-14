@@ -5,8 +5,6 @@
   description: A sophisticated device that reads changes in anomalous waves, and converts them into energy signals.
   components:
   - type: AnomalySynchronizer
-  - type: Machine
-    board: AnomalySynchronizerCircuitboard
   - type: DeviceNetwork
     deviceNetId: Wireless
   - type: WirelessNetworkConnection

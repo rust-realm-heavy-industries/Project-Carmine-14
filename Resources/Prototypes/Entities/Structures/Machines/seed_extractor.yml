@@ -33,8 +33,6 @@
           True: { visible: true }
           False: { visible: false }
   - type: SeedExtractor
-  - type: Machine
-    board: SeedExtractorMachineCircuitboard
   - type: UpgradePowerDraw
     powerDrawMultiplier: 0.75
     scaling: Exponential

@@ -73,8 +73,6 @@
         enum.PowerDeviceVisualLayers.Powered:
           True: { visible: True }
           False: { visible: False }
-  - type: Machine
-    board: ElectrolysisUnitMachineCircuitboard
 
 - type: entity
   id: MachineCentrifuge
@@ -119,5 +117,3 @@
         whitelist:
           tags:
             - CentrifugeCompatible
-  - type: Machine
-    board: CentrifugeMachineCircuitboard

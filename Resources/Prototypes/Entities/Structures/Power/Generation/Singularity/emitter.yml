@@ -88,8 +88,6 @@
   - type: LockedWiresPanel
   - type: AccessReader
     access: [[ "Engineering" ]]
-  - type: Machine
-    board: EmitterCircuitboard
   - type: GuideHelp
     guides: [ Singularity, Power ]
   - type: DeviceNetwork

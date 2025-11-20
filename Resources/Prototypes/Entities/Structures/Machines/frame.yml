@@ -34,7 +34,6 @@
       node: missingWires
     - type: ContainerContainer
       containers:
-        machine_board: !type:Container
         machine_parts: !type:Container
     - type: Damageable
       damageContainer: Inorganic
@@ -110,7 +109,6 @@
     - type: MachineFrame
     - type: ContainerContainer
       containers:
-        machine_board: !type:Container
         machine_parts: !type:Container
     - type: Sprite
       sprite: Structures/Machines/parts.rsi

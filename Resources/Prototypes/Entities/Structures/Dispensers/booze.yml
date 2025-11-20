@@ -17,8 +17,6 @@
     pack: BoozeDispenserInventory
   - type: Transform
     noRot: false
-  - type: Machine
-    board: BoozeDispenserMachineCircuitboard
   - type: GuideHelp
     guides:
     - Bartender

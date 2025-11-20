@@ -12,13 +12,6 @@
   - type: Item
     sprite: Objects/Misc/fire_extinguisher.rsi
     size: Normal
-  - type: SolutionContainerManager
-    solutions:
-      spray:
-        maxVol: 100
-        reagents:
-        - ReagentId: Water
-          Quantity: 100
   - type: RefillableSolution
     solution: spray
   - type: DrainableSolution

@@ -46,8 +46,6 @@
         node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: Machine
-    board: CloningPodMachineCircuitboard
   - type: MaterialStorage
     materialWhiteList:
     - Biomass
@@ -68,7 +66,6 @@
     price: 1000
   - type: ContainerContainer
     containers:
-      machine_board: !type:Container
       machine_parts: !type:Container
       clonepod-bodyContainer: !type:ContainerSlot
   - type: GuideHelp

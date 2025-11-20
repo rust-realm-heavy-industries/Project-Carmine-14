@@ -40,8 +40,6 @@
         layer:
         - WallLayer
   - type: ContainerFill
-    containers:
-      board: [ DoorElectronics ]
   - type: ContainerContainer
     containers:
       board: !type:Container

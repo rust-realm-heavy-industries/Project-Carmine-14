@@ -1,4 +1,3 @@
-
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeret
@@ -16,17 +15,6 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadHatBeret
-  id: ClothingHeadHatBeretWhite
-  name: beret
-  description: A beret, an artists favorite headwear.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/beretwhite.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/beretwhite.rsi
-
-- type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretFrench
   name: French beret
@@ -42,33 +30,6 @@
     tags:
     - ClothMade
     - WhitelistChameleon
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatBeanie
-  name: beanie
-  description: A head-hugging brimless winter cap. This one is tight.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/beanie.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/beanie.rsi
-  - type: TemperatureProtection
-    coefficient: 0.5
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatBeanieWinter
-  name: winter beanie
-  description: A head-hugging brimless winter cap. This one has flaps that cover the ears.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/beanie_winter.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/beanie_winter.rsi
-  - type: TemperatureProtection
-    coefficient: 0.5
-
 
 # Nuclear 14 hats
 - type: entity
