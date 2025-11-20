@@ -436,14 +436,14 @@ namespace Content.Client.Lobby.UI
 
             #region SpawnPriority
 
-            foreach (var value in Enum.GetValues<SpawnPriorityPreference>())
-                SpawnPriorityButton.AddItem(Loc.GetString($"humanoid-profile-editor-preference-spawn-priority-{value.ToString().ToLower()}"), (int) value);
+            // foreach (var value in Enum.GetValues<SpawnPriorityPreference>())
+            //     SpawnPriorityButton.AddItem(Loc.GetString($"humanoid-profile-editor-preference-spawn-priority-{value.ToString().ToLower()}"), (int) value);
 
-            SpawnPriorityButton.OnItemSelected += args =>
-            {
-                SpawnPriorityButton.SelectId(args.Id);
-                SetSpawnPriority((SpawnPriorityPreference) args.Id);
-            };
+            // SpawnPriorityButton.OnItemSelected += args =>
+            // {
+            //     SpawnPriorityButton.SelectId(args.Id);
+            //     SetSpawnPriority((SpawnPriorityPreference) args.Id);
+            // };
 
             #endregion SpawnPriority
 
@@ -884,7 +884,7 @@ namespace Content.Client.Lobby.UI
             // UpdateStationAiControls();
             UpdateCyborgControls();
             UpdateSkinColor();
-            UpdateSpawnPriorityControls();
+            // UpdateSpawnPriorityControls();
             UpdateFlavorTextEdit();
             UpdateCustomSpecieNameEdit();
             UpdateAgeEdit();
@@ -1602,13 +1602,13 @@ namespace Content.Client.Lobby.UI
             CyborgNameEdit.PlaceHolder = Loc.GetString(randomName);
         }
 
-        private void UpdateSpawnPriorityControls()
-        {
-            if (Profile == null)
-                return;
+        // private void UpdateSpawnPriorityControls()
+        // {
+        //     if (Profile == null)
+        //         return;
 
-            SpawnPriorityButton.SelectId((int) Profile.SpawnPriority);
-        }
+        //     SpawnPriorityButton.SelectId((int) Profile.SpawnPriority);
+        // }
 
         private void UpdateHeightWidthSliders()
         {
