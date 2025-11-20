@@ -1,7 +1,7 @@
 - type: gameMap
   id: TestMapCarmine
   mapName: 'Carmine Station'
-  mapPath: /Maps/_Carmine/testmap.yml
+  mapPath: /Maps/_Carmine/release_devmap.yml
   minPlayers: 0
   stations:
     TestMapCarmine:
@@ -15,11 +15,11 @@
             state: outpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Port Balreska'
+          mapNameTemplate: 'Carmine Devmap - Release'
         - type: VesselDesignation
           designation: vessel-designation-headquarters
         - type: VesselDescription
-          description: A sturdy Communard fortress constructed around a bleeding gash in our reality.
+          description: A place of ample tests.
         - type: VesselMusic
           ambientMusicPrototype: PortBalreskaMusic
         - type: Grammar

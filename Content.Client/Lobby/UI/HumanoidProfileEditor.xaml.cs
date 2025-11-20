@@ -223,14 +223,14 @@ namespace Content.Client.Lobby.UI
             _customizeStationAiName = _cfgManager.GetCVar(CCVars.AllowCustomStationAiName);
             _customizeBorgName = _cfgManager.GetCVar(CCVars.AllowCustomCyborgName);
 
-            _cfgManager.OnValueChanged(CCVars.AllowCustomStationAiName, OnChangedStationAiNameCustomizationValue);
+            // _cfgManager.OnValueChanged(CCVars.AllowCustomStationAiName, OnChangedStationAiNameCustomizationValue);
             _cfgManager.OnValueChanged(CCVars.AllowCustomCyborgName, OnChangedCyborgNameCustomizationValue);
 
-            StationAINameEdit.OnTextChanged += args => { SetStationAiName(args.Text); };
+            // StationAINameEdit.OnTextChanged += args => { SetStationAiName(args.Text); };
             CyborgNameEdit.OnTextChanged += args => { SetCyborgName(args.Text); };
 
-            if (StationAiNameContainer.Visible != _customizeStationAiName)
-                StationAiNameContainer.Visible = _customizeStationAiName;
+            // if (StationAiNameContainer.Visible != _customizeStationAiName)
+            //     StationAiNameContainer.Visible = _customizeStationAiName;
 
             if (CyborgNameContainer.Visible != _customizeBorgName)
                 CyborgNameContainer.Visible = _customizeBorgName;
@@ -597,11 +597,11 @@ namespace Content.Client.Lobby.UI
             CosmeticPronousContainer.Visible = newValue;
         }
 
-        private void OnChangedStationAiNameCustomizationValue(bool newValue)
-        {
-            _customizeStationAiName = newValue;
-            StationAiNameContainer.Visible = newValue;
-        }
+        // private void OnChangedStationAiNameCustomizationValue(bool newValue)
+        // {
+        //     _customizeStationAiName = newValue;
+        //     StationAiNameContainer.Visible = newValue;
+        // }
 
         private void OnChangedCyborgNameCustomizationValue(bool newValue)
         {
@@ -881,7 +881,7 @@ namespace Content.Client.Lobby.UI
             UpdateSexControls();
             UpdateGenderControls();
             UpdateDisplayPronounsControls();
-            UpdateStationAiControls();
+            // UpdateStationAiControls();
             UpdateCyborgControls();
             UpdateSkinColor();
             UpdateSpawnPriorityControls();
@@ -1572,20 +1572,20 @@ namespace Content.Client.Lobby.UI
                 CosmeticPronounsNameEdit.Text = Profile.DisplayPronouns;
         }
 
-        private void UpdateStationAiControls()
-        {
-            if (Profile == null)
-                return;
-            // HULLROT EDIT: removing station ai name
-            StationAINameEdit.Text = Profile.StationAiName ?? string.Empty;
+        // private void UpdateStationAiControls()
+        // {
+        //     if (Profile == null)
+        //         return;
+        //     // HULLROT EDIT: removing station ai name
+        //     StationAINameEdit.Text = Profile.StationAiName ?? string.Empty;
 
-            if (StationAINameEdit.Text != string.Empty)
-                return;
+        //     if (StationAINameEdit.Text != string.Empty)
+        //         return;
 
-            var stationAiNames = _prototypeManager.Index<LocalizedDatasetPrototype>(StationAiNames);
-            var randomName = _random.Pick(stationAiNames.Values);
-            StationAINameEdit.PlaceHolder = Loc.GetString(randomName);
-        }
+        //     var stationAiNames = _prototypeManager.Index<LocalizedDatasetPrototype>(StationAiNames);
+        //     var randomName = _random.Pick(stationAiNames.Values);
+        //     StationAINameEdit.PlaceHolder = Loc.GetString(randomName);
+        // }
 
         private void UpdateCyborgControls()
         {

@@ -75,11 +75,11 @@
                                 <LineEdit Name="NameEdit" MinSize="270 0" HorizontalAlignment="Right" />
                             </BoxContainer>
                             <!-- Station AI name -->
-                            <BoxContainer Name="StationAiNameContainer" HorizontalExpand="True">
+                            <!-- <BoxContainer Name="StationAiNameContainer" HorizontalExpand="True">
                                 <Label Text="{Loc 'humanoid-profile-editor-station-ai-name-label'}" />
                                 <Control HorizontalExpand="True"/>
                                 <LineEdit Name="StationAINameEdit" MinSize="270 0" HorizontalAlignment="Right" />
-                            </BoxContainer>
+                            </BoxContainer> -->
                             <!-- Cyborg name -->
                             <BoxContainer Name="CyborgNameContainer" HorizontalExpand="True">
                                 <Label Text="{Loc 'humanoid-profile-editor-cyborg-name-label'}" />
