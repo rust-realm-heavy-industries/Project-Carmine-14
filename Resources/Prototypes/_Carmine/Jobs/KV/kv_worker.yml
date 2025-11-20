@@ -32,6 +32,6 @@
 - type: startingGear
   id: WorkerKVGear
   equipment:
-    jumpsuit: ClothingUniformKVWorker
+    jumpsuit: ClothingUniformJumpsuitAncient
     shoes: ClothingShoesBootsJack
     back: ClothingBackpack

@@ -33,6 +33,6 @@
 - type: startingGear
   id: MedicKVGear
   equipment:
-    jumpsuit: ClothingUniformKVMedic
+    jumpsuit: ClothingUniformJumpsuitAncient
     shoes: ClothingShoesBootsJack
     back: ClothingBackpack

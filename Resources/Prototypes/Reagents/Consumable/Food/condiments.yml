@@ -1,19 +1,4 @@
 - type: reagent
-  id: Astrotame
-  name: reagent-name-astrotame
-  group: Foods
-  desc: reagent-desc-astrotame
-  physicalDesc: reagent-physical-desc-sugary
-  flavor: sweet
-  color: aquamarine
-  recognizable: true
-  metabolisms:
-    Food:
-      effects:
-        - !type:ChemAddMoodlet
-          moodPrototype: SweetenerEffect
-
-- type: reagent
   id: BbqSauce
   name: reagent-name-bbq-sauce
   group: Foods

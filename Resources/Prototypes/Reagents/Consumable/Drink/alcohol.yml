@@ -405,16 +405,6 @@
         reagent: Ethanol
         amount: 0.40
 
-##Commented out in favor of Nyano sake/soju
-#- type: reagent
-#  id: Sake
-#  name: reagent-name-sake
-#  parent: BaseAlcohol
-#  desc: reagent-desc-sake
-#  physicalDesc: reagent-physical-desc-strong-smelling
-#  flavor: sake
-#  color: "#DDDDDD"
-
 - type: reagent
   id: Tequila
   name: reagent-name-tequila

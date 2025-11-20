@@ -274,7 +274,6 @@
       - id: ClothingOuterNCWLEVA
       - id: ClothingHeadHelmetNCWLEVA
       - id: DoubleEmergencyOxygenTankFilled
-      - id: HandHeldMassScannerEE
       - id: CrowbarRed
       - id: Wrench
   - type: Sprite
@@ -305,7 +304,6 @@
       - id: ClothingOuterCoatImperialSoftsuit
       - id: ClothingHeadHelmetImperialEVA
       - id: DoubleEmergencyOxygenTankFilled
-      - id: HandHeldMassScannerEE
       - id: CrowbarRed
       - id: Wrench
   - type: Sprite

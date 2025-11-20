@@ -33,6 +33,6 @@
 - type: startingGear
   id: MedicISGear
   equipment:
-    jumpsuit: ClothingUniformISMedic
+    jumpsuit: ClothingUniformJumpsuitAncient
     shoes: ClothingShoesBootsJack
     back: ClothingBackpack

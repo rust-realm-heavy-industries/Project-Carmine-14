@@ -35,6 +35,6 @@
 - type: startingGear
   id: LeaderKVGear
   equipment:
-    jumpsuit: ClothingUniformKVLeader
+    jumpsuit: ClothingUniformJumpsuitAncient
     shoes: ClothingShoesBootsJack
     back: ClothingBackpack
