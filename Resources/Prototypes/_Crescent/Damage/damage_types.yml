@@ -4,3 +4,5 @@
   armorCoefficientPrice: 5
   armorFlatPrice: 50
   convertInto: Blunt
+
+# .2 note - can't remove this until im done unfucking armor
