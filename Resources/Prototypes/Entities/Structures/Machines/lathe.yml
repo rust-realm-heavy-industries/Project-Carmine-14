@@ -1333,7 +1333,6 @@
     - EnergyScalpel
     - EnergyCautery
     - AdvancedRetractor
-    - OmnimedTool
     - MedicalCyberneticEyes
   - type: EmagLatheRecipes
     emagStaticRecipes:

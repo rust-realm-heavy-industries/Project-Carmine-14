@@ -5,12 +5,3 @@
   - type: BiomeSelection
     biomes:
     - Failsafe
-    - AsteroidsStandardTaypanOne
-    - AsteroidsStandardTaypanTwo
-    - GraveyardWrecks
-    - BalreskaWrecks
-    - AncientBattlefieldWrecks
-    - HeartlandsWrecks
-    - Craster
-    - Marchbelt
-    - Deepbelt
