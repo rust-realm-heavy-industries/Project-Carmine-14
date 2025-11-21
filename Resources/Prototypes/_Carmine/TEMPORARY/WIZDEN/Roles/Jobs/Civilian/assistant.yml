@@ -13,10 +13,10 @@
   id: PassengerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorGrey
-    back: ClothingBackpackFilled
+    back: ClothingBackpack
     shoes: ClothingShoesColorBlack
     id: PassengerPDA
     ears: ClothingHeadsetGrey
   innerClothingSkirt: ClothingUniformJumpskirtColorGrey
-  satchel: ClothingBackpackSatchelFilled
-  duffelbag: ClothingBackpackDuffelFilled
+  satchel: ClothingBackpackSatchel
+  duffelbag: ClothingBackpackDuffel

@@ -1,11 +1,11 @@
-- type: loadout
-  id: CarmineBaseLoadoutBackpackSatchel
-  category: Backpacks
-  cost: 0
-  exclusive: true
-  customColorTint: true
-  items:
-    - ClothingBackpackSatchel
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutBackpacks
+# - type: loadout
+#   id: CarmineBaseLoadoutBackpackSatchel
+#   category: Backpacks
+#   cost: 0
+#   exclusive: true
+#   customColorTint: true
+#   items:
+#     - ClothingBackpackSatchel
+#   requirements:
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutBackpacks

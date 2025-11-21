@@ -1,10 +1,10 @@
-#Smokes
-- type: loadout
-  id: CarmineBaseLoadoutItemCigsGreen
-  category: Items
-  cost: 0
-  items:
-    - CigPackGreen
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSmokes
+# #Smokes
+# - type: loadout
+#   id: CarmineBaseLoadoutItemCigsGreen
+#   category: Items
+#   cost: 0
+#   items:
+#     - CigPackGreen
+#   requirements:
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutSmokes

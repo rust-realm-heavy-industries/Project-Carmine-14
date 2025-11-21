@@ -1,13 +1,13 @@
-# Colored
-- type: loadout
-  id: CarmineBaseLoadoutShoesWhite
-  category: Shoes
-  cost: 0
-  exclusive: true
-  customColorTint: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
-  items:
-    - ClothingShoesColorWhite
+# # Colored
+# - type: loadout
+#   id: CarmineBaseLoadoutShoesWhite
+#   category: Shoes
+#   cost: 0
+#   exclusive: true
+#   customColorTint: true
+#   requirements:
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutShoes
+#   items:
+#     - ClothingShoesColorWhite
 
