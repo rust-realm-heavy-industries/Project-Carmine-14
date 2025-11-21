@@ -40,9 +40,9 @@ namespace Content.Server.GameTicking
         [ValidatePrototypeId<EntityPrototype>]
         public const string AdminObserverPrototypeName = "AdminObserver";
 
-        [ValidatePrototypeId<LocalizedDatasetPrototype>]
-        public const string AiNamesDataset = "NamesAI";
-        
+        // [ValidatePrototypeId<LocalizedDatasetPrototype>]
+        // public const string AiNamesDataset = "NamesAI";
+
         // carmine edit: dont need this
         // .2 | 2025
         // [ValidatePrototypeId<JobPrototype>]
@@ -257,13 +257,13 @@ namespace Content.Server.GameTicking
             DebugTools.AssertNotNull(mobMaybe);
             var mob = mobMaybe!.Value;
 
-            if (jobPrototype.NameDataset == AiNamesDataset)
-            {
-                if (character.StationAiName != null)
-                    _metaData.SetEntityName(mob, character.StationAiName);
-                else
-                    _stationSpawning.EquipJobName(mob, jobPrototype);
-            }
+            // if (jobPrototype.NameDataset == AiNamesDataset)
+            // {
+            //     if (character.StationAiName != null)
+            //         _metaData.SetEntityName(mob, character.StationAiName);
+            //     else
+            //         _stationSpawning.EquipJobName(mob, jobPrototype);
+            // }
 
             // carmine edit: dont need this
             // .2 | 2025

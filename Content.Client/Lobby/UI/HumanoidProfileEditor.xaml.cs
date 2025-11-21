@@ -93,8 +93,8 @@ namespace Content.Client.Lobby.UI
         private ColorSelectorSliders _rgbSkinColorSelector;
 
         private bool _customizePronouns;
-        private bool _customizeStationAiName;
-        private bool _customizeBorgName;
+        // private bool _customizeStationAiName;
+        // private bool _customizeBorgName;
 
         public event Action<HumanoidCharacterProfile, int>? OnProfileChanged;
 
@@ -103,11 +103,11 @@ namespace Content.Client.Lobby.UI
 
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
 
-        [ValidatePrototypeId<LocalizedDatasetPrototype>]
-        private const string StationAiNames = "NamesAI";
+        // [ValidatePrototypeId<LocalizedDatasetPrototype>]
+        // private const string StationAiNames = "NamesAI";
 
-        [ValidatePrototypeId<DatasetPrototype>]
-        private const string CyborgNames = "names_borg";
+        // [ValidatePrototypeId<DatasetPrototype>]
+        // private const string CyborgNames = "names_borg";
 
         public HumanoidProfileEditor(
             IClientPreferencesManager preferencesManager,
@@ -220,20 +220,20 @@ namespace Content.Client.Lobby.UI
 
             #region Custom Names
 
-            _customizeStationAiName = _cfgManager.GetCVar(CCVars.AllowCustomStationAiName);
-            _customizeBorgName = _cfgManager.GetCVar(CCVars.AllowCustomCyborgName);
+            // _customizeStationAiName = _cfgManager.GetCVar(CCVars.AllowCustomStationAiName);
+            // _customizeBorgName = _cfgManager.GetCVar(CCVars.AllowCustomCyborgName);
 
             // _cfgManager.OnValueChanged(CCVars.AllowCustomStationAiName, OnChangedStationAiNameCustomizationValue);
-            _cfgManager.OnValueChanged(CCVars.AllowCustomCyborgName, OnChangedCyborgNameCustomizationValue);
+            // _cfgManager.OnValueChanged(CCVars.AllowCustomCyborgName, OnChangedCyborgNameCustomizationValue);
 
             // StationAINameEdit.OnTextChanged += args => { SetStationAiName(args.Text); };
-            CyborgNameEdit.OnTextChanged += args => { SetCyborgName(args.Text); };
+            // CyborgNameEdit.OnTextChanged += args => { SetCyborgName(args.Text); };
 
             // if (StationAiNameContainer.Visible != _customizeStationAiName)
             //     StationAiNameContainer.Visible = _customizeStationAiName;
 
-            if (CyborgNameContainer.Visible != _customizeBorgName)
-                CyborgNameContainer.Visible = _customizeBorgName;
+            // if (CyborgNameContainer.Visible != _customizeBorgName)
+            //     CyborgNameContainer.Visible = _customizeBorgName;
 
             #endregion
 
@@ -603,11 +603,11 @@ namespace Content.Client.Lobby.UI
         //     StationAiNameContainer.Visible = newValue;
         // }
 
-        private void OnChangedCyborgNameCustomizationValue(bool newValue)
-        {
-            _customizeBorgName = newValue;
-            CyborgNameContainer.Visible = newValue;
-        }
+        // private void OnChangedCyborgNameCustomizationValue(bool newValue)
+        // {
+        //     _customizeBorgName = newValue;
+        //     CyborgNameContainer.Visible = newValue;
+        // }
 
         /// Refreshes the species selector
         public void RefreshSpecies()
@@ -882,7 +882,7 @@ namespace Content.Client.Lobby.UI
             UpdateGenderControls();
             UpdateDisplayPronounsControls();
             // UpdateStationAiControls();
-            UpdateCyborgControls();
+            // UpdateCyborgControls();
             UpdateSkinColor();
             // UpdateSpawnPriorityControls();
             UpdateFlavorTextEdit();
@@ -1268,19 +1268,19 @@ namespace Content.Client.Lobby.UI
             IsDirty = true;
         }
 
-        private void SetStationAiName(string? stationAiName)
-        {
-            Profile = Profile?.WithStationAiName(stationAiName);
-            ReloadPreview();
-            IsDirty = true;
-        }
+        // private void SetStationAiName(string? stationAiName)
+        // {
+        //     Profile = Profile?.WithStationAiName(stationAiName);
+        //     ReloadPreview();
+        //     IsDirty = true;
+        // }
 
-        private void SetCyborgName(string? cyborgName)
-        {
-            Profile = Profile?.WithCyborgName(cyborgName);
-            ReloadPreview();
-            IsDirty = true;
-        }
+        // private void SetCyborgName(string? cyborgName)
+        // {
+        //     Profile = Profile?.WithCyborgName(cyborgName);
+        //     ReloadPreview();
+        //     IsDirty = true;
+        // }
 
         private string GetFormattedPronounsFromGender()
         {
@@ -1587,20 +1587,20 @@ namespace Content.Client.Lobby.UI
         //     StationAINameEdit.PlaceHolder = Loc.GetString(randomName);
         // }
 
-        private void UpdateCyborgControls()
-        {
-            if (Profile == null)
-                return;
+        // private void UpdateCyborgControls()
+        // {
+        //     if (Profile == null)
+        //         return;
 
-            CyborgNameEdit.Text = Profile.CyborgName ?? string.Empty;
+        //     CyborgNameEdit.Text = Profile.CyborgName ?? string.Empty;
 
-            if (CyborgNameEdit.Text != string.Empty)
-                return;
+        //     if (CyborgNameEdit.Text != string.Empty)
+        //         return;
 
-            var borgNames = _prototypeManager.Index<DatasetPrototype>(CyborgNames);
-            var randomName = _random.Pick(borgNames.Values);
-            CyborgNameEdit.PlaceHolder = Loc.GetString(randomName);
-        }
+        //     var borgNames = _prototypeManager.Index<DatasetPrototype>(CyborgNames);
+        //     var randomName = _random.Pick(borgNames.Values);
+        //     CyborgNameEdit.PlaceHolder = Loc.GetString(randomName);
+        // }
 
         // private void UpdateSpawnPriorityControls()
         // {
