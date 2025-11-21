@@ -75,11 +75,11 @@
                                 <LineEdit Name="NameEdit" MinSize="270 0" HorizontalAlignment="Right" />
                             </BoxContainer>
                             <!-- Station AI name -->
-                            <BoxContainer Name="StationAiNameContainer" HorizontalExpand="True">
+                            <!-- <BoxContainer Name="StationAiNameContainer" HorizontalExpand="True">
                                 <Label Text="{Loc 'humanoid-profile-editor-station-ai-name-label'}" />
                                 <Control HorizontalExpand="True"/>
                                 <LineEdit Name="StationAINameEdit" MinSize="270 0" HorizontalAlignment="Right" />
-                            </BoxContainer>
+                            </BoxContainer> -->
                             <!-- Cyborg name -->
                             <BoxContainer Name="CyborgNameContainer" HorizontalExpand="True">
                                 <Label Text="{Loc 'humanoid-profile-editor-cyborg-name-label'}" />
@@ -99,11 +99,11 @@
                                 <Button Name="ShowLoadouts" Pressed="True" ToggleMode="True" Text="{Loc 'Show'}" HorizontalAlignment="Right" />
                             </BoxContainer>
                             <!-- Spawn Priority -->
-                            <BoxContainer HorizontalExpand="True">
+                            <!-- <BoxContainer HorizontalExpand="True">
                                 <Label Text="{Loc 'humanoid-profile-editor-spawn-priority-label'}" />
                                 <Control HorizontalExpand="True"/>
                                 <OptionButton Name="SpawnPriorityButton" HorizontalAlignment="Right" />
-                            </BoxContainer>
+                            </BoxContainer> -->
 						    <!-- Height -->
                             <!-- <BoxContainer HorizontalExpand="True">
                                 <Label Name="HeightLabel" MinWidth="110" />
