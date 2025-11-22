@@ -417,9 +417,6 @@
       - id: BikeHorn
         prob: 0.001
         orGroup: dressersecondloot
-      - id: DrinkWaterBottleFull
-        prob: 0.001
-        orGroup: dressersecondloot
       - id: BrokenBottle
         prob: 0.001
         orGroup: dressersecondloot

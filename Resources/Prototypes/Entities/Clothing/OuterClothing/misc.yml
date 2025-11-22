@@ -8,16 +8,3 @@
     sprite: Clothing/OuterClothing/Misc/black_hoodie.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/black_hoodie.rsi
-
-- type: entity
-  parent: ClothingOuterBaseToggleable
-  id: ClothingOuterHoodieChaplain
-  name: chaplain's hoodie
-  description: Black and strict chaplain hoodie.
-  components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Misc/chaplain_hoodie.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Misc/chaplain_hoodie.rsi
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodChaplainHood

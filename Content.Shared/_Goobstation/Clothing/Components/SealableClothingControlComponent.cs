@@ -14,7 +14,7 @@ public sealed partial class SealableClothingControlComponent : Component
 {
     /// Action that used to start sealing
     [DataField, AutoNetworkedField]
-    public EntProtoId SealAction = "ActionClothingSeal";
+    public EntProtoId SealAction = "ActionActivateDeathAcidifier";
 
     [DataField, AutoNetworkedField]
     public EntityUid? SealActionEntity;
