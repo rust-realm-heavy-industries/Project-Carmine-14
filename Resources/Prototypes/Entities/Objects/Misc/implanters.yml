@@ -135,14 +135,6 @@
       implant: FreedomImplant
 
 - type: entity
-  id: UplinkImplanter
-  name: uplink implanter
-  parent: BaseImplantOnlyImplanterSyndi
-  components:
-  - type: Implanter
-    implant: UplinkImplant
-
-- type: entity
   id: EmpImplanter
   name: EMP implanter
   parent: BaseImplantOnlyImplanterSyndi
