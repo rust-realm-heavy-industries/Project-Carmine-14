@@ -23,12 +23,6 @@
     - WoodwindInstrument
   - type: Extractable
     grindableSolutionName: sax
-  - type: SolutionContainerManager
-    solutions:
-      sax:
-        reagents:
-          - ReagentId: Saxoite
-            Quantity: 10
 
 - type: entity
   parent: BaseHandheldInstrument

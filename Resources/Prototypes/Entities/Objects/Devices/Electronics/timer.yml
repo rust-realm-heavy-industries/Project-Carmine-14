@@ -29,16 +29,3 @@
   - type: Tag
     tags:
     - TimerScreenElectronics
-
-- type: entity
-  id: BrigTimerElectronics
-  parent: SignalTimerElectronics
-  name: brig timer electronics
-  components:
-  - type: Construction
-    deconstructionTarget: null
-    graph: TimerElectronics
-    node: brig
-  - type: Tag
-    tags:
-    - TimerBrigElectronics

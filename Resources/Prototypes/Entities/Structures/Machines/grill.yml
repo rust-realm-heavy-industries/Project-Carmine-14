@@ -23,8 +23,6 @@
       components:
       - Temperature
   - type: PlaceableSurface
-  - type: Machine
-    board: ElectricGrillMachineCircuitboard
   - type: GenericVisualizer
     visuals:
       enum.EntityHeaterVisuals.Setting:

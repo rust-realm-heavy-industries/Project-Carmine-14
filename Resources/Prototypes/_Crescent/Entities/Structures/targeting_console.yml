@@ -14,8 +14,6 @@
       state: shuttle
     - map: ["computerLayerKeys"]
       state: generic_keys
-  - type: Computer
-    board: TargetingConsoleCircuitboard
   - type: TargetingConsole
   - type: ActivatableUI
     key: enum.TargetingConsoleUiKey.Key

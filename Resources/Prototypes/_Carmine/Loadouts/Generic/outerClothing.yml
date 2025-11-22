@@ -1,10 +1,10 @@
-- type: loadout
-  id: CarmineBaseLoadoutOuterCoatBomberjacket
-  category: Outer
-  cost: 0
-  customColorTint: true
-  items:
-    - ClothingOuterCoatBomber
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+# - type: loadout
+#   id: CarmineBaseLoadoutOuterCoatBomberjacket
+#   category: Outer
+#   cost: 0
+#   customColorTint: true
+#   items:
+#     - ClothingOuterCoatBomber
+#   requirements:
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutOuter

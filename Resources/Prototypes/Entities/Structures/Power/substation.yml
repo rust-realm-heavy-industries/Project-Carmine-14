@@ -97,8 +97,6 @@
     intensitySlope: 2
     totalIntensity: 200
   - type: WiresPanel
-  - type: Machine
-    board: SubstationMachineCircuitboard
   - type: StationInfiniteBatteryTarget
   - type: AmbientOnPowered
   - type: AmbientSound
@@ -158,12 +156,6 @@
   - type: Clickable
   - type: AccessReader
     access: [["Engineering"]]
-  - type: ContainerFill
-    containers:
-      board: [ WallmountSubstationElectronics ]
-  - type: ContainerContainer
-    containers:
-      board: !type:Container
   - type: InteractionOutline
   - type: Physics
     bodyType: Static
@@ -268,12 +260,10 @@
     startingCharge: 2000000
   - type: ContainerFill
     containers:
-      board: [ WallmountSubstationElectronics ]
       capacitor: [ CapacitorStockPart ]
       powercell: [ PowerCellSmall ]
   - type: ContainerContainer
     containers:
-      board: !type:Container
       capacitor: !type:Container
       powercell: !type:Container
 

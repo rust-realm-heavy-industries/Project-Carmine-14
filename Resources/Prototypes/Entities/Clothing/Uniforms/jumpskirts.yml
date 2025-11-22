@@ -9,30 +9,6 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/bartender.rsi
 
-# This has been placed here, as it visually resembles a skirt.
-# Likewise, the sprite file location has been moved to jumpskirts and the parent has been changed to ClothingUniformSkirtBase.
-- type: entity
-  parent: ClothingUniformSkirtBase
-  id: ClothingUniformJumpskirtChaplain
-  name: chaplain's jumpskirt
-  description: It's a black jumpskirt, often worn by religious folk.
-  components:
-    - type: Sprite
-      sprite: Clothing/Uniforms/Jumpskirt/chaplain.rsi
-    - type: Clothing
-      sprite: Clothing/Uniforms/Jumpskirt/chaplain.rsi
-
-- type: entity
-  parent: ClothingUniformSkirtBase
-  id: ClothingUniformJumpskirtChef
-  name: chef uniform
-  description: Can't cook without this.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/chef.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/chef.rsi
-
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtDetective
@@ -93,10 +69,9 @@
     - ClothMade
     - PrisonUniform
     - WhitelistChameleon
-    - Skirt # Delta-V - Skirt Tag so Harpies can wear it.
 
 - type: entity
-  parent: UnsensoredClothingUniformSkirtBase
+  parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtOperative
   name: operative jumpskirt
   description: Uniform for elite syndicate operatives performing tactical operations in deep space.
@@ -117,8 +92,6 @@
     - type: Clothing
       sprite: Clothing/Uniforms/Jumpskirt/lawyerblack.rsi
 
-# Both the light and dark monastic robes have been moved here.
-# They have also had their parent changed to ClothingUniformSkirtBase, and their sprite has likewise been moved to the jumpskirts directory.
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMonasticRobeDark

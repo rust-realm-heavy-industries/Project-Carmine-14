@@ -52,8 +52,6 @@
         enum.WiresVisualLayers.MaintenancePanel:
           True: { visible: false }
           False: { visible: true }
-  - type: Machine
-    board: HolopadMachineCircuitboard
   - type: StationAiWhitelist
   - type: PointLight
     radius: 1.3

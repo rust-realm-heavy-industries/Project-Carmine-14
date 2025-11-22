@@ -16,8 +16,6 @@
     onState: on
     offState: off
     selectState: select
-  - type: Machine
-    board: JukeboxCircuitBoard
   - type: Appearance
   - type: ApcPowerReceiver
     powerLoad: 100

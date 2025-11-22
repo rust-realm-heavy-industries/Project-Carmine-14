@@ -36,8 +36,6 @@
     baseComputerCost:
       Steel: 500
       Glass: 250
-  - type: Machine
-    board: FlatpackerMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -70,7 +68,6 @@
           - ComputerBoard
   - type: ContainerContainer
     containers:
-      machine_board: !type:Container
       machine_parts: !type:Container
       board_slot: !type:ContainerSlot
   - type: Construction

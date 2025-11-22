@@ -154,11 +154,6 @@
   - type: Tag
     tags:
     - ArtifactFragment
-  - type: Extractable
-    juiceSolution:
-      reagents:
-      - ReagentId: Artifexium
-        Quantity: 10
   - type: StaticPrice
     price: 0
   - type: Stack

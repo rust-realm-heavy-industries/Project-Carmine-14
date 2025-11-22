@@ -106,8 +106,6 @@
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: AutolatheMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -290,8 +288,6 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/autolathe_hypercon.rsi
-  - type: Machine
-    board: AutolatheHyperConvectionMachineCircuitboard
 
 - type: entity
   id: Protolathe
@@ -312,8 +308,6 @@
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: ProtolatheMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -477,8 +471,6 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/protolathe_hypercon.rsi
-  - type: Machine
-    board: ProtolatheHyperConvectionMachineCircuitboard
 
 - type: entity
   id: CircuitImprinter
@@ -497,15 +489,12 @@
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: CircuitImprinterMachineCircuitboard
   - type: Lathe
     producingSound: /Audio/Machines/circuitprinter.ogg
     idleState: icon
     runningState: building
     staticRecipes:
     - ProtolatheMachineCircuitboard
-    - AutolatheMachineCircuitboard
     - BookPressMachineCircuitboard
     - CircuitImprinterMachineCircuitboard
     - BiogeneratorMachineCircuitboard
@@ -654,8 +643,6 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter_hypercon.rsi
-  - type: Machine
-    board: CircuitImprinterHyperConvectionMachineCircuitboard
 
 - type: entity
   id: ExosuitFabricator
@@ -672,8 +659,6 @@
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: fab-o
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: ExosuitFabricatorMachineCircuitboard
   - type: Lathe
     idleState: fab-idle
     runningState: fab-active
@@ -862,8 +847,6 @@
       color: "#ffaaaa"
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: BiofabricatorMachineCircuitboard
   - type: MaterialStorage
     ignoreColor: true
     whitelist:
@@ -911,8 +894,6 @@
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: SecurityTechFabCircuitboard
   - type: Lathe
     idleState: icon
     runningState: icon
@@ -1188,8 +1169,6 @@
           map: ["enum.MaterialStorageVisualLayers.Inserting"]
         - state: panel
           map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - type: Machine
-      board: AmmoTechFabCircuitboard
     - type: Lathe
       idleState: icon
       runningState: icon
@@ -1361,8 +1340,6 @@
     - CartridgeEphedrine
     - CartridgePuncturase
     - CartridgeTirizene
-  - type: Machine
-    board: MedicalTechFabCircuitboard
   - type: StealTarget
     stealGroup: MedicalTechFabCircuitboard
 
@@ -1380,8 +1357,6 @@
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
-  - type: Machine
-    board: UniformPrinterMachineCircuitboard
   - type: Lathe
     producingSound: /Audio/Machines/uniformprinter.ogg
     idleState: icon
@@ -1431,8 +1406,6 @@
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: BiogeneratorMachineCircuitboard
   - type: MaterialStorage
     insertOnInteract: true
     canEjectStoredMaterials: false
@@ -1450,7 +1423,6 @@
           - FitsInDispenser
   - type: ContainerContainer
     containers:
-      machine_board: !type:Container
       machine_parts: !type:Container
       beaker_slot: !type:ContainerSlot
   - type: Lathe
@@ -1505,8 +1477,6 @@
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: OreProcessorMachineCircuitboard
   - type: MaterialStorage
     ignoreColor: true
     whitelist:
@@ -1554,8 +1524,6 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/ore_processor_industrial.rsi
-  - type: Machine
-    board: OreProcessorIndustrialMachineCircuitboard
   - type: Lathe
     materialUseMultiplier: 0.75
     timeMultiplier: 0.5
@@ -1574,8 +1542,6 @@
     - state: buttons_on
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
-  - type: Machine
-    board: SheetifierMachineCircuitboard
   - type: MaterialStorage
     dropOnDeconstruct: false #should drop ores instead of ingots/sheets
     ignoreColor: true
@@ -1645,7 +1611,6 @@
     - PlushieSharkBlue
     - PlushieSharkPink
     - PlushieSharkGrey
-    - PlushieCarp
     - PlushieMagicarp
     - PlushieHolocarp
     - PlushieSlime
@@ -1691,7 +1656,6 @@
     - PlushieXeno
     - FoamCrossbow
     - RevolverCapGun
-    - PonderingOrb
     - ToyAmongPequeno
     - FoamCutlass
     - WhoopieCushion

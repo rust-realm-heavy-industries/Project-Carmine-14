@@ -1,0 +1,10 @@
+- type: alertLevels
+  id: stationAlerts
+  defaultLevel: green
+  levels:
+    green:
+      announcement: alert-level-green-announcement
+      color: Green
+      emergencyLightColor: LawnGreen
+      sound: /Audio/Announcements/Alerts/code_green.ogg
+      shuttleTime: 600

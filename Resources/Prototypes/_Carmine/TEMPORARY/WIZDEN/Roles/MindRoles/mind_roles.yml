@@ -1,0 +1,23 @@
+- type: entity
+  id: BaseMindRole
+  name: Mind Role
+  description: Mind Role entity
+  abstract: true
+  components:
+  - type: MindRole
+
+#Observer
+- type: entity
+  parent: BaseMindRole
+  id: MindRoleObserver
+  name: Observer Role
+  components:
+  - type: ObserverRole
+
+# The Job MindRole holds the mob's Job prototype
+- type: entity
+  parent: BaseMindRole
+  id: MindRoleJob
+  name: Job Role
+#  description:
+  # MindRoleComponent.JobPrototype is filled by SharedJobSystem

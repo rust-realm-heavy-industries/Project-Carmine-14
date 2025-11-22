@@ -17,8 +17,6 @@
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: BookPressMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:

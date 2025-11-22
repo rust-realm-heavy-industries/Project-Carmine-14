@@ -48,13 +48,10 @@
         whitelist:
           components:
           - FitsInDispenser
-  - type: Machine
-    board: ReagentGrinderMachineCircuitboard
   - type: ContainerContainer
     containers:
       beakerSlot: !type:ContainerSlot
       inputContainer: !type:Container
-      machine_board: !type:Container
       machine_parts: !type:Container
 
 - type: entity
@@ -79,8 +76,6 @@
     sprite: Structures/Machines/recycling.rsi
     layers:
       - state: grinder-b0
-  - type: Machine
-    board: ReagentGrinderIndustrialMachineCircuitboard
   - type: GenericVisualizer
     visuals:
       enum.ConveyorVisuals.State:
@@ -90,7 +85,6 @@
           Off: { state: grinder-b0 }
   - type: ContainerContainer
     containers:
-      machine_board: !type:Container
       machine_parts: !type:Container
   - type: Construction
     graph: Machine

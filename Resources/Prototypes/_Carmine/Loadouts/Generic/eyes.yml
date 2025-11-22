@@ -1,87 +1,10 @@
-- type: loadout
-  id: CarmineBaseLoadoutEyesEyepatch
-  category: Eyes
-  cost: 0
-  canBeHeirloom: true
-  items:
-    - ClothingEyesEyepatch
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes
-
-- type: loadout
-  id: CarmineBaseLoadoutEyesGlasses
-  category: Eyes
-  cost: 0
-  customColorTint: true
-  items:
-    - ClothingEyesGlasses
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes
-
-- type: loadout
-  id: CarmineBaseLoadoutEyesBlindfold
-  category: Eyes
-  cost: 0
-  items:
-    - ClothingEyesBlindfold
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes
-
-- type: loadout
-  id: CarmineBaseLoadoutEyesBlindfoldColor
-  category: Eyes
-  cost: 0
-  customColorTint: true
-  items:
-    - ClothingEyesBlindfoldColor
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes
-
-- type: loadout
-  id: CarmineBaseLoadoutItemSunglasses
-  category: Eyes
-  cost: 7
-  exclusive: true
-  items:
-    - ClothingEyesGlassesSunglasses
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes
-
-- type: loadout
-  id: CarmineBaseLoadoutEyesGlassesSunglassesAviator
-  category: Eyes
-  cost: 7
-  exclusive: true
-  customColorTint: true
-  items:
-    - ClothingEyesGlassesSunglassesAviator
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes
-
-- type: loadout
-  id: CarmineBaseLoadoutEyesGlassesSunglassesBig
-  category: Eyes
-  cost: 7
-  exclusive: true
-  items:
-    - ClothingEyesGlassesSunglassesBig
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes
-
-- type: loadout
-  id: CarmineBaseLoadoutEyesGlassesSunglassesVisor
-  category: Eyes
-  cost: 7
-  exclusive: true
-  items:
-    - ClothingEyesGlassesSunglassesVisor
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes
+# - type: loadout
+#   id: CarmineBaseLoadoutEyesGlasses
+#   category: Eyes
+#   cost: 0
+#   customColorTint: true
+#   items:
+#     - ClothingEyesGlasses
+#   requirements:
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutEyes

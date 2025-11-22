@@ -44,12 +44,6 @@
   - type: FireAlarm
   - type: AtmosAlertsDevice
     group: FireAlarm
-  - type: ContainerFill
-    containers:
-      board: [ FireAlarmElectronics ]
-  - type: ContainerContainer
-    containers:
-      board: !type:Container
   - type: Appearance
   - type: WiresVisuals
   - type: AlertLevelDisplay

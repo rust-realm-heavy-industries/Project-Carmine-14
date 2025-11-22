@@ -52,8 +52,6 @@
     unWeldedLayer: AirlockLayer
     weldedLayer: WallLayer
   - type: ContainerFill
-    containers:
-      board: [ DoorElectronics ]
   - type: AccessReader
     containerAccessProvider: board
   - type: Door
@@ -67,8 +65,6 @@
     denySound:
       path: /Audio/Machines/airlock_deny.ogg
   - type: ContainerContainer
-    containers:
-      board: !type:Container
   - type: Weldable
     fuel: 5
     time: 3

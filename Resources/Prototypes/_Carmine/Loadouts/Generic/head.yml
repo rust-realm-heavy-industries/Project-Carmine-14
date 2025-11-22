@@ -1,11 +1,11 @@
 
-- type: loadout
-  id: CarmineBaseLoadoutHeadFlatBlack
-  category: Head
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingHeadHatFlatBlack
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutHead
+# - type: loadout
+#   id: CarmineBaseLoadoutHeadFlatBlack
+#   category: Head
+#   cost: 0
+#   exclusive: true
+#   items:
+#     - ClothingHeadHatFlatBlack
+#   requirements:
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutHead

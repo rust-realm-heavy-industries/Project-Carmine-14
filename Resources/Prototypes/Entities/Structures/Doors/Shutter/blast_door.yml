@@ -28,9 +28,6 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StrongMetallic
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronics ]
   - type: Construction
     graph: BlastDoor
     node: blastdoor

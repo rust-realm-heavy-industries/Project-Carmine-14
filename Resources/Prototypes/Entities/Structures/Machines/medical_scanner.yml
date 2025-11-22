@@ -48,7 +48,6 @@
   - type: ContainerContainer
     containers:
       scanner-bodyContainer: !type:ContainerSlot
-      machine_board: !type:Container
       machine_parts: !type:Container
   - type: Damageable
     damageContainer: Inorganic
@@ -66,8 +65,6 @@
         node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: Machine
-    board: MedicalScannerMachineCircuitboard
   - type: WiresPanel
   - type: Appearance
   - type: Climbable

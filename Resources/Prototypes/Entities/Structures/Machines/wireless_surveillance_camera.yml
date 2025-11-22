@@ -46,8 +46,6 @@
   parent: SurveillanceWirelessCameraBase
   suffix: Anchored
   components:
-    - type: Machine
-      board: SurveillanceWirelessCameraAnchoredCircuitboard
     - type: Anchorable
     - type: Transform
       anchored: true
@@ -66,8 +64,6 @@
   parent: SurveillanceWirelessCameraBase
   suffix: Movable
   components:
-    - type: Machine
-      board: SurveillanceWirelessCameraMovableCircuitboard
     - type: Transform
     - type: Sprite
       noRot: true

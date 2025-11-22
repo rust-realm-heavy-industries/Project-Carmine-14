@@ -33,6 +33,6 @@
 - type: startingGear
   id: MilitaryICGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAncient
+    jumpsuit: ClothingUniformCLJumpsuit
     shoes: ClothingShoesBootsJack
     back: ClothingBackpack

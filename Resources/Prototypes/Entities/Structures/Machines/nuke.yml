@@ -153,12 +153,6 @@
         - TabletopMachineMask
         layer:
         - TabletopMachineLayer
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: NuclearCola
-          Quantity: 3000
   - type: ReagentTank
     transferAmount: 100
   - type: StaticPrice

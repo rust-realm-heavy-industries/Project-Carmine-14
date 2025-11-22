@@ -15,8 +15,6 @@
       interfaces:
         enum.SurveillanceCameraSetupUiKey.Router:
           type: SurveillanceCameraSetupBoundUi
-    - type: Machine
-      board: SurveillanceCameraRouterCircuitboard
     - type: SpamEmitSoundRequirePower
     - type: SpamEmitSound
       minInterval: 20
@@ -136,8 +134,6 @@
       interfaces:
         enum.SurveillanceCameraSetupUiKey.Router:
           type: SurveillanceCameraSetupBoundUi
-    - type: Machine
-      board: SurveillanceCameraWirelessRouterCircuitboard
     - type: SpamEmitSoundRequirePower
     - type: SpamEmitSound
       minInterval: 20

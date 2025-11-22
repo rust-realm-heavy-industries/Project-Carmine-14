@@ -407,8 +407,6 @@
         node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: Machine
-    board: GasRecyclerMachineCircuitboard
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: GasValve
 

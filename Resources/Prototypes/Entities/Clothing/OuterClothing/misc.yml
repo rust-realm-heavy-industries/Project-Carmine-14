@@ -1,4 +1,3 @@
-
 - type: entity
   parent: ClothingOuterBase
   id: ClothingOuterHoodieBlack
@@ -22,18 +21,3 @@
     sprite: Clothing/OuterClothing/Misc/chaplain_hoodie.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodChaplainHood
-
-- type: entity
-  parent: ClothingOuterBase
-  id: ClothingOuterGhostSheet
-  name: ghost sheet
-  description: Spooky!!!
-  components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Misc/ghostsheet.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Misc/ghostsheet.rsi
-  - type: Construction
-    graph: GhostSheet
-    node: ghost_sheet
-  - type: IdentityBlocker

@@ -163,8 +163,6 @@
   - type: Appearance
   - type: WiresVisuals
   - type: WiresPanel
-  - type: Machine
-    board: DawInstrumentMachineCircuitboard
   - type: Instrument
     allowPercussion: true
     allowProgramChange: true

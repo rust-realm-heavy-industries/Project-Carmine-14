@@ -58,8 +58,6 @@
         node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: Machine
-    board: MaterialReclaimerMachineCircuitboard
   - type: WiresPanel
   - type: MaterialReclaimer
     whitelist:
@@ -89,7 +87,6 @@
   - type: ContainerContainer
     containers:
       active-material-reclaimer-container: !type:Container
-      machine_board: !type:Container
       machine_parts: !type:Container
   - type: SolutionContainerManager
     solutions:

@@ -83,8 +83,6 @@
       color: "#c9c042"
       castShadows: false
     - type: WiresPanel
-    - type: Machine
-      board: SMESMachineCircuitboard
     - type: StationInfiniteBatteryTarget
     - type: Electrified
       onHandInteract: false
@@ -149,8 +147,6 @@
       shader: unshaded
     - map: ["enum.WiresVisualLayers.MaintenancePanel"]
       state: advancedsmes-open
-  - type: Machine
-    board: SMESAdvancedMachineCircuitboard
   - type: Battery
     maxCharge: 240000000
     startingCharge: 240000000

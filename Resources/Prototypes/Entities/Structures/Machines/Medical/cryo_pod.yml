@@ -46,8 +46,6 @@
       machine_parts: !type:Container
   - type: AtmosDevice
   - type: Appearance
-  - type: Machine
-    board: CryoPodMachineCircuitboard
   - type: WiresVisuals
   - type: WiresPanel
   - type: Wires

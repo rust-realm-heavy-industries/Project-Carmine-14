@@ -1,22 +1,3 @@
-
-- type: entity
-  parent: ClothingHandsBase
-  id: ClothingHandsGlovesCaptain
-  name: captain gloves
-  description: Regal blue gloves, with a nice gold trim. Swanky.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/captain.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/captain.rsi
-  - type: GloveHeatResistance
-    heatResistance: 1400
-  - type: Insulated
-  - type: Fiber
-    fiberMaterial: fibers-durathread
-    fiberColor: fibers-regal-blue
-  - type: FingerprintMask
-
 #### Medical
 - type: entity
   parent: ClothingHandsButcherable
@@ -46,22 +27,6 @@
     fiberMaterial: fibers-nitrile
   - type: FingerprintMask
 ####
-- type: entity
-  parent: ClothingHandsButcherable
-  id: ClothingHandsGlovesLeather
-  name: botanist's leather gloves
-  description: These leather gloves protect against thorns, barbs, prickles, spikes and other harmful objects of floral origin. They're also quite warm.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/leather.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/leather.rsi
-  - type: GloveHeatResistance
-    heatResistance: 1400
-  - type: Fiber
-    fiberMaterial: fibers-leather
-    fiberColor: fibers-brown
-  - type: FingerprintMask
 
 - type: entity
   parent: ClothingHandsGlovesColorBlack
@@ -98,28 +63,3 @@
   - type: Fiber
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-black
-
-- type: entity
-  parent: ClothingHandsButcherable
-  id: ClothingHandsGlovesFingerlessWhite
-  name: fingerless gloves
-  description: Plain gloves without fingertips.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/fingerlesswhite.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/fingerlesswhite.rsi
-  - type: Fiber
-    fiberMaterial: fibers-synthetic
-    fiberColor: fibers-dyed
-
-- type: entity
-  parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesEvening
-  name: evening gloves
-  description: Gloves that reach past the elbow. Serving elegance and serving looks!
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/evening_gloves.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/evening_gloves.rsi

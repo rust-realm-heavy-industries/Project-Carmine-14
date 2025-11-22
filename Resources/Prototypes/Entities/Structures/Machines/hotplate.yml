@@ -24,7 +24,6 @@
   - type: Appearance
   - type: ContainerContainer
     containers:
-      machine_board: !type:Container
       machine_parts: !type:Container
 
 - type: entity
@@ -51,8 +50,6 @@
   - type: PlaceableSurface
     placeCentered: true
     positionOffset: 0, 0.25
-  - type: Machine
-    board: HotplateMachineCircuitboard
   - type: GenericVisualizer
     visuals:
       enum.SolutionHeaterVisuals.IsOn:

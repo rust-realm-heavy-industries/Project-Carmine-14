@@ -60,9 +60,7 @@
         type: CargoPalletConsoleBoundUserInterface
   - type: MarketModifier
     mod: 1.00
-  - type: Computer
-    board: Null
-    
+
 - type: entity
   parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerIFFSyndicate,]
   id: ComputerIFFPOI
@@ -79,5 +77,3 @@
     interfaces:
       enum.IFFConsoleUiKey.Key:
         type: IFFConsoleBoundUserInterface
-  - type: Computer
-    board: Null

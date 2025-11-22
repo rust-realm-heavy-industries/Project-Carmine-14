@@ -33,12 +33,8 @@
   - type: Appearance
   - type: WiresVisuals
   - type: WiresPanelSecurity
-  - type: ContainerFill
-    containers:
-      board: [ IntercomElectronics ]
   - type: ContainerContainer
     containers:
-      board: !type:Container
       key_slots: !type:Container
   - type: Sprite
     noRot: false

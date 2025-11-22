@@ -15,8 +15,6 @@
       shader: unshaded
       map: ["enum.DiseaseMachineVisualLayers.IsOn"]
   - type: Appearance
-  - type: Machine
-    board: DiagnoserMachineCircuitboard
 
 - type: entity
   name: disease diagnoser report

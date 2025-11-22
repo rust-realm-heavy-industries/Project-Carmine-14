@@ -17,8 +17,6 @@
     pack: SodaDispenserInventory
   - type: Transform
     noRot: false
-  - type: Machine
-    board: SodaDispenserMachineCircuitboard
   - type: GuideHelp
     guides:
     - Bartender

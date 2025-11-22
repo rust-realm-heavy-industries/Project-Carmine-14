@@ -17,8 +17,6 @@
 #      map: ["enum.MaterialStorageVisualLayers.Inserting"]
 #    - state: panel
 #      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: MedicalBiofabMachineBoard
   - type: MaterialStorage
     whitelist:
       tags:

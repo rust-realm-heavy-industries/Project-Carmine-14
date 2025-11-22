@@ -98,11 +98,8 @@
             collection: MetalBreak
     - type: StaticPrice
       price: 10000
-    - type: Machine
-      board: StationAnchorCircuitboard
     - type: ContainerContainer
       containers:
-        machine_board: !type:Container
         machine_parts: !type:Container
     - type: Construction
       containers:

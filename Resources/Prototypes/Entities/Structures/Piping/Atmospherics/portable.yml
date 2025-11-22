@@ -64,8 +64,6 @@
     range: 5
     sound:
       path: /Audio/Ambience/Objects/portable_scrubber.ogg
-  - type: Machine
-    board: PortableScrubberMachineCircuitBoard
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
@@ -139,8 +137,6 @@
           StandBy: { state: sheaterStandby }
           Heating: { state: sheaterHeat }
           Cooling: { state: sheaterCool }
-  - type: Machine
-    board: SpaceHeaterMachineCircuitBoard
   - type: WiresPanel
   - type: WiresVisuals
   - type: UserInterface

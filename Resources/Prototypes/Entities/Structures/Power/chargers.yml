@@ -64,7 +64,6 @@
   - type: ContainerContainer
     containers:
       charger_slot: !type:ContainerSlot
-      machine_board: !type:Container
       machine_parts: !type:Container
   - type: RequireProjectileTarget
 
@@ -84,8 +83,6 @@
     - state: open
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
       visible: false
-  - type: Machine
-    board: CellRechargerCircuitboard
   - type: WiresPanel
   - type: GenericVisualizer
     visuals:
@@ -142,8 +139,6 @@
           tags:
           - PowerCage
           - HardlinerCell # Hullrot
-  - type: Machine
-    board: PowerCageRechargerCircuitboard
   - type: StaticPrice
     price: 500
 
@@ -154,8 +149,6 @@
   components:
   - type: Sprite
     sprite: Structures/Power/recharger.rsi
-  - type: Machine
-    board: WeaponCapacitorRechargerCircuitboard
   # no powercellslot since stun baton etc arent powercells
   - type: ItemSlots
     slots:
@@ -175,8 +168,6 @@
   components:
   - type: Sprite
     sprite: Structures/Power/turbo_recharger.rsi
-  - type: Machine
-    board: TurboItemRechargerCircuitboard
   - type: Charger
     chargeRate: 100
   - type: ItemSlots
@@ -255,8 +246,6 @@
     - entity_storage
   - type: WiresPanel
   - type: WiresVisuals
-  - type: Machine
-    board: BorgChargerCircuitboard
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
@@ -294,5 +283,4 @@
   - type: ContainerContainer
     containers:
       entity_storage: !type:Container
-      machine_board: !type:Container
       machine_parts: !type:Container

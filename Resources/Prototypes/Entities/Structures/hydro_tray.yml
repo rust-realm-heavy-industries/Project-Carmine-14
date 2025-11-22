@@ -80,8 +80,6 @@
           collection: MetalGlassBreak
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: Machine
-    board: HydroponicsTrayMachineCircuitboard
   - type: WiresPanel
   - type: AmbientSound
     volume: -9
