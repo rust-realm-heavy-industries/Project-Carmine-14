@@ -372,7 +372,6 @@ PlayerStationAi: null
 # ShuttleGunBizmuthCMM: ShuttleGunBizmuth
 # ShuttleGunBizmuthSHI: ShuttleGunBizmuth
 
-# SalvageGeneratorSpawner: PortableGeneratorSuperPacman
 # SalvageTankSpawner: WeldingFuelTankFull
 # ActionToggleMagbootsAdvanced: null
 # ReinforcedWindowStation: ReinforcedWindow

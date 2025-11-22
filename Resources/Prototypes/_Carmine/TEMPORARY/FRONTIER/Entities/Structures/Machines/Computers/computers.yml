@@ -62,7 +62,7 @@
     mod: 1.00
 
 - type: entity
-  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerIFFSyndicate,]
+  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerIFF]
   id: ComputerIFFPOI
   name: IFF computer
   suffix: POI

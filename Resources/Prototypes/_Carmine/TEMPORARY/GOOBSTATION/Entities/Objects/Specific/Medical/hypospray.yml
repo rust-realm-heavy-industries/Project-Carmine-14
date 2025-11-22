@@ -39,21 +39,6 @@
           - AutoinjectorCartridge
 
 - type: entity
-  name: IPM RMA-4 cartridge autoinjector
-  parent: BaseCartridgeAutoinjector
-  description: Used for rapid administration of medicine. Uses smart cartridges printable at medical techfabs to deliver chemical payloads.
-  id: SecHypo
-  components:
-  - type: Sprite
-    layers:
-      - state: security-base
-      - state: cartridge1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
-  - type: UseDelay
-    delay: 1
-
-- type: entity
   name: medical cartridge autoinjector
   parent: BaseCartridgeAutoinjector
   description: Used for rapid administration of medicine. Uses cartridges printable at the medical techfab.
@@ -90,27 +75,6 @@
   - type: Tag
     tags:
       - AutoinjectorCartridge
-
-- type: entity
-  name: adrenaline autoinjector cartridge
-  parent: BaseAutoinjectorCartridge
-  description: Contains 7u of epinephrine and 3u of tranexamic acid, used in a cartridge autoinjector.
-  id: CartridgeEpinephrine
-  components:
-  - type: Sprite
-    layers:
-    - state: base
-    - state: filling
-      color: "#cad8d4"
-  - type: SolutionCartridge
-    targetSolution: hypospray
-    solution:
-      maxVol: 10
-      reagents:
-      - ReagentId: Epinephrine
-        Quantity: 7
-      - ReagentId: TranexamicAcid
-        Quantity: 3 # Fully stops bleeding
 
 - type: entity
   name: airloss autoinjector cartridge

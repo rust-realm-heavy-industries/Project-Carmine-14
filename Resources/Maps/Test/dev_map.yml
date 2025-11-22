@@ -3363,20 +3363,6 @@ entities:
     - type: Transform
       pos: 9.5,12.5
       parent: 179
-- proto: FaxMachineCentcom
-  entities:
-  - uid: 968
-    components:
-    - type: Transform
-      pos: 11.5,12.5
-      parent: 179
-- proto: FaxMachineSyndie
-  entities:
-  - uid: 969
-    components:
-    - type: Transform
-      pos: 13.5,12.5
-      parent: 179
 - proto: FireExtinguisher
   entities:
   - uid: 323
@@ -4267,13 +4253,6 @@ entities:
     - type: Transform
       pos: -5.5,-5.5
       parent: 179
-- proto: PortableGeneratorSuperPacman
-  entities:
-  - uid: 1016
-    components:
-    - type: Transform
-      pos: -6.5,-11.5
-      parent: 179
 - proto: PowerCellHigh
   entities:
   - uid: 567
@@ -4658,27 +4637,6 @@ entities:
     components:
     - type: Transform
       pos: 9.532393,18.446417
-      parent: 179
-- proto: RubberStampCaptain
-  entities:
-  - uid: 982
-    components:
-    - type: Transform
-      pos: 12.800895,12.664745
-      parent: 179
-- proto: RubberStampCentcom
-  entities:
-  - uid: 980
-    components:
-    - type: Transform
-      pos: 12.186007,12.716865
-      parent: 179
-- proto: RubberStampSyndicate
-  entities:
-  - uid: 981
-    components:
-    - type: Transform
-      pos: 12.436131,12.550082
       parent: 179
 - proto: Screen
   entities:
@@ -5495,13 +5453,6 @@ entities:
     - type: Transform
       pos: -7.5,4.5
       parent: 179
-- proto: VendingMachineCigs
-  entities:
-  - uid: 870
-    components:
-    - type: Transform
-      pos: -14.5,4.5
-      parent: 179
 - proto: VendingMachineEngivend
   entities:
   - uid: 441
@@ -5535,20 +5486,6 @@ entities:
     components:
     - type: Transform
       pos: -12.5,4.5
-      parent: 179
-- proto: VendingMachineSalvage
-  entities:
-  - uid: 485
-    components:
-    - type: Transform
-      pos: -15.5,4.5
-      parent: 179
-- proto: VendingMachineSec
-  entities:
-  - uid: 874
-    components:
-    - type: Transform
-      pos: -13.5,4.5
       parent: 179
 - proto: VendingMachineTankDispenserEVA
   entities:

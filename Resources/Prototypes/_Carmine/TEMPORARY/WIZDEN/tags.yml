@@ -1513,9 +1513,6 @@
   id: VehicleKey
 
 - type: Tag
-  id: VimPilot
-
-- type: Tag
   id: VoiceTrigger
 
 - type: Tag
@@ -1607,8 +1604,6 @@
 - type: Tag
   id: VulpEmotes
 
-- type: Tag
-  id: VoidbornEmotes
 
 - type: Tag
   id: SiliconEmotes
