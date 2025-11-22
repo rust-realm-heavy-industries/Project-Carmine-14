@@ -60,16 +60,6 @@
     state: punchingbagcaptain
 
 - type: entity
-  id: FitnessPunchingBagSyndicate
-  parent: FitnessPunchingBag
-  suffix: syndicate
-  description: A fitness training bag with a syndicate agent printed on it.
-  components:
-  - type: Sprite
-    sprite: Structures/Specific/fitness.rsi
-    state: punchingbagsyndie
-
-- type: entity
   id: FitnessPunchingBagWizard
   parent: FitnessPunchingBag
   suffix: wizard

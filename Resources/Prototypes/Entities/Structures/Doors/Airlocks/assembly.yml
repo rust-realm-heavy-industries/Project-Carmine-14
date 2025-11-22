@@ -290,25 +290,6 @@
     sprite: Structures/Doors/Airlocks/Glass/mining.rsi
     state: "assembly"
 
-#Syndicate
-- type: entity
-  parent: AirlockAssembly
-  id: AirlockAssemblySyndicate
-  suffix: Syndicate
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
-    state: "assembly"
-
-- type: entity
-  parent: AirlockAssembly
-  id: AirlockAssemblySyndicateGlass
-  suffix: Syndicate, Glass
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/syndicate.rsi
-    state: "assembly"
-
 #ShuttleSyndicate
 - type: entity
   parent: AirlockAssembly

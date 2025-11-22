@@ -403,7 +403,7 @@
       - Plating
       - FloorMiningDark
   - type: Stack
-    stackType: FloorTileMiningDark
+    stackType: FloorTileMininDark
 
 - type: entity
   name: light mining tile

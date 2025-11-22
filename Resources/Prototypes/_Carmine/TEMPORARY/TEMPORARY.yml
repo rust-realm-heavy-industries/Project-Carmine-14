@@ -233,6 +233,7 @@
 
 - type: entity #not having this breaks the game because of shitcode
   id: CrescentDiplomacy
+  categories: [ HideSpawnMenu ]
   components:
   - type: Diplomacy
 
@@ -950,9 +951,6 @@
         reagent: Protein
         amount: 0.5
       - !type:AdjustReagent
-        conditions:
-        - !type:OrganType
-          type: Voidborn
         reagent: Protein
         amount: 0.5
 
@@ -992,7 +990,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform
-    
+
 - type: entity
   id: ActionVendingThrow #hardcode slop
   name: Dispense Item
@@ -1002,7 +1000,7 @@
   - type: InstantAction
     useDelay: 30
     event: !type:VendingMachineSelfDispenseEvent
-    
+
 - type: reagent
   id: Ammonia
   name: reagent-name-ammonia
@@ -1045,9 +1043,6 @@
         - !type:OrganType
           type: Rat
           shouldHave: false
-        - !type:OrganType
-           type: Vox
-           shouldHave: false
         - !type:ReagentThreshold
           reagent: Ammonia
           min: 0.8
@@ -1075,8 +1070,3 @@
             Burn: -5
           types:
             Bloodloss: -5
-      - !type:Oxygenate # ammonia displaces nitrogen in vox blood
-        conditions:
-        - !type:OrganType
-          type: Vox
-        factor: -4

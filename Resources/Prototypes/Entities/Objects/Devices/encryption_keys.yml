@@ -159,21 +159,6 @@
 
 - type: entity
   parent: EncryptionKey
-  id: EncryptionKeyRobo
-  name: robotech encryption key
-  description: An encryption key used by robototech engineers. Maybe it has a LAH-6000 on it?
-  components:
-  - type: EncryptionKey
-    channels:
-    - Science
-    defaultChannel: Science
-  - type: Sprite
-    layers:
-    - state: crypt_gray
-    - state: robotics_label
-
-- type: entity
-  parent: EncryptionKey
   id: EncryptionKeySecurity
   name: security encryption key
   description: An encryption key used by security.

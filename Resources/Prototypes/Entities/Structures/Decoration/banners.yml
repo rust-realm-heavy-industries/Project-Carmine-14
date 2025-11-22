@@ -28,16 +28,6 @@
   - type: InteractionOutline
 
 - type: entity
-  id: BannerNanotrasen
-  parent: BannerBase
-  name: nanotrasen banner
-  description: A banner displaying the Nanotrasen logo. It looks rather cheap.
-  components:
-  - type: Sprite
-    sprite: Structures/Decoration/banner.rsi
-    state: banner
-
-- type: entity
   id: BannerCargo
   parent: BannerBase
   name: logistics banner

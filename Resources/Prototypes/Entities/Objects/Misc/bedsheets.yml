@@ -79,55 +79,6 @@
     sprite: Clothing/Neck/Bedsheets/ce.rsi
   - type: StealTarget
     stealGroup: HeadBedsheet
-
-- type: entity
-  id: BedsheetCentcom
-  parent: BedsheetBase
-  name: CentCom bedsheet
-  description: Woven with advanced nanothread for warmth as well as being very decorated, essential for all officials.
-  components:
-  - type: Sprite
-    state: sheetcentcom
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/centcom.rsi
-  - type: StealTarget
-    stealGroup: HeadBedsheet
-
-- type: entity
-  id: BedsheetClown
-  parent: BedsheetBase
-  name: clown's bedsheet
-  description: A rainbow blanket with a clown mask woven in. It smells faintly of bananas.
-  components:
-  - type: Sprite
-    state: sheetclown
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/rainbow.rsi
-
-- type: entity
-  id: BedsheetCMO
-  parent: BedsheetBase
-  name: CMO's bedsheet
-  description: It's a sterilized blanket that has a cross emblem. There's some cat fur on it, likely from Runtime.
-  components:
-  - type: Sprite
-    state: sheetcmo
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/cmo.rsi
-  - type: StealTarget
-    stealGroup: HeadBedsheet
-
-- type: entity
-  id: BedsheetCosmos
-  parent: BedsheetBase
-  name: cosmos bedsheet
-  description: Made from the dreams of those who wonder at the stars.
-  components:
-  - type: Sprite
-    state: sheetcosmos
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/cosmos.rsi
-
 - type: entity
   id: BedsheetCult
   parent: BedsheetBase
@@ -160,42 +111,6 @@
     sprite: Clothing/Neck/Bedsheets/grey.rsi
 
 - type: entity
-  id: BedsheetHOP
-  parent: BedsheetBase
-  name: HOP's bedsheet
-  description: It's decorated with a key emblem. For those rare moments when you can rest and cuddle with Ian without someone screaming for you over the radio.
-  components:
-  - type: Sprite
-    state: sheethop
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/hop.rsi
-  - type: StealTarget
-    stealGroup: HeadBedsheet
-
-- type: entity
-  id: BedsheetHOS
-  parent: BedsheetBase
-  name: HOS's bedsheet
-  description: It's decorated with a shield emblem. While crime doesn't sleep, you do, but you are still THE LAW!
-  components:
-  - type: Sprite
-    state: sheethos
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/hos.rsi
-  - type: StealTarget
-    stealGroup: HeadBedsheet
-
-- type: entity
-  id: BedsheetIan
-  parent: BedsheetBase
-  name: Ian's bedsheet
-  components:
-  - type: Sprite
-    state: sheetian
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/ian.rsi
-
-- type: entity
   id: BedsheetMedical
   parent: BedsheetBase
   name: medical bedsheet
@@ -218,17 +133,6 @@
     sprite: Clothing/Neck/Bedsheets/mime.rsi
 
 - type: entity
-  id: BedsheetNT
-  parent: BedsheetBase
-  name: NT bedsheet
-  description: It has the Nanotrasen logo on it and an aura of duty.
-  components:
-  - type: Sprite
-    state: sheetNT
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/NT.rsi
-
-- type: entity
   id: BedsheetOrange
   parent: BedsheetBase
   name: orange bedsheet
@@ -249,18 +153,6 @@
     sprite: Clothing/Neck/Bedsheets/purple.rsi
 
 - type: entity
-  id: BedsheetQM
-  parent: BedsheetBase
-  name: LO's bedsheet # DeltaV - Logistics Department replacing Cargo
-  components:
-  - type: Sprite
-    state: sheetqm
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/qm.rsi
-  - type: StealTarget
-    stealGroup: HeadBedsheet
-
-- type: entity
   id: BedsheetRainbow
   parent: BedsheetBase
   name: rainbow bedsheet
@@ -269,19 +161,6 @@
     state: sheetrainbow
   - type: Clothing
     sprite: Clothing/Neck/Bedsheets/rainbow.rsi
-
-- type: entity
-  id: BedsheetRD
-  parent: BedsheetBase
-  name: Mystagogue's bedsheet # DeltaV - Epistemics Department - Replace Research Director with Mystagogue
-  description: It appears to have a beaker emblem, and is made out of fire-resistant material, although it probably won't protect you in the event of fires you're familiar with every day.
-  components:
-  - type: Sprite
-    state: sheetrd
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/rd.rsi
-  - type: StealTarget
-    stealGroup: HeadBedsheet
 
 - type: entity
   id: BedsheetBrigmedic
@@ -314,16 +193,6 @@
     state: sheetsyndie
   - type: Clothing
     sprite: Clothing/Neck/Bedsheets/syndie.rsi
-
-- type: entity
-  id: BedsheetUSA
-  parent: BedsheetBase
-  name: USA bedsheet
-  components:
-  - type: Sprite
-    state: sheetUSA
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/USA.rsi
 
 - type: entity
   id: BedsheetWhite

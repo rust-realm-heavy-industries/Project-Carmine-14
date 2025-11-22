@@ -154,15 +154,6 @@
     defaultText: station-beacon-captain
 
 - type: entity
-  parent: DefaultStationBeaconCommand
-  id: DefaultStationBeaconHOPOffice
-  suffix: HOP's Office
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: NavMapBeacon
-    defaultText: station-beacon-hop
-
-- type: entity
   parent: DefaultStationBeacon
   id: DefaultStationBeaconSecurity
   suffix: Security
@@ -292,15 +283,6 @@
 
 - type: entity
   parent: DefaultStationBeaconMedical
-  id: DefaultStationBeaconCMORoom
-  suffix: CMO's room
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: NavMapBeacon
-    defaultText: station-beacon-cmo
-
-- type: entity
-  parent: DefaultStationBeaconMedical
   id: DefaultStationBeaconMorgue
   suffix: Morgue
   categories: [ HideSpawnMenu ]
@@ -344,15 +326,6 @@
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-research-server
-
-- type: entity
-  parent: DefaultStationBeaconScience
-  id: DefaultStationBeaconRDRoom
-  suffix: MG's Room
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: NavMapBeacon
-    defaultText: station-beacon-mystagogue  #Delta V - Renamed
 
 - type: entity
   parent: DefaultStationBeaconScience

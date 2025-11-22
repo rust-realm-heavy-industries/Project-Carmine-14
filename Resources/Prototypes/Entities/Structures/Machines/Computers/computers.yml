@@ -350,26 +350,6 @@
           type: WiresBoundUserInterface
 
 - type: entity
-  parent: ComputerIFF
-  id: ComputerIFFSyndicate
-  name: IFF computer
-  suffix: Syndicate
-  description: Allows you to control the IFF and stealth characteristics of this vessel.
-  components:
-  - type: IFFConsole
-    allowedFlags:
-      - Hide
-      - HideLabel
-  - type: ActivatableUI
-    key: enum.IFFConsoleUiKey.Key
-  - type: UserInterface
-    interfaces:
-        enum.IFFConsoleUiKey.Key:
-          type: IFFConsoleBoundUserInterface
-        enum.WiresUiKey.Key:
-          type: WiresBoundUserInterface
-
-- type: entity
   parent: BaseComputerAiAccess
   id: ComputerPowerMonitoring
   name: power monitoring computer

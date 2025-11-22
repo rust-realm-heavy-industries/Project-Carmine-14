@@ -114,14 +114,6 @@
     sprite: Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
-  parent: AirlockSecurity # if you get syndie door somehow it counts as sec
-  id: AirlockSyndicate
-  suffix: Syndicate
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
-
-- type: entity
   parent: AirlockCargo
   id: AirlockMining
   suffix: Mining(Salvage)
@@ -259,14 +251,6 @@
     department: Security
   - type: Wires
     layoutId: AirlockSecurity
-
-- type: entity
-  parent: AirlockSecurityGlass # see standard
-  id: AirlockSyndicateGlass
-  suffix: Syndicate
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/syndicate.rsi
 
 - type: entity
   parent: AirlockCargoGlass

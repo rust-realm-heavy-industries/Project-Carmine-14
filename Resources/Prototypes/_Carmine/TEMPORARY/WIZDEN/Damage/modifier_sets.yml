@@ -201,11 +201,6 @@
     Heat: 1.3
 
 - type: damageModifierSet
-  id: Vox
-  coefficients: # To be decided
-    Poison: 1
-
-- type: damageModifierSet
   id: Zombie #Blunt resistant and immune to biological threats, but can be hacked apart and burned
   coefficients:
     Blunt: 0.6
@@ -365,15 +360,6 @@
     Blunt: 0.6
     Slash: 0.6
     Piercing: 0.6
-
-- type: damageModifierSet
-  id: Voidborn
-  coefficients:
-    Slash: 1.2
-    Piercing: 1.1
-    Asphyxiation: 0.5
-    Cold: 0.8
-    Heat: 1.2
 
 - type: damageModifierSet
   id: Plasmaman

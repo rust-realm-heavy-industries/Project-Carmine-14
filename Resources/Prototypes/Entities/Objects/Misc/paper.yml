@@ -381,44 +381,6 @@
     heldPrefix: luxury_pen
 
 - type: entity
-  name: Cybersun pen
-  parent: PenEmbeddable
-  id: CyberPen
-  description: A high-tech pen straight from Cybersun's legal department, capable of refracting hard-light at impossible angles through its diamond tip in order to write. So powerful, it's even able to rewrite officially stamped documents should the need arise.
-  components:
-  - type: Tag
-    tags:
-    - Write
-    - WriteIgnoreStamps
-    - Pickaxe
-  - type: Sprite
-    sprite: Objects/Misc/bureaucracy.rsi
-    state: overpriced_pen
-  - type: MeleeWeapon
-    wideAnimationRotation: -45
-    damage:
-      types:
-        Piercing: 15
-    soundHit:
-      path: /Audio/Weapons/bladeslice.ogg
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Piercing: 15
-  - type: EmbeddableProjectile
-    removalTime: 2
-  - type: EmbedPassiveDamage
-  - type: Tool
-    qualities:
-      - Screwing
-    useSound:
-      collection: Screwdriver
-  - type: Item
-    sprite: Objects/Misc/bureaucracy.rsi
-    heldPrefix: overpriced_pen
-    size: Tiny
-
-- type: entity
   name: captain's fountain pen
   parent: PenEmbeddable
   id: PenCap
@@ -431,29 +393,6 @@
     damage:
       types:
         Piercing: 8
-
-- type: entity
-  name: CentCom pen
-  parent: CyberPen
-  id: PenCentcom
-  description: In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
-  components:
-  - type: Sprite
-    sprite: Objects/Misc/bureaucracy.rsi
-    state: pen_centcom
-  - type: Item
-    sprite: Objects/Misc/bureaucracy.rsi
-    heldPrefix: pen_centcom
-
-- type: entity
-  name: hop's fountain pen
-  parent: PenEmbeddable
-  id: PenHop
-  description: 'A luxurious fountain pen for the hop of the station.'
-  components:
-  - type: Sprite
-    sprite: Objects/Misc/bureaucracy.rsi
-    state: pen_hop
 
 - type: entity
   id: BoxFolderBase
@@ -596,19 +535,6 @@
     - state: folder-base
 
 - type: entity
-  id: BoxFolderCentCom
-  name: CentCom folder
-  parent: BoxFolderBase
-  suffix: DO NOT MAP
-  description: CentCom's miserable little pile of secrets!
-  components:
-  - type: Sprite
-    sprite: Objects/Misc/bureaucracy.rsi
-    layers:
-    - state: folder-centcom
-    - state: folder-base
-
-- type: entity
   id: BoxFolderClipboard
   parent: BoxFolderBase
   name: clipboard
@@ -666,31 +592,6 @@
     damage:
       types:
         Blunt: 6
-
-- type: entity
-  id: BoxFolderCentComClipboard
-  parent: BoxFolderClipboard
-  name: CentCom clipboard
-  description: A luxurious clipboard upholstered with green velvet. Often seen carried by CentCom officials, seldom seen actually used.
-  components:
-  - type: Sprite
-    sprite: Objects/Misc/cc-clipboard.rsi
-    layers:
-    - state: clipboard
-    - state: clipboard_paper
-      map: ["clipboard_paper"]
-      visible: false
-    - state: clipboard_pen
-      map: ["clipboard_pen"]
-      visible: false
-    - state: clipboard_over
-  - type: Item
-    sprite: Objects/Misc/cc-clipboard.rsi
-    size: Small
-  - type: Clothing
-    slots: [belt]
-    quickEquip: false
-    sprite: Objects/Misc/cc-clipboard.rsi
 
 - type: entity
   id: BoxFolderQmClipboard

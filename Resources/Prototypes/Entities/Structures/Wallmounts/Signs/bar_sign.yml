@@ -53,28 +53,14 @@
 - type: entity
   parent: BaseBarSign
   id: BarSign
+  categories: [ HideSpawnMenu ]
   name: bar sign
   suffix: Random
-
-# Missing appearance components & various other sprite issues.
-#- type: entity
-#  id: LargeBarSign
-#  name: large bar sign
-#  categories: [ HideSpawnMenu ]
-#  components:
-#  - type: Clickable
-#  - type: InteractionOutline
-#  - type: Sprite
-#    drawdepth: WallTops
-#    sprite: Structures/Wallmounts/sylphs.rsi
-#    state: sylph
-#  - type: ApcPowerReceiver
-#  - type: ExtensionCableReceiver
-#  - type: BarSign
 
 - type: entity
   parent: BaseBarSign
   id: BarSignComboCafe
+  categories: [ HideSpawnMenu ]
   name: Combo Cafe
   description: Renowned system-wide for their utterly uncreative drink combinations.
   components:
@@ -84,6 +70,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignEmergencyRumParty
+  categories: [ HideSpawnMenu ]
   name: Emergency Rum Party
   description: Recently relicensed after a long closure.
   components:
@@ -93,6 +80,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignLV426
+  categories: [ HideSpawnMenu ]
   name: LV426
   description: Drinking with fancy facemasks is clearly more important than going to medbay.
   components:
@@ -102,6 +90,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignMaidCafe
+  categories: [ HideSpawnMenu ]
   name: Maid Cafe
   description: Welcome back, master!
   components:
@@ -111,6 +100,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignMalteseFalcon
+  categories: [ HideSpawnMenu ]
   name: Maltese Falcon
   description: Play it again, sam.
   components:
@@ -120,6 +110,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignOfficerBeersky
+  categories: [ HideSpawnMenu ]
   name: Officer Beersky
   description: Man eat a dong, these drinks are great.
   components:
@@ -129,6 +120,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignRobustaCafe
+  categories: [ HideSpawnMenu ]
   name: Robusta Cafe
   description: Holder of the 'Most Lethal Barfights' record 5 years uncontested.
   components:
@@ -138,6 +130,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheAleNath
+  categories: [ HideSpawnMenu ]
   name: The Ale Nath
   description: All right, buddy. I think you've had EI NATH. Time to get a cab.
   components:
@@ -147,6 +140,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheBirdCage
+  categories: [ HideSpawnMenu ]
   name: The Bird Cage
   description: Caw caw!
   components:
@@ -156,6 +150,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheCoderbus
+  categories: [ HideSpawnMenu ]
   name: The Coderbus
   description: A very controversial bar known for its wide variety of constantly-changing drinks.
   components:
@@ -165,6 +160,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheDrunkCarp
+  categories: [ HideSpawnMenu ]
   name: The Drunk Carp
   description: Don't drink and swim.
   components:
@@ -174,6 +170,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignEngineChange
+  categories: [ HideSpawnMenu ]
   name: The Engine Change
   description: Still waiting.
   components:
@@ -183,6 +180,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheHarmbaton
+  categories: [ HideSpawnMenu ]
   name: The Harmbaton
   description: A great dining experience for both security members and passengers.
   components:
@@ -192,6 +190,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheLightbulb
+  categories: [ HideSpawnMenu ]
   name: The Lightbulb
   description: A cafe popular among moths and moffs. Once shut down for a week after the bartender used mothballs to protect her spare uniforms.
   components:
@@ -201,6 +200,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheLooseGoose
+  categories: [ HideSpawnMenu ]
   name: The Loose Goose
   description: Drink till you puke and/or break the laws of reality!
   components:
@@ -210,6 +210,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheNet
+  categories: [ HideSpawnMenu ]
   name: The Net
   description: You just seem to get caught up in it for hours.
   components:
@@ -219,6 +220,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheOuterSpess
+  categories: [ HideSpawnMenu ]
   name: The Outer Spess
   description: This bar isn't actually located in outer space.
   components:
@@ -228,6 +230,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheSingulo
+  categories: [ HideSpawnMenu ]
   name: The Singulo
   description: Where people go that'd rather not be called by their name.
   components:
@@ -237,6 +240,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignTheSun
+  categories: [ HideSpawnMenu ]
   name: The Sun
   description: Ironically bright for such a shady bar.
   components:
@@ -246,6 +250,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignWiggleRoom
+  categories: [ HideSpawnMenu ]
   name: Wiggle Room
   description: MoMMIs got moves.
   components:
@@ -255,6 +260,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignZocalo
+  categories: [ HideSpawnMenu ]
   name: Zocalo
   description: Anteriormente ubicado en Spessmerica.
   components:
@@ -264,6 +270,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignEmprah
+  categories: [ HideSpawnMenu ]
   name: 4 The Emprah
   description: Enjoyed by fanatics, heretics, and brain-damaged patrons alike.
   components:
@@ -273,6 +280,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignSpacebucks
+  categories: [ HideSpawnMenu ]
   name: Spacebucks
   description: You can't get away from them, even in space, and even after we started calling them 'spesos' instead.
   components:
@@ -282,6 +290,7 @@
 - type: entity
   parent: BaseBarSign
   id: BarSignMaltroach
+  categories: [ HideSpawnMenu ]
   name: The Maltroach
   description: Squeak!
   components:

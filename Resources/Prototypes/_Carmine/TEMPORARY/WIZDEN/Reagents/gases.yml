@@ -30,18 +30,12 @@
       - !type:ModifyLungGas
         conditions:
         - !type:OrganType
-          type: Vox
-          shouldHave: false
-        - !type:OrganType
           type: Plasmaman
           shouldHave: false
         ratios:
           CarbonDioxide: 1.0
           Oxygen: -1.0
       - !type:HealthChange
-        conditions:
-        - !type:OrganType
-          type: Vox
         scaleByQuantity: true
         ignoreResistances: true
         damage:
@@ -50,11 +44,6 @@
               7
       - !type:AdjustAlert
         alertType: HighOxygen
-        conditions:
-          - !type:ReagentThreshold
-            min: 0.5
-          - !type:OrganType
-            type: Vox
         clear: true
         time: 5
       - !type:HealthChange
@@ -194,11 +183,6 @@
         - !type:OrganType
           type: Plant
           shouldHave: false
-        - !type:OrganType
-          type: Vox
-          shouldHave: false
-        # Don't want people to get toxin damage from the gas they just
-        # exhaled, right?
         - !type:ReagentThreshold
           min: 0.5
         scaleByQuantity: true
@@ -238,16 +222,9 @@
       - !type:Oxygenate
         conditions:
         - !type:OrganType
-          type: Vox
-      - !type:Oxygenate
-        conditions:
-        - !type:OrganType
           type: Slime
       # Converts Nitrogen into CO2
       - !type:ModifyLungGas
-        conditions:
-        - !type:OrganType
-          type: Vox
         ratios:
           Ammonia: 1.0
           Nitrogen: -1.0

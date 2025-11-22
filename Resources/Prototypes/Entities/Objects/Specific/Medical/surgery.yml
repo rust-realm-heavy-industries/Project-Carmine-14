@@ -456,50 +456,6 @@
     startSound:
       path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
 
-- type: entity
-  name: advanced circular saw
-  id: SawAdvanced
-  parent: SawElectric
-  description: You think you can cut anything with it.
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Medical/Surgery/saw.rsi
-    state: advanced
-  - type: Item
-    size: Normal
-    sprite: Objects/Specific/Medical/Surgery/saw.rsi
-    storedRotation: 90
-    heldPrefix: advanced
-  - type: MeleeWeapon
-    attackRate: .8
-    range: 1.4
-    bluntStaminaDamageFactor: 5.0
-    damage:
-      types:
-        Blunt: 7
-        Slash: 12
-    heavyRateModifier: 2
-    heavyRangeModifier: 1.2
-    heavyDamageBaseModifier: 1
-    heavyStaminaCost: 10
-    maxTargets: 8
-    angle: 360
-    soundHit:
-      path: /Audio/Items/drill_hit.ogg
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Slash: 12
-    staminaCost: 14
-  - type: ThrowingAngle
-    angle: 90
-  - type: Tool
-    qualities:
-      - Sawing
-    speedModifier: 2.0
-  - type: BoneSaw # Shitmed
-    speed: 2
-
 # Shitmed Tools
 
 - type: entity
@@ -694,45 +650,3 @@
           params:
             variation: 0.125
             volume: -5
-
-- type: entity
-  parent: OmnimedTool
-  id: OmnimedToolSyndie
-  components:
-  - type: Sprite
-    state: evil
-  - type: Item
-    size: Small
-    heldPrefix: evil
-
-- type: entity
-  name: CMO's Proto Multitool
-  description: "A prototypical medical multitool designed by Nanotrasen to save valuable space in the backpacks of high ranking medical officers."
-  id: OmnimedToolLite
-  parent: OmnimedTool
-  components:
-    - type: Sprite
-      state: cmotool
-    - type: Item
-      heldPrefix: cmotool
-    - type: SurgeryTool
-    - type: Hemostat
-      speed: 1.25
-    - type: Scalpel
-      speed: 1.25
-    - type: Drill
-      speed: 1.25
-    - type: BoneSetter
-      speed: 1.25
-    - type: Retractor
-      speed: 1.25
-    - type: Cautery
-      speed: 1.25
-    - type: BoneGel
-      speed: 1.25
-    - type: BoneSaw
-      speed: 1.25
-    - type: Tweezers
-      speed: 1.25
-    - type: Tending
-      speed: 1.25

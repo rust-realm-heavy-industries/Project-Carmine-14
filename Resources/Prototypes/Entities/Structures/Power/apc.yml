@@ -189,15 +189,6 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
-# Constructed APC
-- type: entity
-  parent: BaseAPC
-  id: APCConstructed
-  suffix: Open
-  components:
-  - type: WiresPanel
-    open: true
-
 # APCs in use
 - type: entity
   parent: BaseAPC

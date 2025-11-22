@@ -601,17 +601,6 @@
     state: base
 
 - type: entity
-  parent: CrateGenericSteel
-  id: CrateSyndicate
-  name: Syndicate crate
-  description: A dark steel crate with red bands and a letter S embossed on the front.
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/syndicate.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/syndicate.rsi
-
-- type: entity
   parent: [StructureWheeled, CrateBaseWeldable]
   id: CrateTrashCart
   name: trash cart

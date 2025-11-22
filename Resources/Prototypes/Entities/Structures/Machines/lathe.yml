@@ -375,7 +375,6 @@
     - PowerCellHigh
     - WeaponPistolCHIMP
     - ClothingMaskWeldingGas
-    - WeaponGauntletGorilla
     - SynthesizerInstrument
     - RPED
     - ClothingShoesBootsMag
@@ -568,7 +567,6 @@
     - HamtrCentralElectronics
     - HamtrPeripheralsElectronics
     - PortableGeneratorPacmanMachineCircuitboard
-    - PortableGeneratorSuperPacmanMachineCircuitboard
     - PortableGeneratorJrPacmanMachineCircuitboard
     - WallmountGeneratorElectronics
     - WallmountGeneratorAPUElectronics
@@ -761,7 +759,6 @@
     - HamtrRArm
     - HamtrLLeg
     - HamtrRLeg
-    - VimHarness
     # Begin Nyano additions
     - JetpackBlue
     - JetpackMini
@@ -1333,7 +1330,6 @@
     - EnergyScalpel
     - EnergyCautery
     - AdvancedRetractor
-    - OmnimedTool
     - MedicalCyberneticEyes
   - type: EmagLatheRecipes
     emagStaticRecipes:
@@ -1457,7 +1453,6 @@
     - BioGenRobustHarvest
     - BioGenBoozeVendRestock
     - BioGenCondimentsRestock
-    - BioGenChefVendRestock
 
 - type: entity
   parent: [BaseLathe, BaseMaterialSiloUtilizer]
@@ -1598,7 +1593,6 @@
     staticRecipes:
     - PrizeBall
     - PlushieMothRandom
-    - PlushieVoidborn
     - PlushieMothMusician
     - PlushieMothBartender
     - PlushieBee
@@ -1617,7 +1611,6 @@
     - PlushieSnake
     - ToyMouse
     - ToyRubberDuck
-    - PlushieVox
     - PlushieAtmosian
     - PlushiePenguin
     - PlushieHuman
@@ -1678,8 +1671,6 @@
     - PlushieJester
     - PlushieSlips
     - PlushieTrystan
-    - PlushieAbductor
-    - PlushieAbductorAgent
     - PlushieNuke
     - ToyNuke
     - FoamBlade
