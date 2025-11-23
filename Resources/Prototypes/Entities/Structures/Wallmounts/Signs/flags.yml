@@ -11,15 +11,6 @@
 
 - type: entity
   parent: BaseFlag
-  id: BlankFlag
-  name: blank flag
-  description: "Some piece of white cloth. Definitely not the flag of France."
-  components:
-  - type: Sprite
-    state: blank_flag
-
-- type: entity
-  parent: BaseFlag
   id: SyndieFlag
   name: syndicate flag
   description: "Smells bloody. Death to NT!"

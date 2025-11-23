@@ -112,15 +112,6 @@
   - type: Sprite
     state: junk_cabinet
 
-- type: entity
-  parent: N14JunkDresser
-  id: N14JunkTable
-  name: broken table
-  description: Ate without table, now I'm angry. Junk.
-  components:
-  - type: Sprite
-    state: junk_table
-
 # Metal Junk
 - type: entity
   parent: N14JunkMetalBase
@@ -200,15 +191,6 @@
     state: junk_tv
 
 - type: entity
-  parent: N14JunkMachine
-  id: N14JunkArcade
-  name: broken arcade game
-  description: An old arcade machine. Now it's junk.
-  components:
-  - type: Sprite
-    state: junk_arcade
-
-- type: entity
   parent: N14JunkMetalBase
   id: N14JunkUrinal
   name: broken urinal
@@ -227,14 +209,3 @@
     sprite: _Nuclear14/Structures/Furniture/junk.rsi
     state: junk_mirror
     drawdepth: Overdoors
-
-- type: entity
-  parent: N14JunkMetalBase
-  id: N14JunkClock
-  name: broken clock
-  description: Out of time!
-  components:
-  - type: Sprite
-    state: junk_clock
-    drawdepth: Overdoors
-  - type: WallMount

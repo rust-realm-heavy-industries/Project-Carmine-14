@@ -82,16 +82,6 @@
 
 - type: entity
   parent: BaseBarrel
-  id: BlueBarrel
-  name: blue barrel
-  description: A blue barrel with a warning sign of. Maybe it contains water?
-  components:
-  - type: Sprite
-    sprite: Structures/Storage/barrels.rsi
-    state: blue-closed
-
-- type: entity
-  parent: BaseBarrel
   id: RedBarrel
   name: red barrel
   description: A red barrel with an explosive warning sign on. Better be careful.
@@ -127,17 +117,6 @@
   - type: Sprite
     sprite: Structures/Storage/barrels.rsi
     state: black-open
-
-- type: entity
-  parent: BaseBarrelOpen
-  id: BlueBarrelOpen
-  suffix: open
-  name: blue barrel
-  description: A blue barrel with a warning sign of. The lid is off and you can see inside.
-  components:
-  - type: Sprite
-    sprite: Structures/Storage/barrels.rsi
-    state: blue-open
 
 - type: entity
   parent: BaseBarrelOpen

@@ -70,12 +70,6 @@
       id: LoadoutItemsExtendedEmergencyOxygenTank
     - type: loadout
       id: LoadoutItemsDoubleEmergencyOxygenTank
-    - type: loadout
-      id: LoadoutSpeciesEmergencyNitrogenTank
-    - type: loadout
-      id: LoadoutSpeciesExtendedEmergencyNitrogenTank
-    - type: loadout
-      id: LoadoutSpeciesDoubleEmergencyNitrogenTank
 
 - type: characterItemGroup
   id: LoadoutBoxKits

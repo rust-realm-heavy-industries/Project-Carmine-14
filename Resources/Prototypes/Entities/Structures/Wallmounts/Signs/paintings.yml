@@ -11,15 +11,6 @@
 
 - type: entity
   parent: PaintingBase
-  id: PaintingEmpty
-  name: empty frame
-  description: An empty frame, waiting to be filled with art.
-  components:
-  - type: Sprite
-    state: painting0
-
-- type: entity
-  parent: PaintingBase
   id: PaintingPersistenceOfMemory
   name: The Persistence of Memory
   description: This painting depicts a barren landscape. It's filled with various surreal objects.

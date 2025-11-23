@@ -1,21 +1,5 @@
 - type: entity
   parent: CrateGenericSteel
-  id: CrateFootlocker
-  name: footlocker
-  description: A footlocker for someones equipment.
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/footlocker.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/footlocker.rsi
-  - type: Reflect
-    reflects:
-    - Energy
-    reflectProb: 0.2
-    spread: 90
-
-- type: entity
-  parent: CrateGenericSteel
   id: CrateAluminium
   name: aluminium crate
   description: An aluminium crate for storing stuff.
@@ -75,7 +59,7 @@
       map: ["enum.StorageVisualLayers.Door"]
 
 - type: entity
-  parent: CrateFootlocker
+  parent: CrateBaseWeldable
   id: CrateTrashcart
   name: trash cart
   description: A trash cart for transporting waste.

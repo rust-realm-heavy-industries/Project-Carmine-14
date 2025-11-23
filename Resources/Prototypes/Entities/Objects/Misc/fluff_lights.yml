@@ -83,20 +83,6 @@
           festive: { state: christmaslamp-on }
 
 - type: entity
-  name: banana lamp
-  id: LampBanana
-  parent: BaseLamp
-  description: A light emitting device, shaped like a banana.
-  components:
-  - type: Sprite
-    layers:
-      - state: bananalamp
-      - state: bananalamp_on
-        shader: unshaded
-        visible: false
-        map: [ "light" ]
-
-- type: entity
   name: desk lamp
   id: LampGold
   parent: BaseLamp

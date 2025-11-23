@@ -1,6 +1,5 @@
 ﻿- type: entityList
   id: tools
   entities:
-  - WelderExperimental
   - ToolDebug
   - Multitool

@@ -109,18 +109,6 @@
     state: plant-08
 
 - type: entity
-  id: PottedPlantBioluminscent #PottedPlant9 but i didn't want map conflicts
-  parent: PottedPlantBase
-  name: "bioluminescent potted plant"
-  description: "It produces light!"
-  components:
-  - type: Sprite
-    state: plant-09
-  - type: PointLight
-    radius: 2
-    color: "#2cb2e8"
-
-- type: entity
   id: PottedPlant10
   parent: PottedPlantBase
   description: A pretty piece of nature contained in a pot.

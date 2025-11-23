@@ -377,40 +377,6 @@
       path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
 
 - type: entity
-  name: choppa
-  id: SawImprov
-  parent: Saw
-  description: A wicked serrated blade made of whatever nasty sharp things you could find. # It would make a pretty decent weapon, given there are more space for some tool mods too.
-  components:
-  - type: Sprite
-    state: improv
-  - type: Item
-    size: Small
-    heldPrefix: improv
-  - type: MeleeWeapon
-    attackRate: 1.1
-    damage:
-      types:
-        Blunt: 4
-        Slash: 8
-    bluntStaminaDamageFactor: 3
-    heavyRateModifier: 1.25
-    heavyDamageBaseModifier: 1.25
-    heavyStaminaCost: 20
-    maxTargets: 8
-    angle: 20
-    soundHit:
-      path: /Audio/Weapons/bladeslice.ogg
-  - type: ThrowingAngle
-    angle: 90
-  - type: Tool
-    qualities:
-      - Sawing
-    speedModifier: 0.5
-  - type: BoneSaw # Shitmed
-    speed: 0.5
-
-- type: entity
   name: circular saw
   id: SawElectric
   parent: Saw
@@ -514,69 +480,6 @@
           state: e-cautery-on
         components:
           - type: Drill
-            speed: 1.5
-        soundStateActivate:
-          collection: sparks
-          params:
-            variation: 0.125
-            volume: -5
-
-- type: entity
-  name: energy scalpel
-  id: EnergyScalpel
-  parent: Scalpel
-  description: A scalpel which uses an energy blade, also serves as a saw in its powered state.
-  components:
-  - type: Sprite
-    sprite: _Shitmed/Objects/Specific/Medical/Surgery/e-scalpel.rsi
-    state: e-scalpel-on
-  - type: Item
-    sprite: _Shitmed/Objects/Specific/Medical/Surgery/e-scalpel.rsi
-    inhandVisuals:
-      left:
-      - state: on-inhand-left
-      right:
-      - state: on-inhand-right
-  - type: SurgeryTool
-    startSound:
-      path: /Audio/_Shitmed/Medical/Surgery/scalpel1.ogg
-    endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/scalpel2.ogg
-  - type: MeleeWeapon
-    damage:
-      types:
-        Slash: 14
-        Heat: 8
-  - type: PhysicalComposition #Goobstation - Recycle update
-    materialComposition:
-      Steel: 150
-      Glass: 37
-      Gold: 37
-  - type: ItemSwitch
-    showLabel: true
-    state: scalpel
-    states:
-      scalpel: !type:ItemSwitchState
-        verb: scalpel
-        sprite:
-          sprite: _Shitmed/Objects/Specific/Medical/Surgery/e-scalpel.rsi
-          state: e-scalpel
-        components:
-          - type: Scalpel
-            speed: 1.5
-        soundStateActivate:
-          collection: sparks
-          params:
-            variation: 0.125
-            volume: -5
-
-      saw: !type:ItemSwitchState
-        verb: saw
-        sprite:
-          sprite: _Shitmed/Objects/Specific/Medical/Surgery/e-scalpel.rsi
-          state: e-scalpel-on
-        components:
-          - type: BoneSaw
             speed: 1.5
         soundStateActivate:
           collection: sparks

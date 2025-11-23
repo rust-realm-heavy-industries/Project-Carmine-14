@@ -67,6 +67,7 @@
 - type: entity
   parent: N14BaseDoor
   id: N14DoorMakeshift # Base Door Wood
+  abstract: true
   name: makeshift door
   description: It's a wooden door. It looks dirty and handmade.
   components:
@@ -154,20 +155,6 @@
   - type: Sprite
     netsync: false
     sprite: _Nuclear14/Structures/Doors/FalloutDoors/room_ddoor.rsi
-    layers:
-    - state: closed
-      map: ["enum.DoorVisualLayers.Base"]
-
-- type: entity
-  parent: BaseMaterialDoor
-  id: N14DoorRoomRepaired
-  name: door
-  suffix: repaired
-  description: This door looks worse for wear, but fixed up a little.
-  components:
-  - type: Sprite
-    netsync: false
-    sprite: _Nuclear14/Structures/Doors/FalloutDoors/roomdoor_repaired.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]

@@ -70,16 +70,3 @@
     receiveFrequencyId: Fax
     transmitFrequencyId: Fax
   - type: RequireProjectileTarget
-
-- type: entity
-  parent: FaxMachineBase
-  id: FaxMachineCaptain
-  name: captain long range fax machine
-  suffix: NukeCodes
-  components:
-    - type: FaxMachine
-      name: "Captain's Office"
-      receiveNukeCodes: true
-      receiveStationGoal: true
-    - type: StealTarget
-      stealGroup: FaxMachineCaptain

@@ -1070,3 +1070,356 @@
             Burn: -5
           types:
             Bloodloss: -5
+
+- type: entity
+  id: N14BarricadeWindow
+  parent: BaseStructure
+  name: barricade
+  description: A makeshift barricade.
+  components:
+    - type: CanBuildWindowOnTop
+    - type: Sprite
+      netsync: false
+      drawdepth: Overdoors
+      sprite: _Nuclear14/Structures/Furniture/barricades.rsi
+      state: boarded
+    - type: Icon
+      sprite: _Nuclear14/Structures/Furniture/barricades.rsi
+      state: boarded
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+              bounds: "-0.5,-0.5,0.5,0.5"
+          layer:
+          - GlassLayer
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  parent: BaseStructure
+  id: N14DoorMetalBlueTall
+  name: metal Door
+  suffix: tall
+  description: An old blue metal door.
+  components:
+  - type: InteractionOutline
+  - type: AnimationPlayer
+  - type: Appearance
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 100
+        mask:
+        - FullTileMask
+        layer:
+        - AirlockLayer
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Nuclear14/Structures/Doors/TallDoors/metalblue.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    closedDrawDepth: Mobs
+    openDrawDepth: Mobs
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: NavMapDoor
+  - type: Occluder
+  - type: BlockWeather
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+- type: entity
+  parent: N14SignBase
+  id: N14SignBar
+  name: bar sign
+  description: Bar! Get drunk here.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/signs_32x32.rsi
+    state: bar
+
+- type: entity
+  parent: N14SignBar
+  id: N14SignBazaarOn
+  name: bazaar sign
+  description: A sign for a bazaar. How bizarre.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/signs_64x32.rsi
+    state: bazaar_on
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: '#ff8000'
+
+- type: entity
+  parent: BaseMaterialDoor
+  id: BaseMaterialDoorNavMap
+  abstract: true
+  components:
+  - type: NavMapDoor
+
+- type: entity
+  parent: CrateBaseWeldable
+  id: CrateBaseSecure
+  suffix: Secure
+  components:
+  - type: Lock
+  - type: LockVisuals
+  - type: AccessReader
+  - type: Icon
+    sprite: Structures/Storage/Crates/secure.rsi
+    state: icon
+  - type: Sprite
+    sprite: Structures/Storage/Crates/secure.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+    - state: paper
+      sprite: Structures/Storage/Crates/labels.rsi
+      map: ["enum.PaperLabelVisuals.Layer"]
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Construction
+    graph: CrateSecure
+    node: cratesecure
+    containers:
+    - entity_storage
+  - type: Reflect
+    reflects:
+    - Energy
+    reflectProb: 0.2
+    spread: 90
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateBaseSecureReinforced
+  suffix: Secure, Reinforced
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+    
+- type: entity
+  id: Dresser #cull for the n14 one
+  parent: BaseStructure
+  name: dresser
+  description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  components:
+  - type: Sprite
+    sprite: Structures/Furniture/furniture.rsi
+    state: dresser
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,6,3
+    maxItemSize: Normal
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser
+
+- type: entity
+  id: DresserFilled #cull for the n14 one
+  parent: Dresser
+  suffix: Filled
+  components:
+  - type: StaticPrice
+    price: 15
+    
+- type: entity #used by shitmed prosthetics
+  id: PartIPC
+  parent: BaseItem
+  name: "ipc body part"
+  abstract: true
+  components:
+  - type: Damageable
+    damageContainer: Inorganic # Shitmed Change
+  - type: BodyPart
+  - type: Gibbable
+  - type: ContainerContainer
+    containers:
+      bodypart: !type:Container
+        ents: []
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/organ1.ogg
+    endSound:
+      path: /Audio/_Shitmed/Medical/Surgery/organ2.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 110
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+  - type: StaticPrice
+    price: 100
+    
+- type: entity
+  name: green glowstick
+  parent: BaseItem
+  id: GlowstickBase
+  description: Useful for raves and emergencies.
+  components:
+    - type: SpaceGarbage
+    - type: ExpendableLight
+      spentName: expendable-light-spent-green-glowstick-name
+      spentDesc: expendable-light-spent-glowstick-desc
+      glowDuration: 900 # time in seconds
+      glowColorLit: "#00FF00"
+      fadeOutDuration: 300
+      turnOnBehaviourID: turn_on
+      fadeOutBehaviourID: fade_out
+      iconStateLit: glowstick_lit
+      iconStateSpent: glowstick_unlit
+      litSound:
+        path: /Audio/Items/Handcuffs/rope_breakout.ogg
+    - type: Sprite
+      sprite: Objects/Misc/glowstick.rsi
+      layers:
+      - map: [ enum.ExpendableLightVisualLayers.Base ]
+        state: glowstick_base
+      - map: [ enum.ExpendableLightVisualLayers.Glow ]
+        state: glowstick_glow
+        visible: false
+        shader: unshaded
+      - map: [ enum.ExpendableLightVisualLayers.Overlay ]
+        state: glowstick_unlit
+    - type: Item
+      sprite: Objects/Misc/glowstick.rsi
+      heldPrefix: unlit
+    - type: Appearance
+    - type: PointLight
+      enabled: false
+      color: "#00FF00"
+      radius: 5
+      energy: 0
+      netsync: false
+    - type: LightBehaviour
+      behaviours:
+        - !type:FadeBehaviour # slowly fade in once activated
+          id: turn_on
+          interpolate: Linear
+          maxDuration: 10.0
+          startValue: 0.0
+          endValue: 3.0
+          property: Energy
+        - !type:FadeBehaviour # fade out energy as it burns out
+          id: fade_out
+          interpolate: Linear
+          maxDuration: 10 # 300.0
+          startValue: 3.0
+          endValue: 0.2
+          property: Energy
+        - !type:FadeBehaviour # fade out radius as it burns out
+          id: fade_out
+          interpolate: Linear
+          maxDuration: 10 # 300.0
+          startValue: 5.0
+          endValue: 1.5
+    - type: Tag
+      tags:
+      - Trash

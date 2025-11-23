@@ -81,39 +81,6 @@
 
 - type: entity
   parent: Bed
-  id: DogBed
-  name: dog bed
-  description: A comfy-looking dog bed. You can even strap your pet in, in case the gravity turns off.
-  components:
-  - type: Sprite
-    state: dogbed
-  - type: Strap
-    position: Stand
-    rotation: 0
-  - type: Construction
-    graph: bed
-    node: dogbed
-  - type: Damageable
-    damageModifierSet: Wood
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 75
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroy
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank:
-            min: 1
-            max: 5
-
-- type: entity
-  parent: Bed
   id: Mattress
   name: mattress
   description: Better sleep in that then on the floor i guess.

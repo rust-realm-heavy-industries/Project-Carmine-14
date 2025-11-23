@@ -19,17 +19,3 @@
   - type: PaintableAirlock
     group: External
     department: null
-
-- type: entity
-  parent: AirlockExternal
-  id: AirlockExternalGlass
-  suffix: Glass, External
-  components:
-  - type: Door
-    occludes: false
-  - type: Occluder
-    enabled: false
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/external.rsi
-  - type: PaintableAirlock
-    group: ExternalGlass
