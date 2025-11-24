@@ -11,7 +11,7 @@
         - Muted
   weight: 20
   startingGear: CaptainGear
-  icon: "JobIconCaptain"
+  icon: "JobIconClown"
   requireAdminNotify: true
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom

@@ -1,0 +1,13 @@
+- type: jobIcon
+  id: JobIcon
+  abstract: true
+  priority: 1
+  locationPreference: Right
+  isShaded: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconClown
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Clown

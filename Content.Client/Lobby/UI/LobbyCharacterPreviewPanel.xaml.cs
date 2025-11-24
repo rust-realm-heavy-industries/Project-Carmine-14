@@ -18,7 +18,7 @@ public sealed partial class LobbyCharacterPreviewPanel : Control
     [Dependency] private readonly IEntityManager _entManager = default!;
     [Dependency] private readonly IResourceCache _resourceCache = default!;
 
-    // public Button CharacterSetupButton => CharacterSetup;
+    public Button CharacterSetupButton => CharacterSetup;
 
     private readonly Texture BackgroundTexture; //WWDP EDIT
 
