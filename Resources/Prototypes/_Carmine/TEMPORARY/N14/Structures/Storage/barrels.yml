@@ -70,25 +70,6 @@
   - type: ReagentTank
 
 # Closed
-- type: entity
-  parent: N14BaseBarrel
-  id: N14BlackBarrel
-  name: black barrel
-  description: A worn out black barrel. The label is torn off.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/barrels.rsi
-    state: black-closed
-
-- type: entity
-  parent: N14BaseBarrel
-  id: N14BlueBarrel
-  name: blue barrel
-  description: A blue barrel with a warning sign of. Maybe it contains water?
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/barrels.rsi
-    state: blue-closed
 
 - type: entity
   parent: N14BaseBarrel
@@ -128,27 +109,6 @@
     slope: 1
 
 # Open
-- type: entity
-  parent: N14BaseBarrelOpen
-  id: N14BlackBarrelOpen
-  suffix: open
-  name: black barrel
-  description: A worn out black barrel. The label is torn off. The lid is off and you can see inside.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/barrels.rsi
-    state: black-open
-
-- type: entity
-  parent: N14BaseBarrelOpen
-  id: N14BlueBarrelOpen
-  suffix: open
-  name: blue barrel
-  description: A blue barrel with a warning sign of. The lid is off and you can see inside.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/barrels.rsi
-    state: blue-open
 
 - type: entity
   parent: N14BaseBarrelOpen
@@ -176,16 +136,6 @@
     slope: 1
 
 # Full barrels
-- type: entity
-  parent: N14BlackBarrelOpen
-  id: N14BlackBarrelFull
-  suffix: full
-  description: A worn out black barrel. This one looks full of some dark liquid.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/barrels.rsi
-    state: black-full
-    # TODO - fill with some sort of waste product? Maybe just dirty water.
 
 - type: entity
   parent: N14RedBarrelOpen
@@ -243,55 +193,3 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
     # TODO - fill with some sort of radioactive waste reagent.
-
-# Burning Barrels
-- type: entity
-  parent: BaseStructureDynamic
-  id: N14BurningBarrel
-  name: burnt barrel
-  description: This barrel looks like it once contained a fire.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/burningbarrel.rsi
-    state: burnbarrel
-    netsync: false
-    noRot: true
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-            radius: 0.2
-        density: 50
-        mask:
-        - MachineMask
-        layer:
-        - MidImpassable
-        - LowImpassable
-
-- type: entity
-  parent: N14BurningBarrel
-  id: N14BurningBarrelLit
-  name: burning barrel
-  description: This barrel is smoldering. Toasty
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/burningbarrel.rsi
-    state: burnbarrel_lit
-    netsync: false
-  - type: PointLight
-    color: "#E25822"
-    radius: 1.0
-    energy: 5.0
-    netsync: false
-  - type: LightBehaviour
-    behaviours:
-      - !type:RandomizeBehaviour # immediately make it bright and flickery
-        id: N14burnbarrel_lit
-        interpolate: Nearest
-        minDuration: 0.02
-        maxDuration: 0.06
-        startValue: 6.0
-        endValue: 9.0
-        property: Energy
-        isLooped: true

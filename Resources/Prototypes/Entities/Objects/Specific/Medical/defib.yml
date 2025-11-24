@@ -81,11 +81,6 @@
         name: power-cell-slot-component-slot-name-default
 
 - type: entity
-  id: DefibrillatorOneHandedUnpowered
-  parent: BaseDefibrillator
-  suffix: One-Handed, Unpowered
-
-- type: entity
   id: DefibrillatorCompact # This should be a research item at some point
   parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
   name: compact defibrillator

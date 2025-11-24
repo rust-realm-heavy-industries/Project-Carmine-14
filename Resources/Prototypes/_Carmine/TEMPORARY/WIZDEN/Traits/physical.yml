@@ -264,7 +264,6 @@
 #       inverted: true
 #       species:
 #         - Harpy # Harpies already have talons
-#         - Arachnid # Apparently they have a "piercing" bite
 #         - Xelthia # Talons don't make sense on tentacle arms
 #     - !type:CharacterTraitRequirement
 #       inverted: true

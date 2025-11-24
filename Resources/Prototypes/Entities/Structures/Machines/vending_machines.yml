@@ -109,67 +109,6 @@
 
 - type: entity
   parent: VendingMachine
-  id: VendingMachineCondiments
-  name: condiment station
-  description: Slather these thick gooey substances on your food for a full flavor effect.
-  components:
-  - type: VendingMachine
-    pack: CondimentInventory
-    offState: off
-  - type: Sprite
-    sprite: Structures/Machines/VendingMachines/condiments.rsi
-    drawdepth: SmallObjects
-    layers:
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.3,-0.16,0.3,0.40"
-        mask:
-        - MachineMask
-        layer:
-        - MachineLayer
-        density: 190
-  - type: Advertise
-    pack: CondimentVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
-  - type: Speech
-  - type: Transform
-    noRot: false
-
-- type: entity
-  parent: VendingMachine
-  id: VendingMachineAmmo
-  name: liberation station
-  description: An overwhelming amount of ancient patriotism washes over you just by looking at the machine.
-  components:
-  - type: VendingMachine
-    pack: AmmoVendInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-  - type: Advertise
-    pack: AmmoVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
-  - type: Speech
-  - type: Sprite
-    sprite: Structures/Machines/VendingMachines/ammo.rsi
-    layers:
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-      shader: unshaded
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-
-- type: entity
-  parent: VendingMachine
   id: VendingMachineBooze
   name: Booze-O-Mat
   description: A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one.
@@ -673,21 +612,6 @@
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/tankdispenser.rsi #TODO add visualiser for remaining tanks as layers
     state: dispenser
-
-- type: entity
-  parent: VendingMachine
-  id: VendingMachineTankDispenserEngineering
-  suffix: ENG [O2, Plasma]
-  name: gas tank dispenser
-  description: A vendor for dispensing gas tanks. This one has an engineering livery.
-  components:
-  - type: VendingMachine
-    pack: TankDispenserEngineeringInventory
-  - type: Sprite
-    sprite: Structures/Machines/VendingMachines/tankdispenser.rsi #TODO add visualiser for remaining tanks as layers
-    layers:
-    - state: dispenser
-    - state: dispensereng
 
 - type: entity
   id: VendingMachineHotfood

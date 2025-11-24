@@ -24,15 +24,3 @@
     whitelist:
       tags:
       - Dice
-
-- type: entity
-  parent: DiceBag
-  id: MagicDiceBag
-  name: bag of dice
-  components:
-  - type: Sprite
-    sprite: Objects/Fun/dice.rsi
-    state: magicdicebag
-  - type: Storage
-    grid:
-    - 0,0,4,3

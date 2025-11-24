@@ -209,19 +209,6 @@
 
 - type: entity
   parent: BaseHandheldInstrument
-  id: GuitarlessFretsInstrument
-  name: guitarless frets
-  description: who even needs a body?
-  suffix: Admeme #the sound is awful
-  components:
-  - type: Instrument
-    program: 120
-  - type: Sprite
-    sprite: Objects/Fun/Instruments/guitarlessfrets.rsi
-    state: icon
-
-- type: entity
-  parent: BaseHandheldInstrument
   id: BanjoInstrument
   name: banjo
   components:

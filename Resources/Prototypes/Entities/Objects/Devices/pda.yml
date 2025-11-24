@@ -156,7 +156,7 @@
     id: CaptainIDCard
     state: pda-captain
     penSlot:
-      startingItem: PenCap
+      startingItem: Pen
       priority: -1
       whitelist:
         tags:

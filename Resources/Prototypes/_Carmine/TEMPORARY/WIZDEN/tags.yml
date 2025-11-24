@@ -691,9 +691,6 @@
   id: Duck
 
 - type: Tag
-  id: Ectoplasm
-
-- type: Tag
   id: Egg
 
 - type: Tag
@@ -875,9 +872,6 @@
 
 - type: Tag
   id: Hoe
-
-- type: Tag
-  id: HolofanProjector
 
 - type: Tag
   id: HolosignProjector
@@ -1433,9 +1427,6 @@
 
 - type: Tag
   id: SurgeryTool
-
-- type: Tag
-  id: SurveillanceCameraMonitorCircuitboard
 
 - type: Tag
   id: Syndicate

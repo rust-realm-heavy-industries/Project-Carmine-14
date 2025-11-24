@@ -37,11 +37,3 @@
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: ShuttleTimer
-
-- type: entity
-  id: ArrivalsShuttleTimer
-  parent: Screen
-  name: arrivals screen
-  components:
-  - type: DeviceNetwork
-    receiveFrequencyId: ArrivalsShuttleTimer

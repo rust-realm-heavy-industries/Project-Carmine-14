@@ -243,10 +243,20 @@ WallRockAndesiteCopper: null
 WallRockAndesiteTungsten: null
 #REPLACED BY CARMINE WALLS
 
+DefaultStationBeaconAISatellite: null
+DefaultStationBeaconBotany: null
+DefaultStationBeaconChemistry: null
+DefaultStationBeaconCommand: null
+DefaultStationBeaconGravGen: null
+DefaultStationBeaconMedical: null
+DefaultStationBeaconScience: null
+DefaultStationBeaconSecurity: null
+DefaultStationBeaconSupply: null
+DefaultStationBeaconToolRoom: null
+
 # LAVALAND/LAVABRIG STUFF SO THE GAME COMPILES
 ClosetBombFilled: null
 ClusterBangFull: null
-LockerSecurityFilled: null
 WeaponDisablerPractice: null
 WeaponLaserCarbinePractice: null
 WeaponShotgunKammerer: null

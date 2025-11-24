@@ -36,16 +36,6 @@
     sprite: Clothing/Eyes/Goggles/medical_nightvision.rsi
 
 - type: entity
-  parent: [ClothingEyesNightVisionGoggles, ClothingEyesHudDiagnostic]
-  id: ClothingEyesNightVisionDiagnosticGoggles
-  name: night vision diagnostic goggles
-  components:
-  - type: Sprite
-    sprite: Clothing/Eyes/Goggles/diagnostic_nightvision.rsi
-  - type: Clothing
-    sprite: Clothing/Eyes/Goggles/diagnostic_nightvision.rsi
-
-- type: entity
   parent: ClothingEyesNightVisionGoggles
   id: ClothingEyesNightVisionGogglesSyndie
   suffix: "Chameleon"

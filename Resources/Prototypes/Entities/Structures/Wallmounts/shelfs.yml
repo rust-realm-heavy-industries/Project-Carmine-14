@@ -149,41 +149,6 @@
     graph: Shelf
     node: ShelfMetal
 
-- type: entity
-  id: ShelfGlass
-  parent: ShelfBase
-  name: glass shelf
-  description: A fragile place to place, well, anything really.
-  components:
-  - type: Sprite
-    sprite: Structures/Storage/Shelfs/glass.rsi
-    state: base
-  - type: Damageable
-    damageModifierSet: Glass
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WindowShatter
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ShardGlass:
-            min: 0
-            max: 2
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: Tag
-    tags:
-    - Structure
-  - type: Construction
-    graph: Shelf
-    node: ShelfGlass
-
 # Reinforced
 - type: entity
   id: ShelfRWood

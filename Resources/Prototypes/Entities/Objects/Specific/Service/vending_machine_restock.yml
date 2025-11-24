@@ -51,22 +51,6 @@
 
 - type: entity
   parent: BaseVendingMachineRestock
-  id: VendingMachineRestockCondimentStation
-  name: condiment station restock box
-  description: Refill the condiment station. Mmmm, cold sauce.
-  components:
-  - type: VendingMachineRestock
-    canRestock:
-    - CondimentInventory
-  - type: Sprite
-    layers:
-    - state: base
-    - state: green_bit
-      shader: unshaded
-    - state: refill_condiment
-
-- type: entity
-  parent: BaseVendingMachineRestock
   id: VendingMachineRestockEngineering
   name: EngiVend restock box
   description: Only to be used by certified professionals.
@@ -130,28 +114,6 @@
     - state: green_bit
       shader: unshaded
     - state: refill_plant
-- type: entity
-  parent: BaseVendingMachineRestock
-  id: VendingMachineRestockRobustSoftdrinks
-  name: beverage restock box
-  description: A cold, clunky container of colliding chilly cylinders. Use only as directed by Robust Industries, LLC.
-  components:
-  - type: VendingMachineRestock
-    canRestock:
-    - RobustSoftdrinksInventory
-    - BodaInventory
-    - PwrGameInventory
-    - ShamblersJuiceInventory
-    - StarkistInventory
-    - SpaceUpInventory
-    - SodaInventory
-    - DrGibbInventory
-  - type: Sprite
-    layers:
-    - state: base
-    - state: green_bit
-      shader: unshaded
-    - state: refill_cola
 
 - type: entity
   parent: BaseVendingMachineRestock

@@ -83,18 +83,6 @@
     stateDoorClosed: black_door
 
 - type: entity
-  id: ClosetWallGreen
-  parent: BaseWallCloset
-  name: green wall closet
-  description: "A wardrobe packed with stylish green clothing."
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: generic
-    stateDoorOpen: generic_open
-    stateDoorClosed: green_door
-
-- type: entity
   id: ClosetWallOrange
   parent: BaseWallCloset
   name: prison wall closet
@@ -152,17 +140,6 @@
     stateBaseClosed: generic
     stateDoorOpen: generic_open
     stateDoorClosed: mixed_door
-
-- type: entity
-  id: ClosetWallAtmospherics
-  parent: BaseWallCloset
-  name: atmospherics wall closet
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: generic
-    stateDoorOpen: generic_open
-    stateDoorClosed: atmos_door
 
 - type: entity
   id: LockerWallMedical

@@ -14,26 +14,6 @@
 
 - type: entity
   parent: BaseSubdermalImplant
-  id: SadTromboneImplant
-  name: sad trombone implant
-  description: This implant plays a sad tune when the user dies.
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: SubdermalImplant
-      whitelist:
-        components:
-        - MobState # admeme implanting a chair with trombone implant needs to give the chair mobstate so it can die first
-    - type: TriggerOnMobstateChange
-      mobState:
-      - Dead
-    - type: EmitSoundOnTrigger
-      sound:
-        collection: SadTrombone
-        params:
-          variation: 0.125
-
-- type: entity
-  parent: BaseSubdermalImplant
   id: LightImplant
   name: light implant
   description: This implant emits light from the user's skin on activation.
@@ -85,7 +65,7 @@
     - type: SubdermalImplant
       whitelist:
         components:
-        - MobState # admeme implanting a chair with tracking implant needs to give the chair mobstate so it can die first
+        - MobState
     - type: SuitSensor
       randomMode: false
       controlsLocked: true
@@ -214,42 +194,6 @@
         - HideContextMenu
         - MicroBomb
 
-
-- type: entity
-  parent: BaseSubdermalImplant
-  id: MacroBombImplant
-  name: macro-bomb implant
-  description: This implant creates a large explosion on death after a preprogrammed countdown.
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: SubdermalImplant
-      permanent: true
-    - type: TriggerOnMobstateChange #Chains with OnUseTimerTrigger
-      mobState:
-      - Dead
-      preventSuicide: true
-    - type: OnUseTimerTrigger
-      delay: 7
-      initialBeepDelay: 0
-      beepSound:
-        path: /Audio/Machines/Nuke/general_beep.ogg
-        params:
-          volume: -2
-    - type: ExplodeOnTrigger
-    - type: GibOnTrigger
-      deleteItems: true
-    - type: Explosive
-      explosionType: Default
-      totalIntensity: 3500
-      intensitySlope: 15
-      maxIntensity: 70
-      canCreateVacuum: true
-    - type: Tag
-      tags:
-        - SubdermalImplant
-        - HideContextMenu
-        - MacroBomb
-
 - type: entity
   parent: BaseSubdermalImplant
   id: DeathAcidifierImplant
@@ -285,7 +229,7 @@
       permanent: true
       whitelist:
         components:
-        - MobState # admeme implanting a chair with rattle implant needs to give the chair mobstate so it can die first
+        - MobState
     - type: TriggerOnMobstateChange
       mobState:
       - Critical
