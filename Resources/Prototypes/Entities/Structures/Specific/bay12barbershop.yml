@@ -1,19 +1,4 @@
 - type: entity
-  parent: SeatBase
-  id: ChairBarber
-  name: barbers chair
-  components:
-  - type: Transform
-    anchored: true
-  - type: Physics
-    bodyType: Static
-  - type: Anchorable
-  - type: Rotatable
-  - type: Sprite
-    sprite: Structures/Specific/barberchair.rsi
-    state: barberchair
-
-- type: entity
   parent: BaseSign
   id: BarberSignPole
   name: barber pole

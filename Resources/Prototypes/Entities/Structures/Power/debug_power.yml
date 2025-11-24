@@ -125,33 +125,6 @@
   - type: Anchorable
 
 - type: entity
-  id: DebugSMES
-  parent: BaseSMES
-  suffix: DEBUG
-  components:
-  - type: Tag
-    tags:
-      - Debug
-
-- type: entity
-  id: DebugSubstation
-  parent: BaseSubstation
-  suffix: DEBUG
-  components:
-  - type: Tag
-    tags:
-      - Debug
-
-- type: entity
-  id: DebugAPC
-  parent: BaseAPC
-  suffix: DEBUG
-  components:
-  - type: Tag
-    tags:
-      - Debug
-
-- type: entity
   id: DebugPowerReceiver
   name: power receiver
   suffix: DEBUG

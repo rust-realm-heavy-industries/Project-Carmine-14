@@ -1,34 +1,4 @@
 - type: entity
-  parent: ComputerSurveillanceWirelessCameraMonitor
-  id: ComputerTelevision
-  name: wooden television
-  description: Finally, some decent reception around here...
-  components:
-  - type: Sprite
-    noRot: true
-    drawdepth: SmallObjects
-    layers:
-    - map: ["computerLayerBody"]
-      state: television
-    - map: ["computerLayerScreen"]
-      state: detective_television
-  - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#b89f25"
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.25,-0.25,0.25,0.25"
-        density: 200
-        mask:
-          - TabletopMachineMask
-        layer:
-          - TabletopMachineLayer
-
-- type: entity
   parent: BaseComputer
   id: WallmountTelescreenFrame
   name: telescreen frame
@@ -82,35 +52,6 @@
   - type: Transform
     anchored: true
 
-- type: entity
-  parent: WallmountTelescreenFrame
-  id: WallmountTelescreen
-  suffix: camera monitor
-  name: telescreen
-  description: Finally, some decent reception around here...
-  components:
-  - type: Construction
-    graph: WallmountTelescreen
-    node: Telescreen
-  - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#b89f25"
-  - type: DeviceNetwork
-    deviceNetId: Wired
-    receiveFrequencyId: SurveillanceCamera
-    transmitFrequencyId: SurveillanceCamera
-  - type: WiredNetworkConnection
-  - type: DeviceNetworkRequiresPower
-  - type: SurveillanceCameraMonitor
-  - type: ActivatableUI
-    key: enum.SurveillanceCameraMonitorUiKey.Key
-  - type: ActivatableUIRequiresPower
-  - type: UserInterface
-    interfaces:
-        enum.SurveillanceCameraMonitorUiKey.Key:
-          type: SurveillanceCameraMonitorBoundUserInterface
-
 # Wall Televisions
 
 - type: entity
@@ -141,35 +82,3 @@
         state: television_wall
       - map: ["computerLayerScreen"]
         state: television_wallscreen
-
-- type: entity
-  parent: WallmountTelevisionFrame
-  id: WallmountTelevision
-  suffix: entertainment
-  name: television
-  description: Finally, some decent reception around here...
-  components:
-  - type: Construction
-    graph: WallmountTelevision
-    node: Television
-  - type: DeviceNetwork
-    deviceNetId: Wireless
-    receiveFrequencyId: SurveillanceCamera
-    transmitFrequencyId: SurveillanceCamera
-  - type: WirelessNetworkConnection
-    range: 200
-  - type: DeviceNetworkRequiresPower
-  - type: Speech
-  - type: SurveillanceCameraSpeaker
-  - type: SurveillanceCameraMonitor
-  - type: ActivatableUI
-    key: enum.SurveillanceCameraMonitorUiKey.Key
-  - type: ActivatableUIRequiresPower
-  - type: UserInterface
-    interfaces:
-        enum.SurveillanceCameraMonitorUiKey.Key:
-          type: SurveillanceCameraMonitorBoundUserInterface
-  - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#b89f25"

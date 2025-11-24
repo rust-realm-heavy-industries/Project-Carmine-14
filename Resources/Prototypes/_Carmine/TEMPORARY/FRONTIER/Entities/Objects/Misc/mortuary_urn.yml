@@ -24,7 +24,6 @@
         whitelist:
           tags:
           - Ash
-          - Ectoplasm
         insertOnInteract: true
         priority: 1
       label_slot:

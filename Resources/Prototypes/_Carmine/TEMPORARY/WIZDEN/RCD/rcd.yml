@@ -159,31 +159,6 @@
   rotation: User
   fx: EffectRCDConstruct2
 
-# Airlocks
-- type: rcd
-  id: Airlock
-  category: Airlocks
-  sprite: /Textures/Interface/Radial/RCD/airlock.png
-  mode: ConstructObject
-  prototype: Airlock
-  cost: 4
-  delay: 4
-  collisionMask: FullTileMask
-  rotation: Camera
-  fx: EffectRCDConstruct4
-
-- type: rcd
-  id: AirlockGlass
-  category: Airlocks
-  sprite: /Textures/Interface/Radial/RCD/glass_airlock.png
-  mode: ConstructObject
-  prototype: AirlockGlass
-  cost: 4
-  delay: 4
-  collisionMask: FullTileMask
-  rotation: Camera
-  fx: EffectRCDConstruct4
-
 - type: rcd
   id: Firelock
   category: Airlocks

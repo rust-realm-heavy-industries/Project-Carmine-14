@@ -69,18 +69,6 @@
     graph: Timer
     node: screen
 
-- type: entity
-  id: BrigTimer
-  parent: ScreenTimer
-  name: brig timer
-  description: It's a timer for brig cells.
-  components:
-  - type: AccessReader
-    access: [["Security"]]
-  - type: Construction
-    graph: Timer
-    node: brig
-
 # Construction Frame
 
 - type: entity

@@ -19,10 +19,6 @@
     - type: Headset
     - type: EncryptionKeyHolder
       keySlots: 5
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyFreelance
     - type: Sprite
       sprite: Clothing/Ears/Headsets/freelance.rsi
     - type: Clothing

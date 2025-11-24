@@ -45,15 +45,6 @@
 
 - type: entity
   parent: BaseSignDirectional
-  id: SignDirectionalChapel
-  name: chapel sign
-  description: A direction sign, pointing out which way the Chapel is.
-  components:
-  - type: Sprite
-    state: direction_chapel
-
-- type: entity
-  parent: BaseSignDirectional
   id: SignDirectionalChemistry
   name: chemistry sign
   description: A direction sign, pointing out which way the chemistry lab is.
@@ -189,16 +180,6 @@
 
 - type: entity
   parent: BaseSignDirectional
-  id: SignDirectionalSci
-  name: epistemics sign # DeltaV - Epistemics Department replacing Science
-  description: A direction sign, pointing out which way the Epistemics department is. # DeltaV - Epistemics Department replacing Science
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Structures/Wallmounts/signs.rsi # DeltaV - Epistemics Department replacing Science
-    state: direction_epi # DeltaV - Epistemics Department replacing Science
-
-- type: entity
-  parent: BaseSignDirectional
   id: SignDirectionalSec
   name: sec sign
   description: A direction sign, pointing out which way Security is.
@@ -237,33 +218,6 @@
 
 - type: entity
   parent: BaseSign
-  id: SignAi
-  name: ai sign
-  description: A sign, indicating an AI is present.
-  components:
-  - type: Sprite
-    state: ai
-
-- type: entity
-  parent: BaseSign
-  id: SignAiUpload
-  name: ai upload sign
-  description: A sign, indicating an AI is present.
-  components:
-    - type: Sprite
-      state: ai_upload
-
-- type: entity
-  parent: BaseSign
-  id: SignArcade
-  name: arcade sign
-  description: A sign indicating the arcade.
-  components:
-  - type: Sprite
-    state: arcade
-
-- type: entity
-  parent: BaseSign
   id: SignArmory
   name: armory sign
   description: A sign indicating the armory.
@@ -291,48 +245,12 @@
 
 - type: entity
   parent: BaseSign
-  id: SignAnomaly2
-  name: anomaly lab sign
-  description: A sign indicating the anomalous research lab.
-  components:
-  - type: Sprite
-    state: anomaly
-
-- type: entity
-  parent: BaseSign
-  id: SignAtmos
-  name: atmos sign
-  description: A sign indicating the atmospherics area.
-  components:
-  - type: Sprite
-    state: atmos
-
-- type: entity
-  parent: BaseSign
   id: SignBar
   name: bar sign
   description: A sign indicating the bar.
   components:
   - type: Sprite
     state: bar
-
-- type: entity
-  parent: BaseSign
-  id: SignBath
-  name: bathroom sign
-  description: A sign indicating the bathroom.
-  components:
-  - type: Sprite
-    state: bath
-
-- type: entity
-  parent: BaseSign
-  id: SignKitchen
-  name: kitchen sign
-  description: The heart of the home. And disease.
-  components:
-  - type: Sprite
-    state: kitchen
 
 - type: entity
   parent: BaseSign
@@ -353,15 +271,6 @@
 
 - type: entity
   parent: BaseSign
-  id: SignBarbershop
-  name: barbershop sign
-  description: A sign indicating the barbershop.
-  components:
-  - type: Sprite
-    state: barbershop
-
-- type: entity
-  parent: BaseSign
   id: SignBio
   name: bio sign
   description: A sign indicating the biology lab.
@@ -371,58 +280,12 @@
 
 - type: entity
   parent: BaseSign
-  id: SignBiohazard
-  name: biohazard sign
-  description: A sign indicating a biohazard.
-  components:
-  - type: Sprite
-    state: biohazard
-
-- type: entity
-  parent: BaseSign
-  id: SignBridge
-  name: bridge sign
-  description: A sign indicating the bridge.
-  components:
-  - type: Sprite
-    state: bridge
-
-- type: entity
-  parent: BaseSign
-  id: SignCanisters
-  name: canisters sign
-  description: A sign warning the viewer about pressurised canisters.
-  components:
-  - type: Sprite
-    state: canisters
-
-- type: entity
-  parent: BaseSign
-  id: SignCargo
-  name: logistics sign # DeltaV - Logistics Department replacing Cargo
-  description: A sign indicating the logistics area. # DeltaV - Logistics Department replacing Cargo
-  components:
-  - type: Sprite
-    state: cargo
-
-- type: entity
-  parent: BaseSign
   id: SignCargoDock
   name: cargo dock sign
   description: A sign indicating a cargo dock.
   components:
   - type: Sprite
     state: cargo_dock
-
-- type: entity
-  parent: BaseSign
-  id: SignChapel
-  name: chapel sign
-  description: A sign indicating the chapel.
-  components:
-  - type: Sprite
-    sprite: DeltaV/Structures/Wallmounts/signs.rsi # DeltaV: Epi-themed chapel sprite
-    state: chapel
 
 - type: entity
   parent: BaseSign
@@ -441,43 +304,6 @@
   components:
   - type: Sprite
     state: cloning
-
-- type: entity
-  parent: BaseSign
-  id: SignConference
-  name: conference room sign
-  description: Where work happens.
-  components:
-  - type: Sprite
-    state: conference_room
-
-- type: entity
-  parent: BaseSign
-  id: SignCryo
-  name: cryosleep sign
-  description: Just like that? You're gonna chicken out?
-  components:
-  - type: Sprite
-    state: cryo
-
-
-- type: entity
-  parent: BaseSign
-  id: SignDisposalSpace
-  name: disposal sign
-  description: A sign indicating a disposal area.
-  components:
-  - type: Sprite
-    state: deathsposal
-
-- type: entity
-  parent: BaseSign
-  id: SignDoors
-  name: doors sign
-  description: A sign indicating doors.
-  components:
-  - type: Sprite
-    state: doors
 
 - type: entity
   parent: BaseSign
@@ -508,26 +334,6 @@
 
 - type: entity
   parent: BaseSign
-  id: SignEngineering
-  name: engineering sign
-  description: A sign indicating the engineering area.
-  components:
-  - type: Sprite
-    state: eng
-
-- type: entity
-  parent: BaseSign
-  id: SignEscapePods
-  name: escape pods sign
-  description: A sign indicating the escape pods.
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Structures/Wallmounts/signs.rsi # Nyanotrasen - Give pods sign directional sprites
-    state: pods
-    snapCardinals: false
-
-- type: entity
-  parent: BaseSign
   id: SignEVA
   name: EVA sign
   description: A sign indicating an EVA area. EVA equipment may be required beyond this point.
@@ -537,111 +343,12 @@
 
 - type: entity
   parent: BaseSign
-  id: SignElectrical
-  name: electrical sign
-  description: A sign indicating an electrical hazard.
-  components:
-  - type: Sprite
-    state: electrical
-
-- type: entity
-  parent: BaseSign
-  id: SignExamroom
-  name: examination room sign
-  description: A sign indicating a medical examination room.
-  components:
-  - type: Sprite
-    state: examroom
-
-- type: entity
-  parent: BaseSign
-  id: SignFire
-  name: fire sign
-  description: A sign indicating a fire hazard.
-  components:
-  - type: Sprite
-    state: fire
-
-- type: entity
-  parent: BaseSign
-  id: SignGravity
-  name: gravity sign
-  description: A sign indicating the gravity generator.
-  components:
-  - type: Sprite
-    state: gravi
-
-- type: entity
-  parent: BaseSign
-  id: SignHead
-  name: head sign
-  description: An official sign indicating the dwellings of a Nanotrasen-certified head of department.
-  components:
-  - type: Sprite
-    state: commander
-
-- type: entity
-  parent: BaseSign
-  id: SignHydro1
-  name: hydro sign
-  description: A sign indicating a hydroponics area.
-  components:
-  - type: Sprite
-    state: hydro
-
-- type: entity
-  parent: BaseSign
   id: SignInterrogation
   name: interrogation sign
   description: A sign indicating an interrogation room.
   components:
   - type: Sprite
     state: interrogation
-
-- type: entity
-  parent: BaseSign
-  id: SignJanitor
-  name: janitor sign
-  description: A sign labelling an area where the janitor works.
-  components:
-  - type: Sprite
-    state: janitor
-
-- type: entity
-  parent: BaseSign
-  id: SignLaundromat
-  name: laundromat sign
-  description: A sign indicating the laundromat.
-  components:
-  - type: Sprite
-    state: laundromat
-
-- type: entity
-  parent: BaseSign
-  id: SignLawyer
-  name: law sign
-  description: A sign indicating the presence of the (typically absent) rule of law.
-  components:
-  - type: Sprite
-    state: law
-
-- type: entity
-  parent: BaseSign
-  id: SignLibrary
-  name: library sign
-  description: A sign indicating the library.
-  components:
-  - type: Sprite
-    state: biblio
-
-- type: entity
-  parent: BaseSign
-  id: SignMail
-  name: mail sign
-  description: A sign indicating mail.
-  components:
-  - type: Sprite
-    state: mail
 
 - type: entity
   parent: BaseSign
@@ -753,24 +460,6 @@
 
 - type: entity
   parent: BaseSign
-  id: SignCans
-  name: canisters sign
-  description: A sign indicating the auspicious presence of gas canisters.
-  components:
-  - type: Sprite
-    state: cans
-
-- type: entity
-  parent: BaseSign
-  id: SignShipDock
-  name: evac sign
-  description: A sign indicating the where the evac shuttle will (likely) arrive.
-  components:
-  - type: Sprite
-    state: dock
-
-- type: entity
-  parent: BaseSign
   id: SignSpace
   name: space sign
   description: A sign warning that the area ahead is nothing but cold, empty space.
@@ -827,66 +516,12 @@
 
 - type: entity
   parent: BaseSign
-  id: SignCorrosives
-  name: corrosives warning sign
-  description: A sign indicating a corrosive materials hazard.
-  components:
-  - type: Sprite
-    state: corrosives
-
-- type: entity
-  parent: BaseSign
-  id: SignCryogenics
-  name: cryogenics warning sign
-  description: A sign indicating a cryogenic materials hazard. Bring a jacket!
-  components:
-  - type: Sprite
-    state: cryogenics
-
-- type: entity
-  parent: BaseSign
   id: SignDanger
   name: danger warning sign
   description: A sign warning against some danger.
   components:
   - type: Sprite
     state: danger
-
-- type: entity
-  parent: BaseSign
-  id: SignExplosives
-  name: explosives warning sign
-  description: A sign indicating an explosive materials hazard.
-  components:
-  - type: Sprite
-    state: explosives
-
-- type: entity
-  parent: BaseSign
-  id: SignFlammable
-  name: flammable warning sign
-  description: A sign indicating a flammable materials hazard.
-  components:
-  - type: Sprite
-    state: flammable
-
-- type: entity
-  parent: BaseSign
-  id: SignLaser
-  name: laser warning sign
-  description: A sign indicating a laser hazard.
-  components:
-  - type: Sprite
-    state: laser
-
-- type: entity
-  parent: BaseSign
-  id: SignMagnetics
-  name: magnetics warning sign
-  description: A sign indicating a magnetic materials hazard.
-  components:
-  - type: Sprite
-    state: magnetics
 
 - type: entity
   parent: BaseSign
@@ -996,15 +631,6 @@
   components:
   - type: Sprite
     state: small_secure_red
-
-- type: entity
-  parent: BaseSign
-  id: SignBlankMed
-  name: blank sign
-  description: A blank sign.
-  components:
-  - type: Sprite
-    state: medium_blank
 
 - type: entity
   parent: BaseSign

@@ -92,21 +92,6 @@
     node: chaos
 
 - type: entity
-  id: AltarDruid
-  parent: AltarNanotrasen
-  name: druid altar
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
-    state: druid
-  - type: Icon
-    sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
-    state: druid
-  - type: Construction #Nyano
-    graph: Altar
-    node: druid
-
-- type: entity
   id: AltarToolbox
   parent: AltarNanotrasen
   name: toolbox altar
@@ -188,53 +173,8 @@
     node: technology
 
 - type: entity
-  id: AltarConvertFestival
-  parent: AltarBase
-  name: festival altar
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
-    state: festival
-  - type: Icon
-    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
-    state: festival
-  - type: Damageable
-    damageModifierSet: Wood
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 15
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroyHeavy
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank:
-            min: 1
-            max: 5
-          MaterialCloth1:
-            min: 1
-            max: 3
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Tag
-    tags:
-    - Wooden
-  - type: Construction #Nyano
-    graph: Altar
-    node: festival
-
-- type: entity
   id: AltarConvertMaint
-  parent: AltarConvertFestival
+  parent: AltarBase
   name: maint altar
   components:
   - type: Sprite
@@ -256,7 +196,7 @@
 
 - type: entity
   id: AltarConvertBlue
-  parent: AltarConvertFestival
+  parent: AltarBase
   name: blue altar
   components:
   - type: Sprite
@@ -278,7 +218,7 @@
 
 - type: entity
   id: AltarConvertBurden
-  parent: AltarConvertFestival
+  parent: AltarBase
   name: burden altar
   components:
   - type: Sprite
@@ -300,7 +240,7 @@
 
 - type: entity
   id: AltarConvert
-  parent: AltarConvertFestival
+  parent: AltarBase
   name: convert altar
   components:
   - type: Sprite
@@ -322,7 +262,7 @@
 
 - type: entity
   id: AltarConvertOrange
-  parent: AltarConvertFestival
+  parent: AltarBase
   name: orange altar
   components:
   - type: Sprite
@@ -344,7 +284,7 @@
 
 - type: entity
   id: AltarConvertRed
-  parent: AltarConvertFestival
+  parent: AltarBase
   name: red altar
   components:
   - type: Sprite
@@ -366,7 +306,7 @@
 
 - type: entity
   id: AltarConvertWhite
-  parent: AltarConvertFestival
+  parent: AltarBase
   name: white altar
   components:
   - type: Sprite
@@ -388,7 +328,7 @@
 
 - type: entity
   id: AltarConvertYellow
-  parent: AltarConvertFestival
+  parent: AltarBase
   name: yellow altar
   components:
   - type: Sprite
@@ -451,30 +391,3 @@
   - type: Construction #Nyano
     graph: Altar
     node: heaven
-
-- type: entity
-  id: AltarFangs
-  parent: AltarHeaven
-  name: fanged altar
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Altars/Cults/fangs.rsi
-  - type: Icon
-    sprite: Structures/Furniture/Altars/Cults/fangs.rsi
-  - type: Construction #Nyano
-    graph: Altar
-    node: fanged
-
-
-- type: entity
-  id: AltarBananium
-  parent: AltarBase
-  name: honkmother altar
-  description: A bananium altar dedicated to the honkmother.
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Altars/Cults/bananium.rsi
-    state: full
-  - type: Construction
-    graph: BananiumAltarGraph
-    node: bananiumAltar

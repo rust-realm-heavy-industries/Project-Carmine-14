@@ -7,7 +7,7 @@
   sturdy: false
   thermalConductivity: 0.4
   heatCapacity: 700000
-  
+
 - type: tile
   id: Lattice
   name: tiles-lattice
@@ -37,7 +37,7 @@
     collection: FootstepPlating
   friction: 0.3
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorShuttleBlack
   name: tiles-black-shuttle-floor
@@ -49,7 +49,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShuttleBlack
   heatCapacity: 10000
-  
+
 - type: entity
   parent: FloorTileItemBase
   id: FloorTileItemOldConcrete
@@ -65,23 +65,7 @@
     - FloorOldConcrete
   - type: Stack
     stackType: FloorTileOldConcrete
-    
-- type: entity
-  parent: FloorTileItemBase
-  id: FloorTileItemConcrete
-  name: concrete tile
-  components:
-  - type: Sprite
-    state: concrete
-  - type: Item
-    heldPrefix: generic
-  - type: FloorTile
-    outputs:
-    - Plating
-    - FloorConcrete
-  - type: Stack
-    stackType: FloorTileConcrete
-  
+
 - type: tile
   id: FloorSteelDirty
   name: tiles-dirty-steel-floor
@@ -93,7 +77,7 @@
     collection: FootstepPlating
   itemDrop: FloorTileItemDirty
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorHullReinforced
   name: tiles-hull-reinforced
@@ -106,7 +90,7 @@
   heatCapacity: 100000 #/tg/ has this set as "INFINITY." I don't know if that exists here so I've just added an extra 0
   indestructible: true
   reinforced: true
-  
+
 - type: tile
   id: FloorTechMaint
   name: tiles-techmaint-floor
@@ -118,7 +102,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemTechmaint
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorTechMaint2
   name: tiles-techmaint2-floor
@@ -148,7 +132,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemGratingMaint
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorGrayConcrete
   name: tiles-gray-concrete-tile
@@ -167,7 +151,7 @@
   itemDrop: FloorTileItemGrayConcrete
   heatCapacity: 10000
   weather: true
-  
+
 - type: tile
   id: FloorMS13MetalIndustrial
   name: ms13 metal industrial
@@ -235,7 +219,7 @@
   thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
-  
+
 - type: tile
   id: FloorMS13WoodCommon
   name: ms13 wood common
@@ -707,7 +691,7 @@
   thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
-  
+
 - type: tile
   id: WaterDeep
   name: water deep
@@ -781,7 +765,7 @@
     collection: FootstepPlating
   friction: 0.3
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorSteelDiagonalMini
   name: tiles-steel-floor-diagonal-mini
@@ -799,7 +783,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemSteel
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorSteelDiagonal
   name: tiles-steel-floor-diagonal
@@ -817,7 +801,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteel
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorShuttleWhite
   name: tiles-white-shuttle-floor
@@ -829,7 +813,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShuttleWhite
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorWhiteDiagonal
   name: tiles-white-floor-diagonal
@@ -847,7 +831,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhite
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorWhiteDiagonalMini
   name: tiles-white-floor-diagonal-mini
@@ -865,7 +849,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhite
   heatCapacity: 10000
-  
+
 - type: tile
   id: FloorShuttleGrey
   name: tiles-grey-shuttle-floor

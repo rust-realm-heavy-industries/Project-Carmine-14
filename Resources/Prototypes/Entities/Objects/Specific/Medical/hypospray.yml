@@ -54,44 +54,6 @@
     delay: 0.5
 
 - type: entity
-  name: borghypo
-  parent: BaseItem
-  description: A sterile injector for rapid administration of drugs to patients. A cheaper and more specialised version for medical borgs.
-  id: BorgHypo
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Medical/hypospray.rsi
-    state: borghypo
-  - type: Item
-    sprite: Objects/Specific/Medical/hypospray.rsi
-  - type: SolutionContainerManager
-    solutions:
-      hypospray:
-        maxVol: 10
-  - type: RefillableSolution
-    solution: hypospray
-  - type: ExaminableSolution
-    solution: hypospray
-  - type: Hypospray
-    onlyAffectsMobs: false
-  - type: UseDelay
-    delay: 0.5
-
-- type: entity
-  name: experimental hypospray
-  suffix: Admeme
-  parent: SyndiHypo
-  description: The ultimate application of bluespace technology and rapid chemical administration.
-  id: AdminHypo
-  components:
-    - type: SolutionContainerManager
-      solutions:
-        hypospray:
-          maxVol: 3000
-    - type: UseDelay
-      delay: 0.0
-
-- type: entity
   name: chemical medipen
   parent: BaseItem
   description: A sterile injector for rapid administration of drugs to patients. This one can't be refilled.
@@ -186,70 +148,6 @@
           Quantity: 10
         - ReagentId: Epinephrine
           Quantity: 5
-  - type: Tag
-    tags: []
-
-- type: entity
-  name: brute auto-injector
-  parent: ChemicalMedipen
-  id: BruteAutoInjector
-  description: A rapid dose of bicaridine and tranexamic acid, intended for combat applications
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
-    layers:
-    - state: bicpen
-      map: ["enum.SolutionContainerLayers.Fill"]
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    changeColor: false
-    emptySpriteName: bicpen_empty
-  - type: Hypospray
-    solutionName: pen
-    transferAmount: 20
-    onlyAffectsMobs: false
-    injectOnly: true
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 20
-        reagents:
-        - ReagentId: Bicaridine
-          Quantity: 15
-        - ReagentId: TranexamicAcid
-          Quantity: 5
-  - type: Tag
-    tags: []
-
-- type: entity
-  name: burn auto-injector
-  parent: ChemicalMedipen
-  id: BurnAutoInjector
-  description: A rapid dose of dermaline and leporazine, intended for combat applications
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
-    layers:
-    - state: dermpen
-      map: ["enum.SolutionContainerLayers.Fill"]
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    changeColor: false
-    emptySpriteName: dermpen_empty
-  - type: Hypospray
-    solutionName: pen
-    transferAmount: 20
-    onlyAffectsMobs: false
-    injectOnly: true
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 20
-        reagents:
-        - ReagentId: Dermaline
-          Quantity: 10
-        - ReagentId: Leporazine
-          Quantity: 10
   - type: Tag
     tags: []
 
@@ -350,38 +248,6 @@
     tags: []
 
 - type: entity
-  name: airloss auto-injector
-  parent: ChemicalMedipen
-  id: AirlossAutoInjector
-  description: A rapid dose of saline and dexalin plus, intended to get someone up quickly.
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
-    layers:
-    - state: dexpen
-      map: ["enum.SolutionContainerLayers.Fill"]
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    changeColor: false
-    emptySpriteName: dexpen_empty
-  - type: Hypospray
-    solutionName: pen
-    transferAmount: 40
-    onlyAffectsMobs: false
-    injectOnly: true
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 40
-        reagents:
-        - ReagentId: Saline
-          Quantity: 20
-        - ReagentId: DexalinPlus
-          Quantity: 20
-  - type: Tag
-    tags: []
-
-- type: entity
   name: space medipen
   parent: ChemicalMedipen
   id: SpaceMedipen
@@ -471,40 +337,6 @@
     emptySpriteName: microstimpen_empty
   - type: StaticPrice
     price: 100
-  - type: Tag
-    tags: []
-
-- type: entity
-  name: combat medipen
-  parent: ChemicalMedipen
-  id: CombatMedipen
-  description: A single-use medipen containing chemicals that regenerate most types of damage.
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
-    layers:
-    - state: morphen
-      map: ["enum.SolutionContainerLayers.Fill"]
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    changeColor: false
-    emptySpriteName: morphen_empty
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 30
-        reagents:
-        - ReagentId: Omnizine
-          Quantity: 25
-        - ReagentId: TranexamicAcid
-          Quantity: 5
-  - type: Hypospray
-    solutionName: pen
-    transferAmount: 30
-    onlyAffectsMobs: false
-    injectOnly: true
-  - type: StaticPrice
-    price: 500
   - type: Tag
     tags: []
 

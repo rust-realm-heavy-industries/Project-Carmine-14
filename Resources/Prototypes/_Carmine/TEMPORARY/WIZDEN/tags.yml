@@ -691,9 +691,6 @@
   id: Duck
 
 - type: Tag
-  id: Ectoplasm
-
-- type: Tag
   id: Egg
 
 - type: Tag
@@ -875,9 +872,6 @@
 
 - type: Tag
   id: Hoe
-
-- type: Tag
-  id: HolofanProjector
 
 - type: Tag
   id: HolosignProjector
@@ -1435,9 +1429,6 @@
   id: SurgeryTool
 
 - type: Tag
-  id: SurveillanceCameraMonitorCircuitboard
-
-- type: Tag
   id: Syndicate
 
 - type: Tag
@@ -1511,9 +1502,6 @@
 
 - type: Tag # Goobstation
   id: VehicleKey
-
-- type: Tag
-  id: VimPilot
 
 - type: Tag
   id: VoiceTrigger
@@ -1607,8 +1595,6 @@
 - type: Tag
   id: VulpEmotes
 
-- type: Tag
-  id: VoidbornEmotes
 
 - type: Tag
   id: SiliconEmotes

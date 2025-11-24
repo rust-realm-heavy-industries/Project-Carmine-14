@@ -1,54 +1,4 @@
 - type: entity
-  id: N14BarricadeWindow
-  parent: BaseStructure
-  name: barricade
-  description: A makeshift barricade.
-  components:
-    - type: CanBuildWindowOnTop
-    - type: Sprite
-      netsync: false
-      drawdepth: Overdoors
-      sprite: _Nuclear14/Structures/Furniture/barricades.rsi
-      state: boarded
-    - type: Icon
-      sprite: _Nuclear14/Structures/Furniture/barricades.rsi
-      state: boarded
-    - type: Damageable
-      damageContainer: Inorganic
-      damageModifierSet: Wood
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeAabb
-              bounds: "-0.5,-0.5,0.5,0.5"
-          layer:
-          - GlassLayer
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 100
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-              
-- type: entity
-  parent: N14BarricadeWindow
-  id: N14BarricadeDoor
-  name: locked door
-  description: A locked door. Might have to break it down.
-  components:
-    - type: Sprite
-      sprite: _Nuclear14/Structures/Furniture/barricades.rsi
-      state: locked
-    - type: Icon
-      sprite: _Nuclear14/Structures/Furniture/barricades.rsi
-      state: locked
-
-- type: entity
   id: N14WindowBars
   parent: BaseStructure
   name: window bars
@@ -86,7 +36,7 @@
         low:
           !type:CableDeviceNode
           nodeGroupID: Apc
-              
+
 - type: entity
   id: N14WindowBars2
   parent: N14WindowBars

@@ -69,8 +69,8 @@ public sealed class ChatUIController : UIController
     [UISystemDependency] private readonly RoleCodewordSystem? _roleCodewordSystem = default!;
 
     [ValidatePrototypeId<ColorPalettePrototype>]
-    private const string ChatNamePalette = "ChatNames";
-    private string[] _chatNameColors = default!;
+    // private const string ChatNamePalette = "ChatNames"; // WWDP EDIT - DEFUNCT - Moved to SharedChatSystem
+    // private string[] _chatNameColors = default!; // WWDP EDIT - DEFUNCT - Moved to SharedChatSystem
     private bool _chatNameColorsEnabled;
 
     private ISawmill _sawmill = default!;
@@ -191,7 +191,6 @@ public sealed class ChatUIController : UIController
         SubscribeNetworkEvent<DamageForceSayEvent>(OnDamageForceSay);
         _config.OnValueChanged(CCVars.ChatEnableColorName, (value) => { _chatNameColorsEnabled = value; });
         _chatNameColorsEnabled = _config.GetCVar(CCVars.ChatEnableColorName);
-
         _speechBubbleRoot = new LayoutContainer();
 
         UpdateChannelPermissions();
@@ -236,13 +235,14 @@ public sealed class ChatUIController : UIController
         gameplayStateLoad.OnScreenLoad += OnScreenLoad;
         gameplayStateLoad.OnScreenUnload += OnScreenUnload;
 
+        /* // WWDP EDIT - DEFUNCT - Moved to SharedChatSystem
         var nameColors = _prototypeManager.Index<ColorPalettePrototype>(ChatNamePalette).Colors.Values.ToArray();
         _chatNameColors = new string[nameColors.Length];
         for (var i = 0; i < nameColors.Length; i++)
         {
             _chatNameColors[i] = nameColors[i].ToHex();
         }
-
+        */
         _config.OnValueChanged(CCVars.ChatWindowOpacity, OnChatWindowOpacityChanged);
 
     }
@@ -275,19 +275,7 @@ public sealed class ChatUIController : UIController
         if (panel is null)
             return;
 
-        Color color;
-        if (panel.PanelOverride is StyleBoxFlat styleBoxFlat)
-            color = styleBoxFlat.BackgroundColor;
-        else if (panel.TryGetStyleProperty<StyleBox>(PanelContainer.StylePropertyPanel, out var style)
-                 && style is StyleBoxFlat propStyleBoxFlat)
-            color = propStyleBoxFlat.BackgroundColor;
-        else
-            color = StyleNano.ChatBackgroundColor;
-
-        panel.PanelOverride = new StyleBoxFlat
-        {
-            BackgroundColor = color.WithAlpha(opacity)
-        };
+        panel.Modulate = panel.Modulate.WithAlpha(opacity); // WWDP EDIT
     }
 
     public void SetMainChat(bool setting)
@@ -830,13 +818,16 @@ public sealed class ChatUIController : UIController
 
     public void ProcessChatMessage(ChatMessage msg, bool speechBubble = true)
     {
-        // color the name unless it's something like "the old man"
-        if ((msg.Channel == ChatChannel.Local || msg.Channel == ChatChannel.Whisper) && _chatNameColorsEnabled)
-        {
-            var grammar = _ent.GetComponentOrNull<GrammarComponent>(_ent.GetEntity(msg.SenderEntity));
-            if (grammar != null && grammar.ProperNoun == true)
-                msg.WrappedMessage = SharedChatSystem.InjectTagInsideTag(msg, "Name", "color", GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name")));
-        }
+        // // color the name unless it's something like "the old man"
+        // if ((msg.Channel == ChatChannel.Local || msg.Channel == ChatChannel.Whisper) && _chatNameColorsEnabled)
+        // {
+        //     var grammar = _ent.GetComponentOrNull<GrammarComponent>(_ent.GetEntity(msg.SenderEntity));
+        //     if (grammar != null && grammar.ProperNoun == true)
+        //     { // WWDP EDIT START
+        //         string hex = SharedChatSystem.GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name"));
+        //         msg.WrappedMessage = SharedChatSystem.InjectTagAroundTag(msg, "Name", "color", hex);
+        //     } // WWDP EDIT END
+        // }
 
         // Color any codewords for minds that have roles that use them
         if (_player.LocalUser != null && _mindSystem != null && _roleCodewordSystem != null)
@@ -939,6 +930,8 @@ public sealed class ChatUIController : UIController
         }
     }
 
+    /* WWDP EDIT - DEFUNCT
+    // Moved to SharedChatSystem.GetNameColor(string).
     /// <summary>
     /// Returns the chat name color for a mob
     /// </summary>
@@ -949,6 +942,7 @@ public sealed class ChatUIController : UIController
         var colorIdx = Math.Abs(name.GetHashCode() % _chatNameColors.Length);
         return _chatNameColors[colorIdx];
     }
+    */
 
     private readonly record struct SpeechBubbleData(ChatMessage Message, SpeechBubble.SpeechType Type);
 

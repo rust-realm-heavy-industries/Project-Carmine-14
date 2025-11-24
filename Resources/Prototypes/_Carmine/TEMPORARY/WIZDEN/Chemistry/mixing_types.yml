@@ -22,13 +22,6 @@
     sprite: Structures/Machines/juicer.rsi
     state: juicer0
 
-- type: mixingCategory
-  id: DummyCondense
-  verbText: mixing-verb-default-condense
-  icon:
-    sprite: Structures/Piping/Atmospherics/condenser.rsi
-    state: display
-
 # Alternative Mixing Methods
 
 - type: mixingCategory

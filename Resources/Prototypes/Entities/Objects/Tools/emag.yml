@@ -35,14 +35,6 @@
         - !type:CharacterDepartmentRequirement
           departments:
             - Security
-      - description: "emag-extenddescription-epistemics"
-        fontSize: 12
-        color: "#aa00aa"
-        requireDetailRange: true
-        requirements:
-        - !type:CharacterDepartmentRequirement
-          departments:
-            - Epistemics
       - description: "emag-extenddescription-syndicate"
         fontSize: 12
         color: "#880000"

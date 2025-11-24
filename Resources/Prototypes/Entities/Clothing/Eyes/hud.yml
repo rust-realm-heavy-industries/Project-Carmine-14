@@ -24,21 +24,6 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: ClothingEyesHudDiagnostic
-  name: diagnostic hud
-  description: A heads-up display capable of analyzing the integrity and status of robotics and exosuits. Made out of see-borg-ium.
-  components:
-  - type: Sprite
-    sprite: Clothing/Eyes/Hud/diag.rsi
-  - type: Clothing
-    sprite: Clothing/Eyes/Hud/diag.rsi
-  - type: ShowHealthBars
-    damageContainers:
-    - Inorganic
-    - Silicon
-
-- type: entity
-  parent: ClothingEyesBase
   id: ClothingEyesHudMedical
   name: medical hud
   description: A heads-up display that scans the humanoids in view and provides accurate data about their health status.

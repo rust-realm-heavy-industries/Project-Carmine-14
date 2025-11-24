@@ -29,6 +29,7 @@
 # White pieces
 - type: entity
   id: WhiteKing
+  categories: [ HideSpawnMenu ]
   name: white king
   parent: BaseTabletopPiece
   components:
@@ -38,6 +39,7 @@
 
 - type: entity
   id: WhiteQueen
+  categories: [ HideSpawnMenu ]
   name: white queen
   parent: BaseTabletopPiece
   components:
@@ -47,6 +49,7 @@
 
 - type: entity
   id: WhiteRook
+  categories: [ HideSpawnMenu ]
   name: white rook
   parent: BaseTabletopPiece
   components:
@@ -56,6 +59,7 @@
 
 - type: entity
   id: WhiteBishop
+  categories: [ HideSpawnMenu ]
   name: white bishop
   parent: BaseTabletopPiece
   components:
@@ -65,6 +69,7 @@
 
 - type: entity
   id: WhiteKnight
+  categories: [ HideSpawnMenu ]
   name: white knight
   parent: BaseTabletopPiece
   components:
@@ -74,6 +79,7 @@
 
 - type: entity
   id: WhitePawn
+  categories: [ HideSpawnMenu ]
   name: white pawn
   parent: BaseTabletopPiece
   components:
@@ -84,6 +90,7 @@
 # Black pieces
 - type: entity
   id: BlackKing
+  categories: [ HideSpawnMenu ]
   name: black king
   parent: BaseTabletopPiece
   components:
@@ -93,6 +100,7 @@
 
 - type: entity
   id: BlackQueen
+  categories: [ HideSpawnMenu ]
   name: black queen
   parent: BaseTabletopPiece
   components:
@@ -102,6 +110,7 @@
 
 - type: entity
   id: BlackRook
+  categories: [ HideSpawnMenu ]
   name: black rook
   parent: BaseTabletopPiece
   components:
@@ -111,6 +120,7 @@
 
 - type: entity
   id: BlackBishop
+  categories: [ HideSpawnMenu ]
   name: black bishop
   parent: BaseTabletopPiece
   components:
@@ -120,6 +130,7 @@
 
 - type: entity
   id: BlackKnight
+  categories: [ HideSpawnMenu ]
   name: black knight
   parent: BaseTabletopPiece
   components:
@@ -129,6 +140,7 @@
 
 - type: entity
   id: BlackPawn
+  categories: [ HideSpawnMenu ]
   name: black pawn
   parent: BaseTabletopPiece
   components:

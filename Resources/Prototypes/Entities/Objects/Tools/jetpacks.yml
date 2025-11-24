@@ -64,7 +64,7 @@
       generic: true
       difficulty: 3
       recipes:
-        - JetpackBlue
+        - JetpackBlack
 
 - type: entity
   id: ActionToggleJetpack
@@ -81,38 +81,6 @@
       state: icon-on
     useDelay: 1.0
     event: !type:ToggleJetpackEvent
-
-#Empty blue
-- type: entity
-  id: JetpackBlue
-  parent: BaseJetpack
-  name: jetpack
-  suffix: Empty
-  components:
-  - type: Sprite
-    sprite: Objects/Tanks/Jetpacks/blue.rsi
-  - type: Clothing
-    sprite: Objects/Tanks/Jetpacks/blue.rsi
-    slots:
-      - Back
-      - suitStorage
-
-# Filled blue
-- type: entity
-  id: JetpackBlueFilled
-  parent: JetpackBlue
-  name: jetpack
-  suffix: Filled
-  components:
-  - type: GasTank
-    outputPressure: 42.6
-    air:
-      # 13 minutes of thrust
-      volume: 5
-      temperature: 293.15
-      moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
 
 #Empty black
 - type: entity
@@ -136,46 +104,6 @@
   id: JetpackBlackFilled
   parent: JetpackBlack
   name: jetpack
-  suffix: Filled
-  components:
-  - type: GasTank
-    outputPressure: 42.6
-    air:
-      # 13 minutes of thrust
-      volume: 5
-      temperature: 293.15
-      moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
-
-#Empty captain
-- type: entity
-  id: JetpackCaptain
-  parent: BaseJetpack
-  name: captain's jetpack
-  suffix: Empty
-  components:
-  - type: Sprite
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
-  - type: Clothing
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
-    slots:
-      - Back
-      - suitStorage
-  - type: Item
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
-    size: Normal
-  - type: Tag
-    tags:
-    - HighRiskItem
-  - type: StealTarget
-    stealGroup: JetpackCaptainFilled
-
-# Filled captain
-- type: entity
-  id: JetpackCaptainFilled
-  parent: JetpackCaptain
-  name: captain's jetpack
   suffix: Filled
   components:
   - type: GasTank
@@ -303,43 +231,3 @@
       moles:
         - 1.025689525 # oxygen
         - 1.025689525 # nitrogen
-
-#Empty micro - Used in the Cyborg module, visually the same as mini jetpack.
-- type: entity
-  id: JetpackMicro
-  parent: BaseJetpack
-  name: micro jetpack
-  suffix: Empty
-  components:
-    - type: Item
-      sprite: Objects/Tanks/Jetpacks/mini.rsi
-    - type: Sprite
-      sprite: Objects/Tanks/Jetpacks/mini.rsi
-    - type: Clothing
-      sprite: Objects/Tanks/Jetpacks/mini.rsi
-      slots:
-        - Back
-        - suitStorage
-        - Belt
-    - type: GasTank
-      outputPressure: 42.6
-      air:
-        volume: 0.75
-
-
-# Filled micro
-- type: entity
-  id: JetpackMicroFilled
-  parent: JetpackMicro
-  name: micro jetpack
-  suffix: Filled
-  components:
-  - type: GasTank
-    outputPressure: 42.6
-    air:
-      # 2 minutes of thrust
-      volume: 1.25
-      temperature: 293.15
-      moles:
-        - 0.153853429 # oxygen
-        - 0.153853429 # nitrogen
