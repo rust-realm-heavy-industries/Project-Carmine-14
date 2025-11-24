@@ -282,6 +282,8 @@ ExGrenade: null
 ClownPDA: null
 PlayerStationAi: null
 
+WelderExperimental: null
+
 #old hullrot stuff
 # SpawnPointKommissar: null
 # ThrusterUnwelded: Thruster
