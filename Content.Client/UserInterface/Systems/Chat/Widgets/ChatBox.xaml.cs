@@ -1,5 +1,5 @@
 using Content.Client.UserInterface.Systems.Chat.Controls;
-using Content.Shared._White.CCVar;
+// using Content.Shared._White.CCVar; //cant get a cvar to run so im just auto-setting it to true. .2 | 2025
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Input;
@@ -37,7 +37,7 @@ public partial class ChatBox : UIWidget
     private bool _chatStackEnabled => _chatStackAmount > 0;
     private List<ChatStackData> _chatStackList;
 
-    private bool _chatFontEnabled; // WWDP EDIT
+    private bool _chatFontEnabled = true; // WWDP EDIT
 
     public ChatBox()
     {
@@ -62,7 +62,7 @@ public partial class ChatBox : UIWidget
         //    _chatStackAmount = 0;
         _chatStackList = new(_chatStackAmount);
         _cfg.OnValueChanged(CCVars.ChatStackLastLines, UpdateChatStack, true);
-        _cfg.OnValueChanged(WhiteCVars.ChatFancyFont, value => { _chatFontEnabled = value; Repopulate(); }, true); // WWDP EDIT
+        //_cfg.OnValueChanged(WhiteCVars.ChatFancyFont, value => { _chatFontEnabled = value; Repopulate(); }, true); // WWDP EDIT
     }
 
     private void UpdateChatStack(int value)
@@ -176,7 +176,7 @@ public partial class ChatBox : UIWidget
     public void AddLine(string message, Color color, int repeat = 0)
     {
         // WWDP EDIT START // I FUCKING HATE THIS ENGINE
-        if (_chatFontEnabled)
+        if (_chatFontEnabled) // .2 edit: this is always true because the cvar broke, but i ALWAYS want this on so everyone else can suffer.
         {
             message = $"[font=\"Chat\"]{message}[/font]";
             message = message.Replace("[font size=", "[font=\"Chat\" size="); // AAAAAAAAAAAAAAAA
