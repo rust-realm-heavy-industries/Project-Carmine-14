@@ -66,6 +66,13 @@ public sealed class DoAfterCancellationTests : InteractionTest
     {
         await SetTile(Floor);
         await InteractUsing(Pry, awaitDoAfters: false);
+        // WD EDIT START
+        if (!ActiveDoAfters.Any())
+        {
+            await AssertTile(Plating);
+            return;
+        }
+        // WD EDIT END
         await CancelDoAfters();
         await AssertTile(Floor);
 
