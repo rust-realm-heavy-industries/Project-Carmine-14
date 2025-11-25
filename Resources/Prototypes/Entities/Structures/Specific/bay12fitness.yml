@@ -30,16 +30,6 @@
 #TriggerOnCollide ?
 
 - type: entity
-  id: FitnessPunchingBagBopClown
-  parent: BaseStructure
-  name: clown bop bag
-  description: A fitness training bag with a clown printed on it.
-  components:
-  - type: Sprite
-    sprite: Structures/Specific/fitness.rsi
-    state: bopbag
-
-- type: entity
   id: FitnessPunchingBag
   parent: BaseStructure
   name: punching bag
@@ -58,16 +48,6 @@
   - type: Sprite
     sprite: Structures/Specific/fitness.rsi
     state: punchingbagcaptain
-
-- type: entity
-  id: FitnessPunchingBagSyndicate
-  parent: FitnessPunchingBag
-  suffix: syndicate
-  description: A fitness training bag with a syndicate agent printed on it.
-  components:
-  - type: Sprite
-    sprite: Structures/Specific/fitness.rsi
-    state: punchingbagsyndie
 
 - type: entity
   id: FitnessPunchingBagWizard

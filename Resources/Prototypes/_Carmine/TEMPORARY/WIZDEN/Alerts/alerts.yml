@@ -19,7 +19,7 @@
     - alertType: Corporeal
     - alertType: Stun
     - alertType: KnockedDown # goobstation
-    - category: Breathing # Vox gang not calling this oxygen
+    - category: Breathing
     - category: Pressure
     - alertType: Bleed
     - category: Temperature

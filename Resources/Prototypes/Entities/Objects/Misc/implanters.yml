@@ -64,16 +64,6 @@
         - Trash
 
 - type: entity
-  parent: Implanter
-  id: ImplanterAdmeme
-  suffix: Admeme
-  components:
-  - type: Implanter
-    # go wild with sentient chairs with macrobombs
-    whitelist: null
-    blacklist: null
-
-- type: entity
   id: BaseImplantOnlyImplanterSyndi
   parent: Implanter
   description: A compact disposable syringe exclusively designed for the injection of subdermal implants.
@@ -167,14 +157,6 @@
   components:
     - type: Implanter
       implant: MicroBombImplant
-
-- type: entity
-  id: MacroBombImplanter
-  name: macro-bomb implanter
-  parent: BaseImplantOnlyImplanterSyndi
-  components:
-    - type: Implanter
-      implant: MacroBombImplant
 
 - type: entity
   id: DeathRattleImplanter

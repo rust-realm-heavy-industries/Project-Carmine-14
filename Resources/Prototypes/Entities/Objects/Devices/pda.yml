@@ -156,7 +156,7 @@
     id: CaptainIDCard
     state: pda-captain
     penSlot:
-      startingItem: PenCap
+      startingItem: Pen
       priority: -1
       whitelist:
         tags:
@@ -174,35 +174,7 @@
       collection: MetalThud
 
 - type: entity
-  parent: BasePDA
-  id: CentcomPDA
-  name: CentCom PDA
-  description: Light green sign of walking bureaucracy.
-  components:
-  - type: Pda
-    id: PassengerIDCard
-    state: pda-centcom
-    penSlot:
-      startingItem: PenCentcom
-      whitelist:
-        tags:
-        - Write
-  - type: PdaBorderColor
-    borderColor: "#00842e"
-  - type: Icon
-    state: pda-captain
-  - type: CartridgeLoader
-    uiKey: enum.PdaUiKey.Key
-    preinstalled:
-      - CrewManifestCartridge
-      - NotekeeperCartridge
-      - NewsReaderCartridge
-      - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
-      - LogProbeCartridge
-      - NanoChatCartridge # DeltaV
-
-- type: entity
-  parent: CentcomPDA
+  parent: CaptainPDA
   id: AdminPDA
   name: Admin PDA
   description: If you are not an admin please return this PDA to the nearest admin.
@@ -219,7 +191,6 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NewsReaderCartridge
-      - LogProbeCartridge
       - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
       - StockTradingCartridge # Delta-V
       - NanoChatCartridge # DeltaV

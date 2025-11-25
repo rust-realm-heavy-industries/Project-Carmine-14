@@ -75,6 +75,5 @@
     freezer: Civilian
     maintenance: Civilian
     medical: Medical
-    science: Epistemics
     security: Security
     virology: Medical

@@ -39,49 +39,6 @@
   - type: EmitSoundOnSpawn
     sound:
       path: /Audio/Psionics/shadeskip_power.ogg
-
-- type: entity
-  id: EffectFlashVoidbornShadeskip
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: PointLight
-    radius: 5
-    energy: 3.5
-    color: "#7100bd"
-  - type: TimedDespawn
-    lifetime: 3
-  - type: EmitSoundOnSpawn
-    sound:
-      path: /Audio/Effects/Voidborn/shadeskip.ogg
-
-- type: entity
-  id: EffectFlashVoidbornDarkSwapOn
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: PointLight
-    radius: 5
-    energy: 3.5
-    color: "#7100bd"
-  - type: TimedDespawn
-    lifetime: 3
-  - type: EmitSoundOnSpawn
-    sound:
-      path: /Audio/Effects/Voidborn/darkswapon.ogg
-
-- type: entity
-  id: EffectFlashVoidbornDarkSwapOff
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: PointLight
-    radius: 5
-    energy: 3.5
-    color: "#7100bd"
-  - type: TimedDespawn
-    lifetime: 3
-  - type: EmitSoundOnSpawn
-    sound:
-      path: /Audio/Effects/Voidborn/darkswapoff.ogg
-
 - type: entity
   id: EffectPyrokineticFlare
   categories: [ HideSpawnMenu ]

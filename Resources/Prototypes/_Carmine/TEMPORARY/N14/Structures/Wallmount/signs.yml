@@ -1,14 +1,5 @@
 
 # 32x32
-- type: entity
-  parent: N14SignBase
-  id: N14SignBar
-  name: bar sign
-  description: Bar! Get drunk here.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Wallmounts/signs_32x32.rsi
-    state: bar
 
 - type: entity
   parent: N14SignBar
@@ -59,16 +50,6 @@
 
 - type: entity
   parent: N14SignBase
-  id: N14SignForRent
-  name: for rent sign
-  description: A sign advertising a place for rent.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Wallmounts/signs_32x32.rsi
-    state: rent
-
-- type: entity
-  parent: N14SignBase
   id: N14SignNotice
   name: notice sign
   description: NOTICE!
@@ -77,38 +58,7 @@
     sprite: _Nuclear14/Structures/Wallmounts/walldecor.rsi
     state: notice_sign
 
-- type: entity
-  parent: N14SignNotice
-  id: N14SignDanger
-  name: danger sign
-  description: Danger.
-  components:
-  - type: Sprite
-    state: danger_sign
-
 # 64x32
-- type: entity
-  parent: N14SignBar
-  id: N14SignBazaarOn
-  name: bazaar sign
-  description: A sign for a bazaar. How bizarre.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Wallmounts/signs_64x32.rsi
-    state: bazaar_on
-  - type: PointLight
-    radius: 2
-    energy: 1
-    color: '#ff8000'
-
-- type: entity
-  parent: N14SignBazaarOn
-  id: N14SignHotel
-  name: hotel sign
-  description: A sign for a hotel. Get a room!
-  components:
-  - type: Sprite
-    state: hotel
 
 - type: entity
   parent: N14SignBazaarOn

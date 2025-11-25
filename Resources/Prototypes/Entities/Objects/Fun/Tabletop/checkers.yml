@@ -33,6 +33,7 @@
 # The pieces
 - type: entity
   id: *pieceWhite
+  categories: [ HideSpawnMenu ]
   name: white checker piece
   parent: BaseTabletopPiece
   components:
@@ -42,6 +43,7 @@
 
 - type: entity
   id: *crownWhite
+  categories: [ HideSpawnMenu ]
   name: white checker crown
   parent: BaseTabletopPiece
   components:
@@ -51,6 +53,7 @@
 
 - type: entity
   id: *pieceBlack
+  categories: [ HideSpawnMenu ]
   name: black checker piece
   parent: BaseTabletopPiece
   components:
@@ -60,6 +63,7 @@
 
 - type: entity
   id: *crownBlack
+  categories: [ HideSpawnMenu ]
   name: black checker crown
   parent: BaseTabletopPiece
   components:

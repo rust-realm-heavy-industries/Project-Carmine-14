@@ -46,27 +46,6 @@
 
 - type: entity
   parent: FloorCarpetItemRed
-  id: FloorCarpetItemBlue
-  name: blue carpet
-  suffix: Item
-  components:
-  - type: Sprite
-    state: carpet-blue
-  - type: Item
-    heldPrefix: carpet-blue
-  - type: Stack
-    stackType: FloorCarpetBlue
-  - type: Tag
-    tags:
-    - CarpetBlue
-  - type: SpawnAfterInteract #Nuke after convert to FloorTile
-    prototype: CarpetBlue
-    doAfter: 0.5
-    removeOnInteract: true
-  - type: Material
-
-- type: entity
-  parent: FloorCarpetItemRed
   id: FloorCarpetItemGreen
   name: green carpet
   suffix: Item
@@ -103,27 +82,6 @@
     - CarpetOrange
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetOrange
-    doAfter: 0.5
-    removeOnInteract: true
-  - type: Material
-
-- type: entity
-  parent: FloorCarpetItemRed
-  id: FloorCarpetItemSkyBlue
-  name: sky blue carpet
-  suffix: Item
-  components:
-  - type: Sprite
-    state: carpet-skyblue
-  - type: Item
-    heldPrefix: carpet-skyblue
-  - type: Stack
-    stackType: FloorCarpetSkyBlue
-  - type: Tag
-    tags:
-    - CarpetSBlue
-  - type: SpawnAfterInteract #Nuke after convert to FloorTile
-    prototype: CarpetSBlue
     doAfter: 0.5
     removeOnInteract: true
   - type: Material

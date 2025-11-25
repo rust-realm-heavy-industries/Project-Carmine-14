@@ -37,19 +37,6 @@
     stateDoorOpen: emergency_open
     stateDoorClosed: emergency_door
 
-# Emergency N2 closet
-- type: entity
-  id: ClosetEmergencyN2
-  name: emergency nitrogen closet
-  parent: ClosetSteelBase
-  description: It's full of life-saving equipment. Assuming, that is, that you breathe nitrogen.
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: fire
-    stateDoorOpen: fire_open
-    stateDoorClosed: n2_door
-
 # Fire safety closet
 - type: entity
   id: ClosetFire
@@ -75,20 +62,6 @@
     stateBaseClosed: bomb
     stateDoorOpen: bomb_open
     stateDoorClosed: bomb_door
-
-# Janitorial bomb suit closet
-- type: entity
-  id: ClosetJanitorBomb
-  name: janitorial bomb suit closet
-  parent: ClosetSteelBase
-  description: It's a storage unit for janitorial explosion-protective suits.
-  suffix: DO NOT MAP
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: janitor_bomb
-    stateDoorOpen: janitor_bomb_open
-    stateDoorClosed: janitor_bomb_door
 
 # Biohazard
 

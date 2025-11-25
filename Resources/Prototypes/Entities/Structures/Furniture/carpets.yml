@@ -333,32 +333,3 @@
               FloorCarpetItemWhite:
                 min: 1
                 max: 1
-
-# TODO nuke this once tiles support rotating sprites
-- type: entity
-  id: CarpetChapel
-  parent: BaseStructure
-  name: "chapel's carpet"
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Carpets/chapel_carpet.rsi
-    state: chapel
-    drawdepth: FloorTiles
-  - type: Icon
-    sprite: Structures/Furniture/Carpets/chapel_carpet.rsi
-    state: chapel
-  - type: Tag
-    tags: [ Carpet ]
-  - type: Physics
-    canCollide: false
-  - type: Fixtures
-  - type: Damageable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 10
-        behaviors:
-          - !type:DoActsBehavior
-            acts: [ "Destruction" ]

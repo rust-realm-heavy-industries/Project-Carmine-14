@@ -58,51 +58,11 @@
   - type: Weldable
 
 - type: entity
-  parent: [ N14ClosetGrey1 ]
-  id: N14ClosetGrey1Refilling
-  suffix: Refilling,Domestic,Random
-
-- type: entity
-  parent: [ N14ClosetGrey1 ]
-  id: N14LootClosetGrey1
-  suffix: Loot,Domestic,Random
-
-- type: entity
-  parent: [ N14ClosetGrey1 ]
-  id: N14ClosetGrey1RefillingGeneric
-  suffix: Refilling,Generic,Random
-
-- type: entity
-  parent: [ N14ClosetGrey1 ]
-  id: N14LootGenericClosetGrey1
-  suffix: Loot,Generic,Random
-
-- type: entity
   id: N14ClosetGrey2
   parent: N14ClosetBaseW
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Storage/Closets/closetgrey2.rsi
-
-- type: entity
-  parent: [ N14ClosetGrey2 ]
-  id: N14ClosetGrey2Refilling
-  suffix: Refilling,Domestic,Random
-
-- type: entity
-  parent: [ N14ClosetGrey2 ]
-  id: N14LootClosetGrey2
-  suffix: Loot,Domestic,Random
-
-- type: entity
-  parent: [ N14ClosetGrey2 ]
-  id: N14ClosetGrey2RefillingGeneric
-  suffix: Refilling,Generic,Random
-
-- type: entity
-  parent: [ N14ClosetGrey2 ]
-  id: N14LootGenericClosetGrey2
-  suffix: Loot,Generic,Random
 
 - type: entity
   parent: N14ClosetBaseW
@@ -114,26 +74,6 @@
     sprite: _Nuclear14/Structures/Storage/Closets/closetold.rsi
 
 - type: entity
-  parent: [ N14ClosetRusty ]
-  id: N14ClosetRustyRefilling
-  suffix: Refilling,Domestic,Random
-
-- type: entity
-  parent: [ N14ClosetRusty ]
-  id: N14LootClosetRusty
-  suffix: Loot,Domestic,Random
-
-- type: entity
-  parent: [ N14ClosetRusty ]
-  id: N14ClosetRustyRefillingGeneric
-  suffix: Refilling,Generic,Random
-
-- type: entity
-  parent: [ N14ClosetRusty ]
-  id: N14LootGenericClosetRusty
-  suffix: Loot,Generic,Random
-
-- type: entity
   parent: N14ClosetBaseW
   id: N14ClosetGunCabinet
   name: gun cabinet
@@ -141,45 +81,6 @@
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Storage/Closets/guncabinet.rsi
-
-- type: entity
-  parent: [ N14ClosetGunCabinet ]
-  id: N14ClosetGunCabinetRefilling
-  suffix: Refilling,Military,Random
-
-- type: entity
-  parent: [ N14ClosetGunCabinet ]
-  id: N14LootClosetGunCabinet
-  suffix: Loot,Military,Random
-
-- type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetFridgeDirty
-  name: fridge
-  description: A dirty old fridge for keeping food fresh
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Closets/fridgedirty.rsi
-  - type: ExplosionResistance
-    damageCoefficient: 0.90
-  - type: AntiRottingContainer
-
-- type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetFridgeWideDirty
-  name: fridge
-  description: A dirty old fridge for keeping food fresh
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Closets/fridgewidedirty.rsi
-  - type: ExplosionResistance
-    damageCoefficient: 0.90
-  - type: AntiRottingContainer
-
-- type: entity
-  parent: [ N14ClosetFridgeDirty, N14ClosetFridgeWideDirty ]
-  id: N14LootClosetFridge
-  suffix: Loot,Domestic,Random
 
 - type: entity
   parent: N14ClosetBaseW
@@ -201,68 +102,7 @@
         layer:
         - MachineLayer
 
-- type: entity
-  parent: [ N14ClosetDouble ]
-  id: N14ClosetDoubleRefilling
-  suffix: Refilling,Domestic,Random
-
-- type: entity
-  parent: [ N14ClosetDouble ]
-  id: N14LootClosetDouble
-  suffix: Loot,Domestic,Random
-
-- type: entity
-  parent: [ N14ClosetDouble ]
-  id: N14ClosetDoubleRefillingGeneric
-  suffix: Refilling,Generic,Random
-
-- type: entity
-  parent: [ N14ClosetDouble ]
-  id: N14LootGenericClosetDouble
-  suffix: Loot,Generic,Random
-
 # Wooden Closets
-
-- type: entity
-  parent: N14ClosetBase
-  id: N14ClosetCabinetWood
-  name: cabinet
-  description: An old pre-war wooden cabinet.
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Closets/cabinet.rsi
-  - type: Damageable
-    damageModifierSet: Wood
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 30
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroy
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: Tag
-    tags:
-    - Wooden
-
-- type: entity
-  parent: [ N14ClosetCabinetWood ]
-  id: N14ClosetCabinetWoodRefilling
-  suffix: Refilling,Domestic,Random
-
-- type: entity
-  parent: [ N14ClosetCabinetWood ]
-  id: N14LootClosetCabinetWood
-  suffix: Loot,Domestic,Random
 
 - type: entity
   parent: N14ClosetBaseW
@@ -279,21 +119,6 @@
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Storage/Closets/closetgeneric.rsi
-
-- type: entity
-  parent: [ N14ClosetGeneric ]
-  id: N14LootClosetGeneric
-  suffix: Loot,Generic,Random
-
-- type: entity
-  parent: [ N14ClosetGeneric ]
-  id: N14LootMilitaryClosetGeneric
-  suffix: Loot,Military,Random
-
-- type: entity
-  parent: [ N14ClosetGeneric ]
-  id: N14ClosetGenericRefillingMilitary
-  suffix: Refilling,Military,Random
 
 # Wallmounted Closets
 - type: entity
@@ -353,13 +178,3 @@
           SheetSteel1:
             min: 1
             max: 1
-
-- type: entity
-  parent: [ N14ClosetWallMedicabinet ]
-  id: N14ClosetWallMedicabinetRefilling
-  suffix: Refilling,Medical,Random
-
-- type: entity
-  parent: [ N14ClosetWallMedicabinet ]
-  id: N14LootClosetWallMedicabinet
-  suffix: Loot,Medical,Random

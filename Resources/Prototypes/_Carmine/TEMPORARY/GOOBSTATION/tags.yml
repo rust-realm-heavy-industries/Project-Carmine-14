@@ -11,9 +11,6 @@
   id: ClownEmergencyOxygenTank
 
 - type: Tag
-  id: EmergencyNitrogenTank
-
-- type: Tag
   id: SecurityBreathMask
 
 - type: Tag

@@ -19,10 +19,6 @@
 
 # # 2023-10-05
 # FoodMothTomatoSauce: null
-# LockerEpistemicsFilled: null
-# LockerMystagogueFilled: null
-# LockerEpistemics: LockerScientist
-# LockerMystagogue: LockerResearchDirector
 # HyperlinkBookAlerts: BookRandom
 # HyperlinkBookAtmos: BookAtmosDistro
 # HyperlinkBookBartending: BookBartendersManual
@@ -37,12 +33,9 @@
 # HyperlinkBookShuttle: BookRandom
 # HyperlinkBookSupernanny: BookHowToSurvive
 # SpawnPointCataloguer: SpawnPointLibrarian
-# SpawnPointCyborg: SpawnPointBorg
-# SpawnPointMedicalCyborg: null
 # SpawnPointEpistemologist: SpawnPointScientist
 # SpawnPointSalvageTechnician: SpawnPointSalvageSpecialist
 # SpawnPointValet: SpawnPointServiceWorker
-# VendingMachineEpiDrobe: VendingMachineSciDrobe
 # PlushieMoffRandom: PlushieMothRandom
 # PlushieMoffbar: PlushieMothBartender
 # PlushieMoffsician: PlushieMothMusician

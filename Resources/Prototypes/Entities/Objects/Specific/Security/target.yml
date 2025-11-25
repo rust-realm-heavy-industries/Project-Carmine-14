@@ -69,16 +69,6 @@
     sprite: Objects/Specific/Security/target.rsi
     state: target_s
 
-- type: entity
-  name: clown target
-  id: TargetClown
-  parent: BaseTarget
-  description: A shooting target. This one is a clown.
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Security/target.rsi
-    state: target_c
-
 # put it on a salvage or something
 - type: entity
   name: strange target

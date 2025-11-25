@@ -23,12 +23,3 @@
   components:
     - type: Sprite
       sprite: Clothing/Back/Duffels/medical.rsi
-
-- type: entity
-  parent: ClothingBackpackDuffel
-  id: ClothingBackpackDuffelCaptain
-  name: captain's duffel bag
-  description: A large duffel bag for holding extra captainly goods.
-  components:
-    - type: Sprite
-      sprite: Clothing/Back/Duffels/captain.rsi
