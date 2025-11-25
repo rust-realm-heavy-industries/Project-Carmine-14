@@ -107,6 +107,8 @@ ui-options-fps-counter = Show FPS counter
 ui-options-mood-visual-effects = Enable the mood system's visual effects
 ui-options-vp-width = Viewport width: { $width }
 ui-options-hud-layout = HUD layout:
+ui-options-film-grain = Grain
+ui-options-film-grain-strength = Grain intensity: { $strength }
 
 ## Controls menu
 
