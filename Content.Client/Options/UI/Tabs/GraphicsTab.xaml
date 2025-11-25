@@ -48,7 +48,7 @@
                 <Label Name="FilmGrainText"/>
                 <Control MinSize="4 0" />
                 <Slider Name="FilmGrainSlider"
-                        MinValue="100"
+                        MinValue="50"
                         MaxValue="500" 
                         Rounded="True"
                         MinWidth="500" />
