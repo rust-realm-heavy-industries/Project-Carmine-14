@@ -7,7 +7,7 @@
 
         <BoxContainer Name="Loaded" Orientation="Vertical" Visible="False">
 
-            <BoxContainer Name="ViewBox" Orientation="Horizontal" HorizontalAlignment="Right">
+            <BoxContainer Name="ViewBox" Orientation="Horizontal" HorizontalAlignment="Center">
 
             </BoxContainer>
             <Label StyleClasses="MenuLabel15" Name="Summary" HorizontalAlignment="Center" Margin="3 3"/>
