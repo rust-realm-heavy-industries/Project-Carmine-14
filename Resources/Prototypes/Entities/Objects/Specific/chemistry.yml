@@ -320,13 +320,6 @@
     - Trash
 
 - type: entity
-  parent: BaseSyringe
-  id: PrefilledSyringe
-  components:
-  - type: Injector
-    toggleState: Inject
-
-- type: entity
   name: pill
   parent: BaseItem
   id: Pill

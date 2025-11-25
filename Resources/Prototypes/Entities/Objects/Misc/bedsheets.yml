@@ -55,16 +55,6 @@
     sprite: Clothing/Neck/Bedsheets/brown.rsi
 
 - type: entity
-  id: BedsheetGreen
-  parent: BedsheetBase
-  name: green bedsheet
-  components:
-  - type: Sprite
-    state: sheetgreen
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/green.rsi
-
-- type: entity
   id: BedsheetGrey
   parent: BedsheetBase
   name: grey bedsheet
@@ -86,47 +76,6 @@
     sprite: Clothing/Neck/Bedsheets/medical.rsi
 
 - type: entity
-  id: BedsheetMime
-  parent: BedsheetBase
-  name: mime's bedsheet
-  description: A very soothing striped blanket.  All the noise just seems to fade out when you're under the covers in this.
-  components:
-  - type: Sprite
-    state: sheetmime
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/mime.rsi
-
-- type: entity
-  id: BedsheetOrange
-  parent: BedsheetBase
-  name: orange bedsheet
-  components:
-  - type: Sprite
-    state: sheetorange
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/orange.rsi
-
-- type: entity
-  id: BedsheetPurple
-  parent: BedsheetBase
-  name: purple bedsheet
-  components:
-  - type: Sprite
-    state: sheetpurple
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/purple.rsi
-
-- type: entity
-  id: BedsheetRainbow
-  parent: BedsheetBase
-  name: rainbow bedsheet
-  components:
-  - type: Sprite
-    state: sheetrainbow
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/rainbow.rsi
-
-- type: entity
   id: BedsheetRed
   parent: BedsheetBase
   name: red bedsheet
@@ -137,17 +86,6 @@
     sprite: Clothing/Neck/Bedsheets/red.rsi
 
 - type: entity
-  id: BedsheetSyndie
-  parent: BedsheetBase
-  name: syndicate bedsheet
-  description: It has a syndicate emblem and it has an aura of evil.
-  components:
-  - type: Sprite
-    state: sheetsyndie
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/syndie.rsi
-
-- type: entity
   id: BedsheetWhite
   parent: BedsheetBase
   name: white bedsheet
@@ -156,17 +94,6 @@
     state: sheetwhite
   - type: Clothing
     sprite: Clothing/Neck/Bedsheets/white.rsi
-
-- type: entity
-  id: BedsheetWiz
-  parent: BedsheetBase
-  name: wizard's bedsheet
-  description: A special fabric enchanted with magic so you can have an enchanted night. It even glows!
-  components:
-  - type: Sprite
-    state: sheetwiz
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/wiz.rsi
 
 - type: entity
   id: BedsheetYellow

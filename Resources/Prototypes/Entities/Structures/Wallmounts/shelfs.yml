@@ -149,44 +149,6 @@
     graph: Shelf
     node: ShelfMetal
 
-# Reinforced
-- type: entity
-  id: ShelfRWood
-  parent: ShelfBaseReinforced
-  name: sturdy wood shelf
-  description: A safe place to put your favorite bottle of whiskey
-  components:
-  - type: Sprite
-    sprite: Structures/Storage/Shelfs/wood.rsi
-    state: base
-    layers:
-    - state: rbase
-      map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
-      map: ["enum.StorageVisualLayers.Door"]
-    - state: locked
-      map: ["enum.LockVisualLayers.Lock"]
-      shader: unshaded
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 215
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroyHeavy
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank:
-            min: 2
-            max: 5
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: Construction
-    graph: Shelf
-    node: ShelfRWood
-
 - type: entity
   id: ShelfRMetal
   parent: ShelfBaseReinforced

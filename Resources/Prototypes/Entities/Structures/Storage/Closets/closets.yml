@@ -78,39 +78,6 @@
     stateDoorOpen: bio_open
     stateDoorClosed: bio_door
 
-# Virology variant
-- type: entity
-  id: ClosetL3Virology
-  parent: ClosetL3
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: bio_viro
-    stateDoorOpen: bio_viro_open
-    stateDoorClosed: bio_viro_door
-
-# Security variant
-- type: entity
-  id: ClosetL3Security
-  parent: ClosetL3
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: bio_sec
-    stateDoorOpen: bio_sec_open
-    stateDoorClosed: bio_sec_door
-
-# Janitor variant
-- type: entity
-  id: ClosetL3Janitor
-  parent: ClosetL3
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: bio_jan
-    stateDoorOpen: bio_jan_open
-    stateDoorClosed: bio_jan_door
-
 # Maintenance closet
 - type: entity
   id: ClosetMaintenance
@@ -135,47 +102,3 @@
     stateBaseClosed: syndicate
     stateDoorOpen: syndicate_open
     stateDoorClosed: syndicate_door
-
-# Bluespace closet
-- type: entity
-  id: ClosetBluespace
-  name: suspicious closet
-  suffix: Bluespace
-  parent: ClosetMaintenance
-  description: It's a storage unit... right?
-  components:
-    - type: BluespaceLocker
-      pickLinksFromSameMap: true
-      minBluespaceLinks: 1
-      behaviorProperties:
-        bluespaceEffectOnTeleportSource: true
-      autoLinksBidirectional: true
-      autoLinksUseProperties: true
-      autoLinkProperties:
-        bluespaceEffectOnTeleportSource: true
-
-# Unstable bluespace closet
-- type: entity
-  id: ClosetBluespaceUnstable
-  name: suspicious closet
-  suffix: Bluespace unstable
-  parent: ClosetMaintenance
-  description: It's a storage unit... right?
-  components:
-    - type: BluespaceLocker
-      pickLinksFromSameMap: true
-      minBluespaceLinks: 1
-      behaviorProperties:
-        clearLinksDebluespaces: true
-        transportEntities: false
-        bluespaceEffectOnTeleportSource: true
-        clearLinksEvery: 2
-      autoLinksBidirectional: true
-      autoLinksUseProperties: true
-      usesSinceLinkClear: -1 # hacky
-      autoLinkProperties:
-        invalidateOneWayLinks: true
-        transportEntities: false
-        bluespaceEffectOnTeleportSource: true
-        destroyAfterUses: 2
-        destroyType: DeleteComponent

@@ -448,7 +448,7 @@
 
 - type: entity
   name: soil
-  id: hydroponicsSoil
+  id: hydroponicsSoil #fetid code since this is the parent to hydrotrays
   placement:
     mode: SnapgridCenter
   components:
@@ -1265,7 +1265,7 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
-    
+
 - type: entity
   id: Dresser #cull for the n14 one
   parent: BaseStructure
@@ -1321,7 +1321,7 @@
   components:
   - type: StaticPrice
     price: 15
-    
+
 - type: entity #used by shitmed prosthetics
   id: PartIPC
   parent: BaseItem
@@ -1357,7 +1357,7 @@
       - !type:GibPartBehavior { }
   - type: StaticPrice
     price: 100
-    
+
 - type: entity
   name: green glowstick
   parent: BaseItem
@@ -1423,3 +1423,39 @@
     - type: Tag
       tags:
       - Trash
+
+
+# Wooden Doors
+- type: entity
+  parent: N14BaseDoor
+  id: N14DoorMakeshift #TODO: KILL AND CONVERT TO PROPER BASE PROTOTYPE
+  name: makeshift door
+  description: It's a wooden door. It looks dirty and handmade.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Doors/FalloutDoors/wooddoor.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: N14DoorGraph
+    node: woodDoorMakeshift

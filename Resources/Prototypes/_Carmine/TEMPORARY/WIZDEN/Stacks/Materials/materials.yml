@@ -55,20 +55,6 @@
   maxCount: 30
 
 - type: stack
-  id: Bananium
-  name: bananium
-  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: bananium }
-  spawn: MaterialBananium1
-  maxCount: 10
-
-- type: stack
-  id: MeatSheets
-  name: meat sheet
-  icon: { sprite: /Textures/Objects/Materials/Sheets/meaterial.rsi, state: meat }
-  spawn: MaterialSheetMeat1
-  maxCount: 30
-
-- type: stack
   id: WebSilk
   name: silk
   icon: { sprite: /Textures/Objects/Materials/silk.rsi, state: icon }

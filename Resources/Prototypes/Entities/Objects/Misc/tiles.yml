@@ -275,22 +275,6 @@
     stackType: FloorTileDirty
 
 - type: entity
-  name: rock vault tile
-  parent: FloorTileItemBase
-  id: FloorTileItemRockVault
-  components:
-  - type: Sprite
-    state: rockvault
-  - type: Item
-    heldPrefix: steel
-  - type: FloorTile
-    outputs:
-      - Plating
-      - FloorRockVault
-  - type: Stack
-    stackType: FloorTileRockVault
-
-- type: entity
   name: mining tile
   parent: FloorTileItemBase
   id: FloorTileItemMining
@@ -375,22 +359,6 @@
   - type: Stack
     stackType: FloorTileGrayConcrete
 
-- type: entity
-  name: office carpet floor
-  parent: FloorTileItemBase
-  id: FloorTileItemCarpetOffice
-  components:
-  - type: Sprite
-    state: carpetoffice
-  - type: Item
-    heldPrefix: generic
-  - type: FloorTile
-    outputs:
-      - Plating
-      - FloorCarpetOffice
-  - type: Stack
-    stackType: FloorTileStackCarpetOffice
-
 # Shuttles
 - type: entity
   name: white shuttle floor
@@ -407,54 +375,6 @@
       - FloorShuttleWhite
   - type: Stack
     stackType: FloorTileStackShuttleWhite
-
-- type: entity
-  name: orange shuttle floor
-  parent: FloorTileItemBase
-  id: FloorTileItemShuttleOrange
-  components:
-  - type: Sprite
-    state: shuttleorange
-  - type: Item
-    heldPrefix: shuttleorange
-  - type: FloorTile
-    outputs:
-      - Plating
-      - FloorShuttleOrange
-  - type: Stack
-    stackType: FloorTileStackShuttleOrange
-
-- type: entity
-  name: purple shuttle floor
-  parent: FloorTileItemBase
-  id: FloorTileItemShuttlePurple
-  components:
-  - type: Sprite
-    state: shuttlepurple
-  - type: Item
-    heldPrefix: shuttlepurple
-  - type: FloorTile
-    outputs:
-      - Plating
-      - FloorShuttlePurple
-  - type: Stack
-    stackType: FloorTileStackShuttlePurple
-
-- type: entity
-  name: red shuttle floor
-  parent: FloorTileItemBase
-  id: FloorTileItemShuttleRed
-  components:
-  - type: Sprite
-    state: shuttlered
-  - type: Item
-    heldPrefix: shuttlered
-  - type: FloorTile
-    outputs:
-      - Plating
-      - FloorShuttleRed
-  - type: Stack
-    stackType: FloorTileStackShuttleRed
 
 - type: entity
   name: grey shuttle floor
@@ -521,22 +441,3 @@
       - FloorTechMaint3
   - type: Stack
     stackType: FloorTileGratingMaint
-
-- type: entity
-  name: web tile
-  parent: FloorTileItemBase
-  id: FloorTileItemWeb
-  components:
-  - type: Sprite
-    sprite: Objects/Tiles/web.rsi
-    state: icon
-  - type: FloorTile
-    outputs:
-      - FloorWebTile
-  - type: Stack
-    stackType: FloorTileWeb
-  - type: Construction
-    graph: WebObjects
-    node: tile
-
-# Faux science tiles

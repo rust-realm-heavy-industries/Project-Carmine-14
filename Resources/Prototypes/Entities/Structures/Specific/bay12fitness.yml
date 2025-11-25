@@ -38,23 +38,3 @@
   - type: Sprite
     sprite: Structures/Specific/fitness.rsi
     state: punchingbag
-
-- type: entity
-  id: FitnessPunchingBagCaptain
-  parent: FitnessPunchingBag
-  suffix: captain
-  description: A fitness training bag with a captain printed on it.
-  components:
-  - type: Sprite
-    sprite: Structures/Specific/fitness.rsi
-    state: punchingbagcaptain
-
-- type: entity
-  id: FitnessPunchingBagWizard
-  parent: FitnessPunchingBag
-  suffix: wizard
-  description: A fitness training bag with a wizard printed on it.
-  components:
-  - type: Sprite
-    sprite: Structures/Specific/fitness.rsi
-    state: punchingbagwizard

@@ -657,13 +657,6 @@ entities:
     - type: Transform
       pos: -14.5,-7.5
       parent: 179
-- proto: BaseUplinkRadioDebug
-  entities:
-  - uid: 732
-    components:
-    - type: Transform
-      pos: 0.6038008,7.5209107
-      parent: 179
 - proto: Beaker
   entities:
   - uid: 174
@@ -2916,54 +2909,6 @@ entities:
         - 0
         - 0
         - 0
-- proto: CrateMedical
-  entities:
-  - uid: 131
-    components:
-    - type: Transform
-      pos: 31.5,-1.5
-      parent: 179
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14957
-        moles:
-        - 2.9923203
-        - 11.2568245
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-  - uid: 132
-    components:
-    - type: Transform
-      pos: 32.5,-1.5
-      parent: 179
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14957
-        moles:
-        - 2.9923203
-        - 11.2568245
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
 - proto: CrewMonitoringServer
   entities:
   - uid: 1183
@@ -4167,13 +4112,6 @@ entities:
     - type: Transform
       pos: 8.5,18.5
       parent: 179
-- proto: ResearchDiskDebug
-  entities:
-  - uid: 54
-    components:
-    - type: Transform
-      pos: 9.532393,18.446417
-      parent: 179
 - proto: Screen
   entities:
   - uid: 1192
@@ -4409,13 +4347,6 @@ entities:
     components:
     - type: Transform
       pos: 6.985283,16.424004
-      parent: 179
-- proto: Stimpack
-  entities:
-  - uid: 462
-    components:
-    - type: Transform
-      pos: 3.6877818,5.312015
       parent: 179
 - proto: Stool
   entities:

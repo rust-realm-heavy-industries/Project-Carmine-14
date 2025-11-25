@@ -104,7 +104,6 @@
   - type: Inventory
     templateId: aghost
   - type: InventorySlots
-  - type: SupermatterImmune
   - type: BypassInteractionChecks
   - type: PsionicInsulation
 

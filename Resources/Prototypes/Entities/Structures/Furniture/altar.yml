@@ -261,28 +261,6 @@
     node: convert
 
 - type: entity
-  id: AltarConvertOrange
-  parent: AltarBase
-  name: orange altar
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
-    layers:
-    - state: orange
-    - state: lightning
-      shader: unshaded
-  - type: Icon
-    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
-    state: orange
-  - type: PointLight
-    radius: 1.5
-    energy: 1
-    color: "#fbceb1"
-  - type: Construction #Nyano
-    graph: Altar
-    node: orange
-
-- type: entity
   id: AltarConvertRed
   parent: AltarBase
   name: red altar
@@ -325,28 +303,6 @@
   - type: Construction #Nyano
     graph: Altar
     node: white
-
-- type: entity
-  id: AltarConvertYellow
-  parent: AltarBase
-  name: yellow altar
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
-    layers:
-    - state: yellow
-    - state: lightning
-      shader: unshaded
-  - type: Icon
-    sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
-    state: yellow
-  - type: PointLight
-    radius: 1.5
-    energy: 1
-    color: "#fbceb1"
-  - type: Construction #Nyano
-    graph: Altar
-    node: yellow
 
 - type: entity
   id: AltarHeaven

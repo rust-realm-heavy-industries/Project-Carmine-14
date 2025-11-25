@@ -133,23 +133,6 @@
 
 - type: entity
   parent: BaseVendingMachineRestock
-  id: VendingMachineRestockTankDispenser
-  name: tank dispenser restock box
-  description: Capable of replacing tanks in a gas tank dispenser. Handle with care.
-  components:
-  - type: VendingMachineRestock
-    canRestock:
-    - TankDispenserEVAInventory
-    - TankDispenserEngineeringInventory
-  - type: Sprite
-    layers:
-    - state: base
-    - state: green_bit
-      shader: unshaded
-    - state: refill_tanks
-
-- type: entity
-  parent: BaseVendingMachineRestock
   id: VendingMachineRestockVendomat
   name: Vendomat restock box
   description: A box full of parts for various machinery. Load it into a Vendomat to begin.

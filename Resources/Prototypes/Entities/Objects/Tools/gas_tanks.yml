@@ -217,19 +217,6 @@
       - ExtendedEmergencyOxygenTank
 
 - type: entity
-  parent: DoubleEmergencyOxygenTank
-  id: DoubleEmergencyPlasmaTank
-  name: plasma internals tank
-  description: A tank of plasma designed to be internals for Plasmamen.
-  components:
-  - type: Sprite
-    sprite: Objects/Tanks/plasmaman.rsi
-  - type: Item
-    sprite: Objects/Tanks/plasmaman.rsi
-  - type: Clothing
-    sprite: Objects/Tanks/plasmaman.rsi
-
-- type: entity
   parent: GasTankRoundBase
   id: AirTank
   name: air tank

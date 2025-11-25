@@ -59,19 +59,6 @@
       map: ["enum.StorageVisualLayers.Door"]
 
 - type: entity
-  parent: CrateBaseWeldable
-  id: CrateTrashcart
-  name: trash cart
-  description: A trash cart for transporting waste.
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/trashcart.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/trashcart.rsi
-  - type: TileFrictionModifier
-    modifier: 0.4
-
-- type: entity
   parent: CrateGeneric
   id: CrateFreezer2
   name: freezer
