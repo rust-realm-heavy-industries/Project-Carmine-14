@@ -1,0 +1,34 @@
+# - type: shader
+#   id: FlickerHologram # not ported yet
+#   kind: source
+#   path: "/Textures/_White/Shaders/flickerhologram.swsl"
+#   light_mode: unshaded
+#   params:
+#     jitter: 0.5
+#     colorJitter: 0.4
+#     alphaJitter: 0.5
+#     hue: 0.48
+
+# - type: shader
+#   id: FlickerHologramGlitch # not ported yet
+#   kind: source
+#   path: "/Textures/_White/Shaders/flickerhologram.swsl"
+#   light_mode: unshaded
+#   params:
+#     jitter: 5
+#     colorJitter: 0.8
+#     alphaJitter: 1
+#     hue: 0.48
+
+- type: shader
+  id: Grain
+  kind: source
+  path: "/Textures/_White/Shaders/grain.swsl"
+  params:
+    strength: 100.0
+
+
+# - type: shader
+#   id: RemoteControl # not ported yet...dont think we'll need em .2 | 2025
+#   kind: source
+#   path: "/Textures/_White/Shaders/remotecontrol.swsl"
