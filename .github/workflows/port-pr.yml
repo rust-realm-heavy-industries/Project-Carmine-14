@@ -1,0 +1,66 @@
+name: Port Pull Request
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_repo:
+        description: "Source repository (owner/repo)"
+        required: true
+      source_branch:
+        description: "Branch name from source repo (PR branch)"
+        required: true
+      target_repo:
+        description: "Target repository (owner/repo)"
+        required: true
+      target_branch:
+        description: "Branch to merge into (e.g. main)"
+        required: true
+
+jobs:
+  port-pr:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the workflow repo (not strictly needed, but good practice)
+      - name: Checkout workflow repo
+        uses: actions/checkout@v4
+
+      # Step 2: Clone the source repo
+      - name: Clone source repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.source_repo }}
+          ref: ${{ github.event.inputs.source_branch }}
+          path: source-repo
+
+      # Step 3: Clone the target repo
+      - name: Clone target repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.target_repo }}
+          ref: ${{ github.event.inputs.target_branch }}
+          path: target-repo
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 4: Copy commits from source branch into target repo
+      - name: Apply changes from source branch
+        run: |
+          cd target-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add source ../source-repo
+          git fetch source
+          git checkout -b ported-${{ github.event.inputs.source_branch }}
+          git merge --allow-unrelated-histories source/${{ github.event.inputs.source_branch }} -m "Port PR from ${{ github.event.inputs.source_repo }}:${{ github.event.inputs.source_branch }}"
+          git push origin ported-${{ github.event.inputs.source_branch }}
+
+      # Step 5: Create a PR in the target repo
+      - name: Create pull request
+        run: |
+          gh pr create \
+            --repo ${{ github.event.inputs.target_repo }} \
+            --head ported-${{ github.event.inputs.source_branch }} \
+            --base ${{ github.event.inputs.target_branch }} \
+            --title "Ported PR from ${{ github.event.inputs.source_repo }}:${{ github.event.inputs.source_branch }}" \
+            --body "This PR ports changes from ${{ github.event.inputs.source_repo }}:${{ github.event.inputs.source_branch }}."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -75,6 +75,7 @@ public record struct GetPryTimeModifierEvent
     public readonly EntityUid User;
     public float PryTimeModifier = 1.0f;
     public float BaseTime = 5.0f;
+    public float DoAfterIgnoreLimit = 5f; // WD EDIT: any doafter time less or equal to this is ignored
 
     public GetPryTimeModifierEvent(EntityUid user)
     {
