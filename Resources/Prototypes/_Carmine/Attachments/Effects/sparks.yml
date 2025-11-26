@@ -1,0 +1,19 @@
+- type: entity
+  id: EffectSparks
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: AnimationPlayer
+    - type: EffectVisuals
+    - type: Sprite
+      drawdepth: Effects
+      noRot: true
+      layers:
+        - shader: unshaded
+          map: ["enum.EffectLayers.Unshaded"]
+          sprite: Effects/sparks.rsi
+          state: sparks
+    - type: Tag
+      tags:
+        - HideContextMenu
+    - type: TimedDespawn
+      lifetime: 0.5

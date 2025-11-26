@@ -1,0 +1,62 @@
+- type: entity
+  name: puddle
+  id: Puddle
+  description: A puddle of liquid.
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: ActiveEdgeSpreader
+    - type: Appearance
+    - type: Clickable
+    - type: DrawableSolution
+      solution: puddle
+    - type: Drink
+      delay: 3
+      transferAmount: 1
+      solution: puddle
+      examinable: false
+    - type: EdgeSpreader
+      id: Puddle
+    - type: ExaminableSolution
+      solution: puddle
+    - type: Fixtures
+      fixtures:
+        slipFixture:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.4,-0.4,0.4,0.4"
+          mask:
+            - ItemMask
+          layer:
+            - SlipLayer
+          hard: false
+    - type: IconSmooth
+      key: puddles
+      base: splat
+      mode: CardinalFlags
+    - type: IgnoresFingerprints
+    - type: MixableSolution
+      solution: puddle
+    - type: Physics
+      bodyType: Static
+    - type: Puddle
+    - type: PuddleFootPrints
+    - type: Slippery
+      launchForwardsMultiplier: 2.0
+    - type: SolutionContainerManager
+      solutions:
+        puddle:
+          maxVol: 1000
+    - type: Sprite
+      layers:
+        - sprite: Fluids/puddle.rsi
+          state: splat0
+      drawdepth: Puddles
+      color: "#FFFFFF80"
+    - type: StepTrigger
+      triggerGroups:
+        types:
+          - SlipTile
+    - type: Transform
+      noRot: true
+      anchored: true

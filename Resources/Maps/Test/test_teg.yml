@@ -260,20 +260,6 @@ entities:
     - type: Transform
       pos: -5.5,1.5
       parent: 2
-- proto: Bed
-  entities:
-  - uid: 371
-    components:
-    - type: Transform
-      pos: 8.5,8.5
-      parent: 2
-- proto: BedsheetCE
-  entities:
-  - uid: 372
-    components:
-    - type: Transform
-      pos: 8.5,8.5
-      parent: 2
 - proto: CableApcExtension
   entities:
   - uid: 246
