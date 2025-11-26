@@ -94,64 +94,6 @@
     tags:
     - BoxCardboard
 
-# Goobstation - rolly chairs that actually roll!
-- type: entity
-  name: chair
-  id: RollingOfficeChairBase
-  description: Scoot from desk to desk because standing is for interns.
-  parent: BaseVehicle
-  abstract: true
-  components:
-  - type: Anchorable
-  - type: Rotatable
-    rotateWhileAnchored: true
-  - type: Sprite
-    sprite: Structures/Furniture/chairs.rsi
-    noRot: true
-  - type: Strap
-    position: Stand
-    buckleOffset: "0,-0.05"
-  - type: Vehicle
-    requiredHands: 0
-    engineRunning: true
-    renderOver: South, SouthEast, SouthWest
-  - type: MovementSpeedModifier
-    acceleration: 10
-    friction: 3.5
-    baseSprintSpeed: 2.5
-    baseWalkSpeed: 1.5
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.2
-        density: 75
-        mask:
-        - TableMask
-  - type: StaticPrice
-    price: 50
-
 - type: entity
   id: BaseVehicle
   abstract: true
@@ -1459,7 +1401,7 @@
   - type: Construction
     graph: N14DoorGraph
     node: woodDoorMakeshift
-    
+
 - type: entity
   id: EffectFlashBluespace #used for bluespace lockers and artifacts, neither are used, but its hardcoded
   categories: [ HideSpawnMenu ]
@@ -1473,7 +1415,7 @@
   - type: EmitSoundOnSpawn
     sound:
       path: /Audio/Effects/Lightning/lightningbolt.ogg
-      
+
 - type: entity
   id: Exclamation #used for cardboard boxes, unused, hardcoded
   name: exclamation
@@ -1493,7 +1435,7 @@
     - type: Tag
       tags:
         - HideContextMenu
-        
+
 - type: entity
   name: spooky lightning
   id: LightningRevenant #used for revenant, unused, hardcoded
@@ -1622,11 +1564,11 @@
     - HideContextMenu
   - type: AnimationPlayer
   - type: EmitSoundOnSpawn
-    sound: 
+    sound:
       path: /Audio/Effects/tesla_consume.ogg
       params:
         variation: 0.3
-        
+
 - type: entity
   name: lightning #used exclusively for microwave malfunctions, hardcoded, should be kept but redone a little
   id: Spark

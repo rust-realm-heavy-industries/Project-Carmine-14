@@ -46,26 +46,14 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: StaticPrice
-    price: 25
   - type: RequireProjectileTarget
-
-#Starts unanchored, cannot be rotated while anchored
-- type: entity
-  name: chair
-  id: UnanchoredChairBase
-  parent: SeatBase
-  abstract: true
-  components:
-  - type: Anchorable
-  - type: Rotatable
 
 #Start anchored, cannot be rotated while anchored
 - type: entity
   name: chair
   id: ChairBase
   abstract: true
-  parent: UnanchoredChairBase
+  parent: SeatBase
   placement:
     mode: SnapgridCenter
   components:
@@ -73,16 +61,19 @@
     bodyType: Static
   - type: Transform
     anchored: true
+  - type: Anchorable
+  - type: Rotatable
 
 #Starts unanchored, can be rotated while anchored
 - type: entity
   name: chair
   id: OfficeChairBase
-  parent: UnanchoredChairBase
+  parent: SeatBase
   abstract: true
   components:
   - type: Rotatable
     rotateWhileAnchored: true
+  - type: Anchorable
 
 #Starts anchored, can be rotated while anchored
 - type: entity
@@ -98,8 +89,11 @@
   - type: Transform
     anchored: true
 
+# CHAIRS
+
 - type: entity
-  name: chair
+  name: metal chair
+  description: Sturdy, stiff. Its cold to the touch.
   id: Chair
   parent: ChairBase
   components:
@@ -107,95 +101,206 @@
     state: chair
 
 - type: entity
-  name: chair
-  id: ChairGreyscale
-  parent: Chair
-  suffix: White
-  components:
-  - type: Sprite
-    state: chair-greyscale
-
-- type: entity
-  name: stool
-  id: Stool
-  parent: UnanchoredChairBase
-  description: Apply butt.
-  components:
-  - type: Sprite
-    state: stool
-- type: entity
-  name: white office chair
-  id: ChairOfficeLight
-  parent: OfficeChairBase
-  components:
-  - type: Sprite
-    state: office-white
-  - type: SpawnItemsAtLocationOnUse
-    spawnItemsVerbText: disable-wheel-locks
-    items:
-      - id: ChairOfficeLightRolling
-
-- type: entity
-  name: dark office chair
-  id: ChairOfficeDark
-  parent: ChairOfficeLight
-  components:
-  - type: Sprite
-    state: office-dark
-  - type: SpawnItemsAtLocationOnUse
-    spawnItemsVerbText: disable-wheel-locks
-    items:
-      - id: ChairOfficeDarkRolling
-
-- type: entity
-  name: pilot seat
-  id: ChairPilotSeat
+  name: pilot chair
+  description: Complex, comfortable. The padding melds with your skin.
+  id: ChairPilot
   parent: ChairBase
-  description: The pilot seat of a prestigious ship.
   components:
   - type: Sprite
     state: shuttle
-
+    
 - type: entity
-  parent: [SeatBase, BaseFoldable]
-  id: ChairFolding
-  name: folding chair
-  description: If you carry six of these you become the coolest kid at church.
+  id: ChairWood
+  name: wood chair
+  description: Comfortable, fluid. You can feel the imported wood.
+  parent: ChairBase
   components:
-  - type: Rotatable
   - type: Sprite
-    sprite: Structures/Furniture/folding_chair.rsi
-    layers:
-    - state: folding
-      map: ["unfoldedLayer"]
-    - state: folding_folded
-      map: ["foldedLayer"]
-      visible: false
-  - type: Item
-    size: Huge
-  - type: Appearance
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 8
-    soundHit:
-      collection: MetalThud
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: wood_chair
+    
+- type: entity
+  id: ChairWoodPadded
+  name: wood chair
+  description: Comfortable, fluid. The pillows meld with your skin.
+  parent: ChairBase
+  suffix: padded
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: wood_chair_padded
 
 - type: entity
-  parent: ChairFolding
-  id: ChairFoldingSpawnFolded
-  suffix: folded
+  parent: ChairBase
+  id: ChairPlastic
+  name: plastic chair
+  description: Flimsy, acrid. The plastic looks melted around the legs.
+  suffix: plastic
   components:
-  - type: Foldable
-    folded: true
-  - type: Strap
-    enabled: False
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: plastic_chair
+    
+- type: entity
+  parent: ChairBase
+  id: ChairGreen
+  name: metal chair
+  description: Sturdy, stiff. The green tones are fading away.
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair
+    
+- type: entity
+  parent: ChairBase
+  id: ChairBlue
+  name: metal chair
+  description: Sturdy, stiff. The blue tones are fading away.
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_blue
+    
+- type: entity
+  parent: ChairBase
+  id: ChairRed
+  name: metal chair
+  description: Sturdy, stiff. The red tones are fading away.
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_red
 
+# OFFICE CHAIRS
+
+- type: entity
+  parent: OfficeChairBase
+  id: ChairOfficeBlue
+  name: office chair
+  description: Sturdy, flexible. The fake leather is falling off.
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: office_chair_blue
+    
+- type: entity
+  parent: OfficeChairBase
+  id: ChairOfficeGreen
+  name: office chair
+  description: Sturdy, flexible. The fake leather is falling off.
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: office_chair_green
+    
+- type: entity
+  parent: OfficeChairBase
+  id: ChairOfficeRed
+  name: office chair
+  description: Sturdy, flexible. The fake leather is falling off.
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: office_chair
+    
+- type: entity
+  parent: OfficeChairBase
+  id: ChairOfficeFancy
+  name: office chair
+  description: Sturdy, flexible. The fake leather is vividly shining.
+  suffix: fancy
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: ergo_chair
+    
+# STOOLS
+    
+- type: entity
+  parent: StoolBase
+  id: ChairArmchair
+  name: armchair
+  description: Old, glossy. The pillows have compacted and recessed.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: armchair
+    
+- type: entity
+  parent: StoolBase
+  id: ChairStoolBlack
+  name: old stool
+  suffix: black
+  description: Firm, callous. The fake leather is rubbing off.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+    state: bar_black
+    
+- type: entity
+  parent: StoolBase
+  id: ChairStoolTan
+  name: old stool
+  suffix: tan
+  description: Firm, callous. The fake leather is rubbing off.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+    state: bar_tan
+    
+- type: entity
+  parent: StoolBase
+  id: ChairStool
+  name: stool
+  description: Glossy, well-preseved. It looks brand new.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: barstool
+    
+# MISC
+    
+- type: entity
+  parent: ChairBase
+  id: ChairFolding #YAMLTODO: ACTUALLY MAKE IT FOLD
+  name: folding chair
+  description: Stiff, efficient. The locking mechanism hasn't degraded yet.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_folding
+    
+- type: entity
+  parent: ChairBase
+  id: ChairBarRetro
+  name: retro chair
+  description: Comfortable, fancy. The bolts are rusting away.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: retro_chair
+    
+- type: entity
+  parent: ChairBase
+  id: ChairDiner
+  name: diner chair
+  description: Glossy, poorly preserved. The fake leather is falling off in chunks.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: diner_chair
+    
 - type: entity
   name: steel bench
-  id: SteelBench
+  id: BenchSteel
   parent: ChairBase
-  description: A long chair made for a metro. Really standard design.
+  description: Sturdy, stiff. The center is lightly bent inwards.
   components:
   - type: Sprite
     state: steel-bench

@@ -44,6 +44,8 @@
     - type: Transform
       noRot: true
 
+# ALTARS
+
 - type: entity
   id: AltarConvert
   parent: BaseAltar

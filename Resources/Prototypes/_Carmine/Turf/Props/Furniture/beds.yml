@@ -53,6 +53,8 @@
     - type: Transform
       noRot: true
 
+# BEDS
+
 - type: entity
   parent: BaseBed
   id: Bed
@@ -79,9 +81,15 @@
   name: bunk bed
   description: Clean, comfortable, the frame is cold to the touch.
   components:
+    - type: Strap
+      position: Down
+      rotation: 90
+      buckleOffset: "0,0.3"
     - type: Sprite
       sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
       state: bed_wood_bunk
+
+# MATTRESSES
 
 - type: entity
   parent: Bed
