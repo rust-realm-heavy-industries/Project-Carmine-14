@@ -3,6 +3,7 @@ using Content.Shared.Hands.EntitySystems;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
+using Content.Shared.Throwing;
 
 namespace Content.Shared.Hands.Components;
 
@@ -44,7 +45,9 @@ public sealed partial class HandsComponent : Component
     /// </summary>
     [DataField]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float BaseThrowspeed { get; set; } = 10f;
+    // ES START
+    public float BaseThrowspeed = ThrowingSystem.ESThrowSpeedDefault;
+    // ES END
 
     /// <summary>
     ///     Distance after which longer throw targets stop increasing throw impulse.
