@@ -252,6 +252,7 @@
   - type: SurgeryTarget
   - type: MovedByPressure
     cutoffTime: 1.0
+  - type: ExaminableCharacter # WWDP
 
 - type: entity
   save: false

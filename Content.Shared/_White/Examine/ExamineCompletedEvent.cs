@@ -1,6 +1,6 @@
 using Robust.Shared.Utility;
 
-namespace Content.Server._White.Examine;
+namespace Content.Shared._White.Examine;
 
 public sealed class ExamineCompletedEvent : EntityEventArgs
 {

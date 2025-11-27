@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Events;
 using Content.Shared.Damage.Prototypes;
@@ -73,6 +74,29 @@ public sealed class DamageExamineSystem : EntitySystem
             }
         }
 
+        // Goobstation Change
+        var meaningfulDamage = GetTotalMeaningfulDamage(damageSpecifier);
+        if (meaningfulDamage > 0)
+        {
+            msg.PushNewline();
+            msg.AddMarkupOrThrow(Loc.GetString("damage-hits-to-kill", ("count", (100f / (float) meaningfulDamage).ToString("F1"))));
+        }
+
         return msg;
+    }
+
+    // Goobstation Change - Fetches all of the damage that could kill a normal player entity, ignoring helper types.
+    private FixedPoint2 GetTotalMeaningfulDamage(DamageSpecifier damageSpecifier)
+    {
+        var ignoredKeys = new[] { "Structural", "Asphyxiation", "Bloodloss" };
+        var total = FixedPoint2.Zero;
+        foreach (var (key, value) in damageSpecifier.DamageDict)
+        {
+            if (ignoredKeys.Contains(key))
+                continue;
+
+            total += value;
+        }
+        return total;
     }
 }

@@ -26,6 +26,8 @@ ui-options-chatstack-off = Off
 ui-options-chatstack-single = Only last message
 ui-options-chatstack-double = Last two messages
 ui-options-chatstack-triple = Last three messages
+ui-options-detailed-examine = Show detailed examine text
+ui-options-log-in-chat = Log actions in the chat
 
 ## Audio menu
 

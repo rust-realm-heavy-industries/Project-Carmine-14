@@ -1,6 +1,5 @@
 using Content.Server.Chat.Managers;
 using Content.Server.IdentityManagement;
-using Content.Server._White.Examine;
 using Content.Shared._White.CCVar;
 // using Content.Shared._Goobstation.Heretic.Components; // Goobstation Change
 using Content.Shared.Chat;
@@ -10,6 +9,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using System.Globalization;
 using Content.Shared.Strip.Components;
+using Content.Shared._White.Examine;
 
 namespace Content.Server._White.Examine
 {
