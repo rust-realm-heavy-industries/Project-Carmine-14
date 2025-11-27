@@ -67,13 +67,6 @@
     state: plant-02
 
 - type: entity
-  id: PottedPlant3
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-03
-
-- type: entity
   id: PottedPlant4
   parent: PottedPlantBase
   components:
@@ -95,13 +88,6 @@
     state: plant-06
 
 - type: entity
-  id: PottedPlant7
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-07
-
-- type: entity
   id: PottedPlant8
   parent: PottedPlantBase
   components:
@@ -109,54 +95,11 @@
     state: plant-08
 
 - type: entity
-  id: PottedPlant10
-  parent: PottedPlantBase
-  description: A pretty piece of nature contained in a pot.
-  components:
-  - type: Sprite
-    state: plant-10
-
-- type: entity
-  id: PottedPlant11
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-11
-
-- type: entity
   id: PottedPlant12
   parent: PottedPlantBase
   components:
   - type: Sprite
     state: plant-12
-
-- type: entity
-  id: PottedPlant13
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-13
-
-- type: entity
-  id: PottedPlant14
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-14
-
-- type: entity
-  id: PottedPlant15
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-15
-
-- type: entity
-  id: PottedPlant16
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-16
 
 - type: entity
   id: PottedPlant17
@@ -173,20 +116,6 @@
     state: plant-18
 
 - type: entity
-  id: PottedPlant19
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-19
-
-- type: entity
-  id: PottedPlant20
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-20
-
-- type: entity
   id: PottedPlant21
   parent: PottedPlantBase
   components:
@@ -199,57 +128,3 @@
   components:
   - type: Sprite
     state: plant-22
-
-- type: entity
-  id: PottedPlant23
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-23
-
-- type: entity
-  id: PottedPlant24
-  parent: PottedPlantBase
-  components:
-  - type: Sprite
-    state: plant-24
-
-- type: entity
-  id: PottedPlant26
-  parent: PottedPlantBase
-  description: Is it just me, or is it blinking?
-  components:
-  - type: Sprite
-    state: plant-26
-
-#these are all the plastic plants. They inherit from the first one because they don't have
-#enough differences to warrant getting a unique abstract prototype. It's just the name and description.
-- type: entity
-  id: PottedPlant27
-  parent: PottedPlantBase
-  name: plastic potted plant
-  description: A fake, cheap looking, plastic tree. Perfect for people who kill every plant they touch.
-  components:
-  - type: Sprite
-    state: plant-27
-
-- type: entity
-  id: PottedPlant28
-  parent: PottedPlant27
-  components:
-  - type: Sprite
-    state: plant-28
-
-- type: entity
-  id: PottedPlant29
-  parent: PottedPlant27
-  components:
-  - type: Sprite
-    state: plant-29
-
-- type: entity
-  id: PottedPlant30
-  parent: PottedPlant27
-  components:
-  - type: Sprite
-    state: plant-30

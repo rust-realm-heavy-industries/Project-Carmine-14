@@ -62,6 +62,9 @@
         acts: ["Destruction"]
   - type: Occluder
   - type: BlockWeather
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
 
 # Metal Doors
 - type: entity

@@ -1,72 +1,14 @@
 - type: entity
-  id: TableFrame
-  # BaseStructure and not BaseTable, since these shouldn't be climbable/placeable.
+  id: TableBase
   parent: BaseStructure
-  name: table frame
-  description: Pieces of metal that make the frame of a table.
+  name: table
+  description: A square piece of metal standing on four metal legs.
+  abstract: true
   components:
-  - type: Sprite
-    sprite: Structures/Furniture/Tables/frame.rsi
-  - type: Icon
-    sprite: Structures/Furniture/Tables/frame.rsi
-    state: full
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.40,-0.30,0.40,0.45"
-        density: 80
-        mask:
-        - TableMask
-        layer:
-        - TableLayer
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
-  - type: IconSmooth
-    key: state
-    base: state_
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 25
-      behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 5
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-          params:
-            volume: -6
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          PartRodMetal1:
-            min: 1
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: TableFrame
-
-- type: entity
-  id: CounterWoodFrame
-  parent: BaseStructure
-  name: wooden counter frame
-  description: Pieces of wood that make the frame of a table.
-  components:
-  - type: SpriteFade
-  - type: Sprite
-    sprite: Structures/Furniture/Tables/frame.rsi
-  - type: Icon
-    sprite: Structures/Furniture/Tables/frame.rsi
-    state: full
+  - type: PlaceableSurface
   - type: Fixtures
     fixtures:
       fix1:
@@ -78,127 +20,37 @@
         - TableMask
         layer:
         - TableLayer
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Wood
-  - type: IconSmooth
-    key: state
-    base: state_
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 15
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroy
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank1:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: CounterWoodFrame
-
-- type: entity
-  id: CounterMetalFrame
-  parent: CounterWoodFrame
-  name: metal counter frame
-  description: Pieces of metal that make the frame of a table.
-  components:
+        - BulletImpassable
+  - type: SpriteFade
   - type: Sprite
-    sprite: Structures/Furniture/Tables/frame.rsi
-  - type: Icon
-    sprite: Structures/Furniture/Tables/frame.rsi
-    state: full
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
-  - type: IconSmooth
-    key: state
-    base: state_
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 125
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 15
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-          params:
-            volume: -6
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetSteel1:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: CounterMetalFrame
-
+  - type: Climbable
+  - type: Bonkable
+    bonkDamage:
+      types:
+        Blunt: 4
+  - type: Clickable
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHull
+  - type: RequireProjectileTarget
+  - type: ThrownItemImmune
+  
 - type: entity
-  id: Table
+  id: TableBaseSmooth
   parent: TableBase
-  name: table
-  description: A square piece of metal standing on four metal legs.
+  abstract: true
   components:
-  - type: Sprite
-    sprite: Structures/Furniture/Tables/generic.rsi
   - type: Icon
-    sprite: Structures/Furniture/Tables/generic.rsi
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 125
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 15
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-          params:
-            volume: -6
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetSteel1:
-            min: 1
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: Table
+    state: full
+  - type: IconSmooth
+    key: state
+    base: state_
+
+# TABLES
 
 - type: entity
   id: TableReinforced
-  parent: TableBase
+  parent: TableBaseSmooth
   name: reinforced table
   description: A square piece of metal standing on four metal legs. Extra robust.
   components:
@@ -208,12 +60,6 @@
     sprite: Structures/Furniture/Tables/reinforced.rsi
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 150
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
         damage: 30
@@ -230,20 +76,10 @@
             max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: TableReinforced
-  - type: Climbable
-    # Reinforced tables are extra tough
-  - type: Bonkable
-    bonkDamage:
-      types:
-        Blunt: 8
-    bonkTime: 3
 
 - type: entity
   id: TableGlass
-  parent: TableBase
+  parent: TableBaseSmooth
   name: glass table
   description: A square piece of glass, standing on four metal legs.
   components:
@@ -263,15 +99,6 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 15
-      behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-        - !type:PlaySoundBehavior
-          sound:
-            collection: GlassBreak
-    - trigger:
-        !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
@@ -286,173 +113,442 @@
         node: TableFrame
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: TableGlass
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepTile
 
 - type: entity
-  id: TableReinforcedGlass
-  parent: TableBase
-  name: reinforced glass table
-  description: A square piece of glass, standing on four metal legs. Extra robust.
+  id: OperatingTable
+  parent: Bed
+  name: operating table
+  description: Used for advanced medical procedures.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/r_glass.rsi
-  - type: Icon
-    sprite: Structures/Furniture/Tables/r_glass.rsi
-  - type: GlassTable
-    climberDamage:
-      types:
-        Slash: 25
-    tableDamage:
-      types:
-        Blunt: 40
-    tableMassLimit: 120
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-    - trigger:
-        !type:DamageTrigger
-        damage: 20
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:ChangeConstructionNodeBehavior
-        node: TableFrame
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ShardGlass:
-            min: 1
-            max: 1
-          PartRodMetal1:
-            min: 1
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: TableReinforcedGlass
-  - type: FootstepModifier
-    footstepSoundCollection:
-      collection: FootstepTile
+    sprite: Structures/Furniture/Tables/optable.rsi
+    state: operating_table
+    noRot: true
+  - type: OperatingTable
 
 - type: entity
-  id: TablePlasmaGlass
   parent: TableBase
-  name: plasma glass table
-  description: A square piece of plasma glass, standing on four metal legs. Pretty!
+  id: TableMetalRound
+  name: round metal table
+  suffix: clean
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/plasma.rsi
-  - type: Icon
-    sprite: Structures/Furniture/Tables/plasma.rsi
-  - type: GlassTable
-    climberDamage:
-      types:
-        Slash: 30
-    tableDamage:
-      types:
-        Blunt: 100
-    tableMassLimit: 240
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 250
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-    - trigger:
-        !type:DamageTrigger
-        damage: 30
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:ChangeConstructionNodeBehavior
-        node: TableFrame
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ShardGlassPlasma:
-            min: 1
-            max: 1
-          PartRodMetal1:
-            min: 1
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: TablePlasmaGlass
-  - type: FootstepModifier
-    footstepSoundCollection:
-      collection: FootstepTile
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: table_metal_round-2
 
 - type: entity
-  id: TableWood
   parent: TableBase
-  name: wood table
-  description: Do not apply fire to this. Rumour says it burns easily.
+  id: TableMetalRoundDirty
+  name: round table
+  suffix: dirty
+  description: A round metal table. Prison like.
   components:
   - type: Sprite
-    sprite: Structures/Furniture/Tables/wood.rsi
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: table_metal_round # N14TODO: There's a second sprite of this, need it to spawn a random one.
+
+- type: entity
+  parent: TableBase
+  id: TableDeskSchool
+  name: end table
+  description: A wooden end table.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: table_wood_end
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.15,-0.25,0.25,0.25"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  parent: TableBase
+  id: TableWoodEnd
+  name: end table
+  description: A wooden end table.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: table_wood_end
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.15,-0.25,0.25,0.25"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  parent: TableWoodSquare
+  id: TableWoodRound
+  name: wooden table
+  description: A wooden round table.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: table_wood_round
+
+- type: entity
+  parent: TableBase
+  id: TableWoodSquare
+  name: wooden table
+  description: A wooden square table.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: table_wood_square
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.35,-0.15,0.35,0.45"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  parent: TableBase
+  id: TableWoodLow
+  name: wooden table
+  description: A low wooden square table.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: table_wood_low
+
+- type: entity
+  parent: TableBase
+  id: TableWoodStand
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: table_wood_stand
+
+- type: entity
+  parent: TableBase
+  id: TableWoodCabledrum
+  name: cable drum
+  description: A convenient table.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: cable_reel
+
+- type: entity
+  parent: TableBase
+  id: TableCasinoDice
+  name: dice table
+  description: A table for playing dice games.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: dice_clean
+
+- type: entity
+  parent: TableBase
+  id: TableCasinoDiceDirty
+  suffix: dirty
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    state: dice_dirty
+
+#64x64 tables
+- type: entity
+  parent: TableBase
+  id: TableDeskMetal
+  name: metal desk
+  description: A metal desk for working at. Sturdy.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/desks.rsi
+    state: desk_metal
+    offset: 0.5, 0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.35,0,1.35,0.45"
+        density: 55
+        mask: # tables should collide with other tables
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  parent: TableDeskMetal
+  id: TableDeskMetalDirty
+  suffix: dirty
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
+    state: desk_metal
+
+- type: entity
+  parent: TableBase
+  id: TableDeskMetalSmall
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
+    state: desk_metal_small
+
+- type: entity
+  parent: TableBase
+  id: TableDeskWood
+  name: wooden desk
+  description: A wooden desk for working at.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/desks.rsi
+    state: desk_wood
+    offset: 0.5, 0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0,0,1,0.45"
+        density: 55
+        mask: # tables should collide with other tables
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  parent: TableBase
+  id: TableBase2
+  suffix: alt
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
+    state: desk_wood
+
+- type: entity
+  parent: TableBase
+  id: TableBaseSmall
+  suffix: small
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
+    state: desk_wood_small
+
+- type: entity
+  parent: TableBase
+  id: TableCasinoCards
+  name: cards table
+  description: A fancy table for playing cards at.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
+    state: table_cards
+
+- type: entity
+  parent: TableBase
+  id: TableCasinoPool
+  name: pool table
+  description: A fancy table for playing pool at.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
+    state: table_pool
+
+- type: entity
+  parent: TableBase
+  id: TableWoodenOvalWide
+  name: wooden table
+  description: An oval table made from wood.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
+    state: table_wood_wide_oval
+
+- type: entity
+  parent: TableBase
+  id: TableWoodenSquareWide
+  name: wooden table
+  description: A wide square table made from wood.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
+    state: table_wood_wide_square
+
+- type: entity
+  parent: TableBase
+  id: TableMetalWide
+  name: metal table
+  description: A wide metal table.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
+    state: table_metal_wide
+
+- type: entity
+  parent: TableBase
+  id: TableCounter
+  name: wooden counter
+  suffix: full
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: wood_counter
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask: # tables should collide with other tables
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  parent: TableBase
+  id: TableBaseBend
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: wood_counter_bend
+
+- type: entity
+  parent: TableBase
+  id: TableBaseIntersect
+  suffix: intersect
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: wood_counter_intersect
+
+- type: entity
+  parent: TableBase
+  id: TableBaseCross
+  suffix: cross
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: wood_counter_cross
+
+- type: entity
+  parent: TableBase
+  id: TableBaseCraft
+  description: This counter looks like scrap.
+  suffix: craft full
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: craft_counter
+
+- type: entity
+  parent: TableBase
+  id: TableBaseCraftBend
+  suffix: craft corner
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: craft_counter_bend
+
+- type: entity
+  parent: TableBase
+  id: TableBaseCraftIntersect
+  suffix: craft intersect
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: craft_counter_intersect
+
+- type: entity
+  parent: TableBase
+  id: TableBaseCraftCross
+  suffix: craft cross
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: craft_counter_cross
+
+- type: entity
+  parent: TableBase
+  id: TableBaseMetal
+  name: metal counter
+  description: A cold, hard metal counter.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: metal_counter
+
+- type: entity
+  parent: TableBaseMetal
+  id: TableBaseMetalBend
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: metal_counter_bend
+
+- type: entity
+  parent: TableBaseMetal
+  id: TableBaseMetalIntersect
+  suffix: intersect
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: metal_counter_intersect
+
+- type: entity
+  parent: TableBaseMetal
+  id: TableBaseMetalCross
+  suffix: cross
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
+    state: metal_counter_cross
+
+- type: entity
+  id: TableMetalGrate
+  parent: TableBaseSmooth
+  name: metal table
+  description: A cold handmade metal table made from grating.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/metalgrate.rsi
   - type: Icon
-    sprite: Structures/Furniture/Tables/wood.rsi
-  - type: Damageable
-    damageModifierSet: Wood
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-    - trigger:
-        !type:DamageTrigger
-        damage: 15
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroy
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank:
-            min: 1
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: TableWood
-  - type: Tag
-    tags:
-    - Wooden
-  - type: FootstepModifier
-    footstepSoundCollection:
-      collection: FootstepWood
+    sprite: _Nuclear14/Structures/Furniture/Tables/metalgrate.rsi
+    
+- type: entity
+  parent: TableBaseSmooth
+  id: TableBaseBar
+  name: bar counter
+  description: An alcohol stained bartop.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/Tables/barcounter.rsi
+  - type: Icon
+    sprite: _Nuclear14/Structures/Furniture/Tables/barcounter.rsi
+
+# GAMBLING TABLES
 
 - type: entity
   id: TableCarpet
-  parent: TableBase
+  parent: TableBaseSmooth
   name: gambling table
   description: Play em' cowboy.
   components:
@@ -481,22 +577,16 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: TableCarpet
-  - type: Tag
-    tags:
-    - Wooden
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepCarpet
 
-# Fancy tables
+# FANCY TABLES
 
 - type: entity
   id: TableFancyBase
   abstract: true
-  parent: TableBase
+  parent: TableBaseSmooth
   name: fancy table
   description: Expensive and rich.
   components:
@@ -537,9 +627,6 @@
     sprite: Structures/Furniture/Tables/Fancy/blue.rsi
   - type: Icon
     sprite: Structures/Furniture/Tables/Fancy/blue.rsi
-  - type: Construction
-    graph: Table
-    node: TableFancyBlue
 
 - type: entity
   id: TableFancyCyan
@@ -550,9 +637,6 @@
     sprite: Structures/Furniture/Tables/Fancy/cyan.rsi
   - type: Icon
     sprite: Structures/Furniture/Tables/Fancy/cyan.rsi
-  - type: Construction
-    graph: Table
-    node: TableFancyCyan
 
 - type: entity
   id: TableFancyBlack
@@ -563,9 +647,6 @@
     sprite: Structures/Furniture/Tables/Fancy/black.rsi
   - type: Icon
     sprite: Structures/Furniture/Tables/Fancy/black.rsi
-  - type: Construction
-    graph: Table
-    node: TableFancyBlack
 
 - type: entity
   id: TableFancyRed
@@ -576,9 +657,6 @@
     sprite: Structures/Furniture/Tables/Fancy/red.rsi
   - type: Icon
     sprite: Structures/Furniture/Tables/Fancy/red.rsi
-  - type: Construction
-    graph: Table
-    node: TableFancyRed
 
 - type: entity
   id: TableFancyPurple
@@ -589,9 +667,6 @@
     sprite: Structures/Furniture/Tables/Fancy/purple.rsi
   - type: Icon
     sprite: Structures/Furniture/Tables/Fancy/purple.rsi
-  - type: Construction
-    graph: Table
-    node: TableFancyPurple
 
 - type: entity
   id: TableFancyPink
@@ -602,9 +677,6 @@
     sprite: Structures/Furniture/Tables/Fancy/pink.rsi
   - type: Icon
     sprite: Structures/Furniture/Tables/Fancy/pink.rsi
-  - type: Construction
-    graph: Table
-    node: TableFancyPink
 
 - type: entity
   id: TableFancyGreen
@@ -615,9 +687,6 @@
     sprite: Structures/Furniture/Tables/Fancy/green.rsi
   - type: Icon
     sprite: Structures/Furniture/Tables/Fancy/green.rsi
-  - type: Construction
-    graph: Table
-    node: TableFancyGreen
 
 - type: entity
   id: TableFancyOrange
@@ -628,9 +697,6 @@
     sprite: Structures/Furniture/Tables/Fancy/orange.rsi
   - type: Icon
     sprite: Structures/Furniture/Tables/Fancy/orange.rsi
-  - type: Construction
-    graph: Table
-    node: TableFancyOrange
 
 - type: entity
   id: TableFancyWhite
@@ -641,75 +707,3 @@
     sprite: Structures/Furniture/Tables/Fancy/white.rsi
   - type: Icon
     sprite: Structures/Furniture/Tables/Fancy/white.rsi
-  - type: Construction
-    graph: Table
-    node: TableFancyWhite
-
-#Debug
-
-- type: entity
-  id: TableDebug
-  parent: TableBase
-  name: table
-  description: PUT ON THEM CODERSOCKS!!
-  suffix: DEBUG
-  components:
-  - type: Tag
-    tags:
-      - Debug
-  - type: Sprite
-    sprite: Structures/Furniture/Tables/debug.rsi
-  - type: Icon
-    sprite: Structures/Furniture/Tables/debug.rsi
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-
-# counters
-
-- type: entity
-  id: TableCounterMetal
-  parent: CounterBase
-  name: metal counter
-  description: Looks like a good place to put a drink down.
-  components:
-  - type: Sprite
-    sprite: Structures/Furniture/Tables/countermetal.rsi
-  - type: Icon
-    sprite: Structures/Furniture/Tables/countermetal.rsi
-    state: full
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 125
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 25
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-          params:
-            volume: -6
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetSteel1:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Construction
-    graph: Table
-    node: CounterMetal

@@ -1,10 +1,11 @@
 - type: entity
   id: Workbench
-  parent: N14FreeTableBase
+  parent: TableBase
   name: workbench
   description: A basic workbench.
   components:
   - type: Sprite
+    offset: 0.5, 0
     noRot: true
     sprite: _Crescent/Structures/Decoration/workbench.rsi
     layers:
@@ -25,7 +26,6 @@
   description: A basic set for experimentation, or drug cooking.
   components:
   - type: Sprite
-    noRot: true
     sprite: _Crescent/Structures/Decoration/alchemy_set.rsi
     layers:
       - state: alchemy_set
@@ -37,7 +37,6 @@
   description: A workbench tailor-made for manual industrial labor.
   components:
   - type: Sprite
-    noRot: true
     sprite: _Crescent/Structures/Decoration/heavy_workbench.rsi
     layers:
       - state: workbench
@@ -49,7 +48,6 @@
   description: A workbench for weaving clothes and fabric manually.
   components:
   - type: Sprite
-    noRot: true
     sprite: _Crescent/Structures/Decoration/tailoring_workbench.rsi
     layers:
       - state: workbench
@@ -61,7 +59,6 @@
   description: A workbench with various tools sprawled around.
   components:
   - type: Sprite
-    noRot: true
     sprite: _Crescent/Structures/Decoration/tools_workbench.rsi
     layers:
       - state: workbench
@@ -73,7 +70,6 @@
   description: A workbench with samples of peculiar materials neatly organized.
   components:
   - type: Sprite
-    noRot: true
     sprite: _Crescent/Structures/Decoration/samples_workbench.rsi
     layers:
       - state: workbench

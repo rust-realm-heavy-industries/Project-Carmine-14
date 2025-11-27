@@ -48,6 +48,9 @@
   - type: Construction
     graph: N14DoorGraph
     node: MetalBlue
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
 
 - type: entity
   parent: N14DoorMetalBlueSlanted
