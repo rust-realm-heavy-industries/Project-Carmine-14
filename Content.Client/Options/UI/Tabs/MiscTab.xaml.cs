@@ -97,7 +97,6 @@ namespace Content.Client.Options.UI.Tabs
             ModernProgressBar.OnToggled += OnCheckBoxToggled;
             DisableFiltersCheckBox.OnToggled += OnCheckBoxToggled;
             LogInChatCheckBox.OnToggled += OnCheckBoxToggled;
-            CoalesceIdenticalMessagesCheckBox.OnToggled += OnCheckBoxToggled;
             DetailedExamineCheckBox.OnToggled += OnCheckBoxToggled;
 
             HudThemeOption.SelectId(_hudThemeIdToIndex.GetValueOrDefault(_cfg.GetCVar(CVars.InterfaceTheme), 0));
@@ -120,7 +119,6 @@ namespace Content.Client.Options.UI.Tabs
             ModernProgressBar.Pressed = _cfg.GetCVar(CCVars.ModernProgressBar);
             DisableFiltersCheckBox.Pressed = _cfg.GetCVar(CCVars.NoVisionFilters);
             LogInChatCheckBox.Pressed = _cfg.GetCVar(WhiteCVars.LogInChat);
-            CoalesceIdenticalMessagesCheckBox.Pressed = _cfg.GetCVar(WhiteCVars.CoalesceIdenticalMessages);
             DetailedExamineCheckBox.Pressed = _cfg.GetCVar(WhiteCVars.DetailedExamine);
 
 
@@ -182,7 +180,6 @@ namespace Content.Client.Options.UI.Tabs
             _cfg.SetCVar(CCVars.NoVisionFilters, DisableFiltersCheckBox.Pressed);
             _cfg.SetCVar(CCVars.ChatStackLastLines, ChatStackOption.SelectedId);
             _cfg.SetCVar(WhiteCVars.LogInChat, LogInChatCheckBox.Pressed);
-            _cfg.SetCVar(WhiteCVars.CoalesceIdenticalMessages, CoalesceIdenticalMessagesCheckBox.Pressed);
             _cfg.SetCVar(WhiteCVars.DetailedExamine, DetailedExamineCheckBox.Pressed);
 
             if (HudLayoutOption.SelectedMetadata is string opt)
@@ -218,7 +215,6 @@ namespace Content.Client.Options.UI.Tabs
             var isNoVisionFiltersSame = DisableFiltersCheckBox.Pressed == _cfg.GetCVar(CCVars.NoVisionFilters);
             var isChatStackTheSame = ChatStackOption.SelectedId == _cfg.GetCVar(CCVars.ChatStackLastLines);
             var isLogInChatSame = LogInChatCheckBox.Pressed == _cfg.GetCVar(WhiteCVars.LogInChat);
-            var isCoalesceIdenticalMessagesSame = CoalesceIdenticalMessagesCheckBox.Pressed == _cfg.GetCVar(WhiteCVars.CoalesceIdenticalMessages);
             var isDetailedExamineSame = DetailedExamineCheckBox.Pressed == _cfg.GetCVar(WhiteCVars.DetailedExamine);
 
             ApplyButton.Disabled = isHudThemeSame &&
@@ -243,7 +239,6 @@ namespace Content.Client.Options.UI.Tabs
                                    isNoVisionFiltersSame &&
                                    isChatStackTheSame &&
                                    isLogInChatSame &&
-                                   isCoalesceIdenticalMessagesSame &&
                                    isDetailedExamineSame;
         }
 

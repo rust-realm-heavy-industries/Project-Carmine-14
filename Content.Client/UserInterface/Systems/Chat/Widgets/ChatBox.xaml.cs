@@ -1,6 +1,4 @@
 using Content.Client.UserInterface.Systems.Chat.Controls;
-using Content.Shared._White.CCVar;
-
 // using Content.Shared._White.CCVar; //cant get a cvar to run so im just auto-setting it to true. .2 | 2025
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
@@ -35,12 +33,6 @@ public partial class ChatBox : UIWidget
 
     public ChatSelectChannel SelectedChannel => ChatInput.ChannelSelector.SelectedChannel;
 
-    // WD EDIT START
-    private bool _coalescence = false;
-    private (string, Color)? _lastLine;
-    private int _lastLineRepeatCount = 0;
-    // WD EDIT END
-
     private int _chatStackAmount = 0;
     private bool _chatStackEnabled => _chatStackAmount > 0;
     private List<ChatStackData> _chatStackList;
@@ -62,11 +54,7 @@ public partial class ChatBox : UIWidget
         _controller = UserInterfaceManager.GetUIController<ChatUIController>();
         _controller.MessageAdded += OnMessageAdded;
         _controller.RegisterChat(this);
-        // WD EDIT START
-        _cfg = IoCManager.Resolve<IConfigurationManager>();
-        _coalescence = _cfg.GetCVar(WhiteCVars.CoalesceIdenticalMessages); // i am uncomfortable calling repopulate on chatbox in its ctor, even though it worked in testing i'll still err on the side of caution
-        _cfg.OnValueChanged(WhiteCVars.CoalesceIdenticalMessages, UpdateCoalescence, false); // eplicitly false to underline the above comment
-        // WD EDIT END
+
 
         _cfg = IoCManager.Resolve<IConfigurationManager>();
         //_chatStackAmount = _cfg.GetCVar(CCVars.ChatStackLastLines);
@@ -76,7 +64,6 @@ public partial class ChatBox : UIWidget
         _cfg.OnValueChanged(CCVars.ChatStackLastLines, UpdateChatStack, true);
         //_cfg.OnValueChanged(WhiteCVars.ChatFancyFont, value => { _chatFontEnabled = value; Repopulate(); }, true); // WWDP EDIT
     }
-    private void UpdateCoalescence(bool value) { _coalescence = value; Repopulate(); } // WD EDIT
 
     private void UpdateChatStack(int value)
     {
