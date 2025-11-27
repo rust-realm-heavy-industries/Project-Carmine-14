@@ -96,15 +96,21 @@ namespace Content.Client.Gameplay
                 screenType = ScreenType.Separated;
             }
 
+            // ES START
+            // we force separated game chat in either case
+            // it's better to do it here (rather than changing the cvar or something)
+            // so we don't accidentally save this to clients configs and overwrite their value
+            // on other servers.
             switch (screenType)
             {
                 case ScreenType.Separated:
                     _uiManager.LoadScreen<SeparatedChatGameScreen>();
                     break;
                 case ScreenType.Overlay:
-                    _uiManager.LoadScreen<OverlayChatGameScreen>();
+                    _uiManager.LoadScreen<SeparatedChatGameScreen>(); //ES/carmine change: everyone uses the ss13 chat.
                     break;
             }
+            // ES END
 
             _loadController.LoadScreen();
         }
