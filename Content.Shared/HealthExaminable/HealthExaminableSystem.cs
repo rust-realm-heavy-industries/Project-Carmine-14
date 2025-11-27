@@ -8,6 +8,7 @@ using Content.Shared.Verbs;
 using Robust.Shared.Utility;
 using System.Linq;
 using Content.Shared.Traits.Assorted.Components;
+using Content.Shared._White.Examine;
 
 namespace Content.Shared.HealthExaminable;
 
@@ -36,6 +37,8 @@ public sealed class HealthExaminableSystem : EntitySystem
             {
                 var markup = GetMarkup(args.User, (uid, component), damage);
                 _examineSystem.SendExamineTooltip(args.User, uid, markup, false, false);
+                var examineCompletedEvent = new ExamineCompletedEvent(markup, uid, args.User, true); // WD/Goobstation
+                RaiseLocalEvent(uid, examineCompletedEvent); // WD/Goobstation
             },
             Text = Loc.GetString("health-examinable-verb-text"),
             Category = VerbCategory.Examine,
