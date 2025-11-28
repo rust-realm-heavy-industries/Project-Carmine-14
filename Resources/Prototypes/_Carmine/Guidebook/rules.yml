@@ -1,0 +1,4 @@
+- type: guideEntry
+  id: CarmineRuleset
+  name: guide-entry-carmine-rules #TODO
+  text: "/ServerInfo/CarmineRuleset.xml"
