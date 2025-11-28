@@ -14,7 +14,7 @@ namespace Content.Server.Salvage;
 public sealed partial class SalvageSystem
 {
     [ValidatePrototypeId<RadioChannelPrototype>]
-    private const string MagnetChannel = "Supply";
+    private const string MagnetChannel = "Traffic"; //carmine edit
 
     private EntityQuery<SalvageMobRestrictionsComponent> _salvMobQuery;
 

@@ -41,7 +41,7 @@ public sealed class GhostBarSystem : EntitySystem
     [ValidatePrototypeId<JobPrototype>] // Einstein Engines - validate job prototypes
     private static readonly List<ProtoId<JobPrototype>> _jobComponents = new()
     {
-        "Passenger", "Bartender", "Botanist", "Chef", "Janitor"
+        "JobWorkerCL" // CARMINE EDIT: only 1 carmine job here
     };
 
     public override void Initialize()

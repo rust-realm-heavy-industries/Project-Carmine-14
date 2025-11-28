@@ -28,6 +28,6 @@ public sealed partial class CargoOrderConsoleComponent : Component
     /// Radio channel on which order approval announcements are transmitted
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public ProtoId<RadioChannelPrototype> AnnouncementChannel = "Supply";
+    public ProtoId<RadioChannelPrototype> AnnouncementChannel = "Traffic"; //carmine edit
 }
 
