@@ -41,6 +41,9 @@
   - type: Pullable
   - type: DamageExaminable
   - type: SelfDeleteInSpace # Hullrot. This component cleans up items that are parented to space after a while.
+  # ES START
+  - type: ESViewconeOccludable
+  # ES END
 
 - type: entity
   name: "storage item"

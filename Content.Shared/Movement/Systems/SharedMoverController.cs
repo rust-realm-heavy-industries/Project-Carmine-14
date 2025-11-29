@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
+using Content.Shared._ES.Viewcone;
 using Content.Shared.Alert;
 using Content.Shared.Bed.Sleep;
 using Content.Shared.CCVar;
@@ -52,6 +53,9 @@ namespace Content.Shared.Movement.Systems
         [Dependency] private   readonly SharedTransformSystem _transform = default!;
         [Dependency] private   readonly TagSystem _tags = default!;
         [Dependency] private   readonly IEntityManager _entities = default!; // Delta V-NoShoesSilentFootstepsComponent
+        // ES START
+        [Dependency] private   readonly ESViewconeEffectSystem _viewconeEffect = default!;
+        // ES END
 
         protected EntityQuery<InputMoverComponent> MoverQuery;
         protected EntityQuery<MobMoverComponent> MobMoverQuery;
@@ -63,6 +67,10 @@ namespace Content.Shared.Movement.Systems
         protected EntityQuery<TransformComponent> XformQuery;
         protected EntityQuery<CanMoveInAirComponent> CanMoveInAirQuery;
         protected EntityQuery<NoRotateOnMoveComponent> NoRotateQuery;
+
+        // ES START
+        //private static readonly EntProtoId ESFootstepViewconeEffect = "ESViewconeEffectFootstep";
+        // ES END
 
         /// <summary>
         /// <see cref="CCVars.StopSpeed"/>
@@ -302,7 +310,13 @@ namespace Content.Shared.Movement.Systems
             worldTotal *= weightlessModifier;
 
             if (!weightless || touching)
+            {
                 Accelerate(ref velocity, in worldTotal, accel, frameTime);
+                // TODO: Sort out wishDir at some point, assuming we want the footsteps effect.
+                // ES START
+                //_viewconeEffect.SpawnEffect(uid, ESFootstepViewconeEffect, wishDir.ToWorldAngle());
+                // ES END
+            }
 
             PhysicsSystem.SetLinearVelocity(physicsUid, velocity, body: physicsComponent);
 
