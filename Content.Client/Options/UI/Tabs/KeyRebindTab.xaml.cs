@@ -223,6 +223,10 @@ namespace Content.Client.Options.UI.Tabs
             AddCheckBox("ui-options-hotkey-default-walk", _cfg.GetCVar(CCVars.DefaultWalk), HandleDefaultWalk);
             InitToggleWalk();
 
+            // ES START
+            AddButton(ContentKeyFunctions.ESHoldToFace);
+            // ES END
+
             AddHeader("ui-options-header-camera");
             AddButton(EngineKeyFunctions.CameraRotateLeft);
             AddButton(EngineKeyFunctions.CameraRotateRight);
