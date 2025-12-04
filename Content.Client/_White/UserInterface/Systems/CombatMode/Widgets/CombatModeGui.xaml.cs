@@ -23,7 +23,7 @@ public sealed partial class CombatModeGui : UIWidget
 
     public void OnCombatModeUpdated(bool inCombatMode)
     {
-        CombatModeButton.TexturePath = inCombatMode ? "combat_on" :  "combat_off";
+        CombatModeButton.TexturePath = inCombatMode ? "combat_on" : "combat_off";
         CombatModeFlash.Visible = inCombatMode;
         CombatModeButton.SetClickPressed(inCombatMode);
     }

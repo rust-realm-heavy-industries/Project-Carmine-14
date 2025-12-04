@@ -186,7 +186,7 @@ binds:
   mod1: Alt
 - function: OpenCharacterMenu
   type: State
-  key: C
+  key: J # WD edit so it doesnt conflict with c = combatmode
 - function: OpenEmotesMenu
   type: State
   key: Y
@@ -271,6 +271,11 @@ binds:
   type: State
   mod1: Shift
   key: R
+# WD EDIT START
+- function: ToggleCombatMode
+  type: State
+  key: C
+# WD EDIT END
 - function: ShowDebugConsole
   type: State
   key: Tilde

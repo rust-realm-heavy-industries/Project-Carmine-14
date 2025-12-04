@@ -71,6 +71,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction TargetLeftFoot = "TargetLeftFoot";
         public static readonly BoundKeyFunction TargetRightLeg = "TargetRightLeg";
         public static readonly BoundKeyFunction TargetRightFoot = "TargetRightFoot";
+        public static readonly BoundKeyFunction ToggleCombatMode = "ToggleCombatMode";
         public static readonly BoundKeyFunction ArcadeUp = "ArcadeUp";
         public static readonly BoundKeyFunction ArcadeDown = "ArcadeDown";
         public static readonly BoundKeyFunction ArcadeLeft = "ArcadeLeft";

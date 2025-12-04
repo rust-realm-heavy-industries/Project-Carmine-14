@@ -111,7 +111,7 @@ public sealed partial class ContentAudioSystem
     {
         SubscribeNetworkEvent<SpaceBiomeSwapMessage>(OnBiomeChange);
         SubscribeNetworkEvent<NewVesselEnteredMessage>(OnVesselChange);
-        SubscribeLocalEvent<ToggleCombatActionEvent>(OnCombatModeToggle);
+        SubscribeLocalEvent<CombatModeToggledEvent>(OnCombatModeToggle);
 
         Subs.CVar(_configManager, CCVars.AmbientMusicVolume, AmbienceCVarChanged, true);
         Subs.CVar(_configManager, CCVars.CombatMusicVolume, CombatCVarChanged, true);
@@ -264,7 +264,7 @@ public sealed partial class ContentAudioSystem
     }
 
 
-    private void OnCombatModeToggle(ToggleCombatActionEvent ev)
+    private void OnCombatModeToggle(CombatModeToggledEvent ev)
     {
         if (_combatMusicToggle == false)
             return;
@@ -276,8 +276,6 @@ public sealed partial class ContentAudioSystem
         _combatMusicCancelToken = new CancellationTokenSource();
 
         bool currentCombatState = _combatModeSystem.IsInCombatMode();
-
-        _sawmill.Debug("ToggleCombatActionEvent performer: " + ev.Performer);
         string faction = "";
         if (!TryComp<HullrotFactionComponent>(ev.Performer, out HullrotFactionComponent? factionComp))
             _sawmill.Debug("NO HULLROT FACTION COMPONENT FOUND! YOU NEED TO ADD A FACTION COMPONENT TO THIS ROLE!");
