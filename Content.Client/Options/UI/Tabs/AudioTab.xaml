@@ -80,6 +80,7 @@
                     <Control MinSize="4 0"/>
                 </BoxContainer>
                 <Control MinSize="0 8" />
+                <CheckBox Name="ToggleCombatModeCheckBox" Text="{Loc 'ui-options-toggle-combat-mode-sounds'}" />
                 <CheckBox Name="CombatMusicCheckBox" Text="{Loc 'ui-options-combat-music'}" />
                 <CheckBox Name="LobbyMusicCheckBox" Text="{Loc 'ui-options-lobby-music'}" />
                 <CheckBox Name="RestartSoundsCheckBox" Text="{Loc 'ui-options-restart-sounds'}" />

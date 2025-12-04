@@ -28,6 +28,7 @@ namespace Content.Client.Options.UI.Tabs
             RestartSoundsCheckBox.Pressed = _cfg.GetCVar(CCVars.RestartSoundsEnabled);
             EventMusicCheckBox.Pressed = _cfg.GetCVar(CCVars.EventMusicEnabled);
             AdminSoundsCheckBox.Pressed = _cfg.GetCVar(CCVars.AdminSoundsEnabled);
+            ToggleCombatModeCheckBox.Pressed = _cfg.GetCVar(WhiteCVars.ToggleCombatModeSound); // WD EDIT
 
             ApplyButton.OnPressed += OnApplyButtonPressed;
             ResetButton.OnPressed += OnResetButtonPressed;
@@ -43,6 +44,7 @@ namespace Content.Client.Options.UI.Tabs
                 InterfaceVolumeSlider,
                 AnnouncerVolumeSlider,
 
+                ToggleCombatModeCheckBox,
                 CombatMusicCheckBox,
                 LobbyMusicCheckBox,
                 RestartSoundsCheckBox,
@@ -90,6 +92,7 @@ namespace Content.Client.Options.UI.Tabs
                 InterfaceVolumeSlider,
                 AnnouncerVolumeSlider,
 
+                ToggleCombatModeCheckBox,
                 CombatMusicCheckBox,
                 LobbyMusicCheckBox,
                 RestartSoundsCheckBox,
@@ -134,6 +137,7 @@ namespace Content.Client.Options.UI.Tabs
 
             _cfg.SetCVar(CCVars.MaxAmbientSources, (int)AmbienceSoundsSlider.Value);
 
+            _cfg.SetCVar(WhiteCVars.ToggleCombatModeSound, ToggleCombatModeCheckBox.Pressed);
             _cfg.SetCVar(CCVars.CombatMusicEnabled, CombatMusicCheckBox.Pressed);
             _cfg.SetCVar(CCVars.LobbyMusicEnabled, LobbyMusicCheckBox.Pressed);
             _cfg.SetCVar(CCVars.RestartSoundsEnabled, RestartSoundsCheckBox.Pressed);
@@ -162,6 +166,7 @@ namespace Content.Client.Options.UI.Tabs
 
             AmbienceSoundsSlider.Value = _cfg.GetCVar(CCVars.MaxAmbientSources);
 
+            ToggleCombatModeCheckBox.Pressed = _cfg.GetCVar(WhiteCVars.ToggleCombatModeSound);
             CombatMusicCheckBox.Pressed = _cfg.GetCVar(CCVars.CombatMusicEnabled);
             LobbyMusicCheckBox.Pressed = _cfg.GetCVar(CCVars.LobbyMusicEnabled);
             RestartSoundsCheckBox.Pressed = _cfg.GetCVar(CCVars.RestartSoundsEnabled);
@@ -198,9 +203,10 @@ namespace Content.Client.Options.UI.Tabs
             var isEventSame = EventMusicCheckBox.Pressed == _cfg.GetCVar(CCVars.EventMusicEnabled);
             var isAnnouncerDisableMultipleSoundsSame = AnnouncerDisableMultipleSoundsCheckBox.Pressed == _cfg.GetCVar(CCVars.AnnouncerDisableMultipleSounds);
             var isAdminSoundsSame = AdminSoundsCheckBox.Pressed == _cfg.GetCVar(CCVars.AdminSoundsEnabled);
+            var isToggleCombatModeSoundsSame = AdminSoundsCheckBox.Pressed == _cfg.GetCVar(CCVars.AdminSoundsEnabled);
             var isEverythingSame = isMasterVolumeSame && isMidiVolumeSame && isAmbientVolumeSame && isCombatMusicVolumeSame
                 && isAmbientMusicVolumeSame && isAmbientSoundsSame && isCombatSame && isLobbySame && isRestartSoundsSame && isEventSame
-                && isAnnouncerDisableMultipleSoundsSame && isAdminSoundsSame && isLobbyVolumeSame
+                && isAnnouncerDisableMultipleSoundsSame && isAdminSoundsSame && isLobbyVolumeSame && isToggleCombatModeSoundsSame
                 && isInterfaceVolumeSame && isAnnouncerVolumeSame;
             ApplyButton.Disabled = isEverythingSame;
             ResetButton.Disabled = isEverythingSame;
