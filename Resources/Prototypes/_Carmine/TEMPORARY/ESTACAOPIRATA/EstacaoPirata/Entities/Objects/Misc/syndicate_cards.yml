@@ -10,25 +10,6 @@
         state: singlecard_down_syndicate
 
 - type: entity
-  parent: CardBoxBase
-  id: CardBoxSyndicate
-  name: syndicate deck box
-  components:
-  - type: Item
-    size: Small
-  - type: Sprite
-    sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    layers:
-    - state: syndicate_box
-    - state: syndicate_box_open
-      map: [ "openLayer" ]
-      visible: false
-  - type: OpenTriggeredStorageFill
-    contents:
-    - id: CardDeckSyndicate
-      amount: 1
-
-- type: entity
   parent: CardDeckBase
   id: CardDeckSyndicate
   name: deck of cards

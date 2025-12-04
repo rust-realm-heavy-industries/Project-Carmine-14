@@ -55,37 +55,6 @@
 
 - type: entity
   parent: CratePlastic
-  id: CrateHydroponics
-  name: hydroponics crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/hydroponics.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/hydroponics.rsi
-
-- type: entity
-  parent: CratePlastic
-  id: CrateMedical
-  name: medical crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/medical.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/medical.rsi
-
-- type: entity
-  parent: CrateGenericSteel
-  id: CrateRadiation
-  name: radiation gear crate
-  description: Is not actually lead lined. Do not store your plutonium in this.
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/radiation.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/radiation.rsi
-
-- type: entity
-  parent: CratePlastic
   id: CrateInternals
   name: oxygen crate
   components:
@@ -114,73 +83,7 @@
   - type: Sprite
     sprite: Structures/Storage/Crates/engineering.rsi
 
-- type: entity
-  parent: CrateGenericSteel
-  id: CrateSurgery
-  name: surgery crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/surgery.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/surgery.rsi
-
-- type: entity
-  parent: CrateGeneric
-  id: CrateWeb
-  name: web crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/web.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/web.rsi
-    layers:
-    - state: base
-      map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
-      map: ["enum.StorageVisualLayers.Door"]
-    - state: paper
-      sprite: Structures/Storage/Crates/labels.rsi
-      map: ["enum.PaperLabelVisuals.Layer"]
-  - type: Construction
-    graph: WebStructures
-    node: crate
-  - type: Damageable
-    damageModifierSet: Web
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroy
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWebSilk:
-            min: 3
-            max: 5
-  - type: EntityStorage
-    closeSound:
-      path: /Audio/Effects/rustle1.ogg
-    openSound:
-      path: /Audio/Effects/rustle2.ogg
-
 # Secure Crates
-
-- type: entity
-  parent: CrateBaseSecure
-  id: CrateSecgear
-  name: secgear crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/sec_gear.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/sec_gear.rsi
-  - type: AccessReader
-    access: [["Security"]]
 
 - type: entity
   parent: CrateBaseSecure
@@ -191,32 +94,6 @@
     sprite: Structures/Storage/Crates/engicrate_secure.rsi
   - type: Sprite
     sprite: Structures/Storage/Crates/engicrate_secure.rsi
-  - type: AccessReader
-    access: [["Engineering"]]
-
-- type: entity
-  parent: CrateBaseSecure
-  id: CrateMedicalSecure
-  name: secure medical crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/medicalcrate_secure.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/medicalcrate_secure.rsi
-  - type: AccessReader
-    access: [["Medical"]]
-
-- type: entity
-  parent: CrateBaseSecure
-  id: CrateChemistrySecure
-  name: secure chemistry crate
-  components:
-    - type: Icon
-      sprite: Structures/Storage/Crates/chemcrate_secure.rsi
-    - type: Sprite
-      sprite: Structures/Storage/Crates/chemcrate_secure.rsi
-    - type: AccessReader
-      access: [["Chemistry"]]
 
 - type: entity
   parent: CrateBaseSecure
@@ -227,18 +104,6 @@
     sprite: Structures/Storage/Crates/privatecrate_secure.rsi
   - type: Sprite
     sprite: Structures/Storage/Crates/privatecrate_secure.rsi
-
-- type: entity
-  parent: CrateBaseSecure
-  id: CratePlasma
-  name: plasma crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/plasma.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/plasma.rsi
-  - type: AccessReader
-    access: [["Engineering"], ["Research"], ["Chemistry"]]
 
 - type: entity
   parent: CrateBaseSecure
@@ -261,30 +126,6 @@
       sprite: Structures/Storage/Crates/secure.rsi
     - type: Sprite
       sprite: Structures/Storage/Crates/secure.rsi
-
-- type: entity
-  parent: CrateBaseSecure
-  id: CrateHydroSecure
-  name: secure hydroponics crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/hydro_secure.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/hydro_secure.rsi
-  - type: AccessReader
-    access: [["Hydroponics"]]
-
-- type: entity
-  parent: CrateBaseSecureReinforced
-  id: CrateWeaponSecure
-  name: secure weapon crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/weapon.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/weapon.rsi
-  - type: AccessReader
-    access: [["Armory"]]
 
 - type: entity
   parent: CrateGeneric
@@ -342,57 +183,6 @@
     - entity_storage
   - type: StaticPrice
     price: 125
-
-- type: entity
-  parent: CrateGeneric
-  id: CratePirate
-  name: pirate chest
-  description: A space pirate chest, not for station lubbers.
-  components:
-  - type: Sprite
-    sprite: Structures/Storage/Crates/piratechest.rsi
-    layers:
-    - state: crate
-      map: ["enum.StorageVisualLayers.Base"]
-    - state: crate_door
-      map: ["enum.StorageVisualLayers.Door"]
-    - state: welded
-      visible: false
-      map: ["enum.WeldableLayers.BaseWelded"]
-    - state: paper
-      sprite: Structures/Storage/Crates/labels.rsi
-      offset: "0.0,-0.09375"
-      map: ["enum.PaperLabelVisuals.Layer"]
-  - type: Icon
-    sprite: Structures/Storage/Crates/piratechest.rsi
-    state: crate_icon
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateDoorOpen: crate_open
-    stateDoorClosed: crate_door
-
-- type: entity
-  parent: CratePirate
-  id: CrateToyBox
-  name: toy box
-  suffix: Empty
-  description: A box overflowing with fun.
-  components:
-  - type: Sprite
-    sprite: Structures/Storage/Crates/toybox.rsi
-    layers:
-    - state: crate
-      map: ["enum.StorageVisualLayers.Base"]
-    - state: crate_door
-      map: ["enum.StorageVisualLayers.Door"]
-    - state: welded
-      visible: false
-      map: ["enum.WeldableLayers.BaseWelded"]
-    - state: paper
-      map: ["enum.PaperLabelVisuals.Layer"]
-  - type: Icon
-    sprite: Structures/Storage/Crates/toybox.rsi
-    state: crate_icon
 
 - type: entity
   parent: CrateGeneric

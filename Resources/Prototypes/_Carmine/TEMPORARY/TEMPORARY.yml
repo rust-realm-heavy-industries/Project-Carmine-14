@@ -94,64 +94,6 @@
     tags:
     - BoxCardboard
 
-# Goobstation - rolly chairs that actually roll!
-- type: entity
-  name: chair
-  id: RollingOfficeChairBase
-  description: Scoot from desk to desk because standing is for interns.
-  parent: BaseVehicle
-  abstract: true
-  components:
-  - type: Anchorable
-  - type: Rotatable
-    rotateWhileAnchored: true
-  - type: Sprite
-    sprite: Structures/Furniture/chairs.rsi
-    noRot: true
-  - type: Strap
-    position: Stand
-    buckleOffset: "0,-0.05"
-  - type: Vehicle
-    requiredHands: 0
-    engineRunning: true
-    renderOver: South, SouthEast, SouthWest
-  - type: MovementSpeedModifier
-    acceleration: 10
-    friction: 3.5
-    baseSprintSpeed: 2.5
-    baseWalkSpeed: 1.5
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.2
-        density: 75
-        mask:
-        - TableMask
-  - type: StaticPrice
-    price: 50
-
 - type: entity
   id: BaseVehicle
   abstract: true
@@ -448,7 +390,7 @@
 
 - type: entity
   name: soil
-  id: hydroponicsSoil
+  id: hydroponicsSoil #fetid code since this is the parent to hydrotrays
   placement:
     mode: SnapgridCenter
   components:
@@ -1109,62 +1051,6 @@
               acts: ["Destruction"]
 
 - type: entity
-  parent: BaseStructure
-  id: N14DoorMetalBlueTall
-  name: metal Door
-  suffix: tall
-  description: An old blue metal door.
-  components:
-  - type: InteractionOutline
-  - type: AnimationPlayer
-  - type: Appearance
-  - type: Physics
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.49,-0.49,0.49,0.49"
-        density: 100
-        mask:
-        - FullTileMask
-        layer:
-        - AirlockLayer
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: _Nuclear14/Structures/Doors/TallDoors/metalblue.rsi
-    layers:
-    - state: closed
-      map: ["enum.DoorVisualLayers.Base"]
-  - type: Door
-    bumpOpen: false
-    clickOpen: true
-    closeTimeOne: 0
-    closeTimeTwo: 0
-    openTimeOne: 0
-    openTimeTwo: 0
-    closedDrawDepth: Mobs
-    openDrawDepth: Mobs
-    openSound:
-      path: /Audio/Effects/door_open.ogg
-    closeSound:
-      path: /Audio/Effects/door_close.ogg
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: NavMapDoor
-  - type: Occluder
-  - type: BlockWeather
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
-
-- type: entity
   parent: N14SignBase
   id: N14SignBar
   name: bar sign
@@ -1265,7 +1151,7 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
-    
+
 - type: entity
   id: Dresser #cull for the n14 one
   parent: BaseStructure
@@ -1321,7 +1207,7 @@
   components:
   - type: StaticPrice
     price: 15
-    
+
 - type: entity #used by shitmed prosthetics
   id: PartIPC
   parent: BaseItem
@@ -1357,7 +1243,7 @@
       - !type:GibPartBehavior { }
   - type: StaticPrice
     price: 100
-    
+
 - type: entity
   name: green glowstick
   parent: BaseItem
@@ -1423,3 +1309,233 @@
     - type: Tag
       tags:
       - Trash
+
+
+# Wooden Doors
+- type: entity
+  parent: N14BaseDoor
+  id: N14DoorMakeshift #TODO: KILL AND CONVERT TO PROPER BASE PROTOTYPE
+  name: makeshift door
+  description: It's a wooden door. It looks dirty and handmade.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Doors/FalloutDoors/wooddoor.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: N14DoorGraph
+    node: woodDoorMakeshift
+
+- type: entity
+  id: EffectFlashBluespace #used for bluespace lockers and artifacts, neither are used, but its hardcoded
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: PointLight
+    radius: 10.5
+    energy: 15
+    color: "#18abf5"
+  - type: TimedDespawn
+    lifetime: 1
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/Effects/Lightning/lightningbolt.ogg
+
+- type: entity
+  id: Exclamation #used for cardboard boxes, unused, hardcoded
+  name: exclamation
+  categories: [ HideSpawnMenu ]
+  save: false
+  components:
+    - type: Transform
+      noRot: true
+    - type: Sprite
+      sprite: Structures/Storage/closet.rsi
+      drawdepth: Effects
+      noRot: true
+      layers:
+      - state: "cardboard_special"
+    - type: TimedDespawn
+      lifetime: 1
+    - type: Tag
+      tags:
+        - HideContextMenu
+
+- type: entity
+  name: spooky lightning
+  id: LightningRevenant #used for revenant, unused, hardcoded
+  parent: BaseLightning
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: /Textures/Effects/lightning.rsi
+      drawdepth: Effects
+      layers:
+        - state: "lightning_3"
+          color: plum
+          shader: unshaded
+    - type: PointLight
+      enabled: true
+      color: plum
+      radius: 3.5
+      softness: 1
+      autoRot: true
+      castShadows: false
+    - type: Lightning
+      canArc: false
+      shockDamage: 30
+
+- type: entity
+  name: charged lightning
+  id: ChargedLightning #used for glimmershit and hardcoded
+  parent: BaseLightning
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: /Textures/Effects/lightning.rsi
+      drawdepth: Effects
+      layers:
+        - state: "blue_lightning"
+          shader: unshaded
+    - type: Electrified
+      requirePower: false
+      shockDamage: 40
+    - type: Lightning
+      canArc: true
+      lightningPrototype: ChargedLightning
+
+- type: entity
+  name: supercharged lightning
+  id: SuperchargedLightning #used for glimmershit and hardcoded
+  parent: ChargedLightning
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: /Textures/Effects/lightning.rsi
+      drawdepth: Effects
+      layers:
+        - state: "yellow_lightning"
+          shader: unshaded
+    - type: Electrified
+      requirePower: false
+      shockDamage: 50
+    - type: Lightning
+      canArc: true
+      lightningPrototype: SuperchargedLightning
+    - type: PointLight
+      enabled: true
+      color: "#FFFF00"
+      radius: 3.5
+      softness: 1
+      autoRot: true
+      castShadows: false
+
+- type: entity
+  name: hypercharged lightning
+  id: HyperchargedLightning #used for glimmershit and hardcoded
+  parent: ChargedLightning
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: /Textures/Effects/lightning.rsi
+      drawdepth: Effects
+      layers:
+        - state: "red_lightning"
+          shader: unshaded
+    - type: Electrified
+      requirePower: false
+      shockDamage: 60
+    - type: Lightning
+      canArc: true
+      lightningPrototype: HyperchargedLightning
+    - type: PointLight
+      enabled: true
+      color: "#ff0000"
+      radius: 3.5
+      softness: 1
+      autoRot: true
+      castShadows: false
+
+- type: entity
+  id: FtlVisualizerEntity #used for FTLshit, hardcoded
+  categories: [ HideSpawnMenu ]
+  description: Visualizer for shuttles arriving. You shouldn't see this!
+  components:
+  - type: FtlVisualizer
+    sprite:
+      sprite: /Textures/Effects/medi_holo.rsi
+      state: medi_holo
+  - type: Tag
+    tags:
+    - HideContextMenu
+
+- type: entity
+  id: EffectTeslaSparks #used for teslashit, hardcoded
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.5
+  - type: Sprite
+    drawdepth: Effects
+    noRot: true
+    layers:
+    - shader: unshaded
+      map: ["enum.EffectLayers.Unshaded"]
+      sprite: Effects/atmospherics.rsi
+      state: frezon_old
+  - type: EffectVisuals
+  - type: Tag
+    tags:
+    - HideContextMenu
+  - type: AnimationPlayer
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/Effects/tesla_consume.ogg
+      params:
+        variation: 0.3
+
+- type: entity
+  name: lightning #used exclusively for microwave malfunctions, hardcoded, should be kept but redone a little
+  id: Spark
+  parent: BaseLightning
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Beam
+      sound: /Audio/Effects/sparks4.ogg
+    - type: Electrified
+      shockDamage: 0
+    - type: Lightning
+      lightningPrototype: Spark
+    - type: PointLight
+      radius: 0.2
+      softness: 0.4
+    - type: Sprite
+      sprite: /Textures/Effects/lightning.rsi
+      drawdepth: Effects
+      layers:
+        - state: "lightning_1"
+          shader: unshaded
+    - type: Tag
+      tags:
+        - HideContextMenu
+    - type: TimedDespawn
+      lifetime: 0.3

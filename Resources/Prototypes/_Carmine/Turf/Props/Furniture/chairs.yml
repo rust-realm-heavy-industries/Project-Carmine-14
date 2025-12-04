@@ -1,0 +1,306 @@
+- type: entity
+  name: chair
+  id: SeatBase
+  abstract: true
+  description: You sit in this. Either by will or force.
+  placement:
+    mode: PlaceFree
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 100
+        mask:
+        - TableMask
+  - type: Sprite
+    sprite: Structures/Furniture/chairs.rsi
+    noRot: true
+  - type: Strap
+    position: Stand
+    buckleOffset: "0,-0.05"
+  - type: Pullable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RequireProjectileTarget
+
+#Start anchored, cannot be rotated while anchored
+- type: entity
+  name: chair
+  id: ChairBase
+  abstract: true
+  parent: SeatBase
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Anchorable
+  - type: Rotatable
+
+#Starts unanchored, can be rotated while anchored
+- type: entity
+  name: chair
+  id: OfficeChairBase
+  parent: SeatBase
+  abstract: true
+  components:
+  - type: Rotatable
+    rotateWhileAnchored: true
+  - type: Anchorable
+
+#Starts anchored, can be rotated while anchored
+- type: entity
+  name: stool
+  id: StoolBase
+  parent: OfficeChairBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+
+# CHAIRS
+
+- type: entity
+  name: metal chair
+  description: Sturdy, stiff. Its cold to the touch.
+  id: Chair
+  parent: ChairBase
+  components:
+  - type: Sprite
+    state: chair
+
+- type: entity
+  name: pilot chair
+  description: Complex, comfortable. The padding melds with your skin.
+  id: ChairPilot
+  parent: ChairBase
+  components:
+  - type: Sprite
+    state: shuttle
+    
+- type: entity
+  id: ChairWood
+  name: wood chair
+  description: Comfortable, fluid. You can feel the imported wood.
+  parent: ChairBase
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: wood_chair
+    
+- type: entity
+  id: ChairWoodPadded
+  name: wood chair
+  description: Comfortable, fluid. The pillows meld with your skin.
+  parent: ChairBase
+  suffix: padded
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: wood_chair_padded
+
+- type: entity
+  parent: ChairBase
+  id: ChairPlastic
+  name: plastic chair
+  description: Flimsy, acrid. The plastic looks melted around the legs.
+  suffix: plastic
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: plastic_chair
+    
+- type: entity
+  parent: ChairBase
+  id: ChairGreen
+  name: metal chair
+  description: Sturdy, stiff. The green tones are fading away.
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair
+    
+- type: entity
+  parent: ChairBase
+  id: ChairBlue
+  name: metal chair
+  description: Sturdy, stiff. The blue tones are fading away.
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_blue
+    
+- type: entity
+  parent: ChairBase
+  id: ChairRed
+  name: metal chair
+  description: Sturdy, stiff. The red tones are fading away.
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_red
+
+# OFFICE CHAIRS
+
+- type: entity
+  parent: OfficeChairBase
+  id: ChairOfficeBlue
+  name: office chair
+  description: Sturdy, flexible. The fake leather is falling off.
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: office_chair_blue
+    
+- type: entity
+  parent: OfficeChairBase
+  id: ChairOfficeGreen
+  name: office chair
+  description: Sturdy, flexible. The fake leather is falling off.
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: office_chair_green
+    
+- type: entity
+  parent: OfficeChairBase
+  id: ChairOfficeRed
+  name: office chair
+  description: Sturdy, flexible. The fake leather is falling off.
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: office_chair
+    
+- type: entity
+  parent: OfficeChairBase
+  id: ChairOfficeFancy
+  name: office chair
+  description: Sturdy, flexible. The fake leather is vividly shining.
+  suffix: fancy
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: ergo_chair
+    
+# STOOLS
+    
+- type: entity
+  parent: StoolBase
+  id: ChairArmchair
+  name: armchair
+  description: Old, glossy. The pillows have compacted and recessed.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: armchair
+    
+- type: entity
+  parent: StoolBase
+  id: ChairStoolBlack
+  name: old stool
+  suffix: black
+  description: Firm, callous. The fake leather is rubbing off.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+    state: bar_black
+    
+- type: entity
+  parent: StoolBase
+  id: ChairStoolTan
+  name: old stool
+  suffix: tan
+  description: Firm, callous. The fake leather is rubbing off.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+    state: bar_tan
+    
+- type: entity
+  parent: StoolBase
+  id: ChairStool
+  name: stool
+  description: Glossy, well-preseved. It looks brand new.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: barstool
+    
+# MISC
+    
+- type: entity
+  parent: ChairBase
+  id: ChairFolding #YAMLTODO: ACTUALLY MAKE IT FOLD
+  name: folding chair
+  description: Stiff, efficient. The locking mechanism hasn't degraded yet.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_folding
+    
+- type: entity
+  parent: ChairBase
+  id: ChairBarRetro
+  name: retro chair
+  description: Comfortable, fancy. The bolts are rusting away.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: retro_chair
+    
+- type: entity
+  parent: ChairBase
+  id: ChairDiner
+  name: diner chair
+  description: Glossy, poorly preserved. The fake leather is falling off in chunks.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: diner_chair
+    
+- type: entity
+  name: steel bench
+  id: BenchSteel
+  parent: ChairBase
+  description: Sturdy, stiff. The center is lightly bent inwards.
+  components:
+  - type: Sprite
+    state: steel-bench

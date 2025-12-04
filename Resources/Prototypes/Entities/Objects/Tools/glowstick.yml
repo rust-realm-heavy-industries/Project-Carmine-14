@@ -1,26 +1,4 @@
 - type: entity
-  name: red glowstick
-  parent: GlowstickBase
-  id: GlowstickRed
-  components:
-    - type: ExpendableLight
-      spentName: expendable-light-spent-red-glowstick-name
-      glowColorLit: "#FF0000"
-    - type: PointLight
-      color: "#FF0000"
-
-- type: entity
-  name: purple glowstick
-  parent: GlowstickBase
-  id: GlowstickPurple
-  components:
-    - type: ExpendableLight
-      spentName: expendable-light-spent-purple-glowstick-name
-      glowColorLit: "#FF00FF"
-    - type: PointLight
-      color: "#FF00FF"
-
-- type: entity
   name: yellow glowstick
   parent: GlowstickBase
   id: GlowstickYellow

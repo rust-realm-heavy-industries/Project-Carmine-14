@@ -1,0 +1,29 @@
+- type: entity
+  parent: SeatBase
+  id: N14FitnessWeightsBench1
+  name: weights bench
+  description: A bench for pumping iron.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/np13_misc.rsi
+    state: fitnessweight
+
+- type: entity
+  parent: N14FitnessWeightsBench1
+  id: N14FitnessWeightLifter
+  name: weight lifter
+  components:
+  - type: Sprite
+    state: fitnesslifter
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.1"

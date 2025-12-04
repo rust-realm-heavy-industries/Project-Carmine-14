@@ -1,0 +1,80 @@
+- type: entity
+  parent: ChairBase
+  id: ChairMetalGreenUnfinished
+  suffix: unfinished
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_unfinished
+
+- type: entity
+  parent: ChairBase
+  id: ChairMetalGreenBroken
+  suffix: broken
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_broken
+
+- type: entity
+  parent: ChairBase
+  id: ChairMetalBlueUnfinished
+  suffix: blue, unfinished
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_blue_unfinished
+
+- type: entity
+  parent: ChairBase
+  id: ChairMetalBlueBroken
+  suffix: blue, broken
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_blue_broken
+
+- type: entity
+  parent: ChairBase
+  id: ChairMetalRedUnfinished
+  suffix: red, unfinished
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_red_unfinished
+
+- type: entity
+  parent: ChairBase
+  id: ChairMetalRedBroken
+  suffix: red, broken
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: metal_chair_red_broken
+
+- type: entity
+  parent: OfficeChairBase
+  id: NChairOfficeRedBroken
+  suffix: red, broken
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: office_chair_broken
+
+- type: entity
+  parent: OfficeChairBase
+  id: NChairOfficeGreenBroken
+  suffix: green, broken
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: office_chair_green_broken
+
+- type: entity
+  parent: OfficeChairBase
+  id: ChairOfficeBlueBroken
+  suffix: blue, broken
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: office_chair_blue_broken

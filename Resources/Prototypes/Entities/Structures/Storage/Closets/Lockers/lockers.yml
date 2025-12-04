@@ -61,7 +61,6 @@
   id: LockerFreezerBase
   parent: LockerBase
   name: freezer
-  suffix: No Access
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -71,12 +70,6 @@
   - type: ExplosionResistance
     damageCoefficient: 0.50
   - type: AntiRottingContainer
-
-- type: entity
-  id: LockerFreezer
-  parent: LockerFreezerBase
-  name: freezer
-  suffix: Kitchen, Locked
 
 # Medicine
 - type: entity
@@ -109,17 +102,3 @@
   parent: LockerBooze
   name: detective's cabinet
   description: Usually cold and empty... like your heart.
-
-# Syndicate
-
-- type: entity
-  id: LockerSyndicateAgentLocker
-  name: syndicate agent locker
-  parent: LockerBase
-  description: It's a personal storage unit for agent gear.
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: syndicate1
-    stateDoorOpen: syndicate1_open
-    stateDoorClosed: syndicate1_door

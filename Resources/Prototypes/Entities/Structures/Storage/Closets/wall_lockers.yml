@@ -59,18 +59,6 @@
     stateDoorClosed: blue_door
 
 - type: entity
-  id: ClosetWallPink
-  parent: BaseWallCloset
-  name: pink wall closet
-  description: "A wardrobe packed with fabulous pink clothing."
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: generic
-    stateDoorOpen: generic_open
-    stateDoorClosed: pink_door
-
-- type: entity
   id: ClosetWallBlack
   parent: BaseWallCloset
   name: black wall closet

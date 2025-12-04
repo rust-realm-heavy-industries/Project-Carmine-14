@@ -260,20 +260,6 @@ entities:
     - type: Transform
       pos: -5.5,1.5
       parent: 2
-- proto: Bed
-  entities:
-  - uid: 371
-    components:
-    - type: Transform
-      pos: 8.5,8.5
-      parent: 2
-- proto: BedsheetCE
-  entities:
-  - uid: 372
-    components:
-    - type: Transform
-      pos: 8.5,8.5
-      parent: 2
 - proto: CableApcExtension
   entities:
   - uid: 246
@@ -2505,38 +2491,6 @@ entities:
     - type: Transform
       pos: 4.5,8.5
       parent: 2
-- proto: Table
-  entities:
-  - uid: 331
-    components:
-    - type: Transform
-      pos: -6.5,5.5
-      parent: 2
-  - uid: 334
-    components:
-    - type: Transform
-      pos: -7.5,5.5
-      parent: 2
-  - uid: 335
-    components:
-    - type: Transform
-      pos: -4.5,5.5
-      parent: 2
-  - uid: 336
-    components:
-    - type: Transform
-      pos: -3.5,5.5
-      parent: 2
-  - uid: 373
-    components:
-    - type: Transform
-      pos: 8.5,7.5
-      parent: 2
-  - uid: 375
-    components:
-    - type: Transform
-      pos: 8.5,6.5
-      parent: 2
 - proto: TegCenter
   entities:
   - uid: 3
@@ -2711,13 +2665,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,5.5
-      parent: 2
-- proto: WaterTankHighCapacity
-  entities:
-  - uid: 395
-    components:
-    - type: Transform
-      pos: -7.5,-4.5
       parent: 2
 - proto: WeldingFuelTankHighCapacity
   entities:

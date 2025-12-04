@@ -117,6 +117,15 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         var identity = Identity.Entity(uid, EntityManager);
         var species = GetSpeciesRepresentation(component.Species, component.CustomSpecieName).ToLower();
         var age = GetAgeRepresentation(component.Species, component.Age);
+
+        // WWDP EDIT
+        string locale = "humanoid-appearance-component-examine";
+
+        if (args.Examiner == args.Examined) // Use the selfaware locale when examining yourself
+            locale += "-selfaware";
+
+        // WWDP EDIT END
+
         if (HasComp<VoidbornComponent>(uid))
         {
             var color = component.EyeColor.Name();
@@ -124,7 +133,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
                 age = Loc.GetString("identity-eye-voidborn", ("color", color));
         }
 
-        args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
+        args.PushText(Loc.GetString(locale, ("user", identity), ("age", age), ("species", species)), 100); //priority for examine
 
         if (component.DisplayPronouns != null)
             args.PushText(Loc.GetString("humanoid-appearance-component-examine-pronouns", ("user", identity), ("pronouns", component.DisplayPronouns)));

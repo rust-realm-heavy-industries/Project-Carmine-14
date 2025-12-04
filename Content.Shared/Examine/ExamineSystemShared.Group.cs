@@ -1,3 +1,4 @@
+using Content.Shared._White.Examine;
 using Content.Shared.Verbs;
 using Robust.Shared.Utility;
 
@@ -145,6 +146,8 @@ namespace Content.Shared.Examine
                 Act = () =>
                 {
                     SendExamineTooltip(verbsEvent.User, verbsEvent.Target, formattedMessage, false, false);
+                    var examineCompletedEvent = new ExamineCompletedEvent(formattedMessage, verbsEvent.Target, verbsEvent.User, true); //WD/goob edit
+                    RaiseLocalEvent(verbsEvent.Target, examineCompletedEvent); //WD/goob edit
                 },
                 Text = verbText,
                 Message = hoverMessage,

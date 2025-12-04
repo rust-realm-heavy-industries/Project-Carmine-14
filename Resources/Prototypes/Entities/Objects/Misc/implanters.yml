@@ -14,7 +14,7 @@
     - type: Implanter
       whitelist:
         components:
-        - Body # no chair microbomb
+        - Body
       blacklist:
         components:
         - Guardian # no holoparasite macrobomb wombo combo
@@ -133,14 +133,6 @@
       implant: EmpImplant
 
 - type: entity
-  id: ScramImplanter
-  name: scram implanter
-  parent: BaseImplantOnlyImplanterSyndi
-  components:
-    - type: Implanter
-      implant: ScramImplant
-
-- type: entity
   id: DnaScramblerImplanter
   name: DNA scrambler implanter
   parent: BaseImplantOnlyImplanterSyndi
@@ -149,14 +141,6 @@
       implant: DnaScramblerImplant
 
 #Nuclear Operative/Special implanters
-
-- type: entity
-  id: MicroBombImplanter
-  name: micro-bomb implanter
-  parent: BaseImplantOnlyImplanterSyndi
-  components:
-    - type: Implanter
-      implant: MicroBombImplant
 
 - type: entity
   id: DeathRattleImplanter

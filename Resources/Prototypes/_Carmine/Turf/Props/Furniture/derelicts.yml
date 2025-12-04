@@ -1,0 +1,377 @@
+- type: entity
+  id: DerelictRecycler
+  parent: [BaseStructure, BaseMachinePowered]
+  name: industrial materials recycler
+  description: A crude industrial recycler, somehow it still has sparks of activity. Inserting basic objects grinds them up into basic materials re-use.
+  components:
+  - type: Sprite
+    noRot: true
+    offset: "0.0,0.5"
+    sprite: _Crescent/Structures/Decoration/derelict_recycler.rsi
+    layers:
+      - state: off
+      - state: machine
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+  - type: PowerSwitch
+  - type: ApcPowerReceiver
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 8
+            max: 12
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 200
+        
+- type: entity
+  id: DerelictRecorder
+  parent: [BaseStructure, BaseMachinePowered]
+  name: server recorder
+  description: An abandoned reel to reel tape drive for a server system.
+  components:
+  - type: Sprite
+    offset: "0.0,0.5"
+    drawdepth: Mobs
+    noRot: true
+    sprite: _Crescent/Structures/Decoration/recorder.rsi
+    layers:
+    - state: recorder
+    - state: recorder_on
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: Icon
+    sprite: _Crescent/Structures/Decoration/recorder.rsi
+    state: recorder
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 6
+            max: 8
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 50
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+  - type: ApcPowerReceiver
+  - type: PowerSwitch
+
+- type: entity
+  id: DerelictRack
+  parent: [BaseStructure, BaseMachinePowered]
+  name: server rack controller
+  description: An abandoned controller for a server system.
+  components:
+  - type: Sprite
+    offset: "0.0,0.5"
+    drawdepth: Mobs
+    noRot: true
+    sprite: _Crescent/Structures/Decoration/derelict_rack.rsi
+    layers:
+    - state: off
+    - state: machine
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: Icon
+    sprite: _Crescent/Structures/Decoration/derelict_rack.rsi
+    state: off
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 6
+            max: 8
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 50
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+  - type: ApcPowerReceiver
+  - type: PowerSwitch
+
+- type: entity
+  id: DerelictGenerator
+  parent: BaseStructure
+  name: derelict generator
+  description: An abandoned generator lacking proper maintainence. It can no longer generate power.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
+    offset: "0.0,0.5"
+    drawdepth: Mobs
+    noRot: true
+    state: derelict_generator_1
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 6
+            max: 8
+  - type: SpriteFade
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 50
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+
+- type: entity
+  id: DerelictGeneratorDamaged
+  parent: DerelictGenerator
+  name: derelict generator
+  description: An abandoned generator lacking proper maintainence. It can no longer generate power.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
+    state: derelict_generator_2
+
+- type: entity
+  parent: DerelictGenerator
+  id: DerelictGeneratorDestroyed
+  name: destroyed derelict generator
+  description: An abandoned generator damaged beyond repair. It can no longer generate power.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
+    state: derelict_generator_3
+
+- type: entity
+  parent: DerelictGenerator
+  id: DerelictGeneratorRust
+  name: rusted derelict generator
+  description: An abandoned rusted generator. It can no longer generate power.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
+    state: derelict_generator_1_r
+
+- type: entity
+  parent: DerelictGenerator
+  id: DerelictGeneratorRustDamaged
+  name: rusted derelict generator
+  description: An abandoned rusted generator. It can no longer generate power.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
+    state: derelict_generator_2_r     
+
+- type: entity
+  parent: DerelictGenerator
+  id: DerelictGeneratorRustDestroyed
+  name: destroyed rusted derelict generator
+  description: An abandoned destroyed rusted generator. It can no longer generate power.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
+    state: derelict_generator_3_r   
+    
+- type: entity
+  id: DerelictSubstation
+  parent: BaseStructure
+  name: derelict substation
+  description: An abandoned substation lacking proper maintainence. It doesn't seem to function.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Decoration/derelict_substation.rsi
+    offset: "0.0,0.5"
+    drawdepth: Mobs
+    noRot: true
+    state: derelict_substation
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 6
+            max: 8
+  - type: SpriteFade
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 50
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+
+- type: entity
+  id: DerelictSubstationRust
+  parent: DerelictSubstation
+  name: rusted derelict substation
+  description: An abandoned rusted substation. It doesn't seem to function.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Decoration/derelict_substation.rsi
+    state: derelict_substation_r
+  
+- type: entity
+  id: DerelictServerRack
+  parent: [BaseStructure, BaseMachinePowered]
+  name: server rack
+  description: An abandoned server rack.
+  components:
+  - type: Sprite
+    offset: "0.0,0.5"
+    drawdepth: Mobs
+    noRot: true
+    sprite: _Crescent/Structures/Decoration/server_rack.rsi
+    layers:
+    - state: server_rack
+    - state: server_rack_on
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: Icon
+    sprite: _Crescent/Structures/Decoration/server_rack.rsi
+    state: server_rack
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#e89527"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 6
+            max: 8
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 50
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+  - type: ApcPowerReceiver
+    powerLoad: 250
+  - type: PowerSwitch

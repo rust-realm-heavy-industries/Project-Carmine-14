@@ -1,0 +1,145 @@
+- type: entity
+  name: bed
+  id: BaseBed
+  abstract: true
+  parent: BaseStructure
+  description: A bed.
+  components:
+    - type: Anchorable
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 75
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetSteel1:
+                  min: 1
+                  max: 2
+            - !type:PlaySoundBehavior #YAMLTODO: NEW SOUNDS
+              sound:
+                collection: MetalBreak
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.45,-0.45,0.45,0.05"
+          density: 190
+          mask:
+            - TableMask
+    - type: HealOnBuckle
+      damage:
+        types:
+          Poison: -0.1
+          Blunt: -0.1
+    - type: PlaceableSurface
+      placeCentered: true
+    - type: Physics
+      bodyType: Static
+    - type: Sprite
+      sprite: Structures/Furniture/furniture.rsi
+      state: bed
+      noRot: true
+    - type: Strap
+      position: Down
+      rotation: -90
+    - type: Transform
+      noRot: true
+
+# BEDS
+
+- type: entity
+  parent: BaseBed
+  id: Bed
+  name: bed
+  description: Clean, comfortable. The paint on the frame is falling off.
+  components:
+    - type: Sprite
+      sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+      state: bed
+
+- type: entity
+  parent: Bed
+  id: BedDirty
+  name: dirty bed
+  description: Filthy, yet comfortable. The frame is rusting away.
+  components:
+    - type: Sprite
+      sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+      state: bed_dirty
+
+- type: entity
+  parent: Bed
+  id: BedBunk #YAMLTODO: RESPRITE
+  name: bunk bed
+  description: Clean, comfortable, the frame is cold to the touch.
+  components:
+    - type: Strap
+      position: Down
+      rotation: 90
+      buckleOffset: "0,0.3"
+    - type: Sprite
+      sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+      state: bed_wood_bunk
+
+# MATTRESSES
+
+- type: entity
+  parent: Bed
+  id: BedMattress
+  name: mattress
+  description: Rough, dry. The fiber is grainy to the touch.
+  components:
+    - type: Sprite
+      sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+      state: mattress1
+
+- type: entity
+  parent: Bed
+  id: BedMattressDirty2
+  name: mattress
+  suffix: dirty
+  description: Rough, filthy. The fiber is grainy to the touch.
+  components:
+    - type: Sprite
+      sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+      state: mattress2
+
+- type: entity
+  parent: Bed
+  id: BedMattressDirty3
+  suffix: bloody
+  name: mattress
+  description: Rough, filthy, the fiber is stained with blood.
+  components:
+    - type: Sprite
+      sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+      state: mattress3
+
+- type: entity
+  parent: Bed
+  id: BedMattressDirty4
+  suffix: bloodier
+  name: mattress
+  description: Rough, filthy, the fiber is soaked with blood.
+  components:
+    - type: Sprite
+      state: mattress4
+
+- type: entity
+  parent: Bed
+  id: BedMattressDirty5
+  suffix: mouldy
+  name: mattress
+  description: Frail, filthy, the fiber is covered in mold.
+  components:
+    - type: Sprite
+      sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
+      state: mattress5

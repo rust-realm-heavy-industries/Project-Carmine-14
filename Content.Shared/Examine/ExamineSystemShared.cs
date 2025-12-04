@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using Content.Shared._White.Examine;
 using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Components;
@@ -279,6 +280,10 @@ namespace Content.Shared.Examine
             RaiseLocalEvent(entity, examinedEvent);
 
             var newMessage = examinedEvent.GetTotalMessage();
+
+            // Goobstation Change: I dont seem to have a way to get the event of examination to happen after EVERYTHING else, so fuck it.
+            var examineCompletedEvent = new ExamineCompletedEvent(newMessage, entity, examiner.Value);
+            RaiseLocalEvent(entity, examineCompletedEvent);
 
             // pop color tag
             newMessage.Pop();

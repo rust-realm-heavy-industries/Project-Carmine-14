@@ -8,21 +8,3 @@
   - type: Sprite
     drawdepth: WallTops
     sprite: Structures/Wallmounts/flags.rsi
-
-- type: entity
-  parent: BaseFlag
-  id: SyndieFlag
-  name: syndicate flag
-  description: "Smells bloody. Death to NT!"
-  components:
-  - type: Sprite
-    state: syndie_flag
-
-- type: entity
-  parent: BaseFlag
-  id: PirateFlag
-  name: pirate flag
-  description: "Raise the jolly roger, scallywags!"
-  components:
-  - type: Sprite
-    state: pirate_flag

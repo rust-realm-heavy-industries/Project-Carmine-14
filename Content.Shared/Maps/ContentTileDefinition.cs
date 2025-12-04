@@ -89,7 +89,9 @@ namespace Content.Shared.Maps
         /// </summary>
         [DataField("barestepSounds")] public SoundSpecifier? BarestepSounds { get; private set; } = new SoundCollectionSpecifier("BarestepHard");
 
-        [DataField("friction")] public float Friction { get; set; } = 0.2f;
+        // ES START
+        [DataField("friction")] public float Friction { get; set; } = 2.5f;
+        // ES END
 
         [DataField("variants")] public byte Variants { get; set; } = 1;
 

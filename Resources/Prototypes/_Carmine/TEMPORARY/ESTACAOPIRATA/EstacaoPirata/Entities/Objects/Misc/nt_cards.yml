@@ -10,25 +10,6 @@
         state: singlecard_down_nanotrasen
 
 - type: entity
-  parent: CardBoxBase
-  id: CardBoxNanotrasen
-  name: nanotrasen deck box
-  components:
-  - type: Item
-    size: Small
-  - type: Sprite
-    sprite: EstacaoPirata/Objects/Misc/cards.rsi
-    layers:
-    - state: nanotrasen_box
-    - state: nanotrasen_box_open
-      map: [ "openLayer" ]
-      visible: false
-  - type: OpenTriggeredStorageFill
-    contents:
-    - id: CardDeckNanotrasen
-      amount: 1
-
-- type: entity
   parent: CardDeckBase
   id: CardDeckNanotrasen
   name: deck of cards

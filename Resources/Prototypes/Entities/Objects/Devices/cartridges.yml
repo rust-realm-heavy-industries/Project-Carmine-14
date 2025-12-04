@@ -18,24 +18,6 @@
 
 - type: entity
   parent: BaseItem
-  id: NewsReaderCartridge
-  name: news cartridge
-  description: A program for reading news
-  components:
-  - type: Sprite
-    sprite: Objects/Devices/cartridge.rsi
-    state: cart-y
-  - type: UIFragment
-    ui: !type:NewsReaderUi
-  - type: Cartridge
-    programName: news-read-program-name
-    icon:
-      sprite: Interface/Misc/program_icons.rsi
-      state: news_read
-  - type: NewsReaderCartridge
-
-- type: entity
-  parent: BaseItem
   id: CrewManifestCartridge
   name: crew manifest cartridge
   description: A program for listing your fellow crewmembers
@@ -89,25 +71,3 @@
         sprite: Objects/Devices/gps.rsi
         state: icon
     - type: AstroNavCartridge
-
-
-- type: entity
-  parent: BaseItem
-  id: PsiWatchCartridge
-  name: psi watch cartridge
-  description: A cartridge that tracks the status of currently documented psionics individuals.
-  components:
-  - type: Sprite
-    sprite: Objects/Devices/cartridge.rsi
-    state: cart-psi
-  - type: Icon
-    sprite: Objects/Devices/cartridge.rsi
-    state: cart-psi
-  - type: UIFragment
-    ui: !type:PsiWatchUi
-  - type: Cartridge
-    programName: psi-watch-program-name
-    icon:
-      sprite: DeltaV/Structures/Machines/glimmer_machines.rsi
-      state: prober
-  - type: PsiWatchCartridge

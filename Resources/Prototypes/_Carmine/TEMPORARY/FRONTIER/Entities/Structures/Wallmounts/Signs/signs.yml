@@ -54,15 +54,6 @@
 
 - type: entity
   parent: BaseSignDirectionalNF
-  id: SignDirectionalNFSD
-  name: nfsd outpost sign
-  description: A direction sign, pointing out which way an NFSD outpost is.
-  components:
-  - type: Sprite
-    state: direction_nfsd
-
-- type: entity
-  parent: BaseSignDirectionalNF
   id: SignDirectionalShop
   name: shops sign
   description: A direction sign, pointing out which way shops are.

@@ -22,60 +22,6 @@
 
 - type: entity
   parent: ClothingMaskGas
-  id: ClothingMaskGasSecurity
-  name: security gas mask
-  description: A standard issue Security gas mask.
-  components:
-  - type: Item
-    size: Tiny
-  - type: Sprite
-    sprite: Clothing/Mask/gassecurity.rsi
-  - type: Clothing
-    sprite: Clothing/Mask/gassecurity.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
-  - type: IngestionBlocker # Goobstation
-    blockSmokeIngestion: true
-  - type: Tag # Goobstation - For survial boxes
-    tags:
-    - PetWearable
-    - WhitelistChameleon
-    - SecurityBreathMask
-
-- type: entity
-  parent: ClothingMaskGas
-  id: ClothingMaskGasSyndicate
-  name: syndicate gas mask
-  description: A close-fitting tactical mask that can be connected to an air supply.
-  components:
-  - type: Sprite
-    sprite: Clothing/Mask/gassyndicate.rsi
-  - type: Clothing
-    sprite: Clothing/Mask/gassyndicate.rsi
-  - type: FlashImmunity
-  - type: EyeProtection
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
-  - type: IngestionBlocker # Goobstation
-    blockSmokeIngestion: true
-  - type: Tag  # Goobstation - For survial boxes
-    tags:
-    - PetWearable
-    - WhitelistChameleon
-    - SyndicateBreathMask
-
-- type: entity
-  parent: ClothingMaskGas
   id: ClothingMaskGasExplorer
   name: explorer gas mask
   description: A military-grade gas mask that can be connected to an air supply.
@@ -110,7 +56,7 @@
     tags:
     - PetWearable
     - WhitelistChameleon
-    - BreathMask  # Goobstation - For survial boxes
+    - BreathMask
 
 - type: entity
   parent: ClothingMaskPullableBase
@@ -130,7 +76,7 @@
     tags:
     - PetWearable
     - WhitelistChameleon
-    - BreathMask # Goobstation - For survial boxes
+    - BreathMask
   - type: PhysicalComposition
     materialComposition:
       Steel: 50

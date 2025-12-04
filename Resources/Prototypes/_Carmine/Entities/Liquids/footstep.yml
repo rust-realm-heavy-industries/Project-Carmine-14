@@ -1,0 +1,38 @@
+- type: entity
+  name: footstep
+  id: Footstep
+  save: false
+  description: Trace of liquid.
+  components:
+    - type: Appearance
+    - type: Clickable
+    - type: DrawableSolution
+      solution: step
+    - type: Drink
+      delay: 3
+      transferAmount: 1
+      solution: step
+      examinable: false
+    - type: ExaminableSolution
+      solution: step
+    - type: FootPrint
+    - type: FootstepModifier
+      footstepSoundCollection:
+        collection: FootstepWater
+        params:
+          volume: 3
+    - type: IgnoresFingerprints
+    - type: MixableSolution
+      solution: step
+    - type: Physics
+      bodyType: Static
+    - type: Puddle
+      solution: step
+    - type: SolutionContainerManager
+      solutions:
+        step: { maxVol: 2 }
+    - type: Sprite
+      drawdepth: FloorObjects
+      color: "#FFFFFF80"
+    - type: Transform
+      noRot: false

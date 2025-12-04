@@ -20,19 +20,6 @@
     stateDoorOpen: generic_open
     stateDoorClosed: blue_door
 
-# Pink wardrobe
-- type: entity
-  id: WardrobePink
-  parent: WardrobeBase
-  name: pink wardrobe
-  description: "A wardrobe packed with fabulous pink clothing."
-  components:
-  - type: Appearance
-  - type: EntityStorageVisuals
-    stateBaseClosed: generic
-    stateDoorOpen: generic_open
-    stateDoorClosed: pink_door
-
 # Black wardrobe
 - type: entity
   id: WardrobeBlack

@@ -6,7 +6,6 @@
 # #
 # # Window: WallSolid
 # # WallSolid: Window
-# # Table: null
 
 # # nulled for carmine
 # # 2023-07-03
@@ -133,10 +132,6 @@
 # FoodBoxDonkpocketGondola: FoodBoxDonkpocketPizza
 
 # # 2024-01-31
-# #SpawnVehicleWheelchair: null Goobstation - Re-add vehicles
-# #SpawnVehicleWheelchairFolded: null Goobstation - Re-add vehicles
-# #VehicleWheelchair: null Goobstation - Re-add vehicles
-# #VehicleWheelchairFolded: null Goobstation - Re-add vehicles
 # VehicleSecwayStealObjective: null
 # #VehicleKeyJanicart: null Goobstation - Re-add vehicles
 # #VehicleKeySecway: null Goobstation - Re-add vehicles

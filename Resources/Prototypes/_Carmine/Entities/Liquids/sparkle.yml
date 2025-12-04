@@ -1,0 +1,18 @@
+- type: entity
+  id: PuddleSparkle
+  name: sparkle
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: EvaporationSparkle
+    - type: Sprite
+      layers:
+        - sprite: Fluids/wet_floor_sparkles.rsi
+          state: sparkles
+      drawdepth: Puddles
+      color: "#FFFFFF80"
+    - type: TimedDespawn
+      lifetime: 1
+    - type: Transform
+      noRot: true
+      anchored: true

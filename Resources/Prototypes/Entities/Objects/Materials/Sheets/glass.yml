@@ -104,7 +104,6 @@
     entries:
     - prototype: Window
     - prototype: WindowDirectional
-    - prototype: WindowDiagonal
     - prototype: SheetRGlass
     - prototype: SheetPGlass
     - prototype: SheetUGlass
@@ -198,7 +197,6 @@
     - prototype: SheetRPGlass1
     - prototype: SheetRUGlass1
     - prototype: ReinforcedWindow
-    - prototype: ReinforcedWindowDiagonal
     - prototype: WindowReinforcedDirectional
 
 - type: entity
@@ -301,8 +299,6 @@
     entries:
     - prototype: SheetRPGlass0
     - prototype: PlasmaWindow
-    - prototype: PlasmaWindowDiagonal
-    - prototype: PlasmaWindowDirectional
 
 - type: entity
   parent: SheetPGlass
@@ -392,7 +388,6 @@
   - type: ShortConstruction
     entries:
     - prototype: ReinforcedPlasmaWindow
-    - prototype: ReinforcedPlasmaWindowDiagonal
     - prototype: PlasmaReinforcedWindowDirectional
 
 - type: entity

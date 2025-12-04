@@ -190,8 +190,4 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NewsReaderCartridge
-      - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
-      - StockTradingCartridge # Delta-V
       - NanoChatCartridge # DeltaV
-      - PsiWatchCartridge

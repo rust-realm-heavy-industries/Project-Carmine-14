@@ -14,60 +14,7 @@
     energy: 1
     color: '#00ff00'
 
-- type: entity
-  parent: N14SignBar
-  id: N14SignOpen1
-  name: open sign
-  description: Open for business. Maybe.
-  components:
-  - type: Sprite
-    state: open
-  - type: PointLight
-    radius: 3
-    energy: 1
-    color: '#ff0000'
-
-- type: entity
-  parent: N14SignOpen1
-  id: N14SignOpen2
-  components:
-  - type: Sprite
-    state: open_bar
-
-- type: entity
-  parent: N14SignOpen1
-  id: N14SignOpenOn1
-  components:
-  - type: Sprite
-    state: open_on
-
-- type: entity
-  parent: N14SignOpen1
-  id: N14SignOpenOn2
-  components:
-  - type: Sprite
-    state: open_bar_on
-
-- type: entity
-  parent: N14SignBase
-  id: N14SignNotice
-  name: notice sign
-  description: NOTICE!
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Wallmounts/walldecor.rsi
-    state: notice_sign
-
 # 64x32
-
-- type: entity
-  parent: N14SignBazaarOn
-  id: N14SignPrivateProperty
-  name: private property sign
-  description: A private property sign.
-  components:
-  - type: Sprite
-    state: private
 
 - type: entity
   parent: N14SignBazaarOn

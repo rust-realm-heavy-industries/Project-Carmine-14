@@ -11,40 +11,6 @@
     # TODO: Will need an access locked variant.
 
 - type: entity
-  parent: CrateBaseWeldable
-  id: N14CrateEnclaveDirectional
-  suffix: directional
-  name: metal crate
-  description: An advanced looking crate. Might have high tech stuff in.
-  components:
-  - type: Icon
-    sprite: _Nuclear14/Structures/Storage/Crates/enclavecrate.rsi
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Crates/enclavecrate.rsi
-
-- type: entity
-  parent: CrateGenericSteel
-  id: N14CrateMedical
-  name: medical crate
-  description: A metal crate for storing medical equipment.
-  components:
-  - type: Icon
-    sprite: _Nuclear14/Structures/Storage/Crates/medicalcrate.rsi
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Crates/medicalcrate.rsi
-
-- type: entity
-  parent: CrateGenericSteel
-  id: N14CrateRed
-  name: red crate
-  description: A faded red crate for storing stuff.
-  components:
-  - type: Icon
-    sprite: _Nuclear14/Structures/Storage/Crates/redcrate.rsi
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Crates/redcrate.rsi
-
-- type: entity
   parent: CrateGeneric
   id: N14Trashbin
   name: trash bin
@@ -59,19 +25,6 @@
       map: ["enum.StorageVisualLayers.Base"]
     - state: closed
       map: ["enum.StorageVisualLayers.Door"]
-
-- type: entity
-  parent: CrateBaseWeldable
-  id: N14CrateTrashcart
-  name: trash cart
-  description: A trash cart for transporting waste.
-  components:
-  - type: Icon
-    sprite: _Nuclear14/Structures/Storage/Crates/trashcart.rsi
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Crates/trashcart.rsi
-  - type: TileFrictionModifier
-    modifier: 0.4
 
 # Wooden
 - type: entity
@@ -100,17 +53,6 @@
         - SmallMobMask #this is so they can go under plastic flaps
         layer:
         - MachineLayer
-
-- type: entity
-  parent: N14CrateWooden
-  id: N14CrateMilitary
-  name: military crate
-  description: An old wooden crate. Looks like it might have some supplies in.
-  components:
-  - type: Icon
-    sprite: _Nuclear14/Structures/Storage/Crates/cratemilitary.rsi
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Crates/cratemilitary.rsi
 
 # Breakable Crates (deconstruct or destroy)
 - type: entity
@@ -175,19 +117,3 @@
   components:
   - type: Sprite
     state: plain_crate-1 # TODO: Make this random between states -1, -2 and -3
-
-- type: entity
-  parent: N14CrateBreakBase
-  id: N14CrateBreakSarsaparilla
-  name: sunset sarsaparilla crate
-  components:
-  - type: Sprite
-    state: sarsaparilla_crate
-
-- type: entity
-  parent: N14CrateBreakSarsaparilla
-  id: N14CrateBreakSarsaparillaDamaged
-  suffix: damaged
-  components:
-  - type: Sprite
-    state: sarsaparilla_crate-1

@@ -227,47 +227,12 @@
 
 - type: entity
   parent: BaseSign
-  id: SignToolStorage
-  name: tool storage sign
-  description: A sign indicating the tool storage room.
-  components:
-  - type: Sprite
-    state: ass
-
-- type: entity
-  parent: BaseSign
-  id: SignAnomaly
-  name: xenoarcheology lab sign
-  description: A sign indicating the xenoarchaeology lab.
-  components:
-  - type: Sprite
-    state: xenoarch
-
-- type: entity
-  parent: BaseSign
   id: SignBar
   name: bar sign
   description: A sign indicating the bar.
   components:
   - type: Sprite
     state: bar
-
-- type: entity
-  parent: BaseSign
-  id: SignTheater
-  name: theater sign
-  description: Would it even be Space Station without drama?
-  components:
-  - type: Sprite
-    layers:
-    - state: drama1
-      map: [ "base" ]
-  - type: RandomSprite
-    available:
-    - base:
-        drama1: null
-        drama2: null
-        drama3: null
 
 - type: entity
   parent: BaseSign
@@ -312,25 +277,6 @@
   description: A sign indicating where you go to... What do you do here again?
   components:
   - type: Sprite
-    state: restroom
-
-- type: entity
-  parent: BaseSign
-  id: SignMaterials
-  name: materials sign
-  description: An omen to the juicy vault of steel, glass, and plastic that lays before you.
-  components:
-  - type: Sprite
-    state: mats
-
-- type: entity
-  parent: BaseSign
-  id: SignEngine
-  name: power sign
-  description: Where the powa happens.
-  components:
-  - type: Sprite
-    state: engine
 
 - type: entity
   parent: BaseSign
@@ -358,15 +304,6 @@
   components:
   - type: Sprite
     state: medbay
-
-- type: entity
-  parent: BaseSign
-  id: SignMorgue
-  name: morgue sign
-  description: A sign indicating the morgue.
-  components:
-  - type: Sprite
-    state: morgue
 
 - type: entity
   parent: BaseSign
@@ -406,98 +343,6 @@
 
 - type: entity
   parent: BaseSign
-  id: SignReception
-  name: reception sign
-  description: A sign indicating the reception.
-  components:
-  - type: Sprite
-    state: reception
-
-- type: entity
-  parent: BaseSign
-  id: SignRND
-  name: research and development sign
-  description: A sign indicating the research and development lab.
-  components:
-  - type: Sprite
-    state: rnd
-
-- type: entity
-  parent: BaseSign
-  id: SignRobo
-  name: robo sign
-  description: A sign indicating the robotics lab.
-  components:
-  - type: Sprite
-    state: robo
-
-- type: entity
-  parent: BaseSign
-  id: SignSalvage
-  name: salvage sign
-  description: A sign indicating the salvage area.
-  components:
-  - type: Sprite
-    state: salvage
-
-- type: entity
-  parent: BaseSign
-  id: SignScience
-  name: science sign
-  description: A sign indicating the science area.
-  components:
-  - type: Sprite
-    state: sci
-
-- type: entity
-  parent: BaseSign
-  id: SignServer
-  name: server sign
-  description: Ever heard of Big Data? This is it, chump. The biggest.
-  components:
-  - type: Sprite
-    state: data
-
-- type: entity
-  parent: BaseSign
-  id: SignSpace
-  name: space sign
-  description: A sign warning that the area ahead is nothing but cold, empty space.
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Structures/Wallmounts/signs.rsi # Nyanotrasen - Give space sign directional sprites
-    state: space
-    snapCardinals: false
-
-- type: entity
-  parent: BaseSign
-  id: SignSurgery
-  name: surgery sign
-  description: A sign indicating the operating theater.
-  components:
-  - type: Sprite
-    state: surgery
-
-- type: entity
-  parent: BaseSign
-  id: SignTelecomms
-  name: telecomms sign
-  description: A sign indicating the telecommunications room.
-  components:
-  - type: Sprite
-    state: telecoms
-
-- type: entity
-  parent: BaseSign
-  id: SignToxins
-  name: toxins sign
-  description: A sign indicating the toxin lab.
-  components:
-  - type: Sprite
-    state: toxins
-
-- type: entity
-  parent: BaseSign
   id: SignVault
   name: vault sign
   description: A sign indicating the vault. Who knows what secrets lie inside?
@@ -507,39 +352,12 @@
 
 - type: entity
   parent: BaseSign
-  id: SignVirology
-  name: virology sign
-  description: A sign indicating the virology lab.
-  components:
-  - type: Sprite
-    state: virology
-
-- type: entity
-  parent: BaseSign
   id: SignDanger
   name: danger warning sign
   description: A sign warning against some danger.
   components:
   - type: Sprite
     state: danger
-
-- type: entity
-  parent: BaseSign
-  id: SignMemetic
-  name: memetic warning sign
-  description: A sign indicating a memetic hazard.
-  components:
-  - type: Sprite
-    state: memetic
-
-- type: entity
-  parent: BaseSign
-  id: SignSecure
-  name: secure sign
-  description: A sign indicating that the area ahead is a secure area.
-  components:
-  - type: Sprite
-    state: secure
 
 - type: entity
   parent: BaseSign
@@ -553,57 +371,12 @@
 
 - type: entity
   parent: BaseSign
-  id: SignShock
-  name: shock sign
-  description: A sign indicating an electrical hazard.
-  components:
-  - type: Sprite
-    state: shock
-
-- type: entity
-  parent: BaseSign
-  id: SignOptical
-  name: optical warning sign
-  description: A sign indicating an optical radiation hazard.
-  components:
-  - type: Sprite
-    state: optical
-
-- type: entity
-  parent: BaseSign
-  id: SignOxidants
-  name: oxidants warning sign
-  description: A sign indicating an oxidizing agent hazard.
-  components:
-  - type: Sprite
-    state: oxidants
-
-- type: entity
-  parent: BaseSign
-  id: SignRadiation
-  name: radiation warning sign
-  description: A sign indicating an ionizing radiation hazard.
-  components:
-  - type: Sprite
-    state: radiation
-
-- type: entity
-  parent: BaseSign
   id: SignXenobio
   name: xenobio sign
   description: A sign indicating the xenobiology lab.
   components:
   - type: Sprite
     state: xenobio
-
-- type: entity
-  parent: BaseSign
-  id: SignZomlab
-  name: zombie lab sign
-  description: The final remains of a shut-down Nanotrasen research project that aimed to harness the powers of Romerol. I wonder how that went...
-  components:
-  - type: Sprite
-    state: zomlab
 
 - type: entity
   parent: BaseSign
@@ -827,15 +600,6 @@
 
 - type: entity
   parent: BaseSign
-  id: SignSecurity
-  name: security sign
-  description: A sign depicting the security insignia.
-  components:
-  - type: Sprite
-    state: security
-
-- type: entity
-  parent: BaseSign
   id: SignPlaque
   name: golden plaque
   description: A prestigious golden plaque.
@@ -851,51 +615,6 @@
   components:
   - type: Sprite
     state: kiddieplaque
-
-- type: entity
-  parent: BaseSign
-  id: SignNanotrasen1
-  name: nanotrasen sign 1
-  description: Part 1.
-  components:
-  - type: Sprite
-    state: nanotrasen_sign1
-
-- type: entity
-  parent: BaseSign
-  id: SignNanotrasen2
-  name: nanotrasen sign 2
-  description: Part 2.
-  components:
-  - type: Sprite
-    state: nanotrasen_sign2
-
-- type: entity
-  parent: BaseSign
-  id: SignNanotrasen3
-  name: nanotrasen sign 3
-  description: Part 3.
-  components:
-  - type: Sprite
-    state: nanotrasen_sign3
-
-- type: entity
-  parent: BaseSign
-  id: SignNanotrasen4
-  name: nanotrasen sign 4
-  description: Part 4.
-  components:
-  - type: Sprite
-    state: nanotrasen_sign4
-
-- type: entity
-  parent: BaseSign
-  id: SignNanotrasen5
-  name: nanotrasen sign 5
-  description: Part 5.
-  components:
-  - type: Sprite
-    state: nanotrasen_sign5
 
 - type: entity
   parent: BaseSign
@@ -995,12 +714,3 @@
   components:
   - type: Sprite
     state: survival
-
-- type: entity
-  parent: BaseSign
-  id: SignNTMine
-  name: mine sign
-  description: A sign. "Mine" is written on it.
-  components:
-  - type: Sprite
-    state: ntmining
