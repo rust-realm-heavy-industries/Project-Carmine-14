@@ -86,7 +86,6 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NewsReaderCartridge
       - NanoChatCartridge # DeltaV
     cartridgeSlot:
       priority: -1
