@@ -35,7 +35,7 @@
       collection: FootstepHull
   - type: RequireProjectileTarget
   - type: ThrownItemImmune
-  
+
 - type: entity
   id: TableBaseSmooth
   parent: TableBase
@@ -533,7 +533,7 @@
     sprite: _Nuclear14/Structures/Furniture/Tables/metalgrate.rsi
   - type: Icon
     sprite: _Nuclear14/Structures/Furniture/Tables/metalgrate.rsi
-    
+
 - type: entity
   parent: TableBaseSmooth
   id: TableBaseBar

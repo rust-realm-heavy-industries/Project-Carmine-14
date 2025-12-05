@@ -44,6 +44,7 @@
         - FullTileMask
         layer:
         - WallLayer
+
 #TODO: MERGE THIS SHIT TOGETHER
 - type: entity
   abstract: true
@@ -69,7 +70,7 @@
         - WallLayer
   - type: Occluder
     enabled: false
-    
+
 - type: entity
   parent: [BaseWallCurved, WallReinforced]
   id: WallReinforcedDiagonalCurved

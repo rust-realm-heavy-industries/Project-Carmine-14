@@ -49,4 +49,4 @@
   - type: AlwaysHot
   - type: Construction # Frontier
     graph: FiresGraph # Frontier
-    node: FireplaceNode # Frontier 
+    node: FireplaceNode # Frontier

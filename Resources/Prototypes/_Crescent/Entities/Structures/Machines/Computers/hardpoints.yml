@@ -52,7 +52,7 @@
   - type: CollideOnAnchor
   placement:
     mode: SnapgridCenter
-  
+
 
 - type: entity
   id: AAAHardpointSmallBallistic

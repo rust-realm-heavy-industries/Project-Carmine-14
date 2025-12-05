@@ -4,11 +4,11 @@
 - type: decal
   id: Lattice
   abstract: true
-  
+
 - type: decal
   id: Misc
   abstract: true
-  
+
 - type: decal
   id: Flora
   abstract: true

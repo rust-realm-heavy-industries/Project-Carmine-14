@@ -86,7 +86,7 @@
   files:
     - /Audio/_Crescent/Ambience/CombatMode/TFSC_1.ogg
     - /Audio/_Crescent/Ambience/CombatMode/TFSC_2.ogg
-    
+
 # SAW | STATE: Heavy industrial tracks
 - type: ambientMusic
   id: combatmodeSAW
@@ -99,7 +99,7 @@
   files:
     - /Audio/_Crescent/Ambience/CombatMode/SAW_1.ogg
     - /Audio/_Crescent/Ambience/CombatMode/SAW_2.ogg
-    
+
 #IPM | STATE: Left with default TFSC track, needs replacement
 - type: ambientMusic
   id: combatmodeIPM

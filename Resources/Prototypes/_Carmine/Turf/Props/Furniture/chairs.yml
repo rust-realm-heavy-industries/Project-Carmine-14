@@ -109,7 +109,7 @@
   components:
   - type: Sprite
     state: shuttle
-    
+
 - type: entity
   id: ChairWood
   name: wood chair
@@ -119,7 +119,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: wood_chair
-    
+
 - type: entity
   id: ChairWoodPadded
   name: wood chair
@@ -141,7 +141,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: plastic_chair
-    
+
 - type: entity
   parent: ChairBase
   id: ChairGreen
@@ -152,7 +152,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: metal_chair
-    
+
 - type: entity
   parent: ChairBase
   id: ChairBlue
@@ -163,7 +163,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: metal_chair_blue
-    
+
 - type: entity
   parent: ChairBase
   id: ChairRed
@@ -187,7 +187,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: office_chair_blue
-    
+
 - type: entity
   parent: OfficeChairBase
   id: ChairOfficeGreen
@@ -198,7 +198,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: office_chair_green
-    
+
 - type: entity
   parent: OfficeChairBase
   id: ChairOfficeRed
@@ -209,7 +209,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: office_chair
-    
+
 - type: entity
   parent: OfficeChairBase
   id: ChairOfficeFancy
@@ -220,9 +220,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: ergo_chair
-    
+
 # STOOLS
-    
+
 - type: entity
   parent: StoolBase
   id: ChairArmchair
@@ -232,7 +232,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: armchair
-    
+
 - type: entity
   parent: StoolBase
   id: ChairStoolBlack
@@ -243,7 +243,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
     state: bar_black
-    
+
 - type: entity
   parent: StoolBase
   id: ChairStoolTan
@@ -254,7 +254,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/bedsandchairs.rsi
     state: bar_tan
-    
+
 - type: entity
   parent: StoolBase
   id: ChairStool
@@ -264,9 +264,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: barstool
-    
+
 # MISC
-    
+
 - type: entity
   parent: ChairBase
   id: ChairFolding #YAMLTODO: ACTUALLY MAKE IT FOLD
@@ -276,7 +276,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: metal_chair_folding
-    
+
 - type: entity
   parent: ChairBase
   id: ChairBarRetro
@@ -286,7 +286,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: retro_chair
-    
+
 - type: entity
   parent: ChairBase
   id: ChairDiner
@@ -296,7 +296,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: diner_chair
-    
+
 - type: entity
   name: steel bench
   id: BenchSteel

@@ -6,6 +6,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: beard-beardchin
+
 - type: marking
   id: HumanFacialHairSuperLong
   bodyPart: FacialHair
@@ -13,6 +14,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: beard-beardlong
+
 - type: marking
   id: HumanFacialHairShort
   bodyPart: FacialHair
@@ -20,6 +22,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: beard-beardshort
+
 - type: marking
   id: HumanFacialHairThick
   bodyPart: FacialHair
@@ -27,6 +30,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: beard-beardthick
+
 - type: marking
   id: HumanFacialHairViking
   bodyPart: FacialHair
@@ -34,6 +38,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: beard-beardviking
+
 - type: marking
   id: HumanFacialHairBristle
   bodyPart: FacialHair
@@ -41,6 +46,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: beard-bristle
+
 - type: marking
   id: HumanFacialHairMoustacheWithStubble
   bodyPart: FacialHair
@@ -48,6 +54,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: beard-mustachewithstubble
+
 - type: marking
   id: HumanFacialHairThickBristle
   bodyPart: FacialHair
@@ -55,6 +62,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: beard-thickbristle
+
 - type: marking
   id: HumanFacialHairHandlebar
   bodyPart: FacialHair
@@ -62,6 +70,7 @@
   sprites:
     - sprite: _Corvax/Mobs/Customization/human_facial_hair.rsi
       state: handlebar
+
 - type: marking
   id: HumanFacialHairHandlebar2
   bodyPart: FacialHair

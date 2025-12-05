@@ -20,7 +20,7 @@
     - !type:MappingTemplatePrototype
       id: ClosetBomb
     - !type:MappingTemplatePrototype
-      id: VendingMachineSovietSoda 
+      id: VendingMachineSovietSoda
     - !type:MappingTemplatePrototype
       id: BoriaticGeneratorEinsteinShuttle
     - !type:MappingTemplatePrototype
@@ -266,7 +266,7 @@
     - !type:MappingTemplatePrototype
       id: DecorMinecart
     - !type:MappingTemplatePrototype
-      id: ChairOfficeBlue 
+      id: ChairOfficeBlue
     - !type:MappingTemplatePrototype
       id: ChairOfficeGreen
     - !type:MappingTemplatePrototype

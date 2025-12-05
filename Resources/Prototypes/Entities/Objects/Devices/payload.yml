@@ -33,7 +33,7 @@
     # same as the standard grenade, but those numbers were also just picked out of a hat.
     maxIntensity: 200
     intensitySlope: 60
-    totalIntensity: 2000  
+    totalIntensity: 2000
     canCreateVacuum: false
   - type: ExplodeOnTrigger
   - type: Destructible

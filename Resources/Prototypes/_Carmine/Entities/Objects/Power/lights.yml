@@ -68,7 +68,7 @@
     sprite:  Objects/Power/light_tube.rsi
   - type: LightBulb
     bulb: Tube
-    
+
 - type: entity
   parent: BaseLightBulb
   name: light bulb
@@ -82,7 +82,7 @@
     lightEnergy: 0.5
     lightRadius: 5
     lightSoftness: 1.1
-    
+
 - type: entity
   suffix: Broken, Carmine
   parent: LightBulb
@@ -93,7 +93,7 @@
   - type: LightBulb
     startingState: Broken
     bulb: Bulb
-    
+
 - type: entity
   parent: BaseLightTube
   name: light tube
@@ -106,7 +106,7 @@
     lightEnergy: 0.5
     lightRadius: 7
     lightSoftness: 1
-    
+
 - type: entity
   suffix: Broken, Carmine
   parent: LightTube

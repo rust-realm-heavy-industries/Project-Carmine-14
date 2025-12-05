@@ -49,7 +49,7 @@
         layer:
         - WallLayer
         density: 200
-        
+
 - type: entity
   id: DerelictRecorder
   parent: [BaseStructure, BaseMachinePowered]
@@ -248,7 +248,7 @@
   components:
   - type: Sprite
     sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
-    state: derelict_generator_2_r     
+    state: derelict_generator_2_r
 
 - type: entity
   parent: DerelictGenerator
@@ -258,8 +258,8 @@
   components:
   - type: Sprite
     sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
-    state: derelict_generator_3_r   
-    
+    state: derelict_generator_3_r
+
 - type: entity
   id: DerelictSubstation
   parent: BaseStructure
@@ -313,7 +313,7 @@
   - type: Sprite
     sprite: _Crescent/Structures/Decoration/derelict_substation.rsi
     state: derelict_substation_r
-  
+
 - type: entity
   id: DerelictServerRack
   parent: [BaseStructure, BaseMachinePowered]

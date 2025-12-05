@@ -9,7 +9,7 @@
     sprite: DeltaV/Clothing/Uniforms/Scrubs/black.rsi
   - type: Clothing
     sprite: DeltaV/Clothing/Uniforms/Scrubs/black.rsi
-    
+
 - type: entity
   parent: ClothingUniformBase
   id: UniformScrubsColorWhite
