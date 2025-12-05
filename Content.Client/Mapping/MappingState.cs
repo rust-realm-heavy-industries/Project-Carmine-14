@@ -316,7 +316,7 @@ public sealed class MappingState : GameplayStateBase
         mappings.Clear();
         Screen.Entities.UpdateVisible(
             new (entitiesTemplate.Children?.Count > 0 ? [entitiesTemplate, entities] : [entities]),
-            _allPrototypes.GetOrNew(typeof(EntityPrototype)));
+            _allPrototypes.GetOrNew(typeof(EntityCategoryPrototype)));
 
         Sort(mappings, tilesTemplate);
         mappings.Clear();
