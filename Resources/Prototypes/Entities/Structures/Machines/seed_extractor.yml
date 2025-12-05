@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: SeedExtractor
   name: seed extractor
   parent: [ BaseMachinePowered, ConstructibleMachine ]

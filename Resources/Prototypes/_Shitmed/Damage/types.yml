@@ -1,3 +1,4 @@
+---
 # Damage taken when the organ fails or is rotting.
 - type: damageType
   id: Decay

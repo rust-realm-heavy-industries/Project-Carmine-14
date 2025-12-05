@@ -1,3 +1,4 @@
+---
 - type: deviceFrequency
   id: ShuttleTimer
   name: device-frequency-prototype-name-shuttle-timer

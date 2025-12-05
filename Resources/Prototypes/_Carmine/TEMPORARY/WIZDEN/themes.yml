@@ -1,3 +1,4 @@
+---
 - type: uiTheme
   id: SS14DefaultTheme
   path: /Textures/Interface/Default/

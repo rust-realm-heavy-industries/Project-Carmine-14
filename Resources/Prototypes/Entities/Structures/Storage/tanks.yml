@@ -1,4 +1,5 @@
-﻿# :TODO: Add the destroyed versions of these as a destruction spawn.
+---
+# :TODO: Add the destroyed versions of these as a destruction spawn.
 
 - type: entity
   parent: BaseStructure

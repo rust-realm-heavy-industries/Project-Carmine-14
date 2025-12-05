@@ -1,3 +1,4 @@
+---
 - type: job
   id: JobWorkerKV
   name: job-name-kv-worker

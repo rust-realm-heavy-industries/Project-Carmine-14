@@ -1,3 +1,4 @@
+---
 - type: machinePart
   id: Capacitor
   name: machine-part-name-capacitor

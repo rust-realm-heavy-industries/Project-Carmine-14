@@ -1,4 +1,5 @@
-﻿- type: entityList
+---
+- type: entityList
   id: tools
   entities:
   - ToolDebug

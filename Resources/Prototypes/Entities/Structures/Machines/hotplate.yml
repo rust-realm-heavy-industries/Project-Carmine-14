@@ -1,3 +1,4 @@
+---
 # heats an entity or solution placed on it
 - type: entity
   abstract: true

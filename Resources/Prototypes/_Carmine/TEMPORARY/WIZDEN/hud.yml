@@ -1,3 +1,4 @@
+---
 - type: hudTheme
   id: SS14DefaultTheme
   name: ui-options-hud-theme-default

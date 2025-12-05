@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: BufferingIcon
   categories: [ HideSpawnMenu ]
   components:

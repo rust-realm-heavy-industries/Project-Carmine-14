@@ -1,3 +1,4 @@
+---
 - type: entity
   name: NT-21 'Church Organ' electronic warfare muffler
   parent: BaseStructure

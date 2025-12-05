@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: MedicalScanner
   parent: BaseMachinePowered
   name: medical scanner

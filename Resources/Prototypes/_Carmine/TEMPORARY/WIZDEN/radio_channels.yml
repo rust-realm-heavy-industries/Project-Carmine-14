@@ -1,3 +1,4 @@
+---
 - type: radioChannel
   id: Common
   name: chat-radio-common

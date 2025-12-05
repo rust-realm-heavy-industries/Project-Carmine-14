@@ -1,3 +1,4 @@
+---
 - type: healthIcon
   id: HealthIcon
   abstract: true

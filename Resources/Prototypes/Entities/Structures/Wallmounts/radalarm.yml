@@ -1,3 +1,4 @@
+---
 - type: entity
   id: GeigerCounterWallMount
   name: wall-mounted Geiger counter

@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   parent: ClothingOuterBase
   id: ClothingOuterChameleon
   name: vest

@@ -1,4 +1,5 @@
-﻿- type: decal
+---
+- type: decal
   id: TrimWarnEast
   sprite:
     sprite: _Crescent/Decals/trimlinewarn.rsi

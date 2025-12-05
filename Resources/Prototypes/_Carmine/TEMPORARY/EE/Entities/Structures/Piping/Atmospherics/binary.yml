@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   parent: GasPressurePump
   id: GasPressurePumpHighFlow
   name: high flow gas pump

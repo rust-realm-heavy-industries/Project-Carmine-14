@@ -1,3 +1,4 @@
+---
 - type: reagent
   id: Aluminium # We use real words here.
   name: reagent-name-aluminium # -we use real words here.

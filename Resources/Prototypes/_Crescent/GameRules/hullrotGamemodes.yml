@@ -1,3 +1,4 @@
+---
 # GAME PRESETS ARE WHAT YOU VOTE ON AS A GAMEMODE.
 # They do NOT CONTROL what spawns in by themselves. this is handled by the rule that it's pointing to in the rules: dictionary
 # in hullrotGamemodes.yml you can find "Adventure" "VladzenaJackal", etc.

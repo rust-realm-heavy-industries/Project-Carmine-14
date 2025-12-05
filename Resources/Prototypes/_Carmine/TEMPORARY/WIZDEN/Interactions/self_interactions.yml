@@ -1,3 +1,4 @@
+---
 - type: Interaction
   id: SelfInteractionBase
   parent: [BaseHands, BaseGlobal]

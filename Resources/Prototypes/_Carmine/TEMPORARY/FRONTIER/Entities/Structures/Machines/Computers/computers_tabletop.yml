@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerAlert]
   id: ComputerTabletopAlert

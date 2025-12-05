@@ -8,4 +8,4 @@ fi
 cd ../../
 
 git submodule update --init --recursive
-dotnet build -c Release
+DOTNET_SYSTEM_NET_DISABLEIPV6=true dotnet build -c Release

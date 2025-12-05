@@ -1,3 +1,4 @@
+---
 - type: AirlockGroup
   id: Standard
   iconPriority: 100

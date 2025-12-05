@@ -1,3 +1,4 @@
+---
 # Uses the chessboard and generic pieces
 - type: entity
   parent: BaseBoardEntity

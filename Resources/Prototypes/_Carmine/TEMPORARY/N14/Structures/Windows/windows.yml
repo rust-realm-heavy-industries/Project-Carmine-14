@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: BaseStructure
   id: N14WindowBase # use for single tile / standalone windows & broken windows

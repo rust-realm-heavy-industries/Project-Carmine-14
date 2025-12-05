@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: BaseGlassBox
   parent: BaseStructureDynamic
   abstract: true

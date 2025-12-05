@@ -1,4 +1,5 @@
-﻿# Used to suffix a number to any mob to identify player controlled mob griefing.
+---
+# Used to suffix a number to any mob to identify player controlled mob griefing.
 - type: nameIdentifierGroup
   id: GenericNumber
 

@@ -1,4 +1,5 @@
-﻿- type: tile
+---
+- type: tile
   id: Space
   name: tiles-space
   friction: 0

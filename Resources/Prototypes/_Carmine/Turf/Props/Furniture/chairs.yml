@@ -1,3 +1,4 @@
+---
 - type: entity
   name: chair
   id: SeatBase

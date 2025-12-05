@@ -1,3 +1,4 @@
+---
 - type: gameMapPool
   id: DefaultMapPool
   maps:

@@ -1,3 +1,4 @@
+---
 # TODO move all of this to tiles once tile smoothing is supported
 - type: entity
   id: CarpetBase

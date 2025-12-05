@@ -1,3 +1,4 @@
+---
 - type: styleSheet
   id: shared
   typeDefinition:

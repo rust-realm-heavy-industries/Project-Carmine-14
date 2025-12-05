@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: FirelockElectronics
   parent: BaseElectronics
   name: firelock electronics

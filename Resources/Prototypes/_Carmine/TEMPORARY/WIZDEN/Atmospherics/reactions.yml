@@ -1,3 +1,4 @@
+---
 - type: gasReaction
   id: PlasmaFire
   priority: -2

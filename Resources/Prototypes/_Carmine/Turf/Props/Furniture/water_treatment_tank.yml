@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: DerelictWaterTreatmentTank
   parent: [BaseStructure, Sink]
   name: derelict water treatment tank

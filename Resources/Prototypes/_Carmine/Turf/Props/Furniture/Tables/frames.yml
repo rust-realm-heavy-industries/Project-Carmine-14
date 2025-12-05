@@ -1,3 +1,4 @@
+---
 - type: entity
   id: CounterMetalFrame
   parent: TableBase

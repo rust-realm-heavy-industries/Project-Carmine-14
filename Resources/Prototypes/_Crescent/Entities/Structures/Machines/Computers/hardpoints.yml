@@ -1,3 +1,4 @@
+---
 - type: entity
   id: BaseHardpoint
   parent: BaseMachinePowered

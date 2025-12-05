@@ -1,3 +1,4 @@
+---
 - type: entity
   id: TrialTimer
   parent: SignalTimer

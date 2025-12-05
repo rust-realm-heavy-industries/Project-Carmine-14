@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: StationAnchorBase
   abstract: true
   name: station anchor

@@ -1,3 +1,4 @@
+---
 - type: Interaction
   id: LookAt
   parent: BaseGlobal

@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: DebugGenerator
   parent: BaseGenerator
   suffix: DEBUG

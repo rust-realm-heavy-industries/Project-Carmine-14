@@ -1,3 +1,4 @@
+---
 - type: entity
   id: BaseIntegratedMagboot
   name: integrated magboots

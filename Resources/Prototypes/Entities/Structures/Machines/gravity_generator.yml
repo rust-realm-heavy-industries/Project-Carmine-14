@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: GravityGenerator
   parent: BaseMachinePowered
   name: gravity generator

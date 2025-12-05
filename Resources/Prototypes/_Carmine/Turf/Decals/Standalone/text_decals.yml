@@ -1,3 +1,4 @@
+---
 - type: decal
   id: Medical
   parent: Misc

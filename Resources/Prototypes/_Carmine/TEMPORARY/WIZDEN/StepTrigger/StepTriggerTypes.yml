@@ -1,4 +1,5 @@
-﻿- type: stepTriggerType
+---
+- type: stepTriggerType
   id: Lava
 
 - type: stepTriggerType
