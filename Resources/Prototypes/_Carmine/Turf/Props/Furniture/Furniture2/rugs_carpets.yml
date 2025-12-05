@@ -1,9 +1,9 @@
 ---
 - type: entity
-  id: N14CarpetSingleBase
   parent: BaseStructure
-  description: Better than the floor.
+  id: N14CarpetSingleBase
   abstract: true
+  description: Better than the floor.
   components:
   - type: Sprite
     drawdepth: FloorTiles

@@ -1,7 +1,7 @@
 ---
 - type: entity
-  name: pointing arrow
   id: PointingArrow
+  name: pointing arrow
   save: false
   components:
   - type: Tag

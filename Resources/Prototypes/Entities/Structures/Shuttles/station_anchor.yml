@@ -1,10 +1,10 @@
 ---
 - type: entity
   id: StationAnchorBase
-  abstract: true
   name: station anchor
-  description: Prevents stations from moving.
   suffix: On
+  abstract: true
+  description: Prevents stations from moving.
   placement:
     mode: AlignTileAny
   components:
@@ -49,13 +49,13 @@
 
 
 - type: entity
-  id: StationAnchorIndestructible
   parent: StationAnchorBase
+  id: StationAnchorIndestructible
   suffix: Indestructible, Unpowered
 
 - type: entity
-  id: StationAnchor
   parent: [StationAnchorBase, BaseMachinePowered, ConstructibleMachine]
+  id: StationAnchor
   name: station anchor
   description: Prevents stations from moving
   placement:

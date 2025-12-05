@@ -18,9 +18,9 @@
 
 # Chessboard tabletop item (item only visible in tabletop game)
 - type: entity
+  parent: BaseBoardTabletop
   id: ChessBoardTabletop
   name: chessboard
-  parent: BaseBoardTabletop
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

@@ -1,10 +1,10 @@
 ---
 - type: entity
-  abstract: true
-  id: ArcadeBase
-  description: An arcade cabinet.
-  name: arcade
   parent: BaseComputer
+  id: ArcadeBase
+  name: arcade
+  abstract: true
+  description: An arcade cabinet.
   components:
   - type: ApcPowerReceiver
     powerLoad: 350

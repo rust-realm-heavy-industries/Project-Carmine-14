@@ -66,8 +66,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  id: ConveyorBeltAssembly
   parent: BaseItem
+  id: ConveyorBeltAssembly
   name: conveyor belt
   suffix: assembly
   description: A conveyor belt assembly. Used to construct a conveyor belt.

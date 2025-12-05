@@ -4,8 +4,8 @@
 # they are unextractable and can't be spawned (no surgery on Animals!?).
 
 - type: entity
-  id: PartAnimal
   parent: BaseItem
+  id: PartAnimal
   name: "animal body part"
   abstract: true
   components:
@@ -34,9 +34,9 @@
         Quantity: 10
 
 - type: entity
+  parent: PartAnimal
   id: HandsAnimal
   name: animal hands
-  parent: PartAnimal
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -49,9 +49,9 @@
     slotId: hands # Shitmed
 
 - type: entity
+  parent: PartAnimal
   id: LegsAnimal
   name: animal legs
-  parent: PartAnimal
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -64,9 +64,9 @@
   - type: MovementBodyPart
 
 - type: entity
+  parent: PartAnimal
   id: FeetAnimal
   name: animal feet
-  parent: PartAnimal
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -78,9 +78,9 @@
     slotId: feet # Shitmed
 
 - type: entity
+  parent: PartAnimal
   id: TorsoAnimal
   name: animal torso
-  parent: PartAnimal
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

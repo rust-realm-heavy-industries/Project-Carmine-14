@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: [BaseMachinePowered, ConstructibleMachine]
   id: BaseRecharger
+  abstract: true
   placement:
     mode: SnapgridCenter
   components:
@@ -38,9 +38,9 @@
     price: 25
 
 - type: entity
-  abstract: true
   parent: BaseRecharger
   id: BaseItemRecharger
+  abstract: true
   components:
   - type: Sprite
     drawdepth: SmallObjects

@@ -1,11 +1,11 @@
 ---
 # TODO move all of this to tiles once tile smoothing is supported
 - type: entity
-  id: CarpetBase
   parent: BaseStructure
+  id: CarpetBase
   name: carpet
-  description: "Fancy walking surface."
   abstract: true
+  description: "Fancy walking surface."
   components:
   - type: Sprite
     drawdepth: FloorTiles
@@ -37,8 +37,8 @@
       amount: 1
 
 - type: entity
-  id: Carpet
   parent: CarpetBase
+  id: Carpet
   suffix: Red
   components:
   - type: Sprite
@@ -66,8 +66,8 @@
                 max: 1
 
 - type: entity
-  id: CarpetBlack
   parent: CarpetBase
+  id: CarpetBlack
   suffix: Black
   components:
   - type: Clickable
@@ -96,8 +96,8 @@
                 max: 1
 
 - type: entity
-  id: CarpetPink
   parent: CarpetBase
+  id: CarpetPink
   suffix: Pink
   components:
   - type: Clickable
@@ -126,8 +126,8 @@
                 max: 1
 
 - type: entity
-  id: CarpetBlue
   parent: CarpetBase
+  id: CarpetBlue
   suffix: Blue
   components:
   - type: Clickable
@@ -156,8 +156,8 @@
                 max: 1
 
 - type: entity
-  id: CarpetGreen
   parent: CarpetBase
+  id: CarpetGreen
   suffix: Green
   components:
   - type: Clickable
@@ -186,8 +186,8 @@
                 max: 1
 
 - type: entity
-  id: CarpetOrange
   parent: CarpetBase
+  id: CarpetOrange
   suffix: Orange
   components:
   - type: Clickable
@@ -216,8 +216,8 @@
                 max: 1
 
 - type: entity
-  id: CarpetSBlue
   parent: CarpetBase
+  id: CarpetSBlue
   suffix: Sky Blue
   components:
   - type: Clickable
@@ -246,8 +246,8 @@
                 max: 1
 
 - type: entity
-  id: CarpetPurple
   parent: CarpetBase
+  id: CarpetPurple
   suffix: Purple
   components:
   - type: Clickable
@@ -276,8 +276,8 @@
                 max: 1
 
 - type: entity
-  id: CarpetCyan
   parent: CarpetBase
+  id: CarpetCyan
   suffix: Cyan
   components:
   - type: Clickable
@@ -306,8 +306,8 @@
                 max: 1
 
 - type: entity
-  id: CarpetWhite
   parent: CarpetBase
+  id: CarpetWhite
   suffix: White
   components:
   - type: Clickable

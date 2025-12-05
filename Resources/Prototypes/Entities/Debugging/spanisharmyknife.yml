@@ -1,10 +1,10 @@
 ---
 - type: entity
-  name: spanish army knife
   parent: BaseItem
   id: ToolDebug
-  description: The pain of using this is almost too great to bear.
+  name: spanish army knife
   suffix: DEBUG
+  description: The pain of using this is almost too great to bear.
   components:
   - type: Tag
     tags:

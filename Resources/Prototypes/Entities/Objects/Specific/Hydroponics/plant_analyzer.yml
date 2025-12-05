@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: PlantAnalyzer
   parent: [BaseItem, PowerCellSlotSmallItem]
+  id: PlantAnalyzer
   name: plant analyzer
   description: A scanner used to evaluate a plant's various areas of growth, genetic traits and chemicals.
   components:
@@ -35,9 +35,9 @@
     - Chemicals
 
 - type: entity
-  name: plant analyzer report
   parent: Paper
   id: PlantAnalyzerReportPaper
+  name: plant analyzer report
   description: A printout from a plant analyzer.
   components:
   - type: Sprite

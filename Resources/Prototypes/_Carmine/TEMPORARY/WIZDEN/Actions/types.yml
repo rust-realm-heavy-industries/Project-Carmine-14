@@ -315,8 +315,8 @@
     event: !type:ToggleThermalVisionEvent
 
 - type: entity
-  id: PulseThermalVision
   parent: ToggleThermalVision
+  id: PulseThermalVision
   name: Pulse Thermal Vision
   description: Activate thermal vision temporarily.
   categories: [ HideSpawnMenu ]

@@ -1,9 +1,9 @@
 ---
 - type: entity
-  id: BaseFirelock
-  abstract: true
   parent: BaseStructure
+  id: BaseFirelock
   name: firelock
+  abstract: true
   description: Apply crowbar.
   components:
     - type: AtmosAlarmable
@@ -113,8 +113,8 @@
     - type: NavMapDoor
 
 - type: entity
-  id: Firelock
   parent: BaseFirelock
+  id: Firelock
   components:
   - type: StationAiWhitelist
   - type: ContainerContainer
@@ -128,8 +128,8 @@
       board: [ FirelockElectronics ]
 
 - type: entity
-  id: FirelockGlass
   parent: Firelock
+  id: FirelockGlass
   name: glass firelock
   components:
     - type: StationAiWhitelist
@@ -154,8 +154,8 @@
       node: FirelockGlass
 
 - type: entity
-  id: FirelockEdge
   parent: Firelock
+  id: FirelockEdge
   name: firelock
   components:
     - type: StationAiWhitelist

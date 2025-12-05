@@ -1,8 +1,8 @@
 ---
 - type: entity
+  parent: BaseItem
   id: BasePowerCell
   abstract: true
-  parent: BaseItem
   components:
   - type: Item
     storedRotation: -90
@@ -38,11 +38,11 @@
     fireCost: 50
 
 - type: entity
-  name: small-capacity power cell
-  description: A rechargeable power cell. This is the cheapest kind you can find.
-  id: PowerCellSmall
-  suffix: Full
   parent: BasePowerCell
+  id: PowerCellSmall
+  name: small-capacity power cell
+  suffix: Full
+  description: A rechargeable power cell. This is the cheapest kind you can find.
   components:
   - type: Sprite
     layers:
@@ -62,9 +62,9 @@
       - PowerCellSmall
 
 - type: entity
+  parent: PowerCellSmall
   id: PowerCellSmallPrinted
   suffix: Empty
-  parent: PowerCellSmall
   components:
   - type: Sprite
     layers:
@@ -79,11 +79,11 @@
     startingCharge: 0
 
 - type: entity
-  name: medium-capacity power cell
-  description: A rechargeable power cell. This is the popular and reliable version.
-  id: PowerCellMedium
-  suffix: Full
   parent: BasePowerCell
+  id: PowerCellMedium
+  name: medium-capacity power cell
+  suffix: Full
+  description: A rechargeable power cell. This is the popular and reliable version.
   components:
   - type: Sprite
     layers:
@@ -100,9 +100,9 @@
     rating: 2
 
 - type: entity
+  parent: PowerCellMedium
   id: PowerCellMediumPrinted
   suffix: Empty
-  parent: PowerCellMedium
   components:
   - type: Sprite
     layers:
@@ -117,11 +117,11 @@
     startingCharge: 0
 
 - type: entity
-  name: high-capacity power cell
-  description: A rechargeable standardized power cell. This premium brand stores up to 50% more energy than the competition.
-  id: PowerCellHigh
-  suffix: Full
   parent: BasePowerCell
+  id: PowerCellHigh
+  name: high-capacity power cell
+  suffix: Full
+  description: A rechargeable standardized power cell. This premium brand stores up to 50% more energy than the competition.
   components:
   - type: Sprite
     layers:
@@ -138,9 +138,9 @@
     rating: 3
 
 - type: entity
+  parent: PowerCellHigh
   id: PowerCellHighPrinted
   suffix: Empty
-  parent: PowerCellHigh
   components:
   - type: Sprite
     layers:
@@ -155,11 +155,11 @@
     startingCharge: 0
 
 - type: entity
-  name: hyper-capacity power cell
-  description: A rechargeable standardized power cell. This one looks like a rare and powerful prototype.
-  id: PowerCellHyper
-  suffix: Full
   parent: BasePowerCell
+  id: PowerCellHyper
+  name: hyper-capacity power cell
+  suffix: Full
+  description: A rechargeable standardized power cell. This one looks like a rare and powerful prototype.
   components:
   - type: Sprite
     layers:
@@ -176,9 +176,9 @@
     rating: 4
 
 - type: entity
+  parent: PowerCellHyper
   id: PowerCellHyperPrinted
   suffix: Empty
-  parent: PowerCellHyper
   components:
   - type: Sprite
     layers:
@@ -196,8 +196,8 @@
   parent: BasePowerCell
   id: PowerCellMicroreactor
   name: microreactor power cell
-  description: A rechargeable standardized microreactor cell. Has lower capacity but slowly recharges by itself.
   suffix: Full
+  description: A rechargeable standardized microreactor cell. Has lower capacity but slowly recharges by itself.
   components:
   - type: Sprite
     layers:

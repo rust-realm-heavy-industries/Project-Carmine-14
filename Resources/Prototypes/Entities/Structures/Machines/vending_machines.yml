@@ -1,10 +1,10 @@
 ---
 - type: entity
-  id: VendingMachine
   parent: BaseMachinePowered
+  id: VendingMachine
   name: vending machine
-  description: Just add capitalism!
   abstract: true
+  description: Just add capitalism!
   components:
   - type: StationAiWhitelist
   - type: AmbientOnPowered
@@ -348,8 +348,8 @@
   parent: VendingMachine
   id: VendingMachineSeedsUnlocked
   name: MegaSeed Servitor
-  description: For when you need seeds fast. Hands down the best seed selection on the station!
   suffix: Unlocked
+  description: For when you need seeds fast. Hands down the best seed selection on the station!
   components:
   - type: VendingMachine
     pack: MegaSeedServitorInventory
@@ -508,8 +508,8 @@
 # wallmounted machines
 
 - type: entity
-  id: VendingMachineWallmount
   parent: VendingMachine
+  id: VendingMachineWallmount
   name: vending machine
   abstract: true
   placement:
@@ -604,8 +604,8 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineTankDispenserEVA
-  suffix: EVA [O2, N2]
   name: gas tank dispenser
+  suffix: EVA [O2, N2]
   description: A vendor for dispensing gas tanks.
   components:
   - type: VendingMachine
@@ -615,8 +615,8 @@
     state: dispenser
 
 - type: entity
-  id: VendingMachineHotfood
   parent: VendingMachine
+  id: VendingMachineHotfood
   name: hot foods
   description: An old vending machine promising 'hot foods'. You doubt any of its contents are still edible.
   components:

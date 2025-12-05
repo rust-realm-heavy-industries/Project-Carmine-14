@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: wirecutter
   parent: BaseItem
   id: Wirecutter
+  name: wirecutter
   description: This kills the wire.
   components:
   - type: EmitSoundOnPickup
@@ -92,9 +92,9 @@
         friction: 0.2
 
 - type: entity
-  name: screwdriver
   parent: BaseItem
   id: Screwdriver
+  name: screwdriver
   description: Industrial grade torque in a small screwdriving package.
   components:
   - type: EmitSoundOnPickup
@@ -182,9 +182,9 @@
         friction: 0.2
 
 - type: entity
-  name: wrench
   parent: BaseItem
   id: Wrench
+  name: wrench
   description: 'A common tool for assembly and disassembly. Remember: righty tighty, lefty loosey.'
   components:
   - type: EmitSoundOnPickup
@@ -251,9 +251,9 @@
         friction: 0.2
 
 - type: entity
-  name: crowbar
   parent: BaseItem
   id: Crowbar
+  name: crowbar
   description: A multipurpose tool to pry open doors and fight interdimensional invaders.
   components:
   - type: EmitSoundOnPickup
@@ -343,9 +343,9 @@
       state: red-storage
 
 - type: entity
-  name: multitool
   parent: BaseItem
   id: Multitool
+  name: multitool
   description: An advanced tool to copy, store, and send electrical pulses and signals through wires and machines
   components:
   - type: EmitSoundOnPickup
@@ -418,9 +418,9 @@
         friction: 0.2
 
 - type: entity
-  name: network configurator
   parent: BaseItem
   id: NetworkConfigurator
+  name: network configurator
   description: A tool for linking devices together. Has two modes, a list mode for mass linking devices and a linking mode for advanced device linking.
   components:
     - type: EmitSoundOnLand
@@ -482,9 +482,9 @@
 #Power tools
 #Later on these should switch probably switch damage when changing the tool behavior.
 - type: entity
-  name: power drill
   parent: BaseItem
   id: PowerDrill
+  name: power drill
   description: A simple powered hand drill.
   components:
   - type: Tag
@@ -565,8 +565,8 @@
         friction: 0.2
 
 - type: entity
-  id: RCD
   parent: BaseItem
+  id: RCD
   name: RCD
   description: The rapid construction device can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function.
   components:
@@ -634,8 +634,8 @@
         friction: 0.2
 
 - type: entity
-  id: RPD
   parent: RCD
+  id: RPD
   name: RPD
   description: A device used to rapidly pipe things.
   components:
@@ -693,8 +693,8 @@
         friction: 0.2
 
 - type: entity
-  id: RCDEmpty
   parent: RCD
+  id: RCDEmpty
   suffix: Empty
   components:
   - type: LimitedCharges
@@ -714,8 +714,8 @@
     - Firelock
 
 - type: entity
-  id: RPDEmpty
   parent: RPD
+  id: RPDEmpty
   suffix: Empty
   components:
   - type: LimitedCharges
@@ -747,9 +747,9 @@
     - Deconstruct
 
 - type: entity
-  name: compressed matter
   parent: BaseItem
   id: RCDAmmo
+  name: compressed matter
   description: A cartridge of raw matter compacted by bluespace technology. Used in rapid construction devices.
   components:
   - type: RCDAmmo
@@ -773,9 +773,9 @@
       - RCDAmmo
 
 - type: entity
-  name: omnitool
   parent: BaseItem
   id: Omnitool
+  name: omnitool
   description: A drone's best friend.
   components:
   - type: Sprite
@@ -839,9 +839,9 @@
 
 #Other
 - type: entity
-  name: shovel
   parent: BaseItem
   id: Shovel
+  name: shovel
   description: A large tool for digging and moving dirt.
   components:
   - type: Sprite

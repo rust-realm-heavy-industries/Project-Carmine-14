@@ -1,8 +1,8 @@
 ---
 - type: entity
+  parent: BaseStructure
   id: PlastitaniumWindowIndestructible
   name: plastitanium window
-  parent: BaseStructure
   suffix: Indestructible
   placement:
     mode: SnapgridCenter

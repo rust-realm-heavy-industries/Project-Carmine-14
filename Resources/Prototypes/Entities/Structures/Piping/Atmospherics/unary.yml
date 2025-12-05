@@ -1,8 +1,8 @@
 ---
 - type: entity
   parent: GasPipeBase
-  abstract: true
   id: GasUnaryBase
+  abstract: true
   placement:
     mode: SnapgridCenter
   components:

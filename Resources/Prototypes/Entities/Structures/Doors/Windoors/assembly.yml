@@ -1,9 +1,9 @@
 ---
 - type: entity
+  parent: BaseStructure
   id: WindoorAssembly
   name: windoor assembly
   description: It opens, it closes, and you can see through it!
-  parent: BaseStructure
   components:
   - type: InteractionOutline
   - type: Sprite
@@ -51,10 +51,10 @@
     mode: SnapgridCenter
 
 - type: entity
+  parent: WindoorAssembly
   id: WindoorAssemblySecure
   name: secure windoor assembly
   description: It opens, it closes, and you can see through it! This one looks tough.
-  parent: WindoorAssembly
   components:
   - type: Sprite
     sprite: Structures/Doors/Windoors/windoor.rsi
@@ -80,10 +80,10 @@
 
 #plasma windoor assemblies
 - type: entity
+  parent: WindoorAssembly
   id: WindoorAssemblyPlasma
   name: Plasma windoor assembly
   description: It opens, it closes, and you can see through it! This one looks purp-, no, pink. Wait...
-  parent: WindoorAssembly
   components:
   - type: Sprite
     sprite: Structures/Doors/Windoors/plasma.rsi
@@ -110,10 +110,10 @@
     node: pglass
 
 - type: entity
+  parent: WindoorAssembly
   id: WindoorAssemblySecurePlasma
   name: Secure Plasma windoor assembly
   description: It opens, it closes, and you can see through it! This one looks strong and pin-, no, purple. Hold on...
-  parent: WindoorAssembly
   components:
   - type: Sprite
     sprite: Structures/Doors/Windoors/plasma.rsi
@@ -142,10 +142,10 @@
 
 #uranium windoor assemblies
 - type: entity
+  parent: WindoorAssembly
   id: WindoorAssemblyUranium
   name: Uranium windoor assembly
   description: It opens, it closes, and you can see through it! This one looks sickly green...
-  parent: WindoorAssembly
   components:
   - type: Sprite
     sprite: Structures/Doors/Windoors/uranium.rsi
@@ -172,10 +172,10 @@
     node: uglass
 
 - type: entity
+  parent: WindoorAssembly
   id: WindoorAssemblySecureUranium
   name: Secure Uranium windoor assembly
   description: It opens, it closes, and you can see through it! This one looks strong and radioactive-lime-green!
-  parent: WindoorAssembly
   components:
   - type: Sprite
     sprite: Structures/Doors/Windoors/uranium.rsi

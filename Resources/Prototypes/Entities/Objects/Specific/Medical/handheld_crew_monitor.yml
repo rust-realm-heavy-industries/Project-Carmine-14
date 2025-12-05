@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: handheld crew monitor
   parent: BaseHandheldComputer
   id: HandheldCrewMonitor
+  name: handheld crew monitor
   description: A hand-held crew monitor displaying the status of suit sensors.
   components:
   - type: Sprite
@@ -38,8 +38,8 @@
         Blunt: 5
 
 - type: entity
-  id: HandheldCrewMonitorEmpty
   parent: HandheldCrewMonitor
+  id: HandheldCrewMonitorEmpty
   suffix: Empty
   components:
   - type: ItemSlots

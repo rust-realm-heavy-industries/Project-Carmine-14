@@ -4,11 +4,11 @@
 # ability to have applied colors yet in GUIs. And also inhands... -Swept
 
 - type: entity
-  id: CableStack
-  abstract: true
   parent: BaseItem
+  id: CableStack
   name: cable stack
   suffix: Full
+  abstract: true
   components:
   - type: Tag
     tags:
@@ -32,8 +32,8 @@
       Steel: 15
 
 - type: entity
-  id: CableHVStack
   parent: CableStack
+  id: CableHVStack
   name: HV cable coil
   suffix: Full
   description: HV cables for connecting engines to heavy duty machinery, SMESes, and substations.
@@ -207,8 +207,8 @@
   parent: CableStack
   id: CableApcStack
   name: LV cable coil
-  description: Low-Voltage stack of wires for connecting APCs to machines and other purposes.
   suffix: Full
+  description: Low-Voltage stack of wires for connecting APCs to machines and other purposes.
   components:
   - type: Sprite
     state: coillv-30

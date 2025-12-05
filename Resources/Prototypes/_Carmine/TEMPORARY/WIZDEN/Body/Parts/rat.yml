@@ -2,9 +2,9 @@
 # Just copypasta of some animal basic body parts for interaction,
 # It's basically as animals except a different torso with different organs
 - type: entity
+  parent: PartAnimal
   id: TorsoRat
   name: "animal torso"
-  parent: PartAnimal
   categories: [ HideSpawnMenu ]
   components:
   - type: BodyPart

@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: Clothing
   id: ClothingOuterBase
+  abstract: true
   components:
   - type: Clothing
     slots:
@@ -11,9 +11,9 @@
     state: icon
 
 - type: entity
-  abstract: true
   parent: ClothingOuterBase
   id: ClothingOuterBaseLarge
+  abstract: true
   components:
   - type: Item
     size: Huge
@@ -38,9 +38,9 @@
         friction: 0.2
 
 - type: entity
-  abstract: true
   parent: ClothingOuterBase
   id: ClothingOuterStorageBase
+  abstract: true
   components:
   - type: Storage
     grid:
@@ -57,9 +57,9 @@
     price: 70
 
 - type: entity
-  abstract: true
   parent: [ClothingOuterBase, BaseFoldable]
   id: ClothingOuterFoldableBase
+  abstract: true
   components:
   - type: Appearance
   - type: Foldable
@@ -78,10 +78,10 @@
       visible: false
 
 - type: entity
-  abstract: true
   parent: ClothingOuterFoldableBase
   id: ClothingOuterFoldableBaseOpened
   suffix: opened
+  abstract: true
   components:
   - type: Foldable
     folded: true
@@ -99,20 +99,20 @@
       visible: true
 
 - type: entity
-  abstract: true
   parent: [ClothingOuterStorageBase, ClothingOuterFoldableBase]
   id: ClothingOuterStorageFoldableBase
+  abstract: true
 
 - type: entity
-  abstract: true
   parent: [ClothingOuterStorageFoldableBase, ClothingOuterFoldableBaseOpened]
   id: ClothingOuterStorageFoldableBaseOpened
   suffix: opened
+  abstract: true
 
 - type: entity
-  abstract: true
   parent: ClothingOuterStorageBase
   id: ClothingOuterStorageToggleableBase
+  abstract: true
   components:
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterDefault
@@ -124,10 +124,10 @@
         ents: []
 
 - type: entity
-  abstract: true
   parent: [ClothingOuterBase, GeigerCounterClothing, AllowSuitStorageClothing]
   id: ClothingOuterHardsuitBase
   name: base hardsuit
+  abstract: true
   components:
   - type: FootstepModifier
     footstepSoundCollection:
@@ -210,10 +210,10 @@
     faction: IND
 
 - type: entity
-  abstract: true
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitBaseMedium
   name: base hardsuit
+  abstract: true
   components:
   - type: FootstepModifier
     footstepSoundCollection:
@@ -248,10 +248,10 @@
       - NonEnergy
 
 - type: entity
-  abstract: true
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitBaseHeavy
   name: base hardsuit
+  abstract: true
   components:
   - type: FootstepModifier
     footstepSoundCollection:
@@ -286,10 +286,10 @@
       - NonEnergy
 
 - type: entity
-  abstract: true
   parent: [ClothingOuterBase, AllowSuitStorageClothing]
   id: ClothingOuterEVASuitBase
   name: base EVA Suit
+  abstract: true
   components:
   - type: PressureProtection
     highPressureMultiplier: 0.6
@@ -348,9 +348,9 @@
         ents: []
 
 - type: entity
-  abstract: true
   parent: ClothingOuterBase
   id: ClothingOuterBaseMedium
+  abstract: true
   components:
   - type: Item
     size: Huge

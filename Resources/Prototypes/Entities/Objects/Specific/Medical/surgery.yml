@@ -17,9 +17,9 @@
 # Cautery
 
 - type: entity
-  name: cautery
-  id: Cautery
   parent: BaseToolSurgery
+  id: Cautery
+  name: cautery
   description: A surgical tool used to cauterize open wounds.
   components:
   - type: Sprite
@@ -48,9 +48,9 @@
 # Drill
 
 - type: entity
-  name: drill
-  id: Drill
   parent: BaseToolSurgery
+  id: Drill
+  name: drill
   description: A surgical drill for making holes into hard material.
   components:
   - type: Sprite
@@ -95,9 +95,9 @@
 # Scalpel
 
 - type: entity
-  name: scalpel
-  id: Scalpel
   parent: BaseToolSurgery
+  id: Scalpel
+  name: scalpel
   description: A surgical tool used to make incisions into flesh.
   components:
   - type: Sharp
@@ -149,9 +149,9 @@
     - Knife
 
 - type: entity
-  name: shiv
-  id: ScalpelShiv
   parent: Scalpel
+  id: ScalpelShiv
+  name: shiv
   description: A pointy piece of glass, abraded to an edge and wrapped in tape for a handle. # Could become a decent tool or weapon with right tool mods.
   components:
   - type: Sprite
@@ -163,9 +163,9 @@
     heldPrefix: shiv
 
 - type: entity
-  name: advanced scalpel
-  id: ScalpelAdvanced
   parent: Scalpel
+  id: ScalpelAdvanced
+  name: advanced scalpel
   description: Made of more expensive materials, sharper and generally more reliable.
   components:
   - type: Sprite
@@ -186,9 +186,9 @@
     - Knife
 
 - type: entity
-  name: laser scalpel
-  id: ScalpelLaser
   parent: Scalpel
+  id: ScalpelLaser
+  name: laser scalpel
   description: A scalpel which uses a directed laser to slice instead of a blade, for more precise surgery while also cauterizing as it cuts.
   components:
   - type: Sprite
@@ -214,9 +214,9 @@
 # Retractor
 
 - type: entity
-  name: retractor
-  id: Retractor
   parent: BaseToolSurgery
+  id: Retractor
+  name: retractor
   description: A surgical tool used to hold open incisions.
   components:
   - type: Sprite
@@ -257,9 +257,9 @@
 # Hemostat
 
 - type: entity
-  name: hemostat
-  id: Hemostat
   parent: BaseToolSurgery # Shitmed Change
+  id: Hemostat
+  name: hemostat
   description: A surgical tool used to compress blood vessels to prevent bleeding.
   components:
   - type: Sprite
@@ -331,9 +331,9 @@
 # Saws
 
 - type: entity
-  name: metal saw
-  id: Saw
   parent: BaseToolSurgery
+  id: Saw
+  name: metal saw
   description: For cutting wood and other objects to pieces. Or sawing bones, in case of emergency.
   components:
   - type: Sharp
@@ -378,9 +378,9 @@
       path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
 
 - type: entity
-  name: circular saw
-  id: SawElectric
   parent: Saw
+  id: SawElectric
+  name: circular saw
   description: For heavy duty cutting.
   components:
   - type: Sprite
@@ -426,9 +426,9 @@
 # Shitmed Tools
 
 - type: entity
-  name: searing tool
-  id: EnergyCautery
   parent: Cautery
+  id: EnergyCautery
+  name: searing tool
   description: A cautery with an energy tip, also serves as a drill in its powered state.
   components:
   - type: Sprite

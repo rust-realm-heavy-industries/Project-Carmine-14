@@ -1,10 +1,10 @@
 ---
 - type: entity
-  abstract: true
   parent: BaseStructureDynamic
   id: BaseHardBomb
-  description: Just keep talking and nobody will explode.
   name: hardbomb
+  abstract: true
+  description: Just keep talking and nobody will explode.
   components:
     - type: Appearance
     - type: WiresVisuals

@@ -1,10 +1,10 @@
 ---
 - type: entity
-  id: KitchenReagentGrinder
   parent: [ BaseMachinePowered, SmallConstructibleMachine ]
+  id: KitchenReagentGrinder
   name: reagent grinder
-  description: From BlenderTech. Will It Blend? Let's find out!
   suffix: grinder/juicer
+  description: From BlenderTech. Will It Blend? Let's find out!
   components:
   - type: Transform
     anchored: true

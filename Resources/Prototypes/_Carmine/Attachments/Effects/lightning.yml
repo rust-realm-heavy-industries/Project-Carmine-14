@@ -1,7 +1,7 @@
 ---
 - type: entity
-  name: lightning
   id: BaseLightning
+  name: lightning
   abstract: true
   components:
     - type: Beam
@@ -31,9 +31,9 @@
       lifetime: 3
 
 - type: entity
-  name: lightning
-  id: Lightning
   parent: BaseLightning
+  id: Lightning
+  name: lightning
   categories: [ HideSpawnMenu ]
   components:
     - type: Lightning

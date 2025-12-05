@@ -21,9 +21,9 @@
 
 - type: entity
   parent: GasTankBase
-  abstract: true
   id: BaseJetpack
   name: Jetpack
+  abstract: true
   description: It's a jetpack.
   components:
     - type: InputMover
@@ -85,8 +85,8 @@
 
 #Empty black
 - type: entity
-  id: JetpackBlack
   parent: BaseJetpack
+  id: JetpackBlack
   name: jetpack
   suffix: Empty
   components:
@@ -102,8 +102,8 @@
 
 # Filled black
 - type: entity
-  id: JetpackBlackFilled
   parent: JetpackBlack
+  id: JetpackBlackFilled
   name: jetpack
   suffix: Filled
   components:
@@ -119,8 +119,8 @@
 
 #Empty mini
 - type: entity
-  id: JetpackMini
   parent: BaseJetpack
+  id: JetpackMini
   name: mini jetpack
   suffix: Empty
   components:
@@ -147,8 +147,8 @@
 
 # Filled mini
 - type: entity
-  id: JetpackMiniFilled
   parent: JetpackMini
+  id: JetpackMiniFilled
   name: mini jetpack
   suffix: Filled
   components:

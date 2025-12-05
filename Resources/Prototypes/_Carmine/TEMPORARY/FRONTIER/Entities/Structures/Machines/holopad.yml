@@ -3,8 +3,8 @@
   parent: HolopadLongRange
   id: NFHolopadShip
   name: bluespace holopad
-  description: "A floor-mounted device for projecting holographic images to enable ship to ship communication."
   suffix: Ship
+  description: "A floor-mounted device for projecting holographic images to enable ship to ship communication."
   components:
   - type: Telephone
     ringTone: /Audio/Machines/double_ring.ogg # change me to something funny

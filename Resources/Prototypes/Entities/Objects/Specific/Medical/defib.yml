@@ -1,10 +1,10 @@
 ---
 - type: entity
-  id: BaseDefibrillator
   parent: BaseItem
+  id: BaseDefibrillator
   name: defibrillator
-  description: CLEAR! Zzzzat!
   abstract: true
+  description: CLEAR! Zzzzat!
   components:
     - type: Sprite
       sprite: Objects/Specific/Medical/defib.rsi
@@ -64,16 +64,16 @@
       - TauCetiBasic
 
 - type: entity
-  id: Defibrillator
   parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
+  id: Defibrillator
   components:
   - type: MultiHandedItem
   - type: PowerCellDraw
     useRate: 100
 
 - type: entity
-  id: DefibrillatorEmpty
   parent: Defibrillator
+  id: DefibrillatorEmpty
   suffix: Empty
   components:
   - type: ItemSlots
@@ -82,8 +82,8 @@
         name: power-cell-slot-component-slot-name-default
 
 - type: entity
-  id: DefibrillatorCompact # This should be a research item at some point
   parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
+  id: DefibrillatorCompact # This should be a research item at some point
   name: compact defibrillator
   description: Now in fun size!
   components:

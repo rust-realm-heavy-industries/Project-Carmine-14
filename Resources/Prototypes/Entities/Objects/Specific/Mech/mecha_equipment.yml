@@ -15,8 +15,8 @@
     - Robotics
 
 - type: entity
-  id: MechEquipmentGrabber
   parent: BaseMechEquipment
+  id: MechEquipmentGrabber
   name: hydraulic clamp
   description: Gives the mech the ability to grab things and drag them around.
   components:
@@ -30,8 +30,8 @@
       item-container: !type:Container
 
 - type: entity
-  id: MechEquipmentGrabberSmall
   parent: BaseMechEquipment
+  id: MechEquipmentGrabberSmall
   name: small hydraulic clamp
   description: Gives the mech the ability to grab things and drag them around.
   components:

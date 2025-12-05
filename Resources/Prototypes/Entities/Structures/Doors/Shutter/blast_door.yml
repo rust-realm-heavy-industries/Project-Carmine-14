@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: BlastDoor
   parent: BaseShutter
+  id: BlastDoor
   name: blast door
   description: This one says 'BLAST DONGER'.
   components:
@@ -41,8 +41,8 @@
     mode: NoSprite
 
 - type: entity
-  id: BlastDoorOpen
   parent: BlastDoor
+  id: BlastDoorOpen
   suffix: Open
   components:
   - type: Door
@@ -57,8 +57,8 @@
     enabled: false
 
 - type: entity
-  id: BlastDoorFrame
   parent: BaseStructureDynamic
+  id: BlastDoorFrame
   name: blast door frame
   description: This one says 'BLAST DONGER'.
   components:

@@ -2,8 +2,8 @@
 # N14:TODO: make base doors for damage resists and destruction loot for wood, metal /+ secure, glass and cloth.
 
 - type: entity
-  id: N14BaseDoor # Metal Base
   parent: BaseStructure
+  id: N14BaseDoor # Metal Base
   name: door
   abstract: true
   description: A door, where will it lead?

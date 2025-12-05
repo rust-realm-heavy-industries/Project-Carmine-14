@@ -1,8 +1,8 @@
 ---
 # Baseline
 - type: entity
-  id: BaseAsteroidDebrisNF
   parent: BaseDebrisNF
+  id: BaseAsteroidDebrisNF
   name: Asteroid Debris
   abstract: true
   components:
@@ -60,8 +60,8 @@
       color: "#d67e27"
 
 - type: entity
-  id: AsteroidDebrisNFMedium
   parent: BaseAsteroidDebrisNF
+  id: AsteroidDebrisNFMedium
   name: Asteroid Debris Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -70,8 +70,8 @@
       floorPlacements: 24
 
 - type: entity
-  id: AsteroidDebrisNFLarge
   parent: BaseAsteroidDebrisNF
+  id: AsteroidDebrisNFLarge
   name: Asteroid Debris Large
   categories: [ HideSpawnMenu ]
   components:
@@ -80,8 +80,8 @@
       floorPlacements: 36
 
 - type: entity
-  id: AsteroidDebrisNFLarger
   parent: BaseAsteroidDebrisNF
+  id: AsteroidDebrisNFLarger
   name: Asteroid Debris Larger
   categories: [ HideSpawnMenu ]
   components:
@@ -91,8 +91,8 @@
       floorPlacements: 48
 
 - type: entity
-  id: AsteroidDebrisNFHuge
   parent: BaseAsteroidDebrisNF
+  id: AsteroidDebrisNFHuge
   name: Asteroid Debris Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -102,8 +102,8 @@
       floorPlacements: 108
 
 - type: entity
-  id: AsteroidSalvageNFSmall
   parent: BaseAsteroidDebrisNF
+  id: AsteroidSalvageNFSmall
   name: Salvage Asteroid Small
   categories: [ HideSpawnMenu ]
   components:
@@ -114,8 +114,8 @@
       floorPlacements: 100
 
 - type: entity
-  id: AsteroidSalvageNFMedium
   parent: BaseAsteroidDebrisNF
+  id: AsteroidSalvageNFMedium
   name: Salvage Asteroid Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -126,8 +126,8 @@
       floorPlacements: 150
 
 - type: entity
-  id: AsteroidSalvageNFLarge
   parent: BaseAsteroidDebrisNF
+  id: AsteroidSalvageNFLarge
   name: Salvage Asteroid Large
   categories: [ HideSpawnMenu ]
   components:
@@ -138,8 +138,8 @@
       floorPlacements: 200
 
 - type: entity
-  id: AsteroidSalvageNFHuge
   parent: BaseAsteroidDebrisNF
+  id: AsteroidSalvageNFHuge
   name: Salvage Asteroid Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -152,8 +152,8 @@
 # Snow
 
 - type: entity
-  id: BaseAsteroidDebrisNFIce
   parent: BaseDebrisNF
+  id: BaseAsteroidDebrisNFIce
   name: Salvage Iced Asteroid
   abstract: true
   components:
@@ -208,8 +208,8 @@
       color: "#d6fffc"
 
 - type: entity
-  id: AsteroidDebrisNFIceMedium
   parent: BaseAsteroidDebrisNFIce
+  id: AsteroidDebrisNFIceMedium
   name: Asteroid Ice Debris Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -218,8 +218,8 @@
       floorPlacements: 24
 
 - type: entity
-  id: AsteroidDebrisNFIceLarge
   parent: BaseAsteroidDebrisNFIce
+  id: AsteroidDebrisNFIceLarge
   name: Asteroid Ice Debris Large
   categories: [ HideSpawnMenu ]
   components:
@@ -228,8 +228,8 @@
       floorPlacements: 36
 
 - type: entity
-  id: AsteroidDebrisNFIceLarger
   parent: BaseAsteroidDebrisNFIce
+  id: AsteroidDebrisNFIceLarger
   name: Asteroid Ice Debris Larger
   categories: [ HideSpawnMenu ]
   components:
@@ -239,8 +239,8 @@
       floorPlacements: 48
 
 - type: entity
-  id: AsteroidDebrisNFIceHuge
   parent: BaseAsteroidDebrisNFIce
+  id: AsteroidDebrisNFIceHuge
   name: Asteroid Ice Debris Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -250,8 +250,8 @@
       floorPlacements: 108
 
 - type: entity
-  id: AsteroidSalvageNFIceSmall
   parent: BaseAsteroidDebrisNFIce
+  id: AsteroidSalvageNFIceSmall
   name: Salvage Ice Asteroid Small
   categories: [ HideSpawnMenu ]
   components:
@@ -262,8 +262,8 @@
       floorPlacements: 100
 
 - type: entity
-  id: AsteroidSalvageNFIceMedium
   parent: BaseAsteroidDebrisNFIce
+  id: AsteroidSalvageNFIceMedium
   name: Salvage Ice Asteroid Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -274,8 +274,8 @@
       floorPlacements: 150
 
 - type: entity
-  id: AsteroidSalvageNFIceLarge
   parent: BaseAsteroidDebrisNFIce
+  id: AsteroidSalvageNFIceLarge
   name: Salvage Ice Asteroid Large
   categories: [ HideSpawnMenu ]
   components:
@@ -286,8 +286,8 @@
       floorPlacements: 200
 
 - type: entity
-  id: AsteroidSalvageNFIceHuge
   parent: BaseAsteroidDebrisNFIce
+  id: AsteroidSalvageNFIceHuge
   name: Salvage Ice Asteroid Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -300,8 +300,8 @@
 # Andesite
 
 - type: entity
-  id: BaseAsteroidDebrisNFAndesite
   parent: BaseDebrisNF
+  id: BaseAsteroidDebrisNFAndesite
   name: Salvage Andesite Asteroid
   abstract: true
   components:
@@ -365,8 +365,8 @@
       color: "#95c280"
 
 - type: entity
-  id: AsteroidDebrisNFAndesiteMedium
   parent: BaseAsteroidDebrisNFAndesite
+  id: AsteroidDebrisNFAndesiteMedium
   name: Asteroid Andesite Debris Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -375,8 +375,8 @@
       floorPlacements: 24
 
 - type: entity
-  id: AsteroidDebrisNFAndesiteLarge
   parent: BaseAsteroidDebrisNFAndesite
+  id: AsteroidDebrisNFAndesiteLarge
   name: Asteroid Andesite Debris Large
   categories: [ HideSpawnMenu ]
   components:
@@ -385,8 +385,8 @@
       floorPlacements: 36
 
 - type: entity
-  id: AsteroidDebrisNFAndesiteLarger
   parent: BaseAsteroidDebrisNFAndesite
+  id: AsteroidDebrisNFAndesiteLarger
   name: Asteroid Andesite Debris Larger
   categories: [ HideSpawnMenu ]
   components:
@@ -396,8 +396,8 @@
       floorPlacements: 48
 
 - type: entity
-  id: AsteroidDebrisNFAndesiteHuge
   parent: BaseAsteroidDebrisNFAndesite
+  id: AsteroidDebrisNFAndesiteHuge
   name: Asteroid Andesite Debris Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -407,8 +407,8 @@
       floorPlacements: 108
 
 - type: entity
-  id: AsteroidSalvageNFAndesiteSmall
   parent: BaseAsteroidDebrisNFAndesite
+  id: AsteroidSalvageNFAndesiteSmall
   name: Salvage Andesite Asteroid Small
   categories: [ HideSpawnMenu ]
   components:
@@ -419,8 +419,8 @@
       floorPlacements: 100
 
 - type: entity
-  id: AsteroidSalvageNFAndesiteMedium
   parent: BaseAsteroidDebrisNFAndesite
+  id: AsteroidSalvageNFAndesiteMedium
   name: Salvage Andesite Asteroid Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -431,8 +431,8 @@
       floorPlacements: 150
 
 - type: entity
-  id: AsteroidSalvageNFAndesiteLarge
   parent: BaseAsteroidDebrisNFAndesite
+  id: AsteroidSalvageNFAndesiteLarge
   name: Salvage Andesite Asteroid Large
   categories: [ HideSpawnMenu ]
   components:
@@ -443,8 +443,8 @@
       floorPlacements: 200
 
 - type: entity
-  id: AsteroidSalvageNFAndesiteHuge
   parent: BaseAsteroidDebrisNFAndesite
+  id: AsteroidSalvageNFAndesiteHuge
   name: Salvage Andesite Asteroid Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -457,8 +457,8 @@
 # Basalt
 
 - type: entity
-  id: BaseAsteroidDebrisNFBasalt
   parent: BaseDebrisNF
+  id: BaseAsteroidDebrisNFBasalt
   name: Salvage Basalt Asteroid
   abstract: true
   components:
@@ -519,8 +519,8 @@
       color: "#b5b5b5"
 
 - type: entity
-  id: AsteroidDebrisNFBasaltMedium
   parent: BaseAsteroidDebrisNFBasalt
+  id: AsteroidDebrisNFBasaltMedium
   name: Asteroid Basalt Debris Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -529,8 +529,8 @@
       floorPlacements: 24
 
 - type: entity
-  id: AsteroidDebrisNFBasaltLarge
   parent: BaseAsteroidDebrisNFBasalt
+  id: AsteroidDebrisNFBasaltLarge
   name: Asteroid Basalt Debris Large
   categories: [ HideSpawnMenu ]
   components:
@@ -539,8 +539,8 @@
       floorPlacements: 36
 
 - type: entity
-  id: AsteroidDebrisNFBasaltLarger
   parent: BaseAsteroidDebrisNFBasalt
+  id: AsteroidDebrisNFBasaltLarger
   name: Asteroid Basalt Debris Larger
   categories: [ HideSpawnMenu ]
   components:
@@ -550,8 +550,8 @@
       floorPlacements: 48
 
 - type: entity
-  id: AsteroidDebrisNFBasaltHuge
   parent: BaseAsteroidDebrisNFBasalt
+  id: AsteroidDebrisNFBasaltHuge
   name: Asteroid Basalt Debris Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -561,8 +561,8 @@
       floorPlacements: 108
 
 - type: entity
-  id: AsteroidSalvageNFBasaltSmall
   parent: BaseAsteroidDebrisNFBasalt
+  id: AsteroidSalvageNFBasaltSmall
   name: Salvage Basalt Asteroid Small
   categories: [ HideSpawnMenu ]
   components:
@@ -573,8 +573,8 @@
       floorPlacements: 100
 
 - type: entity
-  id: AsteroidSalvageNFBasaltMedium
   parent: BaseAsteroidDebrisNFBasalt
+  id: AsteroidSalvageNFBasaltMedium
   name: Salvage Basalt Asteroid Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -585,8 +585,8 @@
       floorPlacements: 150
 
 - type: entity
-  id: AsteroidSalvageNFBasaltLarge
   parent: BaseAsteroidDebrisNFBasalt
+  id: AsteroidSalvageNFBasaltLarge
   name: Salvage Basalt Asteroid Large
   categories: [ HideSpawnMenu ]
   components:
@@ -597,8 +597,8 @@
       floorPlacements: 200
 
 - type: entity
-  id: AsteroidSalvageNFBasaltHuge
   parent: BaseAsteroidDebrisNFBasalt
+  id: AsteroidSalvageNFBasaltHuge
   name: Salvage Basalt Asteroid Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -611,8 +611,8 @@
 # Sand
 
 - type: entity
-  id: BaseAsteroidDebrisNFSand
   parent: BaseDebrisNF
+  id: BaseAsteroidDebrisNFSand
   name: Salvage Sand Asteroid
   abstract: true
   components:
@@ -676,8 +676,8 @@
       color: "#cad17b"
 
 - type: entity
-  id: AsteroidDebrisNFSandMedium
   parent: BaseAsteroidDebrisNFSand
+  id: AsteroidDebrisNFSandMedium
   name: Asteroid Sand Debris Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -686,8 +686,8 @@
       floorPlacements: 24
 
 - type: entity
-  id: AsteroidDebrisNFSandLarge
   parent: BaseAsteroidDebrisNFSand
+  id: AsteroidDebrisNFSandLarge
   name: Asteroid Sand Debris Large
   categories: [ HideSpawnMenu ]
   components:
@@ -696,8 +696,8 @@
       floorPlacements: 36
 
 - type: entity
-  id: AsteroidDebrisNFSandLarger
   parent: BaseAsteroidDebrisNFSand
+  id: AsteroidDebrisNFSandLarger
   name: Asteroid Sand Debris Larger
   categories: [ HideSpawnMenu ]
   components:
@@ -707,8 +707,8 @@
       floorPlacements: 48
 
 - type: entity
-  id: AsteroidDebrisNFSandHuge
   parent: BaseAsteroidDebrisNFSand
+  id: AsteroidDebrisNFSandHuge
   name: Asteroid Sand Debris Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -718,8 +718,8 @@
       floorPlacements: 108
 
 - type: entity
-  id: AsteroidSalvageNFSandSmall
   parent: BaseAsteroidDebrisNFSand
+  id: AsteroidSalvageNFSandSmall
   name: Salvage Sand Asteroid Small
   categories: [ HideSpawnMenu ]
   components:
@@ -730,8 +730,8 @@
       floorPlacements: 100
 
 - type: entity
-  id: AsteroidSalvageNFSandMedium
   parent: BaseAsteroidDebrisNFSand
+  id: AsteroidSalvageNFSandMedium
   name: Salvage Sand Asteroid Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -742,8 +742,8 @@
       floorPlacements: 150
 
 - type: entity
-  id: AsteroidSalvageNFSandLarge
   parent: BaseAsteroidDebrisNFSand
+  id: AsteroidSalvageNFSandLarge
   name: Salvage Sand Asteroid Large
   categories: [ HideSpawnMenu ]
   components:
@@ -754,8 +754,8 @@
       floorPlacements: 200
 
 - type: entity
-  id: AsteroidSalvageNFSandHuge
   parent: BaseAsteroidDebrisNFSand
+  id: AsteroidSalvageNFSandHuge
   name: Salvage Sand Asteroid Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -768,8 +768,8 @@
 # Chromite
 
 - type: entity
-  id: BaseAsteroidDebrisNFChromite
   parent: BaseDebrisNF
+  id: BaseAsteroidDebrisNFChromite
   name: Salvage Chromite Asteroid
   abstract: true
   components:
@@ -827,8 +827,8 @@
       color: "#8178cc"
 
 - type: entity
-  id: AsteroidDebrisNFChromiteMedium
   parent: BaseAsteroidDebrisNFChromite
+  id: AsteroidDebrisNFChromiteMedium
   name: Asteroid Chromite Debris Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -837,8 +837,8 @@
       floorPlacements: 24
 
 - type: entity
-  id: AsteroidDebrisNFChromiteLarge
   parent: BaseAsteroidDebrisNFChromite
+  id: AsteroidDebrisNFChromiteLarge
   name: Asteroid Chromite Debris Large
   categories: [ HideSpawnMenu ]
   components:
@@ -847,8 +847,8 @@
       floorPlacements: 36
 
 - type: entity
-  id: AsteroidDebrisNFChromiteLarger
   parent: BaseAsteroidDebrisNFChromite
+  id: AsteroidDebrisNFChromiteLarger
   name: Asteroid Chromite Debris Larger
   categories: [ HideSpawnMenu ]
   components:
@@ -858,8 +858,8 @@
       floorPlacements: 48
 
 - type: entity
-  id: AsteroidDebrisNFChromiteHuge
   parent: BaseAsteroidDebrisNFChromite
+  id: AsteroidDebrisNFChromiteHuge
   name: Asteroid Chromite Debris Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -869,8 +869,8 @@
       floorPlacements: 108
 
 - type: entity
-  id: AsteroidSalvageNFChromiteSmall
   parent: BaseAsteroidDebrisNFChromite
+  id: AsteroidSalvageNFChromiteSmall
   name: Salvage Chromite Asteroid Small
   categories: [ HideSpawnMenu ]
   components:
@@ -881,8 +881,8 @@
       floorPlacements: 100
 
 - type: entity
-  id: AsteroidSalvageNFChromiteMedium
   parent: BaseAsteroidDebrisNFChromite
+  id: AsteroidSalvageNFChromiteMedium
   name: Salvage Chromite Asteroid Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -893,8 +893,8 @@
       floorPlacements: 150
 
 - type: entity
-  id: AsteroidSalvageNFChromiteLarge
   parent: BaseAsteroidDebrisNFChromite
+  id: AsteroidSalvageNFChromiteLarge
   name: Salvage Chromite Asteroid Large
   categories: [ HideSpawnMenu ]
   components:
@@ -905,8 +905,8 @@
       floorPlacements: 200
 
 - type: entity
-  id: AsteroidSalvageNFChromiteHuge
   parent: BaseAsteroidDebrisNFChromite
+  id: AsteroidSalvageNFChromiteHuge
   name: Salvage Chromite Asteroid Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -919,8 +919,8 @@
 # Asteroid Asteroid Debris, because yes, base asteroid is made NOT from asteroid
 
 - type: entity
-  id: BaseRockAsteroidDebrisNF
   parent: BaseAsteroidDebrisNF
+  id: BaseRockAsteroidDebrisNF
   name: Asteroid Rock Debris
   abstract: true
   components:
@@ -981,8 +981,8 @@
       color: "#BF8C5C"
 
 - type: entity
-  id: AsteroidRockDebrisNFMedium
   parent: BaseRockAsteroidDebrisNF
+  id: AsteroidRockDebrisNFMedium
   name: Asteroid Debris Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -991,8 +991,8 @@
       floorPlacements: 24
 
 - type: entity
-  id: AsteroidRockDebrisNFLarge
   parent: BaseRockAsteroidDebrisNF
+  id: AsteroidRockDebrisNFLarge
   name: Asteroid Debris Large
   categories: [ HideSpawnMenu ]
   components:
@@ -1001,8 +1001,8 @@
       floorPlacements: 36
 
 - type: entity
-  id: AsteroidRockDebrisNFLarger
   parent: BaseRockAsteroidDebrisNF
+  id: AsteroidRockDebrisNFLarger
   name: Asteroid Debris Larger
   categories: [ HideSpawnMenu ]
   components:
@@ -1012,8 +1012,8 @@
       floorPlacements: 48
 
 - type: entity
-  id: AsteroidRockDebrisNFHuge
   parent: BaseRockAsteroidDebrisNF
+  id: AsteroidRockDebrisNFHuge
   name: Asteroid Debris Huge
   categories: [ HideSpawnMenu ]
   components:
@@ -1023,8 +1023,8 @@
       floorPlacements: 108
 
 - type: entity
-  id: AsteroidRockSalvageNFSmall
   parent: BaseRockAsteroidDebrisNF
+  id: AsteroidRockSalvageNFSmall
   name: Salvage Asteroid Small
   categories: [ HideSpawnMenu ]
   components:
@@ -1035,8 +1035,8 @@
       floorPlacements: 100
 
 - type: entity
-  id: AsteroidRockSalvageNFMedium
   parent: BaseRockAsteroidDebrisNF
+  id: AsteroidRockSalvageNFMedium
   name: Salvage Asteroid Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -1047,8 +1047,8 @@
       floorPlacements: 150
 
 - type: entity
-  id: AsteroidRockSalvageNFLarge
   parent: BaseRockAsteroidDebrisNF
+  id: AsteroidRockSalvageNFLarge
   name: Salvage Asteroid Large
   categories: [ HideSpawnMenu ]
   components:
@@ -1059,8 +1059,8 @@
       floorPlacements: 200
 
 - type: entity
-  id: AsteroidRockSalvageNFHuge
   parent: BaseRockAsteroidDebrisNF
+  id: AsteroidRockSalvageNFHuge
   name: Salvage Asteroid Huge
   categories: [ HideSpawnMenu ]
   components:

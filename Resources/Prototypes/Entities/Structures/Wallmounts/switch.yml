@@ -187,10 +187,10 @@
 #directional
 
 - type: entity
+  parent: SignalSwitch
   id: SignalSwitchDirectional
   name: signal switch
   suffix: directional
-  parent: SignalSwitch
   components:
   - type: WallMount
     arc: 175
@@ -199,10 +199,10 @@
     node: SignalSwitchDirectionalNode
 
 - type: entity
+  parent: SignalButton
   id: SignalButtonDirectional
   name: signal button
   suffix: directional
-  parent: SignalButton
   components:
   - type: WallMount
     arc: 175
@@ -211,10 +211,10 @@
     node: SignalButtonDirectionalNode
 
 - type: entity
+  parent: ApcNetSwitch
   id: ApcNetSwitchDirectional
   name: apc net switch
   suffix: directional
-  parent: ApcNetSwitch
   components:
   - type: WallMount
     arc: 175
@@ -225,9 +225,9 @@
 # lockable buttons
 
 - type: entity
+  parent: SignalButtonDirectional
   id: LockableButton
   name: lockable button
-  parent: SignalButtonDirectional
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
@@ -268,8 +268,8 @@
   - type: Fixtures
 
 - type: entity
-  id: ButtonFrameGrey
   parent: ButtonFrame
+  id: ButtonFrameGrey
   suffix: grey
   components:
   - type: Sprite
@@ -278,8 +278,8 @@
     state: grey
 
 - type: entity
-  id: ButtonFrameCaution
   parent: ButtonFrame
+  id: ButtonFrameCaution
   suffix: caution
   components:
   - type: Sprite
@@ -288,8 +288,8 @@
     state: caution
 
 - type: entity
-  id: ButtonFrameCautionSecurity
   parent: ButtonFrame
+  id: ButtonFrameCautionSecurity
   suffix: caution
   components:
   - type: Sprite

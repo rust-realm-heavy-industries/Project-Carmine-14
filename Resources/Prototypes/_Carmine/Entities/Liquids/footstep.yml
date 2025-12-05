@@ -1,9 +1,9 @@
 ---
 - type: entity
-  name: footstep
   id: Footstep
-  save: false
+  name: footstep
   description: Trace of liquid.
+  save: false
   components:
     - type: Appearance
     - type: Clickable

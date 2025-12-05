@@ -1,10 +1,10 @@
 ---
 - type: entity
-  id: ClosetBase
   parent: BaseStructureDynamic
+  id: ClosetBase
   name: closet
-  description: A standard-issue Nanotrasen storage unit.
   abstract: true
+  description: A standard-issue Nanotrasen storage unit.
   components:
   - type: ResistLocker
   - type: Transform
@@ -107,8 +107,8 @@
 
 # steel closet base (that can be constructed/deconstructed)
 - type: entity
-  id: ClosetSteelBase
   parent: ClosetBase
+  id: ClosetSteelBase
   components:
   - type: Construction
     graph: ClosetSteel
@@ -198,8 +198,8 @@
 
 #Wall locker
 - type: entity
-  id: BaseWallLocker
   parent: BaseWallCloset
+  id: BaseWallLocker
   abstract: true
   components:
   - type: AccessReader
@@ -222,8 +222,8 @@
 #Base suit storage unit
 #I am terribly sorry for duplicating the closet almost-wholesale, but the game malds at me if I don't so here we are.
 - type: entity
-  id: SuitStorageBase
   parent: BaseStructure
+  id: SuitStorageBase
   name: suit storage unit
   description: A fancy hi-tech storage unit made for storing space suits.
   components:

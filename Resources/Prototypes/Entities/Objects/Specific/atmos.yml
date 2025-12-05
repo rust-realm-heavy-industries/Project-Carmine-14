@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: gas analyzer
   parent: BaseItem
   id: GasAnalyzer
+  name: gas analyzer
   description: A hand-held environmental scanner which reports current gas levels.
   components:
   - type: Sprite

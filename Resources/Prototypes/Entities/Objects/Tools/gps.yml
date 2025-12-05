@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: global positioning system
   parent: BaseItem
   id: HandheldGPSBasic
+  name: global positioning system
   description: Helping lost spacemen find their way through the planets since 2016.
   components:
   - type: Sprite

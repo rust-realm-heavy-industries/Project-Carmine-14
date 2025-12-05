@@ -1,9 +1,9 @@
 ---
 - type: entity
-  abstract: true
   parent: BaseStructureDynamic
   id: GasCanister
   name: gas canister
+  abstract: true
   description: A canister that can contain any type of gas. It can be attached to connector ports using a wrench.
   components:
     - type: InteractionOutline
@@ -235,8 +235,8 @@
       - !type:DumpCanisterBehavior
 
 - type: entity
-  id: LiquidOxygenCanister
   parent: OxygenCanister
+  id: LiquidOxygenCanister
   name: liquid oxygen canister
   description: A canister that can contain any type of gas. This one is supposed to contain liquid oxygen. It can be attached to connector ports using a wrench.
   components:
@@ -290,8 +290,8 @@
         - !type:DumpCanisterBehavior
 
 - type: entity
-  id: LiquidNitrogenCanister
   parent: NitrogenCanister
+  id: LiquidNitrogenCanister
   name: liquid nitrogen canister
   description: A canister that can contain any type of gas. This one is supposed to contain liquid nitrogen. It can be attached to connector ports using a wrench.
   components:
@@ -349,8 +349,8 @@
       locked: true
 
 - type: entity
-  id: LiquidCarbonDioxideCanister
   parent: CarbonDioxideCanister
+  id: LiquidCarbonDioxideCanister
   name: liquid carbon dioxide canister
   description: A canister that can contain any type of gas. This one is supposed to contain liquid carbon dioxide. It can be attached to connector ports using a wrench.
   components:

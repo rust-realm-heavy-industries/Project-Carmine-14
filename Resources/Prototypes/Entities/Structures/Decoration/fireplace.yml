@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: Fireplace
   parent: BaseStructure
+  id: Fireplace
   name: fireplace
   description: A place that has fire. Cozy!
   components:

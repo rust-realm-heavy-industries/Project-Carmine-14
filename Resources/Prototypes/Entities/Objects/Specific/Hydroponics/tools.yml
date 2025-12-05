@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: mini hoe
   parent: BaseItem
   id: HydroponicsToolMiniHoe
+  name: mini hoe
   description: It's used for removing weeds or scratching your back.
   components:
   - type: Tag
@@ -32,9 +32,9 @@
     sprite: Objects/Tools/Hydroponics/hoe.rsi
 
 - type: entity
-  name: plant clippers
   parent: BaseItem
   id: HydroponicsToolClippers
+  name: plant clippers
   description: A tool used to take samples from plants.
   components:
   - type: Tag
@@ -72,9 +72,9 @@
       path: /Audio/_Shitmed/Medical/Surgery/retractor2.ogg
 
 - type: entity
-  name: scythe
   parent: BaseItem
   id: HydroponicsToolScythe
+  name: scythe
   description: A sharp and curved blade on a long fibremetal handle, this tool makes it easy to reap what you sow.
   components:
   - type: Sharp
@@ -110,9 +110,9 @@
     price: 40
 
 - type: entity
-  name: hatchet
   parent: BaseItem
   id: HydroponicsToolHatchet
+  name: hatchet
   description: A very sharp axe blade upon a short fibremetal handle. It has a long history of chopping things, but now it is used for chopping wood.
   components:
   - type: Tag
@@ -149,9 +149,9 @@
       path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
 
 - type: entity
-  name: spade
   parent: BaseItem
   id: HydroponicsToolSpade
+  name: spade
   description: A small tool for digging and moving dirt.
   components:
   - type: Tag
@@ -183,9 +183,9 @@
     speedModifier: 0.85 # slower at digging than a full-sized shovel
 
 - type: entity
-  name: plant bag
-  id: PlantBag
   parent: BaseStorageItem
+  id: PlantBag
+  name: plant bag
   description: A bag for botanists to easily move their huge harvests.
   components:
   - type: Sprite

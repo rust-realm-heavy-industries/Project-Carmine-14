@@ -26,8 +26,8 @@
     - Bedsheet
 
 - type: entity
-  id: BedsheetBlack
   parent: BedsheetBase
+  id: BedsheetBlack
   name: black bedsheet
   components:
   - type: Sprite
@@ -36,8 +36,8 @@
     sprite: Clothing/Neck/Bedsheets/black.rsi
 
 - type: entity
-  id: BedsheetBlue
   parent: BedsheetBase
+  id: BedsheetBlue
   name: blue bedsheet
   components:
   - type: Sprite
@@ -46,8 +46,8 @@
     sprite: Clothing/Neck/Bedsheets/blue.rsi
 
 - type: entity
-  id: BedsheetBrown
   parent: BedsheetBase
+  id: BedsheetBrown
   name: brown bedsheet
   components:
   - type: Sprite
@@ -56,8 +56,8 @@
     sprite: Clothing/Neck/Bedsheets/brown.rsi
 
 - type: entity
-  id: BedsheetGrey
   parent: BedsheetBase
+  id: BedsheetGrey
   name: grey bedsheet
   components:
   - type: Sprite
@@ -66,8 +66,8 @@
     sprite: Clothing/Neck/Bedsheets/grey.rsi
 
 - type: entity
-  id: BedsheetMedical
   parent: BedsheetBase
+  id: BedsheetMedical
   name: medical bedsheet
   description: It's a sterilized blanket commonly used in the Medbay. Sterilization is voided if a virologist is present onboard the station.
   components:
@@ -77,8 +77,8 @@
     sprite: Clothing/Neck/Bedsheets/medical.rsi
 
 - type: entity
-  id: BedsheetRed
   parent: BedsheetBase
+  id: BedsheetRed
   name: red bedsheet
   components:
   - type: Sprite
@@ -87,8 +87,8 @@
     sprite: Clothing/Neck/Bedsheets/red.rsi
 
 - type: entity
-  id: BedsheetWhite
   parent: BedsheetBase
+  id: BedsheetWhite
   name: white bedsheet
   components:
   - type: Sprite
@@ -97,8 +97,8 @@
     sprite: Clothing/Neck/Bedsheets/white.rsi
 
 - type: entity
-  id: BedsheetYellow
   parent: BedsheetBase
+  id: BedsheetYellow
   name: yellow bedsheet
   components:
   - type: Sprite

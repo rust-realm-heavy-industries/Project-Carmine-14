@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: BaseTabletopChemicalMachine
   parent: [ BaseMachinePowered, SmallConstructibleMachine ]
+  id: BaseTabletopChemicalMachine
   abstract: true
   components:
   - type: Transform

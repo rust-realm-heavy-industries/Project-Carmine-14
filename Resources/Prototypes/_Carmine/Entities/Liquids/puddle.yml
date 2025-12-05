@@ -1,7 +1,7 @@
 ---
 - type: entity
-  name: puddle
   id: Puddle
+  name: puddle
   description: A puddle of liquid.
   placement:
     mode: SnapgridCenter

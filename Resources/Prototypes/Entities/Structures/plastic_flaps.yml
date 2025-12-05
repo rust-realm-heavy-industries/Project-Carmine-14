@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: PlasticFlapsBase
   parent: BaseStructureDynamic
+  id: PlasticFlapsBase
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -48,8 +48,8 @@
     sprintSpeedModifier: 0.4
 
 - type: entity
-  id: PlasticFlapsClear
   parent: PlasticFlapsBase
+  id: PlasticFlapsClear
   name: plastic flaps
   suffix: Clear
   description: Heavy duty, plastic flaps. Definitely can't get past those. No way.
@@ -59,8 +59,8 @@
     node: plasticFlaps
 
 - type: entity
-  id: PlasticFlapsOpaque
   parent: PlasticFlapsBase
+  id: PlasticFlapsOpaque
   name: plastic flaps
   suffix: Opaque
   description: Heavy duty, plastic flaps. Definitely can't get past those. No way.

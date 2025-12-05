@@ -1,10 +1,10 @@
 ---
 # Base substation
 - type: entity
-  abstract: true
-  id: BaseSubstation
   parent: [ BaseMachine, ConstructibleMachine ]
+  id: BaseSubstation
   name: substation
+  abstract: true
   description: Reduces the voltage of electricity put into it.
   placement:
     mode: SnapgridCenter

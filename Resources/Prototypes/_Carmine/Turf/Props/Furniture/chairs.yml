@@ -1,7 +1,7 @@
 ---
 - type: entity
-  name: chair
   id: SeatBase
+  name: chair
   abstract: true
   description: You sit in this. Either by will or force.
   placement:
@@ -51,10 +51,10 @@
 
 #Start anchored, cannot be rotated while anchored
 - type: entity
-  name: chair
-  id: ChairBase
-  abstract: true
   parent: SeatBase
+  id: ChairBase
+  name: chair
+  abstract: true
   placement:
     mode: SnapgridCenter
   components:
@@ -67,9 +67,9 @@
 
 #Starts unanchored, can be rotated while anchored
 - type: entity
-  name: chair
-  id: OfficeChairBase
   parent: SeatBase
+  id: OfficeChairBase
+  name: chair
   abstract: true
   components:
   - type: Rotatable
@@ -78,9 +78,9 @@
 
 #Starts anchored, can be rotated while anchored
 - type: entity
-  name: stool
-  id: StoolBase
   parent: OfficeChairBase
+  id: StoolBase
+  name: stool
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -93,39 +93,39 @@
 # CHAIRS
 
 - type: entity
+  parent: ChairBase
+  id: Chair
   name: metal chair
   description: Sturdy, stiff. Its cold to the touch.
-  id: Chair
-  parent: ChairBase
   components:
   - type: Sprite
     state: chair
 
 - type: entity
+  parent: ChairBase
+  id: ChairPilot
   name: pilot chair
   description: Complex, comfortable. The padding melds with your skin.
-  id: ChairPilot
-  parent: ChairBase
   components:
   - type: Sprite
     state: shuttle
 
 - type: entity
+  parent: ChairBase
   id: ChairWood
   name: wood chair
   description: Comfortable, fluid. You can feel the imported wood.
-  parent: ChairBase
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: wood_chair
 
 - type: entity
+  parent: ChairBase
   id: ChairWoodPadded
   name: wood chair
-  description: Comfortable, fluid. The pillows meld with your skin.
-  parent: ChairBase
   suffix: padded
+  description: Comfortable, fluid. The pillows meld with your skin.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -135,8 +135,8 @@
   parent: ChairBase
   id: ChairPlastic
   name: plastic chair
-  description: Flimsy, acrid. The plastic looks melted around the legs.
   suffix: plastic
+  description: Flimsy, acrid. The plastic looks melted around the legs.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -146,8 +146,8 @@
   parent: ChairBase
   id: ChairGreen
   name: metal chair
-  description: Sturdy, stiff. The green tones are fading away.
   suffix: green
+  description: Sturdy, stiff. The green tones are fading away.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -157,8 +157,8 @@
   parent: ChairBase
   id: ChairBlue
   name: metal chair
-  description: Sturdy, stiff. The blue tones are fading away.
   suffix: blue
+  description: Sturdy, stiff. The blue tones are fading away.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -168,8 +168,8 @@
   parent: ChairBase
   id: ChairRed
   name: metal chair
-  description: Sturdy, stiff. The red tones are fading away.
   suffix: red
+  description: Sturdy, stiff. The red tones are fading away.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -181,8 +181,8 @@
   parent: OfficeChairBase
   id: ChairOfficeBlue
   name: office chair
-  description: Sturdy, flexible. The fake leather is falling off.
   suffix: blue
+  description: Sturdy, flexible. The fake leather is falling off.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -192,8 +192,8 @@
   parent: OfficeChairBase
   id: ChairOfficeGreen
   name: office chair
-  description: Sturdy, flexible. The fake leather is falling off.
   suffix: green
+  description: Sturdy, flexible. The fake leather is falling off.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -203,8 +203,8 @@
   parent: OfficeChairBase
   id: ChairOfficeRed
   name: office chair
-  description: Sturdy, flexible. The fake leather is falling off.
   suffix: red
+  description: Sturdy, flexible. The fake leather is falling off.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -214,8 +214,8 @@
   parent: OfficeChairBase
   id: ChairOfficeFancy
   name: office chair
-  description: Sturdy, flexible. The fake leather is vividly shining.
   suffix: fancy
+  description: Sturdy, flexible. The fake leather is vividly shining.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -298,9 +298,9 @@
     state: diner_chair
 
 - type: entity
-  name: steel bench
-  id: BenchSteel
   parent: ChairBase
+  id: BenchSteel
+  name: steel bench
   description: Sturdy, stiff. The center is lightly bent inwards.
   components:
   - type: Sprite

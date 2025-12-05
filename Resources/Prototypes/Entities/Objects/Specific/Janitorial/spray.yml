@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: spray bottle
-  id: SprayBottle
   parent: BaseItem
+  id: SprayBottle
+  name: spray bottle
   suffix: Empty
   description: A spray bottle with an unscrewable top.
   components:
@@ -45,10 +45,10 @@
     solution: spray
 
 - type: entity
-  name: spray bottle
-  id: SprayBottleWater
-  suffix: Filled
   parent: SprayBottle
+  id: SprayBottleWater
+  name: spray bottle
+  suffix: Filled
   components:
   - type: Tag
     tags:
@@ -62,11 +62,11 @@
           Quantity: 100
 
 - type: entity
-  name: space cleaner
-  description: BLAM!-brand non-foaming space cleaner!
-  id: SprayBottleSpaceCleaner
   parent: SprayBottle
+  id: SprayBottleSpaceCleaner
+  name: space cleaner
   suffix: ""
+  description: BLAM!-brand non-foaming space cleaner!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -113,8 +113,8 @@
   - type: VaporVisuals
 
 - type: entity
-  id: BigVapor
   parent: Vapor
+  id: BigVapor
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

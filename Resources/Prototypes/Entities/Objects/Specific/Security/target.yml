@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: BaseTarget
   parent: BaseStructureDynamic
+  id: BaseTarget
   abstract: true
   components:
   - type: Sprite
@@ -51,9 +51,9 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  name: human target
-  id: TargetHuman
   parent: BaseTarget
+  id: TargetHuman
+  name: human target
   description: A shooting target. This one is a human.
   components:
   - type: Sprite

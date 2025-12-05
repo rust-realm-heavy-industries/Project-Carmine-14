@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: Clothing
   id: ClothingHeadBase
+  abstract: true
   components:
   - type: Clothing
     slots:
@@ -27,9 +27,9 @@
       - WhitelistChameleon
 
 - type: entity
-  abstract: true
   parent: ClothingHeadBase
   id: ClothingHeadBaseButcherable
+  abstract: true
   components:
   - type: Butcherable
     butcheringType: Knife
@@ -42,9 +42,9 @@
       - WhitelistChameleon
 
 - type: entity
-  abstract: true
   parent: Clothing
   id: HatBase
+  abstract: true
   components:
   - type: Clothing
     slots:
@@ -56,10 +56,10 @@
       - WhitelistChameleon
 
 - type: entity
-  abstract: true
   parent: ClothingHeadBase
   id: ClothingHeadLightBase
   name: base helmet with light
+  abstract: true
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -115,10 +115,10 @@
       cell_slot: !type:ContainerSlot {}
 
 - type: entity
-  abstract: true
   parent: ClothingHeadBase
   id: ClothingHeadEVAHelmetBase
   name: base space helmet
+  abstract: true
   components:
   - type: Item
     size: Normal
@@ -147,10 +147,10 @@
     - Snout
 
 - type: entity
-  abstract: true
   parent: ClothingHeadBase
   id: ClothingHeadEVAHelmetNoIngestionBlocker
   name: base space helmet
+  abstract: true
   components:
   - type: Item
     size: Normal
@@ -224,10 +224,10 @@
       - NonEnergy
 
 - type: entity
-  abstract: true
   parent: ClothingHeadBase
   id: ClothingHeadEnvirohelmBase
   name: base envirosuit helmet
+  abstract: true
   components:
   - type: Sprite
     layers:
@@ -324,10 +324,10 @@
 # When making new custom envirohelms, inherit from this entity and
 # replace the color fields on the layers
 - type: entity
-  abstract: true
   parent: ClothingHeadEnvirohelmBase
   id: ClothingHeadEnvirohelmCustomBase
   name: base custom envirosuit helmet
+  abstract: true
   components:
   - type: ToggleableLightVisuals
     inhandVisuals:
@@ -386,10 +386,10 @@
       - state: visor-equipped-HELMET
 
 - type: entity
-  abstract: true
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHardsuitWithLightBase
   name: base hardsuit helmet with light
+  abstract: true
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -438,9 +438,9 @@
     autoRechargeRate: 2 #recharge of 2 makes total drain 1w / s so max charge is 1:1 with time. Time to fully charge should be 5 minutes. Having recharge gives light an extended flicker period which gives you some warning to return to light area.
 
 - type: entity
-  abstract: true
   id: ClothingHeadHatHoodWinterBase
   name: base winter coat hood
+  abstract: true
   description: A hood, made to keep your head warm.
   categories: [ HideSpawnMenu ]
   components:

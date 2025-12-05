@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: MedicalScanner
   parent: BaseMachinePowered
+  id: MedicalScanner
   name: medical scanner
   description: A bulky medical scanner.
   components:

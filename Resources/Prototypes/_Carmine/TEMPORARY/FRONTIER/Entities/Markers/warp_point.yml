@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: WarpPointShip
   parent: WarpPoint
+  id: WarpPointShip
   suffix: ship
   components:
     - type: WarpPoint

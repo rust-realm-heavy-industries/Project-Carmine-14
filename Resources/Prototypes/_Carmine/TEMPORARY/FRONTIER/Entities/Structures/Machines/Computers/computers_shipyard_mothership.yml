@@ -1,11 +1,11 @@
 ---
 # Custom console
 - type: entity
-  id: BaseMothershipComputer
   parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardCrescent]
+  id: BaseMothershipComputer
   suffix: Mothership
-  description: Used on motherships to purchase and sell ships without returning to a station.
   abstract: true
+  description: Used on motherships to purchase and sell ships without returning to a station.
   components:
   - type: ActivatableUI
     key: enum.ShipyardConsoleUiKey.Custom

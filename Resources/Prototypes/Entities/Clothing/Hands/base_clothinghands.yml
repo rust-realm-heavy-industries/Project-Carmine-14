@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: Clothing
   id: ClothingHandsBase
+  abstract: true
   components:
   - type: Sprite
     state: icon
@@ -37,9 +37,9 @@
         friction: 0.2
 
 - type: entity
-  abstract: true
   parent: ClothingHandsBase
   id: ClothingHandsButcherable
+  abstract: true
   components:
   - type: Butcherable
     butcheringType: Knife
@@ -49,9 +49,9 @@
 
 # gloves that cover the fingertips and have synthetic fibers
 - type: entity
-  abstract: true
   parent: ClothingHandsButcherable
   id: ClothingHandsGlovesSyntheticBase
+  abstract: true
   components:
   - type: Fiber
     fiberMaterial: fibers-synthetic
@@ -59,8 +59,8 @@
 
 - type: entity
   parent: ClothingHandsGlovesSyntheticBase
-  abstract: true
   id: ClothingHandsGlovesEnviroglovesBase
+  abstract: true
   components:
   - type: Armor
     modifiers:
@@ -72,9 +72,9 @@
     - RightHand
 
 - type: entity
-  abstract: true
   parent: BaseItem
   id: RingBase
+  abstract: true
   components:
     - type: Clothing
       slots: [ gloves, neck ]

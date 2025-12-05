@@ -1,9 +1,9 @@
 ---
 - type: entity
-  abstract: true
   parent: [ BaseItem] #PDA's have uplinks so they have to inherit the data.
   id: BasePDA
   name: PDA
+  abstract: true
   description: Personal Data Assistant.
   components:
   - type: Appearance

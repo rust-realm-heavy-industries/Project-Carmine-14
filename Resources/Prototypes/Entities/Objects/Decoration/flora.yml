@@ -2,8 +2,8 @@
 - type: entity
   id: BaseRock
   name: boulder
-  description: Heavy as a really heavy thing.
   abstract: true
+  description: Heavy as a really heavy thing.
   components:
   - type: Clickable
   - type: Sprite
@@ -36,8 +36,8 @@
 
 - type: entity
   id: BaseTree
-  description: Yep, it's a tree.
   abstract: true
+  description: Yep, it's a tree.
   components:
   - type: SpriteFade
   - type: Clickable
@@ -147,10 +147,10 @@
         - WallLayer
 
 - type: entity
-  name: stalagmite
-  description: Natural stone spikes.
   parent: BaseRock
   id: FloraStalagmite1
+  name: stalagmite
+  description: Natural stone spikes.
   components:
   - type: Destructible
     thresholds:

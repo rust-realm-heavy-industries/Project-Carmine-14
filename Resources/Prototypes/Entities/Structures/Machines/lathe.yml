@@ -1,9 +1,9 @@
 ---
 - type: entity
-  id: BaseLathe
   parent: [ BaseMachinePowered, ConstructibleMachine ]
-  abstract: true
+  id: BaseLathe
   name: lathe
+  abstract: true
   components:
   - type: Appearance
   - type: WiresVisuals
@@ -55,9 +55,9 @@
 
 # a lathe that can be sped up with space lube / slowed down with glue
 - type: entity
-  abstract: true
   parent: BaseLathe
   id: BaseLatheLube
+  abstract: true
   components:
   - type: ReagentSpeed
     solution: lube
@@ -76,8 +76,8 @@
     solution: lube
 
 - type: entity
-  abstract: true
   id: BaseHyperlathe
+  abstract: true
   components:
   - type: Lathe
     materialUseMultiplier: 0.5
@@ -89,8 +89,8 @@
       SpaceGlue: 5 # no change from normal lathe, overheat!!!
 
 - type: entity
-  id: Autolathe
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
+  id: Autolathe
   name: autolathe
   description: It produces basic items using metal and glass.
   components:
@@ -280,8 +280,8 @@
     - ParamedHypo # Goobstation - ParamedHypo
 
 - type: entity
-  id: AutolatheHyperConvection
   parent: [Autolathe, BaseHyperlathe]
+  id: AutolatheHyperConvection
   name: hyper convection autolathe
   description: A highly-experimental autolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
@@ -289,8 +289,8 @@
     sprite: Structures/Machines/autolathe_hypercon.rsi
 
 - type: entity
-  id: Protolathe
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
+  id: Protolathe
   name: protolathe
   description: Converts raw materials into advanced items.
   components:
@@ -322,8 +322,8 @@
     runningState: building
 
 - type: entity
-  id: ProtolatheHyperConvection
   parent: [Protolathe, BaseHyperlathe]
+  id: ProtolatheHyperConvection
   name: hyper convection protolathe
   description: A highly-experimental protolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
@@ -331,8 +331,8 @@
     sprite: Structures/Machines/protolathe_hypercon.rsi
 
 - type: entity
-  id: CircuitImprinter
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
+  id: CircuitImprinter
   name: circuit imprinter
   description: Prints circuit boards for machines.
   components:
@@ -482,8 +482,8 @@
   - type: RequireProjectileTarget
 
 - type: entity
-  id: CircuitImprinterHyperConvection
   parent: [CircuitImprinter, BaseHyperlathe]
+  id: CircuitImprinterHyperConvection
   name: hyper convection circuit imprinter
   description: A highly-experimental circuit imprinter that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
@@ -491,8 +491,8 @@
     sprite: Structures/Machines/circuit_imprinter_hypercon.rsi
 
 - type: entity
-  id: ExosuitFabricator
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
+  id: ExosuitFabricator
   name: exosuit fabricator
   description: Creates parts for robotics and other mechanical needs
   components:
@@ -669,8 +669,8 @@
     - Robotics
 
 - type: entity
-  id: SecurityTechFab
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
+  id: SecurityTechFab
   name: security techfab
   description: Prints equipment for use by security crew.
   components:
@@ -943,8 +943,8 @@
       - Metal
 
 - type: entity
-  id: AmmoTechFab
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
+  id: AmmoTechFab
   name: ammo techfab
   description: Prints the bare minimum of bullets that any budget military or armory could need. Nothing fancy.
   components:
@@ -1041,8 +1041,8 @@
 
 
 - type: entity
-  id: MedicalTechFab
   parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
+  id: MedicalTechFab
   name: medical techfab
   description: Prints equipment for use by the medbay.
   components:
@@ -1108,8 +1108,8 @@
       - Metal
 
 - type: entity
-  id: Biogenerator
   parent: BaseLathe
+  id: Biogenerator
   name: biogenerator
   description: Converts plants into biomass, which can be used to construct useful items.
   components:

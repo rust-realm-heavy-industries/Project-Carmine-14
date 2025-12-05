@@ -2,8 +2,8 @@
 # Ripley
 
 - type: entity
-  id: RipleyCentralElectronics
   parent: BaseElectronics
+  id: RipleyCentralElectronics
   name: ripley central control module
   description: The electrical control center for the ripley mech.
   components:
@@ -20,8 +20,8 @@
       - Robotics
 
 - type: entity
-  id: RipleyPeripheralsElectronics
   parent: BaseElectronics
+  id: RipleyPeripheralsElectronics
   name: ripley peripherals control module
   description: The electrical peripherals control for the ripley mech.
   components:

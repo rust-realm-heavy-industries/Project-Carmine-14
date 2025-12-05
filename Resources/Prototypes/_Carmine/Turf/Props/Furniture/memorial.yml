@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: Memorial
   parent: BaseStructure
+  id: Memorial
   name: memorial
   description: Commemorating something.
   components:

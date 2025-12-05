@@ -31,8 +31,8 @@
 #TriggerOnCollide ?
 
 - type: entity
-  id: FitnessPunchingBag
   parent: BaseStructure
+  id: FitnessPunchingBag
   name: punching bag
   description: A fitness training bag.
   components:

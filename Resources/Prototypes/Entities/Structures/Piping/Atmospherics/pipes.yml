@@ -1,9 +1,9 @@
 ---
 - type: entity
-  abstract: true
-  id: GasPipeBase
   parent: BaseItem
+  id: GasPipeBase
   name: pipe
+  abstract: true
   description: Holds gas.
   placement:
     mode: SnapgridCenter
@@ -75,9 +75,9 @@
 # Goobstation - Allow device-on-pipe stacking
 
 - type: entity
-  abstract: true
   parent: GasPipeBase
   id: GasPipeNoOverlap
+  abstract: true
   components:
   - type: PipeRestrictOverlap
 
@@ -247,8 +247,8 @@
       collection: MetalThud
 
 - type: entity
-  id: GasPipeBroken
   parent: GasPipeNoOverlap
+  id: GasPipeBroken
   name: broken pipe
   description: It used to hold gas.
   components:

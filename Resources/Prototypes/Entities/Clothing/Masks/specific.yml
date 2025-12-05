@@ -3,8 +3,8 @@
   parent: ClothingMaskBase
   id: ClothingMaskGasChameleon
   name: gas mask
-  description: A face-covering mask that can be connected to an air supply.
   suffix: Chameleon
+  description: A face-covering mask that can be connected to an air supply.
   components:
     - type: Tag
       tags: [] # ignore "WhitelistChameleon" tag

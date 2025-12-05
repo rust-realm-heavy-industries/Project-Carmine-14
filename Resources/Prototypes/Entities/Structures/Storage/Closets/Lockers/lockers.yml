@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: LockerBooze
   parent: LockerBase
+  id: LockerBooze
   name: booze storage
   description: This is where the bartender keeps the booze.
   components:
@@ -18,8 +18,8 @@
 
 # Basic
 - type: entity
-  id: LockerSteel
   parent: LockerBaseSecure
+  id: LockerSteel
   name: secure closet
   components:
   - type: Appearance
@@ -35,8 +35,8 @@
 
 # Electrical supplies
 - type: entity
-  id: LockerElectricalSupplies
   parent: LockerBase
+  id: LockerElectricalSupplies
   name: electrical supplies locker
   components:
   - type: Appearance
@@ -47,8 +47,8 @@
 
 # Welding supplies
 - type: entity
-  id: LockerWeldingSupplies
   parent: LockerBase
+  id: LockerWeldingSupplies
   name: welding supplies locker
   components:
   - type: Appearance
@@ -59,8 +59,8 @@
 
 # Freezer
 - type: entity
-  id: LockerFreezerBase
   parent: LockerBase
+  id: LockerFreezerBase
   name: freezer
   components:
   - type: Appearance
@@ -74,8 +74,8 @@
 
 # Medicine
 - type: entity
-  id: LockerMedicine
   parent: LockerBase
+  id: LockerMedicine
   name: medicine locker
   description: Filled to the brim with medical junk.
   components:
@@ -87,8 +87,8 @@
 
 # Chemical
 - type: entity
-  id: LockerChemistry
   parent: LockerBase
+  id: LockerChemistry
   name: chemical locker
   components:
   - type: Appearance
@@ -99,7 +99,7 @@
 
 # Detective
 - type: entity
-  id: LockerDetective
   parent: LockerBooze
+  id: LockerDetective
   name: detective's cabinet
   description: Usually cold and empty... like your heart.

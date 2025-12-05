@@ -83,8 +83,8 @@
   parent: BaseComputer
   id: BaseComputerShuttle
   name: shuttle console
-  description: Used to pilot a shuttle.
   abstract: true
+  description: Used to pilot a shuttle.
   components:
   - type: ApcPowerReceiver
     powerLoad: 1500
@@ -655,8 +655,8 @@
     - Cloning
 
 - type: entity
-  id: ComputerPalletConsole
   parent: BaseComputerAiAccess
+  id: ComputerPalletConsole
   name: cargo sale computer
   description: Used to sell goods loaded onto cargo pallets
   components:

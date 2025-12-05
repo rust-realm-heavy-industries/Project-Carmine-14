@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: paper
   parent: BaseItem
   id: Paper
+  name: paper
   description: 'A piece of white paper.'
   components:
   - type: Sprite
@@ -86,9 +86,9 @@
 # Corvax-Printer-End
 
 - type: entity
-  name: paper scrap
   parent: Paper
   id: PaperScrap
+  name: paper scrap
   description: 'A crumpled up piece of white paper.'
   components:
   - type: Sprite
@@ -97,9 +97,9 @@
     - state: scrap
 
 - type: entity
-  name: office paper
   parent: Paper
   id: PaperOffice
+  name: office paper
   description: 'A plain sheet of office paper.'
   components:
   - type: PaperVisuals
@@ -127,9 +127,9 @@
         type: PaperBoundUserInterface
 
 - type: entity
-  name: pen
   parent: BaseItem
   id: Pen
+  name: pen
   description: 'A dark ink pen.'
   components:
   - type: Tag
@@ -178,9 +178,9 @@
 #TODO: I want the luxury pen to write a cool font like Merriweather in the future.
 
 - type: entity
-  name: luxury pen
   parent: Pen
   id: LuxuryPen
+  name: luxury pen
   description: A fancy and expensive pen that you only deserve to own if you're qualified to handle vast amounts of paperwork.
   components:
   - type: Sprite
@@ -189,8 +189,8 @@
     heldPrefix: luxury_pen
 
 - type: entity
-  id: BoxFolderBase
   parent: BoxBase
+  id: BoxFolderBase
   name: folder
   description: A folder filled with top secret paperwork.
   components:
@@ -246,8 +246,8 @@
         prob: 0.2
 
 - type: entity
-  id: BoxFolderRed
   parent: BoxFolderBase
+  id: BoxFolderRed
   suffix: Red
   components:
   - type: Sprite
@@ -258,8 +258,8 @@
     - state: folder-base
 
 - type: entity
-  id: BoxFolderBlue
   parent: BoxFolderBase
+  id: BoxFolderBlue
   suffix: Blue
   components:
   - type: Sprite
@@ -270,8 +270,8 @@
     - state: folder-base
 
 - type: entity
-  id: BoxFolderYellow
   parent: BoxFolderBase
+  id: BoxFolderYellow
   suffix: Yellow
   components:
   - type: Sprite
@@ -282,8 +282,8 @@
     - state: folder-base
 
 - type: entity
-  id: BoxFolderWhite
   parent: BoxFolderBase
+  id: BoxFolderWhite
   suffix: White
   components:
   - type: Sprite
@@ -293,8 +293,8 @@
     - state: folder-base
 
 - type: entity
-  id: BoxFolderGrey
   parent: BoxFolderBase
+  id: BoxFolderGrey
   suffix: Grey
   components:
   - type: Sprite
@@ -305,8 +305,8 @@
     - state: folder-base
 
 - type: entity
-  id: BoxFolderBlack
   parent: BoxFolderBase
+  id: BoxFolderBlack
   suffix: Black
   components:
   - type: Sprite
@@ -317,8 +317,8 @@
     - state: folder-base
 
 - type: entity
-  id: BoxFolderClipboard
   parent: BoxFolderBase
+  id: BoxFolderClipboard
   name: clipboard
   description: The weapon of choice for those on the front lines of bureaucracy.
   components:

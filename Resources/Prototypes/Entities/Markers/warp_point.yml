@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: WarpPoint
   parent: MarkerBase
+  id: WarpPoint
   name: warp point
   components:
   - type: WarpPoint
@@ -9,8 +9,8 @@
     state: pink
 
 - type: entity
-  id: WarpPointBeacon
   parent: WarpPoint
+  id: WarpPointBeacon
   name: warp point (beacon)
   components:
   - type: NavMapBeacon

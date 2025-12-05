@@ -1,10 +1,10 @@
 ---
 - type: entity
-  name: bang severer
   parent: BaseItem
   id: MeleeDebugSever
-  description: sever yer parts a week from now
+  name: bang severer
   suffix: DEBUG
+  description: sever yer parts a week from now
   components:
   - type: Tag
     tags:
@@ -22,9 +22,9 @@
     sprite: Objects/Weapons/Melee/debug.rsi
 
 - type: entity
-  name: bang severer 100dmg
   parent: MeleeDebugSever
   id: MeleeDebugSever100
+  name: bang severer 100dmg
   components:
   - type: Tag
     tags:
@@ -35,9 +35,9 @@
         Slash: 100
 
 - type: entity
-  name: bang severer 200dmg
   parent: MeleeDebugSever
   id: MeleeDebugSever200
+  name: bang severer 200dmg
   components:
   - type: Tag
     tags:
@@ -48,11 +48,11 @@
         Slash: 200
 
 - type: entity
-  name: bang burner
   parent: BaseItem
   id: MeleeDebugBurner
-  description: burn yer parts
+  name: bang burner
   suffix: DEBUG
+  description: burn yer parts
   components:
   - type: Tag
     tags:
@@ -70,9 +70,9 @@
     sprite: Objects/Weapons/Melee/debug.rsi
 
 - type: entity
-  name: bang burner 200dmg
   parent: MeleeDebugBurner
   id: MeleeDebugBurner200
+  name: bang burner 200dmg
   components:
   - type: Tag
     tags:

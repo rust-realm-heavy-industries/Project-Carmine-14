@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: N14BarricadeSandbagSingle
   parent: BaseStructure
+  id: N14BarricadeSandbagSingle
   name: sandbags
   description: A sandbag fortification.
   components:
@@ -104,8 +104,8 @@
   parent: N14BarricadeSandbagSingle
   id: N14BarricadeMetal
   name: metal barricade
-  description: A metal fortification.
   suffix: black
+  description: A metal fortification.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/ms13_barricades.rsi

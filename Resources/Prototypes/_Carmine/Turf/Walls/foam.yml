@@ -48,10 +48,10 @@
       anchored: true
 
 - type: entity
+  parent: BaseFoamedMetal
   id: FoamedIronMetal
   name: foamed iron metal
   description: "For sealing hull breaches."
-  parent: BaseFoamedMetal
   components:
     - type: Sprite
       drawdepth: Effects
@@ -70,10 +70,10 @@
           state: iron_foam-west
 
 - type: entity
+  parent: BaseFoamedMetal
   id: FoamedAluminiumMetal
   name: foamed aluminium metal
   description: "For sealing hull breaches."
-  parent: BaseFoamedMetal
   components:
     - type: Sprite
       drawdepth: Effects

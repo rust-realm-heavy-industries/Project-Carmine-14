@@ -1,9 +1,9 @@
 ---
 - type: entity
-  name: cargo sale computer
-  suffix: Normal
   parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, BaseStructureComputer]
   id: ComputerPalletConsoleNFNormalMarket
+  name: cargo sale computer
+  suffix: Normal
   description: Used to sell goods loaded onto cargo pallets
   placement:
     mode: SnapgridCenter

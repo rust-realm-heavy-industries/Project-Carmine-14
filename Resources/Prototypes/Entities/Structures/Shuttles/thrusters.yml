@@ -1,10 +1,10 @@
 ---
 - type: entity
-  id: BaseThruster
   parent: BaseStructureDynamic
+  id: BaseThruster
   name: thruster
-  description: A thruster that allows a shuttle to move.
   abstract: true
+  description: A thruster that allows a shuttle to move.
   components:
     - type: Fixtures
       fixtures:
@@ -64,9 +64,9 @@
     mode: SnapgridCenter
 
 - type: entity
+  parent: [ BaseThruster, ConstructibleMachine ]
   id: Thruster
   name: thruster
-  parent: [ BaseThruster, ConstructibleMachine ]
   components:
   - type: Destructible
     thresholds:
@@ -103,8 +103,8 @@
       offset: 0, 1
 
 - type: entity
-  id: ThrusterUnanchored
   parent: Thruster
+  id: ThrusterUnanchored
   suffix: Unanchored
   components:
     - type: Transform
@@ -113,8 +113,8 @@
       bodyType: Dynamic
 
 - type: entity
-  id: DebugThruster
   parent: BaseThruster
+  id: DebugThruster
   suffix: DEBUG
   components:
   - type: Thruster
@@ -138,8 +138,8 @@
       offset: 0, 1
 
 - type: entity
-  id: Gyroscope
   parent: [ BaseThruster, ConstructibleMachine ]
+  id: Gyroscope
   name: gyroscope
   description: Increases the shuttle's potential angular rotation.
   components:
@@ -204,8 +204,8 @@
     price: 2000
 
 - type: entity
-  id: GyroscopeUnanchored
   parent: Gyroscope
+  id: GyroscopeUnanchored
   suffix: Unanchored
   components:
     - type: Transform
@@ -214,8 +214,8 @@
       bodyType: Dynamic
 
 - type: entity
-  id: DebugGyroscope
   parent: BaseThruster
+  id: DebugGyroscope
   suffix: DEBUG
   components:
   - type: Thruster

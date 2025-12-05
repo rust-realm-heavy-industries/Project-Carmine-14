@@ -2,8 +2,8 @@
 # Base
 
 - type: entity
-  id: BaseVariationPass
   parent: BaseGameRule
+  id: BaseVariationPass
   abstract: true
   categories: [ HideSpawnMenu ]
   components:
@@ -12,15 +12,15 @@
 # Actual rules
 
 - type: entity
-  id: BasicPoweredLightVariationPass
   parent: BaseVariationPass
+  id: BasicPoweredLightVariationPass
   categories: [ HideSpawnMenu ]
   components:
   - type: PoweredLightVariationPass
 
 - type: entity
-  id: BasicTrashVariationPass
   parent: BaseVariationPass
+  id: BasicTrashVariationPass
   categories: [ HideSpawnMenu ]
   components:
   - type: EntitySpawnVariationPass
@@ -79,16 +79,16 @@
     - Blood
 
 - type: entity
-  id: BasicPuddleMessVariationPass
   parent: BaseVariationPass
+  id: BasicPuddleMessVariationPass
   categories: [ HideSpawnMenu ]
   components:
   - type: PuddleMessVariationPass
     randomPuddleSolutionFill: RandomFillTrashPuddle
 
 - type: entity
-  id: BloodbathPuddleMessVariationPass
   parent: BaseVariationPass
+  id: BloodbathPuddleMessVariationPass
   categories: [ HideSpawnMenu ]
   components:
   - type: PuddleMessVariationPass
@@ -97,8 +97,8 @@
     randomPuddleSolutionFill: RandomFillTrashPuddleBloodbath
 
 - type: entity
-  id: CutWireVariationPass
   parent: BaseVariationPass
+  id: CutWireVariationPass
   categories: [ HideSpawnMenu ]
   components:
   - type: CutWireVariationPass

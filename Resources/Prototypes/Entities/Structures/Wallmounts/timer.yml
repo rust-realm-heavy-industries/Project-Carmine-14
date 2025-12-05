@@ -48,8 +48,8 @@
     node: signal
 
 - type: entity
-  id: ScreenTimer
   parent: SignalTimer
+  id: ScreenTimer
   name: screen timer
   description: It's a timer for sending timed signals to things, with a built-in screen.
   components:

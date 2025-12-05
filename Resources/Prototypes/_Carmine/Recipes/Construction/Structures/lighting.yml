@@ -1,8 +1,8 @@
 ---
 #lighting
 - type: construction
-  name: light tube fixture
   id: LightTubeFixtureEmpty
+  name: light tube fixture
   graph: LightFixture
   startNode: start
   targetNode: tubeLight
@@ -17,8 +17,8 @@
   canBuildInImpassable: true
 
 - type: construction
-  name: small light fixture
   id: SmallLightFixtureEmpty
+  name: small light fixture
   graph: LightFixture
   startNode: start
   targetNode: bulbLight

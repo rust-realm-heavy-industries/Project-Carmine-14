@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: Clothing
   id: ClothingShoesBase
+  abstract: true
   components:
   - type: Clothing
     slots:
@@ -38,9 +38,9 @@
         friction: 0.2
 
 - type: entity
-  abstract: true
   parent: ClothingShoesBase
   id: ClothingShoesBaseButcherable
+  abstract: true
   components:
   - type: Butcherable
     butcheringType: Knife
@@ -50,9 +50,9 @@
 
 # stuff common to all military boots
 - type: entity
-  abstract: true
   parent: [ClothingShoesBase, ClothingSlotBase]
   id: ClothingShoesMilitaryBase
+  abstract: true
   components:
   - type: Matchbox
   - type: ItemSlots
@@ -65,9 +65,9 @@
           - Sidearm
 
 - type: entity
-  abstract: true
   parent: ClothingShoesBaseButcherable
   id: ClothingShoesBaseWinterBoots
+  abstract: true
   description: Fluffy boots to help survive even the coldest of winters.
   components:
   - type: TemperatureProtection

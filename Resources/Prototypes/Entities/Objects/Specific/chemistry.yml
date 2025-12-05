@@ -156,10 +156,10 @@
     price: 30
 
 - type: entity
-  name: beaker
   parent: BaseBeaker
-  description: Used to contain a moderate amount of chemicals and solutions.
   id: Beaker
+  name: beaker
+  description: Used to contain a moderate amount of chemicals and solutions.
   components:
   - type: Spillable
     solution: beaker
@@ -175,10 +175,10 @@
     inHandsFillBaseName: -fill-
 
 - type: entity
-  name: cryoxadone beaker
-  description: Filled with a reagent used in cryogenic tubes.
   parent: Beaker
   id: CryoxadoneBeakerSmall
+  name: cryoxadone beaker
+  description: Filled with a reagent used in cryogenic tubes.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -189,10 +189,10 @@
           Quantity: 50
 
 - type: entity
-  name: large beaker
   parent: BaseBeaker
-  description: Used to contain a large amount of chemicals or solutions.
   id: LargeBeaker
+  name: large beaker
+  description: Used to contain a large amount of chemicals or solutions.
   components:
   - type: Spillable
     solution: beaker
@@ -223,10 +223,10 @@
     price: 20
 
 - type: entity
-  name: dropper
   parent: BaseItem
-  description: Used to transfer small amounts of chemical solution between containers.
   id: Dropper
+  name: dropper
+  description: Used to transfer small amounts of chemical solution between containers.
   components:
   - type: Sprite
     sprite: Objects/Specific/Chemistry/dropper.rsi
@@ -266,11 +266,11 @@
     price: 40
 
 - type: entity
-  name: syringe
   parent: BaseItem
-  description: Used to draw blood samples from mobs, or to inject them with reagents.
   id: BaseSyringe
+  name: syringe
   abstract: true
+  description: Used to draw blood samples from mobs, or to inject them with reagents.
   components:
   - type: Sprite
     sprite: Objects/Specific/Chemistry/syringe.rsi
@@ -321,9 +321,9 @@
     - Trash
 
 - type: entity
-  name: pill
   parent: BaseItem
   id: Pill
+  name: pill
   description: It's not a suppository.
   components:
   - type: Sprite
@@ -368,9 +368,9 @@
     - Pill
 
 - type: entity
-  name: pill canister
-  id: PillCanister
   parent: BaseStorageItem
+  id: PillCanister
+  name: pill canister
   description: Holds up to 10 pills.
   components:
   - type: Item

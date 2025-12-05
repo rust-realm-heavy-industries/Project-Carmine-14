@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: BaseMaterialDoor
   parent: BaseStructure
+  id: BaseMaterialDoor
   name: door
   abstract: true
   description: A door, where will it lead?

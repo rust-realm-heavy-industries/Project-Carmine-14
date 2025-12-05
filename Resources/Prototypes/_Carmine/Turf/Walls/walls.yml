@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: BaseStructure
   id: BaseWall
+  abstract: true
   placement:
     mode: SnapgridCenter
     snap:

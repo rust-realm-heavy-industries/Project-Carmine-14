@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: Clothing
   id: ClothingEyesBase
+  abstract: true
   components:
   - type: Sprite
     state: icon
@@ -13,8 +13,8 @@
     storedRotation: -90
 
 - type: entity
-  abstract: true
   id: BallisticGlasses
+  abstract: true
   components:
   - type: Reflect # Ballistic glasses are any glasses that have a small chance to deflect projectiles
     spread: 270
@@ -25,9 +25,9 @@
       - NonEnergy
 
 - type: entity
-  abstract: true
   parent: [Clothing, BaseFoldable]
   id: FlippableEyesBase
+  abstract: true
   components:
   - type: Foldable
     canFoldInsideContainer: true

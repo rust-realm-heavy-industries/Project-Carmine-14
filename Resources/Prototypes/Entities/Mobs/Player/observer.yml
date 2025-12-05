@@ -1,9 +1,9 @@
 ---
 - type: entity
   id: Incorporeal
-  save: false
   abstract: true
   description: Mobs without physical bodies
+  save: false
   components:
   - type: Sprite
     noRot: true

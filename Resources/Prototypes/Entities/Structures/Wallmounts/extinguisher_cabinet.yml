@@ -62,8 +62,8 @@
     mode: SnapgridCenter
 
 - type: entity
-  id: ExtinguisherCabinetOpen
   parent: ExtinguisherCabinet
+  id: ExtinguisherCabinetOpen
   suffix: Open
   components:
   - type: ItemCabinet
@@ -74,8 +74,8 @@
     closedState: closed
 
 - type: entity
-  id: ExtinguisherCabinetFilled
   parent: ExtinguisherCabinet
+  id: ExtinguisherCabinetFilled
   suffix: Filled
   components:
   - type: ItemCabinet
@@ -91,8 +91,8 @@
     closedState: closed
 
 - type: entity
-  id: ExtinguisherCabinetFilledOpen
   parent: ExtinguisherCabinetFilled
+  id: ExtinguisherCabinetFilledOpen
   suffix: Filled, Open
   components:
   - type: ItemCabinet

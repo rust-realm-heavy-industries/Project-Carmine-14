@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: ashtray
-  id: NFAshtray
   parent: BaseStorageItem
+  id: NFAshtray
+  name: ashtray
   components:
   - type: Sprite
     scale: 0.5, 0.5

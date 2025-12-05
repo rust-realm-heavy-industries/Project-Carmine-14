@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: candle
   parent: BaseItem
   id: Candle
+  name: candle
   description: A thin wick threaded through fat.
   components:
     - type: Sprite
@@ -59,9 +59,9 @@
           acts: [ "Destruction" ]
 
 - type: entity
-  name: red candle
   parent: Candle
   id: CandleRed
+  name: red candle
   components:
   - type: Sprite
     layers:
@@ -78,9 +78,9 @@
         color: "#a12349"
 
 - type: entity
-  name: blue candle
   parent: Candle
   id: CandleBlue
+  name: blue candle
   components:
   - type: Sprite
     layers:
@@ -96,9 +96,9 @@
         color: "#425d7d"
 
 - type: entity
-  name: black candle
   parent: Candle
   id: CandleBlack
+  name: black candle
   components:
   - type: Sprite
     layers:
@@ -114,9 +114,9 @@
         color: "#1b1724"
 
 - type: entity
-  name: green candle
   parent: Candle
   id: CandleGreen
+  name: green candle
   components:
   - type: Sprite
     layers:
@@ -132,9 +132,9 @@
         color: "#5d997e"
 
 - type: entity
-  name: purple candle
   parent: Candle
   id: CandlePurple
+  name: purple candle
   components:
   - type: Sprite
     layers:
@@ -151,9 +151,9 @@
 
 
 - type: entity
-  name: small candle
   parent: Candle
   id: CandleSmall
+  name: small candle
   components:
     - type: Item
       size: Tiny
@@ -176,9 +176,9 @@
           acts: [ "Destruction" ]
 
 - type: entity
-  name: small red candle
   parent: CandleSmall
   id: CandleRedSmall
+  name: small red candle
   components:
   - type: Sprite
     layers:
@@ -194,9 +194,9 @@
         color: "#a12349"
 
 - type: entity
-  name: small blue candle
   parent: CandleSmall
   id: CandleBlueSmall
+  name: small blue candle
   components:
   - type: Sprite
     layers:
@@ -212,9 +212,9 @@
         color: "#425d7d"
 
 - type: entity
-  name: small black candle
   parent: CandleSmall
   id: CandleBlackSmall
+  name: small black candle
   components:
   - type: Sprite
     layers:
@@ -230,9 +230,9 @@
         color: "#1b1724"
 
 - type: entity
-  name: small green candle
   parent: CandleSmall
   id: CandleGreenSmall
+  name: small green candle
   components:
   - type: Sprite
     layers:
@@ -248,9 +248,9 @@
         color: "#5d997e"
 
 - type: entity
-  name: small purple candle
   parent: CandleSmall
   id: CandlePurpleSmall
+  name: small purple candle
   components:
   - type: Sprite
     layers:
@@ -268,11 +268,11 @@
 #Purely decorative candles for mappers. Do not have any functionality.
 
 - type: entity
-  name: magic candle
-  description: It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
   parent: BaseItem
-  suffix: Decorative
   id: CandleInfinite
+  name: magic candle
+  suffix: Decorative
+  description: It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
   components:
   - type: Sprite
     noRot: true
@@ -288,9 +288,9 @@
     power: 10
 
 - type: entity
-  name: magic red candle
   parent: CandleInfinite
   id: CandleRedInfinite
+  name: magic red candle
   components:
   - type: Sprite
     layers:
@@ -308,9 +308,9 @@
         color: "#a12349"
 
 - type: entity
-  name: magic blue candle
   parent: CandleInfinite
   id: CandleBlueInfinite
+  name: magic blue candle
   components:
   - type: Sprite
     layers:
@@ -328,9 +328,9 @@
         color: "#425d7d"
 
 - type: entity
-  name: magic black candle
   parent: CandleInfinite
   id: CandleBlackInfinite
+  name: magic black candle
   components:
   - type: Sprite
     layers:
@@ -348,9 +348,9 @@
         color: "#1b1724"
 
 - type: entity
-  name: magic green candle
   parent: CandleInfinite
   id: CandleGreenInfinite
+  name: magic green candle
   components:
   - type: Sprite
     layers:
@@ -368,9 +368,9 @@
         color: "#5d997e"
 
 - type: entity
-  name: magic purple candle
   parent: CandleInfinite
   id: CandlePurpleInfinite
+  name: magic purple candle
   components:
   - type: Sprite
     layers:
@@ -388,9 +388,9 @@
         color: "#984aa1"
 
 - type: entity
-  name: small magic red candle
   parent: CandleInfinite
   id: CandleRedSmallInfinite
+  name: small magic red candle
   components:
   - type: Sprite
     layers:
@@ -408,9 +408,9 @@
         color: "#a12349"
 
 - type: entity
-  name: small magic blue candle
   parent: CandleInfinite
   id: CandleBlueSmallInfinite
+  name: small magic blue candle
   components:
   - type: Sprite
     layers:
@@ -428,9 +428,9 @@
         color: "#425d7d"
 
 - type: entity
-  name: small magic black candle
   parent: CandleInfinite
   id: CandleBlackSmallInfinite
+  name: small magic black candle
   components:
   - type: Sprite
     layers:
@@ -448,9 +448,9 @@
         color: "#1b1724"
 
 - type: entity
-  name: small magic green candle
   parent: CandleInfinite
   id: CandleGreenSmallInfinite
+  name: small magic green candle
   components:
   - type: Sprite
     layers:
@@ -468,9 +468,9 @@
         color: "#5d997e"
 
 - type: entity
-  name: small magic purple candle
   parent: CandleInfinite
   id: CandlePurpleSmallInfinite
+  name: small magic purple candle
   components:
   - type: Sprite
     layers:

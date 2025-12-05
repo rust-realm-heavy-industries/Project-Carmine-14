@@ -1,7 +1,7 @@
 ---
 - type: entity
-  name: "item"
   id: BaseItem
+  name: "item"
   abstract: true
   components:
   - type: Item
@@ -47,9 +47,9 @@
   # ES END
 
 - type: entity
-  name: "storage item"
-  id: BaseStorageItem
   parent: BaseItem
+  id: BaseStorageItem
+  name: "storage item"
   abstract: true
   components:
   - type: Storage

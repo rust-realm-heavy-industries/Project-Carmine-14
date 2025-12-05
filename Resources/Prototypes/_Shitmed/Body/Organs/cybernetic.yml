@@ -1,8 +1,8 @@
 ---
 - type: entity
   parent: OrganHumanEyes
-  abstract: true
   id: BaseCyberneticEyes
+  abstract: true
   components:
   - type: Cybernetics
   - type: Sprite

@@ -1,7 +1,7 @@
 ---
 - type: Interaction
-  id: LookAt
   parent: BaseGlobal
+  id: LookAt
   priority: 4
   requiresHands: false
   requiresCanInteract: false
@@ -17,8 +17,8 @@
     !type:NoOpAction
 
 - type: Interaction
-  id: WaveAt
   parent: [BaseHands, BaseGlobal]
+  id: WaveAt
   priority: 3
   requiresCanInteract: false
   contactInteraction: false
@@ -36,8 +36,8 @@
 
 # Knocking on the target - windows, doors, etc.
 - type: Interaction
-  id: KnockOn
   parent: BaseHands
+  id: KnockOn
   priority: 20
   effectSuccess:
     popup: Visible
@@ -47,8 +47,8 @@
 
 # Rattling a fence
 - type: Interaction
-  id: Rattle
   parent: BaseHands
+  id: Rattle
   priority: 20
   effectSuccess:
     popup: VisibleNoChat

@@ -1,8 +1,8 @@
 ---
 - type: entity
   parent: BaseItem
-  name: light replacer
   id: LightReplacer
+  name: light replacer
   description: An item which uses magnets to easily replace broken lights. Refill By adding more lights into the replacer.
   components:
   - type: Sprite

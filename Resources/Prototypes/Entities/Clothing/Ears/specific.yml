@@ -3,8 +3,8 @@
   parent: ClothingHeadsetGrey
   id: ClothingHeadsetChameleon
   name: passenger headset
-  description: An updated, modular intercom that fits over the head. Takes encryption keys.
   suffix: Chameleon
+  description: An updated, modular intercom that fits over the head. Takes encryption keys.
   components:
     - type: Tag
       tags: [] # ignore "WhitelistChameleon" tag

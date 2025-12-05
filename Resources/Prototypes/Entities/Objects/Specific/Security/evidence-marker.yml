@@ -1,9 +1,9 @@
 ---
 - type: entity
-  abstract: true
   parent: BaseItem
   id: EvidenceMarker
   name: evidence marker
+  abstract: true
   description: A numbered yellow marker, useful for labeling evidence on a crime scene.
   components:
   - type: Sprite
@@ -76,9 +76,9 @@
     state: nine
 
 - type: entity
-  name: evidence marker box
   parent: BoxCardboard
   id: BoxEvidenceMarkers
+  name: evidence marker box
   description: A pack of numbered yellow markers, useful for labeling evidence on a crime scene.
   components:
     - type: Item

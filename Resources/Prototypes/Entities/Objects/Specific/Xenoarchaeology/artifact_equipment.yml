@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: CrateArtifactContainer
   parent: BaseStructureDynamic
+  id: CrateArtifactContainer
   name: artifact container
   description: Used to safely contain and move artifacts.
   components:

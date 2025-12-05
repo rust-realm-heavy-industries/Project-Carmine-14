@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: lantern
   parent: BaseItem
   id: BaseLamp
+  name: lantern
   abstract: true
   components:
   - type: HandheldLight
@@ -55,9 +55,9 @@
     stealGroup: LAMP
 
 - type: entity
-  name: lamp
-  id: Lamp
   parent: BaseLamp
+  id: Lamp
+  name: lamp
   description: A light emitting device.
   components:
   - type: Sprite
@@ -84,9 +84,9 @@
           festive: { state: christmaslamp-on }
 
 - type: entity
-  name: desk lamp
-  id: LampGold
   parent: BaseLamp
+  id: LampGold
+  name: desk lamp
   description: A light emitting device that would look great on a desk.
   components:
   - type: Sprite
@@ -117,9 +117,9 @@
             state: christmaslamp-on
 
 - type: entity
-  name: interrogator lamp
-  id: LampInterrogator
   parent: BaseLamp
+  id: LampInterrogator
+  name: interrogator lamp
   description: Ultra-bright lamp for the bad cop
   components:
   - type: Sprite
@@ -171,9 +171,9 @@
           False: {visible: false}
 
 - type: entity
-  name: floodlight
-  id: Floodlight
   parent: BaseLamp
+  id: Floodlight
+  name: floodlight
   description: A pole with powerful mounted lights on it.
   components:
   - type: Item
@@ -227,9 +227,9 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  name: broken floodlight
-  id: FloodlightBroken
   parent: BaseItem
+  id: FloodlightBroken
+  name: broken floodlight
   description: A pole with powerful mounted lights on it. It's broken.
   components:
   - type: Sprite

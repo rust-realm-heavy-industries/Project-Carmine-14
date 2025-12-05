@@ -1,8 +1,8 @@
 ---
 # Base
 - type: entity
-  id: WardrobeBase
   parent: ClosetSteelBase
+  id: WardrobeBase
   abstract: true
   description: It's a storage unit for standard-issue Nanotrasen attire.
 
@@ -10,8 +10,8 @@
 
 # Blue wardrobe
 - type: entity
-  id: WardrobeBlue
   parent: WardrobeBase
+  id: WardrobeBlue
   name: blue wardrobe
   description: "A wardrobe packed with stylish blue clothing."
   components:
@@ -23,8 +23,8 @@
 
 # Black wardrobe
 - type: entity
-  id: WardrobeBlack
   parent: WardrobeBase
+  id: WardrobeBlack
   name: black wardrobe
   description: "A wardrobe packed with stylish black clothing."
   components:
@@ -36,8 +36,8 @@
 
 # Prison wardrobe
 - type: entity
-  id: WardrobePrison
   parent: WardrobeBase
+  id: WardrobePrison
   name: prison wardrobe
   components:
   - type: Appearance
@@ -48,8 +48,8 @@
 
 # Yellow wardrobe
 - type: entity
-  id: WardrobeYellow
   parent: WardrobeBase
+  id: WardrobeYellow
   name: yellow wardrobe
   description: "A wardrobe packed with stylish yellow clothing."
   components:
@@ -61,8 +61,8 @@
 
 # White wardrobe
 - type: entity
-  id: WardrobeWhite
   parent: WardrobeBase
+  id: WardrobeWhite
   name: white wardrobe
   description: "A wardrobe packed with stylish white clothing."
   components:
@@ -74,8 +74,8 @@
 
 # Grey wardrobe
 - type: entity
-  id: WardrobeGrey
   parent: WardrobeBase
+  id: WardrobeGrey
   name: grey wardrobe
   description: "A wardrobe packed with a tide of grey clothing."
   components:
@@ -87,8 +87,8 @@
 
 # Mixed wardrobe
 - type: entity
-  id: WardrobeMixed
   parent: WardrobeBase
+  id: WardrobeMixed
   name: mixed wardrobe
   description: "A wardrobe packed with a mix of colorful clothing."
   components:

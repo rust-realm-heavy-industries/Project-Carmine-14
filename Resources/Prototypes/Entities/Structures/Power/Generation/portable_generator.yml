@@ -5,9 +5,9 @@
 #
 
 - type: entity
-  abstract: true
-  id: PortableGeneratorBase
   parent: [ BaseMachine, SmallConstructibleMachine, StructureWheeled]
+  id: PortableGeneratorBase
+  abstract: true
   components:
     # Basic properties
     - type: Transform
@@ -101,9 +101,9 @@
       range: 200
 
 - type: entity
-  abstract: true
   parent: PortableGeneratorBase
   id: PortableGeneratorSwitchableBase
+  abstract: true
   components:
   - type: PowerSwitchable
     examineText: power-switchable-generator-examine

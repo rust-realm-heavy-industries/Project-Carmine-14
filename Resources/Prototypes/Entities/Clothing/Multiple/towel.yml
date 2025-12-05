@@ -1,10 +1,10 @@
 ---
 - type: entity
+  parent: [ UnsensoredClothingUniformBase, ClothingHeadBase, ClothingBeltBase ]
   id: BaseTowel
   name: base towel
   abstract: true
   description: If you want to survive out here, you gotta know where your towel is.
-  parent: [ UnsensoredClothingUniformBase, ClothingHeadBase, ClothingBeltBase ]
   components:
   - type: Sprite
     sprite: Clothing/Multiple/towel.rsi
@@ -38,9 +38,9 @@
     size: Small
 
 - type: entity
+  parent: BaseTowel
   id: TowelColorWhite
   name: white towel
-  parent: BaseTowel
   components:
   - type: Sprite
     layers:

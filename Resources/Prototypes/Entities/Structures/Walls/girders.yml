@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: Girder
   parent: BaseStructureDynamic
+  id: Girder
   name: girder
   description: A large structural assembly made out of metal; It requires a layer of metal before it can be considered a wall.
   components:
@@ -59,8 +59,8 @@
   - type: SelfDeleteInSpace #hullrot edit - to save performance when ships blow up
 
 - type: entity
-  id: ReinforcedGirder
   parent: Girder
+  id: ReinforcedGirder
   name: reinforced girder
   description: A large structural assembly made out of metal and plasteel; It requires a layer of plasteel before it can be considered a reinforced wall.
   components:

@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: Window
   parent: BaseStructure
+  id: Window
   name: window
   description: Don't smudge up the glass down there.
   placement:
@@ -94,16 +94,16 @@
     - KnockOn
 
 - type: entity
-  id: WindowRCDResistant
   parent: Window
+  id: WindowRCDResistant
   abstract: true
   components:
   - type: RCDDeconstructable
     deconstructable: false
 
 - type: entity
-  id: WindowDirectional
   parent: BaseStructure
+  id: WindowDirectional
   name: directional window
   description: Don't smudge up the glass down there.
   placement:
@@ -197,16 +197,16 @@
     - KnockOn
 
 - type: entity
-  id: WindowDirectionalRCDResistant
   parent: WindowDirectional
+  id: WindowDirectionalRCDResistant
   abstract: true
   components:
   - type: RCDDeconstructable
     deconstructable: false
 
 - type: entity
-  id: WindowFrostedDirectional
   parent: WindowDirectional
+  id: WindowFrostedDirectional
   name: directional frosted window
   description: Don't smudge up the glass down there.
   placement:

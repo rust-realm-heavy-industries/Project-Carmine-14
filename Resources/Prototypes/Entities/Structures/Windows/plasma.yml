@@ -1,8 +1,8 @@
 ---
 - type: entity
+  parent: WindowRCDResistant
   id: PlasmaWindow
   name: plasma window
-  parent: WindowRCDResistant
   components:
   - type: Sprite
     drawdepth: WallTops
@@ -58,8 +58,8 @@
     damageCoefficient: 0.5
 
 - type: entity
-  id: PlasmaWindowDirectional
   parent: WindowDirectionalRCDResistant
+  id: PlasmaWindowDirectional
   name: directional plasma window
   description: Don't smudge up the glass down there.
   placement:

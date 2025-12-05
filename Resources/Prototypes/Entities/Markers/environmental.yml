@@ -1,9 +1,9 @@
 ---
 # Radiation
 - type: entity
-  name: Marker Radiation
-  id: MarkerRadiation1
   parent: MarkerBase
+  id: MarkerRadiation1
+  name: Marker Radiation
   suffix: intensity 1
   components:
   - type: Sprite

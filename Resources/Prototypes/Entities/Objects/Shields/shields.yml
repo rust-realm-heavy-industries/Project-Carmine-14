@@ -1,10 +1,10 @@
 ---
 - type: entity
-  name: base shield
   parent: BaseItem
   id: BaseShield
-  description: A shield!
+  name: base shield
   abstract: true
+  description: A shield!
   components:
     - type: Sprite
       sprite: Objects/Weapons/Melee/shields.rsi
@@ -64,9 +64,9 @@
 #Security Shields
 
 - type: entity
-  name: riot shield
   parent: BaseShield
   id: RiotShield
+  name: riot shield
   description: A large tower shield. Good for controlling crowds.
   components:
     - type: StaticPrice

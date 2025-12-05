@@ -2,8 +2,8 @@
 - type: entity
   id: BaseIntercom
   name: intercom
-  description: An intercom. For when the station just needs to know something.
   abstract: true
+  description: An intercom. For when the station just needs to know something.
   components:
   - type: StationAiWhitelist
   - type: WallMount
@@ -157,8 +157,8 @@
 
 # this weird inheritance BS exists for construction shitcode
 - type: entity
-  id: IntercomConstructed
   parent: BaseIntercom
+  id: IntercomConstructed
   suffix: Empty, Panel Open
   components:
   - type: Sprite
@@ -182,8 +182,8 @@
     open: true
 
 - type: entity
-  id: Intercom
   parent: IntercomConstructed
+  id: Intercom
   suffix: ""
   components:
   - type: Sprite
@@ -206,8 +206,8 @@
     open: false
 
 - type: entity
-  id: IntercomCommon
   parent: Intercom
+  id: IntercomCommon
   suffix: Common
   components:
   - type: ContainerFill

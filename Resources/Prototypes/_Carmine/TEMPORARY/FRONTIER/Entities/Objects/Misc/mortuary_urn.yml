@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: mortuary urn
   parent: BaseItem
   id: UrnMortuary
+  name: mortuary urn
   description: Keeps your beloved friend's ashes not scattered in your pocket.
   components:
   - type: Sprite

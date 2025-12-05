@@ -25,8 +25,8 @@
     - WhitelistChameleon
 
 - type: entity
-  abstract: true
   parent: BaseClothingModsuitHelmet
+  abstract: true
   # Used for helmets that hide your identity even if it's not sealed
   id: BaseClothingModsuitHelmetHideIdentity
   name: base modsuit helmet

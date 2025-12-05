@@ -57,8 +57,8 @@
     state: triple
 
 - type: entity
-  id: EffectHealPlusTripleYellow
   parent: EffectHealPlusTripleBase
+  id: EffectHealPlusTripleYellow
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

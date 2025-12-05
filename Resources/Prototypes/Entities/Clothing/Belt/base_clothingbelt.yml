@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: Clothing
   id: ClothingBeltBase
+  abstract: true
   components:
   - type: Sprite
     state: icon
@@ -39,9 +39,9 @@
         volume: -10
 
 - type: entity
-  abstract: true
   parent: ClothingBeltBase
   id: ClothingBeltStorageBase
+  abstract: true
   components:
   - type: Storage
     maxItemSize: Normal
@@ -60,9 +60,9 @@
         type: StorageBoundUserInterface
 
 - type: entity
-  abstract: true
   parent: ClothingBeltBase
   id: ClothingBeltAmmoProviderBase
+  abstract: true
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true

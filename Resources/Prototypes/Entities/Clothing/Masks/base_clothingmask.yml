@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: Clothing
   id: ClothingMaskBase
+  abstract: true
   components:
   - type: Sprite
     state: icon
@@ -12,9 +12,9 @@
     slots: [mask]
 
 - type: entity
-  abstract: true
   parent: ClothingMaskBase
   id: ClothingMaskPullableBase
+  abstract: true
   components:
   - type: Mask
 
@@ -30,8 +30,8 @@
     event: !type:ToggleMaskEvent
 
 - type: entity
-  id: ClothingMaskBaseButcherable
   parent: ClothingMaskBase
+  id: ClothingMaskBaseButcherable
   abstract: true
   components:
   - type: Butcherable

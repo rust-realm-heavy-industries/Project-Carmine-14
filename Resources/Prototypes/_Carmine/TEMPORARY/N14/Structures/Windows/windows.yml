@@ -2,9 +2,9 @@
 - type: entity
   parent: BaseStructure
   id: N14WindowBase # use for single tile / standalone windows & broken windows
-  description: A window for seeing into places.
-  abstract: true
   name: window
+  abstract: true
+  description: A window for seeing into places.
   placement:
     mode: SnapgridCenter
     snap:
@@ -64,8 +64,8 @@
 - type: entity
   parent: N14WindowBase
   id: N14WindowBaseAirtight # use for single tile / standalone windows that are intact
-  description: A window for seeing into places.
   abstract: true
+  description: A window for seeing into places.
   components:
   - type: Airtight
   - type: DamageVisuals
@@ -80,8 +80,8 @@
 - type: entity
   parent: N14WindowBase
   id: N14WindowSmoothBase # Use for windows that smooth together
-  description: A window for seeing into places.
   abstract: true
+  description: A window for seeing into places.
   components:
   - type: Sprite
     netsync: false
@@ -97,8 +97,8 @@
 - type: entity
   parent: N14WindowSmoothBase
   id: N14WindowSmoothBaseAirtight # use for windows that smooth together that are intact
-  description: A window for seeing into places.
   abstract: true
+  description: A window for seeing into places.
   components:
   - type: Airtight
   - type: Repairable
@@ -116,8 +116,8 @@
 
 ## Smooth Windows
 - type: entity
-  id: N14Window
   parent: N14WindowSmoothBaseAirtight
+  id: N14Window
 
 ## Single Windows
 # Ruins

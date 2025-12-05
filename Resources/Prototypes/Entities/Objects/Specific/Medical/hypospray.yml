@@ -1,9 +1,9 @@
 ---
 - type: entity
-  name: hypospray
   parent: BaseItem
-  description: A sterile injector for rapid administration of drugs to patients.
   id: Hypospray
+  name: hypospray
+  description: A sterile injector for rapid administration of drugs to patients.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/hypospray.rsi
@@ -31,10 +31,10 @@
     stealGroup: Hypospray
 
 - type: entity
-  name: chemical medipen
   parent: BaseItem
-  description: A sterile injector for rapid administration of drugs to patients. This one can't be refilled.
   id: ChemicalMedipen
+  name: chemical medipen
+  description: A sterile injector for rapid administration of drugs to patients. This one can't be refilled.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
@@ -74,9 +74,9 @@
     solution: pen
 
 - type: entity
-  name: emergency medipen
   parent: ChemicalMedipen
   id: EmergencyMedipen
+  name: emergency medipen
   description: A rapid and safe way to stabilize patients in critical condition for personnel without advanced medical knowledge. Beware, as it's easy to overdose on epinephrine and tranexamic acid.
   components:
   - type: Sprite
@@ -102,9 +102,9 @@
     - EmergencyMedipen
 
 - type: entity
-  name: poison auto-injector
   parent: ChemicalMedipen
   id: AntiPoisonMedipen
+  name: poison auto-injector
   description: A rapid dose of anti-poison. Contains ultravasculine and epinephrine.
   components:
   - type: Sprite
@@ -129,9 +129,9 @@
     tags: []
 
 - type: entity
-  name: rad auto-injector
   parent: ChemicalMedipen
   id: RadAutoInjector
+  name: rad auto-injector
   description: A rapid dose of anti-radiation. Contains arithrazine and bicaridine.
   components:
   - type: Sprite
@@ -161,9 +161,9 @@
     tags: []
 
 - type: entity
-  name: puncturase auto-injector
   parent: ChemicalMedipen
   id: PunctAutoInjector
+  name: puncturase auto-injector
   description: A rapid dose of puncturase and tranexamic acid, intended for combat applications.
   components:
   - type: Sprite
@@ -193,9 +193,9 @@
     tags: []
 
 - type: entity
-  name: pyrazine auto-injector
   parent: ChemicalMedipen
   id: PyraAutoInjector
+  name: pyrazine auto-injector
   description: A rapid dose of pyrazine and dermaline, intended for combat applications.
   components:
   - type: Sprite
@@ -225,9 +225,9 @@
     tags: []
 
 - type: entity
-  name: space medipen
   parent: ChemicalMedipen
   id: SpaceMedipen
+  name: space medipen
   description: Contains a mix of chemicals that protect you from the deadly effects of space.
   components:
   - type: Sprite

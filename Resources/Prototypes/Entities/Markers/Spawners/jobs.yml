@@ -2,10 +2,10 @@
 # Base
 
 - type: entity
-  id: SpawnPointJobBase
   parent: MarkerBase
-  abstract: true
+  id: SpawnPointJobBase
   suffix: Job Spawn
+  abstract: true
   components:
   - type: SpawnPoint
     spawn_type: Job
@@ -13,9 +13,9 @@
     sprite: Markers/jobs.rsi
 
 - type: entity
-  name: observer spawn point
-  id: SpawnPointObserver
   parent: MarkerBase
+  id: SpawnPointObserver
+  name: observer spawn point
   components:
   - type: Sprite
     sprite: Markers/jobs.rsi
@@ -28,9 +28,9 @@
     spawn_type: Observer
 
 - type: entity
-  name: latejoin spawn point
-  id: SpawnPointLatejoin
   parent: SpawnPointJobBase
+  id: SpawnPointLatejoin
+  name: latejoin spawn point
   components:
   - type: Sprite
     state: green
@@ -40,8 +40,8 @@
 # Civilian
 
 - type: entity
-  id: SpawnPointPassenger
   parent: SpawnPointJobBase
+  id: SpawnPointPassenger
   name: passenger
   components:
   - type: SpawnPoint
@@ -54,8 +54,8 @@
 # Command
 
 - type: entity
-  id: SpawnPointCaptain
   parent: SpawnPointJobBase
+  id: SpawnPointCaptain
   name: captain
   components:
   - type: SpawnPoint

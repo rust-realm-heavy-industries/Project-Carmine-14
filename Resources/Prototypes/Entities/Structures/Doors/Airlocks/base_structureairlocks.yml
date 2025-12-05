@@ -1,9 +1,9 @@
 ---
 - type: entity
-  id: Airlock
-  abstract: true
   parent: BaseStructure
+  id: Airlock
   name: airlock
+  abstract: true
   description: It opens, it closes, and maybe crushes you.
   components:
   - type: StationAiWhitelist
@@ -170,8 +170,8 @@
     mode: SnapgridCenter
 
 - type: entity
-  id: AirlockRCDResistant
   parent: Airlock
+  id: AirlockRCDResistant
   abstract: true
   components:
   - type: RCDDeconstructable

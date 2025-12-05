@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: RollerBed
   parent: [BaseItem, BaseFoldable]
+  id: RollerBed
   name: rollerbed
   description: Used to carry patients around without damaging them.
   components:

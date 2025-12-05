@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: welding tool
   parent: BaseItem
   id: Welder
+  name: welding tool
   description: "Melts anything as long as it's fueled, don't forget your eye protection!"
   components:
   - type: EmitSoundOnPickup
@@ -142,9 +142,9 @@
         friction: 0.2
 
 - type: entity
-  name: industrial welding tool
   parent: Welder
   id: WelderIndustrial
+  name: industrial welding tool
   description: "An industrial welder with over double the fuel capacity."
   components:
   - type: Sprite

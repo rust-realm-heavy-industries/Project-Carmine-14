@@ -1,11 +1,11 @@
 ---
 # Base Diagonal Wall
 - type: entity
-  abstract: true
   parent: BaseStructure
   id: BaseWallDiagonal
   name: basewall
   suffix: diagonal
+  abstract: true
   placement:
     mode: SnapgridCenter
     snap:
@@ -47,11 +47,11 @@
 
 #TODO: MERGE THIS SHIT TOGETHER
 - type: entity
-  abstract: true
   parent: BaseWallDiagonal
   id: BaseWallCurved
   name: basewall
   suffix: curved
+  abstract: true
   components:
   - type: Fixtures
     fixtures:

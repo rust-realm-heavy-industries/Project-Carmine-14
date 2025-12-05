@@ -1,10 +1,10 @@
 ---
 # Base SMES
 - type: entity
-  abstract: true
-  id: BaseSMES
   parent: [ BaseMachine, ConstructibleMachine ]
+  id: BaseSMES
   name: SMES
+  abstract: true
   description: A high-capacity superconducting magnetic energy storage (SMES) unit.
   placement:
     mode: SnapgridCenter

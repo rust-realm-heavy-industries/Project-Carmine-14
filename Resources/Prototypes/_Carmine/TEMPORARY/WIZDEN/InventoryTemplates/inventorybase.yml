@@ -1,15 +1,15 @@
 ---
 - type: entity
-  abstract: true
   id: InventoryBase
+  abstract: true
   components:
   - type: Inventory
   - type: InventorySlots
 
 - type: entity
-  abstract: true
   parent: InventoryBase
   id: StripableInventoryBase
+  abstract: true
   components:
   - type: Strippable
   - type: UserInterface

@@ -28,8 +28,8 @@
 
 
 - type: entity
-  id: Adventure #FREEPLAY, DO NOT REMOVE
   parent: BaseGameRule
+  id: Adventure #FREEPLAY, DO NOT REMOVE
   categories: [ HideSpawnMenu ]
   components:
   - type: AdventureRule

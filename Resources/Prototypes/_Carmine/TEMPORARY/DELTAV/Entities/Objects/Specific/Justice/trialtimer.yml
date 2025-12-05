@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: TrialTimer
   parent: SignalTimer
+  id: TrialTimer
   name: trial timer
   description: A fancy timer with a screen, designed to keep trials within their time limit.
   components:

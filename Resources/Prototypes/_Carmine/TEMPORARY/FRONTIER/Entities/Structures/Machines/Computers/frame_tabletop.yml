@@ -1,7 +1,7 @@
 ---
 - type: entity
-  id: BaseStructureComputerTabletop
   parent: BaseStructure
+  id: BaseStructureComputerTabletop
   suffix: Tabletop
   abstract: true
   components:
@@ -68,8 +68,8 @@
 
 - type: entity
   parent: BaseStructureComputerTabletop
-  name: computer
   id: ComputerTabletopFrame
+  name: computer
   components:
   - type: Construction
     graph: ComputerTabletop

@@ -1,9 +1,9 @@
 ---
 - type: entity
-  abstract: true
   parent: BaseStructure
   id: N14BaseFence
   name: fence
+  abstract: true
   description: Helps keep trespassers out.
   placement:
     mode: SnapgridCenter

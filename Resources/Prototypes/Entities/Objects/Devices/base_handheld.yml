@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: [BaseItem, PowerCellSlotSmallItem]
   id: BaseHandheldComputer
+  abstract: true
   components:
   - type: ActivatableUIRequiresPowerCell
   - type: ItemToggle

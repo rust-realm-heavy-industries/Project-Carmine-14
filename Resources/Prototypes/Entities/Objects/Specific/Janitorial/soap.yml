@@ -1,8 +1,8 @@
 ---
 - type: entity
-  name: soap
-  id: Soap
   parent: BaseItem
+  id: Soap
+  name: soap
   description: A cheap bar of soap. Doesn't smell.
   components:
   - type: Tag
@@ -79,9 +79,9 @@
     residueColor: residue-green
 
 - type: entity
-  name: soap
-  id: SoapHomemade
   parent: Soap
+  id: SoapHomemade
+  name: soap
   description: A homemade bar of soap. Smells of... well....
   components:
   - type: Sprite

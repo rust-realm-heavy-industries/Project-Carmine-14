@@ -1,9 +1,9 @@
 ---
 - type: entity
-  abstract: true
   parent: BaseItem
   id: EncryptionKey
   name: encryption key
+  abstract: true
   description: A small cypher chip for headsets.
   components:
   - type: EncryptionKey

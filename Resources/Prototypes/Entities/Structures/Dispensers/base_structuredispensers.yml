@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
-  id: ReagentDispenserBase
   parent: SmallConstructibleMachine
+  id: ReagentDispenserBase
+  abstract: true
   placement:
     mode: SnapgridCenter
   components:

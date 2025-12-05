@@ -1,9 +1,9 @@
 ---
 - type: entity
-  name: urn
-  description: Store the Dead smart and Compact since 2300
   parent: BaseStorageItem
   id: Urn
+  name: urn
+  description: Store the Dead smart and Compact since 2300
   components:
   - type: Storage
     grid:

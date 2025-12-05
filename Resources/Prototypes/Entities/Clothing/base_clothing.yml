@@ -1,8 +1,8 @@
 ---
 - type: entity
-  abstract: true
   parent: BaseItem
   id: Clothing
+  abstract: true
   components:
   - type: Item
     size: Normal
@@ -17,23 +17,23 @@
     unequipDelay: 0
 
 - type: entity
-  abstract: true
   id: GeigerCounterClothing
+  abstract: true
   components:
     - type: Geiger
       attachedToSuit: true
 
 - type: entity
-  abstract: true
   id: AllowSuitStorageClothing
+  abstract: true
   components:
   - type: AllowSuitStorage
 
 # for clothing that has a single item slot to insert and alt click out.
 # inheritors add a whitelisted slot named item
 - type: entity
-  abstract: true
   id: ClothingSlotBase
+  abstract: true
   components:
   - type: ItemSlots
   - type: ContainerContainer
@@ -42,8 +42,8 @@
 
 # a piece of clothing that has explosion resistance *for its contents*, not the wearer
 - type: entity
-  abstract: true
   id: ContentsExplosionResistanceBase
+  abstract: true
   components:
   - type: ExplosionResistance
     worn: false # only apply to the clothing itself and items inside, not the wearer
@@ -55,8 +55,8 @@
 
 # for clothing that can be toggled, like magboots
 - type: entity
-  abstract: true
   id: BaseToggleClothing
+  abstract: true
   components:
   - type: ItemToggle
     onUse: false # can't really wear it like that

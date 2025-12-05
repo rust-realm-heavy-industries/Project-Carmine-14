@@ -14,22 +14,22 @@
     state: Fine
 
 - type: healthIcon
-  id: HealthIconCritical
   parent: HealthIcon
+  id: HealthIconCritical
   icon:
     sprite: /Textures/Interface/Misc/health_icons.rsi
     state: Critical
 
 - type: healthIcon
-  id: HealthIconDead
   parent: HealthIcon
+  id: HealthIconDead
   icon:
     sprite: /Textures/Interface/Misc/health_icons.rsi
     state: Dead
 
 - type: healthIcon
-  id: HealthIconRotting
   parent: HealthIcon
+  id: HealthIconRotting
   icon:
     sprite: /Textures/Interface/Misc/health_icons.rsi
     state: Rotting

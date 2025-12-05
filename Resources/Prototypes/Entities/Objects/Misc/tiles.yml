@@ -2,8 +2,8 @@
 - type: entity
   parent: BaseItem
   id: FloorTileItemBase
-  description: The floor was meant to hold this, not you.
   abstract: true
+  description: The floor was meant to hold this, not you.
   components:
   - type: Sprite
     sprite: Objects/Tiles/tile.rsi
@@ -50,9 +50,9 @@
         Blunt: 2
 
 - type: entity
-  name: steel tile
   parent: FloorTileItemBase
   id: FloorTileItemSteel
+  name: steel tile
   components:
   - type: Sprite
     state: steel
@@ -75,9 +75,9 @@
     soundHit: /Audio/Weapons/block_metal1.ogg
 
 - type: entity
-  name: steel dark checker tile
   parent: FloorTileItemSteel
   id: FloorTileItemSteelCheckerDark
+  name: steel dark checker tile
   components:
   - type: Sprite
     state: checker-dark
@@ -87,9 +87,9 @@
       - FloorSteelCheckerDark
 
 - type: entity
-  name: steel light checker tile
   parent: FloorTileItemSteel
   id: FloorTileItemSteelCheckerLight
+  name: steel light checker tile
   components:
   - type: Sprite
     state: checker-light
@@ -99,9 +99,9 @@
       - FloorSteelCheckerLight
 
 - type: entity
-  name: steel tile
   parent: FloorTileItemSteel
   id: FloorTileItemMetalDiamond
+  name: steel tile
   components:
   - type: Sprite
     state: metaldiamond
@@ -118,9 +118,9 @@
 #    node: steeltile
 
 - type: entity
-  name: wood floor
   parent: FloorTileItemBase
   id: FloorTileItemWood
+  name: wood floor
   components:
   - type: Sprite
     state: wood
@@ -137,9 +137,9 @@
     node: woodtile
 
 - type: entity
-  name: white tile
   parent: FloorTileItemBase
   id: FloorTileItemWhite
+  name: white tile
   components:
   - type: Sprite
     state: white
@@ -156,9 +156,9 @@
     node: whitetile
 
 - type: entity
-  name: dark tile
   parent: FloorTileItemSteel
   id: FloorTileItemDark
+  name: dark tile
   components:
   - type: Sprite
     state: dark
@@ -175,9 +175,9 @@
     node: darktile
 
 - type: entity
-  name: techmaint floor
   parent: FloorTileItemSteel
   id: FloorTileItemTechmaint
+  name: techmaint floor
   components:
   - type: Sprite
     state: techfloor
@@ -191,9 +191,9 @@
     stackType: FloorTileTechmaint
 
 - type: entity
-  name: techmaint floor directional
   parent: FloorTileItemSteel
   id: FloorTileItemTechmaintDirectional
+  name: techmaint floor directional
   components:
   - type: Sprite
     state: techfloor
@@ -207,9 +207,9 @@
     stackType: FloorTileTechmaint
 
 - type: entity
-  name: reinforced tile
   parent: FloorTileItemSteel
   id: FloorTileItemReinforced
+  name: reinforced tile
   components:
   - type: Sprite
     state: reinforced
@@ -225,9 +225,9 @@
 # TODO add a catwalk tile item once tile smoothing is supported
 
 - type: entity
-  name: mono tile
   parent: FloorTileItemBase
   id: FloorTileItemMono
+  name: mono tile
   components:
   - type: Sprite
     state: monofloor
@@ -241,9 +241,9 @@
     stackType: FloorTileMono
 
 - type: entity
-  name: smooth brass plate
   parent: FloorTileItemBase
   id: FloorTileItemBrassReebe
+  name: smooth brass plate
   components:
   - type: Sprite
     state: reebe
@@ -260,9 +260,9 @@
     node: reebe
 
 - type: entity
-  name: dirty tile
   parent: FloorTileItemBase
   id: FloorTileItemDirty
+  name: dirty tile
   components:
   - type: Sprite
     state: dirty
@@ -276,9 +276,9 @@
     stackType: FloorTileDirty
 
 - type: entity
-  name: mining tile
   parent: FloorTileItemBase
   id: FloorTileItemMining
+  name: mining tile
   components:
   - type: Sprite
     state: mining
@@ -292,9 +292,9 @@
     stackType: FloorTileMining
 
 - type: entity
-  name: dark mining tile
   parent: FloorTileItemSteel
   id: FloorTileItemMiningDark
+  name: dark mining tile
   components:
   - type: Sprite
     state: miningdark
@@ -308,9 +308,9 @@
     stackType: FloorTileMininDark
 
 - type: entity
-  name: light mining tile
   parent: FloorTileItemSteel
   id: FloorTileItemMiningLight
+  name: light mining tile
   components:
   - type: Sprite
     state: mininglight
@@ -326,9 +326,9 @@
 # Departamental
 
 - type: entity
-  name: showroom tile
   parent: FloorTileItemBase
   id: FloorTileItemShowroom
+  name: showroom tile
   components:
   - type: Sprite
     state: showroom
@@ -362,9 +362,9 @@
 
 # Shuttles
 - type: entity
-  name: white shuttle floor
   parent: FloorTileItemBase
   id: FloorTileItemShuttleWhite
+  name: white shuttle floor
   components:
   - type: Sprite
     state: shuttlewhite
@@ -378,9 +378,9 @@
     stackType: FloorTileStackShuttleWhite
 
 - type: entity
-  name: grey shuttle floor
   parent: FloorTileItemBase
   id: FloorTileItemShuttleGrey
+  name: grey shuttle floor
   components:
   - type: Sprite
     state: shuttlegrey
@@ -396,9 +396,9 @@
 # Terrain
 
 - type: entity
-  name: wood pattern floor
   parent: FloorTileItemBase
   id: FloorTileItemWoodPattern
+  name: wood pattern floor
   components:
   - type: Sprite
     state: woodpatternfloor
@@ -412,9 +412,9 @@
     stackType: FloorTileWoodPattern
 
 - type: entity
-  name: steel maint floor
   parent: FloorTileItemBase
   id: FloorTileItemSteelMaint
+  name: steel maint floor
   components:
   - type: Sprite
     state: steelmaintfloor
@@ -428,9 +428,9 @@
     stackType: FloorTileSteelMaint
 
 - type: entity
-  name: grating maint floor
   parent: FloorTileItemBase
   id: FloorTileItemGratingMaint
+  name: grating maint floor
   components:
   - type: Sprite
     state: gratingmaintfloor
