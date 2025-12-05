@@ -1,3 +1,4 @@
+---
 - type: styleSheet
   id: space
   parents: [shared]

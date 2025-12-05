@@ -1,4 +1,5 @@
-﻿- type: palette
+---
+- type: palette
   id: Material
   name: Material
   colors:

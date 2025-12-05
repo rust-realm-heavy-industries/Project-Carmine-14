@@ -1,3 +1,4 @@
+---
 - type: speechVerb
   id: Default
   name: chat-speech-verb-name-default

@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: BaseMaterialDoor
   id: N14DoorShutterFramedRoller
@@ -17,7 +18,7 @@
       path: /Audio/Machines/airlock_deny.ogg
   - type: Sprite
     sprite: _Nuclear14/Structures/Doors/RollerDoors/framedshutter.rsi
-    
+
 - type: entity
   parent: BaseMaterialDoor
   id: N14DoorShutterRoller

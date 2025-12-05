@@ -1,9 +1,10 @@
-﻿- type: entity
-  id: StorageTank
+---
+- type: entity
   parent: BaseStructureDynamic
+  id: StorageTank
   name: storage tank
-  description: A liquids storage tank.
   abstract: true
+  description: A liquids storage tank.
   components:
   - type: Sprite
     noRot: true
@@ -68,8 +69,8 @@
 
 # For highcap tanks
 - type: entity
-  id: StorageTankBig
   parent: StorageTank
+  id: StorageTankBig
   abstract: true
   components:
   - type: Fixtures

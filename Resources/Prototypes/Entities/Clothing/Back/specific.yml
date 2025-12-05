@@ -1,9 +1,10 @@
+---
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackChameleon
   name: backpack
-  description: You wear this on your back and put items into it.
   suffix: Chameleon
+  description: You wear this on your back and put items into it.
   components:
     - type: Tag
       tags: [] # ignore "WhitelistChameleon" tag

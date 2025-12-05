@@ -1,7 +1,8 @@
+---
 - type: entity
-  name: trash bag
-  id: TrashBag
   parent: BaseStorageItem
+  id: TrashBag
+  name: trash bag
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/trashbag.rsi

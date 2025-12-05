@@ -1,7 +1,8 @@
+---
 - type: entity
-  name: bottle
   parent: BaseItem
   id: BaseChemistryEmptyBottle
+  name: bottle
   abstract: true
   description: A small bottle.
   components:

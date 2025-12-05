@@ -1,7 +1,8 @@
+---
 - type: entity
-  name: filing cabinet
   parent: [ BaseStructureDynamic, BaseBagOpenClose ]
   id: filingCabinet
+  name: filing cabinet
   suffix: Empty
   description: A cabinet for all your filing needs.
   components:
@@ -69,9 +70,9 @@
     price: 20
 
 - type: entity
-  name: tall cabinet
   parent: filingCabinet
   id: filingCabinetTall
+  name: tall cabinet
   suffix: Empty
   components:
   - type: Sprite
@@ -87,9 +88,9 @@
     node: tallCabinet
 
 - type: entity
-  name: chest drawer
   parent: BaseStructureDynamic
   id: filingCabinetDrawer
+  name: chest drawer
   suffix: Empty
   description: A small drawer for all your filing needs, Now with wheels!
   components:
@@ -159,8 +160,8 @@
   - type: RequireProjectileTarget
 
 - type: entity
-  abstract: true
   id: BaseBureaucraticStorageFill
+  abstract: true
   components:
   - type: StorageFill
     contents:

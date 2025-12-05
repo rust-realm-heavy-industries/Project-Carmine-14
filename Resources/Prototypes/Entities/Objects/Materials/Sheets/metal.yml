@@ -1,7 +1,8 @@
+---
 - type: entity
-  abstract: true
   parent: BaseItem
   id: SheetMetalBase
+  abstract: true
   description: A sheet of metal, used often on the station in various applications.
   components:
   - type: Sprite

@@ -1,3 +1,4 @@
+---
 - type: weightedRandomFillSolution
   id: RandomFillStrangePill
   fills:
@@ -48,9 +49,9 @@
     - Amatoxin
 
 - type: entity
-  name: strange pill
   parent: Pill
   id: StrangePill
+  name: strange pill
   description: This unusual pill bears no markings. There's no telling what it contains.
   components:
   - type: SolutionContainerManager

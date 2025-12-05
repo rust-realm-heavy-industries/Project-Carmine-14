@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   parent: BaseSign
   id: PlaqueAtmos
   name: atmos plaque

@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: StatueVenusRed
   parent: BaseStructure
+  id: StatueVenusRed
   name: statue of a pure maiden
   suffix: Red
   description: An ancient marble statue. The subject is depicted with a floor-length braid and is wielding a red toolbox.
@@ -13,8 +14,8 @@
     offset: "0.0,0.5"
 
 - type: entity
-  id: StatueVenusBlue
   parent: BaseStructure
+  id: StatueVenusBlue
   name: statue of a pure maiden
   suffix: Blue
   description: An ancient marble statue. The subject is depicted with a floor-length braid and is wielding a blue toolbox.

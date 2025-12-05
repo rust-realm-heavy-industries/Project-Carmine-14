@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: SignalTimerElectronics
   parent: BaseElectronics
+  id: SignalTimerElectronics
   name: signal timer electronics
   description: An electronics board used in timer circuitry. Looks like you could use a screwdriver to change the board type.
   components:
@@ -18,8 +19,8 @@
     price: 15
 
 - type: entity
-  id: ScreenTimerElectronics
   parent: SignalTimerElectronics
+  id: ScreenTimerElectronics
   name: screen timer electronics
   components:
   - type: Construction

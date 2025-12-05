@@ -1,7 +1,8 @@
+---
 - type: entity
+  parent: BaseItem
   id: ForensicPad
   name: forensic pad
-  parent: BaseItem
   description: A forensic pad for collecting fingerprints or fibers.
   components:
   - type: Item

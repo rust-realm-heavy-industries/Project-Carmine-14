@@ -1,8 +1,9 @@
-﻿- type: entity
+---
+- type: entity
+  parent: BaseStructureDynamic
   id: OreBox
   name: ore box
   description: A large storage container for holding unprocessed ores.
-  parent: BaseStructureDynamic
   components:
   - type: StaticPrice
     price: 500

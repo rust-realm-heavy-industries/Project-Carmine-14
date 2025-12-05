@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: shuttle_manipulator
   parent: BaseStructure
+  id: shuttle_manipulator
   name: station holograph
   description: A three-dimensional hologram projection of a space station.
   components:

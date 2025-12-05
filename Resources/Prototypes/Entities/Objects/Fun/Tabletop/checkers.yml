@@ -1,3 +1,4 @@
+---
 # Uses the chessboard and generic pieces
 - type: entity
   parent: BaseBoardEntity
@@ -21,9 +22,9 @@
 
 # Checkerboard tabletop item (item only visible in tabletop game)
 - type: entity
+  parent: BaseBoardTabletop
   id: *checkerboard
   name: checkerboard
-  parent: BaseBoardTabletop
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

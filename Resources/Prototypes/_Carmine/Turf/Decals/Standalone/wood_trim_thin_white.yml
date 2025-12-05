@@ -1,4 +1,5 @@
-﻿- type: decal
+---
+- type: decal
   id: WoodTrimThinBoxWhite
   sprite:
     sprite: _Corvax/Decals/wood_trim_white.rsi

@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: Portafib
   parent: Defibrillator
+  id: Portafib
   name: portafib
   description: Less weight, same great ZZZAP!
   components:
@@ -14,8 +15,8 @@
     price: 100
 
 - type: entity
-  id: PortafibEmpty
   parent: Portafib
+  id: PortafibEmpty
   suffix: Empty
   components:
   - type: ItemSlots

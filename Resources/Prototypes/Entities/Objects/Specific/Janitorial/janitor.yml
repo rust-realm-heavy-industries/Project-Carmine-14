@@ -1,7 +1,8 @@
+---
 - type: entity
   parent: BaseItem
-  name: mop
   id: MopItem
+  name: mop
   description: A mop that can't be stopped, viscera cleanup detail awaits.
   components:
   - type: Sprite
@@ -57,9 +58,9 @@
     - Janitorial
 
 - type: entity
-  name: wet floor sign
-  id: WetFloorSign
   parent: ClothingOuterBase
+  id: WetFloorSign
+  name: wet floor sign
   description: Caution! Wet Floor!
   components:
   - type: Sprite
@@ -82,9 +83,9 @@
 
 
 - type: entity
-  suffix: Explosive
   parent: WetFloorSign
   id: WetFloorSignMineExplosive
+  suffix: Explosive
   components:
   - type: StepTrigger
     intersectRatio: 0.2
@@ -135,9 +136,9 @@
       - WetFloorSign
 
 - type: entity
-  name: plunger
-  id: Plunger
   parent: BaseItem
+  id: Plunger
+  name: plunger
   description: A plunger with a red plastic suction-cup and a wooden handle. Used to unclog drains.
   components:
   - type: Tag
@@ -205,8 +206,8 @@
 
 - type: entity
   parent: BaseItem
-  name: damp rag
   id: RagItem
+  name: damp rag
   description: For cleaning up messes, you suppose.
   components:
     - type: Sprite

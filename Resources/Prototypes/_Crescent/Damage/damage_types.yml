@@ -1,3 +1,4 @@
+---
 - type: damageType
   id: PiercingInducedBlunt
   name: piercing-induced-blunt

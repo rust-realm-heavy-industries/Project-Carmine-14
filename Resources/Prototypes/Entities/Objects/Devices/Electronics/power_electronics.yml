@@ -1,7 +1,8 @@
-﻿# APC
+---
+# APC
 - type: entity
-  id: APCElectronics
   parent: BaseElectronics
+  id: APCElectronics
   name: APC electronics
   description: Circuit used in APC construction.
   components:
@@ -22,8 +23,8 @@
 
 # Wallmount Substation
 - type: entity
-  id: WallmountSubstationElectronics
   parent: BaseElectronics
+  id: WallmountSubstationElectronics
   name: wallmount substation electronics
   description: Circuit used to construct a wallmount substation.
   components:
@@ -57,8 +58,8 @@
 
 # APU
 - type: entity
-  id: WallmountGeneratorAPUElectronics
   parent: BaseElectronics
+  id: WallmountGeneratorAPUElectronics
   name: wallmount APU electronics
   description: Circuit used to construct a wallmount APU.
   components:

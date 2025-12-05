@@ -1,7 +1,8 @@
+---
 - type: entity
   id: BaseMech
-  save: false
   abstract: true
+  save: false
   components:
   - type: MobMover
   - type: Mech
@@ -150,8 +151,8 @@
     keepWorldAligned: true
 
 - type: entity
-  id: MechRipley
   parent: BaseMech
+  id: MechRipley
   name: Ripley APLU
   description: Versatile and lightly armored, the Ripley is useful for almost any heavy work scenario. The "APLU" stands for Autonomous Power Loading Unit.
   components:
@@ -184,8 +185,8 @@
     baseSprintSpeed: 3.6
 
 - type: entity
-  id: MechRipleyBattery
   parent: MechRipley
+  id: MechRipleyBattery
   suffix: Battery
   components:
   - type: ContainerFill

@@ -1,6 +1,7 @@
+---
 - type: entity
-  name: construction ghost
   id: constructionghost
+  name: construction ghost
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

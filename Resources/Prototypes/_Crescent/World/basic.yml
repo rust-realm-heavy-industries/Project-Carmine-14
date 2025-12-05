@@ -1,4 +1,5 @@
-﻿- type: spaceBiome
+---
+- type: spaceBiome
   id: GraveyardWrecks
   priority: 9000
   minX: 28

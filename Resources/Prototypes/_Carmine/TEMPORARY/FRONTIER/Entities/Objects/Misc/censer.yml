@@ -1,7 +1,8 @@
+---
 - type: entity
-  name: censer
   parent: BaseItem
   id: Censer
+  name: censer
   description: Usually you put incense in there.
   components:
   - type: Smokable

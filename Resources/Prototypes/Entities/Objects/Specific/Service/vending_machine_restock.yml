@@ -1,8 +1,9 @@
+---
 - type: entity
   parent: BaseItem
   id: BaseVendingMachineRestock
-  abstract: true
   name: vending machine restock box
+  abstract: true
   description: A box for restocking vending machines with corporate goodies.
   components:
   - type: VendingMachineRestock

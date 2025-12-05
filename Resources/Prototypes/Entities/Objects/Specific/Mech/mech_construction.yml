@@ -1,3 +1,4 @@
+---
 - type: entity
   id: BaseMechPart
   abstract: true
@@ -29,8 +30,8 @@
 # Ripley APLU
 
 - type: entity
-  id: BaseRipleyPart
   parent: BaseMechPart
+  id: BaseRipleyPart
   abstract: true
   components:
   - type: Sprite
@@ -39,8 +40,8 @@
     sprite: Objects/Specific/Mech/ripley_construction.rsi
 
 - type: entity
-  id: BaseRipleyPartItem
   parent: BaseRipleyPart
+  id: BaseRipleyPartItem
   abstract: true
   components:
   - type: Item
@@ -135,8 +136,8 @@
     - RipleyRArm
 
 - type: entity
-  id: RipleyChassis
   parent: BaseRipleyPart
+  id: RipleyChassis
   name: ripley chassis
   description: An in-progress construction of the Ripley APLU mech.
   components:

@@ -1,8 +1,9 @@
+---
 - type: entity
   parent: AirlockRCDResistant
   id: AirlockShuttle
-  suffix: Docking
   name: external airlock
+  suffix: Docking
   description: Necessary for connecting two space craft together.
   components:
   - type: Docking

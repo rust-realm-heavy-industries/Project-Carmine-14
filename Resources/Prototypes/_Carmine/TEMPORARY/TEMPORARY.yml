@@ -1,4 +1,5 @@
-﻿- type: reagent
+---
+- type: reagent
   id: BasePyrotechnic
   group: Pyrotechnic
   abstract: true
@@ -69,9 +70,9 @@
     disabled: true
 
 - type: entity
-  name: cardboard box small
   parent: BoxBase
   id: BoxCardboardSmall
+  name: cardboard box small
   description: A cardboard box for storing things.
   components:
   - type: Item
@@ -185,8 +186,8 @@
   path: "/Textures/Nyanotrasen/Shaders/dogvision.swsl"
 
 - type: entity
-  id: Cigarette
   parent: BaseCigar
+  id: Cigarette
   name: cigarette
   description: A roll of tobacco and nicotine.
   components:
@@ -209,11 +210,11 @@
     node: cigarette
 
 - type: entity
-  id: BaseMachineCircuitboard
   parent: BaseItem
+  id: BaseMachineCircuitboard
   name: machine board
-  abstract: true
   suffix: Machine Board
+  abstract: true
   components:
     - type: MachineBoard
     - type: Sprite
@@ -230,9 +231,9 @@
         Silicon: 20
 
 - type: entity
-  abstract: true
   parent: BaseItem
   id: OreBase
+  abstract: true
   description: A piece of unrefined ore.
   components:
   - type: Sprite
@@ -314,9 +315,9 @@
     delay: 2
 
 - type: entity
-  name: cardboard box
   parent: BoxBase
   id: BoxCardboard
+  name: cardboard box
   description: A cardboard box for storing things.
   components:
   - type: Item
@@ -389,8 +390,8 @@
     price: 0
 
 - type: entity
-  name: soil
   id: hydroponicsSoil #fetid code since this is the parent to hydrotrays
+  name: soil
   placement:
     mode: SnapgridCenter
   components:
@@ -507,10 +508,10 @@
     - Trash
 
 - type: entity
-  description: "If you want to get cancer, might as well do it in style."
-  id: BaseSmokable
   parent: BaseItem
+  id: BaseSmokable
   abstract: true
+  description: "If you want to get cancer, might as well do it in style."
   components:
   - type: Smokable
   - type: Sprite
@@ -639,9 +640,9 @@
     node: cloth
 
 - type: entity
-  abstract: true
   parent: BaseItem
   id: MaterialBase
+  abstract: true
   description: A raw material.
   components:
   - type: Sprite
@@ -664,9 +665,9 @@
         acts: [ "Destruction" ]
 
 - type: reagent
+  parent: BasePyrotechnic
   id: WeldingFuel
   name: reagent-name-welding-fuel
-  parent: BasePyrotechnic
   desc: reagent-desc-welding-fuel
   physicalDesc: reagent-physical-desc-oily
   slippery: true
@@ -772,9 +773,9 @@
   pricePerUnit: 2
 
 - type: reagent
+  parent: BaseDrink
   id: Water
   name: reagent-name-water
-  parent: BaseDrink
   desc: reagent-desc-water
   slippery: true
   physicalDesc: reagent-physical-desc-translucent
@@ -906,9 +907,9 @@
     - Nocturine
 
 - type: entity
-  name: Urist Spawner
-  id: SpawnMobHuman
   parent: MarkerBase
+  id: SpawnMobHuman
+  name: Urist Spawner
   suffix: DEBUG
   components:
   - type: Sprite
@@ -921,7 +922,6 @@
     - MobHuman
 
 - type: entity
-  id: StandardNanotrasenStation
   parent:
     - BaseStation
     - BaseStationJobsSpawning
@@ -929,6 +929,7 @@
     - BaseStationAlertLevels
     - BaseStationAllEventsEligible
     - BaseRandomStation
+  id: StandardNanotrasenStation
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform
@@ -1014,8 +1015,8 @@
             Bloodloss: -5
 
 - type: entity
-  id: N14BarricadeWindow
   parent: BaseStructure
+  id: N14BarricadeWindow
   name: barricade
   description: A makeshift barricade.
   components:
@@ -1153,8 +1154,8 @@
     damageModifierSet: StructuralMetallicStrong
 
 - type: entity
-  id: Dresser #cull for the n14 one
   parent: BaseStructure
+  id: Dresser #cull for the n14 one
   name: dresser
   description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
   components:
@@ -1201,16 +1202,16 @@
     node: dresser
 
 - type: entity
-  id: DresserFilled #cull for the n14 one
   parent: Dresser
+  id: DresserFilled #cull for the n14 one
   suffix: Filled
   components:
   - type: StaticPrice
     price: 15
 
 - type: entity #used by shitmed prosthetics
-  id: PartIPC
   parent: BaseItem
+  id: PartIPC
   name: "ipc body part"
   abstract: true
   components:
@@ -1245,9 +1246,9 @@
     price: 100
 
 - type: entity
-  name: green glowstick
   parent: BaseItem
   id: GlowstickBase
+  name: green glowstick
   description: Useful for raves and emergencies.
   components:
     - type: SpaceGarbage
@@ -1381,9 +1382,9 @@
         - HideContextMenu
 
 - type: entity
-  name: spooky lightning
-  id: LightningRevenant #used for revenant, unused, hardcoded
   parent: BaseLightning
+  id: LightningRevenant #used for revenant, unused, hardcoded
+  name: spooky lightning
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -1405,9 +1406,9 @@
       shockDamage: 30
 
 - type: entity
-  name: charged lightning
-  id: ChargedLightning #used for glimmershit and hardcoded
   parent: BaseLightning
+  id: ChargedLightning #used for glimmershit and hardcoded
+  name: charged lightning
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -1424,9 +1425,9 @@
       lightningPrototype: ChargedLightning
 
 - type: entity
-  name: supercharged lightning
-  id: SuperchargedLightning #used for glimmershit and hardcoded
   parent: ChargedLightning
+  id: SuperchargedLightning #used for glimmershit and hardcoded
+  name: supercharged lightning
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -1450,9 +1451,9 @@
       castShadows: false
 
 - type: entity
-  name: hypercharged lightning
-  id: HyperchargedLightning #used for glimmershit and hardcoded
   parent: ChargedLightning
+  id: HyperchargedLightning #used for glimmershit and hardcoded
+  name: hypercharged lightning
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -1514,9 +1515,9 @@
         variation: 0.3
 
 - type: entity
-  name: lightning #used exclusively for microwave malfunctions, hardcoded, should be kept but redone a little
-  id: Spark
   parent: BaseLightning
+  id: Spark
+  name: lightning #used exclusively for microwave malfunctions, hardcoded, should be kept but redone a little
   categories: [ HideSpawnMenu ]
   components:
     - type: Beam

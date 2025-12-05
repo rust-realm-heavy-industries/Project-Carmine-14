@@ -1,4 +1,5 @@
-﻿- type: spaceBiome
+---
+- type: spaceBiome
   id: AsteroidsStandardNF
   priority: 0 # This probably shouldn't get selected.
   noiseRanges: {}

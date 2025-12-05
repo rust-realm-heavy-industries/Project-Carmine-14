@@ -1,3 +1,4 @@
+---
 - type: language
   id: SolCommon
   isVisibleLanguage: true
@@ -125,7 +126,7 @@
     - lizi
     - lleo
     - long
-    -	lu
+    - lu
     - ma
     - mah
     - me

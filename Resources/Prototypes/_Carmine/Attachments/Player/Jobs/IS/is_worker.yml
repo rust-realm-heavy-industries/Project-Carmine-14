@@ -1,3 +1,4 @@
+---
 - type: job
   id: JobWorkerIS
   name: job-name-is-worker

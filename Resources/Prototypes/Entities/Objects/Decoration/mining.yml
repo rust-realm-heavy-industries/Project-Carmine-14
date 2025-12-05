@@ -1,7 +1,8 @@
+---
 - type: entity
   id: WoodenSign
   name: wooden sign
-  description: He's pointing somewhere. 
+  description: He's pointing somewhere.
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -49,8 +50,8 @@
     state: sign_right
 
 - type: entity
-  id: WoodenSupport
   parent: BaseStructure
+  id: WoodenSupport
   name: wooden support
   description: Increases your confidence that a rock won't fall on your head.
   placement:
@@ -102,9 +103,9 @@
             max: 3
 
 - type: entity
+  parent: WoodenSupport
   id: WoodenSupportBeam
   name: wooden support beam
-  parent: WoodenSupport
   components:
   - type: Sprite
     sprite: Objects/Decoration/mines.rsi
@@ -123,8 +124,8 @@
         density: 1000
 
 - type: entity
-  id: WoodenSupportWall
   parent: BaseStructure
+  id: WoodenSupportWall
   name: wooden support wall
   description: An old, rotten wall.
   placement:
@@ -171,8 +172,8 @@
             max: 5
 
 - type: entity
-  id: WoodenSupportWallBroken
   parent: WoodenSupportWall
+  id: WoodenSupportWallBroken
   components:
   - type: Sprite
     sprite: Objects/Decoration/mines.rsi

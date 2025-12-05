@@ -1,14 +1,15 @@
+---
 # TODO BODY: Part damage
 - type: entity
-  id: PartSlime
   parent: [BaseItem, BasePart]
+  id: PartSlime
   name: "slime body part"
   abstract: true
 
 - type: entity
+  parent: [PartSlime, BaseTorso]
   id: TorsoSlime
   name: "slime torso"
-  parent: [PartSlime, BaseTorso]
   components:
     - type: Sprite
       sprite: Mobs/Species/Slime/parts.rsi

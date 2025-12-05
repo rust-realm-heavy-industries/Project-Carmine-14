@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: Ashtray
   parent: BaseItem
+  id: Ashtray
   name: ashtray
   description: Proven by scientists to improve the smoking experience by 37%!
   components:

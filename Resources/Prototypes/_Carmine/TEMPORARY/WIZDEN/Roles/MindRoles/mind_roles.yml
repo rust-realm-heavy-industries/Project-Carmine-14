@@ -1,8 +1,9 @@
+---
 - type: entity
   id: BaseMindRole
   name: Mind Role
-  description: Mind Role entity
   abstract: true
+  description: Mind Role entity
   components:
   - type: MindRole
 

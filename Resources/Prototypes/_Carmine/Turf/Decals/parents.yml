@@ -1,13 +1,14 @@
+---
 # This is used to categorize the mapping editor, multiparent the decals if you want specific functionality.
 
 - type: decal
   id: Lattice
   abstract: true
-  
+
 - type: decal
   id: Misc
   abstract: true
-  
+
 - type: decal
   id: Flora
   abstract: true

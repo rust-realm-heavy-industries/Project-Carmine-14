@@ -1,3 +1,4 @@
+---
 - type: reagent
   id: Aluminium # We use real words here.
   name: reagent-name-aluminium # -we use real words here.
@@ -97,6 +98,7 @@
           types:
             Caustic: 0.5
             Poison: 0.5
+
 - type: reagent
   id: Gold
   name: reagent-name-gold

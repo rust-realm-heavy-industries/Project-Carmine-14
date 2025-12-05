@@ -1,9 +1,10 @@
+---
 # Parents
 - type: entity
-  abstract: true
-  id: ShelfBase
   parent: BaseStructure
+  id: ShelfBase
   name: shelf
+  abstract: true
   description: a strange place to place, well, anything really. You feel like you shouldn't be seeing this.'
   components:
   - type: Sprite
@@ -54,10 +55,10 @@
     - Structure
 
 - type: entity
-  abstract: true
-  id: ShelfBaseReinforced
   parent: ShelfBase
+  id: ShelfBaseReinforced
   name: reinforced shelf
+  abstract: true
   description: It looks as strong as reality itself.
   components:
   - type: Lock
@@ -85,8 +86,8 @@
 
 # Normal
 - type: entity
-  id: ShelfWood
   parent: ShelfBase
+  id: ShelfWood
   name: wooden shelf
   description: A convenient place to place, well, anything really.
   components:
@@ -115,8 +116,8 @@
     node: ShelfWood
 
 - type: entity
-  id: ShelfMetal
   parent: ShelfBase
+  id: ShelfMetal
   name: metal shelf
   description: A sturdy place to place, well, anything really.
   components:
@@ -150,8 +151,8 @@
     node: ShelfMetal
 
 - type: entity
-  id: ShelfRMetal
   parent: ShelfBaseReinforced
+  id: ShelfRMetal
   name: sturdy metal shelf
   description: A strong & shiny place to keep all your vials safe
   components:
@@ -184,8 +185,8 @@
     node: ShelfRMetal
 
 - type: entity
-  id: ShelfRGlass
   parent: ShelfBaseReinforced
+  id: ShelfRGlass
   name: sturdy glass shelf
   description: Crystal clear reinforced glass doors to show off all your fancy bottles you definitely didn't sell a co-worker's favorite mothroach for.
   components:
@@ -219,8 +220,8 @@
 
 # Departmental
 - type: entity
-  id: ShelfBar
   parent: ShelfBase
+  id: ShelfBar
   name: bar shelf
   description: Made out of the finest synthetic wood for all alcohol holding needs.
   components:
@@ -261,8 +262,8 @@
     node: ShelfBar
 
 - type: entity
-  id: ShelfKitchen
   parent: ShelfBase
+  id: ShelfKitchen
   name: cooking shelf
   description: Holds knifes, spice, and everything nice!
   components:
@@ -309,8 +310,8 @@
     node: ShelfKitchen
 
 - type: entity
-  id: ShelfChemistry
   parent: ShelfBaseReinforced
+  id: ShelfChemistry
   name: chemical shelf
   description: Keeps all your chemicals safe and out of the clow- er, public hands!
   components:
@@ -361,7 +362,6 @@
   - type: Construction
     graph: Shelf
     node: ShelfChemistry
-
 
 
 # Access presets

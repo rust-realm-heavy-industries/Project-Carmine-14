@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: BaseSign
   id: PaintingMonkey
@@ -494,7 +495,6 @@
   components:
   - type: Sprite
     state: medium_secure
-
 
 
 # Atmos Warnings

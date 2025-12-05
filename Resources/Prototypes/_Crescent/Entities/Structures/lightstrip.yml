@@ -1,3 +1,4 @@
+---
 - type: entity
   id: LightStripArrow
   name: light strip
@@ -22,8 +23,8 @@
       canCollide: false
 
 - type: entity
-  id: LightStripCorner
   parent: LightStripArrow
+  id: LightStripCorner
   components:
     - type: Sprite
       drawdepth: FloorObjects
@@ -36,8 +37,8 @@
         shader: shaded
 
 - type: entity
-  id: LightStripEnd
   parent: LightStripArrow
+  id: LightStripEnd
   components:
     - type: Sprite
       drawdepth: FloorObjects
@@ -50,8 +51,8 @@
         shader: shaded
 
 - type: entity
-  id: LightStripInner
   parent: LightStripArrow
+  id: LightStripInner
   components:
     - type: Sprite
       drawdepth: FloorObjects
@@ -64,8 +65,8 @@
         shader: shaded
 
 - type: entity
-  id: LightStripLineHorizontal
   parent: LightStripArrow
+  id: LightStripLineHorizontal
   components:
     - type: Sprite
       drawdepth: FloorObjects
@@ -78,8 +79,8 @@
         shader: shaded
 
 - type: entity
-  id: LightStripLineVertical
   parent: LightStripArrow
+  id: LightStripLineVertical
   components:
     - type: Sprite
       drawdepth: FloorObjects
@@ -92,8 +93,8 @@
         shader: shaded
 
 - type: entity
-  id: LightStripLineRotate
   parent: LightStripArrow
+  id: LightStripLineRotate
   components:
     - type: Sprite
       drawdepth: FloorObjects

@@ -1,6 +1,7 @@
-﻿- type: entity
-  id: BaseGlassBox
+---
+- type: entity
   parent: BaseStructureDynamic
+  id: BaseGlassBox
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -32,11 +33,11 @@
   - type: Appearance
 
 - type: entity
+  parent: BaseGlassBox
   id: GlassBox
   name: glass box
-  description: A sturdy showcase for an expensive exhibit.
-  parent: BaseGlassBox
   abstract: true # TODO: Temporarily abstract. Remove it after item scaling in cabinets is implemented.
+  description: A sturdy showcase for an expensive exhibit.
   components:
   - type: Sprite
     noRot: true

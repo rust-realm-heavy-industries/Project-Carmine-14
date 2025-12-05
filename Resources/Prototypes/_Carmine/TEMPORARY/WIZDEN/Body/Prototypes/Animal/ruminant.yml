@@ -1,4 +1,5 @@
-﻿- type: body
+---
+- type: body
   id: AnimalRuminant
   name: "ruminant"
   root: torso

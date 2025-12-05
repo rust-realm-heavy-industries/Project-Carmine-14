@@ -1,3 +1,4 @@
+---
 - type: entity
   id: BaseFoam
   abstract: true
@@ -31,9 +32,9 @@
       drawdepth: Effects
     - type: Transform
       anchored: true
-        
+
 ## FOAM
-        
+
 - type: entity
   parent: BaseFoam
   id: Foam
@@ -66,9 +67,9 @@
       triggerGroups:
         types:
           - SlipTile
-      
+
 ## METAL FOAM
-      
+
 - type: entity
   id: MetalFoam
   name: metal foam
@@ -92,7 +93,7 @@
           state: m_foam-north
         - map: ["enum.EdgeLayer.West"]
           state: m_foam-west
-      
+
 - type: entity
   id: IronMetalFoam
   name: iron metal foam

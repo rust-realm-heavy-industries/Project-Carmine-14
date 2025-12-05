@@ -1,11 +1,12 @@
+---
 # Welding
 
 - type: entity
-  id: WeldingFuelTank
   parent: [StorageTank, StructureWheeled]
+  id: WeldingFuelTank
   name: fuel tank
-  description: A fuel tank. It's used to store high amounts of fuel.
   suffix: Empty
+  description: A fuel tank. It's used to store high amounts of fuel.
   components:
   - type: StaticPrice
     price: 750
@@ -35,8 +36,8 @@
     totalIntensity: 120 # ~ 5 tile radius
 
 - type: entity
-  id: WeldingFuelTankFull
   parent: WeldingFuelTank
+  id: WeldingFuelTankFull
   suffix: Full
   components:
   - type: SolutionContainerManager
@@ -96,8 +97,8 @@
     price: 500
 
 - type: entity
-  id: GenericTank
   parent: [StorageTank, StructureWheeled]
+  id: GenericTank
   suffix: Empty
   components:
     - type: StaticPrice

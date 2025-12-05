@@ -1,8 +1,9 @@
+---
 - type: entity
-  name: Atmos Fix Vacuum Marker
-  id: AtmosFixBlockerMarker
-  description: "Vacuum, T20C"
   parent: MarkerBase
+  id: AtmosFixBlockerMarker
+  name: Atmos Fix Vacuum Marker
+  description: "Vacuum, T20C"
   components:
     - type: Sprite
       layers:
@@ -16,10 +17,10 @@
       mode: 1
 
 - type: entity
-  name: Atmos Fix Oxygen Marker
-  id: AtmosFixOxygenMarker
-  description: "Oxygen @ gas miner pressure, T20C"
   parent: MarkerBase
+  id: AtmosFixOxygenMarker
+  name: Atmos Fix Oxygen Marker
+  description: "Oxygen @ gas miner pressure, T20C"
   components:
     - type: Sprite
       layers:
@@ -33,10 +34,10 @@
       mode: 2
 
 - type: entity
-  name: Atmos Fix Nitrogen Marker
-  id: AtmosFixNitrogenMarker
-  description: "Nitrogen @ gas miner pressure, T20C"
   parent: MarkerBase
+  id: AtmosFixNitrogenMarker
+  name: Atmos Fix Nitrogen Marker
+  description: "Nitrogen @ gas miner pressure, T20C"
   components:
     - type: Sprite
       layers:
@@ -50,10 +51,10 @@
       mode: 3
 
 - type: entity
-  name: Atmos Fix Plasma Marker
-  id: AtmosFixPlasmaMarker
-  description: "Plasma @ gas miner pressure, T20C"
   parent: MarkerBase
+  id: AtmosFixPlasmaMarker
+  name: Atmos Fix Plasma Marker
+  description: "Plasma @ gas miner pressure, T20C"
   components:
     - type: Sprite
       layers:
@@ -67,10 +68,10 @@
       mode: 4
 
 - type: entity
-  name: Atmos Fix Instant Plasmafire Marker
-  id: AtmosFixInstantPlasmaFireMarker
-  description: "INSTANT PLASMAFIRE"
   parent: MarkerBase
+  id: AtmosFixInstantPlasmaFireMarker
+  name: Atmos Fix Instant Plasmafire Marker
+  description: "INSTANT PLASMAFIRE"
   components:
     - type: Sprite
       layers:
@@ -84,10 +85,10 @@
       mode: 5
 
 - type: entity
-  name: Atmos Fix Freezer Marker
-  id: AtmosFixFreezerMarker
-  description: "Change air temp to 235K, for freezer with a big of wiggle room to get set up."
   parent: MarkerBase
+  id: AtmosFixFreezerMarker
+  name: Atmos Fix Freezer Marker
+  description: "Change air temp to 235K, for freezer with a big of wiggle room to get set up."
   components:
     - type: Sprite
       layers:

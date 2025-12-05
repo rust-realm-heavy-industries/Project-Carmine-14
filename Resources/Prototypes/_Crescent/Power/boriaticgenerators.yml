@@ -1,12 +1,13 @@
+---
 #
 # You can use this Desmos sheet to calculate fuel burn rate values:
 # https://www.desmos.com/calculator/qcektq5dqs
 #
 
 - type: entity
-  abstract: true
-  id: BoriaticGeneratorBase
   parent: [ BaseMachine, ConstructibleMachine, StructureWheeled]
+  id: BoriaticGeneratorBase
+  abstract: true
   components:
     # Basic properties
     - type: Transform
@@ -101,9 +102,9 @@
       range: 200
 
 - type: entity
-  abstract: true
   parent: BoriaticGeneratorBase
   id: BoriaticGeneratorSwitchableBase
+  abstract: true
   components:
   - type: PowerSwitchable
     examineText: power-switchable-generator-examine
@@ -127,13 +128,13 @@
         enabled: false
 
 - type: entity
+  parent: BoriaticGeneratorSwitchableBase
+  id: BoriaticGeneratorHercules
   name: Boriatic Generator 'Hercules'
+  suffix: BoriaticFuel, 20 kW
   description: |-
     A loud, foulsmelling, toxic generator.
     Runs off corrosive Boriatic fuel and is rated for up to 50 kW.
-  parent: BoriaticGeneratorSwitchableBase
-  id: BoriaticGeneratorHercules
-  suffix: BoriaticFuel, 20 kW
   components:
     - type: Sprite
       layers:
@@ -189,13 +190,13 @@
       range: 0.30
 
 - type: entity
+  parent: BoriaticGeneratorSwitchableBase
+  id: BoriaticGeneratorEinstein
   name: Boriatic Generator 'Einstein'
+  suffix: BoriaticFuel, 95 kW
   description: |-
     A gargantuan, loud, foulsmelling, toxic generator.
     Runs off corrosive Boriatic fuel and is rated for up to 95 kW.
-  parent: BoriaticGeneratorSwitchableBase
-  id: BoriaticGeneratorEinstein
-  suffix: BoriaticFuel, 95 kW
   components:
     - type: Sprite
       sprite: _Crescent/Structures/boriatic_reactor.rsi

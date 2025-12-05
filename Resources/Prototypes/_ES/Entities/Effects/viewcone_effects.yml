@@ -1,3 +1,4 @@
+---
 # Effects spawned when certain things happen
 # that only appear to viewcone users when out of vision.
 # TODO these would probably look better as actual animations modulating alpha
@@ -24,32 +25,32 @@
     lifetime: 3.0
 
 - type: entity
-  id: ESViewconeEffectFootstep
   parent: ESBaseViewconeEffect
+  id: ESViewconeEffectFootstep
   components:
   - type: Sprite
     state: footstep
 
 # TODO UNUSED
 - type: entity
-  id: ESViewconeEffectAttack
   parent: ESBaseViewconeEffect
+  id: ESViewconeEffectAttack
   components:
   - type: Sprite
     state: attack
 
 # TODO UNUSED
 - type: entity
-  id: ESViewconeEffectGunfire
   parent: ESBaseViewconeEffect
+  id: ESViewconeEffectGunfire
   components:
   - type: Sprite
     state: gunfire
 
 # TODO UNUSED
 - type: entity
-  id: ESViewconeEffectTalk
   parent: ESBaseViewconeEffect
+  id: ESViewconeEffectTalk
   components:
   - type: Sprite
     state: talk

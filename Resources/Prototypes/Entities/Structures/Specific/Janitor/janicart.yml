@@ -1,8 +1,9 @@
+---
 # Mop Bucket
 - type: entity
-  name: mop bucket
-  id: MopBucket
   parent: [BaseStructureDynamic, StructureWheeled]
+  id: MopBucket
+  name: mop bucket
   description: Holds water and the tears of the janitor.
   components:
   - type: Clickable
@@ -95,9 +96,9 @@
         - MachineMask
 
 - type: entity
-  name: mop bucket
-  id: MopBucketFull
   parent: MopBucket
+  id: MopBucketFull
+  name: mop bucket
   suffix: full
   components:
     - type: Sprite

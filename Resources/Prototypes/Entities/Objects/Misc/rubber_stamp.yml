@@ -1,9 +1,10 @@
+---
 - type: entity
-  name: generic rubber stamp
   parent: BaseItem
   id: RubberStampBase
-  description: A rubber stamp for stamping important documents.
+  name: generic rubber stamp
   abstract: true
+  description: A rubber stamp for stamping important documents.
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-default
@@ -23,9 +24,9 @@
     stealGroup: Stamp
 
 - type: entity
-  name: alternate rubber stamp
   parent: RubberStampBase
   id: RubberStampBaseAlt
+  name: alternate rubber stamp
   abstract: true
   components:
   - type: Stamp
@@ -38,9 +39,9 @@
         maxDistance: 5
 
 - type: entity
-  name: trader's rubber stamp
   parent: RubberStampBase
   id: RubberStampTrader
+  name: trader's rubber stamp
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-trader
@@ -50,9 +51,9 @@
     state: stamp-trader
 
 - type: entity
-  name: APPROVED rubber stamp
   parent: RubberStampBaseAlt
   id: RubberStampApproved
+  name: APPROVED rubber stamp
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-approved
@@ -62,9 +63,9 @@
     state: stamp-ok
 
 - type: entity
-  name: DENIED rubber stamp
   parent: RubberStampBaseAlt
   id: RubberStampDenied
+  name: DENIED rubber stamp
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-denied

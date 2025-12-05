@@ -1,4 +1,5 @@
-﻿- type: entity
+---
+- type: entity
   id: BaseLandMine
   abstract: true
   components:
@@ -47,10 +48,10 @@
     stepOn: true
 
 - type: entity
-  name: modular mine
-  description: This bad boy could be packing any number of dangers. Or a bike horn.
   parent: BaseLandMine
   id: LandMineModular
+  name: modular mine
+  description: This bad boy could be packing any number of dangers. Or a bike horn.
   components:
   - type: PayloadCase
   - type: Construction
@@ -58,9 +59,9 @@
     node: emptyCase
 
 - type: entity
-  name: explosive mine
   parent: BaseLandMine
   id: LandMineExplosive
+  name: explosive mine
   components:
   - type: ExplodeOnTrigger
   - type: Explosive

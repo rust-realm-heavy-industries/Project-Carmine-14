@@ -1,8 +1,9 @@
+---
 - type: entity
   parent: BaseItem
   id: EmagUnlimited
-  suffix: Unlimited
   name: cryptographic sequencer
+  suffix: Unlimited
   description: A red circuit board with a charge indicator.
   components:
   - type: Emag

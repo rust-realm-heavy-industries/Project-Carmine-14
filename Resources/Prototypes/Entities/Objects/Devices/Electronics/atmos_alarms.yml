@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: AirAlarmElectronics
   parent: BaseElectronics
+  id: AirAlarmElectronics
   name: air alarm electronics
   description: An electronics board used in air alarms
   components:
@@ -17,8 +18,8 @@
     price: 61
 
 - type: entity
-  id: FireAlarmElectronics
   parent: BaseElectronics
+  id: FireAlarmElectronics
   name: fire alarm electronics
   description: An electronics board used in fire alarms
   components:

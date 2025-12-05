@@ -1,8 +1,9 @@
+---
 #Base
 - type: entity
   id: AirlockAssembly
-  abstract: true
   name: airlock assembly
+  abstract: true
   description: It opens, it closes, and maybe crushes you.
   components:
   - type: Clickable

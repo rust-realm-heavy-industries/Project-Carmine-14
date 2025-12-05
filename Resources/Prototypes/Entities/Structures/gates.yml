@@ -1,7 +1,8 @@
+---
 - type: entity
-  abstract: true
   parent: BaseItem
   id: BaseLogicItem
+  abstract: true
   components:
   - type: Sprite
     sprite: Objects/Devices/gates.rsi
@@ -17,8 +18,8 @@
   parent: BaseLogicItem
   id: LogicGateOr
   name: logic gate
-  description: A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
   suffix: Or
+  description: A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
   components:
   - type: Sprite
     layers:

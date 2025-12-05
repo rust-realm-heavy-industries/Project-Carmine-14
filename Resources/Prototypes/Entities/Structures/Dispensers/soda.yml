@@ -1,9 +1,10 @@
+---
 - type: entity
   parent: ReagentDispenserBase
   id: SodaDispenser
   name: soda dispenser
-  description: A beverage dispenser with a selection of soda and several other common beverages. Has a single fill slot for containers.
   suffix: Filled
+  description: A beverage dispenser with a selection of soda and several other common beverages. Has a single fill slot for containers.
   components:
   - type: Rotatable
   - type: Sprite

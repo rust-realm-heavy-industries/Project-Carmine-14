@@ -1,6 +1,7 @@
+---
 - type: entity
-  name: sink
   id: SinkEmpty
+  name: sink
   suffix: Empty
   description: The faucets have been tightened to the maximum possible torque but are still known to drip.
   placement:
@@ -68,9 +69,9 @@
 
 
 - type: entity
-  name: sink
-  id: Sink
   parent: SinkEmpty
+  id: Sink
+  name: sink
   suffix: Water
   components:
   - type: SolutionContainerManager
@@ -83,9 +84,9 @@
           Quantity: 500
 
 - type: entity
-  name: wide sink
-  id: SinkWide
   parent: Sink
+  id: SinkWide
+  name: wide sink
   components:
     - type: Sprite
       sprite: Structures/Furniture/sink.rsi
@@ -102,9 +103,9 @@
 #Stemless Sink
 
 - type: entity
-  name: sink
-  id: SinkStemless
   parent: SinkEmpty
+  id: SinkStemless
+  name: sink
   components:
   - type: Sprite
     sprite: Structures/Furniture/sink.rsi
@@ -115,9 +116,9 @@
         visible: false
 
 - type: entity
-  name: sink
-  id: SinkStemlessWater
   parent: SinkStemless
+  id: SinkStemlessWater
+  name: sink
   suffix: Water
   components:
   - type: SolutionContainerManager

@@ -1,3 +1,4 @@
+---
 # TODO move this to tiles once tile smoothing is supported
 - type: entity
   id: Catwalk
@@ -54,4 +55,4 @@
   - type: RCDDeconstructable
     cost: 2
     delay: 2
-    fx: EffectRCDDeconstruct2  
+    fx: EffectRCDDeconstruct2

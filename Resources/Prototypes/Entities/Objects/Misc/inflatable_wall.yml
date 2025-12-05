@@ -1,3 +1,4 @@
+---
 - type: entity
   id: InflatableWall
   name: inflatable barricade
@@ -40,9 +41,9 @@
     mode: SnapgridCenter
 
 - type: entity
+  parent: BaseMaterialDoor
   id: InflatableDoor
   name: inflatable door
-  parent: BaseMaterialDoor
   description: An inflated membrane. Activate to deflate. Now with a door. Do not puncture.
   components:
   - type: Clickable

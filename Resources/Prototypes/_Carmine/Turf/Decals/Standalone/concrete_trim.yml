@@ -1,4 +1,5 @@
-﻿- type: decal
+---
+- type: decal
   id: OldConcreteTrimBox
   sprite:
     sprite: Decals/concretetrim.rsi

@@ -1,7 +1,8 @@
+---
 - type: entity
   parent: BaseItem
-  abstract: true
   id: BasePayload
+  abstract: true
   components:
   - type: Appearance
   - type: Sprite
@@ -20,9 +21,9 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  name: explosive payload
   parent: BasePayload
   id: ExplosivePayload
+  name: explosive payload
   components:
   - type: Sprite
     sprite: Objects/Devices/payload.rsi
@@ -32,7 +33,7 @@
     # same as the standard grenade, but those numbers were also just picked out of a hat.
     maxIntensity: 200
     intensitySlope: 60
-    totalIntensity: 2000  
+    totalIntensity: 2000
     canCreateVacuum: false
   - type: ExplodeOnTrigger
   - type: Destructible
@@ -51,9 +52,9 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  name: chemical payload
   parent: BasePayload
   id: ChemicalPayload
+  name: chemical payload
   description: A chemical payload. Has space to store two beakers. In combination with a trigger and a case, this can be used to initiate chemical reactions.
   components:
   - type: Sprite
@@ -87,9 +88,9 @@
     price: 60
 
 - type: entity
-  name: flash payload
   parent: BasePayload
   id: FlashPayload
+  name: flash payload
   description: A single-use flash payload.
   components:
     - type: Sprite

@@ -1,3 +1,4 @@
+---
 # The "Default Language" other than Universal.
 - type: language
   id: TauCetiBasic
@@ -46,7 +47,7 @@
       - ce
       - cer
       - chun
-      -	ci
+      - ci
       - cion
       - coj
       - cor
@@ -131,7 +132,7 @@
       - li
       - liao
       - lib
-      -	ling
+      - ling
       - lis
       - lo
       - lon

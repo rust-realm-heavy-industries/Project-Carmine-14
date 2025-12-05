@@ -1,7 +1,8 @@
+---
 - type: entity
-  name: NT-21 'Church Organ' electronic warfare muffler
   parent: BaseStructure
   id: EwarDevice
+  name: NT-21 'Church Organ' electronic warfare muffler
   description: This device will disrupt any nearby outgoing radio communication as well as suit sensors when activated.
   components:
   - type: Sprite

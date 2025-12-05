@@ -1,6 +1,7 @@
+---
 - type: Interaction
-  id: BaseHelp
   parent: [BaseDangerous, BaseHands]
+  id: BaseHelp
   abstract: true
   priority: -5
   cooldown: 4
@@ -15,8 +16,8 @@
 
 # Combines waking up, helping from stun, and forcing to stand.
 - type: Interaction
-  id: HelpUp
   parent: [BaseHelp, BaseGlobal]
+  id: HelpUp
   delay: 1.5
   cooldown: 0.5
   hideByRequirement: true
@@ -40,8 +41,8 @@
       timeAdded: -2.5 # 2 seconds delay to remove 2.5 seconds of stun - should be good enough.
 
 - type: Interaction
-  id: ForceDown
   parent: [BaseHelp, BaseGlobal]
+  id: ForceDown
   delay: 4.5
   hideByRequirement: true
   requirement:
@@ -52,8 +53,8 @@
     makeLaying: true
 
 - type: Interaction
-  id: MakeSleepOther
   parent: [BaseHelp, BaseGlobal]
+  id: MakeSleepOther
   priority: -6
   delay: 10 # Should be long enough to be non-abusable, right?
   hideByRequirement: true
@@ -71,8 +72,8 @@
 
 # Shake the target to wake them up and sober them up a little bit
 - type: Interaction
-  id: ShakeOther
   parent: [BaseHelp, BaseGlobal]
+  id: ShakeOther
   priority: -5
   delay: 0.8
   cooldown: 10 # Slightly abusable

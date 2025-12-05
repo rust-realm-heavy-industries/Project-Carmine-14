@@ -1,8 +1,9 @@
+---
 - type: entity
-  name: first aid kit
-  description: It's an emergency medical kit for those serious boo-boos.
   parent: BaseStorageItem
   id: Medkit
+  name: first aid kit
+  description: It's an emergency medical kit for those serious boo-boos.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/firstaidkits.rsi

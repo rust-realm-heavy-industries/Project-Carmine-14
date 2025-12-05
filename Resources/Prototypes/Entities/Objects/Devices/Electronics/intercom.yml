@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: IntercomElectronics
   parent: BaseElectronics
+  id: IntercomElectronics
   name: intercom electronics
   description: An electronics board used in intercoms
   components:

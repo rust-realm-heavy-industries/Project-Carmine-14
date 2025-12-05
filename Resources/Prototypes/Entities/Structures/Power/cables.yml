@@ -1,6 +1,7 @@
-﻿- type: entity
-  abstract: true
+---
+- type: entity
   id: CableBase
+  abstract: true
   placement:
     mode: SnapgridCenter
   components:

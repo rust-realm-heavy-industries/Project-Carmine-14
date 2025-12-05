@@ -1,7 +1,8 @@
+---
 #Normal windoors
 - type: entity
-  id: BaseWindoor
   parent: BaseStructure
+  id: BaseWindoor
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -157,8 +158,8 @@
     - KnockOn
 
 - type: entity
-  id: BaseSecureWindoor
   parent: BaseWindoor
+  id: BaseSecureWindoor
   abstract: true
   components:
   - type: Sprite
@@ -211,8 +212,8 @@
 
 #Plasma Windoors
 - type: entity
-  id: BasePlasmaWindoor
   parent: BaseWindoor
+  id: BasePlasmaWindoor
   abstract: true
   components:
   - type: Sprite
@@ -265,8 +266,8 @@
     resistance: 4
 
 - type: entity
-  id: BaseSecurePlasmaWindoor
   parent: BaseWindoor
+  id: BaseSecurePlasmaWindoor
   abstract: true
   components:
   - type: Sprite
@@ -321,8 +322,8 @@
 
 #Uranium Windoors
 - type: entity
-  id: BaseUraniumWindoor
   parent: BaseWindoor
+  id: BaseUraniumWindoor
   abstract: true
   components:
   - type: Sprite
@@ -375,8 +376,8 @@
     resistance: 5
 
 - type: entity
-  id: BaseSecureUraniumWindoor
   parent: BaseWindoor
+  id: BaseSecureUraniumWindoor
   abstract: true
   components:
   - type: Sprite

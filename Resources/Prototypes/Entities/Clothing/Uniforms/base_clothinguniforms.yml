@@ -1,7 +1,8 @@
+---
 - type: entity
-  abstract: true
   parent: Clothing
   id: UnsensoredClothingUniformBase
+  abstract: true
   components:
   - type: Sprite
     state: icon
@@ -48,9 +49,9 @@
         friction: 0.2
 
 - type: entity
-  abstract: true
   parent: UnsensoredClothingUniformBase
   id: UnsensoredClothingUniformSkirtBase
+  abstract: true
   components:
   - type: Clothing
     slots: [innerclothing]
@@ -61,9 +62,9 @@
     - ClothMade
 
 - type: entity
-  abstract: true
   parent: UnsensoredClothingUniformBase
   id: ClothingUniformBase
+  abstract: true
   components:
   - type: SuitSensor
   - type: DeviceNetwork
@@ -75,9 +76,9 @@
   - type: StationLimitedNetwork
 
 - type: entity
-  abstract: true
   parent: ClothingUniformBase
   id: ClothingUniformSkirtBase
+  abstract: true
   components:
   - type: Clothing
     slots: [innerclothing]
@@ -168,9 +169,9 @@
       visible: true
 
 - type: entity
-  abstract: true
   parent: UnsensoredClothingUniformBase
   id: UnsensoredClothingUniformEnvirosuitBase
+  abstract: true
   components:
   - type: IgniteFromGasImmunity
     parts:
@@ -210,9 +211,9 @@
     guides: [ Plasmaman ]
 
 - type: entity
-  abstract: true
   parent: UnsensoredClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitBase
+  abstract: true
   components:
   - type: SuitSensor
   - type: DeviceNetwork
@@ -223,9 +224,9 @@
   - type: StationLimitedNetwork
 
 - type: entity
-  abstract: true
   parent: UnsensoredClothingUniformEnvirosuitBase
   id: UnsensoredClothingUniformEnvirosuitCustomBase
+  abstract: true
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Envirosuits/custom.rsi
@@ -260,9 +261,9 @@
         color: "#bababa" # Recommended default soles color
 
 - type: entity
-  abstract: true
   parent: UnsensoredClothingUniformEnvirosuitCustomBase
   id: ClothingUniformEnvirosuitCustomBase
+  abstract: true
   components:
   - type: SuitSensor
   - type: DeviceNetwork
@@ -273,8 +274,8 @@
   - type: StationLimitedNetwork
 
 - type: entity
-  abstract: true
   id: ClothingUniformFoldableBase
+  abstract: true
   components:
   - type: Foldable
     canFoldInsideContainer: true
