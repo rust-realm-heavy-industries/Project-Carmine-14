@@ -31,5 +31,5 @@
     <hotbar:HotbarGui Name="Hotbar" Access="Protected" />
     <targeting:TargetingControl Name="Targeting" Access="Protected"/> <!-- Shitmed Change -->
     <chat:ResizableChatBox Name="Chat" Access="Protected" />
-    <alerts:AlertsUI Name="Alerts" Access="Protected" />
+    <alerts:AlertsUI Name="Alerts" Access="Protected" HorizontalAlignment="Left" />
 </screens:OverlayChatGameScreen>

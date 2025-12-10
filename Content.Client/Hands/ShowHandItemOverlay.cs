@@ -66,7 +66,7 @@ namespace Content.Client.Hands
 
             var screen = args.ScreenHandle;
             var offset = _cfg.GetCVar(CCVars.HudHeldItemOffset);
-            var offsetVec = new Vector2(offset, offset);
+            var offsetVec = new Vector2(offset - 300, offset); //CARMINE: CHEATY FIX FOR GARGOYLE, IT JUST OFFSETS IT BY THE MINWIDTH AS A LITERAL
 
             if (IconOverride != null)
             {

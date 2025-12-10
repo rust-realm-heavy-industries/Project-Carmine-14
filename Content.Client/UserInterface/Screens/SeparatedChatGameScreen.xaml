@@ -12,29 +12,48 @@
     xmlns:inventory="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Widgets"
     xmlns:targeting="clr-namespace:Content.Client._Shitmed.UserInterface.Systems.Targeting.Widgets"
     xmlns:combatMode="clr-namespace:Content.Client._White.UserInterface.Systems.CombatMode.Widgets"
+    xmlns:partStatus="clr-namespace:Content.Client._Shitmed.UserInterface.Systems.PartStatus.Widgets"
     Name="SeparatedChatHud"
     VerticalExpand="False"
     VerticalAlignment="Bottom"
     HorizontalAlignment="Center">
-    <controls:RecordedSplitContainer Name="ScreenContainer" HorizontalExpand="True" VerticalExpand="True" SplitWidth="0" StretchDirection="TopLeft">
-        <LayoutContainer Name="ViewportContainer" HorizontalExpand="True" VerticalExpand="True">
-            <controls:MainViewport Name="MainViewport"/>
-            <widgets:GhostGui Name="Ghost" Access="Protected" />
-            <inventory:InventoryGui Name="Inventory" Access="Protected"/>
-            <hotbar:HotbarGui Name="Hotbar" Access="Protected"/>
-            <!-- WD EDIT START -->
-            <BoxContainer Name="BottomRight" Align="End" SeparationOverride="3" Access="Protected">
-                <combatMode:CombatModeGui Name="CombatMode" Access="Protected"/>
-                <targeting:TargetingControl Name="Targeting" Access="Protected"/>
-            </BoxContainer>
-            <!-- WD EDIT END -->
-            <BoxContainer Name="TopLeftContainer" Orientation="Vertical">
-                <actions:ActionsBar Name="Actions" Access="Protected" />
-                <BoxContainer Name="VoteMenu" Access="Public" Orientation="Vertical"/>
-            </BoxContainer>
-            <alerts:AlertsUI Name="Alerts" Access="Protected" />
-        </LayoutContainer>
-        <PanelContainer HorizontalExpand="True" MinWidth="300" StyleClasses="ChatMainPanel">
+
+    <SplitContainer
+        Name="LeftContainer"
+        HorizontalExpand="True"
+        VerticalExpand="True"
+        SplitWidth="0"
+        StretchDirection="TopLeft"
+        ResizeMode="NotResizable"
+        MouseFilter="Stop"
+    >
+            <LayoutContainer Name="Gargoyle" SetSize="300 1080" StyleClasses="ChatMainPanel">
+                <TextureRect Name="Background" TexturePath="/Textures/_Carmine/Interface/test.png" SetSize="300 1080"/>
+                <actions:ActionsBar Name="Actions" Margin="-64 0 0 32"/>
+                <alerts:AlertsUI Name="Alerts" Margin="0 0 -200 0"/>
+                <inventory:InventoryGui Name="Inventory"/>
+                <hotbar:HotbarGui Name="Hotbar"/>
+                <partStatus:PartStatusControl Name="PartStatus" Margin="-167 -478 0 0"/>
+                <combatMode:CombatModeGui Name="CombatMode" Margin="-164 -64 0 0"/>
+                <targeting:TargetingControl Name="Targeting" Margin="0 -64 -64 0"/>
+            </LayoutContainer>
+
+        <SplitContainer
+            Name="RightContainer"
+            HorizontalExpand="True"
+            VerticalExpand="True"
+            SplitWidth="0"
+            StretchDirection="TopLeft"
+            ResizeMode="NotResizable"
+        >
+            <LayoutContainer Name="ViewportContainer" HorizontalExpand="True" VerticalExpand="True">
+                <controls:MainViewport Name="MainViewport"/>
+                <widgets:GhostGui Name="Ghost" HorizontalAlignment="Center" VerticalAlignment="Bottom" Access="Protected"/>
+                <BoxContainer Name="VoteMenu" Access="Public"/>
+            </LayoutContainer>
+
+        <!-- Chat -->
+        <PanelContainer MinSize="300 1080" HorizontalAlignment="Right" StyleClasses="ChatMainPanel">
             <BoxContainer Orientation="Vertical" HorizontalExpand="True" SeparationOverride="10" Margin="10">
                 <PanelContainer StyleClasses="TopButtonChat">
                     <menuBar:GameTopMenuBar Name="TopBar" HorizontalExpand="True" Access="Protected" />
@@ -42,5 +61,8 @@
                 <chat:ChatBox VerticalExpand="True" HorizontalExpand="True" Name="Chat" Access="Protected" MinSize="0 0"/>
             </BoxContainer>
         </PanelContainer>
-    </controls:RecordedSplitContainer>
+        <!-- Chat -->
+
+        </SplitContainer>
+    </SplitContainer>
 </screens:SeparatedChatGameScreen>

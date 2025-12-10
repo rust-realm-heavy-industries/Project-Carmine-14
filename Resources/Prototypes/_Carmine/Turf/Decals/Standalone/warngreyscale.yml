@@ -3,48 +3,12 @@
   sprite:
     sprite: Decals/markings.rsi
     state: warn_box_greyscale
-    
-- type: decal
-  id: WarnEndGreyscale
-  sprite:
-    sprite: Decals/markings.rsi
-    state: warn_end_greyscale
-    
+
 - type: decal
   id: WarnFullGreyscale
   sprite:
     sprite: Decals/markings.rsi
     state: warn_full_greyscale
-    
-- type: decal
-  id: WarningLineGreyscale
-  sprite:
-    sprite: Decals/markings.rsi
-    state: warningline_greyscale
-    
-- type: decal
-  id: WarningLineCornerGreyscale
-  sprite:
-    sprite: Decals/markings.rsi
-    state: warninglinecorner_greyscale
-    
-- type: decal
-  id: WarningLineCornerFlippedGreyscale
-  sprite:
-    sprite: Decals/markings.rsi
-    state: warninglinecorner_flipped_greyscale
-
-- type: decal
-  id: WarnCornerGreyscale
-  sprite:
-    sprite: Decals/markings.rsi
-    state: warn_corner_greyscale
-
-- type: decal
-  id: WarnCornerFlippedGreyscale
-  sprite:
-    sprite: Decals/markings.rsi
-    state: warn_corner_flipped_greyscale
 
 - type: decal
   id: WarnCornerGreyscaleNE

@@ -156,6 +156,7 @@ namespace Content.Client.Chat.UI
             var screenPos = lowerCenter - new Vector2(ContentSize.X / 2, ContentSize.Y + _verticalOffsetAchieved);
             // Round to nearest 0.5
             screenPos = (screenPos * 2).Rounded() / 2;
+            screenPos.X -= 300; //CARMINE: CHEATY FIX FOR GARGOYLE, IT JUST OFFSETS IT BY THE MINWIDTH AS A LITERAL
             LayoutContainer.SetPosition(this, screenPos);
 
             var height = MathF.Ceiling(MathHelper.Clamp(lowerCenter.Y - screenPos.Y, 0, ContentSize.Y));

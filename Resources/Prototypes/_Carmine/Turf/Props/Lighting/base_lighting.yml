@@ -98,7 +98,6 @@
   - type: Sprite
     sprite: Structures/Wallmounts/lightbulbcaged.rsi
     state: base
-    offset: 0, -0.75
     drawdepth: WallMountedItems
     layers:
     - map: ["enum.PoweredLightLayers.Base"]
@@ -111,7 +110,7 @@
     energy: 0.5
     radius: 5
     softness: 1.1
-    offset: "0, -1"
+    offset: "0, -0.5"
     enabled: true
 
 - type: entity
@@ -129,7 +128,7 @@
   - type: Construction
     graph: LightFixture
     node: bulbLight
-      
+
 - type: entity
   id: SmallLightFixture
   suffix: Carmine
@@ -140,8 +139,8 @@
     bulb: Bulb
     damage:
       types:
-        Heat: 2     
-       
+        Heat: 2
+
 - type: entity
   name: light tube
   description: "An always powered light tube."
@@ -152,7 +151,6 @@
   - type: Sprite
     sprite: Structures/Wallmounts/Lighting/light_tube.rsi
     state: base
-    offset: 0, -0.75
     drawdepth: WallMountedItems
     layers:
     - map: ["enum.PoweredLightLayers.Base"]
@@ -165,9 +163,9 @@
     energy: 0.5
     radius: 7
     softness: 1.1
-    offset: "0, -1"
+    offset: "0, -0.5"
     enabled: true
-    
+
 - type: entity
   name: light tube
   description: "A light fixture. Draws power and produces light when equipped with a light bulb."

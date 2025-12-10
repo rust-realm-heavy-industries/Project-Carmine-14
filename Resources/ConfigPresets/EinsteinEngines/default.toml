@@ -53,3 +53,7 @@ map_enabled = true
 
 #[worldgen]
 #enabled = true
+
+# Square viewport
+[viewport]
+maximum_width = 15

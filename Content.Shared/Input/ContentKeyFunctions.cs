@@ -102,8 +102,14 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction Hotbar7 = "Hotbar7";
         public static readonly BoundKeyFunction Hotbar8 = "Hotbar8";
         public static readonly BoundKeyFunction Hotbar9 = "Hotbar9";
+        public static readonly BoundKeyFunction Hotbar10 = "Hotbar10";
+        public static readonly BoundKeyFunction Hotbar11 = "Hotbar11";
+        public static readonly BoundKeyFunction Hotbar12 = "Hotbar12";
+        public static readonly BoundKeyFunction Hotbar13 = "Hotbar13";
+        public static readonly BoundKeyFunction Hotbar14 = "Hotbar14";
+
         public static BoundKeyFunction[] GetHotbarBoundKeys() =>
-            new[] { Hotbar1, Hotbar2, Hotbar3, Hotbar4, Hotbar5, Hotbar6, Hotbar7, Hotbar8, Hotbar9, Hotbar0, };
+            new[] { Hotbar0, Hotbar1, Hotbar2, Hotbar3, Hotbar4, Hotbar5, Hotbar6, Hotbar7, Hotbar8, Hotbar9, Hotbar10, Hotbar11, Hotbar12, Hotbar13, Hotbar14};
 
         public static readonly BoundKeyFunction Loadout0 = "Loadout0";
         public static readonly BoundKeyFunction Loadout1 = "Loadout1";

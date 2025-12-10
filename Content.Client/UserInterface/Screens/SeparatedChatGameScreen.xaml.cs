@@ -15,25 +15,28 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
 
         AutoscaleMaxResolution = new Vector2i(1080, 770);
 
-        SetAnchorPreset(ScreenContainer, LayoutPreset.Wide);
+        SetAnchorPreset(LeftContainer, LayoutPreset.Wide);
         SetAnchorPreset(ViewportContainer, LayoutPreset.Wide);
         SetAnchorPreset(MainViewport, LayoutPreset.Wide);
-        SetAnchorAndMarginPreset(Inventory, LayoutPreset.BottomLeft, margin: 5);
-        SetAnchorAndMarginPreset(TopLeftContainer, LayoutPreset.TopLeft, margin: 10);
         SetAnchorAndMarginPreset(Ghost, LayoutPreset.BottomWide, margin: 80);
-        SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 5);
-        SetAnchorAndMarginPreset(Alerts, LayoutPreset.TopRight, margin: 10);
-        SetAnchorAndMarginPreset(BottomRight, LayoutPreset.BottomRight, margin: 5); // WD EDIT
 
-        ScreenContainer.OnSplitResizeFinished += () =>
-            OnChatResized?.Invoke(new Vector2(ScreenContainer.SplitFraction, 0));
+        SetAnchorPreset(Background, LayoutPreset.Wide);
+        SetAnchorPreset(Inventory, LayoutPreset.BottomLeft);
+        SetAnchorPreset(Actions, LayoutPreset.TopRight);
+        SetAnchorPreset(Hotbar, LayoutPreset.CenterLeft);
+        SetAnchorPreset(Alerts, LayoutPreset.TopLeft);
+        SetAnchorPreset(CombatMode, LayoutPreset.BottomRight);
+        SetAnchorPreset(PartStatus, LayoutPreset.BottomRight);
+        SetAnchorPreset(Targeting, LayoutPreset.BottomLeft);
+
+        LeftContainer.OnSplitResizeFinished += () =>
+            OnChatResized?.Invoke(new Vector2(LeftContainer.SplitFraction, 0));
     }
 
     public override ChatBox ChatBox => GetWidget<ChatBox>()!;
 
     public override void SetChatSize(Vector2 size)
     {
-        ScreenContainer.DesiredSplitCenter = size.X;
-        ScreenContainer.ResizeMode = SplitContainer.SplitResizeMode.RespectChildrenMinSize;
+
     }
 }
