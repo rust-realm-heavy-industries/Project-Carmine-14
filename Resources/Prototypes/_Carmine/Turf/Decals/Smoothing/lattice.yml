@@ -1,94 +1,95 @@
+---
 - type: decal
-  id: LatticeEdgeN
   parent: Lattice
+  id: LatticeEdgeN
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: EdgeN
 
 - type: decal
-  id: LatticeEdgeE
   parent: Lattice
+  id: LatticeEdgeE
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: EdgeE
 
 - type: decal
-  id: LatticeEdgeS
   parent: Lattice
+  id: LatticeEdgeS
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: EdgeS
 
 - type: decal
-  id: LatticeEdgeW
   parent: Lattice
+  id: LatticeEdgeW
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: EdgeW
 
 - type: decal
-  id: LatticeCornerNE
   parent: Lattice
+  id: LatticeCornerNE
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: CornerNE
 
 - type: decal
-  id: LatticeCornerNW
   parent: Lattice
+  id: LatticeCornerNW
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: CornerNW
 
 - type: decal
-  id: LatticeCornerSE
   parent: Lattice
+  id: LatticeCornerSE
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: CornerSE
 
 - type: decal
-  id: LatticeCornerSW
   parent: Lattice
+  id: LatticeCornerSW
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: CornerSW
 
 - type: decal
-  id: LatticeOuterCornerNE
   parent: Lattice
+  id: LatticeOuterCornerNE
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: OuterNE
 
 - type: decal
-  id: LatticeOuterCornerNW
   parent: Lattice
+  id: LatticeOuterCornerNW
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: OuterNW
 
 - type: decal
-  id: LatticeOuterCornerSE
   parent: Lattice
+  id: LatticeOuterCornerSE
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi
     state: OuterSE
 
 - type: decal
-  id: LatticeOuterCornerSW
   parent: Lattice
+  id: LatticeOuterCornerSW
   tags: ["station", "markings"]
   sprite:
     sprite: _Crescent/Decals/lattice.rsi

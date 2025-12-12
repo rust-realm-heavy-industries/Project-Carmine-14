@@ -1,9 +1,10 @@
+---
 - type: entity
   parent: BaseItem
   id: BaseHandheldStationMap
   name: station map
-  description: Displays a readout of the current station.
   abstract: true
+  description: Displays a readout of the current station.
   components:
     - type: StationMap
     - type: Sprite
@@ -32,15 +33,15 @@
           type: StationMapBoundUserInterface
 
 - type: entity
-  id: HandheldStationMap
   parent:
   - BaseHandheldStationMap
   - BaseHandheldComputer
+  id: HandheldStationMap
   suffix: Handheld, Powered
 
 - type: entity
-  id: HandheldStationMapEmpty
   parent: HandheldStationMap
+  id: HandheldStationMapEmpty
   suffix: Handheld, Empty
   components:
   - type: ItemSlots
@@ -49,6 +50,6 @@
         name: power-cell-slot-component-slot-name-default
 
 - type: entity
-  id: HandheldStationMapUnpowered
   parent: BaseHandheldStationMap
+  id: HandheldStationMapUnpowered
   suffix: Handheld, Unpowered

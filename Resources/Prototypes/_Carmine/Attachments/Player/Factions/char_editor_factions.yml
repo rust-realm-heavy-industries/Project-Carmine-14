@@ -1,6 +1,7 @@
+---
 - type: faction
-  name: "Iron Concord"
   id: IC
+  name: "Iron Concord"
   descriptionPrefix: |
     Rewrite me sometime.
   buttonColor: DarkSlateBlue
@@ -14,8 +15,8 @@
     state: iron
 
 - type: faction
-  name: "Invern-Sykes"
   id: IS
+  name: "Invern-Sykes"
   descriptionPrefix: |
     Rewrite me sometime.
   buttonColor: "#a46106"
@@ -29,8 +30,8 @@
     state: invern
 
 - type: faction
-  name: "Coalition"
   id: CL
+  name: "Coalition"
   descriptionPrefix: |
     Rewrite me sometime.
   buttonColor: DarkSlateGray
@@ -44,8 +45,8 @@
     state: coalition
 
 - type: faction
-  name: "Khandan Keyvan"
   id: KV
+  name: "Khandan Keyvan"
   descriptionPrefix: |
     Rewrite me sometime.
   buttonColor: DarkSlateGray

@@ -1,8 +1,9 @@
+---
 # heats an entity or solution placed on it
 - type: entity
-  abstract: true
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   id: BaseHeaterMachine
+  abstract: true
   components:
   - type: Transform
     anchored: true

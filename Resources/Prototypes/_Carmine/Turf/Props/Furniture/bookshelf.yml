@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: Bookshelf
   parent: BaseStructure
+  id: Bookshelf
   name: "bookshelf"
   description: Mostly filled with books.
   components:

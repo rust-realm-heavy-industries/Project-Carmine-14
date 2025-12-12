@@ -1,6 +1,7 @@
-﻿- type: entity
-  id: WorldChunk
+---
+- type: entity
   parent: MarkerBase
+  id: WorldChunk
   name: World Chunk
   description: |
     It's rude to stare.

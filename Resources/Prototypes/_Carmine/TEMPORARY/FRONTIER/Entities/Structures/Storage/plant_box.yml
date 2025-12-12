@@ -1,8 +1,9 @@
-﻿- type: entity
+---
+- type: entity
+  parent: BaseStructureDynamic
   id: PlantBox
   name: plant box
   description: A large storage container for holding plants and seeds.
-  parent: BaseStructureDynamic
   components:
   - type: StaticPrice
     price: 625

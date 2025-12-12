@@ -1,3 +1,4 @@
+---
 - type: entity
   id: Torch2
   name: torch

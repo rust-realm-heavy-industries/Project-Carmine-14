@@ -1,7 +1,8 @@
+---
 - type: entity
-  abstract: true
   parent: BaseItem
   id: SheetOtherBase
+  abstract: true
   description: A sheet of material, used often on the station in various applications.
   components:
   - type: Sprite

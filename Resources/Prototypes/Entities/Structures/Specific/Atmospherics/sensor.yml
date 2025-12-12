@@ -1,3 +1,4 @@
+---
 - type: entity
   id: AirSensorBase
   abstract: true
@@ -30,10 +31,10 @@
         - AirSensor
 
 - type: entity
+  parent: AirSensorBase
   id: AirSensor
   name: air sensor
   description: Air sensor. It senses air.
-  parent: AirSensorBase
   placement:
     mode: SnapgridCenter
   components:

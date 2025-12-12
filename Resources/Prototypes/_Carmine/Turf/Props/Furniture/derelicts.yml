@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: DerelictRecycler
   parent: [BaseStructure, BaseMachinePowered]
+  id: DerelictRecycler
   name: industrial materials recycler
   description: A crude industrial recycler, somehow it still has sparks of activity. Inserting basic objects grinds them up into basic materials re-use.
   components:
@@ -48,10 +49,10 @@
         layer:
         - WallLayer
         density: 200
-        
+
 - type: entity
-  id: DerelictRecorder
   parent: [BaseStructure, BaseMachinePowered]
+  id: DerelictRecorder
   name: server recorder
   description: An abandoned reel to reel tape drive for a server system.
   components:
@@ -108,8 +109,8 @@
   - type: PowerSwitch
 
 - type: entity
-  id: DerelictRack
   parent: [BaseStructure, BaseMachinePowered]
+  id: DerelictRack
   name: server rack controller
   description: An abandoned controller for a server system.
   components:
@@ -166,8 +167,8 @@
   - type: PowerSwitch
 
 - type: entity
-  id: DerelictGenerator
   parent: BaseStructure
+  id: DerelictGenerator
   name: derelict generator
   description: An abandoned generator lacking proper maintainence. It can no longer generate power.
   components:
@@ -210,8 +211,8 @@
         - WallLayer
 
 - type: entity
-  id: DerelictGeneratorDamaged
   parent: DerelictGenerator
+  id: DerelictGeneratorDamaged
   name: derelict generator
   description: An abandoned generator lacking proper maintainence. It can no longer generate power.
   components:
@@ -247,7 +248,7 @@
   components:
   - type: Sprite
     sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
-    state: derelict_generator_2_r     
+    state: derelict_generator_2_r
 
 - type: entity
   parent: DerelictGenerator
@@ -257,11 +258,11 @@
   components:
   - type: Sprite
     sprite: _Crescent/Structures/Decoration/derelict_generator.rsi
-    state: derelict_generator_3_r   
-    
+    state: derelict_generator_3_r
+
 - type: entity
-  id: DerelictSubstation
   parent: BaseStructure
+  id: DerelictSubstation
   name: derelict substation
   description: An abandoned substation lacking proper maintainence. It doesn't seem to function.
   components:
@@ -304,18 +305,18 @@
         - WallLayer
 
 - type: entity
-  id: DerelictSubstationRust
   parent: DerelictSubstation
+  id: DerelictSubstationRust
   name: rusted derelict substation
   description: An abandoned rusted substation. It doesn't seem to function.
   components:
   - type: Sprite
     sprite: _Crescent/Structures/Decoration/derelict_substation.rsi
     state: derelict_substation_r
-  
+
 - type: entity
-  id: DerelictServerRack
   parent: [BaseStructure, BaseMachinePowered]
+  id: DerelictServerRack
   name: server rack
   description: An abandoned server rack.
   components:

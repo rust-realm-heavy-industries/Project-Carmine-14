@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: BaseAnimalOrganUnGibbable
   parent: BaseItem
+  id: BaseAnimalOrganUnGibbable
   abstract: true
   components:
   - type: Organ
@@ -28,15 +29,15 @@
       - Meat
 
 - type: entity
-  id: BaseAnimalOrgan
   parent: BaseAnimalOrganUnGibbable
+  id: BaseAnimalOrgan
   abstract: true
   components:
   - type: Gibbable
 
 - type: entity
-  id: OrganAnimalLungs
   parent: BaseAnimalOrgan
+  id: OrganAnimalLungs
   name: lungs
   categories: [ HideSpawnMenu ]
   components:
@@ -69,8 +70,8 @@
           Quantity: 5
 
 - type: entity
-  id: OrganAnimalStomach
   parent: BaseAnimalOrgan
+  id: OrganAnimalStomach
   name: stomach
   categories: [ HideSpawnMenu ]
   components:
@@ -98,8 +99,8 @@
     - id: Drink
 
 - type: entity
-  id: OrganMouseStomach
   parent: OrganAnimalStomach
+  id: OrganMouseStomach
   name: stomach
   categories: [ HideSpawnMenu ]
   components:
@@ -109,8 +110,8 @@
         maxVol: 30
 
 - type: entity
-  id: OrganAnimalLiver
   parent: BaseAnimalOrgan
+  id: OrganAnimalLiver
   name: liver
   categories: [ HideSpawnMenu ]
   components:
@@ -127,8 +128,8 @@
   - type: Liver # Shitmed
 
 - type: entity
-  id: OrganAnimalHeart
   parent: BaseAnimalOrgan
+  id: OrganAnimalHeart
   name: heart
   categories: [ HideSpawnMenu ]
   components:
@@ -147,8 +148,8 @@
 
 
 - type: entity
-  id: OrganAnimalKidneys
   parent: BaseAnimalOrgan
+  id: OrganAnimalKidneys
   name: kidneys
   categories: [ HideSpawnMenu ]
   components:

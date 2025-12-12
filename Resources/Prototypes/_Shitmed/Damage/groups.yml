@@ -1,3 +1,4 @@
+---
 - type: damageGroup
   id: OrganFailure
   name: damage-group-organ-failure

@@ -1,3 +1,4 @@
+---
 # they're uninflated by default so they're tiny
 - type: stack
   id: InflatableWall

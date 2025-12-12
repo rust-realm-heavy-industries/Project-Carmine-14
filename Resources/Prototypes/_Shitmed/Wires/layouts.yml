@@ -1,3 +1,4 @@
+---
 - type: wireLayout
   id: Autodoc
   wires:

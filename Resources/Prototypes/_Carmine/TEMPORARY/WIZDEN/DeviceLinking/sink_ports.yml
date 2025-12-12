@@ -1,3 +1,4 @@
+---
 - type: sinkPort
   id: AutoClose
   name: signal-port-name-hold-open

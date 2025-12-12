@@ -1,3 +1,4 @@
+---
 - type: entity
   id: BaseKudzu
   abstract: true
@@ -17,9 +18,9 @@
       id: Kudzu
 
 - type: entity
+  parent: BaseKudzu
   id: Kudzu
   name: kudzu
-  parent: BaseKudzu
   description: A rapidly growing, dangerous plant. WHY ARE YOU STOPPING TO LOOK AT IT?!
   components:
     - type: MeleeSound
@@ -98,17 +99,17 @@
               Quantity: 2
 
 - type: entity
-  id: WeakKudzu
   parent: Kudzu
+  id: WeakKudzu
   suffix: Weak
   components:
     - type: Kudzu
       spreadChance: 0.3
 
 - type: entity
+  parent: BaseKudzu
   id: FleshKudzu
   name: tendons
-  parent: BaseKudzu
   description: A rapidly growing cluster of meaty tendons. WHY ARE YOU STOPPING TO LOOK AT IT?!
   placement:
     mode: SnapgridCenter

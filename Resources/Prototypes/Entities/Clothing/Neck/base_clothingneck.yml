@@ -1,7 +1,8 @@
+---
 - type: entity
-  abstract: true
   parent: Clothing
   id: ClothingNeckBase
+  abstract: true
   components:
   - type: Item
     size: Small
@@ -31,9 +32,9 @@
     - WhitelistChameleon
 
 - type: entity
-  abstract: true
   parent: ClothingNeckBase
   id: ClothingNeckScarfBase
+  abstract: true
   components:
   - type: TemperatureProtection
     coefficient: 0.8 # equivalent to winter boots

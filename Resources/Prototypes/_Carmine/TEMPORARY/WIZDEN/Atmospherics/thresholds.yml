@@ -1,3 +1,4 @@
+---
 - type: alarmThreshold
   id: stationTemperature
   upperBound: !type:AlarmThresholdSetting

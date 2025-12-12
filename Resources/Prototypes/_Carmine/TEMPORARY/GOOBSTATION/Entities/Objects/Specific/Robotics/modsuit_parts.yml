@@ -1,9 +1,10 @@
+---
 - type: entity
-  id: PartModsuit
   parent: BaseItem
+  id: PartModsuit
   name: MOD part
-  description: A part used in MOD construction.
   abstract: true
+  description: A part used in MOD construction.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Specific/Robotics/modsuit_parts.rsi
@@ -18,8 +19,8 @@
   #- type: GuideHelp TODO: Guide
 
 - type: entity
-  id: ModsuitChestplate
   parent: PartModsuit
+  id: ModsuitChestplate
   name: MOD chestplate
   components:
   - type: Sprite
@@ -35,8 +36,8 @@
     - ModsuitChestplate
 
 - type: entity
-  id: ModsuitBoots
   parent: PartModsuit
+  id: ModsuitBoots
   name: MOD boots
   components:
   - type: Sprite
@@ -52,8 +53,8 @@
     - ModsuitBoots
 
 - type: entity
-  id: ModsuitHelmet
   parent: PartModsuit
+  id: ModsuitHelmet
   name: MOD helmet
   components:
   - type: Sprite
@@ -69,8 +70,8 @@
     - ModsuitHelmet
 
 - type: entity
-  id: ModsuitGauntlets
   parent: PartModsuit
+  id: ModsuitGauntlets
   name: MOD gauntlets
   components:
   - type: Sprite
@@ -86,8 +87,8 @@
     - ModsuitGauntlets
 
 - type: entity
-  id: ModsuitShell
   parent: PartModsuit
+  id: ModsuitShell
   name: MOD shell
   components:
   - type: Appearance
@@ -123,8 +124,8 @@
           shell-secured: { state: shell-secured }
 
 - type: entity
-  id: ModsuitPlatingExternal
   parent: PartModsuit
+  id: ModsuitPlatingExternal
   name: MOD standard external plating
   description: A part used in MOD construction.
   components:
@@ -143,8 +144,8 @@
     - ModsuitPlatingExternal
 
 - type: entity
-  id: ModsuitCoreStandard
   parent: PartModsuit
+  id: ModsuitCoreStandard
   name: MOD standard core
   description: Growing in the most lush, fertile areas of the planet Sprout, there is a crystal known as the Heartbloom. These rare, organic piezoelectric crystals are of incredible cultural significance to the artist castes of the Ethereals, owing to their appearance; which is exactly similar to that of an Ethereal's heart. Which one you have in your suit is unclear, but either way, it's been repurposed to be an internal power source for a Modular Outerwear Device.
   components:

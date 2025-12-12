@@ -1,3 +1,4 @@
+---
 #fallback, don't remove
 - type: crescentFactionBiome
   id: default

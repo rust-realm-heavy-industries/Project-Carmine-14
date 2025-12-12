@@ -1,8 +1,9 @@
+---
 - type: entity
-  abstract: true
   parent: BaseItem
   id: SheetGlassBase
   name: glass
+  abstract: true
   description: A sheet of glass, used often on the station in various applications.
   components:
   - type: Sprite
@@ -134,8 +135,8 @@
   parent: SheetGlassBase
   id: SheetRGlass
   name: reinforced glass
-  description: A reinforced sheet of glass.
   suffix: Full
+  description: A reinforced sheet of glass.
   components:
   - type: PhysicalComposition
     materialComposition:
@@ -240,8 +241,8 @@
   parent: SheetGlassBase
   id: SheetPGlass
   name: plasma glass
-  description: A sheet of translucent plasma.
   suffix: Full
+  description: A sheet of translucent plasma.
   components:
   - type: PhysicalComposition
     materialComposition:
@@ -339,8 +340,8 @@
   parent: SheetPGlass
   id: SheetRPGlass
   name: reinforced plasma glass
-  description: A reinforced sheet of translucent plasma.
   suffix: Full
+  description: A reinforced sheet of translucent plasma.
   components:
   - type: PhysicalComposition
     materialComposition:

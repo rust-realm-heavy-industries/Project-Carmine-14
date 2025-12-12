@@ -1,11 +1,12 @@
+---
 # Implanters
 
 - type: entity
-  name: implanter
-  description: A syringe exclusively designed for the injection and extraction of subdermal implants.
-  id: BaseImplanter
   parent: BaseItem
+  id: BaseImplanter
+  name: implanter
   abstract: true
+  description: A syringe exclusively designed for the injection and extraction of subdermal implants.
   components:
     - type: ItemSlots
     - type: ContainerContainer
@@ -55,8 +56,8 @@
             False: {state: implanter0}
 
 - type: entity
-  id: Implanter
   parent: BaseImplanter
+  id: Implanter
   description: A disposable syringe exclusively designed for the injection and extraction of subdermal implants.
   components:
     - type: Tag
@@ -64,10 +65,10 @@
         - Trash
 
 - type: entity
-  id: BaseImplantOnlyImplanterSyndi
   parent: Implanter
-  description: A compact disposable syringe exclusively designed for the injection of subdermal implants.
+  id: BaseImplantOnlyImplanterSyndi
   abstract: true
+  description: A compact disposable syringe exclusively designed for the injection of subdermal implants.
   components:
     - type: Implanter
       currentMode: Inject
@@ -99,9 +100,9 @@
 #Security implanters
 
 - type: entity
+  parent: BaseImplantOnlyImplanterSyndi
   id: TrackingImplanter
   name: tracking implanter
-  parent: BaseImplantOnlyImplanterSyndi
   components:
     - type: Implanter
       implant: TrackingImplant
@@ -109,33 +110,33 @@
 #Traitor implanters
 
 - type: entity
+  parent: BaseImplantOnlyImplanterSyndi
   id: StorageImplanter
   name: storage implanter
-  parent: BaseImplantOnlyImplanterSyndi
   components:
     - type: Implanter
       implant: StorageImplant
 
 - type: entity
+  parent: BaseImplantOnlyImplanterSyndi
   id: FreedomImplanter
   name: freedom implanter
-  parent: BaseImplantOnlyImplanterSyndi
   components:
     - type: Implanter
       implant: FreedomImplant
 
 - type: entity
+  parent: BaseImplantOnlyImplanterSyndi
   id: EmpImplanter
   name: EMP implanter
-  parent: BaseImplantOnlyImplanterSyndi
   components:
     - type: Implanter
       implant: EmpImplant
 
 - type: entity
+  parent: BaseImplantOnlyImplanterSyndi
   id: DnaScramblerImplanter
   name: DNA scrambler implanter
-  parent: BaseImplantOnlyImplanterSyndi
   components:
     - type: Implanter
       implant: DnaScramblerImplant
@@ -143,17 +144,17 @@
 #Nuclear Operative/Special implanters
 
 - type: entity
+  parent: BaseImplantOnlyImplanterSyndi
   id: DeathRattleImplanter
   name: death rattle implanter
-  parent: BaseImplantOnlyImplanterSyndi
   components:
     - type: Implanter
       implant: DeathRattleImplant
 
 - type: entity
+  parent: BaseImplantOnlyImplanterSyndi
   id: DeathAcidifierImplanter
   name: death acidifier implanter
-  parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
     implant: DeathAcidifierImplant

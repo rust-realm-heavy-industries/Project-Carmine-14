@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: Fireplace
   parent: BaseStructure
+  id: Fireplace
   name: fireplace
   description: A place that has fire. Cozy!
   components:
@@ -48,4 +49,4 @@
   - type: AlwaysHot
   - type: Construction # Frontier
     graph: FiresGraph # Frontier
-    node: FireplaceNode # Frontier 
+    node: FireplaceNode # Frontier

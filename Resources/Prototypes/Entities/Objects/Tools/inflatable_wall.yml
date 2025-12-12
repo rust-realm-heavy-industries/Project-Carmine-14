@@ -1,9 +1,10 @@
+---
 - type: entity
-  id: InflatableWallStack
   parent: BaseItem
+  id: InflatableWallStack
   name: inflatable barricade
-  description: A folded membrane which rapidly expands into a large cubical shape on activation.
   suffix: Full
+  description: A folded membrane which rapidly expands into a large cubical shape on activation.
   components:
     - type: Stack
       stackType: InflatableWall
@@ -23,11 +24,11 @@
 # TODO: Add stack sprites + visuals.
 
 - type: entity
-  id: InflatableDoorStack
   parent: BaseItem
+  id: InflatableDoorStack
   name: inflatable door
-  description: A folded membrane which rapidly expands into a large cubical shape on activation.
   suffix: Full
+  description: A folded membrane which rapidly expands into a large cubical shape on activation.
   components:
     - type: Stack
       stackType: InflatableDoor

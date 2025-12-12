@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   id: Holopad
@@ -105,10 +106,10 @@
         acts: ["Destruction"]
 
 - type: entity
-  name: long-range holopad
-  description: "A floor-mounted device for projecting holographic images to similar devices that are far away."
   parent: Holopad
   id: HolopadLongRange
+  name: long-range holopad
+  description: "A floor-mounted device for projecting holographic images to similar devices that are far away."
   components:
   - type: Telephone
     transmissionRange: Map
@@ -118,10 +119,10 @@
     ignoreTelephonesOnSameGrid: true
 
 - type: entity
-  name: quantum entangling holopad
-  description: "An floor-mounted device for projecting holographic images to similar devices at extreme distances."
   parent: Holopad
   id: HolopadUnlimitedRange
+  name: quantum entangling holopad
+  description: "An floor-mounted device for projecting holographic images to similar devices at extreme distances."
   components:
   - type: Telephone
     transmissionRange: Unlimited

@@ -1,3 +1,4 @@
+---
 - type: job
   id: JobLeaderKV
   name: job-name-kv-leader

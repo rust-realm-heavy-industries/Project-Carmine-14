@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: BaseShutter
   parent: BaseStructure
+  id: BaseShutter
   name: shutter
   abstract: true
   description: One shudders to think about what might be behind this shutter.
@@ -93,8 +94,8 @@
 
 
 - type: entity
-  id: ShuttersNormal
   parent: BaseShutter
+  id: ShuttersNormal
   components:
   - type: Occluder
   - type: Construction
@@ -104,8 +105,8 @@
     - board
 
 - type: entity
-  id: ShuttersNormalOpen
   parent: ShuttersNormal
+  id: ShuttersNormalOpen
   suffix: Open
   components:
   - type: Door
@@ -120,8 +121,8 @@
     enabled: false
 
 - type: entity
-  id: ShuttersRadiation
   parent: BaseShutter
+  id: ShuttersRadiation
   name: radiation shutters
   description: A relatively fragile set of shutters, made of radiation blocking lead plates.
   components:
@@ -148,8 +149,8 @@
         acts: ["Destruction"]
 
 - type: entity
-  id: ShuttersRadiationOpen
   parent: ShuttersRadiation
+  id: ShuttersRadiationOpen
   suffix: Open
   components:
   - type: Door
@@ -164,8 +165,8 @@
     enabled: false
 
 - type: entity
-  id: ShuttersWindow
   parent: BaseShutter
+  id: ShuttersWindow
   name: window shutters
   description: The Best (TM) place to see your friends explode!
   components:
@@ -183,8 +184,8 @@
     resistance: 1
 
 - type: entity
-  id: ShuttersWindowOpen
   parent: ShuttersWindow
+  id: ShuttersWindowOpen
   suffix: Open
   components:
   - type: Door
@@ -198,8 +199,8 @@
 
 # Frame for construction
 - type: entity
-  id: ShuttersFrame
   parent: BaseStructureDynamic
+  id: ShuttersFrame
   name: shutter frame
   description: A frame for constructing a shutter.
   components:

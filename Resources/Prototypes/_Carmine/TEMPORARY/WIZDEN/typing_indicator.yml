@@ -1,3 +1,4 @@
+---
 - type: typingIndicator
   id: default
   typingState: default0

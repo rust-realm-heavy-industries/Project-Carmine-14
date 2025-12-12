@@ -1,9 +1,10 @@
-﻿- type: entity
+---
+- type: entity
+  parent: BaseItem
   id: BaseStockPart
   name: stock part
-  parent: BaseItem
-  description: What?
   abstract: true
+  description: What?
   components:
     - type: Sprite
       sprite: Objects/Misc/stock_parts.rsi
@@ -19,11 +20,11 @@
     - type: StockPart # Goobstation
 
 - type: entity
+  parent: BaseStockPart
   id: CapacitorStockPart
   name: capacitor
-  parent: BaseStockPart
-  description: A basic capacitor used in the construction of a variety of devices.
   suffix: Rating 1
+  description: A basic capacitor used in the construction of a variety of devices.
   components:
     - type: Sprite
       state: capacitor
@@ -40,11 +41,11 @@
       stackType: Capacitor
 
 - type: entity
+  parent: BaseStockPart
   id: MicroManipulatorStockPart
   name: manipulator
-  parent: BaseStockPart
-  description: A basic manipulator used in the construction of a variety of devices.
   suffix: Rating 1
+  description: A basic manipulator used in the construction of a variety of devices.
   components:
     - type: Sprite
       state: micro_mani
@@ -58,11 +59,11 @@
         - MicroManipulatorStockPart
 
 - type: entity
+  parent: BaseStockPart
   id: MatterBinStockPart
   name: matter bin
-  parent: BaseStockPart
-  description: A basic matter bin used in the construction of a variety of devices.
   suffix: Rating 1
+  description: A basic matter bin used in the construction of a variety of devices.
   components:
     - type: Sprite
       state: matter_bin

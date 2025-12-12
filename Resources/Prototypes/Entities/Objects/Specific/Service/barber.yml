@@ -1,8 +1,9 @@
+---
 - type: entity
+  parent: BaseItem
   id: BarberScissors
   name: barber scissors
   description: is able to reshape the hairstyle of any crew cut to your liking.
-  parent: BaseItem
   components:
   - type: Sprite
     sprite: Objects/Tools/scissors.rsi

@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: Workbench
   parent: TableBase
+  id: Workbench
   name: workbench
   description: A basic workbench.
   components:
@@ -20,8 +21,8 @@
           acts: [ "Destruction" ]
 
 - type: entity
-  id: WorkbenchAlchemy
   parent: Workbench
+  id: WorkbenchAlchemy
   name: alchemical set
   description: A basic set for experimentation, or drug cooking.
   components:
@@ -31,8 +32,8 @@
       - state: alchemy_set
 
 - type: entity
-  id: WorkbenchHeavy
   parent: Workbench
+  id: WorkbenchHeavy
   name: heavy workbench
   description: A workbench tailor-made for manual industrial labor.
   components:
@@ -42,8 +43,8 @@
       - state: workbench
 
 - type: entity
-  id: WorkbenchTailoring
   parent: Workbench
+  id: WorkbenchTailoring
   name: tailoring workbench
   description: A workbench for weaving clothes and fabric manually.
   components:
@@ -53,8 +54,8 @@
       - state: workbench
 
 - type: entity
-  id: WorkbenchTools
   parent: Workbench
+  id: WorkbenchTools
   name: tools workbench
   description: A workbench with various tools sprawled around.
   components:
@@ -64,8 +65,8 @@
       - state: workbench
 
 - type: entity
-  id: WorkbenchSamples
   parent: Workbench
+  id: WorkbenchSamples
   name: samples workbench
   description: A workbench with samples of peculiar materials neatly organized.
   components:

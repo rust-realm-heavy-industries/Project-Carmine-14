@@ -1,7 +1,8 @@
+---
 - type: entity
-  name: passport
   parent: BaseItem
   id: BasePassport
+  name: passport
   abstract: true
   description: A passport denoting an individual's nationality and identity.
   components:
@@ -20,9 +21,9 @@
       sound: /Audio/SimpleStation14/Items/Handling/book_drop.ogg
 
 - type: entity
-  name: Biesel Republic passport
   parent: BasePassport
   id: BieselPassport
+  name: Biesel Republic passport
   components:
     - type: Sprite
       sprite: _EE/Contractors/Passport.rsi

@@ -1,4 +1,5 @@
-﻿- type: dataset
+---
+- type: dataset
   id: adjectives
   values:
   - adorable

@@ -1,3 +1,4 @@
+---
 - type: sourcePort
   id: OperatingTable
   name: signal-port-name-operating-table

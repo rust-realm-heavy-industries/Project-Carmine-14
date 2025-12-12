@@ -1,9 +1,10 @@
-﻿- type: entity
+---
+- type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatChameleon
   name: beret
-  description: A beret, an artists favorite headwear.
   suffix: Chameleon
+  description: A beret, an artists favorite headwear.
   components:
     - type: Tag
       tags: [] # ignore "WhitelistChameleon" tag

@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: BoxBase
   parent: BaseStorageItem
+  id: BoxBase
   abstract: true
   components:
   - type: Sprite

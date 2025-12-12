@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: [BaseStructureUnanchorable, VendingMachine]
   id: VendingMachineFlatpackVend

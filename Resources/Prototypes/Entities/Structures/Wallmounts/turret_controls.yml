@@ -1,3 +1,4 @@
+---
 - type: entity
   id: WeaponEnergyTurretControlPanelFrame
   name: sentry turret control panel assembly

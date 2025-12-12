@@ -1,7 +1,8 @@
+---
 - type: entity
-  name: radio jammer
   parent: BaseItem
   id: RadioJammer
+  name: radio jammer
   description: This device will disrupt any nearby outgoing radio communication as well as suit sensors when activated.
   components:
   - type: Sprite

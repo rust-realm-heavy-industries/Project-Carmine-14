@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: BaseItem
   id: BaseLightBulb
@@ -67,11 +68,11 @@
     sprite:  Objects/Power/light_tube.rsi
   - type: LightBulb
     bulb: Tube
-    
+
 - type: entity
   parent: BaseLightBulb
-  name: light bulb
   id: LightBulb
+  name: light bulb
   suffix: Carmine
   description: An incandescent light bulb.
   components:
@@ -81,22 +82,22 @@
     lightEnergy: 0.5
     lightRadius: 5
     lightSoftness: 1.1
-    
+
 - type: entity
-  suffix: Broken, Carmine
   parent: LightBulb
-  name: broken light bulb
   id: LightBulbBroken
+  name: broken light bulb
+  suffix: Broken, Carmine
   description: A light bulb.
   components:
   - type: LightBulb
     startingState: Broken
     bulb: Bulb
-    
+
 - type: entity
   parent: BaseLightTube
-  name: light tube
   id: LightTube
+  name: light tube
   suffix: Carmine
   description: A fluorescent light fixture.
   components:
@@ -105,12 +106,12 @@
     lightEnergy: 0.5
     lightRadius: 7
     lightSoftness: 1
-    
+
 - type: entity
-  suffix: Broken, Carmine
   parent: LightTube
-  name: broken light tube
   id: LightTubeBroken
+  name: broken light tube
+  suffix: Broken, Carmine
   description: A light fixture.
   components:
   - type: LightBulb

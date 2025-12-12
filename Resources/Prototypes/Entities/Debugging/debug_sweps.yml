@@ -1,9 +1,10 @@
+---
 - type: entity
-  name: bang stick gibber
   parent: BaseItem
   id: MeleeDebugGib
-  description: hit hard ye
+  name: bang stick gibber
   suffix: DEBUG
+  description: hit hard ye
   components:
   - type: Tag
     tags:
@@ -20,9 +21,9 @@
     sprite: Objects/Weapons/Melee/debug.rsi
 
 - type: entity
-  name: bang stick 100dmg
   parent: MeleeDebugGib
   id: MeleeDebug100
+  name: bang stick 100dmg
   components:
   - type: Tag
     tags:
@@ -33,9 +34,9 @@
         Blunt: 100
 
 - type: entity
-  name: bang stick 200dmg
   parent: MeleeDebugGib
   id: MeleeDebug200
+  name: bang stick 200dmg
   components:
   - type: Tag
     tags:

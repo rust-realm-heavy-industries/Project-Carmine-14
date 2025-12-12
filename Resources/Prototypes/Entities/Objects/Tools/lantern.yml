@@ -1,7 +1,8 @@
-﻿- type: entity
-  name: lantern
+---
+- type: entity
   parent: BaseItem
   id: Lantern
+  name: lantern
   description: The holy light guides the way.
   components:
     - type: HandheldLight

@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: BaseItem
   id: BaseBoardEntity # Board item
@@ -12,8 +13,8 @@
         boardPrototype: Crowbar
 
 - type: entity
-  id: BaseTabletopPiece # Board piece
   parent: BaseItem
+  id: BaseTabletopPiece # Board piece
   abstract: true
   components:
   - type: TabletopDraggable

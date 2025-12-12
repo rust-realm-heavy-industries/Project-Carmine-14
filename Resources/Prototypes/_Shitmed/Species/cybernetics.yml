@@ -1,3 +1,4 @@
+---
 - type: humanoidBaseSprite
   id: MobCyberneticBishopLArm
   baseSprite:

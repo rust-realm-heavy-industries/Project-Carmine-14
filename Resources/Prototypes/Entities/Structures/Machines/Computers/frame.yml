@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: BaseStructureComputer
   parent: BaseStructure
+  id: BaseStructureComputer
   abstract: true
   components:
   - type: Physics
@@ -45,8 +46,8 @@
     - KnockOn
 
 - type: entity
-  id: ComputerFrame
   parent: BaseStructureComputer
+  id: ComputerFrame
   name: computer frame
   description: A computer under construction.
   components:

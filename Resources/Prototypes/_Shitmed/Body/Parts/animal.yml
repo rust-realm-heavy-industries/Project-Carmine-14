@@ -1,3 +1,4 @@
+---
 # Monkey head for borging/transplanting pun pun
 - type: entity
   parent: [PartAnimal, BaseHead]
@@ -10,9 +11,9 @@
     - state: head_m
 
 - type: entity
-  abstract: true
   parent: PartAnimal
   id: BaseCarpPart
+  abstract: true
   components:
   - type: Sprite
     sprite: _Shitmed/Mobs/Aliens/Carps/carp_parts.rsi

@@ -1,3 +1,4 @@
+---
 - type: department
   id: IC
   description: department-IC-description

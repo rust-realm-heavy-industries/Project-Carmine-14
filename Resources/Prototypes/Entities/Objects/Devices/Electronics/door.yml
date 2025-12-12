@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: DoorElectronics
   parent: BaseElectronics
+  id: DoorElectronics
   name: door electronics
   description: An electronics board used in doors and airlocks
   components:

@@ -1,11 +1,12 @@
-﻿# :TODO: Add the destroyed versions of these as a destruction spawn.
+---
+# :TODO: Add the destroyed versions of these as a destruction spawn.
 
 - type: entity
   parent: BaseStructure
   id: StorageTankBase
   name: storage tank
-  description: A liquids storage tank.
   abstract: true
+  description: A liquids storage tank.
   components:
   - type: Sprite
     noRot: true
@@ -59,11 +60,11 @@
 
 # In use
 - type: entity
-  id: StorageTankWide
   parent: StorageTankBase
+  id: StorageTankWide
   name: fuel tank
-  description: A fuel tank. It's used to store high amounts of fuel.
   suffix: Empty
+  description: A fuel tank. It's used to store high amounts of fuel.
   components:
   - type: Sprite
     sprite: Structures/Storage/tanksx64.rsi
@@ -136,8 +137,8 @@
         - WallLayer
 
 - type: entity
-  id: StorageTankFullFuel
   parent: StorageTank2
+  id: StorageTankFullFuel
   suffix: Full
   components:
   - type: SolutionContainerManager
@@ -148,8 +149,8 @@
           Quantity: 1500
 
 - type: entity
-  id: StorageTankHuge
   parent: StorageTankWide
+  id: StorageTankHuge
   suffix: Empty
   components:
   - type: Sprite
@@ -169,8 +170,8 @@
         - WallLayer
 
 - type: entity
-  id: StorageTankHugeFullFuel
   parent: StorageTankHuge
+  id: StorageTankHugeFullFuel
   suffix: Full
   components:
   - type: SolutionContainerManager

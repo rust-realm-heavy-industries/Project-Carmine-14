@@ -1,8 +1,9 @@
+---
 - type: entity
   id: BaseSubdermalImplant
   name: implant
-  description: A microscopic chip that's injected under the skin.
   abstract: true
+  description: A microscopic chip that's injected under the skin.
   components:
   - type: SubdermalImplant
   - type: Tag

@@ -1,6 +1,7 @@
-﻿- type: entity
-  id: BaseBarSign
+---
+- type: entity
   parent: BaseStructure
+  id: BaseBarSign
   name: bar sign
   abstract: true
   components:

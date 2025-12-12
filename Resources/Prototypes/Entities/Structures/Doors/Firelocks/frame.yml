@@ -1,6 +1,7 @@
-﻿- type: entity
-  id: FirelockFrame
+---
+- type: entity
   parent: BaseStructureDynamic
+  id: FirelockFrame
   name: firelock frame
   description: That is a firelock frame.
   components:
@@ -28,7 +29,7 @@
   - type: RCDDeconstructable
     cost: 4
     delay: 6
-    fx: EffectRCDDeconstruct6    
+    fx: EffectRCDDeconstruct6
   - type: Destructible
     thresholds:
     - trigger:

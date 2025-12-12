@@ -1,7 +1,8 @@
-﻿- type: entity
-  abstract: true
-  id: N14GasPipeBase
+---
+- type: entity
   parent: GasPipeBase
+  id: N14GasPipeBase
+  abstract: true
   placement:
     mode: SnapgridCenter
   components:

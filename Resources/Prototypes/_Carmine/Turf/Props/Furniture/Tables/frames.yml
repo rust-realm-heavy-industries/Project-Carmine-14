@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: CounterMetalFrame
   parent: TableBase
+  id: CounterMetalFrame
   name: metal counter frame
   description: Pieces of metal that make the frame of a table.
   components:
@@ -35,8 +36,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  id: TableFrame
   parent: BaseStructure
+  id: TableFrame
   name: table frame
   description: Pieces of metal that make the frame of a table.
   components:

@@ -1,3 +1,4 @@
+---
 - type: alert
   id: ModsuitPower
   icons:

@@ -1,3 +1,4 @@
+---
 #Small lights
 
 - type: entity
@@ -57,9 +58,9 @@
           collection: GlassBreak
 
 - type: entity
+  parent: BaseLightFixture
   id: BasePoweredLightFixture
   suffix: Empty
-  parent: BaseLightFixture
   abstract: true
   components:
   - type: ContainerContainer
@@ -89,11 +90,11 @@
       burned: burned
 
 - type: entity
-  name: small light
-  description: "An always powered light."
-  id: SmallLightFixturePowered
-  suffix: Always Powered, Carmine
   parent: BaseLightFixture
+  id: SmallLightFixturePowered
+  name: small light
+  suffix: Always Powered, Carmine
+  description: "An always powered light."
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/lightbulbcaged.rsi
@@ -115,11 +116,11 @@
     enabled: true
 
 - type: entity
-  name: small light
-  description: "A light fixture. Draws power and produces light when equipped with a light bulb."
-  id: SmallLightFixtureEmpty
-  suffix: Empty, Carmine
   parent: [ BasePoweredLightFixture, SmallLightFixturePowered ]
+  id: SmallLightFixtureEmpty
+  name: small light
+  suffix: Empty, Carmine
+  description: "A light fixture. Draws power and produces light when equipped with a light bulb."
   components:
   - type: PoweredLight #it breaks if you dont specify damage
     bulb: Bulb
@@ -129,25 +130,25 @@
   - type: Construction
     graph: LightFixture
     node: bulbLight
-      
+
 - type: entity
+  parent: SmallLightFixtureEmpty
   id: SmallLightFixture
   suffix: Carmine
-  parent: SmallLightFixtureEmpty
   components:
   - type: PoweredLight
     hasLampOnSpawn: LightBulb
     bulb: Bulb
     damage:
       types:
-        Heat: 2     
-       
+        Heat: 2
+
 - type: entity
-  name: light tube
-  description: "An always powered light tube."
-  id: LightTubeFixturePowered
-  suffix: Always Powered, Carmine
   parent: BaseLightFixture
+  id: LightTubeFixturePowered
+  name: light tube
+  suffix: Always Powered, Carmine
+  description: "An always powered light tube."
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/Lighting/light_tube.rsi
@@ -167,13 +168,13 @@
     softness: 1.1
     offset: "0, -1"
     enabled: true
-    
+
 - type: entity
-  name: light tube
-  description: "A light fixture. Draws power and produces light when equipped with a light bulb."
-  id: LightTubeFixtureEmpty
-  suffix: Empty, Carmine
   parent: [ BasePoweredLightFixture, LightTubeFixturePowered ]
+  id: LightTubeFixtureEmpty
+  name: light tube
+  suffix: Empty, Carmine
+  description: "A light fixture. Draws power and produces light when equipped with a light bulb."
   components:
   - type: PoweredLight #it breaks if you dont specify damage
     bulb: Tube
@@ -185,9 +186,9 @@
     node: tubeLight
 
 - type: entity
+  parent: LightTubeFixtureEmpty
   id: LightTubeFixture
   suffix: Carmine
-  parent: LightTubeFixtureEmpty
   components:
   - type: PoweredLight
     hasLampOnSpawn: LightTube

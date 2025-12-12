@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: PottedPlantBase
   id: N14Plantpot
@@ -80,8 +81,8 @@
 - type: entity
   parent: N14PlantpotDirty1
   id: N14PlantpotBroken1
-  description: A broken plant pot.
   suffix: broken
+  description: A broken plant pot.
   components:
   - type: Sprite
     state: pot-1-broken

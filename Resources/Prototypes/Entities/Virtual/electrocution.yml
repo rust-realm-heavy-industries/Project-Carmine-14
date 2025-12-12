@@ -1,4 +1,5 @@
-﻿# Special entity used to attach to power networks as load when somebody gets electrocuted.
+---
+# Special entity used to attach to power networks as load when somebody gets electrocuted.
 - type: entity
   id: VirtualElectrocutionLoadBase
   abstract: true
@@ -10,8 +11,8 @@
     state: "shock"
 
 - type: entity
-  id: VirtualElectrocutionLoadHVPower
   parent: VirtualElectrocutionLoadBase
+  id: VirtualElectrocutionLoadHVPower
   categories: [ HideSpawnMenu ]
   components:
   - type: NodeContainer
@@ -24,8 +25,8 @@
     drawRate: 50000
 
 - type: entity
-  id: VirtualElectrocutionLoadMVPower
   parent: VirtualElectrocutionLoadBase
+  id: VirtualElectrocutionLoadMVPower
   categories: [ HideSpawnMenu ]
   components:
   - type: NodeContainer
@@ -38,8 +39,8 @@
     drawRate: 50000
 
 - type: entity
-  id: VirtualElectrocutionLoadApc
   parent: VirtualElectrocutionLoadBase
+  id: VirtualElectrocutionLoadApc
   categories: [ HideSpawnMenu ]
   components:
   - type: NodeContainer

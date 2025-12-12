@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: N14WindowBars
   parent: BaseStructure
+  id: N14WindowBars
   name: window bars
   description: Sturdy looking bars blocking access.
   components:
@@ -38,8 +39,8 @@
           nodeGroupID: Apc
 
 - type: entity
-  id: N14WindowBars2
   parent: N14WindowBars
+  id: N14WindowBars2
   components:
     - type: Sprite
       netsync: false

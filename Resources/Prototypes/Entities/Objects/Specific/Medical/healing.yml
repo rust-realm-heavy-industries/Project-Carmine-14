@@ -1,3 +1,4 @@
+---
 - type: entity
   parent: BaseItem
   id: BaseHealingItem
@@ -14,11 +15,11 @@
     price: 0
 
 - type: entity
-  name: ointment
-  description: Used to treat those nasty burns. Less effective on caustic burns.
   parent: BaseHealingItem
   id: Ointment
+  name: ointment
   suffix: Full
+  description: Used to treat those nasty burns. Less effective on caustic burns.
   components:
   - type: Tag
     tags:
@@ -47,8 +48,8 @@
     price: 10 #Was 5, Buffed due to surgery changes
 
 - type: entity
-  id: Ointment1
   parent: Ointment
+  id: Ointment1
   suffix: Single
   components:
   - type: Stack
@@ -56,8 +57,8 @@
     count: 1
 
 - type: entity
-  id: Ointment10Lingering
   parent: Ointment
+  id: Ointment10Lingering
   suffix: 10, Lingering
   components:
   - type: Stack
@@ -65,11 +66,11 @@
     count: 10
 
 - type: entity
-  name: regenerative mesh
-  description: Used to treat even the nastiest burns. Also effective against caustic burns.
   parent: BaseHealingItem
   id: RegenerativeMesh
+  name: regenerative mesh
   suffix: Full
+  description: Used to treat even the nastiest burns. Also effective against caustic burns.
   components:
   - type: Tag
     tags:
@@ -98,8 +99,8 @@
     price: 40 #Was 20, Buffed due to limb damage changes
 
 - type: entity
-  id: OintmentAdvanced1
   parent: RegenerativeMesh
+  id: OintmentAdvanced1
   suffix: Single
   components:
   - type: Stack
@@ -107,11 +108,11 @@
     count: 1
 
 - type: entity
-  name: bruise pack
-  description: A therapeutic gel pack and bandages designed to treat blunt-force trauma.
   parent: BaseHealingItem
   id: Brutepack
+  name: bruise pack
   suffix: Full
+  description: A therapeutic gel pack and bandages designed to treat blunt-force trauma.
   components:
   - type: Tag
     tags:
@@ -135,8 +136,8 @@
     price: 10 #Was 5, Buffed due to limb damage changes
 
 - type: entity
-  id: Brutepack1
   parent: Brutepack
+  id: Brutepack1
   suffix: Single
   components:
   - type: Stack
@@ -144,8 +145,8 @@
     count: 1
 
 - type: entity
-  id: Brutepack10Lingering
   parent: Brutepack
+  id: Brutepack10Lingering
   suffix: 10, Lingering
   components:
   - type: Stack
@@ -153,11 +154,11 @@
     count: 10
 
 - type: entity
-  name: medicated suture
-  description: A suture soaked in medicine, treats blunt-force trauma effectively and closes wounds.
   parent: BaseHealingItem
   id: MedicatedSuture
+  name: medicated suture
   suffix: Full
+  description: A suture soaked in medicine, treats blunt-force trauma effectively and closes wounds.
   components:
   - type: Tag
     tags:
@@ -185,8 +186,8 @@
     price: 40 #Was 20, Buffed due to limb damage changes
 
 - type: entity
-  id: BrutepackAdvanced1
   parent: MedicatedSuture
+  id: BrutepackAdvanced1
   suffix: Single
   components:
   - type: Stack
@@ -194,11 +195,11 @@
     count: 1
 
 - type: entity
-  name: blood pack
-  description: Contains a groundbreaking universal blood replacement created by Nanotrasen's advanced medical science.
   parent: BaseHealingItem
   id: Bloodpack
+  name: blood pack
   suffix: Full
+  description: Contains a groundbreaking universal blood replacement created by Nanotrasen's advanced medical science.
   components:
   - type: Tag
     tags:
@@ -258,11 +259,11 @@
         path: "/Audio/Items/Medical/brutepack_end.ogg"
 
 - type: entity
-  name: roll of gauze
-  description: Some sterile gauze to wrap around bloody stumps.
   parent: BaseHealingItem
   id: Gauze
+  name: roll of gauze
   suffix: Full
+  description: Some sterile gauze to wrap around bloody stumps.
   components:
   - type: Tag
     tags:
@@ -291,16 +292,16 @@
     price: 20 #Was 10, Buffed due to limb damage changes
 
 - type: entity
-  id: Gauze1
   parent: Gauze
+  id: Gauze1
   suffix: Single
   components:
   - type: Stack
     count: 1
 
 - type: entity
-  id: Gauze10Lingering
   parent: Gauze
+  id: Gauze10Lingering
   suffix: 10, Lingering
   components:
   - type: Stack

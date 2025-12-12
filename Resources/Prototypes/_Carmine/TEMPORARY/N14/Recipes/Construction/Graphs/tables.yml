@@ -1,3 +1,4 @@
+---
 - type: constructionGraph
   id: N14TableCounterBarRecipes
   start: start

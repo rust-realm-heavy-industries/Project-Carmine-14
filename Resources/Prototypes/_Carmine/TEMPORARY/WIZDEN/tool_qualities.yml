@@ -1,3 +1,4 @@
+---
 - type: tool
   id: Anchoring
   name: tool-quality-anchoring-name

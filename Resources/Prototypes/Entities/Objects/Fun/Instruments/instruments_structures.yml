@@ -1,7 +1,8 @@
-﻿- type: entity
-  name: piano
+---
+- type: entity
   parent: BasePlaceableInstrumentRotatable
   id: PianoInstrument
+  name: piano
   description: Play Needles Piano Now.
   components:
   - type: Instrument
@@ -11,9 +12,9 @@
   - type: Climbable
 
 - type: entity
-  name: upright piano
   parent: BasePlaceableInstrumentRotatable
   id: UprightPianoInstrument
+  name: upright piano
   description: I said Piannie!
   components:
   - type: Instrument
@@ -23,9 +24,9 @@
   - type: Climbable
 
 - type: entity
-  name: vibraphone
-  id: VibraphoneInstrument
   parent: BasePlaceableInstrumentRotatable
+  id: VibraphoneInstrument
+  name: vibraphone
   description: Good vibes all around.
   components:
   - type: Instrument
@@ -34,9 +35,9 @@
     state: vibraphone
 
 - type: entity
-  name: marimba
-  id: MarimbaInstrument
   parent: BasePlaceableInstrumentRotatable
+  id: MarimbaInstrument
+  name: marimba
   components:
   - type: Instrument
     program: 12
@@ -44,9 +45,9 @@
     state: marimba
 
 - type: entity
-  name: church organ
   parent: BasePlaceableInstrumentRotatable
   id: ChurchOrganInstrument
+  name: church organ
   description: This thing really blows!
   components:
   - type: Instrument
@@ -55,9 +56,9 @@
     state: church-organ
 
 - type: entity
-  name: tuba
   parent: BasePlaceableInstrument
   id: TubaInstrument
+  name: tuba
   description: The big daddy of the brass family. Standing next to its majesty makes you feel insecure.
   components:
   - type: Instrument
@@ -66,8 +67,8 @@
     state: tuba
 
 - type: entity
-  id: HarpInstrument
   parent: BasePlaceableInstrument
+  id: HarpInstrument
   name: harp
   description: Plucking at the strings cuts your fingers, but at least the music is pretty.
   components:
@@ -77,8 +78,8 @@
     state: harp
 
 - type: entity
-  id: TimpaniInstrument
   parent: BasePlaceableInstrumentRotatable
+  id: TimpaniInstrument
   name: timpani
   description: It goes BOOM BOOM BOOM BOOM!
   components:
@@ -88,8 +89,8 @@
     state: timpani
 
 - type: entity
-  id: TaikoInstrument
   parent: BasePlaceableInstrumentRotatable
+  id: TaikoInstrument
   name: taiko
   description: A large drum. Looking at it fills you with the urge to slap it.
   components:
@@ -99,8 +100,8 @@
     state: taiko
 
 - type: entity
-  id: ContrabassInstrument
   parent: BasePlaceableInstrument
+  id: ContrabassInstrument
   name: contrabass
   description: Perfect for laying down a nice jazzy beat.
   components:
@@ -126,9 +127,9 @@
         - BulletImpassable
 
 - type: entity
-  name: minimoog
   parent: BasePlaceableInstrumentRotatable
   id: MinimoogInstrument
+  name: minimoog
   description: This is a minimoog, like a space piano, but more spacey!
   components:
   - type: Instrument
@@ -137,8 +138,8 @@
     state: minimoog
 
 - type: entity
-  id: TomDrumsInstrument
   parent: BasePlaceableInstrumentRotatable
+  id: TomDrumsInstrument
   name: tom drums
   description: Where'd the rest of the kit go?
   components:

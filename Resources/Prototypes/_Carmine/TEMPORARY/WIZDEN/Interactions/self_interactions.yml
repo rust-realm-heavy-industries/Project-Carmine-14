@@ -1,6 +1,7 @@
+---
 - type: Interaction
-  id: SelfInteractionBase
   parent: [BaseHands, BaseGlobal]
+  id: SelfInteractionBase
   abstract: true
   allowSelfInteract: true
   hideByRequirement: true
@@ -14,8 +15,8 @@
     others: null
 
 - type: Interaction
-  id: PinchSelf
   parent: SelfInteractionBase
+  id: PinchSelf
   delay: 1
   action:
     !type:ComplexAction
@@ -34,8 +35,8 @@
 
 # Sleeping on the floor is real
 - type: Interaction
-  id: MakeSleepSelf
   parent: [SelfInteractionBase, MakeSleepOther]
+  id: MakeSleepSelf
   delay: 4.5
   requirement:
     !type:ComplexRequirement

@@ -1,9 +1,10 @@
+---
 - type: entity
   parent: Clothing
   id: IDCardStandard
   name: identification card
-  description: A card necessary to access various areas aboard the station.
   abstract: true
+  description: A card necessary to access various areas aboard the station.
   components:
   - type: Sprite
     sprite: Objects/Misc/id_cards.rsi

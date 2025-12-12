@@ -1,3 +1,4 @@
+---
 - type: edgeSpreader
   id: Kudzu
   updatesPerSecond: 1

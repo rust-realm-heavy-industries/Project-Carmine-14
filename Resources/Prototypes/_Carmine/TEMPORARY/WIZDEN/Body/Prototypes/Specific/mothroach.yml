@@ -1,4 +1,5 @@
-﻿- type: body
+---
+- type: body
   id: Mothroach
   name: "mothroach"
   root: torso

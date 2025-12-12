@@ -1,7 +1,8 @@
+---
 - type: entity
-  abstract: true
   parent: BaseStructure
   id: BaseMachine
+  abstract: true
   components:
   - type: InteractionOutline
   - type: Anchorable
@@ -46,9 +47,9 @@
     - KnockOn
 
 - type: entity
-  abstract: true
   parent: BaseMachine
   id: BaseMachinePowered
+  abstract: true
   components:
   - type: ApcPowerReceiver
     powerLoad: 1000
@@ -63,8 +64,8 @@
     - TauCetiBasic
 
 - type: entity
-  abstract: true
   id: ConstructibleMachine
+  abstract: true
   components:
   - type: Machine
   - type: ContainerContainer
@@ -80,8 +81,8 @@
     priority: 1
 
 - type: entity
-  abstract: true
   parent: ConstructibleMachine
   id: SmallConstructibleMachine
+  abstract: true
   components:
     - type: RequireProjectileTarget

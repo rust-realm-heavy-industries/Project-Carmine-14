@@ -1,9 +1,10 @@
+---
 - type: entity
-  id: PottedPlantBase
   parent: BaseStructureDynamic
+  id: PottedPlantBase
   name: potted plant
-  description: A little bit of nature contained in a pot.
   abstract: true
+  description: A little bit of nature contained in a pot.
   components:
   - type: Transform
     noRot: true
@@ -46,85 +47,85 @@
           path: /Audio/Effects/plant_rustle.ogg
 
 - type: entity
-  id: PottedPlant0
   parent: PottedPlantBase
+  id: PottedPlant0
   components:
   - type: Sprite
     state: applebush #whoever named this texture in the rsi sucks
 
 - type: entity
-  id: PottedPlant1
   parent: PottedPlantBase
+  id: PottedPlant1
   components:
   - type: Sprite
     state: plant-01
 
 - type: entity
-  id: PottedPlant2
   parent: PottedPlantBase
+  id: PottedPlant2
   components:
   - type: Sprite
     state: plant-02
 
 - type: entity
-  id: PottedPlant4
   parent: PottedPlantBase
+  id: PottedPlant4
   components:
   - type: Sprite
     state: plant-04
 
 - type: entity
-  id: PottedPlant5
   parent: PottedPlantBase
+  id: PottedPlant5
   components:
   - type: Sprite
     state: plant-05
 
 - type: entity
-  id: PottedPlant6
   parent: PottedPlantBase
+  id: PottedPlant6
   components:
   - type: Sprite
     state: plant-06
 
 - type: entity
-  id: PottedPlant8
   parent: PottedPlantBase
+  id: PottedPlant8
   components:
   - type: Sprite
     state: plant-08
 
 - type: entity
-  id: PottedPlant12
   parent: PottedPlantBase
+  id: PottedPlant12
   components:
   - type: Sprite
     state: plant-12
 
 - type: entity
-  id: PottedPlant17
   parent: PottedPlantBase
+  id: PottedPlant17
   components:
   - type: Sprite
     state: plant-17
 
 - type: entity
-  id: PottedPlant18
   parent: PottedPlantBase
+  id: PottedPlant18
   components:
   - type: Sprite
     state: plant-18
 
 - type: entity
-  id: PottedPlant21
   parent: PottedPlantBase
+  id: PottedPlant21
   components:
   - type: Sprite
     state: plant-21
 
 - type: entity
-  id: PottedPlant22
   parent: PottedPlantBase
+  id: PottedPlant22
   components:
   - type: Sprite
     state: plant-22

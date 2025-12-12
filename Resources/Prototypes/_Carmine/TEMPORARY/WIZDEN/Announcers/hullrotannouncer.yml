@@ -1,3 +1,4 @@
+---
 - type: announcer
   id: HullrotAnnouncer
   basePath: /Audio/Announcers/HullrotAnnouncer

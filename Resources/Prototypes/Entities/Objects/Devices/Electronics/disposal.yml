@@ -1,6 +1,7 @@
-﻿- type: entity
-  id: MailingUnitElectronics
+---
+- type: entity
   parent: BaseElectronics
+  id: MailingUnitElectronics
   name: mailing unit electronics
   description: An electronics board used in mailing units
   components:

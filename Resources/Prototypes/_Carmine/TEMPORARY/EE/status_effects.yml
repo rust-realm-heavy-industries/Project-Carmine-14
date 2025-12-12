@@ -1,3 +1,4 @@
+---
 - type: statusEffect
   id: NoScream
   alwaysAllowed: true

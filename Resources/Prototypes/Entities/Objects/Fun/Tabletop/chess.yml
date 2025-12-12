@@ -1,4 +1,5 @@
-﻿# Chessboard item (normal in game item you can hold in your hand)
+---
+# Chessboard item (normal in game item you can hold in your hand)
 - type: entity
   parent: BaseBoardEntity
   id: ChessBoard
@@ -17,9 +18,9 @@
 
 # Chessboard tabletop item (item only visible in tabletop game)
 - type: entity
+  parent: BaseBoardTabletop
   id: ChessBoardTabletop
   name: chessboard
-  parent: BaseBoardTabletop
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

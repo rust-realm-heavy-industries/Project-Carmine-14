@@ -1,7 +1,8 @@
+---
 - type: entity
-  abstract: true
   parent: BaseItem
   id: BaseHandheldInstrument
+  abstract: true
   description: That's an instrument.
   components:
   - type: Sprite
@@ -22,9 +23,9 @@
 
 #These are for instruments that are larger, can't be picked up, or have collision
 - type: entity
-  name: baseinstrument
-  id: BasePlaceableInstrument
   parent: BaseStructureDynamic
+  id: BasePlaceableInstrument
+  name: baseinstrument
   abstract: true
   components:
   - type: Instrument

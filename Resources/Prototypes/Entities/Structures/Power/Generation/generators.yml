@@ -1,10 +1,11 @@
+---
 # Base Generator
 
 - type: entity
-  abstract: true
   id: BaseGenerator
-  description: A high efficiency thermoelectric generator.
   name: generator
+  abstract: true
+  description: A high efficiency thermoelectric generator.
   placement:
     mode: SnapgridCenter
   components:
@@ -91,10 +92,10 @@
 # Base Wallmount Generator
 
 - type: entity
-  abstract: true
-  id: BaseGeneratorWallmount
   parent: BaseGenerator
+  id: BaseGeneratorWallmount
   name: wallmount generator
+  abstract: true
   description: A high efficiency thermoelectric generator stuffed in a wall cabinet.
   placement:
     mode: SnapgridCenter
@@ -209,8 +210,8 @@
   parent: BaseGeneratorWallmount
   id: GeneratorWallmountAPU
   name: shuttle APU
-  description: An auxiliary power unit for a shuttle - 6kW.
   suffix: APU, 6kW
+  description: An auxiliary power unit for a shuttle - 6kW.
   components:
   - type: PowerSupplier
     supplyRate: 6000
@@ -232,8 +233,8 @@
   parent: BaseGenerator
   id: GeneratorRTG
   name: RTG
-  description: A Radioisotope Thermoelectric Generator for long term power.
   suffix: 10kW
+  description: A Radioisotope Thermoelectric Generator for long term power.
   components:
   - type: PowerSupplier
     supplyRate: 10000 # supposed to be low power at no fuel cost to power derelicts
@@ -280,8 +281,8 @@
   parent: GeneratorRTG
   id: GeneratorRTGDamaged
   name: damaged RTG
-  description: A Radioisotope Thermoelectric Generator for long term power. This one has damaged shielding.
   suffix: 10kW
+  description: A Radioisotope Thermoelectric Generator for long term power. This one has damaged shielding.
   components:
   - type: PowerSupplier
     supplyRate: 10000

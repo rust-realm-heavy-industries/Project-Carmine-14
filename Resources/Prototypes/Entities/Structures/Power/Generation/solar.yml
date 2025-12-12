@@ -1,3 +1,4 @@
+---
 - type: entity
   id: SolarPanelBasePhysSprite
   categories: [ HideSpawnMenu ]
@@ -52,8 +53,8 @@
   - type: RequireProjectileTarget
 
 - type: entity
-  id: SolarPanel
   parent: SolarPanelBasePhysSprite
+  id: SolarPanel
   name: solar panel
   description: A solar panel that generates power.
   components:
@@ -82,11 +83,11 @@
     node: solarpanel
 
 - type: entity
-  id: SolarPanelBroken
   parent: SolarPanelBasePhysSprite
+  id: SolarPanelBroken
   name: solar panel
-  description: A broken solar panel.
   suffix: Broken
+  description: A broken solar panel.
   components:
   - type: Sprite
     state: solar_panel_glass_broken
@@ -114,11 +115,11 @@
     node: solarpanel_broken
 
 - type: entity
-  id: SolarPanelPlasmaBroken
   parent: SolarPanelBasePhysSprite
+  id: SolarPanelPlasmaBroken
   name: plasma solar panel
-  description: A broken plasma solar panel.
   suffix: Broken
+  description: A broken plasma solar panel.
   components:
   - type: Sprite
     state: solar_panel_plasma_broken
@@ -146,11 +147,11 @@
     node: solarpanelplasma_broken
 
 - type: entity
-  id: SolarPanelUraniumBroken
   parent: SolarPanelBasePhysSprite
+  id: SolarPanelUraniumBroken
   name: uranium solar panel
-  description: A broken uranium solar panel.
   suffix: Broken
+  description: A broken uranium solar panel.
   components:
   - type: Sprite
     state: solar_panel_uranium_broken

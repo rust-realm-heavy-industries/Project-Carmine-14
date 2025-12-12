@@ -1,8 +1,9 @@
+---
 - type: entity
   id: BaseIntegratedMagboot
   name: integrated magboots
-  description: A set of magnetic locks integrated into a suit.
   abstract: true
+  description: A set of magnetic locks integrated into a suit.
   components:
     - type: ToggleClothing
       action: ActionToggleMagboots
@@ -14,8 +15,8 @@
 - type: entity
   id: BaseIntegratedManeuveringThrusters
   name: integrated maneuvering thrusters
-  description: A set of maneuvering thrusters integrated into a suit.
   abstract: true
+  description: A set of maneuvering thrusters integrated into a suit.
   components:
     - type: GasTank
       outputPressure: 42.6
@@ -48,8 +49,8 @@
   parent: [ClothingShoesBase, BaseToggleClothing]
   id: ClothingShoesBootsMagBase
   name: magboots
-  description: Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
   abstract: true
+  description: Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/magboots-science.rsi

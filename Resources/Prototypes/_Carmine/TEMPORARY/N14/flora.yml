@@ -1,8 +1,9 @@
+---
 - type: entity
   id: N14FloraLogBase
   name: log
-  description: Once a tree, always a log.
   abstract: true
+  description: Once a tree, always a log.
   components:
   - type: Clickable
   - type: InteractionOutline

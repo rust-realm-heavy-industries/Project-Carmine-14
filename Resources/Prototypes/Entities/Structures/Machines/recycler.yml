@@ -1,6 +1,7 @@
-﻿- type: entity
-  id: Recycler
+---
+- type: entity
   parent: BaseMachinePowered
+  id: Recycler
   name: recycler
   description: A large crushing machine used to recycle small items inefficiently. There are lights on the side.
   components:

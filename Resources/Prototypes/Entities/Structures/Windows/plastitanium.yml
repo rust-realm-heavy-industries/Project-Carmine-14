@@ -1,7 +1,8 @@
+---
 - type: entity
+  parent: Window
   id: PlastitaniumWindow
   name: plastitanium window
-  parent: Window
   components:
   - type: Sprite
     drawdepth: WallTops

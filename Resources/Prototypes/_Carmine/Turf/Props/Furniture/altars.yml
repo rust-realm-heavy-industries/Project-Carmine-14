@@ -1,9 +1,10 @@
+---
 - type: entity
-  id: BaseAltar
   parent: BaseStructure
+  id: BaseAltar
   name: altar
-  description: Smells of incense, its covered in solidifed wax.
   abstract: true
+  description: Smells of incense, its covered in solidifed wax.
   components:
     - type: Anchorable
     - type: Clickable
@@ -47,8 +48,8 @@
 # ALTARS
 
 - type: entity
-  id: AltarConvert
   parent: BaseAltar
+  id: AltarConvert
   name: convert altar
   components:
     - type: Icon
@@ -62,8 +63,8 @@
           shader: unshaded
 
 - type: entity
-  id: AltarConvertRed
   parent: BaseAltar
+  id: AltarConvertRed
   name: red altar
   components:
     - type: Icon
@@ -77,8 +78,8 @@
           shader: unshaded
 
 - type: entity
-  id: AltarConvertWhite
   parent: BaseAltar
+  id: AltarConvertWhite
   name: white altar
   components:
     - type: Icon
@@ -92,8 +93,8 @@
           shader: unshaded
 
 - type: entity
-  id: AltarHeaven
   parent: BaseAltar
+  id: AltarHeaven
   name: heaven altar
   components:
     - type: Icon

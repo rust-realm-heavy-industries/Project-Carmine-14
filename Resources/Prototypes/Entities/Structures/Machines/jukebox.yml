@@ -1,7 +1,8 @@
+---
 - type: entity
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
   id: Jukebox
   name: jukebox
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
   description: A machine capable of playing a wide variety of tunes. Enjoyment not guaranteed.
   components:
   - type: StationAiWhitelist

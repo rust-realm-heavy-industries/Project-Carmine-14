@@ -1,8 +1,9 @@
-﻿- type: entity
+---
+- type: entity
   id: BaseBigBox
   name: cardboard box #it's still just a box
-  description: Huh? Just a box...
   abstract: true
+  description: Huh? Just a box...
   components:
     - type: Transform
       noRot: true
@@ -57,8 +58,8 @@
         - entity_storage
 
 - type: entity
-  id: BigBox
   parent: BaseBigBox
+  id: BigBox
   components:
   - type: InteractionOutline
   - type: Destructible

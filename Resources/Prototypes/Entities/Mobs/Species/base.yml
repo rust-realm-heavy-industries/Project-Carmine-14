@@ -1,5 +1,5 @@
+---
 - type: entity
-  save: false
   parent:
   - BaseMob
   - ESBaseMob # ES START
@@ -8,6 +8,7 @@
   - MobCombat
   id: BaseMobSpecies
   abstract: true
+  save: false
   components:
   - type: Sprite
     layers:
@@ -256,7 +257,6 @@
   - type: ExaminableCharacter # WWDP
 
 - type: entity
-  save: false
   parent:
   - MobBloodstream
   - MobRespirator
@@ -265,6 +265,7 @@
   - BaseMobSpecies
   id: BaseMobSpeciesOrganic
   abstract: true
+  save: false
   components:
   - type: Flashable
   - type: Absorbable # Goobstation - changelings
@@ -360,9 +361,9 @@
         volume: -10
 
 - type: entity
-  save: false
   id: BaseSpeciesDummy
   abstract: true
+  save: false
   components:
   - type: Hands
   - type: ComplexInteraction

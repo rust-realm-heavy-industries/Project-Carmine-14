@@ -1,9 +1,10 @@
-﻿- type: entity
+---
+- type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitChameleon
   name: black jumpsuit
-  description: A generic black jumpsuit with no rank markings.
   suffix: Chameleon
+  description: A generic black jumpsuit with no rank markings.
   components:
     - type: Tag
       tags: [] # ignore "WhitelistChameleon" tag

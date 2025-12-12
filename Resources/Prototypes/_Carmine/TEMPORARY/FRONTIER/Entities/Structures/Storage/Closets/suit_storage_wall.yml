@@ -1,6 +1,7 @@
+---
 - type: entity
-  id: SuitStorageWallmount
   parent: [BaseWallCloset, SuitStorageBase]
+  id: SuitStorageWallmount
   name: suit wallstorage unit
   components:
   - type: Sprite

@@ -1,3 +1,4 @@
+---
 - type: stack
   id: GoldOre
   name: gold ore

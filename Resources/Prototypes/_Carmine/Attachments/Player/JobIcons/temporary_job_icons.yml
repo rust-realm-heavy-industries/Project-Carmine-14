@@ -1,3 +1,4 @@
+---
 - type: jobIcon
   id: JobIcon
   abstract: true

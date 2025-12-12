@@ -1,8 +1,9 @@
-﻿# HULLROT USES THIS FILE FOR ITS WRECKS
+---
+# HULLROT USES THIS FILE FOR ITS WRECKS
 
 - type: entity
-  id: BaseScrapDebris
   parent: BaseDebris
+  id: BaseScrapDebris
   name: Scrap Debris
   abstract: true
   components:
@@ -70,8 +71,8 @@
       color: "#88b0d1"
 
 - type: entity
-  id: ScrapDebrisSmall
   parent: BaseScrapDebris
+  id: ScrapDebrisSmall
   name: Scrap Debris Small
   categories: [ HideSpawnMenu ]
   components:
@@ -80,8 +81,8 @@
       floorPlacements: 8
 
 - type: entity
-  id: ScrapDebrisMedium
   parent: BaseScrapDebris
+  id: ScrapDebrisMedium
   name: Scrap Debris Medium
   categories: [ HideSpawnMenu ]
   components:
@@ -90,8 +91,8 @@
       floorPlacements: 16
 
 - type: entity
-  id: ScrapDebrisLarge
   parent: BaseScrapDebris
+  id: ScrapDebrisLarge
   name: Scrap Debris Large
   categories: [ HideSpawnMenu ]
   components:

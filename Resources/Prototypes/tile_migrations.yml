@@ -1,3 +1,4 @@
+---
 - type: tileAlias
   id: FloorWhite
   target: FloorWhiteDiagonalMini

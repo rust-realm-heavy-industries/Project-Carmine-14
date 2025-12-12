@@ -1,3 +1,4 @@
+---
 - type: entity
   # Just fades out with no movement animation
   id: WeaponArcStatic
@@ -31,24 +32,24 @@
 # Uses TimedDespawn instead of EffectVisuals because auto animation is easier but doesn't raise an animation complete event.
 
 - type: entity
-  id: WeaponArcThrust
   parent: WeaponArcStatic
+  id: WeaponArcThrust
   categories: [ HideSpawnMenu ]
   components:
     - type: WeaponArcVisuals
       animation: Thrust
 
 - type: entity
-  id: WeaponArcSlash
   parent: WeaponArcStatic
+  id: WeaponArcSlash
   categories: [ HideSpawnMenu ]
   components:
     - type: WeaponArcVisuals
       animation: Slash
 
 - type: entity
-  id: WeaponArcBite
   parent: WeaponArcStatic
+  id: WeaponArcBite
   categories: [ HideSpawnMenu ]
   components:
     - type: WeaponArcVisuals
@@ -59,8 +60,8 @@
       lifetime: 0.399
 
 - type: entity
-  id: WeaponArcClaw
   parent: WeaponArcStatic
+  id: WeaponArcClaw
   categories: [ HideSpawnMenu ]
   components:
     - type: WeaponArcVisuals
@@ -71,8 +72,8 @@
       lifetime: 0.399
 
 - type: entity
-  id: WeaponArcDisarm
   parent: WeaponArcAnimated
+  id: WeaponArcDisarm
   categories: [ HideSpawnMenu ]
   components:
     - type: WeaponArcVisuals
@@ -83,16 +84,16 @@
       lifetime: 0.299
 
 - type: entity
-  id: WeaponArcFist
   parent: WeaponArcStatic
+  id: WeaponArcFist
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       state: fist
 
 - type: entity
-  id: WeaponArcPunch
   parent: WeaponArcStatic
+  id: WeaponArcPunch
   categories: [ HideSpawnMenu ]
   components:
     - type: WeaponArcVisuals
@@ -103,8 +104,8 @@
       lifetime: 0.499
 
 - type: entity
-  id: WeaponArcKick
   parent: WeaponArcStatic
+  id: WeaponArcKick
   categories: [ HideSpawnMenu ]
   components:
     - type: WeaponArcVisuals
@@ -115,8 +116,8 @@
       lifetime: 0.299
 
 - type: entity
-  id: WeaponArcSmash
   parent: WeaponArcStatic
+  id: WeaponArcSmash
   categories: [ HideSpawnMenu ]
   components:
     - type: WeaponArcVisuals

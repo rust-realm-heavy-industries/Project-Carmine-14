@@ -1,9 +1,10 @@
+---
 - type: entity
-  id: TableBase
   parent: BaseStructure
+  id: TableBase
   name: table
-  description: A square piece of metal standing on four metal legs.
   abstract: true
+  description: A square piece of metal standing on four metal legs.
   components:
   - type: Damageable
     damageContainer: Inorganic
@@ -34,10 +35,10 @@
       collection: FootstepHull
   - type: RequireProjectileTarget
   - type: ThrownItemImmune
-  
+
 - type: entity
-  id: TableBaseSmooth
   parent: TableBase
+  id: TableBaseSmooth
   abstract: true
   components:
   - type: Icon
@@ -49,8 +50,8 @@
 # TABLES
 
 - type: entity
-  id: TableReinforced
   parent: TableBaseSmooth
+  id: TableReinforced
   name: reinforced table
   description: A square piece of metal standing on four metal legs. Extra robust.
   components:
@@ -78,8 +79,8 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  id: TableGlass
   parent: TableBaseSmooth
+  id: TableGlass
   name: glass table
   description: A square piece of glass, standing on four metal legs.
   components:
@@ -118,8 +119,8 @@
       collection: FootstepTile
 
 - type: entity
-  id: OperatingTable
   parent: Bed
+  id: OperatingTable
   name: operating table
   description: Used for advanced medical procedures.
   components:
@@ -451,8 +452,8 @@
 - type: entity
   parent: TableBase
   id: TableBaseCraft
-  description: This counter looks like scrap.
   suffix: craft full
+  description: This counter looks like scrap.
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
@@ -523,8 +524,8 @@
     state: metal_counter_cross
 
 - type: entity
-  id: TableMetalGrate
   parent: TableBaseSmooth
+  id: TableMetalGrate
   name: metal table
   description: A cold handmade metal table made from grating.
   components:
@@ -532,7 +533,7 @@
     sprite: _Nuclear14/Structures/Furniture/Tables/metalgrate.rsi
   - type: Icon
     sprite: _Nuclear14/Structures/Furniture/Tables/metalgrate.rsi
-    
+
 - type: entity
   parent: TableBaseSmooth
   id: TableBaseBar
@@ -547,8 +548,8 @@
 # GAMBLING TABLES
 
 - type: entity
-  id: TableCarpet
   parent: TableBaseSmooth
+  id: TableCarpet
   name: gambling table
   description: Play em' cowboy.
   components:
@@ -584,10 +585,10 @@
 # FANCY TABLES
 
 - type: entity
-  id: TableFancyBase
-  abstract: true
   parent: TableBaseSmooth
+  id: TableFancyBase
   name: fancy table
+  abstract: true
   description: Expensive and rich.
   components:
   - type: Damageable
@@ -619,8 +620,8 @@
       collection: FootstepCarpet
 
 - type: entity
-  id: TableFancyBlue
   parent: TableFancyBase
+  id: TableFancyBlue
   suffix: Blue
   components:
   - type: Sprite
@@ -629,8 +630,8 @@
     sprite: Structures/Furniture/Tables/Fancy/blue.rsi
 
 - type: entity
-  id: TableFancyCyan
   parent: TableFancyBase
+  id: TableFancyCyan
   suffix: Cyan
   components:
   - type: Sprite
@@ -639,8 +640,8 @@
     sprite: Structures/Furniture/Tables/Fancy/cyan.rsi
 
 - type: entity
-  id: TableFancyBlack
   parent: TableFancyBase
+  id: TableFancyBlack
   suffix: Black
   components:
   - type: Sprite
@@ -649,8 +650,8 @@
     sprite: Structures/Furniture/Tables/Fancy/black.rsi
 
 - type: entity
-  id: TableFancyRed
   parent: TableFancyBase
+  id: TableFancyRed
   suffix: Red
   components:
   - type: Sprite
@@ -659,8 +660,8 @@
     sprite: Structures/Furniture/Tables/Fancy/red.rsi
 
 - type: entity
-  id: TableFancyPurple
   parent: TableFancyBase
+  id: TableFancyPurple
   suffix: Purple
   components:
   - type: Sprite
@@ -669,8 +670,8 @@
     sprite: Structures/Furniture/Tables/Fancy/purple.rsi
 
 - type: entity
-  id: TableFancyPink
   parent: TableFancyBase
+  id: TableFancyPink
   suffix: Pink
   components:
   - type: Sprite
@@ -679,8 +680,8 @@
     sprite: Structures/Furniture/Tables/Fancy/pink.rsi
 
 - type: entity
-  id: TableFancyGreen
   parent: TableFancyBase
+  id: TableFancyGreen
   suffix: Green
   components:
   - type: Sprite
@@ -689,8 +690,8 @@
     sprite: Structures/Furniture/Tables/Fancy/green.rsi
 
 - type: entity
-  id: TableFancyOrange
   parent: TableFancyBase
+  id: TableFancyOrange
   suffix: Orange
   components:
   - type: Sprite
@@ -699,8 +700,8 @@
     sprite: Structures/Furniture/Tables/Fancy/orange.rsi
 
 - type: entity
-  id: TableFancyWhite
   parent: TableFancyBase
+  id: TableFancyWhite
   suffix: White
   components:
   - type: Sprite

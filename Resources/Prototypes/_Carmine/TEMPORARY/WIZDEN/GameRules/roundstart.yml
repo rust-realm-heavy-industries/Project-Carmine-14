@@ -1,3 +1,4 @@
+---
 - type: entity
   id: BaseGameRule
   abstract: true
@@ -6,8 +7,8 @@
   - type: GameRule
 
 - type: entity
-  id: InactivityTimeRestart
   parent: BaseGameRule
+  id: InactivityTimeRestart
   categories: [ HideSpawnMenu ]
   components:
   - type: InactivityRule
@@ -15,8 +16,8 @@
     roundEndDelay: 10
 
 - type: entity
-  id: MaxTimeRestart
   parent: BaseGameRule
+  id: MaxTimeRestart
   categories: [ HideSpawnMenu ]
   components:
   - type: MaxTimeRestartRule
@@ -24,8 +25,8 @@
     roundEndDelay: 10
 
 - type: entity
-  id: Sandbox
   parent: BaseGameRule
+  id: Sandbox
   categories: [ HideSpawnMenu ]
   components:
   - type: SandboxRule

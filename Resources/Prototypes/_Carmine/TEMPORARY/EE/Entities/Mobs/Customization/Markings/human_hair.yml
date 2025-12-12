@@ -1,3 +1,4 @@
+---
 - type: marking
   id: HumanHairArabicGathered
   bodyPart: Hair
@@ -5,6 +6,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: hair-arabicgatheredhair
+
 - type: marking
   id: HumanHairClassicHair
   bodyPart: Hair
@@ -12,6 +14,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: hair-classichairmale
+
 - type: marking
   id: HumanHairSideComb
   bodyPart: Hair
@@ -19,6 +22,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: hair-combedfromside
+
 - type: marking
   id: HumanHairLong4
   bodyPart: Hair
@@ -26,6 +30,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: hair-longhair
+
 - type: marking
   id: HumanHairManbun2
   bodyPart: Hair
@@ -33,6 +38,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: hair-manbunold
+
 - type: marking
   id: HumanHairPigtailTajaran
   bodyPart: Hair
@@ -40,6 +46,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: hair-pigtailtajaran
+
 - type: marking
   id: HumanHairShavedSide
   bodyPart: Hair
@@ -47,6 +54,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: hair-shavedside
+
 - type: marking
   id: HumanHairShorthair8
   bodyPart: Hair
@@ -54,6 +62,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: hair-shorthaired
+
 - type: marking
   id: HumanFembun
   bodyPart: Hair
@@ -61,6 +70,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Human/custom.rsi
     state: hair-womenbun
+
 - type: marking
   id: HumanHairAfricanPigtails
   bodyPart: Hair
@@ -68,6 +78,7 @@
   sprites:
     - sprite: _Corvax/Mobs/Customization/human_hair.rsi
       state: africanpigtails
+
 - type: marking
   id: HumanHairAfropuffDouble
   bodyPart: Hair
@@ -75,6 +86,7 @@
   sprites:
     - sprite: _Corvax/Mobs/Customization/human_hair.rsi
       state: afropuffdouble
+
 - type: marking
   id: HumanHairAfropuffLeft
   bodyPart: Hair
@@ -82,6 +94,7 @@
   sprites:
     - sprite: _Corvax/Mobs/Customization/human_hair.rsi
       state: afropuffleft
+
 - type: marking
   id: HumanHairAfropuffRight
   bodyPart: Hair

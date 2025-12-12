@@ -1,3 +1,4 @@
+---
 # TODO:RESET:TIMEDSTORAGEFILL
 
 # Metal Closets
@@ -59,8 +60,8 @@
   - type: Weldable
 
 - type: entity
-  id: ClosetGrey2
   parent: ClosetBaseW
+  id: ClosetGrey2
   components:
   - type: Sprite
     sprite: Structures/Storage/Closets/closetgrey2.rsi
