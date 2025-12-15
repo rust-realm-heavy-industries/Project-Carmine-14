@@ -59,9 +59,6 @@ public sealed class MeleeWeaponSystem : SharedMeleeWeaponSystem
         if (!component.DisableClick)
             _damageExamine.AddDamageExamine(args.Message, damageSpec, Loc.GetString("damage-melee"));
 
-        if (component.DisableHeavy)
-            return;
-
         if (damageSpec * component.HeavyDamageBaseModifier != damageSpec)
             _damageExamine.AddDamageExamine(args.Message, damageSpec * component.HeavyDamageBaseModifier, Loc.GetString("damage-melee-heavy"));
 

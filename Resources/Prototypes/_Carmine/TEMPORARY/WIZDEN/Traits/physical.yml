@@ -206,7 +206,6 @@
   points: -5
   functions:
     - !type:TraitModifyUnarmed
-      heavyOnLightMiss: true
       attackRateModifier: 0.8
       rangeModifier: 1.1
     - !type:TraitReplaceComponent

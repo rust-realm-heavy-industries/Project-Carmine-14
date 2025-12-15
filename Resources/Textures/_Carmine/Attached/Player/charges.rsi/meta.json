@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "license": "All rights reserved.",
+  "copyright": "Made for the Carmine project. Do not use without permission from the current project leads unless the project is dead.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "charge_1"
+    },
+    {
+      "name": "charge_2"
+    },
+    {
+      "name": "charge_3"
+    },
+    {
+      "name": "charge_4"
+    },
+    {
+      "name": "charge_5"
+    },
+    {
+      "name": "charge_6"
+    },
+    {
+      "name": "charge_7"
+    },
+    {
+      "name": "charge_8"
+    },
+    {
+      "name": "charge_9"
+    },
+    {
+      "name": "charge_10"
+    },
+    {
+      "name": "charge_11"
+    },
+    {
+      "name": "charge_12"
+    },
+    {
+      "name": "charge_13"
+    },
+    {
+      "name": "charge_14"
+    },
+    {
+      "name": "charge_15"
+    },
+    {
+      "name": "charge_16"
+    },
+    {
+      "name": "charge_17"
+    },
+    {
+      "name": "charge_18"
+    },
+    {
+      "name": "charge_19"
+    }
+  ]
+}

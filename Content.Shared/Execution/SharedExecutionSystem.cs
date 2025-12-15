@@ -211,8 +211,8 @@ public sealed class SharedExecutionSystem : EntitySystem
             var suicideGhostEvent = new SuicideGhostEvent(victim);
             RaiseLocalEvent(victim, suicideGhostEvent);
         }
-        else
-            _melee.AttemptLightAttack(attacker, weapon, meleeWeaponComp, victim);
+        //else
+        //    _melee.AttemptLightAttack(attacker, weapon, meleeWeaponComp, victim);
 
         _combat.SetInCombatMode(attacker, prev);
         entity.Comp.Executing = false;

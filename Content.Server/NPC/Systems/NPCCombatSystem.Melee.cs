@@ -120,11 +120,11 @@ public sealed partial class NPCCombatSystem
             physicsQuery.TryGetComponent(component.Target, out var targetPhysics) &&
             targetPhysics.LinearVelocity.LengthSquared() != 0f)
         {
-            _melee.AttemptLightAttackMiss(uid, weaponUid, weapon, targetXform.Coordinates.Offset(_random.NextVector2(0.5f)));
+            //_melee.AttemptLightAttackMiss(uid, weaponUid, weapon, targetXform.Coordinates.Offset(_random.NextVector2(0.5f)));
         }
         else
         {
-            _melee.AttemptLightAttack(uid, weaponUid, weapon, component.Target);
+            //_melee.AttemptLightAttack(uid, weaponUid, weapon, component.Target);
         }
 
         if (Comp<HTNComponent>(uid).Blackboard.TryGetValue<float>("AttackDelayDeviation", out var dev, EntityManager))

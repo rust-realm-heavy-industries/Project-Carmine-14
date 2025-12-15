@@ -1,4 +1,3 @@
-using System.Linq;
 using Content.Client.Gameplay;
 using Content.Shared.CombatMode;
 using Content.Shared.Effects;
@@ -17,11 +16,18 @@ using Robust.Client.State;
 using Robust.Shared.Input;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Timing;
+using System.Linq;
 
 namespace Content.Client.Weapons.Melee;
 
 public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
 {
+    [Dependency] private readonly IPrototypeManager _protoManager = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly IEntitySystemManager _entitySystemManager = default!;
+    [Dependency] private readonly IOverlayManager _overlayManager = default!;
     [Dependency] private readonly IEyeManager _eyeManager = default!;
     [Dependency] private readonly IInputManager _inputManager = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
@@ -37,9 +43,16 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
     public override void Initialize()
     {
         base.Initialize();
+        _overlayManager.AddOverlay(new MeleeWindupOverlay(EntityManager, _timing, _player, _protoManager));
         _xformQuery = GetEntityQuery<TransformComponent>();
         SubscribeNetworkEvent<MeleeLungeEvent>(OnMeleeLunge);
         UpdatesOutsidePrediction = true;
+    }
+
+    public override void Shutdown()
+    {
+        base.Shutdown();
+        _overlayManager.RemoveOverlay<MeleeWindupOverlay>();
     }
 
     public override void FrameUpdate(float frameTime)
@@ -68,11 +81,13 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
         if (!CombatMode.IsInCombatMode(entity) || !Blocker.CanAttack(entity))
         {
             weapon.Attacking = false;
+            RaisePredictiveEvent(new StopHeavyAttackEvent(GetNetEntity(weaponUid)));
             return;
         }
 
-        var useDown = _inputSystem.CmdStates.GetState(EngineKeyFunctions.Use) == BoundKeyState.Down;
-        var altDown = _inputSystem.CmdStates.GetState(EngineKeyFunctions.UseSecondary) == BoundKeyState.Down;
+        var useDown = _inputSystem.CmdStates.GetState(EngineKeyFunctions.Use) == BoundKeyState.Down;            //LMB
+        var altDown = _inputSystem.CmdStates.GetState(EngineKeyFunctions.UseSecondary) == BoundKeyState.Down;   //RMB
+        TimeSpan? gracePeriod = null;
 
         // Disregard inputs to the shoot binding
         if (TryComp<GunComponent>(weaponUid, out var gun)
@@ -86,20 +101,37 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
                 altDown = false;
         }
 
-        if ((weapon.AutoAttack || !useDown && !altDown) && weapon.Attacking)
-            RaisePredictiveEvent(new StopAttackEvent(GetNetEntity(weaponUid)));
+        if (!useDown)
+        {
+            if (weapon.Attacking)
+            {
+                RaisePredictiveEvent(new StopAttackEvent(GetNetEntity(weaponUid)));
+                weapon.index = 1;
+            }
+        }
 
-        if (weapon.Attacking || weapon.NextAttack > Timing.CurTime || !useDown && !altDown)
+        if (weapon.Attacking || weapon.NextAttack > Timing.CurTime)
+        {
             return;
+        }
 
         // TODO using targeted actions while combat mode is enabled should NOT trigger attacks.
 
         var mousePos = _eyeManager.PixelToMap(_inputManager.MouseScreenPosition);
-        var coordinates = TransformSystem.ToCoordinates(mousePos);
+        EntityCoordinates coordinates;
 
-        // Heavy attack.
-        if (!weapon.DisableHeavy &&
-            (!weapon.SwapKeys ? altDown : useDown))
+        if (MapManager.TryFindGridAt(mousePos, out var gridUid, out _))
+        {
+            coordinates = TransformSystem.ToCoordinates(gridUid, mousePos);
+        }
+        else
+        {
+            var mapSystem = _entitySystemManager.GetEntitySystem<MapSystem>();
+            coordinates = TransformSystem.ToCoordinates(mapSystem.GetMap(mousePos.MapId), mousePos);  //TODO: FIX 4000000 ERRORS IN CONSOLE WHEN HOVERING OVER UI
+        }
+
+        // LMB held
+        if (useDown)
         {
             // If it's an unarmed attack then do a disarm
             if (weapon.AltDisarm && weaponUid == entity)
@@ -115,42 +147,59 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
                 return;
             }
 
-            ClientHeavyAttack(entity, coordinates, weaponUid, weapon);
+            // Start a windup
+            if (weapon.WindUpStart == null)
+            {
+                EntityManager.RaisePredictiveEvent(new StartHeavyAttackEvent(GetNetEntity(weaponUid)));
+                weapon.WindUpStart = Timing.CurTime;
+            }
+        }
+
+        // If we released LMB and there is a windup
+        if (!useDown && weapon.WindUpStart != null)
+        {
+            // An attack within the GracePeriod is going to be registered as a light attack
+            if ((weapon.WindUpStart > Timing.CurTime - weapon.GracePeriod))
+            {
+                // Light attack
+                {
+
+                    if (weapon.Attacking || weapon.NextAttack > Timing.CurTime)
+                    {
+                        return;
+                    }
+
+                    var attackerPos = TransformSystem.GetMapCoordinates(entity);
+
+                    if (mousePos.MapId != attackerPos.MapId ||
+                        (attackerPos.Position - mousePos.Position).Length() > weapon.Range * weapon.LightRangeModifier)
+                    {
+                        return;
+                    }
+
+                    EntityUid? target = null;
+
+                    if (_stateManager.CurrentState is GameplayStateBase screen)
+                        target = screen.GetClickedEntity(mousePos);
+
+                    // Don't light-attack if interaction will be handling this instead
+                    if (Interaction.CombatModeCanHandInteract(entity, target))
+                        return;
+
+                    RaisePredictiveEvent(new LightAttackEvent(GetNetEntity(target), GetNetEntity(weaponUid), GetNetCoordinates(coordinates)));
+                    RaisePredictiveEvent(new StopHeavyAttackEvent(GetNetEntity(weaponUid)));
+                    gracePeriod = null;
+                }
+            }
+            else
+            {
+                ClientHeavyAttack(entity, coordinates, weaponUid, weapon);
+                RaisePredictiveEvent(new StopHeavyAttackEvent(GetNetEntity(weaponUid)));
+                gracePeriod = null;
+            }
             return;
         }
 
-        // Light attack
-        if (!weapon.DisableClick &&
-            (!weapon.SwapKeys ? useDown : altDown))
-        {
-            var attackerPos = TransformSystem.GetMapCoordinates(entity);
-
-            if (mousePos.MapId != attackerPos.MapId ||
-                (attackerPos.Position - mousePos.Position).Length() > weapon.Range * weapon.LightRangeModifier)
-            {
-                if (weapon.HeavyOnLightMiss)
-                    ClientHeavyAttack(entity, coordinates, weaponUid, weapon);
-
-                return;
-            }
-
-            EntityUid? target = null;
-
-            if (_stateManager.CurrentState is GameplayStateBase screen)
-                target = screen.GetClickedEntity(mousePos);
-
-            // Don't light-attack if interaction will be handling this instead
-            if (Interaction.CombatModeCanHandInteract(entity, target))
-                return;
-
-            if (weapon.HeavyOnLightMiss && !CanDoLightAttack(entity, target, weapon, out _))
-            {
-                ClientHeavyAttack(entity, coordinates, weaponUid, weapon);
-                return;
-            }
-
-            RaisePredictiveEvent(new LightAttackEvent(GetNetEntity(target), GetNetEntity(weaponUid), GetNetCoordinates(coordinates)));
-        }
     }
 
     protected override bool InRange(EntityUid user, EntityUid target, float range, ICommonSession? session)

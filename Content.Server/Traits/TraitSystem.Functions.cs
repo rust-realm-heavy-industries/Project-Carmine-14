@@ -738,12 +738,6 @@ public sealed partial class TraitModifyUnarmed : TraitFunction
     [DataField, AlwaysPushInheritance]
     public DamageSpecifier? FlatDamageIncrease;
 
-    /// <summary>
-    ///   Turns the left click into a power attack when the light attack misses.
-    /// </summary>
-    [DataField]
-    public bool? HeavyOnLightMiss;
-
     // <summary>
     //     What to multiply the melee weapon range by.
     // </summary>
@@ -778,9 +772,6 @@ public sealed partial class TraitModifyUnarmed : TraitFunction
 
         if (FlatDamageIncrease != null)
             melee.Damage += FlatDamageIncrease;
-
-        if (HeavyOnLightMiss != null)
-            melee.HeavyOnLightMiss = HeavyOnLightMiss.Value;
 
         if (RangeModifier != null)
             melee.Range *= RangeModifier.Value;

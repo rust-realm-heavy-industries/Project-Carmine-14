@@ -14,6 +14,33 @@ namespace Content.Shared.Weapons.Melee;
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true), AutoGenerateComponentPause]
 public sealed partial class MeleeWeaponComponent : Component
 {
+    /// <summary>
+    /// GOIDACODE
+    /// </summary>
+    [DataField]
+    public int index = 0;
+
+    /// <summary>
+    /// GOIDACODE
+    /// </summary>
+    [DataField]
+    public TimeSpan? Snapshot;
+
+    [DataField, AutoNetworkedField]
+    public float HeavyWindupModifier = 1.5f;
+
+    /// <summary>
+    /// If an attack is released within this buffer it's assumed to be a light attack.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public TimeSpan? GracePeriod = TimeSpan.FromMilliseconds(250);
+
+    /// <summary>
+    /// When did we start a heavy attack.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public TimeSpan? WindUpStart;
+
     // TODO: This is becoming bloated as shit.
     // This should just be its own component for alt attacks.
     /// <summary>
@@ -42,30 +69,11 @@ public sealed partial class MeleeWeaponComponent : Component
     public bool ResetOnHandSelected = true;
 
     /// <summary>
-    ///   If true, swaps the keybinds for light attacks and heavy attacks.
-    /// </summary>
-    [DataField]
-    public bool SwapKeys = false;
-
-    /// <summary>
-    ///   If true, disables heavy attacks for this weapon, and prevents the heavy damage values appearing
-    ///   when the damage values are examined.
-    /// </summary>
-    [DataField]
-    public bool DisableHeavy = false;
-
-    /// <summary>
     ///   If true, disables single-target attacks for this weapon, and prevents the single-target damage values appearing
     ///   when the damage values are examined.
     /// </summary>
     [DataField]
     public bool DisableClick = false;
-
-    /// <summary>
-    ///   If true, when a light attack misses, the weapon will perform a power attack instead.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public bool HeavyOnLightMiss = false;
 
     /*
      * Melee combat works based around 2 types of attacks:
@@ -92,15 +100,9 @@ public sealed partial class MeleeWeaponComponent : Component
     public bool Attacking = false;
 
     /// <summary>
-    /// If true, attacks will be repeated automatically without requiring the mouse button to be lifted.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public bool AutoAttack;
-
-    /// <summary>
     /// If true, attacks will bypass armor resistances.
     /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+    [DataField, AutoNetworkedField]
     public bool ResistanceBypass = false;
 
     /// <summary>
